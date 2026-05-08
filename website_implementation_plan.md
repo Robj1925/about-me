@@ -90,8 +90,17 @@ Post 3: "OpenClaw Skills Explained: A Beginner's Guide" (Tag: Beginner Guide | D
 ### Section 8: Footer / Newsletter
 Newsletter CTA: Headline: "The Engineer-Creator Weekly"
 Input: [ your@email.com ] [ Subscribe Free → ]
-Footer columns: Logo, Quick Links, Connect (YouTube, GitHub, Email: robbyj1925@icloud.com)
+Footer columns: Logo, Quick Links, Connect (YouTube, GitHub, Email: Contact Form or Obfuscated Link to prevent scraping)
 Bottom bar: © 2026 Robby J · Privacy Policy · Built with ❤️ + AI
+
+---
+
+## Part 4: Security & Privacy Best Practices (Public Repo)
+
+To prevent personal info scraping by bots scanning public GitHub repositories:
+1. **Email Obfuscation:** We will not place your email (`robbyj1925@icloud.com`) in plaintext HTML or `mailto:` links. We will either use a serverless contact form (like Formspree) or encode the email via JavaScript so it only renders on the live site.
+2. **Secrets Management:** Ensure a `.gitignore` is set up to block any `.env` files. We will never commit API keys (e.g., for the Newsletter service or custom MCP servers) to the public repository.
+3. **Personal Media:** Ensure any personal photos uploaded (like the headshot) do not contain sensitive EXIF metadata (location data).
 
 ---
 

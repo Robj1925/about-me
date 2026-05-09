@@ -28,22 +28,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 });
 
 // ===== EMAIL OBFUSCATION =====
-// Assembled at runtime to prevent scraper harvesting from source
+// ===== EMAIL OBFUSCATION =====
+// The email is injected securely during the GitHub Actions build step
 (function () {
-  const u = 'robbyj1925';
-  const d = 'icloud.com';
-  const links = document.querySelectorAll('[data-email]');
-  links.forEach(el => {
-    const addr = u + '@' + d;
-    if (el.tagName === 'A') {
-      el.href = 'mailto:' + addr;
-      el.textContent = addr;
-    } else {
-      el.textContent = addr;
-    }
-  });
+  const email = '___CONTACT_EMAIL___';
+  
+  if (email && email !== '___CONTACT_EMAIL___') {
+    const links = document.querySelectorAll('[data-email]');
+    links.forEach(el => {
+      if (el.tagName === 'A') {
+        el.href = 'mailto:' + email;
+        el.textContent = email;
+      } else {
+        el.textContent = email;
+      }
+    });
+  }
 })();
-
 // ===== TERMINAL TYPEWRITER =====
 const lines = [
   { type: 'prompt', text: '~/projects $ ' },

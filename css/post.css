@@ -1,0 +1,337 @@
+/* =========================================================
+   post.css — Styles for individual blog post pages
+   ========================================================= */
+
+/* ── Reading Progress Bar ── */
+.read-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+  z-index: 1000;
+  transition: width 0.1s linear;
+}
+
+/* ── Post Layout ── */
+.post-main {
+  padding: 120px 0 80px;
+}
+
+.post-article {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+}
+
+/* ── Post Header ── */
+.post-header {
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.post-tags {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-4);
+}
+
+.post-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+.post-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: var(--space-4);
+}
+
+.post-excerpt {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.post-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+/* ── Hero Image ── */
+.post-hero-img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: var(--space-8);
+  border: 1px solid var(--glass-border);
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+/* ── YouTube Embed ── */
+.post-yt-embed {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: var(--space-8);
+  border: 1px solid var(--glass-border);
+}
+
+.post-yt-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ── Post Content Typography ── */
+.post-content {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+
+.post-content h2 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 2.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.post-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 2rem 0 0.75rem;
+}
+
+.post-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin: 1.5rem 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.post-content p {
+  margin-bottom: 1.4rem;
+}
+
+.post-content a {
+  color: var(--accent-cyan);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.post-content a:hover {
+  color: var(--accent-purple);
+}
+
+.post-content strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.post-content em {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 0 0 1.4rem 1.5rem;
+}
+
+.post-content li {
+  margin-bottom: 0.5rem;
+}
+
+.post-content blockquote {
+  border-left: 3px solid var(--accent-purple);
+  padding: 0.75rem 0 0.75rem 1.25rem;
+  margin: 1.5rem 0;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* Code inline */
+.post-content code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  color: var(--accent-cyan);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Code blocks */
+.post-content pre {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  padding: var(--space-4) var(--space-5);
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.post-content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Images inside content */
+.post-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 1.5rem 0;
+  border: 1px solid var(--glass-border);
+}
+
+/* Horizontal rule */
+.post-content hr {
+  border: none;
+  border-top: 1px solid var(--glass-border);
+  margin: 2.5rem 0;
+}
+
+/* ── Post CTA Box ── */
+.post-cta-box {
+  margin-top: 4rem;
+  padding: var(--space-8);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+.post-cta-box h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.post-cta-box p {
+  color: var(--text-muted);
+  margin-bottom: var(--space-5);
+}
+
+/* ── Blog Index Overrides ── */
+.blog-grid-index {
+  grid-template-columns: 1fr;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 0;
+}
+
+.blog-card-link .blog-thumb {
+  width: 280px;
+  min-width: 280px;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 16px 0 0 16px;
+}
+
+.blog-card-link .blog-thumb-placeholder {
+  width: 280px;
+  min-width: 280px;
+  background: var(--glass-bg);
+  border-radius: 16px 0 0 16px;
+}
+
+.blog-card-link .blog-body {
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.blog-tags {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-2);
+}
+
+.blog-excerpt {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin: var(--space-3) 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.blog-readmore {
+  font-size: 0.875rem;
+  color: var(--accent-cyan);
+  font-weight: 500;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .post-article {
+    padding: 0 var(--space-4);
+  }
+
+  .blog-card-link {
+    flex-direction: column;
+  }
+
+  .blog-card-link .blog-thumb,
+  .blog-card-link .blog-thumb-placeholder {
+    width: 100%;
+    min-width: unset;
+    border-radius: 16px 16px 0 0;
+  }
+}

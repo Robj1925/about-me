@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenClaw Skills Explained: A Beginner's Guide — Robby J</title>
+  <meta name="description" content="OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own." />
+  <meta property="og:title" content="OpenClaw Skills Explained: A Beginner's Guide — Robby J" />
+  <meta property="og:description" content="OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumb-3.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Beginner Guide</span><span class="post-tag">OpenClaw</span><span class="post-tag">AI Automation</span></div>
+      <h1 class="post-title">OpenClaw Skills Explained: A Beginner's Guide</h1>
+      <p class="post-excerpt">OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own.</p>
+      <div class="post-meta">
+        <span>📅 April 5, 2026</span>
+        <span>·</span>
+        <span>⏱ 4 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumb-3.jpg" alt="OpenClaw Skills Explained: A Beginner's Guide thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>If you&#39;ve ever wanted your AI assistant to do more than just chat — to actually <em>take actions</em>, run scripts, and automate repetitive tasks — OpenClaw Skills are the answer.</p>
+<p>This guide is for people who are new to OpenClaw and want to understand how the skill system works before diving into building their own.</p>
+<hr>
+<h2 id="what-is-openclaw">What is OpenClaw?</h2>
+<p>OpenClaw is a local AI agent framework that runs on your machine. Unlike cloud-based AI tools, everything happens locally — your data stays on your device, and you have full control over what the AI can and can&#39;t access.</p>
+<p>At its core, OpenClaw is a runtime that connects a language model to <strong>Skills</strong> — modular, reusable tools that extend what the AI can do.</p>
+<hr>
+<h2 id="what-is-a-skill">What is a Skill?</h2>
+<p>A Skill is a folder containing:</p>
+<pre><code>my-skill/
+├── SKILL.md       ← Describes what the skill does and how to use it
+├── scripts/       ← The actual executable scripts
+│   └── main.py   ← (or main.sh, main.js, etc.)
+└── data/          ← Optional: output files, cached data
+</code></pre>
+<p>The <code>SKILL.md</code> file is the most important part. It acts as a contract between you and the AI — it tells OpenClaw:</p>
+<ul>
+<li>What the skill does</li>
+<li>How to invoke it</li>
+<li>What arguments it accepts</li>
+<li>What it outputs</li>
+</ul>
+<p>When you ask OpenClaw to do something, it reads the <code>SKILL.md</code> files in your skills directory and decides which skill (if any) to use.</p>
+<hr>
+<h2 id="built-in-skills-vs-custom-skills">Built-in Skills vs Custom Skills</h2>
+<p>OpenClaw comes with some general-purpose skills out of the box, but the real power comes from <strong>custom skills you build for your own workflow</strong>.</p>
+<p>Some examples from my personal skills directory:</p>
+<table>
+<thead>
+<tr>
+<th>Skill</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>youtube-full-spectrum</code></td>
+<td>Fetches all analytics and transcripts from my YouTube channel</td>
+</tr>
+<tr>
+<td><code>yt-timestamp-autoposter</code></td>
+<td>Auto-generates chapter timestamps and posts them to YouTube</td>
+</tr>
+<tr>
+<td><code>office-hours</code></td>
+<td>Records, transcribes, and summarizes meetings</td>
+</tr>
+<tr>
+<td><code>ai-news</code></td>
+<td>Pulls the latest AI news and generates a daily briefing</td>
+</tr>
+</tbody></table>
+<p>Every one of these started as a manual process I was doing by hand. I turned them into skills so OpenClaw can handle them on command.</p>
+<hr>
+<h2 id="how-to-build-your-first-skill">How to Build Your First Skill</h2>
+<p>Let&#39;s build a simple skill that fetches the latest weather for a city.</p>
+<h3 id="step-1-create-the-folder-structure">Step 1: Create the folder structure</h3>
+<pre><code class="language-bash">mkdir -p ~/.openclaw/workspace/skills/weather/scripts
+touch ~/.openclaw/workspace/skills/weather/SKILL.md
+touch ~/.openclaw/workspace/skills/weather/scripts/main.py
+</code></pre>
+<h3 id="step-2-write-the-skillmd">Step 2: Write the SKILL.md</h3>
+<pre><code class="language-markdown"># Weather Checker
+
+Get the current weather for any city.
+
+## Usage
+
+Ask: &quot;What&#39;s the weather in [city]?&quot;
+
+## Output
+
+Returns temperature, conditions, and humidity as plain text.
+</code></pre>
+<h3 id="step-3-write-the-script">Step 3: Write the script</h3>
+<pre><code class="language-python">import sys
+import requests
+
+city = sys.argv[1] if len(sys.argv) &gt; 1 else &quot;New York&quot;
+response = requests.get(f&quot;https://wttr.in/{city}?format=3&quot;)
+print(response.text)
+</code></pre>
+<p>That&#39;s it. Now when you ask OpenClaw &quot;what&#39;s the weather in Austin?&quot;, it will find this skill, run the script with &quot;Austin&quot; as an argument, and return the result.</p>
+<hr>
+<h2 id="best-practices">Best Practices</h2>
+<ol>
+<li><strong>Keep skills focused</strong> — One skill should do one thing well. Don&#39;t build a &quot;do everything&quot; skill.</li>
+<li><strong>Write good SKILL.md files</strong> — The AI reads these to decide when to use a skill. Be clear and specific.</li>
+<li><strong>Handle errors gracefully</strong> — Always catch exceptions and print meaningful error messages. The AI will relay them to you.</li>
+<li><strong>Use <code>data/</code> for outputs</strong> — Store files, logs, and cached data in the <code>data/</code> subdirectory to keep things organized.</li>
+</ol>
+<hr>
+<h2 id="whats-next">What&#39;s Next</h2>
+<p>Once you&#39;re comfortable with basic skills, you can start building more sophisticated ones:</p>
+<ul>
+<li>Skills that chain together (output of one feeds into another)</li>
+<li>Skills with configuration files</li>
+<li>Skills that use local AI models via Ollama</li>
+<li>Skills that interact with web APIs and local file systems</li>
+</ul>
+<p>The OpenClaw skill system is intentionally simple so you can build on it quickly. If you can write a Python script, you can build a skill.</p>
+<p>Start with something you do manually every day and automate it. That&#39;s the mindset.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

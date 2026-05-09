@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "notebooklm-guide",
+    "title": "NotebookLM Full Course 2026: The Complete Beginner's Guide",
+    "date": "2026-05-01",
+    "excerpt": "Everything you need to know about Google's NotebookLM — from uploading sources and asking questions, to generating audio overviews and building research workflows.",
+    "thumbnail": "assets/images/blog-thumb-1.jpg",
+    "youtubeId": null,
+    "tags": [
+      "Full Course",
+      "NotebookLM",
+      "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-production",
+    "title": "The Engineer's Guide to Claude Code in Production",
+    "date": "2026-04-15",
+    "excerpt": "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.",
+    "thumbnail": "assets/images/blog-thumb-2.jpg",
+    "youtubeId": "M351KD77Lfs",
+    "tags": [
+      "Engineering",
+      "Claude Code",
+      "AI Dev Tools"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "openclaw-skills-guide",
+    "title": "OpenClaw Skills Explained: A Beginner's Guide",
+    "date": "2026-04-05",
+    "excerpt": "OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own.",
+    "thumbnail": "assets/images/blog-thumb-3.jpg",
+    "youtubeId": null,
+    "tags": [
+      "Beginner Guide",
+      "OpenClaw",
+      "AI Automation"
+    ],
+    "readTime": 4
+  }
+]

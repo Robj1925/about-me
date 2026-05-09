@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Engineer's Guide to Claude Code in Production — Robby J</title>
+  <meta name="description" content="How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow." />
+  <meta property="og:title" content="The Engineer's Guide to Claude Code in Production — Robby J" />
+  <meta property="og:description" content="How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumb-2.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Engineering</span><span class="post-tag">Claude Code</span><span class="post-tag">AI Dev Tools</span></div>
+      <h1 class="post-title">The Engineer's Guide to Claude Code in Production</h1>
+      <p class="post-excerpt">How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.</p>
+      <div class="post-meta">
+        <span>📅 April 14, 2026</span>
+        <span>·</span>
+        <span>⏱ 4 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumb-2.jpg" alt="The Engineer's Guide to Claude Code in Production thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/M351KD77Lfs"
+          title="YouTube video: The Engineer's Guide to Claude Code in Production"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Claude Code is one of the best AI coding tools available right now, but most developers are using it wrong. They&#39;re treating it like a magic code generator. In production engineering, that mindset will burn you quickly.</p>
+<p>Here&#39;s how I actually use it in real brownfield projects.</p>
+<hr>
+<h2>The Brownfield Problem</h2>
+<p>A <strong>brownfield project</strong> is existing code — a codebase that&#39;s already in production, has existing patterns, dependencies, and architecture decisions you have to respect. Most guides and demos show Claude Code on fresh, greenfield projects where you can do anything.</p>
+<p>Real engineering is brownfield. And the rules are different.</p>
+<hr>
+<h2>Rule 1: Give Claude Code Context, Not Tasks</h2>
+<p>The most common mistake I see engineers make:</p>
+<pre><code class="language-bash"># Wrong approach:
+&gt; &quot;Add authentication to my app&quot;
+
+# Right approach:
+&gt; &quot;Read CLAUDE.md and the /auth directory. We use JWT with refresh tokens stored in httpOnly cookies. 
+&gt; The pattern is established in user.service.ts. 
+&gt; Now add the same pattern to the admin route handler.&quot;
+</code></pre>
+<p>The second prompt is 10x more effective because Claude Code already understands your architecture before it writes a single line.</p>
+<h3>What to put in CLAUDE.md</h3>
+<p>Every project should have a <code>CLAUDE.md</code> file at the root. Think of it as a briefing document for your AI pair programmer:</p>
+<ul>
+<li>What the project does (2-3 sentences)</li>
+<li>The stack and key dependencies</li>
+<li>Architectural patterns you&#39;ve established</li>
+<li>What <strong>not</strong> to do (antipatterns, banned libraries, etc.)</li>
+<li>Where important things live in the directory structure</li>
+</ul>
+<hr>
+<h2>Rule 2: Review Diffs, Not Just Output</h2>
+<p>Claude Code can generate plausible-looking code that silently breaks existing contracts. Always review:</p>
+<ol>
+<li><strong>Function signatures</strong> — Did it change an existing function&#39;s parameters?</li>
+<li><strong>Import statements</strong> — Is it pulling in a new dependency you didn&#39;t ask for?</li>
+<li><strong>Error handling</strong> — Does it match your existing error boundary patterns?</li>
+<li><strong>Types</strong> — If you&#39;re on TypeScript, is it using <code>any</code> as a workaround?</li>
+</ol>
+<p>Use <code>git diff</code> after every significant Claude Code session before you run anything.</p>
+<hr>
+<h2>Rule 3: Use Subagents for Bounded Tasks</h2>
+<p>Claude Code&#39;s <code>/perceive</code> and subagent features work best when you give them <strong>bounded, well-defined tasks</strong> with a clear exit condition.</p>
+<pre><code>Good subagent task:
+&quot;Read the current UserProfile component. 
+ Add a &#39;lastLogin&#39; field to the display.
+ The data is already available on the user object as user.lastLoginAt.
+ Stop after updating the component and its test file.&quot;
+
+Bad subagent task:
+&quot;Improve the user profile page&quot;
+</code></pre>
+<p>Specificity is everything.</p>
+<hr>
+<h2>Rule 4: Always Run the Tests</h2>
+<p>This sounds obvious. It isn&#39;t. I&#39;ve watched senior engineers accept Claude Code output without running the test suite because &quot;it looks right.&quot;</p>
+<p>Run your tests. Every time. Set up a pre-commit hook if you have to.</p>
+<hr>
+<h2>My Actual Workflow</h2>
+<p>Here&#39;s what an effective Claude Code session looks like in my day-to-day:</p>
+<pre><code>1. Write or update CLAUDE.md with current task context
+2. Open Claude Code and give it a specific, bounded task
+3. Watch what it does — don&#39;t step away
+4. Review the diff with `git diff`
+5. Run the test suite
+6. Commit if everything passes
+7. Repeat for the next bounded task
+</code></pre>
+<p>The &quot;watch what it does&quot; step is important. Claude Code is a pair programmer, not an autonomous agent you deploy and walk away from.</p>
+<hr>
+<h2>Final Thoughts</h2>
+<p>Claude Code genuinely makes me faster on production code. But it requires you to be a better engineer, not a less engaged one. You still need to understand the architecture, set the constraints, and verify the output.</p>
+<p>The engineers who get the most out of AI coding tools are the ones who have strong opinions about their codebase and communicate those opinions clearly. The tool amplifies you — so bring your best self to the session.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

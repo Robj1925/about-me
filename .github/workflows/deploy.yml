@@ -14,15 +14,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Build the project and Inject Secrets
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build (Markdown → HTML + Inject Secrets)
         env:
           EMAIL: ${{ secrets.EMAIL }}
         run: |
+          # Run the blog build (markdown → HTML, generates blog/posts.json)
+          npm run build
+
+          # Create dist directory with all site files
           mkdir dist
-          cp -r assets css js index.html dist/
-          
-          # This is the critical step where we inject the GitHub Secret
-          # It replaces the placeholder in your Javascript with your actual email
+          cp -r assets css js index.html blog dist/
+
+          # Inject the secret email into the JS
           sed -i "s/___CONTACT_EMAIL___/${EMAIL}/g" dist/js/main.js
 
       - name: Deploy to GitHub Pages

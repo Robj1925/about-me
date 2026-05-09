@@ -1,0 +1,309 @@
+#!/usr/bin/env node
+/**
+ * build.js — Markdown-to-HTML static site builder for blog posts
+ *
+ * - Reads all .md files from blog/posts/
+ * - Parses frontmatter (title, date, excerpt, thumbnail, tags, youtubeId)
+ * - Converts markdown body to HTML
+ * - Outputs individual post pages to blog/[slug].html
+ * - Outputs blog/index.html (all posts listing)
+ * - Outputs blog/posts.json (metadata for home page JS)
+ */
+
+const fs = require('fs');
+const path = require('path');
+const matter = require('gray-matter');
+const { marked } = require('marked');
+
+// ── Paths ──────────────────────────────────────────────────────────────────
+const ROOT        = path.resolve(__dirname, '..');
+const POSTS_SRC   = path.join(ROOT, 'blog', 'posts');
+const BLOG_OUT    = path.join(ROOT, 'blog');
+const POSTS_JSON  = path.join(BLOG_OUT, 'posts.json');
+
+// ── Helpers ────────────────────────────────────────────────────────────────
+function slugify(filename) {
+  return path.basename(filename, '.md');
+}
+
+function formatDate(dateStr) {
+  const d = new Date(dateStr);
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function readingTime(content) {
+  const words = content.trim().split(/\s+/).length;
+  return Math.ceil(words / 200);
+}
+
+// ── Post Page Template ─────────────────────────────────────────────────────
+function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlContent, slug, readTime }) {
+  const tagBadges = (tags || []).map(t => `<span class="post-tag">${t}</span>`).join('');
+  const heroImage = thumbnail
+    ? `<img src="../${thumbnail}" alt="${title} thumbnail" class="post-hero-img" />`
+    : '';
+  const youtubeEmbed = youtubeId
+    ? `<div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/${youtubeId}"
+          title="YouTube video: ${title}"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>`
+    : '';
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>${title} — Robby J</title>
+  <meta name="description" content="${excerpt}" />
+  <meta property="og:title" content="${title} — Robby J" />
+  <meta property="og:description" content="${excerpt}" />
+  ${thumbnail ? `<meta property="og:image" content="https://robj1925.github.io/about-me/${thumbnail}" />` : ''}
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags">${tagBadges}</div>
+      <h1 class="post-title">${title}</h1>
+      <p class="post-excerpt">${excerpt}</p>
+      <div class="post-meta">
+        <span>📅 ${formatDate(date)}</span>
+        <span>·</span>
+        <span>⏱ ${readTime} min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    ${heroImage}
+
+    <!-- YouTube Embed -->
+    ${youtubeEmbed}
+
+    <!-- Content -->
+    <div class="post-content">
+      ${htmlContent}
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>`;
+}
+
+// ── Blog Index Template ────────────────────────────────────────────────────
+function blogIndexTemplate(posts) {
+  const cards = posts.map(p => {
+    const tagBadges = (p.tags || []).map(t => `<span class="blog-tag">${t}</span>`).join('');
+    const thumb = p.thumbnail
+      ? `<img src="../${p.thumbnail}" alt="${p.title} thumbnail" class="blog-thumb" loading="lazy" />`
+      : `<div class="blog-thumb-placeholder"></div>`;
+    return `
+    <a href="${p.slug}.html" class="blog-card blog-card-link" aria-label="Read: ${p.title}">
+      ${thumb}
+      <div class="blog-body">
+        <div class="blog-tags">${tagBadges}</div>
+        <h2 class="blog-title">${p.title}</h2>
+        <p class="blog-excerpt">${p.excerpt}</p>
+        <div class="blog-footer">
+          <span class="blog-date">${formatDate(p.date)}</span>
+          <span class="blog-readmore">Read article →</span>
+        </div>
+      </div>
+    </a>`;
+  }).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Robby J</title>
+  <meta name="description" content="Written guides, deep dives, and tutorials on AI engineering, automation, and developer tools from Robby J." />
+  <meta property="og:title" content="Blog — Robby J" />
+  <meta property="og:description" content="Written guides, deep dives, and tutorials on AI engineering and automation." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.9rem">← Home</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== BLOG INDEX ===== -->
+<main>
+  <section aria-labelledby="blog-index-heading" style="padding-top: 120px;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// all_posts</span>
+        <h1 id="blog-index-heading">Blog</h1>
+        <p>Written guides, deep dives, and tutorials on AI engineering and automation.</p>
+      </div>
+      <div class="blog-grid blog-grid-index">
+        ${cards}
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>`;
+}
+
+// ── Main Build ─────────────────────────────────────────────────────────────
+function build() {
+  // Ensure blog output directory exists
+  if (!fs.existsSync(BLOG_OUT)) fs.mkdirSync(BLOG_OUT, { recursive: true });
+  if (!fs.existsSync(POSTS_SRC)) {
+    console.log('⚠️  No blog/posts/ directory found. Creating it...');
+    fs.mkdirSync(POSTS_SRC, { recursive: true });
+  }
+
+  // Read all markdown files
+  const files = fs.readdirSync(POSTS_SRC).filter(f => f.endsWith('.md'));
+
+  if (files.length === 0) {
+    console.log('⚠️  No markdown posts found in blog/posts/. Skipping build.');
+    fs.writeFileSync(POSTS_JSON, JSON.stringify([], null, 2));
+    return;
+  }
+
+  const posts = [];
+
+  for (const file of files) {
+    const slug    = slugify(file);
+    const raw     = fs.readFileSync(path.join(POSTS_SRC, file), 'utf8');
+    const parsed  = matter(raw);
+    const fm      = parsed.data;
+    const body    = parsed.content;
+    const html    = marked(body);
+    const readTime = readingTime(body);
+
+    const post = {
+      slug,
+      title:     fm.title     || slug,
+      date:      fm.date      || new Date().toISOString(),
+      excerpt:   fm.excerpt   || '',
+      thumbnail: fm.thumbnail || null,
+      youtubeId: fm.youtubeId || null,
+      tags:      fm.tags      || [],
+      readTime,
+    };
+
+    // Write individual post page
+    const postHtml = postTemplate({ ...post, htmlContent: html });
+    fs.writeFileSync(path.join(BLOG_OUT, `${slug}.html`), postHtml);
+    console.log(`  ✓ Built post: ${slug}.html`);
+
+    posts.push(post);
+  }
+
+  // Sort newest first
+  posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Write posts.json (used by home page JS)
+  fs.writeFileSync(POSTS_JSON, JSON.stringify(posts, null, 2));
+  console.log(`  ✓ Generated blog/posts.json (${posts.length} posts)`);
+
+  // Write blog index
+  const indexHtml = blogIndexTemplate(posts);
+  fs.writeFileSync(path.join(BLOG_OUT, 'index.html'), indexHtml);
+  console.log(`  ✓ Generated blog/index.html`);
+
+  console.log(`\n🚀 Build complete! ${posts.length} post(s) processed.\n`);
+}
+
+build();

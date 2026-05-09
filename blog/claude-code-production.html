@@ -68,11 +68,11 @@
       <p>Claude Code is one of the best AI coding tools available right now, but most developers are using it wrong. They&#39;re treating it like a magic code generator. In production engineering, that mindset will burn you quickly.</p>
 <p>Here&#39;s how I actually use it in real brownfield projects.</p>
 <hr>
-<h2>The Brownfield Problem</h2>
+<h2 id="the-brownfield-problem">The Brownfield Problem</h2>
 <p>A <strong>brownfield project</strong> is existing code — a codebase that&#39;s already in production, has existing patterns, dependencies, and architecture decisions you have to respect. Most guides and demos show Claude Code on fresh, greenfield projects where you can do anything.</p>
 <p>Real engineering is brownfield. And the rules are different.</p>
 <hr>
-<h2>Rule 1: Give Claude Code Context, Not Tasks</h2>
+<h2 id="rule-1-give-claude-code-context-not-tasks">Rule 1: Give Claude Code Context, Not Tasks</h2>
 <p>The most common mistake I see engineers make:</p>
 <pre><code class="language-bash"># Wrong approach:
 &gt; &quot;Add authentication to my app&quot;
@@ -83,7 +83,7 @@
 &gt; Now add the same pattern to the admin route handler.&quot;
 </code></pre>
 <p>The second prompt is 10x more effective because Claude Code already understands your architecture before it writes a single line.</p>
-<h3>What to put in CLAUDE.md</h3>
+<h3 id="what-to-put-in-claudemd">What to put in CLAUDE.md</h3>
 <p>Every project should have a <code>CLAUDE.md</code> file at the root. Think of it as a briefing document for your AI pair programmer:</p>
 <ul>
 <li>What the project does (2-3 sentences)</li>
@@ -93,7 +93,7 @@
 <li>Where important things live in the directory structure</li>
 </ul>
 <hr>
-<h2>Rule 2: Review Diffs, Not Just Output</h2>
+<h2 id="rule-2-review-diffs-not-just-output">Rule 2: Review Diffs, Not Just Output</h2>
 <p>Claude Code can generate plausible-looking code that silently breaks existing contracts. Always review:</p>
 <ol>
 <li><strong>Function signatures</strong> — Did it change an existing function&#39;s parameters?</li>
@@ -103,7 +103,7 @@
 </ol>
 <p>Use <code>git diff</code> after every significant Claude Code session before you run anything.</p>
 <hr>
-<h2>Rule 3: Use Subagents for Bounded Tasks</h2>
+<h2 id="rule-3-use-subagents-for-bounded-tasks">Rule 3: Use Subagents for Bounded Tasks</h2>
 <p>Claude Code&#39;s <code>/perceive</code> and subagent features work best when you give them <strong>bounded, well-defined tasks</strong> with a clear exit condition.</p>
 <pre><code>Good subagent task:
 &quot;Read the current UserProfile component. 
@@ -116,11 +116,11 @@ Bad subagent task:
 </code></pre>
 <p>Specificity is everything.</p>
 <hr>
-<h2>Rule 4: Always Run the Tests</h2>
+<h2 id="rule-4-always-run-the-tests">Rule 4: Always Run the Tests</h2>
 <p>This sounds obvious. It isn&#39;t. I&#39;ve watched senior engineers accept Claude Code output without running the test suite because &quot;it looks right.&quot;</p>
 <p>Run your tests. Every time. Set up a pre-commit hook if you have to.</p>
 <hr>
-<h2>My Actual Workflow</h2>
+<h2 id="my-actual-workflow">My Actual Workflow</h2>
 <p>Here&#39;s what an effective Claude Code session looks like in my day-to-day:</p>
 <pre><code>1. Write or update CLAUDE.md with current task context
 2. Open Claude Code and give it a specific, bounded task
@@ -132,7 +132,7 @@ Bad subagent task:
 </code></pre>
 <p>The &quot;watch what it does&quot; step is important. Claude Code is a pair programmer, not an autonomous agent you deploy and walk away from.</p>
 <hr>
-<h2>Final Thoughts</h2>
+<h2 id="final-thoughts">Final Thoughts</h2>
 <p>Claude Code genuinely makes me faster on production code. But it requires you to be a better engineer, not a less engaged one. You still need to understand the architecture, set the constraints, and verify the output.</p>
 <p>The engineers who get the most out of AI coding tools are the ones who have strong opinions about their codebase and communicate those opinions clearly. The tool amplifies you — so bring your best self to the session.</p>
 

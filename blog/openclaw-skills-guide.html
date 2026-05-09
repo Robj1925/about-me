@@ -59,11 +59,11 @@
       <p>If you&#39;ve ever wanted your AI assistant to do more than just chat — to actually <em>take actions</em>, run scripts, and automate repetitive tasks — OpenClaw Skills are the answer.</p>
 <p>This guide is for people who are new to OpenClaw and want to understand how the skill system works before diving into building their own.</p>
 <hr>
-<h2>What is OpenClaw?</h2>
+<h2 id="what-is-openclaw">What is OpenClaw?</h2>
 <p>OpenClaw is a local AI agent framework that runs on your machine. Unlike cloud-based AI tools, everything happens locally — your data stays on your device, and you have full control over what the AI can and can&#39;t access.</p>
 <p>At its core, OpenClaw is a runtime that connects a language model to <strong>Skills</strong> — modular, reusable tools that extend what the AI can do.</p>
 <hr>
-<h2>What is a Skill?</h2>
+<h2 id="what-is-a-skill">What is a Skill?</h2>
 <p>A Skill is a folder containing:</p>
 <pre><code>my-skill/
 ├── SKILL.md       ← Describes what the skill does and how to use it
@@ -80,7 +80,7 @@
 </ul>
 <p>When you ask OpenClaw to do something, it reads the <code>SKILL.md</code> files in your skills directory and decides which skill (if any) to use.</p>
 <hr>
-<h2>Built-in Skills vs Custom Skills</h2>
+<h2 id="built-in-skills-vs-custom-skills">Built-in Skills vs Custom Skills</h2>
 <p>OpenClaw comes with some general-purpose skills out of the box, but the real power comes from <strong>custom skills you build for your own workflow</strong>.</p>
 <p>Some examples from my personal skills directory:</p>
 <table>
@@ -109,14 +109,14 @@
 </tbody></table>
 <p>Every one of these started as a manual process I was doing by hand. I turned them into skills so OpenClaw can handle them on command.</p>
 <hr>
-<h2>How to Build Your First Skill</h2>
+<h2 id="how-to-build-your-first-skill">How to Build Your First Skill</h2>
 <p>Let&#39;s build a simple skill that fetches the latest weather for a city.</p>
-<h3>Step 1: Create the folder structure</h3>
+<h3 id="step-1-create-the-folder-structure">Step 1: Create the folder structure</h3>
 <pre><code class="language-bash">mkdir -p ~/.openclaw/workspace/skills/weather/scripts
 touch ~/.openclaw/workspace/skills/weather/SKILL.md
 touch ~/.openclaw/workspace/skills/weather/scripts/main.py
 </code></pre>
-<h3>Step 2: Write the SKILL.md</h3>
+<h3 id="step-2-write-the-skillmd">Step 2: Write the SKILL.md</h3>
 <pre><code class="language-markdown"># Weather Checker
 
 Get the current weather for any city.
@@ -129,7 +129,7 @@ Ask: &quot;What&#39;s the weather in [city]?&quot;
 
 Returns temperature, conditions, and humidity as plain text.
 </code></pre>
-<h3>Step 3: Write the script</h3>
+<h3 id="step-3-write-the-script">Step 3: Write the script</h3>
 <pre><code class="language-python">import sys
 import requests
 
@@ -139,7 +139,7 @@ print(response.text)
 </code></pre>
 <p>That&#39;s it. Now when you ask OpenClaw &quot;what&#39;s the weather in Austin?&quot;, it will find this skill, run the script with &quot;Austin&quot; as an argument, and return the result.</p>
 <hr>
-<h2>Best Practices</h2>
+<h2 id="best-practices">Best Practices</h2>
 <ol>
 <li><strong>Keep skills focused</strong> — One skill should do one thing well. Don&#39;t build a &quot;do everything&quot; skill.</li>
 <li><strong>Write good SKILL.md files</strong> — The AI reads these to decide when to use a skill. Be clear and specific.</li>
@@ -147,7 +147,7 @@ print(response.text)
 <li><strong>Use <code>data/</code> for outputs</strong> — Store files, logs, and cached data in the <code>data/</code> subdirectory to keep things organized.</li>
 </ol>
 <hr>
-<h2>What&#39;s Next</h2>
+<h2 id="whats-next">What&#39;s Next</h2>
 <p>Once you&#39;re comfortable with basic skills, you can start building more sophisticated ones:</p>
 <ul>
 <li>Skills that chain together (output of one feeds into another)</li>

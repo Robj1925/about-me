@@ -220,17 +220,56 @@
   </div>
 </section>
 
+<!-- ===== VIDEOS ===== -->
+<section id="videos" aria-labelledby="videos-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">// latest_videos</span>
+      <h2 id="videos-heading">Latest Videos</h2>
+      <p>Real tutorials from someone who's actually shipping code with AI every day.</p>
+    </div>
+    <div class="blog-grid">
+      <article class="blog-card">
+        <img src="assets/images/blog-thumb-1.jpg" alt="NotebookLM Full Course 2026 thumbnail" class="blog-thumb" loading="lazy" />
+        <div class="blog-body">
+          <span class="blog-tag">Full Course</span>
+          <h3 class="blog-title">NOTEBOOKLM FULL COURSE 2026: The Complete Beginner's Guide</h3>
+          <span class="blog-date">May 2026</span>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="assets/images/blog-thumb-2.jpg" alt="Engineer's Guide to Claude Code thumbnail" class="blog-thumb" loading="lazy" />
+        <div class="blog-body">
+          <span class="blog-tag">Engineering</span>
+          <h3 class="blog-title">The Engineer's Guide to Claude Code in Production</h3>
+          <span class="blog-date">April 2026</span>
+        </div>
+      </article>
+      <article class="blog-card">
+        <img src="assets/images/blog-thumb-3.jpg" alt="OpenClaw Skills Explained thumbnail" class="blog-thumb" loading="lazy" />
+        <div class="blog-body">
+          <span class="blog-tag">Beginner Guide</span>
+          <h3 class="blog-title">OpenClaw Skills Explained: A Beginner's Guide</h3>
+          <span class="blog-date">April 2026</span>
+        </div>
+      </article>
+    </div>
+    <div style="text-align:center; margin-top: var(--space-8)">
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-ghost" id="all-videos-btn">View All Videos →</a>
+    </div>
+  </div>
+</section>
+
 <!-- ===== BLOG ===== -->
 <section id="blog" aria-labelledby="blog-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">// latest_content</span>
+      <span class="section-tag">// latest_posts</span>
       <h2 id="blog-heading">Latest Posts</h2>
-      <p>Written deep dives from someone who's actually shipping code with AI every day.</p>
+      <p>Written deep dives and guides on AI engineering, automation, and developer tools.</p>
     </div>
     <div class="blog-grid" id="blog-grid" aria-live="polite">
-      <!-- Populated dynamically from blog/posts.json -->
-      <div class="blog-loading">Loading posts…</div>
+      <!-- Populated by blog/posts-data.js -->
     </div>
     <div style="text-align:center; margin-top: var(--space-8)">
       <a href="blog/index.html" class="btn btn-ghost" id="all-posts-btn">View All Posts →</a>
@@ -288,6 +327,7 @@
   </div>
 </footer>
 
+<script src="blog/posts-data.js" defer></script>
 <script src="js/main.js" defer></script>
 </body>
 </html>

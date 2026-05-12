@@ -1,5 +1,19 @@
 [
   {
+    "slug": "escaping-the-dumb-zone",
+    "title": "Escaping the \"Dumb Zone\": Why Your AI Context Window is Your Biggest Secret Weapon",
+    "date": "2026-05-12",
+    "excerpt": "Think of your context window as an array. Learn why assigning multiple objectives to an LLM leads to 'The Dumb Zone' and how to keep your context lean for better performance.",
+    "thumbnail": "assets/images/blog-thumb-4.png",
+    "youtubeId": "O2bBWDoxO4s",
+    "tags": [
+      "AI Engineering",
+      "Context Window",
+      "Best Practices"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "notebooklm-guide",
     "title": "NotebookLM Full Course 2026: The Complete Beginner's Guide",
     "date": "2026-05-01",
@@ -25,7 +39,7 @@
       "Claude Code",
       "AI Dev Tools"
     ],
-    "readTime": 4
+    "readTime": 16
   },
   {
     "slug": "openclaw-skills-guide",

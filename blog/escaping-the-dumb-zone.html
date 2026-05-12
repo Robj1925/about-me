@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Escaping the "Dumb Zone": Why Your AI Context Window is Your Biggest Secret Weapon — Robby J</title>
   <meta name="description" content="Think of your context window as an array. Learn why assigning multiple objectives to an LLM leads to 'The Dumb Zone' and how to keep your context lean for better performance." />
-  <meta property="og:title" content="Escaping the 'Dumb Zone': Why Your AI Context Window is Your Biggest Secret Weapon — Robby J" />
+  <meta property="og:title" content="Escaping the "Dumb Zone": Why Your AI Context Window is Your Biggest Secret Weapon — Robby J" />
   <meta property="og:description" content="Think of your context window as an array. Learn why assigning multiple objectives to an LLM leads to 'The Dumb Zone' and how to keep your context lean for better performance." />
   <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumb-4.png" />
   <meta property="og:type" content="article" />
@@ -45,65 +45,66 @@
     <header class="post-header">
       <div class="post-tags"><span class="post-tag">AI Engineering</span><span class="post-tag">Context Window</span><span class="post-tag">Best Practices</span></div>
       <h1 class="post-title">Escaping the "Dumb Zone": Why Your AI Context Window is Your Biggest Secret Weapon</h1>
-      <p class="post-excerpt">Your LLM doesn't have "real" memory. Every time you prompt it, your entire conversation history gets sent to the model. Here's why that matters.</p>
+      <p class="post-excerpt">Think of your context window as an array. Learn why assigning multiple objectives to an LLM leads to 'The Dumb Zone' and how to keep your context lean for better performance.</p>
       <div class="post-meta">
-        <span>📅 May 12, 2026</span>
+        <span>📅 May 11, 2026</span>
         <span>·</span>
         <span>⏱ 2 min read</span>
       </div>
     </header>
 
     <!-- Hero Image -->
-    <img src="../assets/images/blog-thumb-4.png" alt="Escaping the Dumb Zone thumbnail" class="post-hero-img" />
+    <img src="../assets/images/blog-thumb-4.png" alt="Escaping the "Dumb Zone": Why Your AI Context Window is Your Biggest Secret Weapon thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/O2bBWDoxO4s"
+          title="YouTube video: Escaping the "Dumb Zone": Why Your AI Context Window is Your Biggest Secret Weapon"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
 
     <!-- Content -->
     <div class="post-content">
       <p>Think of your context window as an <strong>array</strong>.</p>
-      <p>Your LLM doesn't have "real" memory. Every time you prompt it, this entire array gets sent to the model. Inside it, you might have:</p>
-      <ul>
-        <li>System message</li>
-        <li>Project specs</li>
-        <li>Current code</li>
-        <li>Implementation plan</li>
-        <li>Conversation history</li>
-      </ul>
+<p>Your LLM doesn&#39;t have &quot;real&quot; memory. Every time you prompt it, this entire array gets sent to the model. Inside it, you might have:</p>
+<ul>
+<li>System message</li>
+<li>Project specs</li>
+<li>Current code</li>
+<li>Implementation plan</li>
+<li>Conversation history</li>
+</ul>
+<p>The LLM essentially has a sliding window over this array. As the array fills up, the window moves forward — and older context gets pushed out.</p>
+<hr>
+<h2 id="stay-out-of-the-dumb-zone">Stay out of the &quot;Dumb Zone&quot;</h2>
+<p>There&#39;s a dotted line (metaphorically speaking). Once your context window crosses it, you&#39;re in the <strong>Dumb Zone</strong>.</p>
+<p>At this point, the model starts hallucinating, forgetting earlier instructions, and confusing details. If your session crosses that line, start a new session. Don&#39;t try to push through — it won&#39;t get better.</p>
+<hr>
+<h2 id="the-real-problem-multiple-objectives">The Real Problem: Multiple Objectives</h2>
+<p>When you assign one objective to the LLM, your array holds:</p>
+<p><code>Specs → Code → Plan</code></p>
+<p>That&#39;s fine. Manageable.</p>
+<p>But when you assign another objective in the same session, you&#39;re now holding:</p>
+<p><code>(Specs → Code → Plan) × 2</code></p>
+<p>Now the context window balloons. It gets too big for the sliding window, and <strong>compaction</strong> kicks in.</p>
+<hr>
+<h2 id="compaction-is-lossy">Compaction is Lossy</h2>
+<p>Compaction tries to compress your context to free up space, but it&#39;s extremely lossy and non-deterministic. Important information will get lost in the process.</p>
+<hr>
+<h2 id="the-rule">The Rule</h2>
+<p>Keep your context window as lean as possible. Keep your sliding window as small as possible. <strong>One objective per session.</strong> That&#39;s the game.</p>
+<p>Source: <a href="https://youtu.be/O2bBWDoxO4s?si=QKlSSExcVSIzmUEh">Robby J on YouTube</a></p>
 
-      <p>The LLM essentially has a sliding window over this array. As the array fills up, the window moves forward — and older context gets pushed out.</p>
-
-      <hr>
-
-      <h2>Stay out of the "Dumb Zone"</h2>
-      <p>There's a dotted line (metaphorically speaking). Once your context window crosses it, you're in the <strong>Dumb Zone</strong>.</p>
-      <p>At this point, the model starts hallucinating, forgetting earlier instructions, and confusing details. If your session crosses that line, start a new session. Don't try to push through — it won't get better.</p>
-
-      <hr>
-
-      <h2>The Real Problem: Multiple Objectives</h2>
-      <p>When you assign one objective to the LLM, your array holds:</p>
-      <pre><code>Specs → Code → Plan</code></pre>
-      <p>That's fine. Manageable.</p>
-
-      <p>But when you assign another objective in the same session, you're now holding:</p>
-      <pre><code>(Specs → Code → Plan) × 2</code></pre>
-
-      <p>Now the context window balloons. It gets too big for the sliding window, and <strong>compaction</strong> kicks in.</p>
-
-      <hr>
-
-      <h2>Compaction is Lossy</h2>
-      <p>Compaction tries to compress your context to free up space, but it's extremely lossy and non-deterministic. Important information will get lost in the process.</p>
-
-      <hr>
-
-      <h2>The Rule</h2>
-      <p>Keep your context window as lean as possible. Keep your sliding window as small as possible. <strong>One objective per session.</strong> That's the game.</p>
-
-      <p><em>Source: <a href="https://youtu.be/O2bBWDoxO4s?si=QKlSSExcVSIzmUEh" target="_blank" rel="noopener">Robby J on YouTube</a></em></p>
     </div>
 
     <!-- CTA -->
     <div class="post-cta-box">
-      <h3>Want to learn more?</h3>
+      <h3>Enjoyed this?</h3>
       <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
       <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
     </div>

@@ -60,4 +60,4 @@ Compaction tries to compress your context to free up space, but it's extremely l
 
 Keep your context window as lean as possible. Keep your sliding window as small as possible. **One objective per session.** That's the game.
 
-Source: [Robby J on YouTube](https://youtu.be/O2bBWDoxO4s?si=QKlSSExcVSIzmUEh)
+Source: [Ralph Wiggum (and why Claude Code's implementation isn't it) with Geoffrey Huntley and Dexter Horthy](https://youtu.be/O2bBWDoxO4s?si=QKlSSExcVSIzmUEh)

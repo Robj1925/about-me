@@ -77,7 +77,7 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
 
 <!-- ===== SKOOL BANNER ===== -->
 <div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
-  Want to learn how to make AI do the work for you? <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">Join here</a>
+  If you want to learn more concepts like this join my Skool Community: <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
 </div>
 
 <!-- ===== PROGRESS BAR ===== -->

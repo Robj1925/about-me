@@ -20,6 +20,8 @@ Your LLM doesn't have "real" memory. Every time you prompt it, this entire array
 - Implementation plan
 - Conversation history
 
+![AI Context Window Diagram](../assets/images/context-window-diagram.png)
+
 The LLM essentially has a sliding window over this array. As the array fills up, the window moves forward — and older context gets pushed out.
 
 ***

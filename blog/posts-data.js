@@ -6,7 +6,7 @@ window.BLOG_POSTS = [
     "date": "2026-05-13",
     "excerpt": "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents.",
     "thumbnail": "assets/images/blog-thumb-1.jpg",
-    "youtubeId": "BICShHBIgsU",
+    "youtubeId": "iZJmBM5k-GA",
     "tags": [
       "AI Agents",
       "Computer Use",

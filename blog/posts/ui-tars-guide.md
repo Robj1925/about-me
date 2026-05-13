@@ -3,12 +3,14 @@ title: "UI-TARS: ByteDance’s Open-Source Answer to Computer Use"
 date: "2026-05-13"
 excerpt: "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents."
 thumbnail: "assets/images/blog-thumb-1.jpg"
-youtubeId: "BICShHBIgsU"
+youtubeId: "iZJmBM5k-GA"
 tags:
   - AI Agents
   - Computer Use
   - ByteDance
 ---
+
+Want to learn how to make AI do the work for you? Join here: https://www.skool.com/ai-academy-with-robby-6849/about
 
 ByteDance (the parent company of TikTok) just released **UI-TARS**, a cutting-edge, open-source Vision-Language AI agent that can autonomously control your computer, mobile device, or web browser.
 

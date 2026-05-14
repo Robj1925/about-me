@@ -2,7 +2,7 @@
 title: "Machine Learning Explained: How Computers Learn Like Humans"
 date: "2026-05-14"
 excerpt: "Ever wonder how computers learn on their own? I'm Robby, an AI engineer, and I'm breaking down how machine learning works without the complicated math."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/machine-learning-explained-how-computers-learn-without-rules-machinelearning-yt.jpg"
 youtubeId: "dulgrJjZe3A"
 tags:
   - Machine Learning

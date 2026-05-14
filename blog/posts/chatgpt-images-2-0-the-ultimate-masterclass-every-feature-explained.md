@@ -1,6 +1,6 @@
 ---
 title: "ChatGPT Images 2.0: Everything You Need to Know About the New AI"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "OpenAI just launched ChatGPT Images 2.0, a huge upgrade that changes how AI makes pictures. Learn how it works, why it's better at spelling, and how to use it."
 thumbnail: "assets/images/blog-thumbnails/chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.jpeg"
 youtubeId: "9xrIVzPax4A"

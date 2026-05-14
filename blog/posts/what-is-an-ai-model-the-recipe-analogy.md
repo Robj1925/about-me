@@ -2,7 +2,7 @@
 title: "What Is an AI Model? The Secret Recipe Explained"
 date: "2026-05-14"
 excerpt: "Ever wonder how computers learn to think? Let's break down what an AI model is using a simple kitchen recipe analogy."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/what-is-an-ai-model-the-recipe-analogy-yt.jpg"
 youtubeId: "fDa_r0sUPMw"
 tags:
   - AI

@@ -1,6 +1,6 @@
 ---
 title: "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM."
 thumbnail: "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpeg"
 youtubeId: "PgmwxA1I94Y"

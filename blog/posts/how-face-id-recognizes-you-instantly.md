@@ -2,7 +2,7 @@
 title: "How Does Face ID Actually Work? The Tech Behind Your iPhone"
 date: "2026-05-14"
 excerpt: "Ever wonder how your iPhone recognizes your face without taking a picture? Let's dive into the invisible 3D mapping technology that keeps your data safe."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-face-id-recognizes-you-instantly-yt.jpg"
 youtubeId: "nXMKYNgO_mc"
 tags:
   - Apple

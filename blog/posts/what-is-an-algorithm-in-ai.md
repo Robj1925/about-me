@@ -2,7 +2,7 @@
 title: "What Is an AI Algorithm? A Simple Guide for Everyone"
 date: "2026-05-14"
 excerpt: "Curious how AI actually works? Learn what an algorithm is and how it helps computers learn, explained by a real software engineer."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/what-is-an-algorithm-in-ai-yt.jpg"
 youtubeId: "SdII73-7Bkk"
 tags:
   - AI

@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 4.21 Update: Everything You Need to Know"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "OpenClaw 4.21 is here to make your AI work smoother and faster. Check out the biggest fixes for crashes, costs, and macOS performance."
 thumbnail: "assets/images/blog-thumbnails/openclaw-4-21-update-is-insane.png"
 youtubeId: "33125SFynkA"

@@ -2,7 +2,7 @@
 title: "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen"
 date: "2026-05-14"
 excerpt: "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg"
 youtubeId: "DiQaXiJk0_s"
 tags:
   - AI

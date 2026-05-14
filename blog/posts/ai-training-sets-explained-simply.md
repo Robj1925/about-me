@@ -2,7 +2,7 @@
 title: "What Is an AI Training Set? AI Basics Explained"
 date: "2026-05-14"
 excerpt: "Ever wonder how computers learn? Join me, Robby, as I break down AI training sets and how they teach machines to see the world."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/ai-training-sets-explained-simply-yt.jpg"
 youtubeId: "ylfaEQ5l5eI"
 tags:
   - Artificial Intelligence

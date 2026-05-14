@@ -2,7 +2,7 @@
 title: "How Does YouTube Know What You Want to Watch Next?"
 date: "2026-05-14"
 excerpt: "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg"
 youtubeId: "a5Ti8QLA7C4"
 tags:
   - AI

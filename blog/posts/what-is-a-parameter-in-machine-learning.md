@@ -2,7 +2,7 @@
 title: "What Are AI Parameters? A Simple Guide to Machine Learning"
 date: "2026-05-14"
 excerpt: "Ever wonder how AI actually learns? Learn what parameters are and how they help computers store knowledge in this easy guide from a software engineer."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/what-is-a-parameter-in-machine-learning-yt.jpg"
 youtubeId: "ePNKMIBHfEo"
 tags:
   - AI

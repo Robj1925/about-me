@@ -2,7 +2,7 @@
 title: "How to Build Your First AI App with Google Gemini (Easy Guide)"
 date: "2026-05-14"
 excerpt: "Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough-yt.jpg"
 youtubeId: "lX17ByJbFfc"
 tags:
   - AI

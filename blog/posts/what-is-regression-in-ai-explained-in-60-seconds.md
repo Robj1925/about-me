@@ -2,7 +2,7 @@
 title: "What is Regression? AI Prediction Explained Simply"
 date: "2026-05-14"
 excerpt: "Ever wonder how AI guesses numbers like house prices or stock trends? Learn how regression works in plain English."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/what-is-regression-in-ai-explained-in-60-seconds-yt.jpg"
 youtubeId: "CFRtKhFqpEk"
 tags:
   - AI

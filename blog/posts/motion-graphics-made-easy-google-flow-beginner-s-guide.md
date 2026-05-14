@@ -1,6 +1,6 @@
 ---
 title: "Motion Graphics Made Easy: A Beginner’s Guide to Google AI Flow"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "Learn how to turn static images into professional motion graphics using Google's powerful AI Creative Studio Flow. It's easier than you think!"
 thumbnail: "assets/images/blog-thumbnails/motion-graphics-made-easy-google-flow-beginner-s-guide.jpeg"
 youtubeId: "dyXBznfoMqI"

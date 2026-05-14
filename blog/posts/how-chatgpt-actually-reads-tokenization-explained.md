@@ -2,7 +2,7 @@
 title: "How Does ChatGPT Read? The Secret World of Tokenization"
 date: "2026-05-14"
 excerpt: "Ever wonder how AI understands your questions? It’s not magic—it’s math! Learn how tokenization turns your words into numbers."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-chatgpt-actually-reads-tokenization-explained-yt.jpg"
 youtubeId: "Svn7A6pG6_Y"
 tags:
   - AI

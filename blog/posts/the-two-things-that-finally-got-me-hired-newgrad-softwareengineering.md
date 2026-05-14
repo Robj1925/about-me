@@ -2,7 +2,7 @@
 title: "How to Actually Get Hired as a Software Engineer (My Secret Strategy)"
 date: "2026-05-14"
 excerpt: "Struggling to find a tech job? Learn the two simple strategies that helped me go from failing interviews to getting hired as a software engineer."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/the-two-things-that-finally-got-me-hired-newgrad-softwareengineering-yt.jpg"
 youtubeId: "bCHkzpz71Ro"
 tags:
   - Software Engineering

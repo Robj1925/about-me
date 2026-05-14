@@ -2,7 +2,7 @@
 title: "What Is Generative AI? How Computers Are Starting to Create"
 date: "2026-05-14"
 excerpt: "Ever wonder how computers make art and write stories? Let's look at how Generative AI works like a master chef inventing new recipes."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/what-is-generative-ai-the-technology-that-creates-yt.jpg"
 youtubeId: "l5XfrscuRQY"
 tags:
   - Generative AI

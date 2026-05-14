@@ -2,7 +2,7 @@
 title: "What Is AI? A Simple Guide for Everyone"
 date: "2026-05-14"
 excerpt: "Ever wonder how computers learn to think like us? Join software engineer Robby as he breaks down exactly what Artificial Intelligence is in plain English."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/what-is-ai-artificial-intelligence-explained-in-60-seconds-yt.jpg"
 youtubeId: "ROe8x7aMJLY"
 tags:
   - AI

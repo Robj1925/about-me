@@ -1,6 +1,6 @@
 ---
 title: "UI-TARS: ByteDance’s Open-Source Answer to Computer Use"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents."
 thumbnail: "assets/images/ui-tars-thumb.jpg"
 youtubeId: "iZJmBM5k-GA"

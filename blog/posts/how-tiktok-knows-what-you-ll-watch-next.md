@@ -2,7 +2,7 @@
 title: "How TikTok's AI Decides Which Videos Go Viral"
 date: "2026-05-14"
 excerpt: "Ever wonder how TikTok knows exactly what you want to watch? I'm breaking down the AI secrets behind the algorithm and how videos really go viral."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-tiktok-knows-what-you-ll-watch-next-yt.jpg"
 youtubeId: "pF-vDIPz3e0"
 tags:
   - AI

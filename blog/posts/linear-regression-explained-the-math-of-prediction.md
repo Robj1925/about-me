@@ -2,7 +2,7 @@
 title: "What Is Linear Regression? Learn How Computers Predict the Future"
 date: "2026-05-14"
 excerpt: "Curious how AI makes predictions? Learn how linear regression uses simple math to help computers guess everything from gas mileage to future sales."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/linear-regression-explained-the-math-of-prediction-yt.jpg"
 youtubeId: "zEpvWSGvC0Q"
 tags:
   - Machine Learning

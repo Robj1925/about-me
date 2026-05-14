@@ -2,7 +2,7 @@
 title: "How Google Maps Predicts Traffic Before It Even Happens"
 date: "2026-05-14"
 excerpt: "Ever wonder how Google Maps knows there is a traffic jam before you get there? Learn how AI uses data to predict the road ahead."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-google-maps-predicts-traffic-before-it-happens-yt.jpg"
 youtubeId: "I1LVhtYkPbQ"
 tags:
   - AI

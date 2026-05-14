@@ -2,7 +2,7 @@
 title: "How Spotify Knows Exactly What You Want to Hear"
 date: "2026-05-14"
 excerpt: "Ever wonder how Spotify picks your perfect playlist? Discover the math and AI magic behind your Discover Weekly songs."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/how-spotify-predicts-what-you-want-to-listen-to-yt.jpg"
 youtubeId: "Ow3Eo_-s9IU"
 tags:
   - AI

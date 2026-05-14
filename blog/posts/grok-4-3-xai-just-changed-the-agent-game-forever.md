@@ -1,6 +1,6 @@
 ---
 title: "Grok 4.3 Is Here: Everything You Need to Know About xAI’s New AI"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "Grok 4.3 has arrived with huge upgrades in reasoning, a massive memory window, and new tools to help you build and create faster than ever."
 thumbnail: "assets/images/blog-thumbnails/grok-4-3-xai-just-changed-the-agent-game-forever.jpeg"
 youtubeId: "Bhl4_8L0OEA"

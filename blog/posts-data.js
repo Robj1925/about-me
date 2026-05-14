@@ -32,7 +32,7 @@ window.BLOG_POSTS = [
     "title": "How Do AI Computers Learn? It’s Just Like Playing Basketball!",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI actually learns? Discover how neural networks improve by using a simple basketball analogy from a real-world software engineer.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/ai-learning-explained-the-basketball-analogy-yt.jpg",
     "youtubeId": "DGIgESLv8iI",
     "tags": [
       "AI",
@@ -48,7 +48,7 @@ window.BLOG_POSTS = [
     "title": "What Is an AI Training Set? AI Basics Explained",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down AI training sets and how they teach machines to see the world.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/ai-training-sets-explained-simply-yt.jpg",
     "youtubeId": "ylfaEQ5l5eI",
     "tags": [
       "Artificial Intelligence",
@@ -63,7 +63,7 @@ window.BLOG_POSTS = [
     "title": "AI vs. ML vs. Deep Learning: What’s the Difference?",
     "date": "2026-05-14",
     "excerpt": "Confused by all the AI buzzwords? Let's break down AI, Machine Learning, and Deep Learning using simple analogies to see how they fit together.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech-yt.jpg",
     "youtubeId": "ON9GvelnSRM",
     "tags": [
       "AI",
@@ -143,7 +143,7 @@ window.BLOG_POSTS = [
     "title": "How to Put Your First Web App Online for Free (Step-by-Step Guide)",
     "date": "2026-05-14",
     "excerpt": "Learn how to take your Python web app from your computer to the internet for free using Render. No credit card required!",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/build-your-first-web-app-for-free-no-credit-card-yt.jpg",
     "youtubeId": "4IeMklzNyQE",
     "tags": [
       "Python",
@@ -207,7 +207,7 @@ window.BLOG_POSTS = [
     "title": "Build Your Own AI Social Media Manager: A Beginner’s Guide",
     "date": "2026-05-14",
     "excerpt": "Learn how to build an AI agent that writes personalized messages for you using the OpenAI SDK and Google Gemini. It's easier than you think!",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python-yt.jpg",
     "youtubeId": "6a4w3FT98Ss",
     "tags": [
       "AI",
@@ -233,6 +233,50 @@ window.BLOG_POSTS = [
       "Data Science"
     ],
     "readTime": 2
+  },
+  {
+    "slug": "chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained",
+    "title": "ChatGPT Images 2.0: Everything You Need to Know About the New AI",
+    "date": "2026-05-14",
+    "excerpt": "OpenAI just launched ChatGPT Images 2.0, a huge upgrade that changes how AI makes pictures. Learn how it works, why it's better at spelling, and how to use it.",
+    "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.jpeg",
+    "youtubeId": "9xrIVzPax4A",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Generative AI",
+      "Tech Explained"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update",
+    "title": "Meet Your New AI Teammate: Claude Code 4.7 and the 'Grumpy Senior' Update",
+    "date": "2026-05-14",
+    "excerpt": "Discover how the new Claude Code 4.7 update and /perceive command are changing the way AI agents work as your digital employees.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.jpeg",
+    "youtubeId": "qyecnzcAyzQ",
+    "tags": [
+      "AI Agents",
+      "Claude Code",
+      "Software Engineering",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-production",
+    "title": "The Engineer's Guide to Claude Code in Production",
+    "date": "2026-05-14",
+    "excerpt": "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.",
+    "thumbnail": "assets/images/blog-thumb-2.jpg",
+    "youtubeId": "M351KD77Lfs",
+    "tags": [
+      "Engineering",
+      "Claude Code",
+      "AI Dev Tools"
+    ],
+    "readTime": 16
   },
   {
     "slug": "clawdbot-cloud-hosting-tutorial-free-for-students",
@@ -271,7 +315,7 @@ window.BLOG_POSTS = [
     "title": "Build Your Own AI Team: How to Use CrewAI and Gemini in Google Colab",
     "date": "2026-05-14",
     "excerpt": "Learn how to build powerful AI agent teams using CrewAI and Google Gemini inside Google Colab with this easy step-by-step guide.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/crewai-google-colab-setup-tutorial-yt.jpg",
     "youtubeId": "rmOY5eLfdq0",
     "tags": [
       "AI",
@@ -302,7 +346,7 @@ window.BLOG_POSTS = [
     "title": "Deep Learning vs. Machine Learning: What Is the Difference?",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI actually works? Join me as we break down the difference between Machine Learning and Deep Learning in simple terms.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/deep-learning-vs-machine-learning-what-s-the-difference-yt.jpg",
     "youtubeId": "ONr6FaO0xw8",
     "tags": [
       "AI",
@@ -348,7 +392,7 @@ window.BLOG_POSTS = [
     "title": "Finding the Perfect Learning Rate: A Guide to Training AI",
     "date": "2026-05-14",
     "excerpt": "Learn how AI models actually learn from their mistakes by tuning the learning rate, the secret setting that makes or breaks your model training.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/finding-the-right-learning-rate-in-deep-learning-yt.jpg",
     "youtubeId": "OdTRf-LOv6M",
     "tags": [
       "AI",
@@ -363,7 +407,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your First AI App with Google Gemini (Easy Guide)",
     "date": "2026-05-14",
     "excerpt": "Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough-yt.jpg",
     "youtubeId": "lX17ByJbFfc",
     "tags": [
       "AI",
@@ -395,7 +439,7 @@ window.BLOG_POSTS = [
     "title": "How to Use AI to Write Viral YouTube Video Titles",
     "date": "2026-05-14",
     "excerpt": "Struggling to name your videos? Learn how to use OpenAI as your personal brainstorming partner to create catchy, high-performing YouTube titles in seconds.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/generating-viral-youtube-video-titles-using-openai-yt.jpg",
     "youtubeId": "CH6SUB6Y3t4",
     "tags": [
       "AI",
@@ -423,17 +467,48 @@ window.BLOG_POSTS = [
     "readTime": 3
   },
   {
+    "slug": "gpt-5-5-explained-features-price-the-future-of-agents",
+    "title": "GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era",
+    "date": "2026-05-14",
+    "excerpt": "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you.",
+    "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpeg",
+    "youtubeId": "HgiZNcqNE00",
+    "tags": [
+      "AI",
+      "GPT-5.5",
+      "Tech News",
+      "Software Engineering"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "gradient-descent-explained-visually",
     "title": "Gradient Descent: How AI Learns from Its Mistakes",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/gradient-descent-explained-visually-yt.jpg",
     "youtubeId": "52RNl4GxggE",
     "tags": [
       "AI",
       "Machine Learning",
       "Artificial Intelligence",
       "Beginner Tech"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "grok-4-3-xai-just-changed-the-agent-game-forever",
+    "title": "Grok 4.3 Is Here: Everything You Need to Know About xAI’s New AI",
+    "date": "2026-05-14",
+    "excerpt": "Grok 4.3 has arrived with huge upgrades in reasoning, a massive memory window, and new tools to help you build and create faster than ever.",
+    "thumbnail": "assets/images/blog-thumbnails/grok-4-3-xai-just-changed-the-agent-game-forever.jpeg",
+    "youtubeId": "Bhl4_8L0OEA",
+    "tags": [
+      "AI",
+      "Grok",
+      "xAI",
+      "TechNews",
+      "MachineLearning"
     ],
     "readTime": 3
   },
@@ -502,7 +577,7 @@ window.BLOG_POSTS = [
     "title": "How Does AI Understand You? NLP Explained Simply",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how your phone knows exactly what you're saying? Learn how computers use NLP to turn human language into machine smarts.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-understands-human-language-nlp-explained-simply-yt.jpg",
     "youtubeId": "2x5bBbHnVzM",
     "tags": [
       "AI",
@@ -548,7 +623,7 @@ window.BLOG_POSTS = [
     "title": "How Does ChatGPT Read? The Secret World of Tokenization",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI understands your questions? It’s not magic—it’s math! Learn how tokenization turns your words into numbers.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-chatgpt-actually-reads-tokenization-explained-yt.jpg",
     "youtubeId": "Svn7A6pG6_Y",
     "tags": [
       "AI",
@@ -563,7 +638,7 @@ window.BLOG_POSTS = [
     "title": "What is a Decision Tree? AI Made Simple",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-decision-trees-work-the-flowchart-of-artificial-intelligence-yt.jpg",
     "youtubeId": "Mo3A5sU2szQ",
     "tags": [
       "AI",
@@ -578,7 +653,7 @@ window.BLOG_POSTS = [
     "title": "How Does Face ID Actually Work? The Tech Behind Your iPhone",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how your iPhone recognizes your face without taking a picture? Let's dive into the invisible 3D mapping technology that keeps your data safe.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-face-id-recognizes-you-instantly-yt.jpg",
     "youtubeId": "nXMKYNgO_mc",
     "tags": [
       "Apple",
@@ -594,7 +669,7 @@ window.BLOG_POSTS = [
     "title": "How Google Maps Predicts Traffic Before It Even Happens",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how Google Maps knows there is a traffic jam before you get there? Learn how AI uses data to predict the road ahead.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-google-maps-predicts-traffic-before-it-happens-yt.jpg",
     "youtubeId": "I1LVhtYkPbQ",
     "tags": [
       "AI",
@@ -609,7 +684,7 @@ window.BLOG_POSTS = [
     "title": "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen",
     "date": "2026-05-14",
     "excerpt": "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg",
     "youtubeId": "DiQaXiJk0_s",
     "tags": [
       "AI",
@@ -656,7 +731,7 @@ window.BLOG_POSTS = [
     "title": "How Spotify Knows Exactly What You Want to Hear",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how Spotify picks your perfect playlist? Discover the math and AI magic behind your Discover Weekly songs.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-spotify-predicts-what-you-want-to-listen-to-yt.jpg",
     "youtubeId": "Ow3Eo_-s9IU",
     "tags": [
       "AI",
@@ -733,7 +808,7 @@ window.BLOG_POSTS = [
     "title": "How TikTok's AI Decides Which Videos Go Viral",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how TikTok knows exactly what you want to watch? I'm breaking down the AI secrets behind the algorithm and how videos really go viral.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-tiktok-knows-what-you-ll-watch-next-yt.jpg",
     "youtubeId": "pF-vDIPz3e0",
     "tags": [
       "AI",
@@ -843,7 +918,7 @@ window.BLOG_POSTS = [
     "title": "How Does YouTube Know What You Want to Watch Next?",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg",
     "youtubeId": "a5Ti8QLA7C4",
     "tags": [
       "AI",
@@ -858,7 +933,7 @@ window.BLOG_POSTS = [
     "title": "Hyperparameters vs. Parameters: The Oven Settings of AI",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI learns? I'm Robby, and I’m breaking down the difference between AI parameters and hyperparameters using a simple kitchen analogy.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/hyperparameters-vs-parameters-the-oven-settings-of-ai-yt.jpg",
     "youtubeId": "8Zlymjgtfk0",
     "tags": [
       "Artificial Intelligence",
@@ -952,7 +1027,7 @@ window.BLOG_POSTS = [
     "title": "What Is Linear Regression? Learn How Computers Predict the Future",
     "date": "2026-05-14",
     "excerpt": "Curious how AI makes predictions? Learn how linear regression uses simple math to help computers guess everything from gas mileage to future sales.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/linear-regression-explained-the-math-of-prediction-yt.jpg",
     "youtubeId": "zEpvWSGvC0Q",
     "tags": [
       "Machine Learning",
@@ -968,7 +1043,7 @@ window.BLOG_POSTS = [
     "title": "Logistic Regression: Why It’s Not Actually 'Regression'",
     "date": "2026-05-14",
     "excerpt": "Think Logistic Regression is for predicting numbers? Think again! Join me as I explain how this simple AI tool helps computers make 'Yes' or 'No' decisions.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/logistic-regression-explained-yt.jpg",
     "youtubeId": "i4spl1Bfsv4",
     "tags": [
       "AI",
@@ -983,7 +1058,7 @@ window.BLOG_POSTS = [
     "title": "Machine Learning Explained: How Computers Learn Like Humans",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers learn on their own? I'm Robby, an AI engineer, and I'm breaking down how machine learning works without the complicated math.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/machine-learning-explained-how-computers-learn-without-rules-machinelearning-yt.jpg",
     "youtubeId": "dulgrJjZe3A",
     "tags": [
       "Machine Learning",
@@ -994,11 +1069,26 @@ window.BLOG_POSTS = [
     "readTime": 2
   },
   {
+    "slug": "motion-graphics-made-easy-google-flow-beginner-s-guide",
+    "title": "Motion Graphics Made Easy: A Beginner’s Guide to Google AI Flow",
+    "date": "2026-05-14",
+    "excerpt": "Learn how to turn static images into professional motion graphics using Google's powerful AI Creative Studio Flow. It's easier than you think!",
+    "thumbnail": "assets/images/blog-thumbnails/motion-graphics-made-easy-google-flow-beginner-s-guide.jpeg",
+    "youtubeId": "dyXBznfoMqI",
+    "tags": [
+      "AI",
+      "Motion Graphics",
+      "Google AI",
+      "Video Creation"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference",
     "title": "Nano Banana Pro vs. ChatGPT Image 1.5: Which AI Tool Should You Use?",
     "date": "2026-05-14",
     "excerpt": "Confused about which AI image tool is right for you? As an AI engineer, I break down the real differences between Nano Banana Pro and ChatGPT Image 1.5.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference-yt.jpg",
     "youtubeId": "Ra3RVE6Qer0",
     "tags": [
       "AI",
@@ -1040,11 +1130,27 @@ window.BLOG_POSTS = [
     "readTime": 2
   },
   {
+    "slug": "notebooklm-full-course-the-complete-guide-2026",
+    "title": "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)",
+    "date": "2026-05-14",
+    "excerpt": "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM.",
+    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpeg",
+    "youtubeId": "PgmwxA1I94Y",
+    "tags": [
+      "AI",
+      "NotebookLM",
+      "Productivity",
+      "Machine Learning",
+      "Tech Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "openclaw-3-28-is-insane-here-s-why",
     "title": "OpenClaw 3.28 Is Here: 3 Major Updates You Need to Know",
     "date": "2026-05-14",
     "excerpt": "OpenClaw just got a massive upgrade! From one-click skill installs to smarter AI web search, here is everything you need to know about version 3.28.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-3-28-is-insane-here-s-why-yt.jpg",
     "youtubeId": "is7yNhTt9ck",
     "tags": [
       "OpenClaw",
@@ -1055,11 +1161,27 @@ window.BLOG_POSTS = [
     "readTime": 2
   },
   {
+    "slug": "openclaw-4-21-update-is-insane",
+    "title": "OpenClaw 4.21 Update: Everything You Need to Know",
+    "date": "2026-05-14",
+    "excerpt": "OpenClaw 4.21 is here to make your AI work smoother and faster. Check out the biggest fixes for crashes, costs, and macOS performance.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-21-update-is-insane.png",
+    "youtubeId": "33125SFynkA",
+    "tags": [
+      "OpenClaw",
+      "AI",
+      "SoftwareUpdate",
+      "TechTips",
+      "Coding"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "openclaw-4-8-is-insane-here-s-why",
     "title": "OpenClaw 4.8 Is Here: The Biggest AI Automation Updates Yet",
     "date": "2026-05-14",
     "excerpt": "OpenClaw 4.8 brings massive upgrades like Android voice control, Task Flow automation, and faster workflows. Here is everything you need to know to get started.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-8-is-insane-here-s-why-yt.jpg",
     "youtubeId": "Wvaj_Aq3RHg",
     "tags": [
       "AI",
@@ -1069,6 +1191,21 @@ window.BLOG_POSTS = [
       "Android"
     ],
     "readTime": 3
+  },
+  {
+    "slug": "openclaw-5-4-is-insane-here-s-why",
+    "title": "OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant",
+    "date": "2026-05-14",
+    "excerpt": "OpenClaw 5.4 has arrived with exciting updates, including a powerful new Google Meet agent that helps you take notes and chat in real-time.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-5-4-is-insane-here-s-why.jpeg",
+    "youtubeId": "goZFPWqwKXs",
+    "tags": [
+      "AI",
+      "OpenClaw",
+      "Productivity",
+      "Software Engineering"
+    ],
+    "readTime": 2
   },
   {
     "slug": "openclaw-skills-explained-a-beginner-s-guide",
@@ -1183,13 +1320,28 @@ window.BLOG_POSTS = [
     "title": "How to Actually Get Hired as a Software Engineer (My Secret Strategy)",
     "date": "2026-05-14",
     "excerpt": "Struggling to find a tech job? Learn the two simple strategies that helped me go from failing interviews to getting hired as a software engineer.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/the-two-things-that-finally-got-me-hired-newgrad-softwareengineering-yt.jpg",
     "youtubeId": "bCHkzpz71Ro",
     "tags": [
       "Software Engineering",
       "Career Advice",
       "Tech Jobs",
       "Coding Interviews"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup",
+    "title": "Master the Google Gemini Mac App: A Simple Guide to Boosting Your Productivity",
+    "date": "2026-05-14",
+    "excerpt": "Learn how to set up and master the Google Gemini app for macOS. Discover hidden tricks to make your computer smarter and get your work done faster.",
+    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.png",
+    "youtubeId": "ao3nvWKX3PI",
+    "tags": [
+      "Google Gemini",
+      "macOS",
+      "AI Productivity",
+      "Tech Tips"
     ],
     "readTime": 2
   },
@@ -1242,11 +1394,27 @@ window.BLOG_POSTS = [
     "readTime": 3
   },
   {
+    "slug": "this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b",
+    "title": "Meet ZAYA1-8B: The Tiny AI Model That Thinks Like a Giant",
+    "date": "2026-05-14",
+    "excerpt": "Discover how Zyphra’s new ZAYA1-8B model uses smart technology to beat the biggest AI giants while running on AMD hardware.",
+    "thumbnail": "assets/images/blog-thumbnails/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.jpeg",
+    "youtubeId": "X6ARKudj4Zg",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "AMD",
+      "Technology",
+      "Coding"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "training-vs-test-sets-how-to-grade-an-ai",
     "title": "Training vs. Test Sets: How to Give Your AI a Final Exam",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/training-vs-test-sets-how-to-grade-an-ai-yt.jpg",
     "youtubeId": "HXw60MHXQmg",
     "tags": [
       "AI",
@@ -1288,11 +1456,25 @@ window.BLOG_POSTS = [
     "readTime": 2
   },
   {
+    "slug": "ui-tars-guide",
+    "title": "UI-TARS: ByteDance’s Open-Source Answer to Computer Use",
+    "date": "2026-05-14",
+    "excerpt": "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents.",
+    "thumbnail": "assets/images/ui-tars-thumb.jpg",
+    "youtubeId": "iZJmBM5k-GA",
+    "tags": [
+      "AI Agents",
+      "Computer Use",
+      "ByteDance"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "understanding-linear-regression-in-machine-learning-explained-simply",
     "title": "What is Linear Regression? AI Explained for Beginners",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers predict house prices or future sales? Learn how Linear Regression works in this simple, step-by-step guide.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/understanding-linear-regression-in-machine-learning-explained-simply-yt.jpg",
     "youtubeId": "UBeJDK8fY8I",
     "tags": [
       "Machine Learning",
@@ -1307,7 +1489,7 @@ window.BLOG_POSTS = [
     "title": "What are Labels in Machine Learning? An Easy Guide",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI learns to tell a cat from a dog? It all starts with labels. Learn how this 'answer key' helps computers understand the world.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-are-labels-in-machine-learning-yt.jpg",
     "youtubeId": "YeiSQR5RZBs",
     "tags": [
       "Artificial Intelligence",
@@ -1322,7 +1504,7 @@ window.BLOG_POSTS = [
     "title": "How Does AI See? A Simple Guide to Convolutional Neural Networks",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how your phone recognizes your face or how self-driving cars 'see'? Learn how Convolutional Neural Networks (CNNs) help computers understand images.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images-yt.jpg",
     "youtubeId": "v9lZS_BlQ1c",
     "tags": [
       "AI",
@@ -1337,7 +1519,7 @@ window.BLOG_POSTS = [
     "title": "What is a Gradient? How AI Actually Learns",
     "date": "2026-05-14",
     "excerpt": "Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-gradient-the-engine-of-ai-learning-yt.jpg",
     "youtubeId": "5Pc5E7AFtNE",
     "tags": [
       "AI",
@@ -1383,7 +1565,7 @@ window.BLOG_POSTS = [
     "title": "What Are AI Parameters? A Simple Guide to Machine Learning",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI actually learns? Learn what parameters are and how they help computers store knowledge in this easy guide from a software engineer.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-parameter-in-machine-learning-yt.jpg",
     "youtubeId": "ePNKMIBHfEo",
     "tags": [
       "AI",
@@ -1398,7 +1580,7 @@ window.BLOG_POSTS = [
     "title": "What Is a Token? How AI Reads the Internet",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how ChatGPT understands you so fast? It uses a secret 'Lego language' called tokens to read the world in pieces.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-token-how-ai-actually-reads-yt.jpg",
     "youtubeId": "idyXt0JV8v0",
     "tags": [
       "AI",
@@ -1413,7 +1595,7 @@ window.BLOG_POSTS = [
     "title": "What Is AI? A Simple Guide for Everyone",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers learn to think like us? Join software engineer Robby as he breaks down exactly what Artificial Intelligence is in plain English.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-ai-artificial-intelligence-explained-in-60-seconds-yt.jpg",
     "youtubeId": "ROe8x7aMJLY",
     "tags": [
       "AI",
@@ -1429,7 +1611,7 @@ window.BLOG_POSTS = [
     "title": "What is an AI Agent? The Real Difference Between Chatbots and Agents",
     "date": "2026-05-14",
     "excerpt": "Curious about AI agents? Learn why they are different from chatbots and how they move from just chatting to actually getting work done.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-finally-explained-simply-yt.jpg",
     "youtubeId": "ElWKHGDq3Uo",
     "tags": [
       "AI",
@@ -1445,7 +1627,7 @@ window.BLOG_POSTS = [
     "title": "What Is an AI Agent? The Big Difference Between Talking and Doing",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI goes from just answering questions to actually doing work for you? Discover the world of AI Agents and how they are changing the game.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-yt.jpg",
     "youtubeId": "APFbZ9VVG0I",
     "tags": [
       "AI",
@@ -1460,7 +1642,7 @@ window.BLOG_POSTS = [
     "title": "What Is an AI Model? The Secret Recipe Explained",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers learn to think? Let's break down what an AI model is using a simple kitchen recipe analogy.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-model-the-recipe-analogy-yt.jpg",
     "youtubeId": "fDa_r0sUPMw",
     "tags": [
       "AI",
@@ -1475,7 +1657,7 @@ window.BLOG_POSTS = [
     "title": "What Is an AI Algorithm? A Simple Guide for Everyone",
     "date": "2026-05-14",
     "excerpt": "Curious how AI actually works? Learn what an algorithm is and how it helps computers learn, explained by a real software engineer.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-algorithm-in-ai-yt.jpg",
     "youtubeId": "SdII73-7Bkk",
     "tags": [
       "AI",
@@ -1507,7 +1689,7 @@ window.BLOG_POSTS = [
     "title": "What is AI Classification? Sorting Data Made Simple",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how your email blocks spam? Learn how AI uses classification to sort information into categories like a pro.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-classification-in-ai-sorting-data-simply-explained-yt.jpg",
     "youtubeId": "PwjOpgUx50Q",
     "tags": [
       "AI",
@@ -1522,7 +1704,7 @@ window.BLOG_POSTS = [
     "title": "What is AI Fine-Tuning? Turn Your Chatbot into an Expert",
     "date": "2026-05-14",
     "excerpt": "Learn how fine-tuning lets you customize AI models for your specific needs without spending millions of dollars.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-fine-tuning-a-model-yt.jpg",
     "youtubeId": "bCgKCYmerzg",
     "tags": [
       "AI",
@@ -1537,7 +1719,7 @@ window.BLOG_POSTS = [
     "title": "What Is Generative AI? How Computers Are Starting to Create",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers make art and write stories? Let's look at how Generative AI works like a master chef inventing new recipes.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-generative-ai-the-technology-that-creates-yt.jpg",
     "youtubeId": "l5XfrscuRQY",
     "tags": [
       "Generative AI",
@@ -1567,7 +1749,7 @@ window.BLOG_POSTS = [
     "title": "What is Machine Learning? A Simple Guide for Beginners",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-machine-learning-explained-like-you-re-5-but-actually-technical-yt.jpg",
     "youtubeId": "h_MH8sIENRo",
     "tags": [
       "Machine Learning",
@@ -1582,7 +1764,7 @@ window.BLOG_POSTS = [
     "title": "What is Multimodal AI? Meet the AI That Can See and Hear",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI is learning to see and hear? Discover how Multimodal AI is changing the way machines understand the world, moving beyond just simple text.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-multimodal-ai-yt.jpg",
     "youtubeId": "N2fXdcY1rvw",
     "tags": [
       "Artificial Intelligence",
@@ -1597,7 +1779,7 @@ window.BLOG_POSTS = [
     "title": "What is Regression? AI Prediction Explained Simply",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI guesses numbers like house prices or stock trends? Learn how regression works in plain English.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-regression-in-ai-explained-in-60-seconds-yt.jpg",
     "youtubeId": "CFRtKhFqpEk",
     "tags": [
       "AI",
@@ -1612,7 +1794,7 @@ window.BLOG_POSTS = [
     "title": "What is Supervised Learning? AI With an Answer Key",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how computers learn? Discover how supervised learning works by using an answer key to teach AI models to make smart predictions.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/what-is-supervised-learning-ai-with-an-answer-key-yt.jpg",
     "youtubeId": "ECaxXXfzbp0",
     "tags": [
       "Artificial Intelligence",
@@ -1627,7 +1809,7 @@ window.BLOG_POSTS = [
     "title": "Why AI Needs a 'Practice Test' to Get Smarter",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI learns? Just like you, it needs practice tests. Learn why a validation set is the secret to building better AI models.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/why-ai-needs-a-validation-set-yt.jpg",
     "youtubeId": "ihV_hGAf1Dw",
     "tags": [
       "AI",
@@ -1642,7 +1824,7 @@ window.BLOG_POSTS = [
     "title": "Why Data is Like Gold for AI: A Simple Guide",
     "date": "2026-05-14",
     "excerpt": "Ever wonder how AI gets so smart? It’s all about the data! Learn why high-quality information is the real secret behind every powerful AI model.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/why-data-is-gold-for-ai-yt.jpg",
     "youtubeId": "YQOZYyOT5B0",
     "tags": [
       "AI",
@@ -1689,7 +1871,7 @@ window.BLOG_POSTS = [
     "title": "Stop Using AI Like a Magic Wand: How to Build Pro-Level Code",
     "date": "2026-05-14",
     "excerpt": "Think AI is a magic wand? Think again. Learn how treating AI like an employee—not a toy—can help you write better code and master prompt engineering.",
-    "thumbnail": null,
+    "thumbnail": "assets/images/blog-thumbnails/why-prompt-engineers-make-300k-yt.jpg",
     "youtubeId": "FMq1zHCtlNk",
     "tags": [
       "AI",
@@ -1730,174 +1912,6 @@ window.BLOG_POSTS = [
     "readTime": 3
   },
   {
-    "slug": "chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained",
-    "title": "ChatGPT Images 2.0: Everything You Need to Know About the New AI",
-    "date": "2026-05-13",
-    "excerpt": "OpenAI just launched ChatGPT Images 2.0, a huge upgrade that changes how AI makes pictures. Learn how it works, why it's better at spelling, and how to use it.",
-    "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.jpeg",
-    "youtubeId": "9xrIVzPax4A",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "Generative AI",
-      "Tech Explained"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update",
-    "title": "Meet Your New AI Teammate: Claude Code 4.7 and the 'Grumpy Senior' Update",
-    "date": "2026-05-13",
-    "excerpt": "Discover how the new Claude Code 4.7 update and /perceive command are changing the way AI agents work as your digital employees.",
-    "thumbnail": "assets/images/blog-thumbnails/claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.jpeg",
-    "youtubeId": "qyecnzcAyzQ",
-    "tags": [
-      "AI Agents",
-      "Claude Code",
-      "Software Engineering",
-      "Productivity"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "gpt-5-5-explained-features-price-the-future-of-agents",
-    "title": "GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era",
-    "date": "2026-05-13",
-    "excerpt": "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you.",
-    "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpeg",
-    "youtubeId": "HgiZNcqNE00",
-    "tags": [
-      "AI",
-      "GPT-5.5",
-      "Tech News",
-      "Software Engineering"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "grok-4-3-xai-just-changed-the-agent-game-forever",
-    "title": "Grok 4.3 Is Here: Everything You Need to Know About xAI’s New AI",
-    "date": "2026-05-13",
-    "excerpt": "Grok 4.3 has arrived with huge upgrades in reasoning, a massive memory window, and new tools to help you build and create faster than ever.",
-    "thumbnail": "assets/images/blog-thumbnails/grok-4-3-xai-just-changed-the-agent-game-forever.jpeg",
-    "youtubeId": "Bhl4_8L0OEA",
-    "tags": [
-      "AI",
-      "Grok",
-      "xAI",
-      "TechNews",
-      "MachineLearning"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "motion-graphics-made-easy-google-flow-beginner-s-guide",
-    "title": "Motion Graphics Made Easy: A Beginner’s Guide to Google AI Flow",
-    "date": "2026-05-13",
-    "excerpt": "Learn how to turn static images into professional motion graphics using Google's powerful AI Creative Studio Flow. It's easier than you think!",
-    "thumbnail": "assets/images/blog-thumbnails/motion-graphics-made-easy-google-flow-beginner-s-guide.jpeg",
-    "youtubeId": "dyXBznfoMqI",
-    "tags": [
-      "AI",
-      "Motion Graphics",
-      "Google AI",
-      "Video Creation"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "notebooklm-full-course-the-complete-guide-2026",
-    "title": "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)",
-    "date": "2026-05-13",
-    "excerpt": "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM.",
-    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpeg",
-    "youtubeId": "PgmwxA1I94Y",
-    "tags": [
-      "AI",
-      "NotebookLM",
-      "Productivity",
-      "Machine Learning",
-      "Tech Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "openclaw-4-21-update-is-insane",
-    "title": "OpenClaw 4.21 Update: Everything You Need to Know",
-    "date": "2026-05-13",
-    "excerpt": "OpenClaw 4.21 is here to make your AI work smoother and faster. Check out the biggest fixes for crashes, costs, and macOS performance.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-21-update-is-insane.png",
-    "youtubeId": "33125SFynkA",
-    "tags": [
-      "OpenClaw",
-      "AI",
-      "SoftwareUpdate",
-      "TechTips",
-      "Coding"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "openclaw-5-4-is-insane-here-s-why",
-    "title": "OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant",
-    "date": "2026-05-13",
-    "excerpt": "OpenClaw 5.4 has arrived with exciting updates, including a powerful new Google Meet agent that helps you take notes and chat in real-time.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-5-4-is-insane-here-s-why.jpeg",
-    "youtubeId": "goZFPWqwKXs",
-    "tags": [
-      "AI",
-      "OpenClaw",
-      "Productivity",
-      "Software Engineering"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup",
-    "title": "Master the Google Gemini Mac App: A Simple Guide to Boosting Your Productivity",
-    "date": "2026-05-13",
-    "excerpt": "Learn how to set up and master the Google Gemini app for macOS. Discover hidden tricks to make your computer smarter and get your work done faster.",
-    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.png",
-    "youtubeId": "ao3nvWKX3PI",
-    "tags": [
-      "Google Gemini",
-      "macOS",
-      "AI Productivity",
-      "Tech Tips"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b",
-    "title": "Meet ZAYA1-8B: The Tiny AI Model That Thinks Like a Giant",
-    "date": "2026-05-13",
-    "excerpt": "Discover how Zyphra’s new ZAYA1-8B model uses smart technology to beat the biggest AI giants while running on AMD hardware.",
-    "thumbnail": "assets/images/blog-thumbnails/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.jpeg",
-    "youtubeId": "X6ARKudj4Zg",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "AMD",
-      "Technology",
-      "Coding"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "ui-tars-guide",
-    "title": "UI-TARS: ByteDance’s Open-Source Answer to Computer Use",
-    "date": "2026-05-13",
-    "excerpt": "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents.",
-    "thumbnail": "assets/images/ui-tars-thumb.jpg",
-    "youtubeId": "iZJmBM5k-GA",
-    "tags": [
-      "AI Agents",
-      "Computer Use",
-      "ByteDance"
-    ],
-    "readTime": 3
-  },
-  {
     "slug": "escaping-the-dumb-zone",
     "title": "Escaping the \"Dumb Zone\": Why Your AI Context Window is Your Biggest Secret Weapon",
     "date": "2026-05-12",
@@ -1924,20 +1938,6 @@ window.BLOG_POSTS = [
       "AI Tools"
     ],
     "readTime": 3
-  },
-  {
-    "slug": "claude-code-production",
-    "title": "The Engineer's Guide to Claude Code in Production",
-    "date": "2026-04-15",
-    "excerpt": "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.",
-    "thumbnail": "assets/images/blog-thumb-2.jpg",
-    "youtubeId": "M351KD77Lfs",
-    "tags": [
-      "Engineering",
-      "Claude Code",
-      "AI Dev Tools"
-    ],
-    "readTime": 16
   },
   {
     "slug": "openclaw-skills-guide",

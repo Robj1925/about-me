@@ -2,7 +2,7 @@
 title: "How Do AI Computers Learn? It’s Just Like Playing Basketball!"
 date: "2026-05-14"
 excerpt: "Ever wonder how AI actually learns? Discover how neural networks improve by using a simple basketball analogy from a real-world software engineer."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/ai-learning-explained-the-basketball-analogy-yt.jpg"
 youtubeId: "DGIgESLv8iI"
 tags:
   - AI

@@ -2,7 +2,7 @@
 title: "Gradient Descent: How AI Learns from Its Mistakes"
 date: "2026-05-14"
 excerpt: "Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/gradient-descent-explained-visually-yt.jpg"
 youtubeId: "52RNl4GxggE"
 tags:
   - AI

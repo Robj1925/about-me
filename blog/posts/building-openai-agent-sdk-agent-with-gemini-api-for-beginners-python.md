@@ -2,7 +2,7 @@
 title: "Build Your Own AI Social Media Manager: A Beginner’s Guide"
 date: "2026-05-14"
 excerpt: "Learn how to build an AI agent that writes personalized messages for you using the OpenAI SDK and Google Gemini. It's easier than you think!"
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python-yt.jpg"
 youtubeId: "6a4w3FT98Ss"
 tags:
   - AI

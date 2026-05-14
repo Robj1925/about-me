@@ -1,6 +1,6 @@
 ---
 title: "Meet ZAYA1-8B: The Tiny AI Model That Thinks Like a Giant"
-date: "2026-05-13"
+date: "2026-05-14"
 excerpt: "Discover how Zyphra’s new ZAYA1-8B model uses smart technology to beat the biggest AI giants while running on AMD hardware."
 thumbnail: "assets/images/blog-thumbnails/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.jpeg"
 youtubeId: "X6ARKudj4Zg"

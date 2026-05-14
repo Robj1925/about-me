@@ -2,7 +2,7 @@
 title: "AI vs. ML vs. Deep Learning: What’s the Difference?"
 date: "2026-05-14"
 excerpt: "Confused by all the AI buzzwords? Let's break down AI, Machine Learning, and Deep Learning using simple analogies to see how they fit together."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech-yt.jpg"
 youtubeId: "ON9GvelnSRM"
 tags:
   - AI

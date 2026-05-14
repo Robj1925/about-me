@@ -2,7 +2,7 @@
 title: "Logistic Regression: Why It’s Not Actually 'Regression'"
 date: "2026-05-14"
 excerpt: "Think Logistic Regression is for predicting numbers? Think again! Join me as I explain how this simple AI tool helps computers make 'Yes' or 'No' decisions."
-thumbnail: ""
+thumbnail: "assets/images/blog-thumbnails/logistic-regression-explained-yt.jpg"
 youtubeId: "i4spl1Bfsv4"
 tags:
   - AI

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals) — Robby J</title>
+  <meta name="description" content="Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)" />
+  <meta property="og:title" content="Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals) — Robby J" />
+  <meta property="og:description" content="Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)" />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span></div>
+      <h1 class="post-title">Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)</h1>
+      <p class="post-excerpt">Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.png" alt="Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals) thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/W-YRq0qgqJQ"
+          title="YouTube video: Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<pre><code class="language-json">{
+  &quot;title&quot;: &quot;Activation Functions: How AI Makes Decisions&quot;,
+  &quot;excerpt&quot;: &quot;Curious how AI thinks? Learn the basics of activation functions like Sigmoid, ReLU, and Tanh in this simple, beginner-friendly guide.&quot;,
+  &quot;tags&quot;: [&quot;AI&quot;, &quot;Deep Learning&quot;, &quot;Neural Networks&quot;, &quot;Machine Learning&quot;],
+  &quot;content&quot;: &quot;## Why Do Neural Networks Need Activation Functions?\n\nHi, I’m Robby! As an engineer, I spend my days building AI systems. People often ask me, \&quot;How does a computer actually &#39;think&#39;?\&quot; The secret sauce is something called an **activation function**.\n\nImagine if a neural network were just a calculator. It could only draw straight lines. If you wanted to convert dollars to euros, a straight line works great. But the real world isn’t a straight line. Think about predicting if a customer will cancel their subscription—that’s messy and complicated. Activation functions add “curves” to the math, allowing AI to learn complex patterns.\n\n## The Sigmoid Function: The Club Bouncer\n\nThink of the **Sigmoid** function like a bouncer at a club door. Its job is to take a number and squash it into a range between 0 and 1. \n\n*   **0** means “No” (the person isn’t getting in).\n*   **1** means “Yes” (they are getting in).\n*   Anything in between is a probability.\n\nIt’s great for yes-or-no decisions, but it has a catch. Sometimes, it makes the math get stuck—we call this the \&quot;vanishing gradient\&quot; problem. When the signal gets too weak, the AI stops learning.\n\n## The ReLU Function: The Light Dimmer\n\n**ReLU** (Rectified Linear Unit) is the superstar of modern AI. You can think of it like a light dimmer switch that doesn&#39;t go negative. \n\n*   If the signal is negative, ReLU turns it off (sets it to 0).\n*   If the signal is positive, ReLU lets it pass right through.\n\nThis simple rule makes AI models train much faster! Sometimes, a ReLU can get &quot;stuck&quot; at zero—this is the \&quot;Dead ReLU\&quot; problem. To fix this, we use clever tricks like **Leaky ReLU**, which lets a tiny bit of negative signal through to keep the learning alive.\n\n## The Tanh Function: The Thermostat\n\nBefore ReLU, the **Tanh** (Hyperbolic Tangent) function was the king of the castle. If Sigmoid is a 0 to 1 scale, Tanh is a -1 to +1 scale. \n\nThink of a thermostat: it handles both cold (negative) and hot (positive) signals. Because it is centered around zero, it often helps the AI learn more smoothly than the Sigmoid function. While ReLU is used more often today, Tanh is still a very important tool in an engineer&#39;s toolkit.\n\n## The Big Picture\n\nActivation functions are the tiny decision-makers inside a neural network. Without them, AI would be a boring, straight-line calculator. By choosing the right function—whether it’s the bouncer-like Sigmoid, the efficient ReLU, or the balanced Tanh—we teach computers how to solve the complex problems that run our modern world.&quot;
+}
+</code></pre>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

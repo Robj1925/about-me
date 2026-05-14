@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gradient Descent: How AI Learns from Its Mistakes — Robby J</title>
+  <meta name="description" content="Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English." />
+  <meta property="og:title" content="Gradient Descent: How AI Learns from Its Mistakes — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English." />
+  
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Artificial Intelligence</span><span class="post-tag">Beginner Tech</span></div>
+      <h1 class="post-title">Gradient Descent: How AI Learns from Its Mistakes</h1>
+      <p class="post-excerpt">Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/52RNl4GxggE"
+          title="YouTube video: Gradient Descent: How AI Learns from Its Mistakes"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="imagine-you-are-lost-on-a-mountain">Imagine You Are Lost on a Mountain</h2>
+<p>Hi! I’m Robby. I spend my days building AI systems, and I get asked all the time: &quot;How does a computer actually learn?&quot;</p>
+<p>Think about being dropped onto the side of a mountain while wearing a blindfold. You want to reach the very bottom—the valley—but you can’t see where you are going. What do you do? </p>
+<p>You would probably use your feet to feel the ground. You’d check which direction slopes downward and take a small step that way. You keep doing this, step by step, until the ground feels flat. You’ve reached the bottom!</p>
+<p>This is exactly how AI learns. This process is called <strong>Gradient Descent</strong>.</p>
+<h2 id="why-does-ai-need-this">Why Does AI Need This?</h2>
+<p>When a neural network (the &quot;brain&quot; of an AI) makes a prediction, it’s usually wrong at first. It makes a mistake. </p>
+<p>We call this mistake the &quot;error.&quot; The goal of the AI is to make that error as small as possible. To do that, it acts just like the person on the mountain: it tries to find the path that leads to the lowest point of error.</p>
+<h2 id="the-step-by-step-process">The Step-by-Step Process</h2>
+<p>Inside the computer, the AI has thousands of little knobs it can turn. We call these <strong>weights</strong>. </p>
+<ol>
+<li><strong>The Prediction:</strong> The AI makes a guess.</li>
+<li><strong>The Check:</strong> It measures how far off it was (the error).</li>
+<li><strong>The Adjustment:</strong> It turns its internal knobs (weights) slightly to see if the error gets smaller.</li>
+<li><strong>Repeat:</strong> It does this over and over again until the error is as low as it can go.</li>
+</ol>
+<h2 id="the-secret-sauce-the-learning-rate">The Secret Sauce: The Learning Rate</h2>
+<p>There is one tricky part: how big of a step should the AI take?</p>
+<ul>
+<li><strong>Too Big:</strong> If you take giant leaps down the mountain, you might jump right over the valley and end up on the other side. You&#39;ll never reach the bottom.</li>
+<li><strong>Too Small:</strong> If you take tiny, baby steps, it will take you forever to get anywhere.</li>
+</ul>
+<p>In AI, we call this the <strong>learning rate</strong>. Getting it just right is the secret to building a smart, fast, and accurate model.</p>
+<h2 id="why-mistakes-are-good">Why Mistakes are Good</h2>
+<p>It sounds weird to say, but for an AI, mistakes are great! Every time the model is wrong, it learns exactly how much it needs to turn those knobs to be more accurate next time. </p>
+<p>By feeling the &quot;slope&quot; of its mistakes, the AI slowly turns itself into a tool that can solve real-world problems. The next time you use a smart app, remember: it’s only that smart because it spent a long time practicing how to walk down that mountain.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

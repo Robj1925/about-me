@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Neural Networks Learn: Backpropagation Explained Simply — Robby J</title>
+  <meta name="description" content="Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves." />
+  <meta property="og:title" content="How Neural Networks Learn: Backpropagation Explained Simply — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Artificial Intelligence</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Backpropagation</span><span class="post-tag">Beginner AI</span></div>
+      <h1 class="post-title">How Neural Networks Learn: Backpropagation Explained Simply</h1>
+      <p class="post-excerpt">Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.png" alt="How Neural Networks Learn: Backpropagation Explained Simply thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/WtAC3n0Yo5Q"
+          title="YouTube video: How Neural Networks Learn: Backpropagation Explained Simply"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="how-do-computers-learn">How Do Computers Learn?</h2>
+<p>Hi, I’m Robby! I spend my days building AI systems, and a lot of people ask me, &quot;How does a computer actually &#39;learn&#39;?&quot; </p>
+<p>Think of a neural network like a student taking a test. At first, the student guesses the answers. They get some right, but they get a lot wrong. To get better, they need to know <em>why</em> they got it wrong so they can fix it for next time. </p>
+<p>In the world of AI, this process of fixing mistakes is called <strong>Backpropagation</strong>.</p>
+<h2 id="the-three-steps-of-learning">The Three Steps of Learning</h2>
+<p>To understand how a neural network learns, imagine a simple three-step cycle:</p>
+<ol>
+<li><strong>The Forward Pass:</strong> The network makes a guess. It looks at the data and spits out an answer.</li>
+<li><strong>The Loss Function:</strong> We measure the mistake. We compare the network’s answer to the real, correct answer to see how far off it was.</li>
+<li><strong>Backpropagation:</strong> This is the magic part. We go backward through the network to see which parts made the mistake and adjust them.</li>
+</ol>
+<h2 id="making-a-mistake-and-fixing-it">Making a Mistake and Fixing It</h2>
+<p>Inside a neural network, there are little knobs called <strong>weights</strong>. These weights decide how much importance the network gives to different pieces of information. </p>
+<p>When the network makes a mistake, we use something called the <strong>Chain Rule</strong> (a simple bit of math) to figure out which weights are to blame. Think of it like a chain of people passing a ball; if the ball gets dropped, we track backward to see who missed the catch.</p>
+<p>Once we know which weights caused the error, we nudge them in the right direction. We call this <strong>Gradient Descent</strong>. It’s like slowly turning a dial until the error goes down.</p>
+<h2 id="a-simple-analogy">A Simple Analogy</h2>
+<p>Imagine you are learning to throw a paper airplane. </p>
+<ul>
+<li>You throw it (Forward Pass).</li>
+<li>It hits the wall instead of the target (Loss Function).</li>
+<li>You think: &quot;I threw it too hard and my wrist was angled too high&quot; (Backpropagation).</li>
+<li>Next time, you throw with less power and adjust your wrist (Gradient Descent).</li>
+</ul>
+<p>You keep repeating this until you hit the target every time. That is exactly what your computer is doing!</p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Learning the math behind backpropagation is like learning how an engine works. You don’t need to be a race car driver to understand that giving more gas makes you go faster. By seeing how weights change based on errors, you now understand the &quot;engine&quot; of modern AI.</p>
+<p>We didn&#39;t skip any steps or hand-wave the math. By measuring the mistake, tracing the blame backward, and adjusting the weights, your network gets smarter with every single example it sees. </p>
+<p>Keep practicing, keep building, and stay curious!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

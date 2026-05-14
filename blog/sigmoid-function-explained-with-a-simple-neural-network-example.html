@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is the Sigmoid Function? A Bouncer’s Guide to AI — Robby J</title>
+  <meta name="description" content="Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms." />
+  <meta property="og:title" content="What is the Sigmoid Function? A Bouncer’s Guide to AI — Robby J" />
+  <meta property="og:description" content="Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Data Science</span><span class="post-tag">Beginner AI</span></div>
+      <h1 class="post-title">What is the Sigmoid Function? A Bouncer’s Guide to AI</h1>
+      <p class="post-excerpt">Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.png" alt="What is the Sigmoid Function? A Bouncer’s Guide to AI thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/t30WqiKsn_8"
+          title="YouTube video: What is the Sigmoid Function? A Bouncer’s Guide to AI"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I&#39;m Robby!</h2>
+<p>I’m a software engineer who builds AI systems every day. Sometimes, the math behind artificial intelligence sounds super complicated. But the truth? A lot of it is just simple logic. Today, let’s talk about something called the <strong>Sigmoid Function</strong>.</p>
+<p>Think of it as a bouncer at a fancy club. </p>
+<h2 id="the-club-bouncer-analogy">The Club Bouncer Analogy</h2>
+<p>Imagine you are trying to get into a club. The AI &quot;bouncer&quot; needs to decide if you can come in. It looks at two main things:</p>
+<ul>
+<li><strong>VIP Status:</strong> Are you on the list? (This is a big positive!)</li>
+<li><strong>Flip-Flops:</strong> Are you wearing beach shoes? (This is a big negative!)</li>
+</ul>
+<p>Each of these items has a &quot;weight.&quot; Your VIP status gives you points, but those flip-flops take points away. </p>
+<h2 id="doing-the-math">Doing the Math</h2>
+<p>First, the bouncer adds up all your points. Let’s say you are a VIP, but you are wearing flip-flops. The math gives you a raw score. </p>
+<p>This score could be a huge number, like 50, or a tiny number, like -10. But the club bouncer doesn&#39;t want raw numbers. He wants a <strong>probability</strong>—a simple number between 0 and 1.</p>
+<h2 id="why-we-use-sigmoid">Why We Use Sigmoid</h2>
+<p>This is where the <strong>Sigmoid Function</strong> comes in. It’s like a magical squashing machine:</p>
+<ul>
+<li>If your score is super high, it squashes it down to almost <strong>1</strong> (100% chance you get in).</li>
+<li>If your score is super low, it squashes it down to almost <strong>0</strong> (0% chance you get in).</li>
+</ul>
+<p>In our example, even though you were a VIP, the flip-flops hurt your score. After the sigmoid function &quot;squashed&quot; the math, your final result was about <strong>4.7%</strong>. </p>
+<p>Sadly, you aren&#39;t getting into the club tonight!</p>
+<h2 id="the-takeaway">The Takeaway</h2>
+<p>The sigmoid function is just a clever tool we use in neural networks to turn messy data into a clean percentage between 0 and 1. It helps the computer make a final &quot;Yes&quot; or &quot;No&quot; decision based on the information it has.</p>
+<p>Keep building, keep learning, and don&#39;t wear flip-flops to the club!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

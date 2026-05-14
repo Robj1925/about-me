@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Build Your Own Free AI Text Message Auto-Responder — Robby J</title>
+  <meta name="description" content="Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide." />
+  <meta property="og:title" content="How to Build Your Own Free AI Text Message Auto-Responder — Robby J" />
+  <meta property="og:description" content="Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Automation</span><span class="post-tag">Gemini</span><span class="post-tag">macOS</span><span class="post-tag">Coding</span></div>
+      <h1 class="post-title">How to Build Your Own Free AI Text Message Auto-Responder</h1>
+      <p class="post-excerpt">Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.png" alt="How to Build Your Own Free AI Text Message Auto-Responder thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/Bi3z2tMPjxs"
+          title="YouTube video: How to Build Your Own Free AI Text Message Auto-Responder"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="build-your-own-ai-text-assistant">Build Your Own AI Text Assistant</h2>
+<p>Hi everyone! I’m Robby. I spend my days building AI systems, and today I want to show you something really cool. Have you ever wished your phone could answer texts for you? </p>
+<p>I’ve built a way to turn <strong>Clawdbot</strong> into an auto-responder for your Mac. It uses Google’s Gemini AI to write replies for you. The best part? It’s completely free to set up.</p>
+<h3 id="what-you-need">What You Need</h3>
+<p>To get started, make sure you have:</p>
+<ul>
+<li>A Mac computer.</li>
+<li>The Messages app (iMessage) installed and signed in.</li>
+<li>A little bit of time to follow these steps.</li>
+</ul>
+<h3 id="how-it-works">How It Works</h3>
+<p>This system doesn&#39;t just reply to everyone. That would be annoying! Instead, you add specific people to a “watchlist.” When they text you, your Mac sends the message to the Gemini AI, which writes a smart reply based on your conversation history.</p>
+<h3 id="simple-setup-steps">Simple Setup Steps</h3>
+<p>I’ve made this as easy as possible. Here is the high-level roadmap:</p>
+<ol>
+<li><strong>Install the Tools:</strong> We use a special tool that lets your Mac talk to the Messages app.</li>
+<li><strong>Get Your Key:</strong> You’ll grab a free API key from Google Gemini. This is the “brain” that writes the messages.</li>
+<li><strong>Set Permissions:</strong> You need to give your Mac permission to read messages. Don&#39;t worry, it&#39;s just so the bot can see the texts!</li>
+<li><strong>Configure the Code:</strong> You’ll update a file called <code>watcher.js</code>. This tells the bot to use Gemini instead of other AI models.</li>
+<li><strong>Launch:</strong> Run the program from your terminal, and you’re live!</li>
+</ol>
+<h3 id="why-youll-love-it">Why You’ll Love It</h3>
+<ul>
+<li><strong>You’re in Control:</strong> You choose who gets an automated reply.</li>
+<li><strong>Smart AI:</strong> Since it uses Gemini, the replies feel natural, not robotic.</li>
+<li><strong>Telegram Integration:</strong> You can manage the bot and even restart it right from your Telegram app.</li>
+</ul>
+<h3 id="a-few-quick-notes">A Few Quick Notes</h3>
+<p>Right now, this works on macOS. I’ve been testing this for weeks to make sure it’s stable, and it works for both blue iMessages and green text messages. </p>
+<p>This is the &quot;starter version&quot; of the bot. I’m already working on some advanced features for the future, so keep an eye out for updates. </p>
+<p><strong>Ready to start?</strong> Head over to the project page, grab the code, and try it out. If you get stuck, leave a comment on the video—I’m happy to help you get it running!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

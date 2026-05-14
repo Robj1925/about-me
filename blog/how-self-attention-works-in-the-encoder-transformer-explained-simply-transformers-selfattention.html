@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is Self-Attention? How AI Understands Language — Robby J</title>
+  <meta name="description" content="Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English." />
+  <meta property="og:title" content="What is Self-Attention? How AI Understands Language — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Transformers</span><span class="post-tag">Artificial Intelligence</span></div>
+      <h1 class="post-title">What is Self-Attention? How AI Understands Language</h1>
+      <p class="post-excerpt">Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.png" alt="What is Self-Attention? How AI Understands Language thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/wTB1Ec_4lDw"
+          title="YouTube video: What is Self-Attention? How AI Understands Language"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h1 id="what-is-self-attention-how-ai-understands-language">What is Self-Attention? How AI Understands Language</h1>
+<p>Hi! I’m Robby. I spend my days building AI systems, and today I want to talk about the coolest part of modern AI: <strong>Self-Attention</strong>.</p>
+<p>Have you ever wondered how a computer reads a sentence? It doesn’t just look at words one by one. It looks at the <em>whole</em> sentence at the same time to see how the words connect.</p>
+<h2 id="the-secret-sauce-self-attention">The Secret Sauce: Self-Attention</h2>
+<p>Self-attention is the very first step in the &quot;encoder&quot; part of a transformer model. It’s the tool that helps the AI understand the context of what it is reading.</p>
+<p>Think about this sentence:</p>
+<blockquote>
+<p>&quot;The cat sat on the mat because it was tired.&quot;</p>
+</blockquote>
+<h3 id="how-the-ai-connects-the-dots">How the AI connects the dots:</h3>
+<p>When the AI sees the word <strong>&quot;it,&quot;</strong> it needs to know what that word refers to. Does &quot;it&quot; mean the mat? Or does it mean the cat?</p>
+<p>Self-attention allows the computer to:</p>
+<ul>
+<li><strong>Look at all the words:</strong> It checks every word in the sentence.</li>
+<li><strong>Find relationships:</strong> It figures out that &quot;cat&quot; and &quot;it&quot; are likely linked because the cat is the one who is tired.</li>
+<li><strong>Understand the &quot;why&quot;:</strong> By connecting these words, the AI understands the deeper meaning of the story.</li>
+</ul>
+<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+<p>Before this technology, computers were pretty bad at reading. They would often forget the beginning of a sentence by the time they reached the end. </p>
+<p>Because of self-attention, AI can now:</p>
+<ul>
+<li>Translate languages more accurately.</li>
+<li>Summarize long books.</li>
+<li>Write emails that sound like they were written by a human.</li>
+</ul>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>Self-attention is like a highlighter. When the AI reads, it uses this mechanism to highlight which words in a sentence are most important to each other. Once it knows how the words &quot;connect,&quot; it can finally understand what you are trying to say!</p>
+<p>Pretty cool, right?</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

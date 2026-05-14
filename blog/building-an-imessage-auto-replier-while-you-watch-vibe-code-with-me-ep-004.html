@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build Your Own AI iMessage Assistant: A Step-by-Step Guide — Robby J</title>
+  <meta name="description" content="Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically." />
+  <meta property="og:title" content="Build Your Own AI iMessage Assistant: A Step-by-Step Guide — Robby J" />
+  <meta property="og:description" content="Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Python</span><span class="post-tag">Automation</span><span class="post-tag">Google Gemini</span><span class="post-tag">Coding</span></div>
+      <h1 class="post-title">Build Your Own AI iMessage Assistant: A Step-by-Step Guide</h1>
+      <p class="post-excerpt">Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.png" alt="Build Your Own AI iMessage Assistant: A Step-by-Step Guide thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/u38dEuDcyrA"
+          title="YouTube video: Build Your Own AI iMessage Assistant: A Step-by-Step Guide"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="build-your-own-ai-imessage-assistant">Build Your Own AI iMessage Assistant</h2>
+<p>Hi everyone! I’m Robby. As an engineer, I love building tools that save time and make life more fun. Today, I want to show you how to build your very own AI assistant that lives right inside your iMessage app.</p>
+<p>Have you ever wanted an AI to help you reply to texts? By connecting your messages to Google Gemini, you can create a bot that doesn&#39;t just read text—it can also &quot;see&quot; pictures you receive!</p>
+<h3 id="how-it-works">How It Works</h3>
+<p>Think of this project as building a digital brain for your phone. Here is the plan:</p>
+<ul>
+<li><strong>The Connection:</strong> We set up a bridge between your computer and your iMessages.</li>
+<li><strong>The Eyes:</strong> We use Google Gemini to look at image attachments sent to you.</li>
+<li><strong>The Brain:</strong> We use a technique called RAG (Retrieval Augmented Generation) to give the AI context so it knows exactly how to respond based on your past conversations.</li>
+</ul>
+<h3 id="seeing-the-world-with-ai">Seeing the World with AI</h3>
+<p>One of the coolest parts of this project is image analysis. When someone sends you a photo, the computer turns that image into something called <strong>Base64 code</strong>. This code is just a way to translate a picture into text so the AI can &quot;read&quot; it. </p>
+<p>Once Gemini gets that data, it can tell you what is in the picture. Is it a dog? A picture of a whiteboard? A funny meme? The AI can figure it out and write a smart reply for you.</p>
+<h3 id="making-it-personal">Making It Personal</h3>
+<p>We don&#39;t want the AI to sound like a robot. By using RAG, the AI looks at your message history before it answers. This helps it understand your style and the context of the chat. It makes the conversation feel much more natural.</p>
+<h3 id="whats-next">What’s Next?</h3>
+<p>This is just the beginning! Once you have the basics down, there is so much more we can add:</p>
+<ul>
+<li><strong>Audio:</strong> Let the AI listen to voice memos.</li>
+<li><strong>Summaries:</strong> Have the AI summarize long group chats so you don’t miss anything.</li>
+<li><strong>Smart Automation:</strong> Tell your AI to set reminders or look up information based on what your friends ask.</li>
+</ul>
+<p>Building AI agents is a great way to learn how modern technology works. If you like coding and automation, I hope you’ll try building this project yourself. It’s a game-changer for how you manage your messages!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

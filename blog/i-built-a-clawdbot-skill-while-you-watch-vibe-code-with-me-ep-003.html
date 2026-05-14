@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Build Your Own AI Content Bot (The Chill Way) — Robby J</title>
+  <meta name="description" content="Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!" />
+  <meta property="og:title" content="How to Build Your Own AI Content Bot (The Chill Way) — Robby J" />
+  <meta property="og:description" content="Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!" />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Automation</span><span class="post-tag">Programming</span><span class="post-tag">Software Engineering</span></div>
+      <h1 class="post-title">How to Build Your Own AI Content Bot (The Chill Way)</h1>
+      <p class="post-excerpt">Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.png" alt="How to Build Your Own AI Content Bot (The Chill Way) thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/wF1DMU7sSp4"
+          title="YouTube video: How to Build Your Own AI Content Bot (The Chill Way)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="welcome-to-the-vibe-code-session">Welcome to the Vibe Code Session</h2>
+<p>Hey everyone! I’m Robby. I’m a software engineer, and I love building cool things with AI. Today, I want to show you how I build AI agents to help with content creation. </p>
+<p>We aren&#39;t doing any high-stress tutorials today. We are just going to keep things chill, grab a coffee, and look at how we can make AI do the heavy lifting for us.</p>
+<h2 id="what-is-an-ai-agent">What is an AI Agent?</h2>
+<p>Think of an AI agent like a smart assistant. Instead of just answering a question, an agent can actually <em>do</em> things for you. </p>
+<p>In our session, we are working on something called a &quot;Clawdbot skill.&quot; This is basically a small piece of code that lets our AI connect to different tools and finish tasks without us having to click every button ourselves.</p>
+<h2 id="why-automate-your-content">Why Automate Your Content?</h2>
+<p>If you create content, you know it takes a lot of time. By building an agent, you can:</p>
+<ul>
+<li><strong>Save time:</strong> Let the AI handle the repetitive parts of your work.</li>
+<li><strong>Stay organized:</strong> Keep your ideas and posts in one flow.</li>
+<li><strong>Focus on the fun parts:</strong> Spend your energy on creative ideas instead of busy work.</li>
+</ul>
+<h2 id="how-we-get-started">How We Get Started</h2>
+<p>Building an agent might sound scary, but it’s really just like connecting LEGO bricks. Here is the simple process we follow:</p>
+<ol>
+<li><strong>Define the Goal:</strong> What do we want the bot to do? In this case, we want it to help us manage content.</li>
+<li><strong>Pick the Tools:</strong> We choose the right AI models and APIs that help the bot &quot;talk&quot; to the internet.</li>
+<li><strong>Connect the Dots:</strong> We write the code that tells the AI when to start and when to stop.</li>
+<li><strong>Test and Tinker:</strong> We run the code, see what happens, and fix it if it breaks. That’s the best part of being an engineer!</li>
+</ol>
+<h2 id="lets-keep-learning">Let’s Keep Learning</h2>
+<p>Coding is all about experimenting. You don’t need to be perfect to start building amazing AI systems. My best advice? Just start small, be curious, and don&#39;t be afraid to break things while you learn.</p>
+<p>What are you working on today? Let me know in the comments—I love hearing about the cool projects you&#39;re building!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation — Robby J</title>
+  <meta name="description" content="Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way." />
+  <meta property="og:title" content="Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation — Robby J" />
+  <meta property="og:description" content="Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Clawdbot</span><span class="post-tag">Automation</span><span class="post-tag">YouTubeSEO</span><span class="post-tag">Programming</span></div>
+      <h1 class="post-title">Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation</h1>
+      <p class="post-excerpt">Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.png" alt="Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/Xe09u-PriZ4"
+          title="YouTube video: Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="what-are-clawdbot-skills">What are Clawdbot Skills?</h2>
+<p>Hi everyone! I’m Robby. As a software engineer, I love finding ways to make my computer do the boring stuff for me. </p>
+<p>Think of your AI assistant like a new employee. A &quot;Skill&quot; is like giving that employee a specific tool to do a job. Without skills, your AI can chat, but it can’t <em>do</em> things. By building skills, we teach our AI how to connect to other apps, read files, or even help us run our YouTube channels.</p>
+<h2 id="why-build-your-own-skills">Why Build Your Own Skills?</h2>
+<p>When we build custom skills, we turn a basic chatbot into a powerful tool. In this guide, I’ll show you how I built a skill that watches a YouTube link, generates timestamps, and writes an SEO-friendly description automatically.</p>
+<h2 id="step-1-setting-up-your-workspace">Step 1: Setting Up Your Workspace</h2>
+<p>To start, you need to find your <strong>OpenClaw skills directory</strong>. This is just a folder on your computer where your AI keeps its &quot;instructions.&quot; </p>
+<ul>
+<li>Open your code editor (I use VS Code).</li>
+<li>Locate the config files.</li>
+<li>If things don’t start up right away, don&#39;t worry! Using &quot;verbose logging&quot; is my favorite way to see exactly what’s going wrong behind the scenes.</li>
+</ul>
+<h2 id="step-2-coding-the-skill">Step 2: Coding the Skill</h2>
+<p>I like to use prompting to build the skeleton of the code. </p>
+<ol>
+<li><strong>Define the goal:</strong> Tell the AI you want a tool that grabs a YouTube link and sends it to the Gemini API.</li>
+<li><strong>Connect the API:</strong> Make sure your API key is secure. This connects your AI to the smart brain (Gemini) that creates the text.</li>
+<li><strong>Refine the Output:</strong> Sometimes the AI adds extra headers or formatting we don&#39;t want. This is where &quot;prompt engineering&quot; comes in. We just tell the AI exactly how we want the result to look—clean and simple.</li>
+</ol>
+<h2 id="step-3-debugging-the-real-fun">Step 3: Debugging (The Real Fun!)</h2>
+<p>Building software isn&#39;t always smooth. I ran into issues with user recognition and unwanted text headings, and that is totally normal. </p>
+<p>If your code breaks, try these tips:</p>
+<ul>
+<li><strong>Read the logs:</strong> They tell you exactly where the error is.</li>
+<li><strong>Use GitHub Docs:</strong> If you’re stuck, the answers are usually in the documentation.</li>
+<li><strong>Iterate:</strong> If the output isn&#39;t perfect, just update your prompt and try again. It’s like teaching a student; sometimes you just have to explain it a different way.</li>
+</ul>
+<h2 id="why-this-matters-for-youtube">Why This Matters for YouTube</h2>
+<p>If you create content, you know that timestamps and descriptions are tedious. By automating this, I can spend less time typing and more time filming. Plus, adding 3–5 timestamps for videos under 10 minutes is a great way to help people find your content faster.</p>
+<h2 id="final-thoughts">Final Thoughts</h2>
+<p>Don&#39;t be afraid to experiment. Building AI tools is all about trying, failing, and fixing. Once you build your first skill, you&#39;ll start seeing automation opportunities everywhere—like meeting summaries or auto-posting to social media. </p>
+<p>What kind of skill are you going to build for your workflow? Let me know in the comments!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

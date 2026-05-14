@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Do AI Models Think? A Simple Guide to Neural Networks — Robby J</title>
+  <meta name="description" content="Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide." />
+  <meta property="og:title" content="How Do AI Models Think? A Simple Guide to Neural Networks — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/neural-network-step-by-step-example.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Tech Explained</span></div>
+      <h1 class="post-title">How Do AI Models Think? A Simple Guide to Neural Networks</h1>
+      <p class="post-excerpt">Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/neural-network-step-by-step-example.png" alt="How Do AI Models Think? A Simple Guide to Neural Networks thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/3AnekoX-V4Q"
+          title="YouTube video: How Do AI Models Think? A Simple Guide to Neural Networks"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I’m Robby!</h2>
+<p>As a software engineer, I spend my days building AI systems. People often ask me, &quot;How does a computer actually &#39;think&#39;?&quot; It sounds like magic, but it’s actually just a lot of math working together. Let’s look at how a neural network works using an easy example.</p>
+<h2 id="the-goal-making-a-decision">The Goal: Making a Decision</h2>
+<p>Imagine we want an AI to decide if a bank should give someone a loan. To do this, the AI needs two pieces of information, which we call <strong>inputs</strong>:</p>
+<ul>
+<li><strong>Credit Score:</strong> How good you are at paying back money.</li>
+<li><strong>Income:</strong> How much money you earn.</li>
+</ul>
+<h2 id="step-1-the-hidden-layers">Step 1: The Hidden Layers</h2>
+<p>Think of a neural network like a series of filters. The data starts at the input and moves through &quot;hidden layers.&quot; These layers are just groups of math equations. </p>
+<p>Inside these layers, we have two secret ingredients:</p>
+<ol>
+<li><strong>Weights:</strong> These decide which input is more important. For example, maybe the AI decides the credit score is more important than the income.</li>
+<li><strong>Biases:</strong> These act like a safety adjustment to help the math match the real world.</li>
+</ol>
+<h2 id="step-2-activation-functions-the-brains-switches">Step 2: Activation Functions (The Brain&#39;s Switches)</h2>
+<p>After the math happens, the numbers get passed to an <strong>activation function</strong>. Think of this like a light switch. </p>
+<ul>
+<li><strong>ReLU:</strong> This function acts like a filter that ignores negative numbers.</li>
+<li><strong>Sigmoid:</strong> This one turns any number into a probability between 0 and 1. It helps the computer say, &quot;There is a 90% chance this person will pay back the loan.&quot;</li>
+</ul>
+<h2 id="step-3-getting-the-prediction">Step 3: Getting the Prediction</h2>
+<p>Once the data travels through all the layers, it reaches the end. The AI takes all those processed numbers and spits out a final answer. </p>
+<p>It’s not perfect at first! When we build these, we show the AI thousands of examples. Every time it gets an answer wrong, it goes back through the layers and adjusts its &quot;weights&quot; to be more accurate next time. </p>
+<h2 id="why-this-matters">Why This Matters</h2>
+<p>Neural networks aren&#39;t actually thinking like humans—they are just really good at finding patterns in data. By adjusting weights and using activation functions, computers can learn to spot things that even humans might miss. </p>
+<p>Pretty cool, right? You just learned the foundation of how most modern AI works!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

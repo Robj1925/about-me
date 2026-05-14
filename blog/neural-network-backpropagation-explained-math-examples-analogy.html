@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Do AI Models Learn? Backpropagation Explained Simply — Robby J</title>
+  <meta name="description" content="Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand." />
+  <meta property="og:title" content="How Do AI Models Learn? Backpropagation Explained Simply — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Backpropagation</span><span class="post-tag">Data Science</span></div>
+      <h1 class="post-title">How Do AI Models Learn? Backpropagation Explained Simply</h1>
+      <p class="post-excerpt">Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.png" alt="How Do AI Models Learn? Backpropagation Explained Simply thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/27IxhaM2stI"
+          title="YouTube video: How Do AI Models Learn? Backpropagation Explained Simply"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I&#39;m Robby!</h2>
+<p>I’m a software engineer, and I spend my days building AI systems. A lot of people ask me, &quot;Robby, how does a computer actually learn?&quot; </p>
+<p>When you look at the math, it can seem scary. But it doesn&#39;t have to be. Today, we are going to pull back the curtain on <strong>backpropagation</strong>. That is just a fancy word for how a neural network learns from its mistakes.</p>
+<h3 id="what-is-backpropagation">What is Backpropagation?</h3>
+<p>Think of a neural network like a student taking a practice test. </p>
+<ol>
+<li><strong>The Guess:</strong> The computer makes a guess at the answer.</li>
+<li><strong>The Mistake:</strong> It compares its guess to the real answer. The difference is called the &quot;loss.&quot;</li>
+<li><strong>The Lesson:</strong> Backpropagation is how the computer walks backward through its own &quot;brain&quot; to figure out which parts of its math caused the wrong answer. It then makes tiny changes to fix those parts for next time.</li>
+</ol>
+<h3 id="the-three-steps-to-learning">The Three Steps to Learning</h3>
+<p>To make this happen, the computer uses a few simple steps:</p>
+<ul>
+<li><strong>The Forward Pass:</strong> The computer takes information, does some math, and gives an answer.</li>
+<li><strong>The Loss Function:</strong> This measures how wrong the answer was. If the computer is way off, the &quot;loss&quot; is big.</li>
+<li><strong>The Chain Rule:</strong> This is a cool math trick. It helps us see how changing one tiny number affects the final result. It acts like a map, showing the computer exactly which weights to turn up or down.</li>
+</ul>
+<h3 id="a-simple-analogy">A Simple Analogy</h3>
+<p>Imagine you are trying to throw a ball into a basket while wearing a blindfold. </p>
+<ul>
+<li>You throw the ball (The Forward Pass).</li>
+<li>A friend tells you, &quot;You were two feet too far to the right&quot; (The Loss Function).</li>
+<li>You adjust your arm angle slightly (The Update).</li>
+</ul>
+<p>Backpropagation is exactly like having that friend. It tells the network exactly how to adjust its &quot;arm&quot; so that the next throw is closer to the center.</p>
+<h3 id="putting-it-together">Putting It Together</h3>
+<p>Learning isn&#39;t about being perfect the first time. It is about failing, checking your work, and making small improvements. That is how we build powerful AI, and that is how you can master these concepts too!</p>
+<p>By understanding these small steps, you can see that AI isn&#39;t magic—it’s just math working hard to get better, one mistake at a time.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

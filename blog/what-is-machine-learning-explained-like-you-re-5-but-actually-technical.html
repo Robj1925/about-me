@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is Machine Learning? A Simple Guide for Beginners — Robby J</title>
+  <meta name="description" content="Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English." />
+  <meta property="og:title" content="What is Machine Learning? A Simple Guide for Beginners — Robby J" />
+  <meta property="og:description" content="Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English." />
+  
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Machine Learning</span><span class="post-tag">AI</span><span class="post-tag">Data Science</span><span class="post-tag">Artificial Intelligence</span></div>
+      <h1 class="post-title">What is Machine Learning? A Simple Guide for Beginners</h1>
+      <p class="post-excerpt">Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/h_MH8sIENRo"
+          title="YouTube video: What is Machine Learning? A Simple Guide for Beginners"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="what-exactly-is-machine-learning">What Exactly is Machine Learning?</h2>
+<p>Hi there! I’m Robby. I spend my days building AI systems, and one question I get asked all the time is: <em>How does a computer actually &#39;learn&#39;?</em></p>
+<p>Think of a traditional computer program like a recipe. You give the computer a list of exact steps to follow. If the steps change, the computer gets confused. </p>
+<p><strong>Machine Learning</strong> is different. Instead of giving the computer a recipe, we give it a mountain of data and let it figure out the patterns itself. It’s like teaching a child to recognize a dog by showing them lots of pictures of dogs, rather than trying to describe every single detail of a dog using code.</p>
+<h2 id="the-two-ways-computers-learn">The Two Ways Computers Learn</h2>
+<p>In my work, I mostly use two ways to teach computers. Let’s break them down.</p>
+<h3 id="1-supervised-learning-learning-with-an-answer-key">1. Supervised Learning: Learning with an Answer Key</h3>
+<p>Imagine you are studying for a math test and you have an answer key in the back of the book. You try to solve the problem, check the answer, and correct yourself if you’re wrong. That is <strong>Supervised Learning</strong>.</p>
+<p>We give the computer &quot;labeled data,&quot; which means we show it inputs and the correct outputs. </p>
+<ul>
+<li><strong>Spam Filters:</strong> We show the computer millions of emails labeled &quot;Spam&quot; or &quot;Not Spam.&quot; Eventually, it learns to spot the junk on its own.</li>
+<li><strong>House Prices:</strong> We give the computer a list of house sizes and their final sale prices. It learns to predict what a new house might cost based on that history.</li>
+<li><strong>Medical Diagnosis:</strong> We show the computer thousands of X-rays labeled with &quot;healthy&quot; or &quot;needs attention.&quot; It helps doctors spot problems faster.</li>
+</ul>
+<h3 id="2-unsupervised-learning-finding-hidden-patterns">2. Unsupervised Learning: Finding Hidden Patterns</h3>
+<p>Sometimes, we don’t have an answer key. We just have a pile of data and want to know what’s inside. This is <strong>Unsupervised Learning</strong>.</p>
+<p>The computer looks at the data and tries to group things together that look similar. It’s like organizing a messy room by putting all the toys in one bin and all the books in another without being told what they are.</p>
+<ul>
+<li><strong>Customer Segmentation:</strong> A store might use this to see which shoppers like the same types of products, helping them suggest better items for you to buy.</li>
+<li><strong>Fraud Detection:</strong> Sometimes, a computer can spot a &quot;weird&quot; transaction that doesn&#39;t fit the normal patterns of your spending, even if it hasn&#39;t seen that specific fraud before.</li>
+</ul>
+<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+<p>As a software engineer, I love machine learning because it lets us solve problems that are too big for humans to handle alone. Whether it’s predicting the weather or helping you find a new favorite movie, these tools are the secret sauce behind the technology we use every single day.</p>
+<p>Learning how these systems work is the first step to building them yourself. Don’t worry about the math just yet—once you have the mental model, the rest will start to make a lot more sense!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

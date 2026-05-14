@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is a Decision Tree? AI Made Simple — Robby J</title>
+  <meta name="description" content="Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly." />
+  <meta property="og:title" content="What is a Decision Tree? AI Made Simple — Robby J" />
+  <meta property="og:description" content="Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly." />
+  
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Data Science</span><span class="post-tag">Beginner Guide</span></div>
+      <h1 class="post-title">What is a Decision Tree? AI Made Simple</h1>
+      <p class="post-excerpt">Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/Mo3A5sU2szQ"
+          title="YouTube video: What is a Decision Tree? AI Made Simple"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-there-im-robby">Hi there! I’m Robby.</h2>
+<p>As a software engineer who builds AI systems every day, I get asked a lot of big questions. One of the most common ones is: <em>How does a computer actually &#39;think&#39;?</em></p>
+<p>Computers don&#39;t have brains like us, but they are great at following rules. One of the best ways they do this is with something called a <strong>Decision Tree</strong>.</p>
+<h3 id="think-of-it-like-a-game-of-20-questions">Think of It Like a Game of 20 Questions</h3>
+<p>Have you ever played a game where you have to guess an animal by asking &#39;yes&#39; or &#39;no&#39; questions? A decision tree is exactly like that!</p>
+<p>Imagine you are trying to decide what to wear today. Your brain might go through a little flow chart:</p>
+<ul>
+<li><strong>Is it raining?</strong> <ul>
+<li>Yes? Wear a raincoat.</li>
+<li>No? Is it cold?<ul>
+<li>Yes? Wear a sweater.</li>
+<li>No? Wear a t-shirt.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>That simple flow chart is all a decision tree is. It takes a bunch of data and asks smart questions to narrow down the right answer.</p>
+<h3 id="how-computers-build-these-trees">How Computers Build These Trees</h3>
+<p>When we train an AI, we give it a big pile of data. The computer looks at that data and builds its own &#39;tree&#39; by finding the best questions to ask first. </p>
+<ol>
+<li><strong>The Root Node:</strong> This is the starting point. It’s the very first question the computer asks.</li>
+<li><strong>The Branches:</strong> Depending on the answer (yes or no), the computer moves down a branch.</li>
+<li><strong>The Leaf:</strong> This is the end of the line. It’s the final decision or prediction the computer makes.</li>
+</ol>
+<h3 id="why-do-engineers-love-them">Why Do Engineers Love Them?</h3>
+<p>In my job, I work with some very complicated AI models called &#39;neural networks.&#39; Those models are super powerful, but they are also like &#39;black boxes&#39;—it’s very hard to see <em>why</em> they made a certain choice.</p>
+<p>Decision trees are different because they are <strong>easy to read.</strong> </p>
+<p>If a computer uses a decision tree to help a doctor figure out what is wrong with a patient, the doctor can look at the tree and see exactly which symptoms led to that diagnosis. Being able to see the &#39;why&#39; behind an AI’s decision is a huge deal in the tech world!</p>
+<h3 id="the-bottom-line">The Bottom Line</h3>
+<p>Decision trees show us that AI doesn&#39;t always have to be confusing or magical. Sometimes, the best way to solve a problem is just to break it down into small, simple questions.</p>
+<p>Keep asking questions, and keep coding!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

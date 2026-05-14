@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Training vs. Test Sets: How to Give Your AI a Final Exam — Robby J</title>
+  <meta name="description" content="Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models." />
+  <meta property="og:title" content="Training vs. Test Sets: How to Give Your AI a Final Exam — Robby J" />
+  <meta property="og:description" content="Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models." />
+  
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Data Science</span><span class="post-tag">Coding for Beginners</span></div>
+      <h1 class="post-title">Training vs. Test Sets: How to Give Your AI a Final Exam</h1>
+      <p class="post-excerpt">Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/HXw60MHXQmg"
+          title="YouTube video: Training vs. Test Sets: How to Give Your AI a Final Exam"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="does-your-ai-actually-know-its-stuff">Does Your AI Actually Know Its Stuff?</h2>
+<p>Hi! I’m Robby. I’m a software engineer, and I spend my days building AI systems. One of the most important things I’ve learned is that an AI is only as good as its final exam.</p>
+<p>When we teach a computer to do something—like tell the difference between a picture of a cat and a dog—we give it a huge pile of pictures to study. But how do we know if it <em>really</em> understands, or if it just memorized the pictures?</p>
+<h2 id="the-secret-the-test-set">The Secret: The Test Set</h2>
+<p>To make sure our AI isn&#39;t just cheating, we split our data into two piles:</p>
+<ul>
+<li><strong>The Training Set:</strong> This is the &quot;study guide.&quot; We let the AI look at these pictures as many times as it needs to learn the patterns.</li>
+<li><strong>The Test Set:</strong> This is the &quot;final exam.&quot; We keep these pictures a total secret from the AI. It has never seen them before!</li>
+</ul>
+<h2 id="why-cheating-doesnt-work">Why Cheating Doesn’t Work</h2>
+<p>If we didn&#39;t use a Test Set, the AI might just &quot;memorize&quot; the answers. Imagine if you had a math test, but your teacher gave you the answer key to study the night before. You’d get an A, but you wouldn’t actually know how to do the math, right?</p>
+<p>When we use a Test Set, it’s like giving the AI a brand-new set of problems. If it still gets the right answers, we know it truly learned the rules of the game.</p>
+<h2 id="what-happens-after-the-exam">What Happens After the Exam?</h2>
+<p>Once the AI takes its final exam, we look at its score. </p>
+<ul>
+<li><strong>High score?</strong> Great! It’s ready to go out into the world.</li>
+<li><strong>Low score?</strong> No problem. It means the AI didn&#39;t learn the concepts well enough. We go back, give it more data, and let it study some more.</li>
+</ul>
+<p>Building AI is all about practice and testing. By keeping a &quot;secret&quot; pile of data to test your model, you can be sure your code is smart, reliable, and ready for the real world!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

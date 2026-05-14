@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Learns: The 'Blame Game' of Backpropagation — Robby J</title>
+  <meta name="description" content="Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide." />
+  <meta property="og:title" content="How AI Learns: The 'Blame Game' of Backpropagation — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Artificial Intelligence</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Data Science</span><span class="post-tag">Beginner Tech</span></div>
+      <h1 class="post-title">How AI Learns: The 'Blame Game' of Backpropagation</h1>
+      <p class="post-excerpt">Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.png" alt="How AI Learns: The 'Blame Game' of Backpropagation thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/X2TMzjriDYg"
+          title="YouTube video: How AI Learns: The 'Blame Game' of Backpropagation"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi! I’m Robby.</h2>
+<p>I spend my days building AI systems, but today I want to talk about something fundamental: <strong>How does an AI actually learn from its mistakes?</strong></p>
+<p>When a computer makes a guess and gets it wrong, it doesn&#39;t just give up. It plays a game called the &quot;Blame Game.&quot; In the world of tech, we call this <strong>Backpropagation</strong>.</p>
+<h3 id="what-is-a-neural-network">What is a Neural Network?</h3>
+<p>Think of a neural network like a giant team of people passing notes to solve a puzzle. The input layer gets the information, and the output layer gives the final answer. In the middle, we have &quot;hidden layers&quot;—the workers who do the heavy lifting.</p>
+<h3 id="the-problem-when-ai-gets-it-wrong">The Problem: When AI Gets It Wrong</h3>
+<p>Imagine you ask your AI to identify a picture of a cat, but it says &quot;dog.&quot; That’s a mistake! </p>
+<p>We know the AI was wrong, but <em>which</em> worker in the hidden layers caused the error? Was it the one looking at the ears? Or the one looking at the fur? To get smarter, the AI needs to know exactly who to blame.</p>
+<h3 id="how-backpropagation-works">How Backpropagation Works</h3>
+<p>Backpropagation is like walking backward through the team to find the person who made the mistake. Here is how it happens:</p>
+<ol>
+<li><strong>Start at the Finish:</strong> We look at the final answer and measure how far off it was from the truth.</li>
+<li><strong>Go Backward:</strong> We travel backward from the output layer, back through the hidden layers.</li>
+<li><strong>Assign the Blame:</strong> We calculate a specific &quot;error signal&quot; for every single node. This tells the node, &quot;Hey, you contributed this much to the mistake.&quot;</li>
+<li><strong>Fix It:</strong> Once we know who is to blame, the AI adjusts its settings (its &quot;weights&quot;) just a tiny bit to be more accurate next time.</li>
+</ol>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>This &quot;Blame Game&quot; is the secret sauce behind modern AI. Without it, computers would never be able to learn from data. By constantly tracing errors backward, the network slowly gets better and better at its job.</p>
+<p>Learning how to trace errors is the first step in understanding how machines think. It’s not magic—it’s just math, and a little bit of teamwork!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

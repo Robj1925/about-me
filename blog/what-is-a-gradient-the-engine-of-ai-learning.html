@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is a Gradient? How AI Actually Learns — Robby J</title>
+  <meta name="description" content="Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes." />
+  <meta property="og:title" content="What is a Gradient? How AI Actually Learns — Robby J" />
+  <meta property="og:description" content="Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes." />
+  
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Calculus</span><span class="post-tag">Coding</span><span class="post-tag">Beginner AI</span></div>
+      <h1 class="post-title">What is a Gradient? How AI Actually Learns</h1>
+      <p class="post-excerpt">Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/5Pc5E7AFtNE"
+          title="YouTube video: What is a Gradient? How AI Actually Learns"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I&#39;m Robby!</h2>
+<p>As a software engineer who builds AI systems, I get asked one question a lot: <strong>How does a computer actually learn?</strong> </p>
+<p>People think AI is like magic, but it’s actually just a lot of math working together. Today, let’s talk about the most important part of that math: the <strong>Gradient</strong>.</p>
+<h2 id="think-of-ai-like-a-hiker-in-the-fog">Think of AI Like a Hiker in the Fog</h2>
+<p>Imagine you are standing on a giant, foggy mountain. Your goal is to get to the very bottom, but you can’t see where you are going. What do you do? </p>
+<ol>
+<li>You feel the ground with your feet.</li>
+<li>You find the direction that slopes downward.</li>
+<li>You take a step in that direction.</li>
+</ol>
+<p>In the world of AI, the <strong>Gradient</strong> is your compass. It tells the computer exactly which way is &quot;downhill.&quot; By moving downhill, the AI reduces its errors and makes better predictions.</p>
+<h2 id="the-engine-calculus-and-code">The Engine: Calculus and Code</h2>
+<p>To find this &quot;downhill&quot; path, we use two special tools:</p>
+<ul>
+<li><strong>Derivatives:</strong> Think of this as measuring the steepness of the ground at your exact spot.</li>
+<li><strong>Backpropagation:</strong> This is how the computer looks back at its mistakes. It goes through its own code and says, &quot;Hey, that guess was wrong! Let&#39;s tweak these settings to do better next time.&quot;</li>
+</ul>
+<p>When we combine these, the AI updates its &quot;parameters&quot; (its internal settings). Every time it does this, it gets just a little bit smarter.</p>
+<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+<p>Without the gradient, AI would be guessing randomly forever. It wouldn&#39;t know if its answer was getting better or worse. </p>
+<p>Because of this process, we can train AI to do amazing things—like recognizing your photos, translating languages, or even driving cars. It all starts with that simple mission: <strong>find the slope and take a step.</strong></p>
+<h2 id="summary">Summary</h2>
+<ul>
+<li><strong>The Goal:</strong> Make the fewest mistakes possible.</li>
+<li><strong>The Gradient:</strong> The math that points the way to a better answer.</li>
+<li><strong>The Result:</strong> A computer that learns from its own experience.</li>
+</ul>
+<p>Keep coding and keep asking questions! Science is just a way of exploring how things work.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Learns: Backpropagation Explained Simply — Robby J</title>
+  <meta name="description" content="Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide." />
+  <meta property="og:title" content="How AI Learns: Backpropagation Explained Simply — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Data Science</span></div>
+      <h1 class="post-title">How AI Learns: Backpropagation Explained Simply</h1>
+      <p class="post-excerpt">Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.png" alt="How AI Learns: Backpropagation Explained Simply thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/y7iTsuW4T3E"
+          title="YouTube video: How AI Learns: Backpropagation Explained Simply"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-there-im-robby">Hi there! I&#39;m Robby.</h2>
+<p>As an AI engineer, people often ask me how a computer actually &quot;learns.&quot; It sounds like magic, but it’s actually just a smart math trick called <strong>backpropagation</strong>. Think of it as a way for the computer to grade its own homework and fix its mistakes.</p>
+<h3 id="the-guessing-game-the-forward-pass">The Guessing Game: The Forward Pass</h3>
+<p>Imagine you are teaching a computer to recognize a picture of a cat. First, the computer takes a guess. This is called the <strong>forward pass</strong>. It looks at the numbers in the picture and travels through layers of math to reach an answer.</p>
+<p>At the start, the computer is usually wrong. It might say, &quot;That’s a toaster!&quot; when it’s clearly a cat.</p>
+<h3 id="finding-the-mistake-the-loss-function">Finding the Mistake: The Loss Function</h3>
+<p>Once the computer guesses, we compare its answer to the real answer. We use something called a <strong>loss function</strong>. This is just a fancy way of measuring how wrong the computer was. If the computer is really far off, the loss is high. If it’s close, the loss is low.</p>
+<h3 id="learning-from-mistakes-backpropagation">Learning from Mistakes: Backpropagation</h3>
+<p>This is where the magic happens. Backpropagation is like walking backward through the computer’s layers to see which parts caused the bad guess.</p>
+<ul>
+<li><strong>The Chain Rule:</strong> We use a math tool called the chain rule. It helps us see exactly how much each tiny setting (or &quot;weight&quot;) inside the computer contributed to the final mistake.</li>
+<li><strong>Moving Backward:</strong> By going backward from the answer, we can figure out which connections in the network need to be adjusted.</li>
+<li><strong>The Update:</strong> Once we know who caused the mistake, we tweak the settings just a little bit. We want the computer to be a tiny bit more accurate next time.</li>
+</ul>
+<h3 id="why-it-matters">Why it Matters</h3>
+<p>This cycle happens over and over again—sometimes millions of times. Every time the computer goes through this loop, it gets a little better at its job. It remembers what worked and throws away what didn&#39;t.</p>
+<p>Backpropagation is the engine that powers everything from the AI that writes your emails to the systems that help doctors spot diseases. It’s not magic; it’s just very efficient math!</p>
+<p>Keep building and keep learning!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

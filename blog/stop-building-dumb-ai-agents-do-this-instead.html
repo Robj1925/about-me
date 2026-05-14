@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory — Robby J</title>
+  <meta name="description" content="Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans." />
+  <meta property="og:title" content="Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory — Robby J" />
+  <meta property="og:description" content="Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Gemini</span><span class="post-tag">Productivity</span><span class="post-tag">Software Engineering</span></div>
+      <h1 class="post-title">Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory</h1>
+      <p class="post-excerpt">Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.png" alt="Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/uCqbwJca8ks"
+          title="YouTube video: Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="stop-starting-from-zero">Stop Starting From Zero</h2>
+<p>Hi everyone! I’m Robby. I spend my days building AI systems, and I see one big mistake people make all the time: they treat AI like a search engine. They ask a question, get an answer, and then start over the next day. </p>
+<p>If you want to get real work done, your AI needs to be more than just a chatbot. It needs to be a <strong>partner</strong> that actually remembers what you are working on. Today, I’m going to show you how to stop the &quot;blank slate&quot; problem and turn your ideas into a real plan.</p>
+<h2 id="why-your-ai-feels-dumb">Why Your AI Feels &quot;Dumb&quot;</h2>
+<p>Most AI agents have no memory. Every time you open a new chat, the AI forgets who you are and what you built yesterday. To fix this, we need to build a system that saves your progress. I use something called a <strong>&quot;memory bank&quot;</strong> (or RAG). This acts like a digital brain that keeps your project notes safe.</p>
+<h2 id="how-to-build-a-better-ai-assistant">How to Build a Better AI Assistant</h2>
+<p>I’ve built a system using Gemini CLI that turns any conversation into a concrete plan. Here is how it works:</p>
+<h3 id="1-the-interview-method">1. The &quot;Interview&quot; Method</h3>
+<p>Instead of just telling your AI to &quot;help me with this,&quot; turn it into an interview. Tell your AI to ask you questions about the <strong>what</strong>, the <strong>why</strong>, and the <strong>how</strong> of your project. By answering these, you force the AI to help you build a clear, step-by-step map before you write a single line of code.</p>
+<h3 id="2-set-up-a-memory-bank">2. Set Up a Memory Bank</h3>
+<p>Think of this as a file drawer for your AI. By using a local RAG (Retrieval-Augmented Generation) system, your AI can look back at past notes. When you start a new session, the AI already knows your project goals, your tech stack, and your progress. No more repeating yourself!</p>
+<h3 id="3-use-blueprints">3. Use Blueprints</h3>
+<p>I use custom Markdown files that act as blueprints. These files hold your project structure and goals. When your AI reads these files, it understands the big picture immediately.</p>
+<h2 id="start-building-today">Start Building Today</h2>
+<p>You don’t need to be a coding genius to make this happen. By following these steps, you move from just &quot;chatting&quot; to actually building. You’ll spend less time explaining your project and more time making it happen.</p>
+<p>Ready to get started? Use the interview method next time you talk to your AI. Give it a &quot;memory bank&quot; of your project files and watch how much faster you finish your tasks. Happy building!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

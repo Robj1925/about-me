@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Reads: Understanding Positional Encoding in Transformers — Robby J</title>
+  <meta name="description" content="Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences." />
+  <meta property="og:title" content="How AI Reads: Understanding Positional Encoding in Transformers — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Artificial Intelligence</span><span class="post-tag">Machine Learning</span><span class="post-tag">Transformers</span><span class="post-tag">AI Explained</span></div>
+      <h1 class="post-title">How AI Reads: Understanding Positional Encoding in Transformers</h1>
+      <p class="post-excerpt">Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.png" alt="How AI Reads: Understanding Positional Encoding in Transformers thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/G1Vgfwgtv48"
+          title="YouTube video: How AI Reads: Understanding Positional Encoding in Transformers"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi! I’m Robby.</h2>
+<p>I spend my days building AI systems, and one of the coolest parts of my job is figuring out how computers &quot;think.&quot; People often ask me, &quot;If computers read all the words in a sentence at the exact same time, how do they know which word comes first?&quot;</p>
+<p>That is a great question! To answer it, we have to talk about something called <strong>Positional Encoding</strong>.</p>
+<h2 id="the-problem-reading-all-at-once">The Problem: Reading All at Once</h2>
+<p>Older AI models used to read a sentence one word at a time, like you reading a book from left to right. But modern models, called <strong>Transformers</strong>, are different. They look at the whole sentence at once to save time.</p>
+<p>Because they look at everything at once, they can get a little confused. To a computer, &quot;The dog bit the man&quot; and &quot;The man bit the dog&quot; look exactly the same if you don&#39;t track the order!</p>
+<h2 id="the-secret-sauce-positional-encoding">The Secret Sauce: Positional Encoding</h2>
+<p>To fix this, we use a trick called <strong>Positional Encoding</strong>. Here is how it works in plain English:</p>
+<ul>
+<li><strong>Word Meaning:</strong> First, the computer turns every word into a list of numbers, called an embedding, that represents what the word means.</li>
+<li><strong>Adding Order:</strong> Next, we give every word a &quot;tag&quot; or a unique code that tells the computer its spot in the sentence.</li>
+<li><strong>The Mix:</strong> We add this position code to the word&#39;s meaning code.</li>
+</ul>
+<p>Now, the computer has one combined piece of information. It knows <em>what</em> the word is, and it knows <em>where</em> it belongs in the sentence.</p>
+<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+<p>Think of it like a set of building blocks. If you have blocks that spell &quot;CAT&quot; but they are in a pile, you don&#39;t know the order. Positional encoding is like numbering the blocks so you can always build the right word.</p>
+<p>Without this simple math trick, AI would be much worse at writing stories, translating languages, or even chatting with you right now!</p>
+<p>Next time you use an AI tool, remember: it’s not just reading your words; it’s using tiny bits of math to keep them in the right order.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

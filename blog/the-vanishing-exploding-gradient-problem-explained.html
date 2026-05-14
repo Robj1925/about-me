@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Neural Networks Fail: Vanishing and Exploding Gradients Explained — Robby J</title>
+  <meta name="description" content="Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them." />
+  <meta property="og:title" content="Why Neural Networks Fail: Vanishing and Exploding Gradients Explained — Robby J" />
+  <meta property="og:description" content="Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Deep Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Data Science</span></div>
+      <h1 class="post-title">Why Neural Networks Fail: Vanishing and Exploding Gradients Explained</h1>
+      <p class="post-excerpt">Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.png" alt="Why Neural Networks Fail: Vanishing and Exploding Gradients Explained thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/G4ufhQGke1c"
+          title="YouTube video: Why Neural Networks Fail: Vanishing and Exploding Gradients Explained"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I’m Robby!</h2>
+<p>As a software engineer who builds AI systems every day, I’ve seen it all. You write your code, hit &#39;train,&#39; and wait for the magic to happen. But sometimes, the magic turns into a headache. Your model either stops learning entirely, or it throws a bunch of errors and crashes. </p>
+<p>Today, I want to talk about two of the biggest culprits: <strong>Vanishing Gradients</strong> and <strong>Exploding Gradients.</strong></p>
+<hr>
+<h2 id="what-are-gradients">What are Gradients?</h2>
+<p>Think of a neural network like a student learning to solve a maze. The &#39;gradient&#39; is like the feedback the teacher gives the student. It tells the network, &quot;You’re going the wrong way, turn left!&quot; or &quot;You’re close, just move a bit more to the right.&quot;</p>
+<p>In math terms, the gradient tells the network how to change its internal settings (weights) to get a better result. We use a process called <em>backpropagation</em> to send this feedback backward through the network, layer by layer.</p>
+<h2 id="the-vanishing-gradient-problem">The Vanishing Gradient Problem</h2>
+<p>Sometimes, the feedback gets quieter and quieter as it travels backward. Imagine trying to pass a whisper through 50 people in a line. By the time it gets to the person at the end, they can’t hear anything at all.</p>
+<p>In deep networks, this happens when the gradients shrink to almost zero. The early layers of the network never get the message, so they stop learning. Your model stays &#39;stuck&#39; and never gets smarter.</p>
+<h2 id="the-exploding-gradient-problem">The Exploding Gradient Problem</h2>
+<p>This is the opposite problem. Instead of a whisper, think of the feedback turning into a giant megaphone blast. The gradients grow so big that the network&#39;s internal settings go crazy. </p>
+<p>When this happens, the math breaks. You might see errors like:</p>
+<ul>
+<li><strong>NaN (Not a Number):</strong> The computer gets confused because the numbers are too big to handle.</li>
+<li><strong>Infinity:</strong> The values grow so large they go off the scale.</li>
+<li><strong>Crashes:</strong> Your training run simply quits.</li>
+</ul>
+<h2 id="why-does-this-happen">Why Does This Happen?</h2>
+<p>This usually comes down to two main things:</p>
+<ol>
+<li><strong>Deep Architectures:</strong> The more layers you add to your network, the harder it is for the signal to stay the right size.</li>
+<li><strong>Activation Functions:</strong> Old-school functions like <em>sigmoid</em> or <em>tanh</em> are designed to squish numbers down. If you use too many of them in a row, they can accidentally squish your signal all the way to zero.</li>
+</ol>
+<h2 id="the-bottom-line">The Bottom Line</h2>
+<p>Training a neural network is a balancing act. You need your gradients to be just right—not too quiet, and not too loud. </p>
+<p>If your model isn&#39;t learning, or if it’s crashing with math errors, check your gradients! Understanding these two problems is the first step toward building more stable and powerful AI systems. Happy coding!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

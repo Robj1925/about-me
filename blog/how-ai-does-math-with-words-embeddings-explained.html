@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Does Math With Words: A Simple Guide to Embeddings — Robby J</title>
+  <meta name="description" content="Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math." />
+  <meta property="og:title" content="How AI Does Math With Words: A Simple Guide to Embeddings — Robby J" />
+  <meta property="og:description" content="Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Data Science</span><span class="post-tag">Artificial Intelligence</span></div>
+      <h1 class="post-title">How AI Does Math With Words: A Simple Guide to Embeddings</h1>
+      <p class="post-excerpt">Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.png" alt="How AI Does Math With Words: A Simple Guide to Embeddings thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/d7Yo7hFNdnM"
+          title="YouTube video: How AI Does Math With Words: A Simple Guide to Embeddings"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I’m Robby!</h2>
+<p>I’m a software engineer who builds AI systems for a living. One of the questions I get asked most is: &quot;How does a computer actually &#39;think&#39; about words?&quot;</p>
+<p>Most people think computers use a giant digital dictionary. But they don’t! Instead, computers use something called <strong>Embeddings</strong>. Let’s break down how this secret code works.</p>
+<h2 id="the-secret-map-of-words">The Secret Map of Words</h2>
+<p>Imagine a giant map. On this map, we place words that mean similar things close to each other. </p>
+<ul>
+<li><strong>Dog</strong> and <strong>Puppy</strong> would be neighbors.</li>
+<li><strong>Cat</strong> would be nearby, too.</li>
+<li><strong>Spaceship</strong> would be way on the other side of the map.</li>
+</ul>
+<p>This is what an embedding is. It’s just a way to turn a word into a list of numbers—coordinates on this massive map.</p>
+<h2 id="doing-math-with-words">Doing Math With Words</h2>
+<p>Because these words are now numbers on a map, computers can actually do math with them. This is how AI solves puzzles!</p>
+<p>Think about the famous analogy: <strong>King - Man + Woman = Queen.</strong></p>
+<p>It sounds like magic, but it’s just geometry:</p>
+<ol>
+<li>Take the point for <strong>King</strong>.</li>
+<li>Subtract the meaning of <strong>Man</strong>.</li>
+<li>Add the meaning of <strong>Woman</strong>.</li>
+<li>You land right on the spot for <strong>Queen</strong>!</li>
+</ol>
+<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+<p>This is the secret sauce behind smart tools like ChatGPT. Because the computer understands where words sit on this map, it knows how they relate to each other. It doesn&#39;t just memorize definitions; it understands relationships.</p>
+<p>When you ask an AI a question, it uses these maps to figure out which words should come next. It’s not guessing—it’s doing &quot;word math&quot; at lightning speed!</p>
+<h2 id="the-big-takeaway">The Big Takeaway</h2>
+<p>AI isn&#39;t as mysterious as it seems. It’s really just a very advanced way of turning language into a giant, multi-dimensional playground of numbers. By placing words in space, computers finally learned how to understand what we are saying.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

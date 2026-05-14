@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Build Your First AI Content Automation Agent — Robby J</title>
+  <meta name="description" content="Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts." />
+  <meta property="og:title" content="How to Build Your First AI Content Automation Agent — Robby J" />
+  <meta property="og:description" content="Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001.jpeg" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Python</span><span class="post-tag">Automation</span><span class="post-tag">Content Creation</span><span class="post-tag">Coding</span></div>
+      <h1 class="post-title">How to Build Your First AI Content Automation Agent</h1>
+      <p class="post-excerpt">Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001.jpeg" alt="How to Build Your First AI Content Automation Agent thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/Ejqzl_HW9eE"
+          title="YouTube video: How to Build Your First AI Content Automation Agent"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="welcome-to-vibe-code">Welcome to Vibe Code!</h2>
+<p>Hi everyone! I’m Robby. I’m a software engineer, and I love building cool AI systems. But more than that, I love making the process fun and chill. </p>
+<p>In my first &quot;Vibe Code with Me&quot; session, I wanted to figure out a way to make creating content easier. We all know that coming up with ideas, researching news, and writing scripts takes a lot of time. So, why not let an AI agent do the heavy lifting for us?</p>
+<h3 id="what-is-an-ai-agent-workflow">What is an AI Agent Workflow?</h3>
+<p>Think of an AI agent like a smart assistant that can take action. Instead of just asking a chatbot a question, an agent can look at data, follow steps, and actually get work done for you. </p>
+<p>We spent our time building a pipeline that does three main things:</p>
+<ol>
+<li><strong>Research:</strong> It searches the web for the latest trends.</li>
+<li><strong>Analyze:</strong> It filters out the noise to find good ideas.</li>
+<li><strong>Create:</strong> It writes a script for a YouTube video.</li>
+</ol>
+<h3 id="how-we-built-it">How We Built It</h3>
+<p>We kept it simple by using Python and some great free tools. Here is the breakdown of how the logic works:</p>
+<ul>
+<li><strong>News APIs:</strong> We used the NewsAPI to grab headlines so the AI knows what is happening right now.</li>
+<li><strong>Python in Google Colab:</strong> This is a great, free way to run code without needing to set up anything complicated on your own computer.</li>
+<li><strong>Gemini 2.5 Flash:</strong> We used this model to take our research and turn it into a high-quality video script.</li>
+</ul>
+<h3 id="real-world-debugging">Real-World Debugging</h3>
+<p>Not everything went perfectly! When you code, things break. That is part of the fun. We ran into a few &quot;401 Errors&quot; while connecting to the NewsAPI, which happens when the computer doesn&#39;t recognize your access key. We also had to fix some hidden file settings (the <code>.env</code> files) to make sure our secrets stayed safe.</p>
+<h3 id="why-this-matters">Why This Matters</h3>
+<p>Automation isn&#39;t about replacing humans—it’s about saving time on the boring stuff. By building this workflow, you can spend less time searching for ideas and more time actually making things you care about. </p>
+<p>Whether you are a beginner coder or just curious about how AI works, the best way to learn is to just start tinkering. Grab a coffee, open up your laptop, and start small!</p>
+<h3 id="tips-for-your-own-build">Tips for Your Own Build</h3>
+<ul>
+<li><strong>Start Small:</strong> Don&#39;t try to build a whole empire on day one. Just get the AI to research one news topic first.</li>
+<li><strong>Use Good Tools:</strong> Gemini Flash is fast and great for writing scripts.</li>
+<li><strong>Don&#39;t Get Frustrated:</strong> Debugging is where you actually learn how things work. If your code breaks, take a breath, check your keys, and keep going!</li>
+</ul>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

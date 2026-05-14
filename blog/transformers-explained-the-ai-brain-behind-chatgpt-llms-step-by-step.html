@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How AI Works: Understanding the Transformer Model — Robby J</title>
+  <meta name="description" content="Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide." />
+  <meta property="og:title" content="How AI Works: Understanding the Transformer Model — Robby J" />
+  <meta property="og:description" content="Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Machine Learning</span><span class="post-tag">Transformers</span><span class="post-tag">ChatGPT</span><span class="post-tag">Beginner AI</span></div>
+      <h1 class="post-title">How AI Works: Understanding the Transformer Model</h1>
+      <p class="post-excerpt">Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.png" alt="How AI Works: Understanding the Transformer Model thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/APHVilJSI5Q"
+          title="YouTube video: How AI Works: Understanding the Transformer Model"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<p>Hi everyone! I’m Robby. I spend my days building AI systems, and today I want to pull back the curtain on the technology behind tools like ChatGPT. It is called the <strong>Transformer</strong>. </p>
+<p>At its heart, the Transformer is a smart engine that helps computers understand language. To show you how it works, let’s look at how it translates the English sentence &quot;The cat sat on the mat&quot; into French.</p>
+<h3 id="step-1-input-processing-giving-words-a-map">Step 1: Input Processing (Giving Words a Map)</h3>
+<p>Computers don&#39;t understand words like we do; they understand numbers. </p>
+<ul>
+<li><strong>Input Embedding:</strong> First, the computer turns every word into a long list of numbers called a vector. This helps the computer group similar words together.</li>
+<li><strong>Positional Encoding:</strong> Since the order of words matters (like &quot;The cat sat&quot; vs &quot;Sat the cat&quot;), the model adds a special &quot;position tag&quot; to each word. This tells the AI exactly where each word sits in the sentence.</li>
+</ul>
+<h3 id="step-2-the-encoder-the-context-builder">Step 2: The Encoder (The Context Builder)</h3>
+<p>Think of the encoder as a brain that reads the whole sentence at once. It uses something called <strong>Self-Attention</strong>. </p>
+<p>This is the secret sauce! It allows every word to &quot;look at&quot; every other word in the sentence. It learns that &quot;cat&quot; and &quot;sat&quot; are related. By the time it’s done, the computer has a super-rich understanding of what the sentence actually means.</p>
+<h3 id="step-3-the-decoder-the-translator">Step 3: The Decoder (The Translator)</h3>
+<p>Now that the computer understands the English sentence, the decoder starts writing the French version. It works one word at a time:</p>
+<ol>
+<li><strong>Masked Self-Attention:</strong> It looks at what it has already written to make sure the next word makes sense.</li>
+<li><strong>Cross-Attention:</strong> It looks back at the English sentence (the encoder output) to make sure it is staying on track.</li>
+<li><strong>Feed-Forward Networks:</strong> It does some final math to pick the best possible French word to write next.</li>
+</ol>
+<h3 id="putting-it-all-together">Putting It All Together</h3>
+<p>This process repeats over and over. The decoder writes a word, checks its work, and decides the next word. It keeps doing this until it reaches the end of the sentence. Once it hits a special &quot;stop&quot; signal, the translation is finished: <em>Le chat s’est assis sur le tapis.</em></p>
+<p>And that’s it! It sounds like magic, but it’s really just some clever math helping machines speak our language. Stay curious!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

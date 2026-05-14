@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is a Loss Function? How AI Learns from Its Mistakes — Robby J</title>
+  <meta name="description" content="Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models." />
+  <meta property="og:title" content="What is a Loss Function? How AI Learns from Its Mistakes — Robby J" />
+  <meta property="og:description" content="Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Machine Learning</span><span class="post-tag">AI Basics</span><span class="post-tag">Data Science</span><span class="post-tag">Artificial Intelligence</span></div>
+      <h1 class="post-title">What is a Loss Function? How AI Learns from Its Mistakes</h1>
+      <p class="post-excerpt">Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.png" alt="What is a Loss Function? How AI Learns from Its Mistakes thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/FxUAl6vS38w"
+          title="YouTube video: What is a Loss Function? How AI Learns from Its Mistakes"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="why-ai-needs-to-make-mistakes">Why AI Needs to Make Mistakes</h2>
+<p>Hi, I’m Robby! As a software engineer who builds AI systems every day, I often get asked: <em>How does a computer actually &#39;learn&#39;?</em> </p>
+<p>Think about when you learned to ride a bike. You probably wobbled, tipped over, or maybe even bumped into the grass. Those little mistakes told your brain how to balance better the next time. </p>
+<p>In machine learning, we use something called a <strong>loss function</strong> to do the exact same thing for a computer. It is the teacher that tells the AI, &quot;You were this far off the mark.&quot;</p>
+<h2 id="what-is-a-loss-function">What is a Loss Function?</h2>
+<p>A loss function is a simple math formula. Its only job is to measure the gap between what the AI guessed and what the real answer actually is. </p>
+<ul>
+<li><strong>High loss:</strong> The AI is making big mistakes.</li>
+<li><strong>Low loss:</strong> The AI is getting very close to the truth.</li>
+</ul>
+<p>Our goal as AI engineers is to shrink this loss number until it is as close to zero as possible.</p>
+<h2 id="a-real-world-example-predicting-house-prices">A Real-World Example: Predicting House Prices</h2>
+<p>Let’s say you want to build an AI to guess how much a house costs based on its size (square footage). </p>
+<ol>
+<li><strong>The Guess:</strong> The AI predicts a house costs $300,000.</li>
+<li><strong>The Reality:</strong> The house actually sold for $350,000.</li>
+<li><strong>The Loss:</strong> The AI missed by $50,000.</li>
+</ol>
+<p>That $50,000 is the &quot;loss.&quot; The model takes that number and uses it as feedback to tweak its internal settings so that next time, it will guess closer to the real price.</p>
+<h2 id="how-we-measure-the-gap-mean-absolute-error-mae">How We Measure the Gap: Mean Absolute Error (MAE)</h2>
+<p>One of the most popular ways to measure this error is called <strong>Mean Absolute Error (MAE)</strong>. It’s a fancy name for something very simple:</p>
+<ul>
+<li><strong>Take the difference:</strong> How far off was the guess?</li>
+<li><strong>Make it positive:</strong> We don&#39;t care if the guess was too high or too low, just how far off it was.</li>
+<li><strong>Average it out:</strong> We do this for a bunch of houses and find the average error.</li>
+</ul>
+<h2 id="why-this-matters-for-2026">Why This Matters for 2026</h2>
+<p>If you want to build high-quality AI, you have to understand the loss function. It acts like a compass. If the model isn&#39;t getting better, we look at the loss function to see where it’s getting confused. </p>
+<p>By constantly checking the loss, we can guide the AI to learn faster and make much smarter decisions. It’s not magic—it’s just math helping a machine learn from its mistakes, just like we do!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

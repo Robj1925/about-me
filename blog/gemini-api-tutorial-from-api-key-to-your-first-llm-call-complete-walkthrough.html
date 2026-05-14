@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Build Your First AI App with Google Gemini (Easy Guide) — Robby J</title>
+  <meta name="description" content="Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps." />
+  <meta property="og:title" content="How to Build Your First AI App with Google Gemini (Easy Guide) — Robby J" />
+  <meta property="og:description" content="Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps." />
+  
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">Python</span><span class="post-tag">Gemini</span><span class="post-tag">Programming</span><span class="post-tag">Tutorial</span></div>
+      <h1 class="post-title">How to Build Your First AI App with Google Gemini (Easy Guide)</h1>
+      <p class="post-excerpt">Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/lX17ByJbFfc"
+          title="YouTube video: How to Build Your First AI App with Google Gemini (Easy Guide)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="hi-im-robby">Hi, I&#39;m Robby!</h2>
+<p>I’m a software engineer, and I love building things with AI. Today, I want to show you how to connect to Google’s powerful AI, Gemini. You don’t need to be a genius to do this—we are going to break it down into simple, bite-sized steps.</p>
+<h3 id="what-is-an-api">What is an API?</h3>
+<p>Think of an API as a waiter in a restaurant. You are the customer (your computer code), and the kitchen is the AI (Gemini). You give your order to the waiter, the waiter takes it to the kitchen, and then brings your food back to you. An API lets your code talk to Google’s AI models easily.</p>
+<h3 id="step-1-get-your-free-key">Step 1: Get Your Free Key</h3>
+<p>First, you need a secret password to let Google know it’s you asking for help. This is called an API key.</p>
+<ul>
+<li>Go to <a href="https://aistudio.google.com/app/api-keys">Google AI Studio</a>.</li>
+<li>Click the button to create a new key.</li>
+<li>Copy that key and keep it safe. Never share it with anyone!</li>
+</ul>
+<h3 id="step-2-keep-your-secrets-safe">Step 2: Keep Your Secrets Safe</h3>
+<p>When we write code, we don&#39;t want to leave our keys just lying around. We use something called a <code>.env</code> file. Think of this like a little lockbox where we keep our secret password so our code can find it without showing it to the world.</p>
+<h3 id="step-3-lets-write-some-code">Step 3: Let’s Write Some Code</h3>
+<p>We’re going to use a tool called <strong>Google Colab</strong>. It’s like a digital notebook for coding that runs right in your web browser. </p>
+<p>We will follow these steps:</p>
+<ol>
+<li><strong>Load your key:</strong> We tell our code to open that secret lockbox.</li>
+<li><strong>Setup the AI:</strong> We use the OpenAI-style setup to connect to Gemini.</li>
+<li><strong>Send a message:</strong> Now, send a test prompt to the AI, like &quot;Hello, how are you today?&quot;</li>
+</ol>
+<h3 id="why-use-gemini">Why use Gemini?</h3>
+<p>Gemini is one of the smartest AIs out there. By using the API, you can build your own tools, like a chatbot for your homework, an app that summarizes articles, or even a system that helps you write stories. </p>
+<h3 id="want-to-see-the-code">Want to see the code?</h3>
+<p>I’ve put all the code for this project in a place where you can copy it and try it yourself. Getting your first AI program running is a huge milestone. Once you get that first &quot;Hello&quot; back from the AI, you’ve officially joined the world of AI engineering!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

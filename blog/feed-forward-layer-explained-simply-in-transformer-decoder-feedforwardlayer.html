@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What is the Feed Forward Layer? AI Explained Simply — Robby J</title>
+  <meta name="description" content="Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking." />
+  <meta property="og:title" content="What is the Feed Forward Layer? AI Explained Simply — Robby J" />
+  <meta property="og:description" content="Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Artificial Intelligence</span><span class="post-tag">Machine Learning</span><span class="post-tag">Neural Networks</span><span class="post-tag">Tech Explained</span></div>
+      <h1 class="post-title">What is the Feed Forward Layer? AI Explained Simply</h1>
+      <p class="post-excerpt">Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking.</p>
+      <div class="post-meta">
+        <span>📅 May 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 2 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.png" alt="What is the Feed Forward Layer? AI Explained Simply thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/tlMr8E4x-NM"
+          title="YouTube video: What is the Feed Forward Layer? AI Explained Simply"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="meet-the-ais-brain-power">Meet the AI&#39;s Brain Power</h2>
+<p>Hi everyone! I’m Robby. As a software engineer who builds AI, people often ask me: &quot;How does a computer actually &#39;think&#39;?&quot;</p>
+<p>We talk a lot about the Attention Mechanism—the part of the AI that looks for connections. But once the AI finds those connections, how does it turn them into a final answer? That’s where the <strong>Feed Forward Layer</strong> comes in.</p>
+<h2 id="what-is-the-feed-forward-layer">What is the Feed Forward Layer?</h2>
+<p>Think of the Feed Forward layer as the final &quot;thinking step&quot; for an AI, specifically inside a part called the decoder. </p>
+<p>If the Attention mechanism is the AI gathering clues, the Feed Forward layer is the AI sitting down to process those clues. It takes all that information and digs deeper to find complex patterns.</p>
+<h2 id="how-it-works-the-simple-version">How it Works (The Simple Version)</h2>
+<p>Imagine you are reading a mystery book. </p>
+<ol>
+<li><strong>Attention:</strong> You spot the clues on the page. &quot;The butler was in the kitchen,&quot; and &quot;The vase is broken.&quot;</li>
+<li><strong>Feed Forward:</strong> Your brain processes those clues to realize, &quot;Wait, the butler might have knocked over the vase!&quot;</li>
+</ol>
+<p>That’s exactly what this layer does in a Transformer model. It takes the context the AI just learned and refines it so the final prediction is much smarter and more accurate.</p>
+<h2 id="why-does-this-matter">Why Does This Matter?</h2>
+<p>Without this layer, the AI would just be matching words without really understanding what they mean together. By using the Feed Forward layer, the model can:</p>
+<ul>
+<li><strong>Analyze patterns:</strong> It spots hidden connections between pieces of information.</li>
+<li><strong>Improve accuracy:</strong> It helps turn messy data into a clean, smart answer.</li>
+<li><strong>Deepen understanding:</strong> It helps the AI move from just &#39;seeing&#39; information to &#39;thinking&#39; about it.</li>
+</ul>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>Building AI systems is a lot like putting together a puzzle. The Feed Forward layer is the piece that helps us see the full picture. It’s the final push that makes your AI assistant feel more like a smart helper and less like a calculator.</p>
+<p>Keep exploring, and stay curious!</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 ---
 title: "How AI Reads: Turning Words Into Numbers Explained"
-date: "2026-05-14"
+date: "2025-11-12"
 excerpt: "Ever wonder how AI understands human language? Discover how transformers use embeddings and positional encoding to turn words into data."
 thumbnail: "assets/images/blog-thumbnails/how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers.png"
 youtubeId: "LI4wxQ9zIYc"

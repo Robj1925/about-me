@@ -1,6 +1,6 @@
 ---
 title: "What is Supervised Learning? AI With an Answer Key"
-date: "2026-05-14"
+date: "2025-11-29"
 excerpt: "Ever wonder how computers learn? Discover how supervised learning works by using an answer key to teach AI models to make smart predictions."
 thumbnail: "assets/images/blog-thumbnails/what-is-supervised-learning-ai-with-an-answer-key-yt.jpg"
 youtubeId: "ECaxXXfzbp0"

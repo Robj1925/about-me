@@ -1,6 +1,6 @@
 ---
 title: "Build Your Own AI Team: How to Use CrewAI and Gemini in Google Colab"
-date: "2026-05-14"
+date: "2026-01-27"
 excerpt: "Learn how to build powerful AI agent teams using CrewAI and Google Gemini inside Google Colab with this easy step-by-step guide."
 thumbnail: "assets/images/blog-thumbnails/crewai-google-colab-setup-tutorial-yt.jpg"
 youtubeId: "rmOY5eLfdq0"

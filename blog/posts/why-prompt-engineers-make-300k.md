@@ -1,6 +1,6 @@
 ---
 title: "Stop Using AI Like a Magic Wand: How to Build Pro-Level Code"
-date: "2026-05-14"
+date: "2025-12-06"
 excerpt: "Think AI is a magic wand? Think again. Learn how treating AI like an employee—not a toy—can help you write better code and master prompt engineering."
 thumbnail: "assets/images/blog-thumbnails/why-prompt-engineers-make-300k-yt.jpg"
 youtubeId: "FMq1zHCtlNk"

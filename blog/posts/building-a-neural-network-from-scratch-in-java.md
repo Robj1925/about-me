@@ -1,6 +1,6 @@
 ---
 title: "Build Your First Neural Network in Java: A Step-by-Step Guide"
-date: "2026-05-14"
+date: "2025-12-06"
 excerpt: "Learn how to build a neural network from scratch using only Java. No libraries, just pure code to understand how AI really works."
 thumbnail: "assets/images/blog-thumbnails/building-a-neural-network-from-scratch-in-java.png"
 youtubeId: "P2odJf-BI2M"

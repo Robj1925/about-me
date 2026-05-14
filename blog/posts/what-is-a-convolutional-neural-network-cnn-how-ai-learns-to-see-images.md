@@ -1,6 +1,6 @@
 ---
 title: "How Does AI See? A Simple Guide to Convolutional Neural Networks"
-date: "2026-05-14"
+date: "2026-01-01"
 excerpt: "Ever wonder how your phone recognizes your face or how self-driving cars 'see'? Learn how Convolutional Neural Networks (CNNs) help computers understand images."
 thumbnail: "assets/images/blog-thumbnails/what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images-yt.jpg"
 youtubeId: "v9lZS_BlQ1c"

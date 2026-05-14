@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 3.28 Is Here: 3 Major Updates You Need to Know"
-date: "2026-05-14"
+date: "2026-03-27"
 excerpt: "OpenClaw just got a massive upgrade! From one-click skill installs to smarter AI web search, here is everything you need to know about version 3.28."
 thumbnail: "assets/images/blog-thumbnails/openclaw-3-28-is-insane-here-s-why-yt.jpg"
 youtubeId: "is7yNhTt9ck"

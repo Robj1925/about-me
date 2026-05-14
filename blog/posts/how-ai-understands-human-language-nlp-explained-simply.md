@@ -1,6 +1,6 @@
 ---
 title: "How Does AI Understand You? NLP Explained Simply"
-date: "2026-05-14"
+date: "2026-01-02"
 excerpt: "Ever wonder how your phone knows exactly what you're saying? Learn how computers use NLP to turn human language into machine smarts."
 thumbnail: "assets/images/blog-thumbnails/how-ai-understands-human-language-nlp-explained-simply-yt.jpg"
 youtubeId: "2x5bBbHnVzM"

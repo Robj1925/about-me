@@ -1,6 +1,6 @@
 ---
 title: "What is Linear Regression? AI Explained for Beginners"
-date: "2026-05-14"
+date: "2026-01-14"
 excerpt: "Ever wonder how computers predict house prices or future sales? Learn how Linear Regression works in this simple, step-by-step guide."
 thumbnail: "assets/images/blog-thumbnails/understanding-linear-regression-in-machine-learning-explained-simply-yt.jpg"
 youtubeId: "UBeJDK8fY8I"

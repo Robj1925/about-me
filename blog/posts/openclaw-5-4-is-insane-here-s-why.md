@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant"
-date: "2026-05-14"
+date: "2026-05-06"
 excerpt: "OpenClaw 5.4 has arrived with exciting updates, including a powerful new Google Meet agent that helps you take notes and chat in real-time."
 thumbnail: "assets/images/blog-thumbnails/openclaw-5-4-is-insane-here-s-why.jpeg"
 youtubeId: "goZFPWqwKXs"

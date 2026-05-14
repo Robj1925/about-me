@@ -1,6 +1,6 @@
 ---
 title: "What is the Sigmoid Function? AI Math Made Easy"
-date: "2026-05-14"
+date: "2025-11-15"
 excerpt: "Curious how AI thinks in probabilities? Learn how the sigmoid function works to turn any number into a simple value between 0 and 1."
 thumbnail: "assets/images/blog-thumbnails/sigmoid-function-explained.png"
 youtubeId: "EegUZtLRkFU"

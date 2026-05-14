@@ -1,6 +1,6 @@
 ---
 title: "Why Neural Networks Fail: Vanishing and Exploding Gradients Explained"
-date: "2026-05-14"
+date: "2026-01-13"
 excerpt: "Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them."
 thumbnail: "assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.png"
 youtubeId: "G4ufhQGke1c"

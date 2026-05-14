@@ -1,6 +1,6 @@
 ---
 title: "What Is ReLU? The Light Switch of AI Explained"
-date: "2026-05-14"
+date: "2025-11-14"
 excerpt: "Learn how the ReLU activation function works using a simple light switch example. Discover how AI makes decisions in this easy-to-follow guide."
 thumbnail: "assets/images/blog-thumbnails/relu-activation-explained-with-step-by-step-example.png"
 youtubeId: "6uh_GAyMXT8"

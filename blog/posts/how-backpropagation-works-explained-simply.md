@@ -1,6 +1,6 @@
 ---
 title: "How Neural Networks Learn: Backpropagation Explained Simply"
-date: "2026-05-14"
+date: "2025-11-28"
 excerpt: "Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves."
 thumbnail: "assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.png"
 youtubeId: "WtAC3n0Yo5Q"

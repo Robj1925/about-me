@@ -1,6 +1,6 @@
 ---
 title: "Hyperparameters vs. Parameters: The Oven Settings of AI"
-date: "2026-05-14"
+date: "2025-12-01"
 excerpt: "Ever wonder how AI learns? I'm Robby, and I’m breaking down the difference between AI parameters and hyperparameters using a simple kitchen analogy."
 thumbnail: "assets/images/blog-thumbnails/hyperparameters-vs-parameters-the-oven-settings-of-ai-yt.jpg"
 youtubeId: "8Zlymjgtfk0"

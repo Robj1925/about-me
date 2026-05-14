@@ -1,6 +1,6 @@
 ---
 title: "How to Use AI to Write Viral YouTube Video Titles"
-date: "2026-05-14"
+date: "2025-12-17"
 excerpt: "Struggling to name your videos? Learn how to use OpenAI as your personal brainstorming partner to create catchy, high-performing YouTube titles in seconds."
 thumbnail: "assets/images/blog-thumbnails/generating-viral-youtube-video-titles-using-openai-yt.jpg"
 youtubeId: "CH6SUB6Y3t4"

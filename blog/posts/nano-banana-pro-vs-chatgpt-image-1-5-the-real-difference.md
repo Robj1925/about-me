@@ -1,6 +1,6 @@
 ---
 title: "Nano Banana Pro vs. ChatGPT Image 1.5: Which AI Tool Should You Use?"
-date: "2026-05-14"
+date: "2025-12-22"
 excerpt: "Confused about which AI image tool is right for you? As an AI engineer, I break down the real differences between Nano Banana Pro and ChatGPT Image 1.5."
 thumbnail: "assets/images/blog-thumbnails/nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference-yt.jpg"
 youtubeId: "Ra3RVE6Qer0"

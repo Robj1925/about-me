@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your First AI Content Automation Agent"
-date: "2026-05-14"
+date: "2026-03-02"
 excerpt: "Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts."
 thumbnail: "assets/images/blog-thumbnails/figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001.jpeg"
 youtubeId: "Ejqzl_HW9eE"

@@ -1,6 +1,6 @@
 ---
 title: "What Is an AI Agent? The Big Difference Between Talking and Doing"
-date: "2026-05-14"
+date: "2025-12-24"
 excerpt: "Ever wonder how AI goes from just answering questions to actually doing work for you? Discover the world of AI Agents and how they are changing the game."
 thumbnail: "assets/images/blog-thumbnails/what-is-an-ai-agent-yt.jpg"
 youtubeId: "APFbZ9VVG0I"

@@ -1,6 +1,6 @@
 ---
 title: "What is a Decision Tree? AI Made Simple"
-date: "2026-05-14"
+date: "2025-12-05"
 excerpt: "Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly."
 thumbnail: "assets/images/blog-thumbnails/how-decision-trees-work-the-flowchart-of-artificial-intelligence-yt.jpg"
 youtubeId: "Mo3A5sU2szQ"

@@ -1,6 +1,6 @@
 ---
 title: "How to Build a Speech-to-Text App with Java and AI"
-date: "2026-05-14"
+date: "2025-10-21"
 excerpt: "Learn how to turn spoken audio into text using Java and the AssemblyAI API with this simple, step-by-step guide."
 thumbnail: "assets/images/blog-thumbnails/java-speech-to-text-assemblyai-api-tutorial-step-by-step.png"
 youtubeId: "ZbM0OPCgOmg"

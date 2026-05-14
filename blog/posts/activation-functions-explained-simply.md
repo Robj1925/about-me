@@ -1,6 +1,6 @@
 ---
 title: "What Are Activation Functions? Neural Networks Made Simple"
-date: "2026-05-14"
+date: "2025-11-14"
 excerpt: "Ever wonder how AI thinks? Discover how activation functions like ReLU help neural networks learn from complex data in this easy guide."
 thumbnail: "assets/images/blog-thumbnails/activation-functions-explained-simply.png"
 youtubeId: "obq6tYAl6YU"

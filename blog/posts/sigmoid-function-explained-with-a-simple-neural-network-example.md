@@ -1,6 +1,6 @@
 ---
 title: "What is the Sigmoid Function? A Bouncer’s Guide to AI"
-date: "2026-05-14"
+date: "2025-11-15"
 excerpt: "Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms."
 thumbnail: "assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.png"
 youtubeId: "t30WqiKsn_8"

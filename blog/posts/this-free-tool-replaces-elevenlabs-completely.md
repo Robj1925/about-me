@@ -1,6 +1,6 @@
 ---
 title: "How to Clone Any Voice for Free (Without the Cloud!)"
-date: "2026-05-14"
+date: "2026-02-28"
 excerpt: "Learn how to use VoiceBox to clone voices and create high-quality speech right on your own computer, keeping your data private and free."
 thumbnail: "assets/images/blog-thumbnails/this-free-tool-replaces-elevenlabs-completely.png"
 youtubeId: "9LKaaOo6TmQ"

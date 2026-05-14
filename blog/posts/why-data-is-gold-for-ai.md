@@ -1,6 +1,6 @@
 ---
 title: "Why Data is Like Gold for AI: A Simple Guide"
-date: "2026-05-14"
+date: "2025-11-29"
 excerpt: "Ever wonder how AI gets so smart? It’s all about the data! Learn why high-quality information is the real secret behind every powerful AI model."
 thumbnail: "assets/images/blog-thumbnails/why-data-is-gold-for-ai-yt.jpg"
 youtubeId: "YQOZYyOT5B0"

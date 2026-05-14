@@ -1,6 +1,6 @@
 ---
 title: "What is an AI Agent? The Real Difference Between Chatbots and Agents"
-date: "2026-05-14"
+date: "2025-12-25"
 excerpt: "Curious about AI agents? Learn why they are different from chatbots and how they move from just chatting to actually getting work done."
 thumbnail: "assets/images/blog-thumbnails/what-is-an-ai-agent-finally-explained-simply-yt.jpg"
 youtubeId: "ElWKHGDq3Uo"

@@ -1,6 +1,6 @@
 ---
 title: "What is an LLM? How AI Like ChatGPT Actually Works"
-date: "2026-05-14"
+date: "2025-12-02"
 excerpt: "Ever wonder how AI chats with you like a human? I'm breaking down how Large Language Models work in simple, easy-to-understand terms."
 thumbnail: "assets/images/blog-thumbnails/what-is-an-llm-large-language-models-and-chatgpt-explained.png"
 youtubeId: "Vl0r3wCfUaw"

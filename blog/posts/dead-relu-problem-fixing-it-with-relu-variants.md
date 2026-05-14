@@ -1,6 +1,6 @@
 ---
 title: "What is the Dead ReLU Problem? How to Fix It!"
-date: "2026-05-14"
+date: "2025-11-14"
 excerpt: "Ever wonder why your AI model stops learning? It might be the 'Dead ReLU' problem. Learn how to fix it with simple tweaks to your neural network."
 thumbnail: "assets/images/blog-thumbnails/dead-relu-problem-fixing-it-with-relu-variants.png"
 youtubeId: "YH2el6e4FT4"

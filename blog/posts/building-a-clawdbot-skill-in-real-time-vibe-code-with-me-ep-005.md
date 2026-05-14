@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your Own iMessage Autoresponder with AI"
-date: "2026-05-14"
+date: "2026-03-07"
 excerpt: "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide."
 thumbnail: "assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.png"
 youtubeId: "Sm-sUYFuXnA"

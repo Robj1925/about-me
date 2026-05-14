@@ -1,6 +1,6 @@
 ---
 title: "Finding the Perfect Learning Rate: A Guide to Training AI"
-date: "2026-05-14"
+date: "2025-11-19"
 excerpt: "Learn how AI models actually learn from their mistakes by tuning the learning rate, the secret setting that makes or breaks your model training."
 thumbnail: "assets/images/blog-thumbnails/finding-the-right-learning-rate-in-deep-learning-yt.jpg"
 youtubeId: "OdTRf-LOv6M"

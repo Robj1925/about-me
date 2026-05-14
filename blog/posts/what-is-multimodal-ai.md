@@ -1,6 +1,6 @@
 ---
 title: "What is Multimodal AI? Meet the AI That Can See and Hear"
-date: "2026-05-14"
+date: "2025-12-13"
 excerpt: "Ever wonder how AI is learning to see and hear? Discover how Multimodal AI is changing the way machines understand the world, moving beyond just simple text."
 thumbnail: "assets/images/blog-thumbnails/what-is-multimodal-ai-yt.jpg"
 youtubeId: "N2fXdcY1rvw"

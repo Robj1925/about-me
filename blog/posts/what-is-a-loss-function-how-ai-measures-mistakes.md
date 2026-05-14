@@ -1,6 +1,6 @@
 ---
 title: "What Is a Loss Function? How AI Learns from Its Mistakes"
-date: "2026-05-14"
+date: "2025-12-01"
 excerpt: "Ever wonder how AI learns? Discover how a loss function acts like a scoreboard to help computers fix their mistakes and get smarter."
 thumbnail: "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.png"
 youtubeId: "CtfzBXbJaoA"

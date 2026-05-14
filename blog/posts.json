@@ -1,1463 +1,8 @@
 [
   {
-    "slug": "activation-functions-explained-relu-sigmoid-and-tanh-with-visuals",
-    "title": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
-    "date": "2026-05-14",
-    "excerpt": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
-    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.png",
-    "youtubeId": "W-YRq0qgqJQ",
-    "tags": [
-      "AI"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "activation-functions-explained-simply",
-    "title": "What Are Activation Functions? Neural Networks Made Simple",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI thinks? Discover how activation functions like ReLU help neural networks learn from complex data in this easy guide.",
-    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-simply.png",
-    "youtubeId": "obq6tYAl6YU",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "ai-learning-explained-the-basketball-analogy",
-    "title": "How Do AI Computers Learn? It’s Just Like Playing Basketball!",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI actually learns? Discover how neural networks improve by using a simple basketball analogy from a real-world software engineer.",
-    "thumbnail": "assets/images/blog-thumbnails/ai-learning-explained-the-basketball-analogy-yt.jpg",
-    "youtubeId": "DGIgESLv8iI",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Beginner Tech",
-      "How It Works"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "ai-training-sets-explained-simply",
-    "title": "What Is an AI Training Set? AI Basics Explained",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down AI training sets and how they teach machines to see the world.",
-    "thumbnail": "assets/images/blog-thumbnails/ai-training-sets-explained-simply-yt.jpg",
-    "youtubeId": "ylfaEQ5l5eI",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "AI Basics",
-      "Computer Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech",
-    "title": "AI vs. ML vs. Deep Learning: What’s the Difference?",
-    "date": "2026-05-14",
-    "excerpt": "Confused by all the AI buzzwords? Let's break down AI, Machine Learning, and Deep Learning using simple analogies to see how they fit together.",
-    "thumbnail": "assets/images/blog-thumbnails/ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech-yt.jpg",
-    "youtubeId": "ON9GvelnSRM",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Deep Learning",
-      "Technology",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "backpropagation-calculating-hidden-layer-errors",
-    "title": "How AI Learns: The 'Blame Game' of Backpropagation",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide.",
-    "thumbnail": "assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.png",
-    "youtubeId": "X2TMzjriDYg",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Neural Networks",
-      "Data Science",
-      "Beginner Tech"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "build-a-custom-research-skill-for-any-ai-agent-free-markdown-template",
-    "title": "How to Build Your Own AI Research Assistant (Step-by-Step Guide)",
-    "date": "2026-05-14",
-    "excerpt": "Stop searching for AI news manually. Learn how I built a custom AI agent to automatically find the latest updates from GitHub, Hacker News, and more.",
-    "thumbnail": "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.png",
-    "youtubeId": "mEGHa9w2gUY",
-    "tags": [
-      "AI",
-      "Automation",
-      "Coding",
-      "Productivity",
-      "AI Agents"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "build-a-slack-ai-agent-step-by-step",
-    "title": "How to Build Your First AI-Powered Slack Bot with Python",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build a simple AI agent that automatically posts motivational messages to Slack using Python and Google's Gemini model.",
-    "thumbnail": "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.png",
-    "youtubeId": "VwM8KnbNKAo",
-    "tags": [
-      "AI",
-      "Python",
-      "Slack",
-      "Automation",
-      "Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "build-your-first-clawdbot-skill-complete-walkthrough",
-    "title": "Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way.",
-    "thumbnail": "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.png",
-    "youtubeId": "Xe09u-PriZ4",
-    "tags": [
-      "AI",
-      "Clawdbot",
-      "Automation",
-      "YouTubeSEO",
-      "Programming"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "build-your-first-web-app-for-free-no-credit-card",
-    "title": "How to Put Your First Web App Online for Free (Step-by-Step Guide)",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to take your Python web app from your computer to the internet for free using Render. No credit card required!",
-    "thumbnail": "assets/images/blog-thumbnails/build-your-first-web-app-for-free-no-credit-card-yt.jpg",
-    "youtubeId": "4IeMklzNyQE",
-    "tags": [
-      "Python",
-      "Web Development",
-      "Coding",
-      "Beginner Tutorial",
-      "Render"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005",
-    "title": "How to Build Your Own iMessage Autoresponder with AI",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.",
-    "thumbnail": "assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.png",
-    "youtubeId": "Sm-sUYFuXnA",
-    "tags": [
-      "AI",
-      "Programming",
-      "Clawdbot",
-      "Automation",
-      "Python"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "building-a-neural-network-from-scratch-in-java",
-    "title": "Build Your First Neural Network in Java: A Step-by-Step Guide",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build a neural network from scratch using only Java. No libraries, just pure code to understand how AI really works.",
-    "thumbnail": "assets/images/blog-thumbnails/building-a-neural-network-from-scratch-in-java.png",
-    "youtubeId": "P2odJf-BI2M",
-    "tags": [
-      "AI",
-      "Java",
-      "Neural Networks",
-      "Machine Learning",
-      "Programming"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004",
-    "title": "Build Your Own AI iMessage Assistant: A Step-by-Step Guide",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically.",
-    "thumbnail": "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.png",
-    "youtubeId": "u38dEuDcyrA",
-    "tags": [
-      "AI",
-      "Python",
-      "Automation",
-      "Google Gemini",
-      "Coding"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python",
-    "title": "Build Your Own AI Social Media Manager: A Beginner’s Guide",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build an AI agent that writes personalized messages for you using the OpenAI SDK and Google Gemini. It's easier than you think!",
-    "thumbnail": "assets/images/blog-thumbnails/building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python-yt.jpg",
-    "youtubeId": "6a4w3FT98Ss",
-    "tags": [
-      "AI",
-      "Python",
-      "Tutorial",
-      "Automation",
-      "Gemini"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "calculating-gradients-in-neural-networks-the-blame-game-explained",
-    "title": "How AI Learns: The 'Blame Game' of Neural Networks",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI fixes its own mistakes? Join me as we break down backpropagation using the simple concept of the 'Blame Game.'",
-    "thumbnail": "assets/images/blog-thumbnails/calculating-gradients-in-neural-networks-the-blame-game-explained.png",
-    "youtubeId": "qM0zqaewCPI",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Backpropagation",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained",
-    "title": "ChatGPT Images 2.0: Everything You Need to Know About the New AI",
-    "date": "2026-05-14",
-    "excerpt": "OpenAI just launched ChatGPT Images 2.0, a huge upgrade that changes how AI makes pictures. Learn how it works, why it's better at spelling, and how to use it.",
-    "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.jpeg",
-    "youtubeId": "9xrIVzPax4A",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "Generative AI",
-      "Tech Explained"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update",
-    "title": "Meet Your New AI Teammate: Claude Code 4.7 and the 'Grumpy Senior' Update",
-    "date": "2026-05-14",
-    "excerpt": "Discover how the new Claude Code 4.7 update and /perceive command are changing the way AI agents work as your digital employees.",
-    "thumbnail": "assets/images/blog-thumbnails/claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.jpeg",
-    "youtubeId": "qyecnzcAyzQ",
-    "tags": [
-      "AI Agents",
-      "Claude Code",
-      "Software Engineering",
-      "Productivity"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "claude-code-production",
-    "title": "The Engineer's Guide to Claude Code in Production",
-    "date": "2026-05-14",
-    "excerpt": "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.",
-    "thumbnail": "assets/images/blog-thumb-2.jpg",
-    "youtubeId": "M351KD77Lfs",
-    "tags": [
-      "Engineering",
-      "Claude Code",
-      "AI Dev Tools"
-    ],
-    "readTime": 16
-  },
-  {
-    "slug": "clawdbot-cloud-hosting-tutorial-free-for-students",
-    "title": "How to Host Your Own Bot for Free: A Student’s Guide to Azure",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to use your student email to get free cloud hosting for your bots using the GitHub Student Developer Pack and Microsoft Azure.",
-    "thumbnail": "assets/images/blog-thumbnails/clawdbot-cloud-hosting-tutorial-free-for-students.png",
-    "youtubeId": "0YDYKb_48pQ",
-    "tags": [
-      "AI",
-      "Cloud Computing",
-      "Azure",
-      "GitHub",
-      "Programming"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "clawdbot-skill-setup-real-time-problem-solving-building-live-006",
-    "title": "How to Build AI Tools: A Real Look at My Clawdbot Project",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder what it's really like to build AI tools? Join me as I walk through the messy, exciting process of coding a new skill for my robot, Clawdbot.",
-    "thumbnail": "assets/images/blog-thumbnails/clawdbot-skill-setup-real-time-problem-solving-building-live-006.png",
-    "youtubeId": "52lgF4bKPV0",
-    "tags": [
-      "AI",
-      "Programming",
-      "Automation",
-      "Clawdbot",
-      "Software Engineering"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "crewai-google-colab-setup-tutorial",
-    "title": "Build Your Own AI Team: How to Use CrewAI and Gemini in Google Colab",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build powerful AI agent teams using CrewAI and Google Gemini inside Google Colab with this easy step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/crewai-google-colab-setup-tutorial-yt.jpg",
-    "youtubeId": "rmOY5eLfdq0",
-    "tags": [
-      "AI",
-      "CrewAI",
-      "Python",
-      "Gemini",
-      "Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "dead-relu-problem-fixing-it-with-relu-variants",
-    "title": "What is the Dead ReLU Problem? How to Fix It!",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder why your AI model stops learning? It might be the 'Dead ReLU' problem. Learn how to fix it with simple tweaks to your neural network.",
-    "thumbnail": "assets/images/blog-thumbnails/dead-relu-problem-fixing-it-with-relu-variants.png",
-    "youtubeId": "YH2el6e4FT4",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Deep Learning"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "deep-learning-vs-machine-learning-what-s-the-difference",
-    "title": "Deep Learning vs. Machine Learning: What Is the Difference?",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI actually works? Join me as we break down the difference between Machine Learning and Deep Learning in simple terms.",
-    "thumbnail": "assets/images/blog-thumbnails/deep-learning-vs-machine-learning-what-s-the-difference-yt.jpg",
-    "youtubeId": "ONr6FaO0xw8",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Deep Learning",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer",
-    "title": "What is the Feed Forward Layer? AI Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking.",
-    "thumbnail": "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.png",
-    "youtubeId": "tlMr8E4x-NM",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Neural Networks",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001",
-    "title": "How to Build Your First AI Content Automation Agent",
-    "date": "2026-05-14",
-    "excerpt": "Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts.",
-    "thumbnail": "assets/images/blog-thumbnails/figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001.jpeg",
-    "youtubeId": "Ejqzl_HW9eE",
-    "tags": [
-      "AI",
-      "Python",
-      "Automation",
-      "Content Creation",
-      "Coding"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "finding-the-right-learning-rate-in-deep-learning",
-    "title": "Finding the Perfect Learning Rate: A Guide to Training AI",
-    "date": "2026-05-14",
-    "excerpt": "Learn how AI models actually learn from their mistakes by tuning the learning rate, the secret setting that makes or breaks your model training.",
-    "thumbnail": "assets/images/blog-thumbnails/finding-the-right-learning-rate-in-deep-learning-yt.jpg",
-    "youtubeId": "OdTRf-LOv6M",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Deep Learning",
-      "Neural Networks"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough",
-    "title": "How to Build Your First AI App with Google Gemini (Easy Guide)",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps.",
-    "thumbnail": "assets/images/blog-thumbnails/gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough-yt.jpg",
-    "youtubeId": "lX17ByJbFfc",
-    "tags": [
-      "AI",
-      "Python",
-      "Gemini",
-      "Programming",
-      "Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "gemma-4-s-256k-context-agentic-workflows-live-coding-demo",
-    "title": "What Is Gemma 4? How to Use Its Massive 256K Context Window",
-    "date": "2026-05-14",
-    "excerpt": "Learn how Google's new Gemma 4 model uses a huge 256K context window to help AI agents remember long conversations and solve complex problems.",
-    "thumbnail": "assets/images/blog-thumbnails/gemma-4-s-256k-context-agentic-workflows-live-coding-demo.png",
-    "youtubeId": "kH7wa2NQPOs",
-    "tags": [
-      "AI",
-      "Gemma 4",
-      "Machine Learning",
-      "Coding",
-      "Google AI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "generating-viral-youtube-video-titles-using-openai",
-    "title": "How to Use AI to Write Viral YouTube Video Titles",
-    "date": "2026-05-14",
-    "excerpt": "Struggling to name your videos? Learn how to use OpenAI as your personal brainstorming partner to create catchy, high-performing YouTube titles in seconds.",
-    "thumbnail": "assets/images/blog-thumbnails/generating-viral-youtube-video-titles-using-openai-yt.jpg",
-    "youtubeId": "CH6SUB6Y3t4",
-    "tags": [
-      "AI",
-      "OpenAI",
-      "YouTube Growth",
-      "Programming",
-      "Content Creation"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated",
-    "title": "Google Flow’s Big Update: Create Amazing AI Videos and Images Easily",
-    "date": "2026-05-14",
-    "excerpt": "Google Flow just got a massive upgrade. Discover the new Nano Banana 2, VEO 3.1, and powerful editing tools that make AI content creation faster than ever.",
-    "thumbnail": "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.png",
-    "youtubeId": "hD1jOizSPnk",
-    "tags": [
-      "AI",
-      "Google Flow",
-      "Video Editing",
-      "Generative AI",
-      "Tech Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "gpt-5-5-explained-features-price-the-future-of-agents",
-    "title": "GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era",
-    "date": "2026-05-14",
-    "excerpt": "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you.",
-    "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpeg",
-    "youtubeId": "HgiZNcqNE00",
-    "tags": [
-      "AI",
-      "GPT-5.5",
-      "Tech News",
-      "Software Engineering"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "gradient-descent-explained-visually",
-    "title": "Gradient Descent: How AI Learns from Its Mistakes",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English.",
-    "thumbnail": "assets/images/blog-thumbnails/gradient-descent-explained-visually-yt.jpg",
-    "youtubeId": "52RNl4GxggE",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Beginner Tech"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "grok-4-3-xai-just-changed-the-agent-game-forever",
-    "title": "Grok 4.3 Is Here: Everything You Need to Know About xAI’s New AI",
-    "date": "2026-05-14",
-    "excerpt": "Grok 4.3 has arrived with huge upgrades in reasoning, a massive memory window, and new tools to help you build and create faster than ever.",
-    "thumbnail": "assets/images/blog-thumbnails/grok-4-3-xai-just-changed-the-agent-game-forever.jpeg",
-    "youtubeId": "Bhl4_8L0OEA",
-    "tags": [
-      "AI",
-      "Grok",
-      "xAI",
-      "TechNews",
-      "MachineLearning"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-ai-actually-reads-the-attention-mechanism-explained",
-    "title": "How Does AI Read? The Secret of the Attention Mechanism",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how ChatGPT knows exactly what you mean? Learn how the 'Attention Mechanism' helps AI understand context just like a human.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.png",
-    "youtubeId": "Gt9Z0hnGBVk",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "Machine Learning",
-      "Technology Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-ai-does-math-with-words-embeddings-explained",
-    "title": "How AI Does Math With Words: A Simple Guide to Embeddings",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.png",
-    "youtubeId": "d7Yo7hFNdnM",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-ai-learns-training-a-model-simply-explained",
-    "title": "How AI Learns: A Simple Guide to Training Models",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers get so smart? Learn how AI models learn from examples and feedback in this easy-to-understand guide.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-learns-training-a-model-simply-explained.png",
-    "youtubeId": "n3DjZe0PvPs",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-ai-translates-queries-keys-and-values-explained",
-    "title": "How Does AI Talk? The Simple Secret of Transformers",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands your words? Learn how transformer models use a smart system called queries, keys, and values to find the right information.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.png",
-    "youtubeId": "d8ibK36vbjE",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Technology",
-      "Transformers"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-ai-understands-human-language-nlp-explained-simply",
-    "title": "How Does AI Understand You? NLP Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how your phone knows exactly what you're saying? Learn how computers use NLP to turn human language into machine smarts.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-understands-human-language-nlp-explained-simply-yt.jpg",
-    "youtubeId": "2x5bBbHnVzM",
-    "tags": [
-      "AI",
-      "NLP",
-      "Technology",
-      "Machine Learning"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-backpropagation-actually-works-the-core-of-neural-network-training",
-    "title": "How AI Learns: Backpropagation Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide.",
-    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.png",
-    "youtubeId": "y7iTsuW4T3E",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-backpropagation-works-explained-simply",
-    "title": "How Neural Networks Learn: Backpropagation Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves.",
-    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.png",
-    "youtubeId": "WtAC3n0Yo5Q",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Neural Networks",
-      "Backpropagation",
-      "Beginner AI"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-chatgpt-actually-reads-tokenization-explained",
-    "title": "How Does ChatGPT Read? The Secret World of Tokenization",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands your questions? It’s not magic—it’s math! Learn how tokenization turns your words into numbers.",
-    "thumbnail": "assets/images/blog-thumbnails/how-chatgpt-actually-reads-tokenization-explained-yt.jpg",
-    "youtubeId": "Svn7A6pG6_Y",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "Machine Learning",
-      "Technology Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-decision-trees-work-the-flowchart-of-artificial-intelligence",
-    "title": "What is a Decision Tree? AI Made Simple",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly.",
-    "thumbnail": "assets/images/blog-thumbnails/how-decision-trees-work-the-flowchart-of-artificial-intelligence-yt.jpg",
-    "youtubeId": "Mo3A5sU2szQ",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Beginner Guide"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-face-id-recognizes-you-instantly",
-    "title": "How Does Face ID Actually Work? The Tech Behind Your iPhone",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how your iPhone recognizes your face without taking a picture? Let's dive into the invisible 3D mapping technology that keeps your data safe.",
-    "thumbnail": "assets/images/blog-thumbnails/how-face-id-recognizes-you-instantly-yt.jpg",
-    "youtubeId": "nXMKYNgO_mc",
-    "tags": [
-      "Apple",
-      "FaceID",
-      "AI",
-      "Security",
-      "Technology"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-google-maps-predicts-traffic-before-it-happens",
-    "title": "How Google Maps Predicts Traffic Before It Even Happens",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how Google Maps knows there is a traffic jam before you get there? Learn how AI uses data to predict the road ahead.",
-    "thumbnail": "assets/images/blog-thumbnails/how-google-maps-predicts-traffic-before-it-happens-yt.jpg",
-    "youtubeId": "I1LVhtYkPbQ",
-    "tags": [
-      "AI",
-      "Google Maps",
-      "Technology",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-netflix-s-recommendation-system-actually-works",
-    "title": "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.",
-    "thumbnail": "assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg",
-    "youtubeId": "DiQaXiJk0_s",
-    "tags": [
-      "AI",
-      "Netflix",
-      "Machine Learning",
-      "Personalization",
-      "Technology"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-neural-networks-make-decisions-explained-simply",
-    "title": "How Do AI Neural Networks Make Decisions? A Simple Guide",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI makes big decisions like approving a loan? Discover how neural networks use math to turn data into a simple 'Yes' or 'No'.",
-    "thumbnail": "assets/images/blog-thumbnails/how-neural-networks-make-decisions-explained-simply.jpg",
-    "youtubeId": "bNli9WWrEA8",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Neural Networks",
-      "Data Science",
-      "Beginner AI"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention",
-    "title": "What is Self-Attention? How AI Understands Language",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English.",
-    "thumbnail": "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.png",
-    "youtubeId": "wTB1Ec_4lDw",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-spotify-predicts-what-you-want-to-listen-to",
-    "title": "How Spotify Knows Exactly What You Want to Hear",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how Spotify picks your perfect playlist? Discover the math and AI magic behind your Discover Weekly songs.",
-    "thumbnail": "assets/images/blog-thumbnails/how-spotify-predicts-what-you-want-to-listen-to-yt.jpg",
-    "youtubeId": "Ow3Eo_-s9IU",
-    "tags": [
-      "AI",
-      "Spotify",
-      "Machine Learning",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers",
-    "title": "How the Add & Norm Layer Keeps AI Models Stable",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI learns without getting confused? Discover the secret behind the 'Add & Norm' layer in transformers and why it's like a safety net for deep learning.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers.png",
-    "youtubeId": "idsYRacKvNM",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Deep Learning",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained",
-    "title": "How AI Translates Languages: The Encoder-Decoder Attention Trick",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI translates languages? Discover how the encoder-decoder attention layer helps computers focus on the right words to get the translation perfect.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained.png",
-    "youtubeId": "_Uy6g3I3o8w",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Artificial Intelligence",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers",
-    "title": "How AI Reads: A Simple Guide to the Transformer Encoder",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands your sentences? Learn how the Transformer encoder works in this easy, beginner-friendly guide by a software engineer.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers.png",
-    "youtubeId": "T83WpdeLayw",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp",
-    "title": "How AI Writes: A Simple Guide to the Transformer Decoder",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI creates sentences? Let's break down how the transformer decoder works like a student taking a test.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp.png",
-    "youtubeId": "Mcj8g66i_lg",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-tiktok-knows-what-you-ll-watch-next",
-    "title": "How TikTok's AI Decides Which Videos Go Viral",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how TikTok knows exactly what you want to watch? I'm breaking down the AI secrets behind the algorithm and how videos really go viral.",
-    "thumbnail": "assets/images/blog-thumbnails/how-tiktok-knows-what-you-ll-watch-next-yt.jpg",
-    "youtubeId": "pF-vDIPz3e0",
-    "tags": [
-      "AI",
-      "TikTok",
-      "Algorithms",
-      "Data Science",
-      "Technology"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results",
-    "title": "How to Build Your Own AI Research Assistant",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build a smart AI agent that searches the web and writes summaries for you using Python and Gemini.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results.png",
-    "youtubeId": "iL-8F-FQFdI",
-    "tags": [
-      "AI",
-      "Python",
-      "Tutorial",
-      "Automation",
-      "GenerativeAI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-to-get-your-free-google-gemini-api-key-2026",
-    "title": "How to Get Your Free Google Gemini API Key (Step-by-Step)",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to easily generate your own Google Gemini API key for free so you can start building your own AI apps today.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.png",
-    "youtubeId": "yZN5a12CZD8",
-    "tags": [
-      "AI",
-      "Google Gemini",
-      "Programming",
-      "API",
-      "Software Engineering"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-to-let-clawdbot-answer-your-texts-imessage",
-    "title": "How to Build Your Own Free AI Text Message Auto-Responder",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.png",
-    "youtubeId": "Bi3z2tMPjxs",
-    "tags": [
-      "AI",
-      "Automation",
-      "Gemini",
-      "macOS",
-      "Coding"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls",
-    "title": "How to Stack Free Gemini Keys for Unlimited AI Usage",
-    "date": "2026-05-14",
-    "excerpt": "Tired of hitting AI rate limits? Learn how to use OpenClaw to stack multiple free Gemini API keys so your projects never stop working.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls.png",
-    "youtubeId": "qq1QCMWWhxg",
-    "tags": [
-      "AI",
-      "Gemini",
-      "OpenClaw",
-      "Programming",
-      "API"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention",
-    "title": "How AI Reads: The Secret Power of Transformers",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands the meaning behind words? Learn how the 'self-attention' trick helps computers read just like you do.",
-    "thumbnail": "assets/images/blog-thumbnails/how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention.png",
-    "youtubeId": "uPX8rpsJmFw",
-    "tags": [
-      "AI",
-      "Transformers",
-      "Machine Learning",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers",
-    "title": "How AI Reads: Turning Words Into Numbers Explained",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands human language? Discover how transformers use embeddings and positional encoding to turn words into data.",
-    "thumbnail": "assets/images/blog-thumbnails/how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers.png",
-    "youtubeId": "LI4wxQ9zIYc",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "how-youtube-suggests-videos-with-machine-learning",
-    "title": "How Does YouTube Know What You Want to Watch Next?",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.",
-    "thumbnail": "assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg",
-    "youtubeId": "a5Ti8QLA7C4",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "YouTube Algorithm",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "hyperparameters-vs-parameters-the-oven-settings-of-ai",
-    "title": "Hyperparameters vs. Parameters: The Oven Settings of AI",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI learns? I'm Robby, and I’m breaking down the difference between AI parameters and hyperparameters using a simple kitchen analogy.",
-    "thumbnail": "assets/images/blog-thumbnails/hyperparameters-vs-parameters-the-oven-settings-of-ai-yt.jpg",
-    "youtubeId": "8Zlymjgtfk0",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Data Science",
-      "Beginner AI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003",
-    "title": "How to Build Your Own AI Content Bot (The Chill Way)",
-    "date": "2026-05-14",
-    "excerpt": "Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!",
-    "thumbnail": "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.png",
-    "youtubeId": "wF1DMU7sSp4",
-    "tags": [
-      "AI",
-      "Automation",
-      "Programming",
-      "Software Engineering"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002",
-    "title": "How to Build Your Own AI Content Robot: A Relaxing Guide",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build an AI agent that automates your content creation. Join me as we code, troubleshoot, and explore the world of AI workflows.",
-    "thumbnail": "assets/images/blog-thumbnails/i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002.png",
-    "youtubeId": "bqcEVRiUIi0",
-    "tags": [
-      "AI",
-      "Automation",
-      "Python",
-      "Coding",
-      "Tech"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents",
-    "title": "How to Automate Cold Outreach Using AI Agents (The Alex Hormozi Way)",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to build your own AI agent that writes personalized, high-converting DMs for you using free tools and Google Colab.",
-    "thumbnail": "assets/images/blog-thumbnails/i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents.png",
-    "youtubeId": "rCkELyj_Dfw",
-    "tags": [
-      "AI",
-      "Automation",
-      "Python",
-      "Tutorial",
-      "Cold Outreach"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "i-coded-an-ai-that-answers-every-text-for-me-clawdbot",
-    "title": "I Let an AI Robot Text for Me for 24 Hours: Here’s What Happened",
-    "date": "2026-05-14",
-    "excerpt": "I let my custom AI, ClawdBot, handle all my text messages for an entire day. Find out if it made new friends, caught scammers, or caused total chaos.",
-    "thumbnail": "assets/images/blog-thumbnails/i-coded-an-ai-that-answers-every-text-for-me-clawdbot.png",
-    "youtubeId": "VaYO6hOQWm0",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Coding",
-      "Automation",
-      "Tech Experiments"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "java-speech-to-text-assemblyai-api-tutorial-step-by-step",
-    "title": "How to Build a Speech-to-Text App with Java and AI",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to turn spoken audio into text using Java and the AssemblyAI API with this simple, step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/java-speech-to-text-assemblyai-api-tutorial-step-by-step.png",
-    "youtubeId": "ZbM0OPCgOmg",
-    "tags": [
-      "Java",
-      "AI",
-      "Speech-to-Text",
-      "Programming",
-      "AssemblyAI"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "linear-regression-explained-the-math-of-prediction",
-    "title": "What Is Linear Regression? Learn How Computers Predict the Future",
-    "date": "2026-05-14",
-    "excerpt": "Curious how AI makes predictions? Learn how linear regression uses simple math to help computers guess everything from gas mileage to future sales.",
-    "thumbnail": "assets/images/blog-thumbnails/linear-regression-explained-the-math-of-prediction-yt.jpg",
-    "youtubeId": "zEpvWSGvC0Q",
-    "tags": [
-      "Machine Learning",
-      "Data Science",
-      "AI",
-      "Linear Regression",
-      "Programming"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "logistic-regression-explained",
-    "title": "Logistic Regression: Why It’s Not Actually 'Regression'",
-    "date": "2026-05-14",
-    "excerpt": "Think Logistic Regression is for predicting numbers? Think again! Join me as I explain how this simple AI tool helps computers make 'Yes' or 'No' decisions.",
-    "thumbnail": "assets/images/blog-thumbnails/logistic-regression-explained-yt.jpg",
-    "youtubeId": "i4spl1Bfsv4",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Logistic Regression"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "machine-learning-explained-how-computers-learn-without-rules-machinelearning",
-    "title": "Machine Learning Explained: How Computers Learn Like Humans",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers learn on their own? I'm Robby, an AI engineer, and I'm breaking down how machine learning works without the complicated math.",
-    "thumbnail": "assets/images/blog-thumbnails/machine-learning-explained-how-computers-learn-without-rules-machinelearning-yt.jpg",
-    "youtubeId": "dulgrJjZe3A",
-    "tags": [
-      "Machine Learning",
-      "AI",
-      "Artificial Intelligence",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "motion-graphics-made-easy-google-flow-beginner-s-guide",
-    "title": "Motion Graphics Made Easy: A Beginner’s Guide to Google AI Flow",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to turn static images into professional motion graphics using Google's powerful AI Creative Studio Flow. It's easier than you think!",
-    "thumbnail": "assets/images/blog-thumbnails/motion-graphics-made-easy-google-flow-beginner-s-guide.jpeg",
-    "youtubeId": "dyXBznfoMqI",
-    "tags": [
-      "AI",
-      "Motion Graphics",
-      "Google AI",
-      "Video Creation"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference",
-    "title": "Nano Banana Pro vs. ChatGPT Image 1.5: Which AI Tool Should You Use?",
-    "date": "2026-05-14",
-    "excerpt": "Confused about which AI image tool is right for you? As an AI engineer, I break down the real differences between Nano Banana Pro and ChatGPT Image 1.5.",
-    "thumbnail": "assets/images/blog-thumbnails/nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference-yt.jpg",
-    "youtubeId": "Ra3RVE6Qer0",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Image Generation",
-      "Tech Explained"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "neural-network-backpropagation-explained-math-examples-analogy",
-    "title": "How Do AI Models Learn? Backpropagation Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand.",
-    "thumbnail": "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.png",
-    "youtubeId": "27IxhaM2stI",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Backpropagation",
-      "Data Science"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "neural-network-step-by-step-example",
-    "title": "How Do AI Models Think? A Simple Guide to Neural Networks",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/neural-network-step-by-step-example.png",
-    "youtubeId": "3AnekoX-V4Q",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "notebooklm-full-course-the-complete-guide-2026",
-    "title": "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM.",
-    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpeg",
-    "youtubeId": "PgmwxA1I94Y",
-    "tags": [
-      "AI",
-      "NotebookLM",
-      "Productivity",
-      "Machine Learning",
-      "Tech Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "openclaw-3-28-is-insane-here-s-why",
-    "title": "OpenClaw 3.28 Is Here: 3 Major Updates You Need to Know",
-    "date": "2026-05-14",
-    "excerpt": "OpenClaw just got a massive upgrade! From one-click skill installs to smarter AI web search, here is everything you need to know about version 3.28.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-3-28-is-insane-here-s-why-yt.jpg",
-    "youtubeId": "is7yNhTt9ck",
-    "tags": [
-      "OpenClaw",
-      "AI Agents",
-      "Tech Tutorial",
-      "Software Engineering"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "openclaw-4-21-update-is-insane",
-    "title": "OpenClaw 4.21 Update: Everything You Need to Know",
-    "date": "2026-05-14",
-    "excerpt": "OpenClaw 4.21 is here to make your AI work smoother and faster. Check out the biggest fixes for crashes, costs, and macOS performance.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-21-update-is-insane.png",
-    "youtubeId": "33125SFynkA",
-    "tags": [
-      "OpenClaw",
-      "AI",
-      "SoftwareUpdate",
-      "TechTips",
-      "Coding"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "openclaw-4-8-is-insane-here-s-why",
-    "title": "OpenClaw 4.8 Is Here: The Biggest AI Automation Updates Yet",
-    "date": "2026-05-14",
-    "excerpt": "OpenClaw 4.8 brings massive upgrades like Android voice control, Task Flow automation, and faster workflows. Here is everything you need to know to get started.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-8-is-insane-here-s-why-yt.jpg",
-    "youtubeId": "Wvaj_Aq3RHg",
-    "tags": [
-      "AI",
-      "OpenClaw",
-      "Automation",
-      "TechTutorial",
-      "Android"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "openclaw-5-4-is-insane-here-s-why",
-    "title": "OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant",
-    "date": "2026-05-14",
-    "excerpt": "OpenClaw 5.4 has arrived with exciting updates, including a powerful new Google Meet agent that helps you take notes and chat in real-time.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-5-4-is-insane-here-s-why.jpeg",
-    "youtubeId": "goZFPWqwKXs",
-    "tags": [
-      "AI",
-      "OpenClaw",
-      "Productivity",
-      "Software Engineering"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "openclaw-skills-explained-a-beginner-s-guide",
-    "title": "OpenClaw Skills: How to Turn Your AI Into a Super-Powered Helper",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to turn your AI from a simple chatbot into a real-world helper using OpenClaw Skills. This guide shows you how to automate tasks with simple plugins.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.png",
-    "youtubeId": "Jxtue8U7__s",
-    "tags": [
-      "AI",
-      "OpenClaw",
-      "Automation",
-      "Python",
-      "Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "positional-encoding-explained-simply-in-transformer-architecture-transformers-ai",
-    "title": "How AI Reads: Understanding Positional Encoding in Transformers",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences.",
-    "thumbnail": "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.png",
-    "youtubeId": "G1Vgfwgtv48",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Transformers",
-      "AI Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo",
-    "title": "What is Qwen 3.5 Omni? The Future of AI Agents is Here",
-    "date": "2026-05-14",
-    "excerpt": "Alibaba just released Qwen 3.5 Omni, an AI that sees, hears, and speaks at the same time. Learn how this new model is changing the way we build apps.",
-    "thumbnail": "assets/images/blog-thumbnails/qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo.png",
-    "youtubeId": "sGGF_2NfghA",
-    "tags": [
-      "AI",
-      "Qwen",
-      "Coding",
-      "Tech Explained",
-      "Artificial Intelligence"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "relu-activation-explained-with-step-by-step-example",
-    "title": "What Is ReLU? The Light Switch of AI Explained",
-    "date": "2026-05-14",
-    "excerpt": "Learn how the ReLU activation function works using a simple light switch example. Discover how AI makes decisions in this easy-to-follow guide.",
-    "thumbnail": "assets/images/blog-thumbnails/relu-activation-explained-with-step-by-step-example.png",
-    "youtubeId": "6uh_GAyMXT8",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "sigmoid-function-explained-with-a-simple-neural-network-example",
-    "title": "What is the Sigmoid Function? A Bouncer’s Guide to AI",
-    "date": "2026-05-14",
-    "excerpt": "Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms.",
-    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.png",
-    "youtubeId": "t30WqiKsn_8",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Neural Networks",
-      "Data Science",
-      "Beginner AI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "sigmoid-function-explained",
-    "title": "What is the Sigmoid Function? AI Math Made Easy",
-    "date": "2026-05-14",
-    "excerpt": "Curious how AI thinks in probabilities? Learn how the sigmoid function works to turn any number into a simple value between 0 and 1.",
-    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained.png",
-    "youtubeId": "EegUZtLRkFU",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Math"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "stop-building-dumb-ai-agents-do-this-instead",
-    "title": "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory",
-    "date": "2026-05-14",
-    "excerpt": "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.",
-    "thumbnail": "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.png",
-    "youtubeId": "uCqbwJca8ks",
-    "tags": [
-      "AI",
-      "Gemini",
-      "Productivity",
-      "Software Engineering"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "the-two-things-that-finally-got-me-hired-newgrad-softwareengineering",
-    "title": "How to Actually Get Hired as a Software Engineer (My Secret Strategy)",
-    "date": "2026-05-14",
-    "excerpt": "Struggling to find a tech job? Learn the two simple strategies that helped me go from failing interviews to getting hired as a software engineer.",
-    "thumbnail": "assets/images/blog-thumbnails/the-two-things-that-finally-got-me-hired-newgrad-softwareengineering-yt.jpg",
-    "youtubeId": "bCHkzpz71Ro",
-    "tags": [
-      "Software Engineering",
-      "Career Advice",
-      "Tech Jobs",
-      "Coding Interviews"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup",
-    "title": "Master the Google Gemini Mac App: A Simple Guide to Boosting Your Productivity",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to set up and master the Google Gemini app for macOS. Discover hidden tricks to make your computer smarter and get your work done faster.",
-    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.png",
-    "youtubeId": "ao3nvWKX3PI",
-    "tags": [
-      "Google Gemini",
-      "macOS",
-      "AI Productivity",
-      "Tech Tips"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video",
-    "title": "Google’s New Veo 3.1 Lite: Making AI Video Easier and Cheaper",
-    "date": "2026-05-14",
-    "excerpt": "Google just released Veo 3.1 Lite, a powerful new tool that makes creating AI videos more affordable than ever. Let's look at how it works.",
-    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video.png",
-    "youtubeId": "Qf1Vih2l6NM",
-    "tags": [
-      "AI",
-      "Google",
-      "Video Generation",
-      "Tech Tutorial",
-      "Generative AI"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "the-vanishing-exploding-gradient-problem-explained",
-    "title": "Why Neural Networks Fail: Vanishing and Exploding Gradients Explained",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them.",
-    "thumbnail": "assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.png",
-    "youtubeId": "G4ufhQGke1c",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Deep Learning",
-      "Neural Networks",
-      "Data Science"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "this-free-tool-replaces-elevenlabs-completely",
-    "title": "How to Clone Any Voice for Free (Without the Cloud!)",
-    "date": "2026-05-14",
-    "excerpt": "Learn how to use VoiceBox to clone voices and create high-quality speech right on your own computer, keeping your data private and free.",
-    "thumbnail": "assets/images/blog-thumbnails/this-free-tool-replaces-elevenlabs-completely.png",
-    "youtubeId": "9LKaaOo6TmQ",
-    "tags": [
-      "AI",
-      "Voice Cloning",
-      "Tech Tutorial",
-      "Privacy",
-      "Local AI"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b",
-    "title": "Meet ZAYA1-8B: The Tiny AI Model That Thinks Like a Giant",
-    "date": "2026-05-14",
-    "excerpt": "Discover how Zyphra’s new ZAYA1-8B model uses smart technology to beat the biggest AI giants while running on AMD hardware.",
-    "thumbnail": "assets/images/blog-thumbnails/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.jpeg",
-    "youtubeId": "X6ARKudj4Zg",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "AMD",
-      "Technology",
-      "Coding"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "training-vs-test-sets-how-to-grade-an-ai",
-    "title": "Training vs. Test Sets: How to Give Your AI a Final Exam",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models.",
-    "thumbnail": "assets/images/blog-thumbnails/training-vs-test-sets-how-to-grade-an-ai-yt.jpg",
-    "youtubeId": "HXw60MHXQmg",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Coding for Beginners"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "transformer-architecture-explained-simply",
-    "title": "What is a Transformer? How AI Learns to Talk",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder what the 'T' in ChatGPT stands for? Learn how Transformer technology changed everything about how computers understand human language.",
-    "thumbnail": "assets/images/blog-thumbnails/transformer-architecture-explained-simply.png",
-    "youtubeId": "mAI-sXdjJDU",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "Machine Learning",
-      "Technology Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step",
-    "title": "How AI Works: Understanding the Transformer Model",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide.",
-    "thumbnail": "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.png",
-    "youtubeId": "APHVilJSI5Q",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "ChatGPT",
-      "Beginner AI"
-    ],
-    "readTime": 2
-  },
-  {
     "slug": "ui-tars-guide",
     "title": "UI-TARS: ByteDance’s Open-Source Answer to Computer Use",
-    "date": "2026-05-14",
+    "date": "2026-05-13",
     "excerpt": "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents.",
     "thumbnail": "assets/images/ui-tars-thumb.jpg",
     "youtubeId": "iZJmBM5k-GA",
@@ -1465,448 +10,6 @@
       "AI Agents",
       "Computer Use",
       "ByteDance"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "understanding-linear-regression-in-machine-learning-explained-simply",
-    "title": "What is Linear Regression? AI Explained for Beginners",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers predict house prices or future sales? Learn how Linear Regression works in this simple, step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/understanding-linear-regression-in-machine-learning-explained-simply-yt.jpg",
-    "youtubeId": "UBeJDK8fY8I",
-    "tags": [
-      "Machine Learning",
-      "AI",
-      "Data Science",
-      "Beginner Guide"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-are-labels-in-machine-learning",
-    "title": "What are Labels in Machine Learning? An Easy Guide",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI learns to tell a cat from a dog? It all starts with labels. Learn how this 'answer key' helps computers understand the world.",
-    "thumbnail": "assets/images/blog-thumbnails/what-are-labels-in-machine-learning-yt.jpg",
-    "youtubeId": "YeiSQR5RZBs",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Beginner AI",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images",
-    "title": "How Does AI See? A Simple Guide to Convolutional Neural Networks",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how your phone recognizes your face or how self-driving cars 'see'? Learn how Convolutional Neural Networks (CNNs) help computers understand images.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images-yt.jpg",
-    "youtubeId": "v9lZS_BlQ1c",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Computer Vision",
-      "Technology"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-a-gradient-the-engine-of-ai-learning",
-    "title": "What is a Gradient? How AI Actually Learns",
-    "date": "2026-05-14",
-    "excerpt": "Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-gradient-the-engine-of-ai-learning-yt.jpg",
-    "youtubeId": "5Pc5E7AFtNE",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Calculus",
-      "Coding",
-      "Beginner AI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-a-loss-function-how-ai-measures-mistakes",
-    "title": "What Is a Loss Function? How AI Learns from Its Mistakes",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI learns? Discover how a loss function acts like a scoreboard to help computers fix their mistakes and get smarter.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.png",
-    "youtubeId": "CtfzBXbJaoA",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Beginner AI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-a-loss-function-understanding-how-ai-models-learn",
-    "title": "What is a Loss Function? How AI Learns from Its Mistakes",
-    "date": "2026-05-14",
-    "excerpt": "Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.png",
-    "youtubeId": "FxUAl6vS38w",
-    "tags": [
-      "Machine Learning",
-      "AI Basics",
-      "Data Science",
-      "Artificial Intelligence"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-a-parameter-in-machine-learning",
-    "title": "What Are AI Parameters? A Simple Guide to Machine Learning",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI actually learns? Learn what parameters are and how they help computers store knowledge in this easy guide from a software engineer.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-parameter-in-machine-learning-yt.jpg",
-    "youtubeId": "ePNKMIBHfEo",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Beginner Guide"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-a-token-how-ai-actually-reads",
-    "title": "What Is a Token? How AI Reads the Internet",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how ChatGPT understands you so fast? It uses a secret 'Lego language' called tokens to read the world in pieces.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-token-how-ai-actually-reads-yt.jpg",
-    "youtubeId": "idyXt0JV8v0",
-    "tags": [
-      "AI",
-      "ChatGPT",
-      "Machine Learning",
-      "Technology"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-ai-artificial-intelligence-explained-in-60-seconds",
-    "title": "What Is AI? A Simple Guide for Everyone",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers learn to think like us? Join software engineer Robby as he breaks down exactly what Artificial Intelligence is in plain English.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-ai-artificial-intelligence-explained-in-60-seconds-yt.jpg",
-    "youtubeId": "ROe8x7aMJLY",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Technology",
-      "Machine Learning",
-      "Beginner Guide"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-an-ai-agent-finally-explained-simply",
-    "title": "What is an AI Agent? The Real Difference Between Chatbots and Agents",
-    "date": "2026-05-14",
-    "excerpt": "Curious about AI agents? Learn why they are different from chatbots and how they move from just chatting to actually getting work done.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-finally-explained-simply-yt.jpg",
-    "youtubeId": "ElWKHGDq3Uo",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Tech Explained",
-      "AI Agents",
-      "LLMs"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-an-ai-agent",
-    "title": "What Is an AI Agent? The Big Difference Between Talking and Doing",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI goes from just answering questions to actually doing work for you? Discover the world of AI Agents and how they are changing the game.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-yt.jpg",
-    "youtubeId": "APFbZ9VVG0I",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "AI Agents",
-      "Tech Explained"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-an-ai-model-the-recipe-analogy",
-    "title": "What Is an AI Model? The Secret Recipe Explained",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers learn to think? Let's break down what an AI model is using a simple kitchen recipe analogy.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-model-the-recipe-analogy-yt.jpg",
-    "youtubeId": "fDa_r0sUPMw",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Artificial Intelligence",
-      "Beginner Guide"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-an-algorithm-in-ai",
-    "title": "What Is an AI Algorithm? A Simple Guide for Everyone",
-    "date": "2026-05-14",
-    "excerpt": "Curious how AI actually works? Learn what an algorithm is and how it helps computers learn, explained by a real software engineer.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-an-algorithm-in-ai-yt.jpg",
-    "youtubeId": "SdII73-7Bkk",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Algorithms",
-      "Computer Science",
-      "Tech Explained"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-an-llm-large-language-models-and-chatgpt-explained",
-    "title": "What is an LLM? How AI Like ChatGPT Actually Works",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI chats with you like a human? I'm breaking down how Large Language Models work in simple, easy-to-understand terms.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-an-llm-large-language-models-and-chatgpt-explained.png",
-    "youtubeId": "Vl0r3wCfUaw",
-    "tags": [
-      "AI",
-      "Large Language Models",
-      "ChatGPT",
-      "Technology Explained",
-      "Machine Learning"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-classification-in-ai-sorting-data-simply-explained",
-    "title": "What is AI Classification? Sorting Data Made Simple",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how your email blocks spam? Learn how AI uses classification to sort information into categories like a pro.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-classification-in-ai-sorting-data-simply-explained-yt.jpg",
-    "youtubeId": "PwjOpgUx50Q",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Beginner AI",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-fine-tuning-a-model",
-    "title": "What is AI Fine-Tuning? Turn Your Chatbot into an Expert",
-    "date": "2026-05-14",
-    "excerpt": "Learn how fine-tuning lets you customize AI models for your specific needs without spending millions of dollars.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-fine-tuning-a-model-yt.jpg",
-    "youtubeId": "bCgKCYmerzg",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Fine-Tuning",
-      "Tech Explained"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-generative-ai-the-technology-that-creates",
-    "title": "What Is Generative AI? How Computers Are Starting to Create",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers make art and write stories? Let's look at how Generative AI works like a master chef inventing new recipes.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-generative-ai-the-technology-that-creates-yt.jpg",
-    "youtubeId": "l5XfrscuRQY",
-    "tags": [
-      "Generative AI",
-      "Artificial Intelligence",
-      "Technology Explained",
-      "Future of Tech"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-gpt-5-2-what-will-it-be-able-to-do",
-    "title": "What Is GPT-5.2? The Future of AI Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Curious about what comes after GPT-4? Software engineer Robby breaks down how GPT-5.2 is moving from just predicting words to actually getting things done for you.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-gpt-5-2-what-will-it-be-able-to-do.jpeg",
-    "youtubeId": "Cy4CWdym5GY",
-    "tags": [
-      "AI",
-      "GPT-5.2",
-      "Artificial Intelligence",
-      "Tech Explained"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-machine-learning-explained-like-you-re-5-but-actually-technical",
-    "title": "What is Machine Learning? A Simple Guide for Beginners",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-machine-learning-explained-like-you-re-5-but-actually-technical-yt.jpg",
-    "youtubeId": "h_MH8sIENRo",
-    "tags": [
-      "Machine Learning",
-      "AI",
-      "Data Science",
-      "Artificial Intelligence"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "what-is-multimodal-ai",
-    "title": "What is Multimodal AI? Meet the AI That Can See and Hear",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI is learning to see and hear? Discover how Multimodal AI is changing the way machines understand the world, moving beyond just simple text.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-multimodal-ai-yt.jpg",
-    "youtubeId": "N2fXdcY1rvw",
-    "tags": [
-      "Artificial Intelligence",
-      "Multimodal AI",
-      "Tech Explained",
-      "Future Tech"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-regression-in-ai-explained-in-60-seconds",
-    "title": "What is Regression? AI Prediction Explained Simply",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI guesses numbers like house prices or stock trends? Learn how regression works in plain English.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-regression-in-ai-explained-in-60-seconds-yt.jpg",
-    "youtubeId": "CFRtKhFqpEk",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Data Science",
-      "Beginner AI"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "what-is-supervised-learning-ai-with-an-answer-key",
-    "title": "What is Supervised Learning? AI With an Answer Key",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how computers learn? Discover how supervised learning works by using an answer key to teach AI models to make smart predictions.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-supervised-learning-ai-with-an-answer-key-yt.jpg",
-    "youtubeId": "ECaxXXfzbp0",
-    "tags": [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "AI Basics",
-      "Data Science"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "why-ai-needs-a-validation-set",
-    "title": "Why AI Needs a 'Practice Test' to Get Smarter",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI learns? Just like you, it needs practice tests. Learn why a validation set is the secret to building better AI models.",
-    "thumbnail": "assets/images/blog-thumbnails/why-ai-needs-a-validation-set-yt.jpg",
-    "youtubeId": "ihV_hGAf1Dw",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Programming",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "why-data-is-gold-for-ai",
-    "title": "Why Data is Like Gold for AI: A Simple Guide",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI gets so smart? It’s all about the data! Learn why high-quality information is the real secret behind every powerful AI model.",
-    "thumbnail": "assets/images/blog-thumbnails/why-data-is-gold-for-ai-yt.jpg",
-    "youtubeId": "YQOZYyOT5B0",
-    "tags": [
-      "AI",
-      "Artificial Intelligence",
-      "Data Science",
-      "Machine Learning",
-      "Technology"
-    ],
-    "readTime": 3
-  },
-  {
-    "slug": "why-llms-suddenly-became-so-powerful-in-2025",
-    "title": "Why Did AI Get So Smart So Fast? The Secret Behind LLMs",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder why AI feels like it suddenly got a brain? Let's talk about scaling laws—the simple secret that made AI models powerful in 2025.",
-    "thumbnail": "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.png",
-    "youtubeId": "mCyDlBy2wU4",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Tech Explained",
-      "LLMs"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "why-neural-networks-need-activation-functions",
-    "title": "Why Neural Networks Need Activation Functions: A Simple Guide",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI learns complex patterns? Discover how activation functions help neural networks bend reality to make better predictions.",
-    "thumbnail": "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.png",
-    "youtubeId": "c9QJt5JUXrY",
-    "tags": [
-      "AI",
-      "Neural Networks",
-      "Machine Learning",
-      "Deep Learning",
-      "Data Science"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "why-prompt-engineers-make-300k",
-    "title": "Stop Using AI Like a Magic Wand: How to Build Pro-Level Code",
-    "date": "2026-05-14",
-    "excerpt": "Think AI is a magic wand? Think again. Learn how treating AI like an employee—not a toy—can help you write better code and master prompt engineering.",
-    "thumbnail": "assets/images/blog-thumbnails/why-prompt-engineers-make-300k-yt.jpg",
-    "youtubeId": "FMq1zHCtlNk",
-    "tags": [
-      "AI",
-      "Coding",
-      "Prompt Engineering",
-      "Software Development"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers",
-    "title": "Why Do AI Models Have So Many 'Attention Heads'? Explained",
-    "date": "2026-05-14",
-    "excerpt": "Ever wonder how AI understands language so well? It uses 'multi-head attention' to focus on many things at once, just like a team working together.",
-    "thumbnail": "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.png",
-    "youtubeId": "K8CbD1RHtr0",
-    "tags": [
-      "AI",
-      "Machine Learning",
-      "Transformers",
-      "Artificial Intelligence"
-    ],
-    "readTime": 2
-  },
-  {
-    "slug": "you-re-trusting-ai-too-much",
-    "title": "Why Your AI Might Be Lying to You (And How to Fix It)",
-    "date": "2026-05-14",
-    "excerpt": "Think AI is just a search engine? Think again. Learn why AI 'hallucinates' and how to stop trusting it blindly.",
-    "thumbnail": "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.png",
-    "youtubeId": "pOcMOjq8c_g",
-    "tags": [
-      "Artificial Intelligence",
-      "Tech Explained",
-      "AI Safety",
-      "Large Language Models"
     ],
     "readTime": 3
   },
@@ -1925,6 +28,99 @@
     "readTime": 2
   },
   {
+    "slug": "this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b",
+    "title": "Meet ZAYA1-8B: The Tiny AI Model That Thinks Like a Giant",
+    "date": "2026-05-12",
+    "excerpt": "Discover how Zyphra’s new ZAYA1-8B model uses smart technology to beat the biggest AI giants while running on AMD hardware.",
+    "thumbnail": "assets/images/blog-thumbnails/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.jpeg",
+    "youtubeId": "X6ARKudj4Zg",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "AMD",
+      "Technology",
+      "Coding"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "notebooklm-full-course-the-complete-guide-2026",
+    "title": "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)",
+    "date": "2026-05-08",
+    "excerpt": "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM.",
+    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpeg",
+    "youtubeId": "PgmwxA1I94Y",
+    "tags": [
+      "AI",
+      "NotebookLM",
+      "Productivity",
+      "Machine Learning",
+      "Tech Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "openclaw-5-4-is-insane-here-s-why",
+    "title": "OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant",
+    "date": "2026-05-06",
+    "excerpt": "OpenClaw 5.4 has arrived with exciting updates, including a powerful new Google Meet agent that helps you take notes and chat in real-time.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-5-4-is-insane-here-s-why.jpeg",
+    "youtubeId": "goZFPWqwKXs",
+    "tags": [
+      "AI",
+      "OpenClaw",
+      "Productivity",
+      "Software Engineering"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update",
+    "title": "Meet Your New AI Teammate: Claude Code 4.7 and the 'Grumpy Senior' Update",
+    "date": "2026-05-05",
+    "excerpt": "Discover how the new Claude Code 4.7 update and /perceive command are changing the way AI agents work as your digital employees.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.jpeg",
+    "youtubeId": "qyecnzcAyzQ",
+    "tags": [
+      "AI Agents",
+      "Claude Code",
+      "Software Engineering",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "grok-4-3-xai-just-changed-the-agent-game-forever",
+    "title": "Grok 4.3 Is Here: Everything You Need to Know About xAI’s New AI",
+    "date": "2026-05-05",
+    "excerpt": "Grok 4.3 has arrived with huge upgrades in reasoning, a massive memory window, and new tools to help you build and create faster than ever.",
+    "thumbnail": "assets/images/blog-thumbnails/grok-4-3-xai-just-changed-the-agent-game-forever.jpeg",
+    "youtubeId": "Bhl4_8L0OEA",
+    "tags": [
+      "AI",
+      "Grok",
+      "xAI",
+      "TechNews",
+      "MachineLearning"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "motion-graphics-made-easy-google-flow-beginner-s-guide",
+    "title": "Motion Graphics Made Easy: A Beginner’s Guide to Google AI Flow",
+    "date": "2026-05-04",
+    "excerpt": "Learn how to turn static images into professional motion graphics using Google's powerful AI Creative Studio Flow. It's easier than you think!",
+    "thumbnail": "assets/images/blog-thumbnails/motion-graphics-made-easy-google-flow-beginner-s-guide.jpeg",
+    "youtubeId": "dyXBznfoMqI",
+    "tags": [
+      "AI",
+      "Motion Graphics",
+      "Google AI",
+      "Video Creation"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "notebooklm-guide",
     "title": "NotebookLM Full Course 2026: The Complete Beginner's Guide",
     "date": "2026-05-01",
@@ -1935,6 +131,128 @@
       "Full Course",
       "NotebookLM",
       "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-production",
+    "title": "The Engineer's Guide to Claude Code in Production",
+    "date": "2026-04-30",
+    "excerpt": "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.",
+    "thumbnail": "assets/images/blog-thumb-2.jpg",
+    "youtubeId": "M351KD77Lfs",
+    "tags": [
+      "Engineering",
+      "Claude Code",
+      "AI Dev Tools"
+    ],
+    "readTime": 16
+  },
+  {
+    "slug": "gpt-5-5-explained-features-price-the-future-of-agents",
+    "title": "GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era",
+    "date": "2026-04-26",
+    "excerpt": "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you.",
+    "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpeg",
+    "youtubeId": "HgiZNcqNE00",
+    "tags": [
+      "AI",
+      "GPT-5.5",
+      "Tech News",
+      "Software Engineering"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained",
+    "title": "ChatGPT Images 2.0: Everything You Need to Know About the New AI",
+    "date": "2026-04-25",
+    "excerpt": "OpenAI just launched ChatGPT Images 2.0, a huge upgrade that changes how AI makes pictures. Learn how it works, why it's better at spelling, and how to use it.",
+    "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.jpeg",
+    "youtubeId": "9xrIVzPax4A",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Generative AI",
+      "Tech Explained"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "openclaw-4-21-update-is-insane",
+    "title": "OpenClaw 4.21 Update: Everything You Need to Know",
+    "date": "2026-04-22",
+    "excerpt": "OpenClaw 4.21 is here to make your AI work smoother and faster. Check out the biggest fixes for crashes, costs, and macOS performance.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-21-update-is-insane.png",
+    "youtubeId": "33125SFynkA",
+    "tags": [
+      "OpenClaw",
+      "AI",
+      "SoftwareUpdate",
+      "TechTips",
+      "Coding"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup",
+    "title": "Master the Google Gemini Mac App: A Simple Guide to Boosting Your Productivity",
+    "date": "2026-04-19",
+    "excerpt": "Learn how to set up and master the Google Gemini app for macOS. Discover hidden tricks to make your computer smarter and get your work done faster.",
+    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.png",
+    "youtubeId": "ao3nvWKX3PI",
+    "tags": [
+      "Google Gemini",
+      "macOS",
+      "AI Productivity",
+      "Tech Tips"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "stop-building-dumb-ai-agents-do-this-instead",
+    "title": "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory",
+    "date": "2026-04-17",
+    "excerpt": "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.",
+    "thumbnail": "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.png",
+    "youtubeId": "uCqbwJca8ks",
+    "tags": [
+      "AI",
+      "Gemini",
+      "Productivity",
+      "Software Engineering"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "build-a-custom-research-skill-for-any-ai-agent-free-markdown-template",
+    "title": "How to Build Your Own AI Research Assistant (Step-by-Step Guide)",
+    "date": "2026-04-11",
+    "excerpt": "Stop searching for AI news manually. Learn how I built a custom AI agent to automatically find the latest updates from GitHub, Hacker News, and more.",
+    "thumbnail": "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.png",
+    "youtubeId": "mEGHa9w2gUY",
+    "tags": [
+      "AI",
+      "Automation",
+      "Coding",
+      "Productivity",
+      "AI Agents"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls",
+    "title": "How to Stack Free Gemini Keys for Unlimited AI Usage",
+    "date": "2026-04-09",
+    "excerpt": "Tired of hitting AI rate limits? Learn how to use OpenClaw to stack multiple free Gemini API keys so your projects never stop working.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls.png",
+    "youtubeId": "qq1QCMWWhxg",
+    "tags": [
+      "AI",
+      "Gemini",
+      "OpenClaw",
+      "Programming",
+      "API"
     ],
     "readTime": 3
   },
@@ -1951,5 +269,1687 @@
       "AI Automation"
     ],
     "readTime": 4
+  },
+  {
+    "slug": "gemma-4-s-256k-context-agentic-workflows-live-coding-demo",
+    "title": "What Is Gemma 4? How to Use Its Massive 256K Context Window",
+    "date": "2026-04-04",
+    "excerpt": "Learn how Google's new Gemma 4 model uses a huge 256K context window to help AI agents remember long conversations and solve complex problems.",
+    "thumbnail": "assets/images/blog-thumbnails/gemma-4-s-256k-context-agentic-workflows-live-coding-demo.png",
+    "youtubeId": "kH7wa2NQPOs",
+    "tags": [
+      "AI",
+      "Gemma 4",
+      "Machine Learning",
+      "Coding",
+      "Google AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "openclaw-4-8-is-insane-here-s-why",
+    "title": "OpenClaw 4.8 Is Here: The Biggest AI Automation Updates Yet",
+    "date": "2026-04-04",
+    "excerpt": "OpenClaw 4.8 brings massive upgrades like Android voice control, Task Flow automation, and faster workflows. Here is everything you need to know to get started.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-4-8-is-insane-here-s-why-yt.jpg",
+    "youtubeId": "Wvaj_Aq3RHg",
+    "tags": [
+      "AI",
+      "OpenClaw",
+      "Automation",
+      "TechTutorial",
+      "Android"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video",
+    "title": "Google’s New Veo 3.1 Lite: Making AI Video Easier and Cheaper",
+    "date": "2026-04-02",
+    "excerpt": "Google just released Veo 3.1 Lite, a powerful new tool that makes creating AI videos more affordable than ever. Let's look at how it works.",
+    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video.png",
+    "youtubeId": "Qf1Vih2l6NM",
+    "tags": [
+      "AI",
+      "Google",
+      "Video Generation",
+      "Tech Tutorial",
+      "Generative AI"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo",
+    "title": "What is Qwen 3.5 Omni? The Future of AI Agents is Here",
+    "date": "2026-04-01",
+    "excerpt": "Alibaba just released Qwen 3.5 Omni, an AI that sees, hears, and speaks at the same time. Learn how this new model is changing the way we build apps.",
+    "thumbnail": "assets/images/blog-thumbnails/qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo.png",
+    "youtubeId": "sGGF_2NfghA",
+    "tags": [
+      "AI",
+      "Qwen",
+      "Coding",
+      "Tech Explained",
+      "Artificial Intelligence"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "openclaw-3-28-is-insane-here-s-why",
+    "title": "OpenClaw 3.28 Is Here: 3 Major Updates You Need to Know",
+    "date": "2026-03-27",
+    "excerpt": "OpenClaw just got a massive upgrade! From one-click skill installs to smarter AI web search, here is everything you need to know about version 3.28.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-3-28-is-insane-here-s-why-yt.jpg",
+    "youtubeId": "is7yNhTt9ck",
+    "tags": [
+      "OpenClaw",
+      "AI Agents",
+      "Tech Tutorial",
+      "Software Engineering"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "openclaw-skills-explained-a-beginner-s-guide",
+    "title": "OpenClaw Skills: How to Turn Your AI Into a Super-Powered Helper",
+    "date": "2026-03-20",
+    "excerpt": "Learn how to turn your AI from a simple chatbot into a real-world helper using OpenClaw Skills. This guide shows you how to automate tasks with simple plugins.",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.png",
+    "youtubeId": "Jxtue8U7__s",
+    "tags": [
+      "AI",
+      "OpenClaw",
+      "Automation",
+      "Python",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "build-your-first-clawdbot-skill-complete-walkthrough",
+    "title": "Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation",
+    "date": "2026-03-19",
+    "excerpt": "Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way.",
+    "thumbnail": "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.png",
+    "youtubeId": "Xe09u-PriZ4",
+    "tags": [
+      "AI",
+      "Clawdbot",
+      "Automation",
+      "YouTubeSEO",
+      "Programming"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "clawdbot-skill-setup-real-time-problem-solving-building-live-006",
+    "title": "How to Build AI Tools: A Real Look at My Clawdbot Project",
+    "date": "2026-03-11",
+    "excerpt": "Ever wonder what it's really like to build AI tools? Join me as I walk through the messy, exciting process of coding a new skill for my robot, Clawdbot.",
+    "thumbnail": "assets/images/blog-thumbnails/clawdbot-skill-setup-real-time-problem-solving-building-live-006.png",
+    "youtubeId": "52lgF4bKPV0",
+    "tags": [
+      "AI",
+      "Programming",
+      "Automation",
+      "Clawdbot",
+      "Software Engineering"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005",
+    "title": "How to Build Your Own iMessage Autoresponder with AI",
+    "date": "2026-03-07",
+    "excerpt": "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.",
+    "thumbnail": "assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.png",
+    "youtubeId": "Sm-sUYFuXnA",
+    "tags": [
+      "AI",
+      "Programming",
+      "Clawdbot",
+      "Automation",
+      "Python"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004",
+    "title": "Build Your Own AI iMessage Assistant: A Step-by-Step Guide",
+    "date": "2026-03-06",
+    "excerpt": "Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically.",
+    "thumbnail": "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.png",
+    "youtubeId": "u38dEuDcyrA",
+    "tags": [
+      "AI",
+      "Python",
+      "Automation",
+      "Google Gemini",
+      "Coding"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003",
+    "title": "How to Build Your Own AI Content Bot (The Chill Way)",
+    "date": "2026-03-05",
+    "excerpt": "Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!",
+    "thumbnail": "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.png",
+    "youtubeId": "wF1DMU7sSp4",
+    "tags": [
+      "AI",
+      "Automation",
+      "Programming",
+      "Software Engineering"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002",
+    "title": "How to Build Your Own AI Content Robot: A Relaxing Guide",
+    "date": "2026-03-04",
+    "excerpt": "Learn how to build an AI agent that automates your content creation. Join me as we code, troubleshoot, and explore the world of AI workflows.",
+    "thumbnail": "assets/images/blog-thumbnails/i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002.png",
+    "youtubeId": "bqcEVRiUIi0",
+    "tags": [
+      "AI",
+      "Automation",
+      "Python",
+      "Coding",
+      "Tech"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated",
+    "title": "Google Flow’s Big Update: Create Amazing AI Videos and Images Easily",
+    "date": "2026-03-03",
+    "excerpt": "Google Flow just got a massive upgrade. Discover the new Nano Banana 2, VEO 3.1, and powerful editing tools that make AI content creation faster than ever.",
+    "thumbnail": "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.png",
+    "youtubeId": "hD1jOizSPnk",
+    "tags": [
+      "AI",
+      "Google Flow",
+      "Video Editing",
+      "Generative AI",
+      "Tech Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001",
+    "title": "How to Build Your First AI Content Automation Agent",
+    "date": "2026-03-02",
+    "excerpt": "Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts.",
+    "thumbnail": "assets/images/blog-thumbnails/figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001.jpeg",
+    "youtubeId": "Ejqzl_HW9eE",
+    "tags": [
+      "AI",
+      "Python",
+      "Automation",
+      "Content Creation",
+      "Coding"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "this-free-tool-replaces-elevenlabs-completely",
+    "title": "How to Clone Any Voice for Free (Without the Cloud!)",
+    "date": "2026-02-28",
+    "excerpt": "Learn how to use VoiceBox to clone voices and create high-quality speech right on your own computer, keeping your data private and free.",
+    "thumbnail": "assets/images/blog-thumbnails/this-free-tool-replaces-elevenlabs-completely.png",
+    "youtubeId": "9LKaaOo6TmQ",
+    "tags": [
+      "AI",
+      "Voice Cloning",
+      "Tech Tutorial",
+      "Privacy",
+      "Local AI"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-to-let-clawdbot-answer-your-texts-imessage",
+    "title": "How to Build Your Own Free AI Text Message Auto-Responder",
+    "date": "2026-02-24",
+    "excerpt": "Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.png",
+    "youtubeId": "Bi3z2tMPjxs",
+    "tags": [
+      "AI",
+      "Automation",
+      "Gemini",
+      "macOS",
+      "Coding"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents",
+    "title": "How to Automate Cold Outreach Using AI Agents (The Alex Hormozi Way)",
+    "date": "2026-02-17",
+    "excerpt": "Learn how to build your own AI agent that writes personalized, high-converting DMs for you using free tools and Google Colab.",
+    "thumbnail": "assets/images/blog-thumbnails/i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents.png",
+    "youtubeId": "rCkELyj_Dfw",
+    "tags": [
+      "AI",
+      "Automation",
+      "Python",
+      "Tutorial",
+      "Cold Outreach"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "i-coded-an-ai-that-answers-every-text-for-me-clawdbot",
+    "title": "I Let an AI Robot Text for Me for 24 Hours: Here’s What Happened",
+    "date": "2026-02-13",
+    "excerpt": "I let my custom AI, ClawdBot, handle all my text messages for an entire day. Find out if it made new friends, caught scammers, or caused total chaos.",
+    "thumbnail": "assets/images/blog-thumbnails/i-coded-an-ai-that-answers-every-text-for-me-clawdbot.png",
+    "youtubeId": "VaYO6hOQWm0",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Coding",
+      "Automation",
+      "Tech Experiments"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "clawdbot-cloud-hosting-tutorial-free-for-students",
+    "title": "How to Host Your Own Bot for Free: A Student’s Guide to Azure",
+    "date": "2026-02-02",
+    "excerpt": "Learn how to use your student email to get free cloud hosting for your bots using the GitHub Student Developer Pack and Microsoft Azure.",
+    "thumbnail": "assets/images/blog-thumbnails/clawdbot-cloud-hosting-tutorial-free-for-students.png",
+    "youtubeId": "0YDYKb_48pQ",
+    "tags": [
+      "AI",
+      "Cloud Computing",
+      "Azure",
+      "GitHub",
+      "Programming"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "build-your-first-web-app-for-free-no-credit-card",
+    "title": "How to Put Your First Web App Online for Free (Step-by-Step Guide)",
+    "date": "2026-01-29",
+    "excerpt": "Learn how to take your Python web app from your computer to the internet for free using Render. No credit card required!",
+    "thumbnail": "assets/images/blog-thumbnails/build-your-first-web-app-for-free-no-credit-card-yt.jpg",
+    "youtubeId": "4IeMklzNyQE",
+    "tags": [
+      "Python",
+      "Web Development",
+      "Coding",
+      "Beginner Tutorial",
+      "Render"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "crewai-google-colab-setup-tutorial",
+    "title": "Build Your Own AI Team: How to Use CrewAI and Gemini in Google Colab",
+    "date": "2026-01-27",
+    "excerpt": "Learn how to build powerful AI agent teams using CrewAI and Google Gemini inside Google Colab with this easy step-by-step guide.",
+    "thumbnail": "assets/images/blog-thumbnails/crewai-google-colab-setup-tutorial-yt.jpg",
+    "youtubeId": "rmOY5eLfdq0",
+    "tags": [
+      "AI",
+      "CrewAI",
+      "Python",
+      "Gemini",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python",
+    "title": "Build Your Own AI Social Media Manager: A Beginner’s Guide",
+    "date": "2026-01-26",
+    "excerpt": "Learn how to build an AI agent that writes personalized messages for you using the OpenAI SDK and Google Gemini. It's easier than you think!",
+    "thumbnail": "assets/images/blog-thumbnails/building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python-yt.jpg",
+    "youtubeId": "6a4w3FT98Ss",
+    "tags": [
+      "AI",
+      "Python",
+      "Tutorial",
+      "Automation",
+      "Gemini"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-to-get-your-free-google-gemini-api-key-2026",
+    "title": "How to Get Your Free Google Gemini API Key (Step-by-Step)",
+    "date": "2026-01-23",
+    "excerpt": "Learn how to easily generate your own Google Gemini API key for free so you can start building your own AI apps today.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.png",
+    "youtubeId": "yZN5a12CZD8",
+    "tags": [
+      "AI",
+      "Google Gemini",
+      "Programming",
+      "API",
+      "Software Engineering"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough",
+    "title": "How to Build Your First AI App with Google Gemini (Easy Guide)",
+    "date": "2026-01-20",
+    "excerpt": "Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough-yt.jpg",
+    "youtubeId": "lX17ByJbFfc",
+    "tags": [
+      "AI",
+      "Python",
+      "Gemini",
+      "Programming",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results",
+    "title": "How to Build Your Own AI Research Assistant",
+    "date": "2026-01-18",
+    "excerpt": "Learn how to build a smart AI agent that searches the web and writes summaries for you using Python and Gemini.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results.png",
+    "youtubeId": "iL-8F-FQFdI",
+    "tags": [
+      "AI",
+      "Python",
+      "Tutorial",
+      "Automation",
+      "GenerativeAI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "build-a-slack-ai-agent-step-by-step",
+    "title": "How to Build Your First AI-Powered Slack Bot with Python",
+    "date": "2026-01-16",
+    "excerpt": "Learn how to build a simple AI agent that automatically posts motivational messages to Slack using Python and Google's Gemini model.",
+    "thumbnail": "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.png",
+    "youtubeId": "VwM8KnbNKAo",
+    "tags": [
+      "AI",
+      "Python",
+      "Slack",
+      "Automation",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "understanding-linear-regression-in-machine-learning-explained-simply",
+    "title": "What is Linear Regression? AI Explained for Beginners",
+    "date": "2026-01-14",
+    "excerpt": "Ever wonder how computers predict house prices or future sales? Learn how Linear Regression works in this simple, step-by-step guide.",
+    "thumbnail": "assets/images/blog-thumbnails/understanding-linear-regression-in-machine-learning-explained-simply-yt.jpg",
+    "youtubeId": "UBeJDK8fY8I",
+    "tags": [
+      "Machine Learning",
+      "AI",
+      "Data Science",
+      "Beginner Guide"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "the-vanishing-exploding-gradient-problem-explained",
+    "title": "Why Neural Networks Fail: Vanishing and Exploding Gradients Explained",
+    "date": "2026-01-13",
+    "excerpt": "Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them.",
+    "thumbnail": "assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.png",
+    "youtubeId": "G4ufhQGke1c",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Networks",
+      "Data Science"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-a-loss-function-understanding-how-ai-models-learn",
+    "title": "What is a Loss Function? How AI Learns from Its Mistakes",
+    "date": "2026-01-04",
+    "excerpt": "Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.png",
+    "youtubeId": "FxUAl6vS38w",
+    "tags": [
+      "Machine Learning",
+      "AI Basics",
+      "Data Science",
+      "Artificial Intelligence"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "the-two-things-that-finally-got-me-hired-newgrad-softwareengineering",
+    "title": "How to Actually Get Hired as a Software Engineer (My Secret Strategy)",
+    "date": "2026-01-03",
+    "excerpt": "Struggling to find a tech job? Learn the two simple strategies that helped me go from failing interviews to getting hired as a software engineer.",
+    "thumbnail": "assets/images/blog-thumbnails/the-two-things-that-finally-got-me-hired-newgrad-softwareengineering-yt.jpg",
+    "youtubeId": "bCHkzpz71Ro",
+    "tags": [
+      "Software Engineering",
+      "Career Advice",
+      "Tech Jobs",
+      "Coding Interviews"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-ai-understands-human-language-nlp-explained-simply",
+    "title": "How Does AI Understand You? NLP Explained Simply",
+    "date": "2026-01-02",
+    "excerpt": "Ever wonder how your phone knows exactly what you're saying? Learn how computers use NLP to turn human language into machine smarts.",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-understands-human-language-nlp-explained-simply-yt.jpg",
+    "youtubeId": "2x5bBbHnVzM",
+    "tags": [
+      "AI",
+      "NLP",
+      "Technology",
+      "Machine Learning"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images",
+    "title": "How Does AI See? A Simple Guide to Convolutional Neural Networks",
+    "date": "2026-01-01",
+    "excerpt": "Ever wonder how your phone recognizes your face or how self-driving cars 'see'? Learn how Convolutional Neural Networks (CNNs) help computers understand images.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images-yt.jpg",
+    "youtubeId": "v9lZS_BlQ1c",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Computer Vision",
+      "Technology"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-face-id-recognizes-you-instantly",
+    "title": "How Does Face ID Actually Work? The Tech Behind Your iPhone",
+    "date": "2025-12-31",
+    "excerpt": "Ever wonder how your iPhone recognizes your face without taking a picture? Let's dive into the invisible 3D mapping technology that keeps your data safe.",
+    "thumbnail": "assets/images/blog-thumbnails/how-face-id-recognizes-you-instantly-yt.jpg",
+    "youtubeId": "nXMKYNgO_mc",
+    "tags": [
+      "Apple",
+      "FaceID",
+      "AI",
+      "Security",
+      "Technology"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-an-ai-agent-finally-explained-simply",
+    "title": "What is an AI Agent? The Real Difference Between Chatbots and Agents",
+    "date": "2025-12-25",
+    "excerpt": "Curious about AI agents? Learn why they are different from chatbots and how they move from just chatting to actually getting work done.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-finally-explained-simply-yt.jpg",
+    "youtubeId": "ElWKHGDq3Uo",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Tech Explained",
+      "AI Agents",
+      "LLMs"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-an-ai-agent",
+    "title": "What Is an AI Agent? The Big Difference Between Talking and Doing",
+    "date": "2025-12-24",
+    "excerpt": "Ever wonder how AI goes from just answering questions to actually doing work for you? Discover the world of AI Agents and how they are changing the game.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-yt.jpg",
+    "youtubeId": "APFbZ9VVG0I",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "AI Agents",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "why-llms-suddenly-became-so-powerful-in-2025",
+    "title": "Why Did AI Get So Smart So Fast? The Secret Behind LLMs",
+    "date": "2025-12-23",
+    "excerpt": "Ever wonder why AI feels like it suddenly got a brain? Let's talk about scaling laws—the simple secret that made AI models powerful in 2025.",
+    "thumbnail": "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.png",
+    "youtubeId": "mCyDlBy2wU4",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Tech Explained",
+      "LLMs"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference",
+    "title": "Nano Banana Pro vs. ChatGPT Image 1.5: Which AI Tool Should You Use?",
+    "date": "2025-12-22",
+    "excerpt": "Confused about which AI image tool is right for you? As an AI engineer, I break down the real differences between Nano Banana Pro and ChatGPT Image 1.5.",
+    "thumbnail": "assets/images/blog-thumbnails/nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference-yt.jpg",
+    "youtubeId": "Ra3RVE6Qer0",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Image Generation",
+      "Tech Explained"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-google-maps-predicts-traffic-before-it-happens",
+    "title": "How Google Maps Predicts Traffic Before It Even Happens",
+    "date": "2025-12-19",
+    "excerpt": "Ever wonder how Google Maps knows there is a traffic jam before you get there? Learn how AI uses data to predict the road ahead.",
+    "thumbnail": "assets/images/blog-thumbnails/how-google-maps-predicts-traffic-before-it-happens-yt.jpg",
+    "youtubeId": "I1LVhtYkPbQ",
+    "tags": [
+      "AI",
+      "Google Maps",
+      "Technology",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-tiktok-knows-what-you-ll-watch-next",
+    "title": "How TikTok's AI Decides Which Videos Go Viral",
+    "date": "2025-12-19",
+    "excerpt": "Ever wonder how TikTok knows exactly what you want to watch? I'm breaking down the AI secrets behind the algorithm and how videos really go viral.",
+    "thumbnail": "assets/images/blog-thumbnails/how-tiktok-knows-what-you-ll-watch-next-yt.jpg",
+    "youtubeId": "pF-vDIPz3e0",
+    "tags": [
+      "AI",
+      "TikTok",
+      "Algorithms",
+      "Data Science",
+      "Technology"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-gpt-5-2-what-will-it-be-able-to-do",
+    "title": "What Is GPT-5.2? The Future of AI Explained Simply",
+    "date": "2025-12-19",
+    "excerpt": "Curious about what comes after GPT-4? Software engineer Robby breaks down how GPT-5.2 is moving from just predicting words to actually getting things done for you.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-gpt-5-2-what-will-it-be-able-to-do.jpeg",
+    "youtubeId": "Cy4CWdym5GY",
+    "tags": [
+      "AI",
+      "GPT-5.2",
+      "Artificial Intelligence",
+      "Tech Explained"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "generating-viral-youtube-video-titles-using-openai",
+    "title": "How to Use AI to Write Viral YouTube Video Titles",
+    "date": "2025-12-17",
+    "excerpt": "Struggling to name your videos? Learn how to use OpenAI as your personal brainstorming partner to create catchy, high-performing YouTube titles in seconds.",
+    "thumbnail": "assets/images/blog-thumbnails/generating-viral-youtube-video-titles-using-openai-yt.jpg",
+    "youtubeId": "CH6SUB6Y3t4",
+    "tags": [
+      "AI",
+      "OpenAI",
+      "YouTube Growth",
+      "Programming",
+      "Content Creation"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-netflix-s-recommendation-system-actually-works",
+    "title": "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen",
+    "date": "2025-12-17",
+    "excerpt": "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.",
+    "thumbnail": "assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg",
+    "youtubeId": "DiQaXiJk0_s",
+    "tags": [
+      "AI",
+      "Netflix",
+      "Machine Learning",
+      "Personalization",
+      "Technology"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-machine-learning-explained-like-you-re-5-but-actually-technical",
+    "title": "What is Machine Learning? A Simple Guide for Beginners",
+    "date": "2025-12-15",
+    "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-machine-learning-explained-like-you-re-5-but-actually-technical-yt.jpg",
+    "youtubeId": "h_MH8sIENRo",
+    "tags": [
+      "Machine Learning",
+      "AI",
+      "Data Science",
+      "Artificial Intelligence"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-youtube-suggests-videos-with-machine-learning",
+    "title": "How Does YouTube Know What You Want to Watch Next?",
+    "date": "2025-12-13",
+    "excerpt": "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.",
+    "thumbnail": "assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg",
+    "youtubeId": "a5Ti8QLA7C4",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "YouTube Algorithm",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-multimodal-ai",
+    "title": "What is Multimodal AI? Meet the AI That Can See and Hear",
+    "date": "2025-12-13",
+    "excerpt": "Ever wonder how AI is learning to see and hear? Discover how Multimodal AI is changing the way machines understand the world, moving beyond just simple text.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-multimodal-ai-yt.jpg",
+    "youtubeId": "N2fXdcY1rvw",
+    "tags": [
+      "Artificial Intelligence",
+      "Multimodal AI",
+      "Tech Explained",
+      "Future Tech"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-spotify-predicts-what-you-want-to-listen-to",
+    "title": "How Spotify Knows Exactly What You Want to Hear",
+    "date": "2025-12-12",
+    "excerpt": "Ever wonder how Spotify picks your perfect playlist? Discover the math and AI magic behind your Discover Weekly songs.",
+    "thumbnail": "assets/images/blog-thumbnails/how-spotify-predicts-what-you-want-to-listen-to-yt.jpg",
+    "youtubeId": "Ow3Eo_-s9IU",
+    "tags": [
+      "AI",
+      "Spotify",
+      "Machine Learning",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-fine-tuning-a-model",
+    "title": "What is AI Fine-Tuning? Turn Your Chatbot into an Expert",
+    "date": "2025-12-10",
+    "excerpt": "Learn how fine-tuning lets you customize AI models for your specific needs without spending millions of dollars.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-fine-tuning-a-model-yt.jpg",
+    "youtubeId": "bCgKCYmerzg",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Fine-Tuning",
+      "Tech Explained"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "building-a-neural-network-from-scratch-in-java",
+    "title": "Build Your First Neural Network in Java: A Step-by-Step Guide",
+    "date": "2025-12-06",
+    "excerpt": "Learn how to build a neural network from scratch using only Java. No libraries, just pure code to understand how AI really works.",
+    "thumbnail": "assets/images/blog-thumbnails/building-a-neural-network-from-scratch-in-java.png",
+    "youtubeId": "P2odJf-BI2M",
+    "tags": [
+      "AI",
+      "Java",
+      "Neural Networks",
+      "Machine Learning",
+      "Programming"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-chatgpt-actually-reads-tokenization-explained",
+    "title": "How Does ChatGPT Read? The Secret World of Tokenization",
+    "date": "2025-12-06",
+    "excerpt": "Ever wonder how AI understands your questions? It’s not magic—it’s math! Learn how tokenization turns your words into numbers.",
+    "thumbnail": "assets/images/blog-thumbnails/how-chatgpt-actually-reads-tokenization-explained-yt.jpg",
+    "youtubeId": "Svn7A6pG6_Y",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Machine Learning",
+      "Technology Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-generative-ai-the-technology-that-creates",
+    "title": "What Is Generative AI? How Computers Are Starting to Create",
+    "date": "2025-12-06",
+    "excerpt": "Ever wonder how computers make art and write stories? Let's look at how Generative AI works like a master chef inventing new recipes.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-generative-ai-the-technology-that-creates-yt.jpg",
+    "youtubeId": "l5XfrscuRQY",
+    "tags": [
+      "Generative AI",
+      "Artificial Intelligence",
+      "Technology Explained",
+      "Future of Tech"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "why-ai-needs-a-validation-set",
+    "title": "Why AI Needs a 'Practice Test' to Get Smarter",
+    "date": "2025-12-06",
+    "excerpt": "Ever wonder how AI learns? Just like you, it needs practice tests. Learn why a validation set is the secret to building better AI models.",
+    "thumbnail": "assets/images/blog-thumbnails/why-ai-needs-a-validation-set-yt.jpg",
+    "youtubeId": "ihV_hGAf1Dw",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Programming",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "why-prompt-engineers-make-300k",
+    "title": "Stop Using AI Like a Magic Wand: How to Build Pro-Level Code",
+    "date": "2025-12-06",
+    "excerpt": "Think AI is a magic wand? Think again. Learn how treating AI like an employee—not a toy—can help you write better code and master prompt engineering.",
+    "thumbnail": "assets/images/blog-thumbnails/why-prompt-engineers-make-300k-yt.jpg",
+    "youtubeId": "FMq1zHCtlNk",
+    "tags": [
+      "AI",
+      "Coding",
+      "Prompt Engineering",
+      "Software Development"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-ai-does-math-with-words-embeddings-explained",
+    "title": "How AI Does Math With Words: A Simple Guide to Embeddings",
+    "date": "2025-12-05",
+    "excerpt": "Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math.",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.png",
+    "youtubeId": "d7Yo7hFNdnM",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-decision-trees-work-the-flowchart-of-artificial-intelligence",
+    "title": "What is a Decision Tree? AI Made Simple",
+    "date": "2025-12-05",
+    "excerpt": "Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly.",
+    "thumbnail": "assets/images/blog-thumbnails/how-decision-trees-work-the-flowchart-of-artificial-intelligence-yt.jpg",
+    "youtubeId": "Mo3A5sU2szQ",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Beginner Guide"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "training-vs-test-sets-how-to-grade-an-ai",
+    "title": "Training vs. Test Sets: How to Give Your AI a Final Exam",
+    "date": "2025-12-05",
+    "excerpt": "Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models.",
+    "thumbnail": "assets/images/blog-thumbnails/training-vs-test-sets-how-to-grade-an-ai-yt.jpg",
+    "youtubeId": "HXw60MHXQmg",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Coding for Beginners"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "ai-training-sets-explained-simply",
+    "title": "What Is an AI Training Set? AI Basics Explained",
+    "date": "2025-12-04",
+    "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down AI training sets and how they teach machines to see the world.",
+    "thumbnail": "assets/images/blog-thumbnails/ai-training-sets-explained-simply-yt.jpg",
+    "youtubeId": "ylfaEQ5l5eI",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "AI Basics",
+      "Computer Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "calculating-gradients-in-neural-networks-the-blame-game-explained",
+    "title": "How AI Learns: The 'Blame Game' of Neural Networks",
+    "date": "2025-12-04",
+    "excerpt": "Ever wonder how AI fixes its own mistakes? Join me as we break down backpropagation using the simple concept of the 'Blame Game.'",
+    "thumbnail": "assets/images/blog-thumbnails/calculating-gradients-in-neural-networks-the-blame-game-explained.png",
+    "youtubeId": "qM0zqaewCPI",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Backpropagation",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-backpropagation-actually-works-the-core-of-neural-network-training",
+    "title": "How AI Learns: Backpropagation Explained Simply",
+    "date": "2025-12-04",
+    "excerpt": "Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide.",
+    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.png",
+    "youtubeId": "y7iTsuW4T3E",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-a-token-how-ai-actually-reads",
+    "title": "What Is a Token? How AI Reads the Internet",
+    "date": "2025-12-04",
+    "excerpt": "Ever wonder how ChatGPT understands you so fast? It uses a secret 'Lego language' called tokens to read the world in pieces.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-token-how-ai-actually-reads-yt.jpg",
+    "youtubeId": "idyXt0JV8v0",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Machine Learning",
+      "Technology"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-ai-actually-reads-the-attention-mechanism-explained",
+    "title": "How Does AI Read? The Secret of the Attention Mechanism",
+    "date": "2025-12-03",
+    "excerpt": "Ever wonder how ChatGPT knows exactly what you mean? Learn how the 'Attention Mechanism' helps AI understand context just like a human.",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.png",
+    "youtubeId": "Gt9Z0hnGBVk",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Machine Learning",
+      "Technology Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "logistic-regression-explained",
+    "title": "Logistic Regression: Why It’s Not Actually 'Regression'",
+    "date": "2025-12-03",
+    "excerpt": "Think Logistic Regression is for predicting numbers? Think again! Join me as I explain how this simple AI tool helps computers make 'Yes' or 'No' decisions.",
+    "thumbnail": "assets/images/blog-thumbnails/logistic-regression-explained-yt.jpg",
+    "youtubeId": "i4spl1Bfsv4",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Logistic Regression"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "transformer-architecture-explained-simply",
+    "title": "What is a Transformer? How AI Learns to Talk",
+    "date": "2025-12-03",
+    "excerpt": "Ever wonder what the 'T' in ChatGPT stands for? Learn how Transformer technology changed everything about how computers understand human language.",
+    "thumbnail": "assets/images/blog-thumbnails/transformer-architecture-explained-simply.png",
+    "youtubeId": "mAI-sXdjJDU",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Machine Learning",
+      "Technology Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-regression-in-ai-explained-in-60-seconds",
+    "title": "What is Regression? AI Prediction Explained Simply",
+    "date": "2025-12-03",
+    "excerpt": "Ever wonder how AI guesses numbers like house prices or stock trends? Learn how regression works in plain English.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-regression-in-ai-explained-in-60-seconds-yt.jpg",
+    "youtubeId": "CFRtKhFqpEk",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Beginner AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "you-re-trusting-ai-too-much",
+    "title": "Why Your AI Might Be Lying to You (And How to Fix It)",
+    "date": "2025-12-03",
+    "excerpt": "Think AI is just a search engine? Think again. Learn why AI 'hallucinates' and how to stop trusting it blindly.",
+    "thumbnail": "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.png",
+    "youtubeId": "pOcMOjq8c_g",
+    "tags": [
+      "Artificial Intelligence",
+      "Tech Explained",
+      "AI Safety",
+      "Large Language Models"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "ai-learning-explained-the-basketball-analogy",
+    "title": "How Do AI Computers Learn? It’s Just Like Playing Basketball!",
+    "date": "2025-12-02",
+    "excerpt": "Ever wonder how AI actually learns? Discover how neural networks improve by using a simple basketball analogy from a real-world software engineer.",
+    "thumbnail": "assets/images/blog-thumbnails/ai-learning-explained-the-basketball-analogy-yt.jpg",
+    "youtubeId": "DGIgESLv8iI",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Beginner Tech",
+      "How It Works"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "linear-regression-explained-the-math-of-prediction",
+    "title": "What Is Linear Regression? Learn How Computers Predict the Future",
+    "date": "2025-12-02",
+    "excerpt": "Curious how AI makes predictions? Learn how linear regression uses simple math to help computers guess everything from gas mileage to future sales.",
+    "thumbnail": "assets/images/blog-thumbnails/linear-regression-explained-the-math-of-prediction-yt.jpg",
+    "youtubeId": "zEpvWSGvC0Q",
+    "tags": [
+      "Machine Learning",
+      "Data Science",
+      "AI",
+      "Linear Regression",
+      "Programming"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "neural-network-backpropagation-explained-math-examples-analogy",
+    "title": "How Do AI Models Learn? Backpropagation Explained Simply",
+    "date": "2025-12-02",
+    "excerpt": "Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand.",
+    "thumbnail": "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.png",
+    "youtubeId": "27IxhaM2stI",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Backpropagation",
+      "Data Science"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-an-llm-large-language-models-and-chatgpt-explained",
+    "title": "What is an LLM? How AI Like ChatGPT Actually Works",
+    "date": "2025-12-02",
+    "excerpt": "Ever wonder how AI chats with you like a human? I'm breaking down how Large Language Models work in simple, easy-to-understand terms.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-llm-large-language-models-and-chatgpt-explained.png",
+    "youtubeId": "Vl0r3wCfUaw",
+    "tags": [
+      "AI",
+      "Large Language Models",
+      "ChatGPT",
+      "Technology Explained",
+      "Machine Learning"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-classification-in-ai-sorting-data-simply-explained",
+    "title": "What is AI Classification? Sorting Data Made Simple",
+    "date": "2025-12-02",
+    "excerpt": "Ever wonder how your email blocks spam? Learn how AI uses classification to sort information into categories like a pro.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-classification-in-ai-sorting-data-simply-explained-yt.jpg",
+    "youtubeId": "PwjOpgUx50Q",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Beginner AI",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "backpropagation-calculating-hidden-layer-errors",
+    "title": "How AI Learns: The 'Blame Game' of Backpropagation",
+    "date": "2025-12-01",
+    "excerpt": "Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide.",
+    "thumbnail": "assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.png",
+    "youtubeId": "X2TMzjriDYg",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Neural Networks",
+      "Data Science",
+      "Beginner Tech"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "hyperparameters-vs-parameters-the-oven-settings-of-ai",
+    "title": "Hyperparameters vs. Parameters: The Oven Settings of AI",
+    "date": "2025-12-01",
+    "excerpt": "Ever wonder how AI learns? I'm Robby, and I’m breaking down the difference between AI parameters and hyperparameters using a simple kitchen analogy.",
+    "thumbnail": "assets/images/blog-thumbnails/hyperparameters-vs-parameters-the-oven-settings-of-ai-yt.jpg",
+    "youtubeId": "8Zlymjgtfk0",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Data Science",
+      "Beginner AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-a-gradient-the-engine-of-ai-learning",
+    "title": "What is a Gradient? How AI Actually Learns",
+    "date": "2025-12-01",
+    "excerpt": "Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-gradient-the-engine-of-ai-learning-yt.jpg",
+    "youtubeId": "5Pc5E7AFtNE",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Calculus",
+      "Coding",
+      "Beginner AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-a-loss-function-how-ai-measures-mistakes",
+    "title": "What Is a Loss Function? How AI Learns from Its Mistakes",
+    "date": "2025-12-01",
+    "excerpt": "Ever wonder how AI learns? Discover how a loss function acts like a scoreboard to help computers fix their mistakes and get smarter.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.png",
+    "youtubeId": "CtfzBXbJaoA",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Beginner AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-are-labels-in-machine-learning",
+    "title": "What are Labels in Machine Learning? An Easy Guide",
+    "date": "2025-11-30",
+    "excerpt": "Ever wonder how AI learns to tell a cat from a dog? It all starts with labels. Learn how this 'answer key' helps computers understand the world.",
+    "thumbnail": "assets/images/blog-thumbnails/what-are-labels-in-machine-learning-yt.jpg",
+    "youtubeId": "YeiSQR5RZBs",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Beginner AI",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-a-parameter-in-machine-learning",
+    "title": "What Are AI Parameters? A Simple Guide to Machine Learning",
+    "date": "2025-11-30",
+    "excerpt": "Ever wonder how AI actually learns? Learn what parameters are and how they help computers store knowledge in this easy guide from a software engineer.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-parameter-in-machine-learning-yt.jpg",
+    "youtubeId": "ePNKMIBHfEo",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Beginner Guide"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-supervised-learning-ai-with-an-answer-key",
+    "title": "What is Supervised Learning? AI With an Answer Key",
+    "date": "2025-11-29",
+    "excerpt": "Ever wonder how computers learn? Discover how supervised learning works by using an answer key to teach AI models to make smart predictions.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-supervised-learning-ai-with-an-answer-key-yt.jpg",
+    "youtubeId": "ECaxXXfzbp0",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "AI Basics",
+      "Data Science"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "why-data-is-gold-for-ai",
+    "title": "Why Data is Like Gold for AI: A Simple Guide",
+    "date": "2025-11-29",
+    "excerpt": "Ever wonder how AI gets so smart? It’s all about the data! Learn why high-quality information is the real secret behind every powerful AI model.",
+    "thumbnail": "assets/images/blog-thumbnails/why-data-is-gold-for-ai-yt.jpg",
+    "youtubeId": "YQOZYyOT5B0",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Data Science",
+      "Machine Learning",
+      "Technology"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-backpropagation-works-explained-simply",
+    "title": "How Neural Networks Learn: Backpropagation Explained Simply",
+    "date": "2025-11-28",
+    "excerpt": "Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves.",
+    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.png",
+    "youtubeId": "WtAC3n0Yo5Q",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Neural Networks",
+      "Backpropagation",
+      "Beginner AI"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "what-is-an-algorithm-in-ai",
+    "title": "What Is an AI Algorithm? A Simple Guide for Everyone",
+    "date": "2025-11-27",
+    "excerpt": "Curious how AI actually works? Learn what an algorithm is and how it helps computers learn, explained by a real software engineer.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-algorithm-in-ai-yt.jpg",
+    "youtubeId": "SdII73-7Bkk",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Algorithms",
+      "Computer Science",
+      "Tech Explained"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "how-ai-learns-training-a-model-simply-explained",
+    "title": "How AI Learns: A Simple Guide to Training Models",
+    "date": "2025-11-26",
+    "excerpt": "Ever wonder how computers get so smart? Learn how AI models learn from examples and feedback in this easy-to-understand guide.",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-learns-training-a-model-simply-explained.png",
+    "youtubeId": "n3DjZe0PvPs",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-an-ai-model-the-recipe-analogy",
+    "title": "What Is an AI Model? The Secret Recipe Explained",
+    "date": "2025-11-25",
+    "excerpt": "Ever wonder how computers learn to think? Let's break down what an AI model is using a simple kitchen recipe analogy.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-model-the-recipe-analogy-yt.jpg",
+    "youtubeId": "fDa_r0sUPMw",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Beginner Guide"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech",
+    "title": "AI vs. ML vs. Deep Learning: What’s the Difference?",
+    "date": "2025-11-20",
+    "excerpt": "Confused by all the AI buzzwords? Let's break down AI, Machine Learning, and Deep Learning using simple analogies to see how they fit together.",
+    "thumbnail": "assets/images/blog-thumbnails/ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech-yt.jpg",
+    "youtubeId": "ON9GvelnSRM",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Deep Learning",
+      "Technology",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "finding-the-right-learning-rate-in-deep-learning",
+    "title": "Finding the Perfect Learning Rate: A Guide to Training AI",
+    "date": "2025-11-19",
+    "excerpt": "Learn how AI models actually learn from their mistakes by tuning the learning rate, the secret setting that makes or breaks your model training.",
+    "thumbnail": "assets/images/blog-thumbnails/finding-the-right-learning-rate-in-deep-learning-yt.jpg",
+    "youtubeId": "OdTRf-LOv6M",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Deep Learning",
+      "Neural Networks"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "deep-learning-vs-machine-learning-what-s-the-difference",
+    "title": "Deep Learning vs. Machine Learning: What Is the Difference?",
+    "date": "2025-11-18",
+    "excerpt": "Ever wonder how AI actually works? Join me as we break down the difference between Machine Learning and Deep Learning in simple terms.",
+    "thumbnail": "assets/images/blog-thumbnails/deep-learning-vs-machine-learning-what-s-the-difference-yt.jpg",
+    "youtubeId": "ONr6FaO0xw8",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Deep Learning",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "machine-learning-explained-how-computers-learn-without-rules-machinelearning",
+    "title": "Machine Learning Explained: How Computers Learn Like Humans",
+    "date": "2025-11-17",
+    "excerpt": "Ever wonder how computers learn on their own? I'm Robby, an AI engineer, and I'm breaking down how machine learning works without the complicated math.",
+    "thumbnail": "assets/images/blog-thumbnails/machine-learning-explained-how-computers-learn-without-rules-machinelearning-yt.jpg",
+    "youtubeId": "dulgrJjZe3A",
+    "tags": [
+      "Machine Learning",
+      "AI",
+      "Artificial Intelligence",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "what-is-ai-artificial-intelligence-explained-in-60-seconds",
+    "title": "What Is AI? A Simple Guide for Everyone",
+    "date": "2025-11-16",
+    "excerpt": "Ever wonder how computers learn to think like us? Join software engineer Robby as he breaks down exactly what Artificial Intelligence is in plain English.",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-ai-artificial-intelligence-explained-in-60-seconds-yt.jpg",
+    "youtubeId": "ROe8x7aMJLY",
+    "tags": [
+      "AI",
+      "Artificial Intelligence",
+      "Technology",
+      "Machine Learning",
+      "Beginner Guide"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "sigmoid-function-explained-with-a-simple-neural-network-example",
+    "title": "What is the Sigmoid Function? A Bouncer’s Guide to AI",
+    "date": "2025-11-15",
+    "excerpt": "Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms.",
+    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.png",
+    "youtubeId": "t30WqiKsn_8",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Data Science",
+      "Beginner AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "sigmoid-function-explained",
+    "title": "What is the Sigmoid Function? AI Math Made Easy",
+    "date": "2025-11-15",
+    "excerpt": "Curious how AI thinks in probabilities? Learn how the sigmoid function works to turn any number into a simple value between 0 and 1.",
+    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained.png",
+    "youtubeId": "EegUZtLRkFU",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Data Science",
+      "Math"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "why-neural-networks-need-activation-functions",
+    "title": "Why Neural Networks Need Activation Functions: A Simple Guide",
+    "date": "2025-11-15",
+    "excerpt": "Ever wonder how AI learns complex patterns? Discover how activation functions help neural networks bend reality to make better predictions.",
+    "thumbnail": "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.png",
+    "youtubeId": "c9QJt5JUXrY",
+    "tags": [
+      "AI",
+      "Neural Networks",
+      "Machine Learning",
+      "Deep Learning",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "activation-functions-explained-simply",
+    "title": "What Are Activation Functions? Neural Networks Made Simple",
+    "date": "2025-11-14",
+    "excerpt": "Ever wonder how AI thinks? Discover how activation functions like ReLU help neural networks learn from complex data in this easy guide.",
+    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-simply.png",
+    "youtubeId": "obq6tYAl6YU",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "dead-relu-problem-fixing-it-with-relu-variants",
+    "title": "What is the Dead ReLU Problem? How to Fix It!",
+    "date": "2025-11-14",
+    "excerpt": "Ever wonder why your AI model stops learning? It might be the 'Dead ReLU' problem. Learn how to fix it with simple tweaks to your neural network.",
+    "thumbnail": "assets/images/blog-thumbnails/dead-relu-problem-fixing-it-with-relu-variants.png",
+    "youtubeId": "YH2el6e4FT4",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Deep Learning"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "gradient-descent-explained-visually",
+    "title": "Gradient Descent: How AI Learns from Its Mistakes",
+    "date": "2025-11-14",
+    "excerpt": "Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English.",
+    "thumbnail": "assets/images/blog-thumbnails/gradient-descent-explained-visually-yt.jpg",
+    "youtubeId": "52RNl4GxggE",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Artificial Intelligence",
+      "Beginner Tech"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "relu-activation-explained-with-step-by-step-example",
+    "title": "What Is ReLU? The Light Switch of AI Explained",
+    "date": "2025-11-14",
+    "excerpt": "Learn how the ReLU activation function works using a simple light switch example. Discover how AI makes decisions in this easy-to-follow guide.",
+    "thumbnail": "assets/images/blog-thumbnails/relu-activation-explained-with-step-by-step-example.png",
+    "youtubeId": "6uh_GAyMXT8",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer",
+    "title": "What is the Feed Forward Layer? AI Explained Simply",
+    "date": "2025-11-13",
+    "excerpt": "Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking.",
+    "thumbnail": "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.png",
+    "youtubeId": "tlMr8E4x-NM",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Neural Networks",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "neural-network-step-by-step-example",
+    "title": "How Do AI Models Think? A Simple Guide to Neural Networks",
+    "date": "2025-11-13",
+    "excerpt": "Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide.",
+    "thumbnail": "assets/images/blog-thumbnails/neural-network-step-by-step-example.png",
+    "youtubeId": "3AnekoX-V4Q",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Neural Networks",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "positional-encoding-explained-simply-in-transformer-architecture-transformers-ai",
+    "title": "How AI Reads: Understanding Positional Encoding in Transformers",
+    "date": "2025-11-13",
+    "excerpt": "Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences.",
+    "thumbnail": "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.png",
+    "youtubeId": "G1Vgfwgtv48",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Transformers",
+      "AI Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention",
+    "title": "What is Self-Attention? How AI Understands Language",
+    "date": "2025-11-12",
+    "excerpt": "Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English.",
+    "thumbnail": "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.png",
+    "youtubeId": "wTB1Ec_4lDw",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained",
+    "title": "How AI Translates Languages: The Encoder-Decoder Attention Trick",
+    "date": "2025-11-12",
+    "excerpt": "Ever wonder how AI translates languages? Discover how the encoder-decoder attention layer helps computers focus on the right words to get the translation perfect.",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained.png",
+    "youtubeId": "_Uy6g3I3o8w",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Artificial Intelligence",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers",
+    "title": "How AI Reads: Turning Words Into Numbers Explained",
+    "date": "2025-11-12",
+    "excerpt": "Ever wonder how AI understands human language? Discover how transformers use embeddings and positional encoding to turn words into data.",
+    "thumbnail": "assets/images/blog-thumbnails/how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers.png",
+    "youtubeId": "LI4wxQ9zIYc",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-ai-translates-queries-keys-and-values-explained",
+    "title": "How Does AI Talk? The Simple Secret of Transformers",
+    "date": "2025-11-11",
+    "excerpt": "Ever wonder how AI understands your words? Learn how transformer models use a smart system called queries, keys, and values to find the right information.",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.png",
+    "youtubeId": "d8ibK36vbjE",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Technology",
+      "Transformers"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers",
+    "title": "How the Add & Norm Layer Keeps AI Models Stable",
+    "date": "2025-11-11",
+    "excerpt": "Ever wonder how AI learns without getting confused? Discover the secret behind the 'Add & Norm' layer in transformers and why it's like a safety net for deep learning.",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers.png",
+    "youtubeId": "idsYRacKvNM",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Deep Learning",
+      "Data Science"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers",
+    "title": "How AI Reads: A Simple Guide to the Transformer Encoder",
+    "date": "2025-11-11",
+    "excerpt": "Ever wonder how AI understands your sentences? Learn how the Transformer encoder works in this easy, beginner-friendly guide by a software engineer.",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers.png",
+    "youtubeId": "T83WpdeLayw",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp",
+    "title": "How AI Writes: A Simple Guide to the Transformer Decoder",
+    "date": "2025-11-11",
+    "excerpt": "Ever wonder how AI creates sentences? Let's break down how the transformer decoder works like a student taking a test.",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp.png",
+    "youtubeId": "Mcj8g66i_lg",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention",
+    "title": "How AI Reads: The Secret Power of Transformers",
+    "date": "2025-11-11",
+    "excerpt": "Ever wonder how AI understands the meaning behind words? Learn how the 'self-attention' trick helps computers read just like you do.",
+    "thumbnail": "assets/images/blog-thumbnails/how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention.png",
+    "youtubeId": "uPX8rpsJmFw",
+    "tags": [
+      "AI",
+      "Transformers",
+      "Machine Learning",
+      "Tech Explained"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers",
+    "title": "Why Do AI Models Have So Many 'Attention Heads'? Explained",
+    "date": "2025-11-11",
+    "excerpt": "Ever wonder how AI understands language so well? It uses 'multi-head attention' to focus on many things at once, just like a team working together.",
+    "thumbnail": "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.png",
+    "youtubeId": "K8CbD1RHtr0",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "Artificial Intelligence"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "activation-functions-explained-relu-sigmoid-and-tanh-with-visuals",
+    "title": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
+    "date": "2025-10-30",
+    "excerpt": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
+    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.png",
+    "youtubeId": "W-YRq0qgqJQ",
+    "tags": [
+      "AI"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "java-speech-to-text-assemblyai-api-tutorial-step-by-step",
+    "title": "How to Build a Speech-to-Text App with Java and AI",
+    "date": "2025-10-21",
+    "excerpt": "Learn how to turn spoken audio into text using Java and the AssemblyAI API with this simple, step-by-step guide.",
+    "thumbnail": "assets/images/blog-thumbnails/java-speech-to-text-assemblyai-api-tutorial-step-by-step.png",
+    "youtubeId": "ZbM0OPCgOmg",
+    "tags": [
+      "Java",
+      "AI",
+      "Speech-to-Text",
+      "Programming",
+      "AssemblyAI"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step",
+    "title": "How AI Works: Understanding the Transformer Model",
+    "date": "2025-10-18",
+    "excerpt": "Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide.",
+    "thumbnail": "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.png",
+    "youtubeId": "APHVilJSI5Q",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "Transformers",
+      "ChatGPT",
+      "Beginner AI"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-neural-networks-make-decisions-explained-simply",
+    "title": "How Do AI Neural Networks Make Decisions? A Simple Guide",
+    "date": "2025-10-01",
+    "excerpt": "Ever wonder how AI makes big decisions like approving a loan? Discover how neural networks use math to turn data into a simple 'Yes' or 'No'.",
+    "thumbnail": "assets/images/blog-thumbnails/how-neural-networks-make-decisions-explained-simply.jpg",
+    "youtubeId": "bNli9WWrEA8",
+    "tags": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Neural Networks",
+      "Data Science",
+      "Beginner AI"
+    ],
+    "readTime": 3
   }
 ]

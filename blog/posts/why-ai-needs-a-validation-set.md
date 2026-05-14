@@ -1,6 +1,6 @@
 ---
 title: "Why AI Needs a 'Practice Test' to Get Smarter"
-date: "2026-05-14"
+date: "2025-12-06"
 excerpt: "Ever wonder how AI learns? Just like you, it needs practice tests. Learn why a validation set is the secret to building better AI models."
 thumbnail: "assets/images/blog-thumbnails/why-ai-needs-a-validation-set-yt.jpg"
 youtubeId: "ihV_hGAf1Dw"

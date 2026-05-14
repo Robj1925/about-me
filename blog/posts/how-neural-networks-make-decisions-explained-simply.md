@@ -1,6 +1,6 @@
 ---
 title: "How Do AI Neural Networks Make Decisions? A Simple Guide"
-date: "2026-05-14"
+date: "2025-10-01"
 excerpt: "Ever wonder how AI makes big decisions like approving a loan? Discover how neural networks use math to turn data into a simple 'Yes' or 'No'."
 thumbnail: "assets/images/blog-thumbnails/how-neural-networks-make-decisions-explained-simply.jpg"
 youtubeId: "bNli9WWrEA8"

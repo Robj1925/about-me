@@ -1,6 +1,6 @@
 ---
 title: "Training vs. Test Sets: How to Give Your AI a Final Exam"
-date: "2026-05-14"
+date: "2025-12-05"
 excerpt: "Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models."
 thumbnail: "assets/images/blog-thumbnails/training-vs-test-sets-how-to-grade-an-ai-yt.jpg"
 youtubeId: "HXw60MHXQmg"

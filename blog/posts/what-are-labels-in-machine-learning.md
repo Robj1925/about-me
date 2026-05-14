@@ -1,6 +1,6 @@
 ---
 title: "What are Labels in Machine Learning? An Easy Guide"
-date: "2026-05-14"
+date: "2025-11-30"
 excerpt: "Ever wonder how AI learns to tell a cat from a dog? It all starts with labels. Learn how this 'answer key' helps computers understand the world."
 thumbnail: "assets/images/blog-thumbnails/what-are-labels-in-machine-learning-yt.jpg"
 youtubeId: "YeiSQR5RZBs"

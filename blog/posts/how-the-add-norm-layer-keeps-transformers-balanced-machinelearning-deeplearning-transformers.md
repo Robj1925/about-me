@@ -1,6 +1,6 @@
 ---
 title: "How the Add & Norm Layer Keeps AI Models Stable"
-date: "2026-05-14"
+date: "2025-11-11"
 excerpt: "Ever wonder how AI learns without getting confused? Discover the secret behind the 'Add & Norm' layer in transformers and why it's like a safety net for deep learning."
 thumbnail: "assets/images/blog-thumbnails/how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers.png"
 youtubeId: "idsYRacKvNM"

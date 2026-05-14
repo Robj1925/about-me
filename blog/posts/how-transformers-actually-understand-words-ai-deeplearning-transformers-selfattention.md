@@ -1,6 +1,6 @@
 ---
 title: "How AI Reads: The Secret Power of Transformers"
-date: "2026-05-14"
+date: "2025-11-11"
 excerpt: "Ever wonder how AI understands the meaning behind words? Learn how the 'self-attention' trick helps computers read just like you do."
 thumbnail: "assets/images/blog-thumbnails/how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention.png"
 youtubeId: "uPX8rpsJmFw"

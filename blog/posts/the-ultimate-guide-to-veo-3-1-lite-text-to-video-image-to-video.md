@@ -1,6 +1,6 @@
 ---
 title: "Google’s New Veo 3.1 Lite: Making AI Video Easier and Cheaper"
-date: "2026-05-14"
+date: "2026-04-02"
 excerpt: "Google just released Veo 3.1 Lite, a powerful new tool that makes creating AI videos more affordable than ever. Let's look at how it works."
 thumbnail: "assets/images/blog-thumbnails/the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video.png"
 youtubeId: "Qf1Vih2l6NM"

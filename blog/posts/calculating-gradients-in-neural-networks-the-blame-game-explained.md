@@ -1,6 +1,6 @@
 ---
 title: "How AI Learns: The 'Blame Game' of Neural Networks"
-date: "2026-05-14"
+date: "2025-12-04"
 excerpt: "Ever wonder how AI fixes its own mistakes? Join me as we break down backpropagation using the simple concept of the 'Blame Game.'"
 thumbnail: "assets/images/blog-thumbnails/calculating-gradients-in-neural-networks-the-blame-game-explained.png"
 youtubeId: "qM0zqaewCPI"

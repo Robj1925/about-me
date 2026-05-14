@@ -1,6 +1,6 @@
 ---
 title: "How Do AI Models Think? A Simple Guide to Neural Networks"
-date: "2026-05-14"
+date: "2025-11-13"
 excerpt: "Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide."
 thumbnail: "assets/images/blog-thumbnails/neural-network-step-by-step-example.png"
 youtubeId: "3AnekoX-V4Q"

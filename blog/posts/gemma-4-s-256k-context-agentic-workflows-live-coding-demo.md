@@ -1,6 +1,6 @@
 ---
 title: "What Is Gemma 4? How to Use Its Massive 256K Context Window"
-date: "2026-05-14"
+date: "2026-04-04"
 excerpt: "Learn how Google's new Gemma 4 model uses a huge 256K context window to help AI agents remember long conversations and solve complex problems."
 thumbnail: "assets/images/blog-thumbnails/gemma-4-s-256k-context-agentic-workflows-live-coding-demo.png"
 youtubeId: "kH7wa2NQPOs"

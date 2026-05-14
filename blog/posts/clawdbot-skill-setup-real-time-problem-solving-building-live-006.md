@@ -1,6 +1,6 @@
 ---
 title: "How to Build AI Tools: A Real Look at My Clawdbot Project"
-date: "2026-05-14"
+date: "2026-03-11"
 excerpt: "Ever wonder what it's really like to build AI tools? Join me as I walk through the messy, exciting process of coding a new skill for my robot, Clawdbot."
 thumbnail: "assets/images/blog-thumbnails/clawdbot-skill-setup-real-time-problem-solving-building-live-006.png"
 youtubeId: "52lgF4bKPV0"

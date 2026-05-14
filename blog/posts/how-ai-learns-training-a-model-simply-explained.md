@@ -1,6 +1,6 @@
 ---
 title: "How AI Learns: A Simple Guide to Training Models"
-date: "2026-05-14"
+date: "2025-11-26"
 excerpt: "Ever wonder how computers get so smart? Learn how AI models learn from examples and feedback in this easy-to-understand guide."
 thumbnail: "assets/images/blog-thumbnails/how-ai-learns-training-a-model-simply-explained.png"
 youtubeId: "n3DjZe0PvPs"

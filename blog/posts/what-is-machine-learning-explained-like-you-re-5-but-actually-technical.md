@@ -1,6 +1,6 @@
 ---
 title: "What is Machine Learning? A Simple Guide for Beginners"
-date: "2026-05-14"
+date: "2025-12-15"
 excerpt: "Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English."
 thumbnail: "assets/images/blog-thumbnails/what-is-machine-learning-explained-like-you-re-5-but-actually-technical-yt.jpg"
 youtubeId: "h_MH8sIENRo"

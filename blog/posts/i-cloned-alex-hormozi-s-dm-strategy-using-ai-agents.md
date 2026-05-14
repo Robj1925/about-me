@@ -1,6 +1,6 @@
 ---
 title: "How to Automate Cold Outreach Using AI Agents (The Alex Hormozi Way)"
-date: "2026-05-14"
+date: "2026-02-17"
 excerpt: "Learn how to build your own AI agent that writes personalized, high-converting DMs for you using free tools and Google Colab."
 thumbnail: "assets/images/blog-thumbnails/i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents.png"
 youtubeId: "rCkELyj_Dfw"

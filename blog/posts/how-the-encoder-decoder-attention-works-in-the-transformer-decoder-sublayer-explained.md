@@ -1,6 +1,6 @@
 ---
 title: "How AI Translates Languages: The Encoder-Decoder Attention Trick"
-date: "2026-05-14"
+date: "2025-11-12"
 excerpt: "Ever wonder how AI translates languages? Discover how the encoder-decoder attention layer helps computers focus on the right words to get the translation perfect."
 thumbnail: "assets/images/blog-thumbnails/how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained.png"
 youtubeId: "_Uy6g3I3o8w"

@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your Own AI Content Robot: A Relaxing Guide"
-date: "2026-05-14"
+date: "2026-03-04"
 excerpt: "Learn how to build an AI agent that automates your content creation. Join me as we code, troubleshoot, and explore the world of AI workflows."
 thumbnail: "assets/images/blog-thumbnails/i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002.png"
 youtubeId: "bqcEVRiUIi0"

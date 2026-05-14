@@ -1,6 +1,6 @@
 ---
 title: "Meet Your New AI Teammate: Claude Code 4.7 and the 'Grumpy Senior' Update"
-date: "2026-05-14"
+date: "2026-05-05"
 excerpt: "Discover how the new Claude Code 4.7 update and /perceive command are changing the way AI agents work as your digital employees."
 thumbnail: "assets/images/blog-thumbnails/claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.jpeg"
 youtubeId: "qyecnzcAyzQ"

@@ -1,6 +1,6 @@
 ---
 title: "Deep Learning vs. Machine Learning: What Is the Difference?"
-date: "2026-05-14"
+date: "2025-11-18"
 excerpt: "Ever wonder how AI actually works? Join me as we break down the difference between Machine Learning and Deep Learning in simple terms."
 thumbnail: "assets/images/blog-thumbnails/deep-learning-vs-machine-learning-what-s-the-difference-yt.jpg"
 youtubeId: "ONr6FaO0xw8"

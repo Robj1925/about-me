@@ -1,6 +1,6 @@
 ---
 title: "How AI Learns: The 'Blame Game' of Backpropagation"
-date: "2026-05-14"
+date: "2025-12-01"
 excerpt: "Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide."
 thumbnail: "assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.png"
 youtubeId: "X2TMzjriDYg"

@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your Own Free AI Text Message Auto-Responder"
-date: "2026-05-14"
+date: "2026-02-24"
 excerpt: "Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide."
 thumbnail: "assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.png"
 youtubeId: "Bi3z2tMPjxs"

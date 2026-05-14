@@ -1,6 +1,6 @@
 ---
 title: "The Engineer's Guide to Claude Code in Production"
-date: "2026-05-14"
+date: "2026-04-30"
 excerpt: "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow."
 thumbnail: "assets/images/blog-thumb-2.jpg"
 youtubeId: "M351KD77Lfs"

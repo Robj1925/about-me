@@ -1,6 +1,6 @@
 ---
 title: "How AI Writes: A Simple Guide to the Transformer Decoder"
-date: "2026-05-14"
+date: "2025-11-11"
 excerpt: "Ever wonder how AI creates sentences? Let's break down how the transformer decoder works like a student taking a test."
 thumbnail: "assets/images/blog-thumbnails/how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp.png"
 youtubeId: "Mcj8g66i_lg"

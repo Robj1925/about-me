@@ -1,6 +1,6 @@
 ---
 title: "What Is a Token? How AI Reads the Internet"
-date: "2026-05-14"
+date: "2025-12-04"
 excerpt: "Ever wonder how ChatGPT understands you so fast? It uses a secret 'Lego language' called tokens to read the world in pieces."
 thumbnail: "assets/images/blog-thumbnails/what-is-a-token-how-ai-actually-reads-yt.jpg"
 youtubeId: "idyXt0JV8v0"

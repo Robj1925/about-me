@@ -1,6 +1,6 @@
 ---
 title: "What is AI Classification? Sorting Data Made Simple"
-date: "2026-05-14"
+date: "2025-12-02"
 excerpt: "Ever wonder how your email blocks spam? Learn how AI uses classification to sort information into categories like a pro."
 thumbnail: "assets/images/blog-thumbnails/what-is-classification-in-ai-sorting-data-simply-explained-yt.jpg"
 youtubeId: "PwjOpgUx50Q"

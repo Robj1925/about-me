@@ -1,6 +1,6 @@
 ---
 title: "I Let an AI Robot Text for Me for 24 Hours: Here’s What Happened"
-date: "2026-05-14"
+date: "2026-02-13"
 excerpt: "I let my custom AI, ClawdBot, handle all my text messages for an entire day. Find out if it made new friends, caught scammers, or caused total chaos."
 thumbnail: "assets/images/blog-thumbnails/i-coded-an-ai-that-answers-every-text-for-me-clawdbot.png"
 youtubeId: "VaYO6hOQWm0"

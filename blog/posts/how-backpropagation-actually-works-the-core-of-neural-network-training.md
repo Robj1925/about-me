@@ -1,6 +1,6 @@
 ---
 title: "How AI Learns: Backpropagation Explained Simply"
-date: "2026-05-14"
+date: "2025-12-04"
 excerpt: "Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide."
 thumbnail: "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.png"
 youtubeId: "y7iTsuW4T3E"

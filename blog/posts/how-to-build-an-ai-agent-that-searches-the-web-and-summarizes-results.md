@@ -1,6 +1,6 @@
 ---
 title: "How to Build Your Own AI Research Assistant"
-date: "2026-05-14"
+date: "2026-01-18"
 excerpt: "Learn how to build a smart AI agent that searches the web and writes summaries for you using Python and Gemini."
 thumbnail: "assets/images/blog-thumbnails/how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results.png"
 youtubeId: "iL-8F-FQFdI"

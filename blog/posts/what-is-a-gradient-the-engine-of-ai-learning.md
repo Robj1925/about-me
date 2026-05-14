@@ -1,6 +1,6 @@
 ---
 title: "What is a Gradient? How AI Actually Learns"
-date: "2026-05-14"
+date: "2025-12-01"
 excerpt: "Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes."
 thumbnail: "assets/images/blog-thumbnails/what-is-a-gradient-the-engine-of-ai-learning-yt.jpg"
 youtubeId: "5Pc5E7AFtNE"

@@ -1,6 +1,6 @@
 ---
 title: "How to Put Your First Web App Online for Free (Step-by-Step Guide)"
-date: "2026-05-14"
+date: "2026-01-29"
 excerpt: "Learn how to take your Python web app from your computer to the internet for free using Render. No credit card required!"
 thumbnail: "assets/images/blog-thumbnails/build-your-first-web-app-for-free-no-credit-card-yt.jpg"
 youtubeId: "4IeMklzNyQE"

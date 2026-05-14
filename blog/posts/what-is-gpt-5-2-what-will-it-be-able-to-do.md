@@ -1,6 +1,6 @@
 ---
 title: "What Is GPT-5.2? The Future of AI Explained Simply"
-date: "2026-05-14"
+date: "2025-12-19"
 excerpt: "Curious about what comes after GPT-4? Software engineer Robby breaks down how GPT-5.2 is moving from just predicting words to actually getting things done for you."
 thumbnail: "assets/images/blog-thumbnails/what-is-gpt-5-2-what-will-it-be-able-to-do.jpeg"
 youtubeId: "Cy4CWdym5GY"

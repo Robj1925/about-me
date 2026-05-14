@@ -1,6 +1,6 @@
 ---
 title: "How AI Reads: A Simple Guide to the Transformer Encoder"
-date: "2026-05-14"
+date: "2025-11-11"
 excerpt: "Ever wonder how AI understands your sentences? Learn how the Transformer encoder works in this easy, beginner-friendly guide by a software engineer."
 thumbnail: "assets/images/blog-thumbnails/how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers.png"
 youtubeId: "T83WpdeLayw"

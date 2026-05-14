@@ -1,6 +1,6 @@
 ---
 title: "What is AI Fine-Tuning? Turn Your Chatbot into an Expert"
-date: "2026-05-14"
+date: "2025-12-10"
 excerpt: "Learn how fine-tuning lets you customize AI models for your specific needs without spending millions of dollars."
 thumbnail: "assets/images/blog-thumbnails/what-is-fine-tuning-a-model-yt.jpg"
 youtubeId: "bCgKCYmerzg"

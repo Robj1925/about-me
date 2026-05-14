@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw 4.8 Is Here: The Biggest AI Automation Updates Yet"
-date: "2026-05-14"
+date: "2026-04-04"
 excerpt: "OpenClaw 4.8 brings massive upgrades like Android voice control, Task Flow automation, and faster workflows. Here is everything you need to know to get started."
 thumbnail: "assets/images/blog-thumbnails/openclaw-4-8-is-insane-here-s-why-yt.jpg"
 youtubeId: "Wvaj_Aq3RHg"

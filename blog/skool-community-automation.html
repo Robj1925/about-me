@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Automate Your Entire Skool Community With One Tool — Robby J</title>
+  <meta name="description" content="Learn how to use the open-source Skool Community automation CLI to sync data, automate posts and DMs, and let AI agents manage your community." />
+  <meta property="og:title" content="How to Automate Your Entire Skool Community With One Tool — Robby J" />
+  <meta property="og:description" content="Learn how to use the open-source Skool Community automation CLI to sync data, automate posts and DMs, and let AI agents manage your community." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/skool_logo.jpeg" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Skool</span><span class="post-tag">AI Agents</span><span class="post-tag">Automation</span><span class="post-tag">Engineering</span></div>
+      <h1 class="post-title">How to Automate Your Entire Skool Community With One Tool</h1>
+      <p class="post-excerpt">Learn how to use the open-source Skool Community automation CLI to sync data, automate posts and DMs, and let AI agents manage your community.</p>
+      <div class="post-meta">
+        <span>📅 May 16, 2026</span>
+        <span>·</span>
+        <span>⏱ 5 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/skool_logo.jpeg" alt="How to Automate Your Entire Skool Community With One Tool thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/7I0COaYlEbk"
+          title="YouTube video: How to Automate Your Entire Skool Community With One Tool"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p><strong>TL;DR:</strong> Managing a large Skool community manually is a massive bottleneck that slows down your growth. By leveraging the open-source <strong>Skool Community automation CLI</strong>, you can empower your AI agents to automatically send DMs, create posts, and analyze member analytics offline. </p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#why-is-a-skool-community-automation-cli-essential-for-growth">Why is a Skool Community Automation CLI Essential for Growth?</a></li>
+<li><a href="#how-does-the-tool-bypass-bot-detection">How Does the Tool Bypass Bot Detection?</a></li>
+<li><a href="#what-are-the-core-features-of-the-cli">What Are the Core Features of the CLI?</a></li>
+<li><a href="#how-do-i-connect-ai-agents-to-my-skool-data">How Do I Connect AI Agents to My Skool Data?</a></li>
+<li><a href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+<li><a href="#conclusion-and-next-steps">Conclusion and Next Steps</a></li>
+</ul>
+<h2 id="why-is-a-skool-community-automation-cli-essential-for-growth">Why is a Skool Community Automation CLI Essential for Growth?</h2>
+<p>When your community is small, replying to direct messages and welcoming new members is easy. However, as you scale past thousands of users, manual community management becomes impossible. That is where a <strong>Skool Community automation CLI</strong> comes in. </p>
+<p>I recently built an open-source command-line interface designed specifically for Skool community owners and general users. By using automation, you can programmatically extract member behavioral data, identify churn risks, and automate post creation without ever opening a web browser. </p>
+<img src="../assets/images/skool_logo.jpeg" alt="Skool Community CLI Logo demonstrating automation tools" loading="lazy" width="400">
+
+<h2 id="how-does-the-tool-bypass-bot-detection">How Does the Tool Bypass Bot Detection?</h2>
+<p>One of the biggest hurdles for AI community management is web application firewalls (WAF). Skool employs strict bot detection mechanisms to block automated scripts. </p>
+<p>To solve this, the CLI relies on an intelligent HAR (HTTP Archive) import mechanism. Instead of attempting brittle browser automation, the tool extracts session cookies and critical bot-detection headers directly from your browser&#39;s network traffic.</p>
+<h3 id="the-authentication-workflow">The Authentication Workflow</h3>
+<p>When building this out, I implemented a robust method to aggregate your dynamic session headers and inject them into all outgoing requests. </p>
+<ul>
+<li><strong>Experience Note:</strong> When I first tested the CLI, I discovered that extracting the network requests natively via the Chrome Network tab (by enabling &quot;Preserve Log&quot; and &quot;Disable Cache&quot;) was the key to stabilizing the connection. You just export the HAR file with sensitive data and pass it to your AI agent.</li>
+</ul>
+<h2 id="what-are-the-core-features-of-the-cli">What Are the Core Features of the CLI?</h2>
+<p>This CLI is designed for heavy-duty data synchronization, domain analytics, and active engagement.</p>
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Description</th>
+      <th>Best Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Automate DMs</strong></td>
+      <td>Programmatically reads your recent chats and sends direct messages (e.g., via the <code>channels send</code> command).</td>
+      <td>Following up with new members or re-engaging inactive users.</td>
+    </tr>
+    <tr>
+      <td><strong>Automate Posts</strong></td>
+      <td>Drafts and publishes community posts directly to specific categories (like General Discussion).</td>
+      <td>Daily announcements or scheduled content delivery.</td>
+    </tr>
+    <tr>
+      <td><strong>Local SQLite Sync</strong></td>
+      <td>Downloads all community members, posts, and courses to a local database.</td>
+      <td>Offline data analysis and lightning-fast full-text searches.</td>
+    </tr>
+    <tr>
+      <td><strong>Look at Analytics</strong></td>
+      <td>Identifies members at risk of churning based on their recent activity levels.</td>
+      <td>Proactive community health management.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="how-do-i-connect-ai-agents-to-my-skool-data">How Do I Connect AI Agents to My Skool Data?</h2>
+<p>If you want an AI agent to answer community questions or manage direct messages, you need a headless interface. The CLI allows tools like Gemini CLI or Claude to consume the data effortlessly. </p>
+<p>During my testing, I prompted my Gemini CLI agent to &quot;send a follow-up message to my latest contact&quot; and &quot;write a test post in my community.&quot; The agent successfully ran the commands, evaluated the options, and executed the workflows autonomously. </p>
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</h2>
+<p><strong>What is a Skool Community automation CLI?</strong>
+It is a command-line tool that allows you to use scripts and AI agents to programmatically manage community tasks, such as creating posts, syncing data, and analyzing member engagement.</p>
+<p><strong>Do I need to know how to code to use it?</strong>
+While basic terminal knowledge helps, the CLI provides clear instructions and a <code>doctor</code> command to help beginners set up their environment easily. Your AI agent can handle the installation dependencies.</p>
+<p><strong>Can I use this tool to send direct messages?</strong>
+Yes, the <code>channels send</code> command allows you to list chat conversations and send direct messages to your members programmatically.</p>
+<p><strong>Is it safe to import HAR files with sensitive data?</strong>
+Yes, as long as you keep the HAR file local and secure. The CLI uses it only to extract session tokens, and you should ensure it is never shared or committed to public repositories.</p>
+<p><strong>Can it analyze community health?</strong>
+Yes, the CLI syncs your data locally and can evaluate member activity levels to identify users who are at risk of leaving the community.</p>
+<h2 id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<p>Implementing a <strong>Skool Community automation CLI</strong> transforms how you manage your online presence. By taking advantage of these tools, you shift from reactive moderation to proactive, data-driven community building. </p>
+<ul>
+<li>Authenticate securely using your exported HAR file.</li>
+<li>Sync your community data to unlock predictive churn analytics.</li>
+<li>Let your AI agent automate your posts and direct messages.</li>
+</ul>
+<p>Ready to level up your AI engineering skills? Check out the <a href="https://www.skool.com/ai-academy-with-robby-6849/about">AI Academy</a> to learn how to build production-ready AI systems.</p>
+<hr>
+<p><strong>About the Author:</strong>
+Robby J is a software engineer, AI systems builder, and content creator with an M.S. in Computer Science. He specializes in designing autonomous AI workflows and custom Model Context Protocol (MCP) servers. Follow his work on <a href="https://www.youtube.com/@Code-With-Robby">YouTube</a> or <a href="https://github.com/robj1925">GitHub</a>.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

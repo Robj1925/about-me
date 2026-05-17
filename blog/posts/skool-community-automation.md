@@ -9,7 +9,7 @@ meta_title: "How to Master the Skool Community Automation CLI with AI Agents"
 meta_description: "Discover how to bypass Skool's bot detection and enable a Skool community automation CLI using custom tools and AI agents for deep domain analytics."
 ---
 
-**TL;DR:** Managing a large Skool community manually is a massive bottleneck that slows down your growth. By leveraging the open-source **Skool Community automation CLI**, you can empower your AI agents to automatically send DMs, create posts, and analyze member analytics offline. 
+**TL;DR:** Managing a large Skool community manually is a massive bottleneck that slows down your growth. By leveraging the open-source [Skool Community automation CLI](https://github.com/Robj1925/skool-pp-cli), you can empower your AI agents to automatically send DMs, create posts, and analyze member analytics offline. 
 
 ## Table of Contents
 - [Why is a Skool Community Automation CLI Essential for Growth?](#why-is-a-skool-community-automation-cli-essential-for-growth)
@@ -23,7 +23,7 @@ meta_description: "Discover how to bypass Skool's bot detection and enable a Sko
 
 When your community is small, replying to direct messages and welcoming new members is easy. However, as you scale past thousands of users, manual community management becomes impossible. That is where a **Skool Community automation CLI** comes in. 
 
-I recently built an open-source command-line interface designed specifically for Skool community owners and general users. By using automation, you can programmatically extract member behavioral data, identify churn risks, and automate post creation without ever opening a web browser. 
+I recently built an open-source [command-line interface](https://github.com/Robj1925/skool-pp-cli) designed specifically for Skool community owners and general users. By using automation, you can programmatically extract member behavioral data, identify churn risks, and automate post creation without ever opening a web browser. 
 
 <img src="../assets/images/skool_logo.jpeg" alt="Skool Community CLI Logo demonstrating automation tools" loading="lazy" width="400">
 
@@ -83,7 +83,7 @@ During my testing, I prompted my Gemini CLI agent to "send a follow-up message t
 ## Frequently Asked Questions (FAQ)
 
 **What is a Skool Community automation CLI?**
-It is a command-line tool that allows you to use scripts and AI agents to programmatically manage community tasks, such as creating posts, syncing data, and analyzing member engagement.
+It is an open-source [command-line tool](https://github.com/Robj1925/skool-pp-cli) that allows you to use scripts and AI agents to programmatically manage community tasks, such as creating posts, syncing data, and analyzing member engagement.
 
 **Do I need to know how to code to use it?**
 While basic terminal knowledge helps, the CLI provides clear instructions and a `doctor` command to help beginners set up their environment easily. Your AI agent can handle the installation dependencies.

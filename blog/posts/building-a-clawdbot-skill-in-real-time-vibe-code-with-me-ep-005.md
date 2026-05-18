@@ -12,7 +12,7 @@ tags:
   - Python
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hey Everyone! It’s Robby.
 

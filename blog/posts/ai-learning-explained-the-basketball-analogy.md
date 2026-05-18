@@ -12,7 +12,7 @@ tags:
   - How It Works
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and people often ask me, "How does a computer actually learn?" 
 

@@ -11,7 +11,7 @@ tags:
   - Data Science
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi, I'm Robby!
 

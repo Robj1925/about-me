@@ -11,7 +11,7 @@ tags:
   - Coding for Beginners
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Does Your AI Actually Know Its Stuff?
 

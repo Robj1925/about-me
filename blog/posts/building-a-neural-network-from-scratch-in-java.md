@@ -12,7 +12,7 @@ tags:
   - Programming
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Ever Wonder How AI Actually Thinks?
 

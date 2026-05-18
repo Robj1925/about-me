@@ -7,7 +7,7 @@ youtubeId: ""
 tags: ["Beginner Guide", "OpenClaw", "AI Automation"]
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 If you've ever wanted your AI assistant to do more than just chat — to actually *take actions*, run scripts, and automate repetitive tasks — OpenClaw Skills are the answer.
 

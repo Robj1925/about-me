@@ -12,7 +12,7 @@ tags:
   - Tech Tutorial
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
 
 Hi everyone! I’m Robby. As a software engineer, I spend a lot of time testing new AI tools. Today, I want to talk about a huge update to Google Flow that almost nobody is talking about yet. It has completely changed from a simple video tool into a full-blown creative workspace.
 

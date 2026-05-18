@@ -11,7 +11,7 @@ tags:
   - Beginner AI
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
 
 Hi! I’m Robby. I spend my days building AI systems, and one of the most common questions I get is about "hyperparameters." It sounds like a fancy science word, but it’s actually pretty simple once you see it the right way.
 

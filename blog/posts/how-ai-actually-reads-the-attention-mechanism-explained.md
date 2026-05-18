@@ -11,7 +11,7 @@ tags:
   - Technology Explained
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
+🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi! I’m Robby.
 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown — Robby J</title>
+  <meta name="description" content="A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers." />
+  <meta property="og:title" content="Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown — Robby J" />
+  <meta property="og:description" content="A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/google-io-2026-gemini-3-5-flash-spark-agent.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI Agents</span><span class="post-tag">Google</span><span class="post-tag">Gemini</span><span class="post-tag">Engineering</span></div>
+      <h1 class="post-title">Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown</h1>
+      <p class="post-excerpt">A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers.</p>
+      <div class="post-meta">
+        <span>📅 May 20, 2026</span>
+        <span>·</span>
+        <span>⏱ 4 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/google-io-2026-gemini-3-5-flash-spark-agent.png" alt="Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <iframe
+          width="100%" height="100%"
+          src="https://www.youtube.com/embed/INSERT_ID_HERE"
+          title="YouTube video: Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p><strong>TL;DR:</strong> At Google I/O 2026, Google completely changed the AI landscape by announcing Gemini 3.5 Flash—a blazing-fast, cost-effective model designed for agentic workflows—alongside Gemini Spark, a dedicated 24/7 AI agent platform. These two new tools allow engineers to build and deploy complex autonomous agents that run continuously without eating up expensive compute budgets.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#what-is-gemini-35-flash">What is Gemini 3.5 Flash?</a></li>
+<li><a href="#how-does-the-gemini-spark-agent-platform-work">How Does the Gemini Spark Agent Platform Work?</a></li>
+<li><a href="#why-is-gemini-35-essential-for-agentic-workflows">Why is Gemini 3.5 Essential for Agentic Workflows?</a></li>
+<li><a href="#how-do-these-updates-impact-junior-developers">How Do These Updates Impact Junior Developers?</a></li>
+<li><a href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+<li><a href="#conclusion-and-next-steps">Conclusion and Next Steps</a></li>
+</ul>
+<p>🧠 Get 1:1 help from a Software Engineer to automate your workflow → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<h2 id="what-is-gemini-35-flash">What is Gemini 3.5 Flash?</h2>
+<p><strong>Gemini 3.5 Flash</strong> is Google&#39;s newest addition to the Gemini family, designed specifically for speed, cost efficiency, and massive scalability. It was launched as the default model for the Gemini app and AI Mode in Search, completely replacing older iterations. </p>
+<p>Unlike massive frontier models designed solely for reasoning depth, Gemini 3.5 Flash is optimized for high-throughput, low-latency tasks. It is significantly faster than previous models, making it the perfect engine for applications that require rapid iteration—such as multi-step agentic reasoning, code generation, and complex API chaining.</p>
+<h2 id="how-does-the-gemini-spark-agent-platform-work">How Does the Gemini Spark Agent Platform Work?</h2>
+<p>The standout announcement of Google I/O 2026 was <strong>Gemini Spark</strong>. While previous models required users to keep a tab open or manage their own backend infrastructure, Gemini Spark is a dedicated, 24/7 AI agent platform.</p>
+<p>It is built to run on dedicated Google Cloud virtual machines. This means you can deploy an agent to perform long-running tasks—such as web scraping, codebase refactoring, or community management—and it will continue operating even when your personal devices are offline. Gemini Spark serves as the ultimate &quot;always-on&quot; digital employee.</p>
+<h2 id="why-is-gemini-35-essential-for-agentic-workflows">Why is Gemini 3.5 Essential for Agentic Workflows?</h2>
+<p>When building AI agents, token efficiency and response latency are the two biggest bottlenecks. Agents often need to &quot;think&quot; out loud, loop through multiple tools, and analyze results before returning an answer to the user.</p>
+<p>Because Gemini 3.5 Flash drastically lowers both the cost-per-token and the time-to-first-token, engineers can afford to run more complex, multi-agent workflows. It bridges the gap between proof-of-concept AI scripts and production-ready, highly reliable autonomous systems.</p>
+<h2 id="how-do-these-updates-impact-junior-developers">How Do These Updates Impact Junior Developers?</h2>
+<p>With models becoming faster and agents becoming capable of independent 24/7 execution, the role of the developer is shifting. Junior developers will need to transition from simply writing boilerplate code to architecting and orchestrating AI agents. </p>
+<p>Mastering tools like Gemini 3.5 and Gemini Spark early on gives engineers a massive competitive advantage, allowing them to output the work of an entire team by acting as a manager to their AI counterparts.</p>
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</h2>
+<p><strong>What is the main difference between Gemini 3.5 Pro and Gemini 3.5 Flash?</strong>
+Gemini 3.5 Flash is optimized for speed and cost-efficiency, making it ideal for high-volume tasks and AI agents. The Pro model focuses on deep reasoning for highly complex, multi-modal problems.</p>
+<p><strong>Does Gemini Spark require my computer to stay on?</strong>
+No. Gemini Spark runs on dedicated Google Cloud virtual machines, allowing your agents to execute long-running tasks 24/7, completely independently of your local hardware.</p>
+<p><strong>How can I start using these new tools?</strong>
+You can access the Gemini 3.5 API via Google AI Studio, and start exploring the Gemini Spark ecosystem through Google Cloud&#39;s Vertex AI platform.</p>
+<h2 id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<p>The release of Gemini 3.5 Flash and Gemini Spark marks a massive leap forward in the Agentic Era. Stop building static scripts and start building autonomous systems that work for you around the clock.</p>
+<p>If you are ready to master these new tools and deploy real-world AI systems, join the AI Academy.</p>
+<p>🧠 Get 1:1 help from a Software Engineer to automate your workflow → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

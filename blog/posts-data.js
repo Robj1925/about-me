@@ -16,6 +16,36 @@ window.BLOG_POSTS = [
     "readTime": 5
   },
   {
+    "slug": "google-io-2026-gemini-3-5-flash-spark-agent",
+    "title": "Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown",
+    "date": "2026-05-21",
+    "excerpt": "A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers.",
+    "thumbnail": "assets/images/blog-thumbnails/google-io-2026-gemini-3-5-flash-spark-agent.png",
+    "youtubeId": "INSERT_ID_HERE",
+    "tags": [
+      "AI Agents",
+      "Google",
+      "Gemini",
+      "Engineering"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "nvidia-sana-100x-faster-free-open-source-4k-image-video-model",
+    "title": "NVIDIA Sana: The 100x Faster FREE Open Source 4K Image and Video World Model",
+    "date": "2026-05-21",
+    "excerpt": "A deep dive into NVIDIA Sana, the revolutionary linear diffusion transformer that brings 100x faster 4K generation to consumer hardware.",
+    "thumbnail": "assets/images/blog-thumbnails/nvidia-sana-100x-faster-free-open-source-4k-image-video-model.png",
+    "youtubeId": null,
+    "tags": [
+      "Engineering",
+      "Open Source",
+      "NVIDIA",
+      "Image Generation"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "skool-community-automation",
     "title": "How to Automate Your Entire Skool Community With One Tool",
     "date": "2026-05-17",

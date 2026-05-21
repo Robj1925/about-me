@@ -1,5 +1,20 @@
 [
   {
+    "slug": "google-flow-gemini-omni-creative-ai-2026",
+    "title": "Google Flow + Gemini Omni: The Most Powerful Creative AI in 2026 (Full Demo)",
+    "date": "2026-05-21",
+    "excerpt": "A complete hands-on guide and breakdown of Google Flow and the new Gemini Omni Flash model, showing live visual generation, conversational video editing, and SynthID watermarking.",
+    "thumbnail": "assets/images/blog-thumb-3.jpg",
+    "youtubeId": "URqh6lJP4-M",
+    "tags": [
+      "AI Video",
+      "Google Flow",
+      "Gemini Omni",
+      "Creative AI"
+    ],
+    "readTime": 5
+  },
+  {
     "slug": "google-io-2026-gemini-3-5-flash-spark-agent",
     "title": "Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown",
     "date": "2026-05-21",

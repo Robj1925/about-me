@@ -3,7 +3,7 @@ title: "Google Flow + Gemini Omni: The Most Powerful Creative AI in 2026 (Full D
 date: "2026-05-21"
 excerpt: "A complete hands-on guide and breakdown of Google Flow and the new Gemini Omni Flash model, showing live visual generation, conversational video editing, and SynthID watermarking."
 tags: ["AI Video", "Google Flow", "Gemini Omni", "Creative AI"]
-thumbnail: "assets/images/blog-thumb-3.jpg"
+thumbnail: "assets/images/blog-thumbnails/google-flow-gemini-omni-creative-ai-2026.jpg"
 youtubeId: "URqh6lJP4-M"
 meta_title: "Google Flow & Gemini Omni: Full Demo & Breakdown (2026)"
 meta_description: "Master Google Flow and the new Gemini Omni Flash model. Explore live text-to-video, multi-input visual mixing, conversational editing, and SynthID watermarking."

@@ -2,7 +2,7 @@
 title: "How to Automate Your Entire Skool Community With One Tool"
 date: "2026-05-17"
 excerpt: "Learn how to use the open-source Skool Community automation CLI to sync data, automate posts and DMs, and let AI agents manage your community."
-thumbnail: "assets/images/skool_logo.jpeg"
+thumbnail: "assets/images/blog-thumbnails/skool-community-automation.jpg"
 youtubeId: "7I0COaYlEbk"
 tags: ["Skool", "AI Agents", "Automation", "Engineering"]
 meta_title: "How to Master the Skool Community Automation CLI with AI Agents"

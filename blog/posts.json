@@ -1,5 +1,22 @@
 [
   {
+    "slug": "youtube-zero-api-scraper",
+    "title": "Bypass Quota Limits: Building a Zero-API YouTube Scraper",
+    "date": "2026-05-22",
+    "excerpt": "Tired of YouTube API quota limits? Learn how I built a zero-API YouTube scraping engine and SQLite-cached Go CLI that connects directly to AI agents via MCP.",
+    "thumbnail": "assets/images/blog-thumbnails/youtube-zero-api-scraper.png",
+    "youtubeId": null,
+    "tags": [
+      "YouTube",
+      "Go",
+      "Python",
+      "SQLite",
+      "AI Agents",
+      "MCP"
+    ],
+    "readTime": 8
+  },
+  {
     "slug": "google-flow-gemini-omni-creative-ai-2026",
     "title": "Google Flow + Gemini Omni: The Most Powerful Creative AI in 2026 (Full Demo)",
     "date": "2026-05-21",

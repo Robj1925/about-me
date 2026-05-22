@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bypass Quota Limits: Building a Zero-API YouTube Scraper — Robby J</title>
+  <meta name="description" content="Tired of YouTube API quota limits? Learn how I built a zero-API YouTube scraping engine and SQLite-cached Go CLI that connects directly to AI agents via MCP." />
+  <meta property="og:title" content="Bypass Quota Limits: Building a Zero-API YouTube Scraper — Robby J" />
+  <meta property="og:description" content="Tired of YouTube API quota limits? Learn how I built a zero-API YouTube scraping engine and SQLite-cached Go CLI that connects directly to AI agents via MCP." />
+  <meta property="og:image" content="https://robj1925.github.io/about-me/assets/images/blog-thumbnails/youtube-zero-api-scraper.png" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">YouTube</span><span class="post-tag">Go</span><span class="post-tag">Python</span><span class="post-tag">SQLite</span><span class="post-tag">AI Agents</span><span class="post-tag">MCP</span></div>
+      <h1 class="post-title">Bypass Quota Limits: Building a Zero-API YouTube Scraper</h1>
+      <p class="post-excerpt">Tired of YouTube API quota limits? Learn how I built a zero-API YouTube scraping engine and SQLite-cached Go CLI that connects directly to AI agents via MCP.</p>
+      <div class="post-meta">
+        <span>📅 May 21, 2026</span>
+        <span>·</span>
+        <span>⏱ 8 min read</span>
+      </div>
+    </header>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/youtube-zero-api-scraper.png" alt="Bypass Quota Limits: Building a Zero-API YouTube Scraper thumbnail" class="post-hero-img" />
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Content -->
+    <div class="post-content">
+      <p><strong>TL;DR:</strong> The official YouTube API has a strict 10,000-unit daily quota, which is easily exhausted when analyzing multiple channels. By building a high-performance, zero-API YouTube scraping engine in Python, combining it with a compiled Go CLI and a local SQLite cache, you can pull real-time channel statistics and video metrics on demand—completely quota-free. Even better, you can wrap it in an MCP (Model Context Protocol) server to let your AI agents run deep channel analysis autonomously.</p>
+<hr>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#the-youtube-api-quota-problem">The YouTube API Quota Problem</a></li>
+<li><a href="#the-solution-quota-free-on-demand-web-scraping">The Solution: Quota-Free, On-Demand Web Scraping</a></li>
+<li><a href="#system-architecture-overview">System Architecture Overview</a></li>
+<li><a href="#how-does-the-scraper-engine-work">How Does the Scraper Engine Work?</a></li>
+<li><a href="#fast-sqlite-caching-in-go">Fast SQLite Caching in Go</a></li>
+<li><a href="#connecting-the-tool-to-ai-agents-via-mcp">Connecting the Tool to AI Agents via MCP</a></li>
+<li><a href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+<li><a href="#conclusion-and-next-steps">Conclusion and Next Steps</a></li>
+</ul>
+<hr>
+<h2 id="the-youtube-api-quota-problem">The YouTube API Quota Problem</h2>
+<p>If you have ever built tools utilizing the YouTube Data API v3, you have likely run into the notorious daily quota limit. YouTube gives developers a default allocation of <strong>10,000 quota units per day</strong>. </p>
+<p>At first glance, that sounds like a lot. However, when you dig into the cost structure, the limits become incredibly restrictive:</p>
+<ul>
+<li><strong>Search operations (<code>search.list</code>)</strong>: Consumes <strong>100 units per request</strong>.</li>
+<li><strong>Video list details (<code>videos.list</code>)</strong>: Consumes <strong>1 unit per request</strong>.</li>
+<li><strong>Channel queries (<code>channels.list</code>)</strong>: Consumes <strong>1 unit per request</strong>.</li>
+</ul>
+<p>If you want to perform serious analytics—such as monitoring competitor uploads, tracking keyword performance, or letting an AI agent review video metrics multiple times a day—you will run out of quota in just a few dozen searches. Requesting a quota increase is a tedious, months-long process that requires enterprise justification and verification. </p>
+<hr>
+<h2 id="the-solution-quota-free-on-demand-web-scraping">The Solution: Quota-Free, On-Demand Web Scraping</h2>
+<p>To solve this, I designed and built an open-source, quota-free YouTube scraping engine. Instead of querying the formal API endpoints, the system retrieves the public YouTube channel pages directly and parses the embedded JSON application state.</p>
+<p>When you visit a YouTube channel or search results page in a browser, YouTube delivers a pre-loaded JavaScript object containing all initial UI rendering data. This is stored in a global variable called <code>ytInitialData</code>. </p>
+<p>By making a simple GET request with browser-like headers, extracting this script block, and recursively evaluating its JSON structure, we can extract:</p>
+<ol>
+<li><strong>Video metadata</strong>: Video ID, title, length, and description.</li>
+<li><strong>Engagement stats</strong>: Views, relative publication date (e.g., &quot;3 days ago&quot;), and thumbnail URLs.</li>
+<li><strong>Channel info</strong>: Subscriber counts, avatar images, and verified badges.</li>
+</ol>
+<p>All of this happens programmatically, in milliseconds, with <strong>zero API keys</strong> and <strong>no quota limitations</strong>.</p>
+<hr>
+<h2 id="system-architecture-overview">System Architecture Overview</h2>
+<p>The system is structured as a premium monorepo containing a high-performance Python parser backend and a lightning-fast Go client CLI. </p>
+<pre><code class="language-mermaid">graph TD
+    A[Go CLI / MCP Server] --&gt;|HTTP Request| B[Python FastAPI Backend]
+    B --&gt;|HTTP GET / Fetch| C[YouTube Public Web]
+    C --&gt;|Return HTML / ytInitialData| B
+    B --&gt;|Parse &amp; Clean JSON| A
+    A --&gt;|Store / Check Cache| D[(SQLite Local DB)]
+    A --&gt;|Expose Tools| E[AI Agent / Claude / Gemini]
+</code></pre>
+<h3 id="why-go-and-python-together">Why Go and Python Together?</h3>
+<ul>
+<li><strong>Python</strong> is the industry standard for raw HTML manipulation and dynamic JSON path traversal. Using <strong>FastAPI</strong>, we expose a modular, lightweight microservice that accepts queries and returns clean, structured schema objects.</li>
+<li><strong>Go</strong> is the king of CLI engineering and concurrency. The Go client (<code>printing-press</code>) handles user commands, manages local database persistence, executes fast queries, and operates as a Model Context Protocol (MCP) server.</li>
+</ul>
+<hr>
+<h2 id="how-does-the-scraper-engine-work">How Does the Scraper Engine Work?</h2>
+<p>At the core of the Python microservice is a recursive JSON traversal engine. Since YouTube changes its UI layout frequently, hardcoded selectors are fragile. Instead, we scan the <code>ytInitialData</code> object recursively, looking for standard component renderers.</p>
+<p>Here is a simplified look at the Python parsing logic that extracts video cards from the channel page markup:</p>
+<pre><code class="language-python">import re
+import json
+import httpx
+
+def extract_yt_initial_data(html_content: str) -&gt; dict:
+    # Use regex to find the script containing ytInitialData
+    pattern = r&quot;var ytInitialData\s*=\s*(\{.*?\});&quot;
+    match = re.search(pattern, html_content)
+    if not match:
+        raise ValueError(&quot;Could not find ytInitialData in page HTML&quot;)
+    return json.loads(match.group(1))
+
+def recursive_find_key(data: any, target_key: str) -&gt; list:
+    # Recursively traverse JSON to find specific keys like &#39;videoRenderer&#39;
+    results = []
+    if isinstance(data, dict):
+        for k, v in data.items():
+            if k == target_key:
+                results.append(v)
+            else:
+                results.extend(recursive_find_key(v, target_key))
+    elif isinstance(data, list):
+        for item in data:
+            results.extend(recursive_find_key(item, target_key))
+    return results
+</code></pre>
+<p>Exposing this via FastAPI lets us run a single, unified endpoint that compiles a list of rich video structures on the fly:</p>
+<pre><code class="language-json">[
+  {
+    &quot;id&quot;: &quot;7I0COaYlEbk&quot;,
+    &quot;title&quot;: &quot;How to Automate Your Entire Skool Community With One Tool&quot;,
+    &quot;views&quot;: 4325,
+    &quot;published_time&quot;: &quot;3 days ago&quot;,
+    &quot;duration&quot;: &quot;14:22&quot;,
+    &quot;thumbnail&quot;: &quot;https://i.ytimg.com/vi/7I0COaYlEbk/hqdefault.jpg&quot;
+  }
+]
+</code></pre>
+<hr>
+<h2 id="fast-sqlite-caching-in-go">Fast SQLite Caching in Go</h2>
+<p>To avoid hitting YouTube&#39;s servers excessively and to ensure near-zero latency, the Go CLI client implements <strong>SQLite persistent caching</strong>.</p>
+<p>Every time a user (or an AI agent) runs a query, the CLI does a quick evaluation:</p>
+<ol>
+<li><strong>Cache Hit</strong>: Checks if the target channel&#39;s data was updated recently (e.g., within the last 60 minutes). If yes, it loads the records instantly from local SQLite.</li>
+<li><strong>Cache Miss</strong>: If the data is stale or missing, the CLI fires an asynchronous query to the Python FastAPI backend, updates the local SQLite database, and returns the fresh metrics.</li>
+</ol>
+<p>This dual-layer architecture guarantees that heavy usage will never trigger IP blocks or throttles from YouTube, while ensuring that the developer always has lightning-fast access to channel history.</p>
+<p>Here is the database schema used for indexing the video metrics in Go:</p>
+<pre><code class="language-sql">CREATE TABLE IF NOT EXISTS videos (
+    id TEXT PRIMARY KEY,
+    channel_id TEXT,
+    title TEXT,
+    views INTEGER,
+    published_time TEXT,
+    duration TEXT,
+    thumbnail_url TEXT,
+    fetched_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+</code></pre>
+<hr>
+<h2 id="connecting-the-tool-to-ai-agents-via-mcp">Connecting the Tool to AI Agents via MCP</h2>
+<p>One of the most powerful features of this tool is its native integration with <strong>Model Context Protocol (MCP)</strong>. MCP allows AI agents (like Claude Desktop, Gemini CLI, or custom local scripts) to securely execute local commands.</p>
+<p>By setting up the Go CLI to listen as an MCP server, you can give your AI agents commands such as:</p>
+<blockquote>
+<p><em>&quot;Audit my channel&#39;s recent uploads, find the videos with the lowest views, and suggest three improvements based on the best-performing titles.&quot;</em></p>
+</blockquote>
+<p>The AI agent will:</p>
+<ol>
+<li>Spin up the Go MCP server.</li>
+<li>Run the internal commands to pull the SQLite database or scrape fresh data.</li>
+<li>Formulate a structured analysis showing view-to-subscriber ratios, content trends, and dynamic title optimizations.</li>
+</ol>
+<p>This completely bypasses the need to build expensive web interfaces—your terminal and your LLM agent <em>become</em> the interface.</p>
+<hr>
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</h2>
+<p><strong>What is the YouTube Zero-API Scraper?</strong>
+It is a dual-language (Python + Go) open-source tool that retrieves YouTube video metadata, search listings, and channel analytics on-demand, without using the official YouTube Data API.</p>
+<p><strong>Do I need a Google Cloud API Key to use this?</strong>
+No! Because it operates via public page scraping and recursive <code>ytInitialData</code> evaluation, it requires zero API keys, zero Google Cloud projects, and has no daily quota limits.</p>
+<p><strong>Is it safe to scrape YouTube?</strong>
+Yes. The tool makes standard HTTP GET requests using typical browser headers, mimicking a user browsing a public page. However, to respect YouTube&#39;s terms and prevent IP throttling, the Go client employs a built-in SQLite cache to limit unnecessary network requests.</p>
+<p><strong>Can my AI agent use this?</strong>
+Yes! The Go CLI functions as an MCP (Model Context Protocol) server. You can add it to your Claude or Gemini configuration files to let your agent query YouTube metrics autonomously.</p>
+<p><strong>How do I install the tool?</strong>
+You can clone the public repository at <code>https://github.com/Robj1925/youtube-zero-api-scraper</code> and follow the comprehensive README setup instructions for compiling the Go executable and running the FastAPI parser service.</p>
+<hr>
+<h2 id="conclusion-and-next-steps">Conclusion and Next Steps</h2>
+<p>By taking control of your data collection pipeline and bypassing quota constraints, you unlock the ability to run unrestricted channel audits, competitors analytics, and autonomous AI-driven publishing workflows.</p>
+<ul>
+<li><strong>Ditch the quotas</strong>: Deploy the Zero-API microservice.</li>
+<li><strong>Cache locally</strong>: Keep lookup speeds instant with SQLite.</li>
+<li><strong>Integrate AI</strong>: Hook up the MCP server to automate your content strategies.</li>
+</ul>
+<p>Ready to dive deeper into custom AI engineering and autonomous workflows? Join the <a href="https://www.skool.com/ai-academy-with-robby-6849/about">AI Academy</a> to collaborate with other builders and master advanced systems!</p>
+<hr>
+<p><strong>About the Author:</strong>
+Robby J is a software engineer, AI systems architect, and creator of the <a href="https://www.youtube.com/@Code-With-Robby">Code With Robby</a> YouTube channel. Holding an M.S. in Computer Science, he builds and writes about next-generation AI agents, autonomous developer workflows, and custom MCP integrations. Follow him on <a href="https://github.com/Robj1925">GitHub</a> or watch his tutorials live on <a href="https://www.youtube.com/@Code-With-Robby">YouTube</a>.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 title: "GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era"
 date: "2026-04-26"
 excerpt: "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you."
-thumbnail: "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpeg"
+thumbnail: "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpg"
 youtubeId: "HgiZNcqNE00"
 tags:
   - AI

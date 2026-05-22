@@ -2,7 +2,7 @@
 title: "What is Self-Attention? How AI Understands Language"
 date: "2025-11-12"
 excerpt: "Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English."
-thumbnail: "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.png"
+thumbnail: "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.jpg"
 youtubeId: "wTB1Ec_4lDw"
 tags:
   - AI

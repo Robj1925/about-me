@@ -2,7 +2,7 @@
 title: "How Do AI Models Learn? Backpropagation Explained Simply"
 date: "2025-12-02"
 excerpt: "Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand."
-thumbnail: "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.png"
+thumbnail: "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.jpg"
 youtubeId: "27IxhaM2stI"
 tags:
   - AI

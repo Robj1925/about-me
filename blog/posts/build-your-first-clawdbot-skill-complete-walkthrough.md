@@ -2,7 +2,7 @@
 title: "Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation"
 date: "2026-03-19"
 excerpt: "Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way."
-thumbnail: "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.png"
+thumbnail: "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.jpg"
 youtubeId: "Xe09u-PriZ4"
 tags:
   - AI

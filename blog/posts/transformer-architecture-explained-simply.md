@@ -2,7 +2,7 @@
 title: "What is a Transformer? How AI Learns to Talk"
 date: "2025-12-03"
 excerpt: "Ever wonder what the 'T' in ChatGPT stands for? Learn how Transformer technology changed everything about how computers understand human language."
-thumbnail: "assets/images/blog-thumbnails/transformer-architecture-explained-simply.png"
+thumbnail: "assets/images/blog-thumbnails/transformer-architecture-explained-simply.jpg"
 youtubeId: "mAI-sXdjJDU"
 tags:
   - AI

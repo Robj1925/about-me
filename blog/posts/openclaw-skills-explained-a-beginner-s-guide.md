@@ -2,7 +2,7 @@
 title: "OpenClaw Skills: How to Turn Your AI Into a Super-Powered Helper"
 date: "2026-03-20"
 excerpt: "Learn how to turn your AI from a simple chatbot into a real-world helper using OpenClaw Skills. This guide shows you how to automate tasks with simple plugins."
-thumbnail: "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.png"
+thumbnail: "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.jpg"
 youtubeId: "Jxtue8U7__s"
 tags:
   - AI

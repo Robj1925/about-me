@@ -2,7 +2,7 @@
 title: "Why Neural Networks Need Activation Functions: A Simple Guide"
 date: "2025-11-15"
 excerpt: "Ever wonder how AI learns complex patterns? Discover how activation functions help neural networks bend reality to make better predictions."
-thumbnail: "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.png"
+thumbnail: "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.jpg"
 youtubeId: "c9QJt5JUXrY"
 tags:
   - AI

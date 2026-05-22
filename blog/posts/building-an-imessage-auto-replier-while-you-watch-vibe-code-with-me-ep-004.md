@@ -2,7 +2,7 @@
 title: "Build Your Own AI iMessage Assistant: A Step-by-Step Guide"
 date: "2026-03-06"
 excerpt: "Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically."
-thumbnail: "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.png"
+thumbnail: "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.jpg"
 youtubeId: "u38dEuDcyrA"
 tags:
   - AI

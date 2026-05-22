@@ -2,7 +2,7 @@
 title: "How to Build Your Own AI Research Assistant (Step-by-Step Guide)"
 date: "2026-04-11"
 excerpt: "Stop searching for AI news manually. Learn how I built a custom AI agent to automatically find the latest updates from GitHub, Hacker News, and more."
-thumbnail: "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.png"
+thumbnail: "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.jpg"
 youtubeId: "mEGHa9w2gUY"
 tags:
   - AI

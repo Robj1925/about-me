@@ -2,7 +2,7 @@
 title: "How AI Works: Understanding the Transformer Model"
 date: "2025-10-18"
 excerpt: "Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide."
-thumbnail: "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.png"
+thumbnail: "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.jpg"
 youtubeId: "APHVilJSI5Q"
 tags:
   - AI

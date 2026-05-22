@@ -2,7 +2,7 @@
 title: "How Does AI Read? The Secret of the Attention Mechanism"
 date: "2025-12-03"
 excerpt: "Ever wonder how ChatGPT knows exactly what you mean? Learn how the 'Attention Mechanism' helps AI understand context just like a human."
-thumbnail: "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.png"
+thumbnail: "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.jpg"
 youtubeId: "Gt9Z0hnGBVk"
 tags:
   - AI

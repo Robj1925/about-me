@@ -2,7 +2,7 @@
 title: "Why Do AI Models Have So Many 'Attention Heads'? Explained"
 date: "2025-11-11"
 excerpt: "Ever wonder how AI understands language so well? It uses 'multi-head attention' to focus on many things at once, just like a team working together."
-thumbnail: "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.png"
+thumbnail: "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.jpg"
 youtubeId: "K8CbD1RHtr0"
 tags:
   - AI

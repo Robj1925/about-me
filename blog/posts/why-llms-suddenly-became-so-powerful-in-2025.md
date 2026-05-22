@@ -2,7 +2,7 @@
 title: "Why Did AI Get So Smart So Fast? The Secret Behind LLMs"
 date: "2025-12-23"
 excerpt: "Ever wonder why AI feels like it suddenly got a brain? Let's talk about scaling laws—the simple secret that made AI models powerful in 2025."
-thumbnail: "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.png"
+thumbnail: "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.jpg"
 youtubeId: "mCyDlBy2wU4"
 tags:
   - AI

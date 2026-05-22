@@ -2,7 +2,7 @@
 title: "How Does AI Talk? The Simple Secret of Transformers"
 date: "2025-11-11"
 excerpt: "Ever wonder how AI understands your words? Learn how transformer models use a smart system called queries, keys, and values to find the right information."
-thumbnail: "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.png"
+thumbnail: "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.jpg"
 youtubeId: "d8ibK36vbjE"
 tags:
   - AI

@@ -2,7 +2,7 @@
 title: "How to Build Your Own AI Content Bot (The Chill Way)"
 date: "2026-03-05"
 excerpt: "Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!"
-thumbnail: "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.png"
+thumbnail: "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.jpg"
 youtubeId: "wF1DMU7sSp4"
 tags:
   - AI

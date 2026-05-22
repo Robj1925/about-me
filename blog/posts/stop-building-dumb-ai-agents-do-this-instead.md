@@ -2,7 +2,7 @@
 title: "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory"
 date: "2026-04-17"
 excerpt: "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans."
-thumbnail: "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.png"
+thumbnail: "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg"
 youtubeId: "uCqbwJca8ks"
 tags:
   - AI

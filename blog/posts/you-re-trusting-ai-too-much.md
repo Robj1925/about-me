@@ -2,7 +2,7 @@
 title: "Why Your AI Might Be Lying to You (And How to Fix It)"
 date: "2025-12-03"
 excerpt: "Think AI is just a search engine? Think again. Learn why AI 'hallucinates' and how to stop trusting it blindly."
-thumbnail: "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.png"
+thumbnail: "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.jpg"
 youtubeId: "pOcMOjq8c_g"
 tags:
   - Artificial Intelligence

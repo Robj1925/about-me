@@ -2,7 +2,7 @@
 title: "What is the Feed Forward Layer? AI Explained Simply"
 date: "2025-11-13"
 excerpt: "Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking."
-thumbnail: "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.png"
+thumbnail: "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.jpg"
 youtubeId: "tlMr8E4x-NM"
 tags:
   - Artificial Intelligence

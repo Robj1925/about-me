@@ -2,7 +2,7 @@
 title: "Google Flow’s Big Update: Create Amazing AI Videos and Images Easily"
 date: "2026-03-03"
 excerpt: "Google Flow just got a massive upgrade. Discover the new Nano Banana 2, VEO 3.1, and powerful editing tools that make AI content creation faster than ever."
-thumbnail: "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.png"
+thumbnail: "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.jpg"
 youtubeId: "hD1jOizSPnk"
 tags:
   - AI

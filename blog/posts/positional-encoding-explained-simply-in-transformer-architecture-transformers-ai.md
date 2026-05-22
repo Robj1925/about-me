@@ -2,7 +2,7 @@
 title: "How AI Reads: Understanding Positional Encoding in Transformers"
 date: "2025-11-13"
 excerpt: "Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences."
-thumbnail: "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.png"
+thumbnail: "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.jpg"
 youtubeId: "G1Vgfwgtv48"
 tags:
   - Artificial Intelligence

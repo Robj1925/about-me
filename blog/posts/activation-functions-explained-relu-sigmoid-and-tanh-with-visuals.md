@@ -2,7 +2,7 @@
 title: "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)"
 date: "2025-10-30"
 excerpt: "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)"
-thumbnail: "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.png"
+thumbnail: "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.jpg"
 youtubeId: "W-YRq0qgqJQ"
 tags:
   - AI

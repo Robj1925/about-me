@@ -2,7 +2,7 @@
 title: "How to Get Your Free Google Gemini API Key (Step-by-Step)"
 date: "2026-01-23"
 excerpt: "Learn how to easily generate your own Google Gemini API key for free so you can start building your own AI apps today."
-thumbnail: "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.png"
+thumbnail: "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.jpg"
 youtubeId: "yZN5a12CZD8"
 tags:
   - AI

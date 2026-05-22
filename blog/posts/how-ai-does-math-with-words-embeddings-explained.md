@@ -2,7 +2,7 @@
 title: "How AI Does Math With Words: A Simple Guide to Embeddings"
 date: "2025-12-05"
 excerpt: "Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math."
-thumbnail: "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.png"
+thumbnail: "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.jpg"
 youtubeId: "d7Yo7hFNdnM"
 tags:
   - AI

@@ -126,7 +126,7 @@ window.BLOG_POSTS = [
     "title": "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)",
     "date": "2026-05-08",
     "excerpt": "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM.",
-    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpeg",
+    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpg",
     "youtubeId": "PgmwxA1I94Y",
     "tags": [
       "AI",
@@ -231,7 +231,7 @@ window.BLOG_POSTS = [
     "title": "GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era",
     "date": "2026-04-26",
     "excerpt": "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you.",
-    "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpeg",
+    "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpg",
     "youtubeId": "HgiZNcqNE00",
     "tags": [
       "AI",
@@ -292,7 +292,7 @@ window.BLOG_POSTS = [
     "title": "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory",
     "date": "2026-04-17",
     "excerpt": "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.",
-    "thumbnail": "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.png",
+    "thumbnail": "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg",
     "youtubeId": "uCqbwJca8ks",
     "tags": [
       "AI",
@@ -307,7 +307,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your Own AI Research Assistant (Step-by-Step Guide)",
     "date": "2026-04-11",
     "excerpt": "Stop searching for AI news manually. Learn how I built a custom AI agent to automatically find the latest updates from GitHub, Hacker News, and more.",
-    "thumbnail": "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.png",
+    "thumbnail": "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.jpg",
     "youtubeId": "mEGHa9w2gUY",
     "tags": [
       "AI",
@@ -323,7 +323,7 @@ window.BLOG_POSTS = [
     "title": "How to Stack Free Gemini Keys for Unlimited AI Usage",
     "date": "2026-04-09",
     "excerpt": "Tired of hitting AI rate limits? Learn how to use OpenClaw to stack multiple free Gemini API keys so your projects never stop working.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls.jpg",
     "youtubeId": "qq1QCMWWhxg",
     "tags": [
       "AI",
@@ -385,7 +385,7 @@ window.BLOG_POSTS = [
     "title": "Google’s New Veo 3.1 Lite: Making AI Video Easier and Cheaper",
     "date": "2026-04-02",
     "excerpt": "Google just released Veo 3.1 Lite, a powerful new tool that makes creating AI videos more affordable than ever. Let's look at how it works.",
-    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video.png",
+    "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video.jpg",
     "youtubeId": "Qf1Vih2l6NM",
     "tags": [
       "AI",
@@ -432,7 +432,7 @@ window.BLOG_POSTS = [
     "title": "OpenClaw Skills: How to Turn Your AI Into a Super-Powered Helper",
     "date": "2026-03-20",
     "excerpt": "Learn how to turn your AI from a simple chatbot into a real-world helper using OpenClaw Skills. This guide shows you how to automate tasks with simple plugins.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.png",
+    "thumbnail": "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.jpg",
     "youtubeId": "Jxtue8U7__s",
     "tags": [
       "AI",
@@ -448,7 +448,7 @@ window.BLOG_POSTS = [
     "title": "Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation",
     "date": "2026-03-19",
     "excerpt": "Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way.",
-    "thumbnail": "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.png",
+    "thumbnail": "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.jpg",
     "youtubeId": "Xe09u-PriZ4",
     "tags": [
       "AI",
@@ -464,7 +464,7 @@ window.BLOG_POSTS = [
     "title": "How to Build AI Tools: A Real Look at My Clawdbot Project",
     "date": "2026-03-11",
     "excerpt": "Ever wonder what it's really like to build AI tools? Join me as I walk through the messy, exciting process of coding a new skill for my robot, Clawdbot.",
-    "thumbnail": "assets/images/blog-thumbnails/clawdbot-skill-setup-real-time-problem-solving-building-live-006.png",
+    "thumbnail": "assets/images/blog-thumbnails/clawdbot-skill-setup-real-time-problem-solving-building-live-006.jpg",
     "youtubeId": "52lgF4bKPV0",
     "tags": [
       "AI",
@@ -480,7 +480,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your Own iMessage Autoresponder with AI",
     "date": "2026-03-07",
     "excerpt": "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.",
-    "thumbnail": "assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.png",
+    "thumbnail": "assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg",
     "youtubeId": "Sm-sUYFuXnA",
     "tags": [
       "AI",
@@ -496,7 +496,7 @@ window.BLOG_POSTS = [
     "title": "Build Your Own AI iMessage Assistant: A Step-by-Step Guide",
     "date": "2026-03-06",
     "excerpt": "Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically.",
-    "thumbnail": "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.png",
+    "thumbnail": "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.jpg",
     "youtubeId": "u38dEuDcyrA",
     "tags": [
       "AI",
@@ -512,7 +512,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your Own AI Content Bot (The Chill Way)",
     "date": "2026-03-05",
     "excerpt": "Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!",
-    "thumbnail": "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.png",
+    "thumbnail": "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.jpg",
     "youtubeId": "wF1DMU7sSp4",
     "tags": [
       "AI",
@@ -543,7 +543,7 @@ window.BLOG_POSTS = [
     "title": "Google Flow’s Big Update: Create Amazing AI Videos and Images Easily",
     "date": "2026-03-03",
     "excerpt": "Google Flow just got a massive upgrade. Discover the new Nano Banana 2, VEO 3.1, and powerful editing tools that make AI content creation faster than ever.",
-    "thumbnail": "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.png",
+    "thumbnail": "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.jpg",
     "youtubeId": "hD1jOizSPnk",
     "tags": [
       "AI",
@@ -575,7 +575,7 @@ window.BLOG_POSTS = [
     "title": "How to Clone Any Voice for Free (Without the Cloud!)",
     "date": "2026-02-28",
     "excerpt": "Learn how to use VoiceBox to clone voices and create high-quality speech right on your own computer, keeping your data private and free.",
-    "thumbnail": "assets/images/blog-thumbnails/this-free-tool-replaces-elevenlabs-completely.png",
+    "thumbnail": "assets/images/blog-thumbnails/this-free-tool-replaces-elevenlabs-completely.jpg",
     "youtubeId": "9LKaaOo6TmQ",
     "tags": [
       "AI",
@@ -591,7 +591,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your Own Free AI Text Message Auto-Responder",
     "date": "2026-02-24",
     "excerpt": "Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.jpg",
     "youtubeId": "Bi3z2tMPjxs",
     "tags": [
       "AI",
@@ -607,7 +607,7 @@ window.BLOG_POSTS = [
     "title": "How to Automate Cold Outreach Using AI Agents (The Alex Hormozi Way)",
     "date": "2026-02-17",
     "excerpt": "Learn how to build your own AI agent that writes personalized, high-converting DMs for you using free tools and Google Colab.",
-    "thumbnail": "assets/images/blog-thumbnails/i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents.png",
+    "thumbnail": "assets/images/blog-thumbnails/i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents.jpg",
     "youtubeId": "rCkELyj_Dfw",
     "tags": [
       "AI",
@@ -623,7 +623,7 @@ window.BLOG_POSTS = [
     "title": "I Let an AI Robot Text for Me for 24 Hours: Here’s What Happened",
     "date": "2026-02-13",
     "excerpt": "I let my custom AI, ClawdBot, handle all my text messages for an entire day. Find out if it made new friends, caught scammers, or caused total chaos.",
-    "thumbnail": "assets/images/blog-thumbnails/i-coded-an-ai-that-answers-every-text-for-me-clawdbot.png",
+    "thumbnail": "assets/images/blog-thumbnails/i-coded-an-ai-that-answers-every-text-for-me-clawdbot.jpg",
     "youtubeId": "VaYO6hOQWm0",
     "tags": [
       "AI",
@@ -703,7 +703,7 @@ window.BLOG_POSTS = [
     "title": "How to Get Your Free Google Gemini API Key (Step-by-Step)",
     "date": "2026-01-23",
     "excerpt": "Learn how to easily generate your own Google Gemini API key for free so you can start building your own AI apps today.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.jpg",
     "youtubeId": "yZN5a12CZD8",
     "tags": [
       "AI",
@@ -735,7 +735,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your Own AI Research Assistant",
     "date": "2026-01-18",
     "excerpt": "Learn how to build a smart AI agent that searches the web and writes summaries for you using Python and Gemini.",
-    "thumbnail": "assets/images/blog-thumbnails/how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results.jpg",
     "youtubeId": "iL-8F-FQFdI",
     "tags": [
       "AI",
@@ -751,7 +751,7 @@ window.BLOG_POSTS = [
     "title": "How to Build Your First AI-Powered Slack Bot with Python",
     "date": "2026-01-16",
     "excerpt": "Learn how to build a simple AI agent that automatically posts motivational messages to Slack using Python and Google's Gemini model.",
-    "thumbnail": "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.png",
+    "thumbnail": "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.jpg",
     "youtubeId": "VwM8KnbNKAo",
     "tags": [
       "AI",
@@ -782,7 +782,7 @@ window.BLOG_POSTS = [
     "title": "Why Neural Networks Fail: Vanishing and Exploding Gradients Explained",
     "date": "2026-01-13",
     "excerpt": "Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them.",
-    "thumbnail": "assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.jpg",
     "youtubeId": "G4ufhQGke1c",
     "tags": [
       "AI",
@@ -798,7 +798,7 @@ window.BLOG_POSTS = [
     "title": "What is a Loss Function? How AI Learns from Its Mistakes",
     "date": "2026-01-04",
     "excerpt": "Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.png",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.jpg",
     "youtubeId": "FxUAl6vS38w",
     "tags": [
       "Machine Learning",
@@ -905,7 +905,7 @@ window.BLOG_POSTS = [
     "title": "Why Did AI Get So Smart So Fast? The Secret Behind LLMs",
     "date": "2025-12-23",
     "excerpt": "Ever wonder why AI feels like it suddenly got a brain? Let's talk about scaling laws—the simple secret that made AI models powerful in 2025.",
-    "thumbnail": "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.png",
+    "thumbnail": "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.jpg",
     "youtubeId": "mCyDlBy2wU4",
     "tags": [
       "AI",
@@ -966,7 +966,7 @@ window.BLOG_POSTS = [
     "title": "What Is GPT-5.2? The Future of AI Explained Simply",
     "date": "2025-12-19",
     "excerpt": "Curious about what comes after GPT-4? Software engineer Robby breaks down how GPT-5.2 is moving from just predicting words to actually getting things done for you.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-gpt-5-2-what-will-it-be-able-to-do.jpeg",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-gpt-5-2-what-will-it-be-able-to-do.jpg",
     "youtubeId": "Cy4CWdym5GY",
     "tags": [
       "AI",
@@ -1164,7 +1164,7 @@ window.BLOG_POSTS = [
     "title": "How AI Does Math With Words: A Simple Guide to Embeddings",
     "date": "2025-12-05",
     "excerpt": "Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.jpg",
     "youtubeId": "d7Yo7hFNdnM",
     "tags": [
       "AI",
@@ -1224,7 +1224,7 @@ window.BLOG_POSTS = [
     "title": "How AI Learns: The 'Blame Game' of Neural Networks",
     "date": "2025-12-04",
     "excerpt": "Ever wonder how AI fixes its own mistakes? Join me as we break down backpropagation using the simple concept of the 'Blame Game.'",
-    "thumbnail": "assets/images/blog-thumbnails/calculating-gradients-in-neural-networks-the-blame-game-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/calculating-gradients-in-neural-networks-the-blame-game-explained.jpg",
     "youtubeId": "qM0zqaewCPI",
     "tags": [
       "AI",
@@ -1240,7 +1240,7 @@ window.BLOG_POSTS = [
     "title": "How AI Learns: Backpropagation Explained Simply",
     "date": "2025-12-04",
     "excerpt": "Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide.",
-    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.jpg",
     "youtubeId": "y7iTsuW4T3E",
     "tags": [
       "AI",
@@ -1270,7 +1270,7 @@ window.BLOG_POSTS = [
     "title": "How Does AI Read? The Secret of the Attention Mechanism",
     "date": "2025-12-03",
     "excerpt": "Ever wonder how ChatGPT knows exactly what you mean? Learn how the 'Attention Mechanism' helps AI understand context just like a human.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.jpg",
     "youtubeId": "Gt9Z0hnGBVk",
     "tags": [
       "AI",
@@ -1300,7 +1300,7 @@ window.BLOG_POSTS = [
     "title": "What is a Transformer? How AI Learns to Talk",
     "date": "2025-12-03",
     "excerpt": "Ever wonder what the 'T' in ChatGPT stands for? Learn how Transformer technology changed everything about how computers understand human language.",
-    "thumbnail": "assets/images/blog-thumbnails/transformer-architecture-explained-simply.png",
+    "thumbnail": "assets/images/blog-thumbnails/transformer-architecture-explained-simply.jpg",
     "youtubeId": "mAI-sXdjJDU",
     "tags": [
       "AI",
@@ -1330,7 +1330,7 @@ window.BLOG_POSTS = [
     "title": "Why Your AI Might Be Lying to You (And How to Fix It)",
     "date": "2025-12-03",
     "excerpt": "Think AI is just a search engine? Think again. Learn why AI 'hallucinates' and how to stop trusting it blindly.",
-    "thumbnail": "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.png",
+    "thumbnail": "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.jpg",
     "youtubeId": "pOcMOjq8c_g",
     "tags": [
       "Artificial Intelligence",
@@ -1377,7 +1377,7 @@ window.BLOG_POSTS = [
     "title": "How Do AI Models Learn? Backpropagation Explained Simply",
     "date": "2025-12-02",
     "excerpt": "Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand.",
-    "thumbnail": "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.png",
+    "thumbnail": "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.jpg",
     "youtubeId": "27IxhaM2stI",
     "tags": [
       "AI",
@@ -1393,7 +1393,7 @@ window.BLOG_POSTS = [
     "title": "What is an LLM? How AI Like ChatGPT Actually Works",
     "date": "2025-12-02",
     "excerpt": "Ever wonder how AI chats with you like a human? I'm breaking down how Large Language Models work in simple, easy-to-understand terms.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-an-llm-large-language-models-and-chatgpt-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-an-llm-large-language-models-and-chatgpt-explained.jpg",
     "youtubeId": "Vl0r3wCfUaw",
     "tags": [
       "AI",
@@ -1424,7 +1424,7 @@ window.BLOG_POSTS = [
     "title": "How AI Learns: The 'Blame Game' of Backpropagation",
     "date": "2025-12-01",
     "excerpt": "Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide.",
-    "thumbnail": "assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.png",
+    "thumbnail": "assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.jpg",
     "youtubeId": "X2TMzjriDYg",
     "tags": [
       "Artificial Intelligence",
@@ -1471,7 +1471,7 @@ window.BLOG_POSTS = [
     "title": "What Is a Loss Function? How AI Learns from Its Mistakes",
     "date": "2025-12-01",
     "excerpt": "Ever wonder how AI learns? Discover how a loss function acts like a scoreboard to help computers fix their mistakes and get smarter.",
-    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.png",
+    "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.jpg",
     "youtubeId": "CtfzBXbJaoA",
     "tags": [
       "AI",
@@ -1547,7 +1547,7 @@ window.BLOG_POSTS = [
     "title": "How Neural Networks Learn: Backpropagation Explained Simply",
     "date": "2025-11-28",
     "excerpt": "Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves.",
-    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.jpg",
     "youtubeId": "WtAC3n0Yo5Q",
     "tags": [
       "Artificial Intelligence",
@@ -1686,7 +1686,7 @@ window.BLOG_POSTS = [
     "title": "What is the Sigmoid Function? A Bouncer’s Guide to AI",
     "date": "2025-11-15",
     "excerpt": "Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms.",
-    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.png",
+    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.jpg",
     "youtubeId": "t30WqiKsn_8",
     "tags": [
       "AI",
@@ -1702,7 +1702,7 @@ window.BLOG_POSTS = [
     "title": "What is the Sigmoid Function? AI Math Made Easy",
     "date": "2025-11-15",
     "excerpt": "Curious how AI thinks in probabilities? Learn how the sigmoid function works to turn any number into a simple value between 0 and 1.",
-    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained.jpg",
     "youtubeId": "EegUZtLRkFU",
     "tags": [
       "AI",
@@ -1717,7 +1717,7 @@ window.BLOG_POSTS = [
     "title": "Why Neural Networks Need Activation Functions: A Simple Guide",
     "date": "2025-11-15",
     "excerpt": "Ever wonder how AI learns complex patterns? Discover how activation functions help neural networks bend reality to make better predictions.",
-    "thumbnail": "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.png",
+    "thumbnail": "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.jpg",
     "youtubeId": "c9QJt5JUXrY",
     "tags": [
       "AI",
@@ -1733,7 +1733,7 @@ window.BLOG_POSTS = [
     "title": "What Are Activation Functions? Neural Networks Made Simple",
     "date": "2025-11-14",
     "excerpt": "Ever wonder how AI thinks? Discover how activation functions like ReLU help neural networks learn from complex data in this easy guide.",
-    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-simply.png",
+    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-simply.jpg",
     "youtubeId": "obq6tYAl6YU",
     "tags": [
       "AI",
@@ -1748,7 +1748,7 @@ window.BLOG_POSTS = [
     "title": "What is the Dead ReLU Problem? How to Fix It!",
     "date": "2025-11-14",
     "excerpt": "Ever wonder why your AI model stops learning? It might be the 'Dead ReLU' problem. Learn how to fix it with simple tweaks to your neural network.",
-    "thumbnail": "assets/images/blog-thumbnails/dead-relu-problem-fixing-it-with-relu-variants.png",
+    "thumbnail": "assets/images/blog-thumbnails/dead-relu-problem-fixing-it-with-relu-variants.jpg",
     "youtubeId": "YH2el6e4FT4",
     "tags": [
       "AI",
@@ -1778,7 +1778,7 @@ window.BLOG_POSTS = [
     "title": "What Is ReLU? The Light Switch of AI Explained",
     "date": "2025-11-14",
     "excerpt": "Learn how the ReLU activation function works using a simple light switch example. Discover how AI makes decisions in this easy-to-follow guide.",
-    "thumbnail": "assets/images/blog-thumbnails/relu-activation-explained-with-step-by-step-example.png",
+    "thumbnail": "assets/images/blog-thumbnails/relu-activation-explained-with-step-by-step-example.jpg",
     "youtubeId": "6uh_GAyMXT8",
     "tags": [
       "AI",
@@ -1793,7 +1793,7 @@ window.BLOG_POSTS = [
     "title": "What is the Feed Forward Layer? AI Explained Simply",
     "date": "2025-11-13",
     "excerpt": "Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking.",
-    "thumbnail": "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.png",
+    "thumbnail": "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.jpg",
     "youtubeId": "tlMr8E4x-NM",
     "tags": [
       "Artificial Intelligence",
@@ -1823,7 +1823,7 @@ window.BLOG_POSTS = [
     "title": "How AI Reads: Understanding Positional Encoding in Transformers",
     "date": "2025-11-13",
     "excerpt": "Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences.",
-    "thumbnail": "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.png",
+    "thumbnail": "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.jpg",
     "youtubeId": "G1Vgfwgtv48",
     "tags": [
       "Artificial Intelligence",
@@ -1838,7 +1838,7 @@ window.BLOG_POSTS = [
     "title": "What is Self-Attention? How AI Understands Language",
     "date": "2025-11-12",
     "excerpt": "Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English.",
-    "thumbnail": "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.jpg",
     "youtubeId": "wTB1Ec_4lDw",
     "tags": [
       "AI",
@@ -1853,7 +1853,7 @@ window.BLOG_POSTS = [
     "title": "How AI Translates Languages: The Encoder-Decoder Attention Trick",
     "date": "2025-11-12",
     "excerpt": "Ever wonder how AI translates languages? Discover how the encoder-decoder attention layer helps computers focus on the right words to get the translation perfect.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained.jpg",
     "youtubeId": "_Uy6g3I3o8w",
     "tags": [
       "AI",
@@ -1869,7 +1869,7 @@ window.BLOG_POSTS = [
     "title": "How AI Reads: Turning Words Into Numbers Explained",
     "date": "2025-11-12",
     "excerpt": "Ever wonder how AI understands human language? Discover how transformers use embeddings and positional encoding to turn words into data.",
-    "thumbnail": "assets/images/blog-thumbnails/how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers.jpg",
     "youtubeId": "LI4wxQ9zIYc",
     "tags": [
       "AI",
@@ -1884,7 +1884,7 @@ window.BLOG_POSTS = [
     "title": "How Does AI Talk? The Simple Secret of Transformers",
     "date": "2025-11-11",
     "excerpt": "Ever wonder how AI understands your words? Learn how transformer models use a smart system called queries, keys, and values to find the right information.",
-    "thumbnail": "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.jpg",
     "youtubeId": "d8ibK36vbjE",
     "tags": [
       "AI",
@@ -1899,7 +1899,7 @@ window.BLOG_POSTS = [
     "title": "How the Add & Norm Layer Keeps AI Models Stable",
     "date": "2025-11-11",
     "excerpt": "Ever wonder how AI learns without getting confused? Discover the secret behind the 'Add & Norm' layer in transformers and why it's like a safety net for deep learning.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers.jpg",
     "youtubeId": "idsYRacKvNM",
     "tags": [
       "AI",
@@ -1915,7 +1915,7 @@ window.BLOG_POSTS = [
     "title": "How AI Reads: A Simple Guide to the Transformer Encoder",
     "date": "2025-11-11",
     "excerpt": "Ever wonder how AI understands your sentences? Learn how the Transformer encoder works in this easy, beginner-friendly guide by a software engineer.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers.jpg",
     "youtubeId": "T83WpdeLayw",
     "tags": [
       "AI",
@@ -1930,7 +1930,7 @@ window.BLOG_POSTS = [
     "title": "How AI Writes: A Simple Guide to the Transformer Decoder",
     "date": "2025-11-11",
     "excerpt": "Ever wonder how AI creates sentences? Let's break down how the transformer decoder works like a student taking a test.",
-    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp.jpg",
     "youtubeId": "Mcj8g66i_lg",
     "tags": [
       "AI",
@@ -1945,7 +1945,7 @@ window.BLOG_POSTS = [
     "title": "How AI Reads: The Secret Power of Transformers",
     "date": "2025-11-11",
     "excerpt": "Ever wonder how AI understands the meaning behind words? Learn how the 'self-attention' trick helps computers read just like you do.",
-    "thumbnail": "assets/images/blog-thumbnails/how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention.png",
+    "thumbnail": "assets/images/blog-thumbnails/how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention.jpg",
     "youtubeId": "uPX8rpsJmFw",
     "tags": [
       "AI",
@@ -1960,7 +1960,7 @@ window.BLOG_POSTS = [
     "title": "Why Do AI Models Have So Many 'Attention Heads'? Explained",
     "date": "2025-11-11",
     "excerpt": "Ever wonder how AI understands language so well? It uses 'multi-head attention' to focus on many things at once, just like a team working together.",
-    "thumbnail": "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.png",
+    "thumbnail": "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.jpg",
     "youtubeId": "K8CbD1RHtr0",
     "tags": [
       "AI",
@@ -1975,7 +1975,7 @@ window.BLOG_POSTS = [
     "title": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
     "date": "2025-10-30",
     "excerpt": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
-    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.png",
+    "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.jpg",
     "youtubeId": "W-YRq0qgqJQ",
     "tags": [
       "AI"
@@ -1987,7 +1987,7 @@ window.BLOG_POSTS = [
     "title": "How to Build a Speech-to-Text App with Java and AI",
     "date": "2025-10-21",
     "excerpt": "Learn how to turn spoken audio into text using Java and the AssemblyAI API with this simple, step-by-step guide.",
-    "thumbnail": "assets/images/blog-thumbnails/java-speech-to-text-assemblyai-api-tutorial-step-by-step.png",
+    "thumbnail": "assets/images/blog-thumbnails/java-speech-to-text-assemblyai-api-tutorial-step-by-step.jpg",
     "youtubeId": "ZbM0OPCgOmg",
     "tags": [
       "Java",
@@ -2003,7 +2003,7 @@ window.BLOG_POSTS = [
     "title": "How AI Works: Understanding the Transformer Model",
     "date": "2025-10-18",
     "excerpt": "Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide.",
-    "thumbnail": "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.png",
+    "thumbnail": "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.jpg",
     "youtubeId": "APHVilJSI5Q",
     "tags": [
       "AI",

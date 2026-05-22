@@ -2,7 +2,7 @@
 title: "How to Build Your First AI-Powered Slack Bot with Python"
 date: "2026-01-16"
 excerpt: "Learn how to build a simple AI agent that automatically posts motivational messages to Slack using Python and Google's Gemini model."
-thumbnail: "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.png"
+thumbnail: "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.jpg"
 youtubeId: "VwM8KnbNKAo"
 tags:
   - AI

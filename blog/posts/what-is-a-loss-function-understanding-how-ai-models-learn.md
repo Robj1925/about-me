@@ -2,7 +2,7 @@
 title: "What is a Loss Function? How AI Learns from Its Mistakes"
 date: "2026-01-04"
 excerpt: "Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models."
-thumbnail: "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.png"
+thumbnail: "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.jpg"
 youtubeId: "FxUAl6vS38w"
 tags:
   - Machine Learning

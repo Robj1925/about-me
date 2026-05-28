@@ -71,10 +71,10 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
           toast.classList.remove('show');
         }, 4000);
         
-        // Brief visual loading pause before triggering native mailto window launch
+        // Brief visual loading pause before triggering native mailto window launch (increased to 2.5s)
         setTimeout(() => {
           window.location.href = 'mailto:' + displayEmail;
-        }, 800);
+        }, 2500);
       });
     } else {
       el.textContent = displayEmail;

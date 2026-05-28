@@ -61,7 +61,11 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
         el.style.cursor = 'pointer'; // Ensure it still maintains link pointer aesthetics
         
         if (isSocial) {
-          el.innerHTML = `<span>✉️</span> Email`;
+          el.innerHTML = `<div style="display:flex; flex-direction:column; gap:2px; text-align:left;">
+            <span style="font-weight:600; color:var(--text)">Email Me 📧</span>
+            <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono)">${displayEmail}</span>
+          </div>`;
+          el.style.padding = '12px 16px';
         }
       }
       

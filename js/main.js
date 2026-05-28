@@ -50,28 +50,31 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
   const links = document.querySelectorAll('[data-email]');
   links.forEach(el => {
     if (el.tagName === 'A') {
-      el.href = 'mailto:' + displayEmail;
-      if (el.classList.contains('btn')) {
-        // Keep the original button text
-      } else {
+      const isButton = el.classList.contains('btn');
+      
+      if (!isButton) {
+        el.href = 'mailto:' + displayEmail;
         el.textContent = displayEmail;
+      } else {
+        el.removeAttribute('href'); // Remove href completely to bypass any native navigation thread
+        el.style.cursor = 'pointer'; // Ensure it still maintains link pointer aesthetics
       }
       
-      // Clipboard copy + Toast trigger on click with brief delay before launching client
+      // Clipboard copy + Toast trigger on click with 2.5s delay before launching client
       el.addEventListener('click', (e) => {
         e.preventDefault();
         
-        // Preemptively copy to clipboard
+        // Copy address
         navigator.clipboard.writeText(displayEmail).catch(() => {});
         
-        // Show Toast animation
+        // Show Toast
         toast.classList.add('show');
         clearTimeout(toastTimeout);
         toastTimeout = setTimeout(() => {
           toast.classList.remove('show');
         }, 4000);
         
-        // Brief visual loading pause before triggering native mailto window launch (increased to 2.5s)
+        // Controlled redirection delay
         setTimeout(() => {
           window.location.href = 'mailto:' + displayEmail;
         }, 2500);

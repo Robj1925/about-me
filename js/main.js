@@ -17,7 +17,7 @@ mobileMenu.querySelectorAll('a').forEach(link => {
 });
 
 // ===== SMOOTH SCROLL =====
-document.querySelectorAll('a[href^="#"]').forEach(a => {
+document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
     if (target) {

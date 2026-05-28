@@ -32,18 +32,21 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // The email is injected securely during the GitHub Actions build step
 (function () {
   const email = '___CONTACT_EMAIL___';
+  const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robby@codewithrobby.com';
   
-  if (email && email !== '___CONTACT_EMAIL___') {
-    const links = document.querySelectorAll('[data-email]');
-    links.forEach(el => {
-      if (el.tagName === 'A') {
-        el.href = 'mailto:' + email;
-        el.textContent = email;
+  const links = document.querySelectorAll('[data-email]');
+  links.forEach(el => {
+    if (el.tagName === 'A') {
+      el.href = 'mailto:' + displayEmail;
+      if (el.classList.contains('btn')) {
+        // Keep the original button text (e.g. "Book a Session")
       } else {
-        el.textContent = email;
+        el.textContent = displayEmail;
       }
-    });
-  }
+    } else {
+      el.textContent = displayEmail;
+    }
+  });
 })();
 // ===== TERMINAL TYPEWRITER =====
 const lines = [

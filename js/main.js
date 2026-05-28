@@ -34,15 +34,41 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
   const email = '___CONTACT_EMAIL___';
   const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robbyj1925@icloud.com';
   
+  // Create toast container dynamically
+  const toast = document.createElement('div');
+  toast.className = 'toast-notification';
+  toast.innerHTML = `
+    <div class="toast-header">
+      <span>✉️</span> ${displayEmail} copied!
+    </div>
+    <div class="toast-body">Opening your mail client...</div>
+  `;
+  document.body.appendChild(toast);
+
+  let toastTimeout;
+
   const links = document.querySelectorAll('[data-email]');
   links.forEach(el => {
     if (el.tagName === 'A') {
       el.href = 'mailto:' + displayEmail;
       if (el.classList.contains('btn')) {
-        // Keep the original button text (e.g. "Book a Session")
+        // Keep the original button text
       } else {
         el.textContent = displayEmail;
       }
+      
+      // Clipboard copy + Toast trigger on click
+      el.addEventListener('click', (e) => {
+        // Preemptively copy to clipboard
+        navigator.clipboard.writeText(displayEmail).catch(() => {});
+        
+        // Show Toast animation
+        toast.classList.add('show');
+        clearTimeout(toastTimeout);
+        toastTimeout = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 4000);
+      });
     } else {
       el.textContent = displayEmail;
     }

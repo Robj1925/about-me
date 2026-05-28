@@ -32,7 +32,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 // The email is injected securely during the GitHub Actions build step
 (function () {
   const email = '___CONTACT_EMAIL___';
-  const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robby@codewithrobby.com';
+  const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robbyj1925@icloud.com';
   
   const links = document.querySelectorAll('[data-email]');
   links.forEach(el => {

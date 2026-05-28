@@ -57,8 +57,10 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
         el.textContent = displayEmail;
       }
       
-      // Clipboard copy + Toast trigger on click
+      // Clipboard copy + Toast trigger on click with brief delay before launching client
       el.addEventListener('click', (e) => {
+        e.preventDefault();
+        
         // Preemptively copy to clipboard
         navigator.clipboard.writeText(displayEmail).catch(() => {});
         
@@ -68,6 +70,11 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
         toastTimeout = setTimeout(() => {
           toast.classList.remove('show');
         }, 4000);
+        
+        // Brief visual loading pause before triggering native mailto window launch
+        setTimeout(() => {
+          window.location.href = 'mailto:' + displayEmail;
+        }, 800);
       });
     } else {
       el.textContent = displayEmail;

@@ -51,13 +51,18 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
   links.forEach(el => {
     if (el.tagName === 'A') {
       const isButton = el.classList.contains('btn');
+      const isSocial = el.classList.contains('social-link');
       
-      if (!isButton) {
+      if (!isButton && !isSocial) {
         el.href = 'mailto:' + displayEmail;
         el.textContent = displayEmail;
       } else {
         el.removeAttribute('href'); // Remove href completely to bypass any native navigation thread
         el.style.cursor = 'pointer'; // Ensure it still maintains link pointer aesthetics
+        
+        if (isSocial) {
+          el.innerHTML = `<span>✉️</span> Email`;
+        }
       }
       
       // Clipboard copy + Toast trigger on click with 2.5s delay before launching client

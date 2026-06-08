@@ -378,6 +378,21 @@ function build() {
   </url>\n`;
   }
 
+  // Scan root for any manual HTML pages to dynamically append to sitemap (except index.html which we mapped manually)
+  const manualPages = fs.readdirSync(ROOT).filter(f => f.endsWith('.html') && f !== 'index.html');
+  for (const page of manualPages) {
+    const pagePath = path.join(ROOT, page);
+    const stat = fs.statSync(pagePath);
+    const pageDate = stat.mtime.toISOString().split('T')[0];
+    sitemapXml += `  <!-- Manual Page: ${page} -->
+  <url>
+    <loc>${domain}/${page}</loc>
+    <lastmod>${pageDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>\n`;
+  }
+
   sitemapXml += `</urlset>`;
 
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml);

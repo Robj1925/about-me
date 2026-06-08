@@ -383,6 +383,30 @@ function build() {
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml);
   console.log(`  ✓ Generated sitemap.xml in root directory`);
 
+  // ── Auto-Inject GA Tag into all root HTML files ───────────────────────────
+  const gaSnippet = `  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>`;
+
+  const rootFiles = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
+  for (const htmlFile of rootFiles) {
+    const filePath = path.join(ROOT, htmlFile);
+    let htmlContent = fs.readFileSync(filePath, 'utf8');
+
+    if (!htmlContent.includes('G-T1RQQC7CB5')) {
+      console.log(`  ⚠️  GA Tag missing in ${htmlFile}. Auto-injecting...`);
+      // Inject GA snippet right before the closing </head> tag
+      htmlContent = htmlContent.replace('</head>', `${gaSnippet}\n</head>`);
+      fs.writeFileSync(filePath, htmlContent, 'utf8');
+      console.log(`  ✓ GA Tag successfully injected into ${htmlFile}`);
+    }
+  }
+
   console.log(`\n🚀 Build complete! ${posts.length} post(s) processed.\n`);
 }
 

@@ -329,6 +329,44 @@ function build() {
   fs.writeFileSync(path.join(BLOG_OUT, 'index.html'), indexHtml);
   console.log(`  ✓ Generated blog/index.html`);
 
+  // ── Generate Sitemap ──────────────────────────────────────────────────────
+  const domain = 'https://robj1925.github.io/about-me'; // Base domain setup
+  const currentDate = new Date().toISOString().split('T')[0];
+
+  let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Home Page -->
+  <url>
+    <loc>${domain}/</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Blog Index -->
+  <url>
+    <loc>${domain}/blog/index.html</loc>
+    <lastmod>${currentDate}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+`;
+
+  // Add all dynamically generated blog posts to sitemap XML
+  for (const post of posts) {
+    const postDate = new Date(post.date).toISOString().split('T')[0];
+    sitemapXml += `  <url>
+    <loc>${domain}/blog/${post.slug}.html</loc>
+    <lastmod>${postDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>\n`;
+  }
+
+  sitemapXml += `</urlset>`;
+
+  fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml);
+  console.log(`  ✓ Generated sitemap.xml in root directory`);
+
   console.log(`\n🚀 Build complete! ${posts.length} post(s) processed.\n`);
 }
 

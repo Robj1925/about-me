@@ -330,7 +330,7 @@ function build() {
   console.log(`  ✓ Generated blog/index.html`);
 
   // ── Generate Sitemap ──────────────────────────────────────────────────────
-  const domain = 'https://robj1925.github.io/about-me'; // Base domain setup
+  const domain = 'https://automatewithrobby.fyi'; // Base domain setup
   const currentDate = new Date().toISOString().split('T')[0];
 
   let sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>

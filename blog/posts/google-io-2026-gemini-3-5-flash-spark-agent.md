@@ -4,7 +4,7 @@ date: "2026-05-21"
 excerpt: "A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers."
 tags: ["AI Agents", "Google", "Gemini", "Engineering"]
 thumbnail: "assets/images/blog-thumbnails/google-io-2026-gemini-3-5-flash-spark-agent.png"
-youtubeId: "INSERT_ID_HERE"
+youtubeId: "rC1VuO9cVbk"
 meta_title: "Google I/O 2026: The New Gemini 3.5 Flash & Gemini Spark Agent Breakdown"
 meta_description: "Discover what Google's new Gemini 3.5 Flash and Gemini Spark Agent mean for software engineers, automation, and the future of AI development."
 ---

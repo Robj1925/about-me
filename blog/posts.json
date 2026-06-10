@@ -1,5 +1,21 @@
 [
   {
+    "slug": "claude-mythos-5-explained-the-ai-built-for-hackers-scientists",
+    "title": "Meet Claude Mythos 5: The New AI Powerhouse for Science and Security",
+    "date": "2026-06-10",
+    "excerpt": "Anthropic just launched Claude Mythos 5, a powerful new AI designed for expert researchers and cybersecurity pros. Learn how it works and what makes it special.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-mythos-5-explained-the-ai-built-for-hackers-scientists.jpeg",
+    "youtubeId": "teKF78kX6u0",
+    "tags": [
+      "AI",
+      "Cybersecurity",
+      "Anthropic",
+      "Claude",
+      "Technology"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "google-maps-lead-scraper",
     "title": "I Scraped Thousands of Free Leads Using AI Agents (Zero API Fees)",
     "date": "2026-05-23",
@@ -54,7 +70,7 @@
     "date": "2026-05-21",
     "excerpt": "A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers.",
     "thumbnail": "assets/images/blog-thumbnails/google-io-2026-gemini-3-5-flash-spark-agent.png",
-    "youtubeId": "INSERT_ID_HERE",
+    "youtubeId": "rC1VuO9cVbk",
     "tags": [
       "AI Agents",
       "Google",
@@ -69,7 +85,7 @@
     "date": "2026-05-21",
     "excerpt": "A deep dive into NVIDIA Sana, the revolutionary linear diffusion transformer that brings 100x faster 4K generation to consumer hardware.",
     "thumbnail": "assets/images/blog-thumbnails/nvidia-sana-100x-faster-free-open-source-4k-image-video-model.png",
-    "youtubeId": null,
+    "youtubeId": "Xg7KoSYXebo",
     "tags": [
       "Engineering",
       "Open Source",

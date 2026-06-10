@@ -3,16 +3,22 @@
   <!-- Main Home Page -->
   <url>
     <loc>https://automatewithrobby.fyi/</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Blog Index -->
   <url>
     <loc>https://automatewithrobby.fyi/blog/index.html</loc>
-    <lastmod>2026-06-08</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-mythos-5-explained-the-ai-built-for-hackers-scientists.html</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://automatewithrobby.fyi/blog/google-maps-lead-scraper.html</loc>

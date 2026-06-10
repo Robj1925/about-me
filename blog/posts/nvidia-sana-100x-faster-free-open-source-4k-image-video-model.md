@@ -4,6 +4,7 @@ date: "2026-05-21"
 excerpt: "A deep dive into NVIDIA Sana, the revolutionary linear diffusion transformer that brings 100x faster 4K generation to consumer hardware."
 tags: ["Engineering", "Open Source", "NVIDIA", "Image Generation"]
 thumbnail: "assets/images/blog-thumbnails/nvidia-sana-100x-faster-free-open-source-4k-image-video-model.png"
+youtubeId: "Xg7KoSYXebo"
 meta_title: "NVIDIA Sana: The 100x Faster FREE Open Source 4K Image and Video World Model"
 meta_description: "Learn how NVIDIA Sana uses linear attention and DC-AE to generate high-quality 4K images and videos 100x faster than traditional models."
 ---

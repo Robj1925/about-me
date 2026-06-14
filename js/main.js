@@ -32,7 +32,7 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
 // The email is injected securely during the GitHub Actions build step
 (function () {
   const email = '___CONTACT_EMAIL___';
-  const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robbyj1925@icloud.com';
+  const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robj1925@gmail.com';
   
   // Create toast container dynamically
   const toast = document.createElement('div');

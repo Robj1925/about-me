@@ -64,7 +64,7 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
   <meta name="description" content="${excerpt}" />
   <meta property="og:title" content="${title} — Robby J" />
   <meta property="og:description" content="${excerpt}" />
-  ${thumbnail ? `<meta property="og:image" content="https://robj1925.github.io/about-me/${thumbnail}" />` : ''}
+  ${thumbnail ? `<meta property="og:image" content="https://automatewithrobby.fyi/${thumbnail}" />` : ''}
   <meta property="og:type" content="article" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />

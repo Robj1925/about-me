@@ -395,6 +395,24 @@ function build() {
   </url>\n`;
   }
 
+  // Scan tools/ directory for tool pages
+  const TOOLS_DIR = path.join(ROOT, 'tools');
+  if (fs.existsSync(TOOLS_DIR)) {
+    const toolPages = fs.readdirSync(TOOLS_DIR).filter(f => f.endsWith('.html'));
+    for (const page of toolPages) {
+      const pagePath = path.join(TOOLS_DIR, page);
+      const stat = fs.statSync(pagePath);
+      const pageDate = stat.mtime.toISOString().split('T')[0];
+      const loc = page === 'index.html' ? `${domain}/tools/` : `${domain}/tools/${page}`;
+      sitemapXml += `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${pageDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>\n`;
+    }
+  }
+
   sitemapXml += `</urlset>`;
 
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml);

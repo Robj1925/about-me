@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Automation ROI Calculator — Robby J</title>
+  <meta name="description" content="Calculate how much time and money AI automation can save your business. Free ROI calculator." />
+  <meta property="og:title" content="AI Automation ROI Calculator — Robby J" />
+  <meta property="og:description" content="Calculate how much time and money AI automation can save your business. Free ROI calculator." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/ai-automation-roi-calculator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    .tool-hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .tool-hero p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 52ch;
+      margin: 0 auto;
+    }
+    .tool-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      max-width: 980px;
+      margin: 0 auto 60px;
+      align-items: start;
+    }
+    @media (max-width: 700px) {
+      .tool-layout { grid-template-columns: 1fr; }
+    }
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--glow-purple), 0 24px 48px rgba(0,0,0,0.4);
+    }
+    .card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 24px;
+    }
+    .field-group {
+      margin-bottom: 24px;
+    }
+    .field-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+    .field-value {
+      color: var(--cyan);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.95rem;
+    }
+    .tool-input-number {
+      width: 100%;
+      background: rgba(10,10,15,0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 1rem;
+      padding: 11px 14px;
+      outline: none;
+      transition: var(--transition);
+      box-sizing: border-box;
+    }
+    .tool-input-number:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(6,182,212,0.15);
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: linear-gradient(to right, var(--cyan) 0%, var(--border) 0%);
+      outline: none;
+      cursor: pointer;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--cyan);
+      cursor: pointer;
+      box-shadow: var(--glow-cyan);
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--cyan);
+      cursor: pointer;
+      border: none;
+      box-shadow: var(--glow-cyan);
+    }
+    /* Results card */
+    .results-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(6,182,212,0.25);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--glow-cyan), 0 24px 48px rgba(0,0,0,0.4);
+    }
+    .stat-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .stat-card {
+      background: rgba(10,10,15,0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .stat-card.highlight {
+      border-color: rgba(6,182,212,0.4);
+      background: rgba(6,182,212,0.06);
+    }
+    .stat-card.hero {
+      grid-column: 1 / -1;
+      border-color: rgba(124,58,237,0.4);
+      background: rgba(124,58,237,0.08);
+      padding: 22px 16px;
+    }
+    .stat-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-card.hero .stat-number {
+      font-size: 2.6rem;
+      color: var(--purple-light);
+    }
+    .stat-card.positive .stat-number {
+      color: #34d399;
+    }
+    .stat-number-small {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--cyan);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-desc {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.4;
+    }
+    .motivational {
+      margin-top: 20px;
+      padding: 16px 20px;
+      background: rgba(124,58,237,0.1);
+      border: 1px solid rgba(124,58,237,0.2);
+      border-radius: var(--radius);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.55;
+      text-align: center;
+    }
+    .motivational strong {
+      color: var(--purple-light);
+    }
+    .roi-badge {
+      display: inline-block;
+      background: rgba(52,211,153,0.15);
+      border: 1px solid rgba(52,211,153,0.35);
+      color: #34d399;
+      border-radius: 99px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      margin-top: 8px;
+    }
+    .payback-text {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="container">
+    <div class="tool-hero">
+      <h1>AI Automation ROI Calculator</h1>
+      <p>Find out exactly how much time and money AI can save you — before you spend a dollar.</p>
+    </div>
+
+    <div class="tool-layout">
+      <!-- Inputs -->
+      <div class="tool-card">
+        <p class="card-title">Your Inputs</p>
+
+        <div class="field-group">
+          <label for="hourly-rate" class="field-label">
+            <span>Your hourly rate</span>
+          </label>
+          <input
+            type="number"
+            id="hourly-rate"
+            class="tool-input-number"
+            value="50"
+            min="1"
+            max="10000"
+            step="1"
+            aria-label="Hourly rate in dollars"
+            placeholder="e.g. 50"
+          />
+        </div>
+
+        <div class="field-group">
+          <div class="field-label">
+            <span>Hours/week on this task</span>
+            <span class="field-value" id="hours-display">5 hrs</span>
+          </div>
+          <input
+            type="range"
+            id="hours-slider"
+            min="1"
+            max="40"
+            step="1"
+            value="5"
+            aria-label="Hours per week spent on task"
+          />
+          <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:0.78rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace;">
+            <span>1</span><span>40 hrs</span>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="field-label">
+            <span>% AI can automate</span>
+            <span class="field-value" id="auto-display">70%</span>
+          </div>
+          <input
+            type="range"
+            id="auto-slider"
+            min="10"
+            max="100"
+            step="5"
+            value="70"
+            aria-label="Percentage of task AI can automate"
+          />
+          <div style="display:flex;justify-content:space-between;margin-top:6px;font-size:0.78rem;color:var(--text-muted);font-family:'JetBrains Mono',monospace;">
+            <span>10%</span><span>100%</span>
+          </div>
+        </div>
+
+        <div class="field-group" style="margin-bottom:0">
+          <label for="ai-cost" class="field-label">
+            <span>AI tool monthly cost ($)</span>
+          </label>
+          <input
+            type="number"
+            id="ai-cost"
+            class="tool-input-number"
+            value="20"
+            min="0"
+            max="100000"
+            step="1"
+            aria-label="AI tool monthly cost in dollars"
+            placeholder="e.g. 20"
+          />
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="results-card">
+        <p class="card-title" style="color:rgba(6,182,212,0.7);">Your ROI</p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="r-hrs-week">3.5</div>
+            <div class="stat-desc">Hours saved<br>per week</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="r-hrs-month">15</div>
+            <div class="stat-desc">Hours saved<br>per month</div>
+          </div>
+          <div class="stat-card highlight">
+            <div class="stat-number" id="r-money-gross">$750</div>
+            <div class="stat-desc">Saved per month<br><span style="font-size:0.72rem">(before AI cost)</span></div>
+          </div>
+          <div class="stat-card positive">
+            <div class="stat-number" id="r-money-net">$730</div>
+            <div class="stat-desc">Net savings<br>per month</div>
+          </div>
+          <div class="stat-card hero">
+            <div class="stat-number" id="r-annual-roi">$8,760</div>
+            <div class="stat-desc" style="font-size:0.88rem;color:var(--text-muted)">Annual net savings</div>
+            <div class="roi-badge" id="r-roi-pct">3650% ROI</div>
+          </div>
+        </div>
+
+        <p class="payback-text" id="r-payback">Payback period: &lt; 1 month</p>
+
+        <div class="motivational" id="motivational-text">
+          You could save <strong id="r-hrs-year">182 hours</strong> a year — that's <strong id="r-weeks-year">4.6 weeks</strong> of your life back.
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function fmtMoney(n) {
+    if (Math.abs(n) >= 1000) {
+      return '$' + n.toLocaleString('en-US', { maximumFractionDigits: 0 });
+    }
+    return '$' + n.toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 2 });
+  }
+
+  function fmtHrs(n) {
+    return n % 1 === 0 ? String(n) : n.toFixed(1);
+  }
+
+  function updateSliderTrack(el) {
+    const min = Number(el.min), max = Number(el.max), val = Number(el.value);
+    const pct = ((val - min) / (max - min)) * 100;
+    el.style.background = `linear-gradient(to right, var(--cyan) ${pct}%, var(--border) ${pct}%)`;
+  }
+
+  function calculate() {
+    const hourlyRate  = Math.max(0, Number(document.getElementById('hourly-rate').value) || 0);
+    const hoursWeek   = Number(document.getElementById('hours-slider').value);
+    const autoPct     = Number(document.getElementById('auto-slider').value) / 100;
+    const aiCost      = Math.max(0, Number(document.getElementById('ai-cost').value) || 0);
+
+    const hrsSavedWeek  = hoursWeek * autoPct;
+    const hrsSavedMonth = hrsSavedWeek * 4.333;
+    const hrsSavedYear  = hrsSavedWeek * 52;
+    const weeksBack     = hrsSavedYear / 40;
+
+    const moneyGross    = hrsSavedMonth * hourlyRate;
+    const moneyNet      = moneyGross - aiCost;
+    const annualNet     = moneyNet * 12;
+    const roiPct        = aiCost > 0
+      ? Math.round(((moneyNet * 12) / (aiCost * 12)) * 100)
+      : null;
+
+    // Payback period in months
+    let paybackText;
+    if (aiCost <= 0) {
+      paybackText = 'No AI cost — instant payback.';
+    } else if (moneyNet <= 0) {
+      paybackText = 'Net savings negative at current settings.';
+    } else {
+      const paybackMonths = aiCost / moneyGross;
+      if (paybackMonths < 1) {
+        paybackText = 'Payback period: less than 1 month.';
+      } else {
+        paybackText = `Payback period: ${paybackMonths.toFixed(1)} months.`;
+      }
+    }
+
+    // Update DOM
+    document.getElementById('r-hrs-week').textContent  = fmtHrs(hrsSavedWeek);
+    document.getElementById('r-hrs-month').textContent = fmtHrs(Math.round(hrsSavedMonth * 10) / 10);
+    document.getElementById('r-money-gross').textContent = fmtMoney(moneyGross);
+    document.getElementById('r-money-net').textContent   = fmtMoney(moneyNet);
+    document.getElementById('r-annual-roi').textContent  = fmtMoney(annualNet);
+    document.getElementById('r-roi-pct').textContent     = roiPct !== null ? `${roiPct.toLocaleString('en-US')}% ROI` : 'Infinite ROI';
+    document.getElementById('r-payback').textContent     = paybackText;
+    document.getElementById('r-hrs-year').textContent    = `${Math.round(hrsSavedYear)} hours`;
+    document.getElementById('r-weeks-year').textContent  = `${weeksBack.toFixed(1)} weeks`;
+
+    // Color net savings card
+    const netCard = document.getElementById('r-money-net').parentElement;
+    netCard.classList.toggle('positive', moneyNet >= 0);
+  }
+
+  // Slider wiring
+  const hoursSlider = document.getElementById('hours-slider');
+  const autoSlider  = document.getElementById('auto-slider');
+
+  hoursSlider.addEventListener('input', () => {
+    document.getElementById('hours-display').textContent = hoursSlider.value + ' hrs';
+    updateSliderTrack(hoursSlider);
+    calculate();
+  });
+  autoSlider.addEventListener('input', () => {
+    document.getElementById('auto-display').textContent = autoSlider.value + '%';
+    updateSliderTrack(autoSlider);
+    calculate();
+  });
+  document.getElementById('hourly-rate').addEventListener('input', calculate);
+  document.getElementById('ai-cost').addEventListener('input', calculate);
+
+  // Init
+  updateSliderTrack(hoursSlider);
+  updateSliderTrack(autoSlider);
+  calculate();
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

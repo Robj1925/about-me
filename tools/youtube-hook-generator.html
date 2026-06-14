@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Hook Generator — Free AI Tool — Robby J</title>
+  <meta name="description" content="Generate 5 powerful YouTube video hooks with AI. Free tool powered by Gemini." />
+  <meta property="og:title" content="YouTube Hook Generator — Free AI Tool — Robby J" />
+  <meta property="og:description" content="Generate 5 powerful YouTube video hooks with AI. Free tool powered by Gemini." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/youtube-hook-generator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main style="padding-top: 120px; padding-bottom: 80px; min-height: 100vh;">
+  <div class="container">
+    <div style="max-width: 760px; margin: 0 auto;">
+
+      <!-- Page hero -->
+      <div style="text-align: center; margin-bottom: 48px;">
+        <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: var(--text); margin-bottom: 14px;">YouTube Hook Generator</h1>
+        <p style="color: var(--text-muted); font-size: 1.05rem; max-width: 52ch; margin: 0 auto 12px;">Generate 5 powerful hooks for your next YouTube video — instantly, for free.</p>
+        <span style="display: inline-block; background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.35); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em; padding: 4px 12px; border-radius: 99px;">Powered by Gemini AI</span>
+      </div>
+
+      <!-- API key card -->
+      <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 20px;">
+        <div style="margin-bottom: 20px;">
+          <label for="apiKey" style="display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em;">Gemini API Key</label>
+          <input
+            type="password"
+            id="apiKey"
+            placeholder="Enter your Gemini API key"
+            autocomplete="off"
+            style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; transition: border-color 0.2s;"
+            onfocus="this.style.outline='2px solid #06B6D4'; this.style.outlineOffset='2px';"
+            onblur="this.style.outline='none';"
+          />
+          <p style="margin-top: 8px; font-size: 0.85rem; color: #8888AA; font-family: 'Inter', sans-serif;">Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" style="color: #06B6D4; text-decoration: underline;">Get a free key →</a></p>
+        </div>
+      </div>
+
+      <!-- Tool form card -->
+      <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 32px;">
+        <form id="hookForm" novalidate>
+          <div style="margin-bottom: 20px;">
+            <label for="topic" style="display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em;">Video Topic</label>
+            <input
+              type="text"
+              id="topic"
+              placeholder="How to build an AI agent from scratch"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none;"
+              onfocus="this.style.outline='2px solid #06B6D4'; this.style.outlineOffset='2px';"
+              onblur="this.style.outline='none';"
+            />
+          </div>
+
+          <div style="margin-bottom: 20px;">
+            <label for="audience" style="display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em;">Target Audience</label>
+            <input
+              type="text"
+              id="audience"
+              placeholder="Beginner developers"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none;"
+              onfocus="this.style.outline='2px solid #06B6D4'; this.style.outlineOffset='2px';"
+              onblur="this.style.outline='none';"
+            />
+          </div>
+
+          <div style="margin-bottom: 28px;">
+            <label for="style" style="display: block; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em;">Video Style</label>
+            <select
+              id="style"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer; appearance: none; -webkit-appearance: none; background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238888AA' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\"); background-repeat: no-repeat; background-position: right 14px center;"
+              onfocus="this.style.outline='2px solid #06B6D4'; this.style.outlineOffset='2px';"
+              onblur="this.style.outline='none';"
+            >
+              <option value="Tutorial">Tutorial</option>
+              <option value="Story/Vlog">Story/Vlog</option>
+              <option value="News/Update">News/Update</option>
+              <option value="Opinion/Hot Take">Opinion/Hot Take</option>
+              <option value="Listicle">Listicle</option>
+            </select>
+          </div>
+
+          <button
+            type="submit"
+            id="submitBtn"
+            class="btn btn-primary"
+            style="width: 100%; font-size: 1rem; padding: 14px; justify-content: center;"
+          >
+            Generate Hooks
+          </button>
+        </form>
+      </div>
+
+      <!-- Spinner (hidden by default) -->
+      <div id="spinner" style="display: none; text-align: center; padding: 16px 0;">
+        <div style="width: 40px; height: 40px; border: 3px solid rgba(124,58,237,0.3); border-top-color: #7C3AED; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 32px auto;"></div>
+        <p style="color: #8888AA; font-family: 'Inter', sans-serif; font-size: 0.9rem; margin-top: 8px;">Generating hooks...</p>
+      </div>
+
+      <!-- Error (hidden by default) -->
+      <div id="errorBox" style="display: none; color: #EF4444; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 12px 16px; border-radius: 8px; font-family: 'Inter', sans-serif; font-size: 0.95rem; margin-bottom: 24px;"></div>
+
+      <!-- Results (hidden by default) -->
+      <div id="results" style="display: none;">
+        <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 20px;">Your 5 Hooks</h2>
+        <div id="hooksContainer"></div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  // API key — persist to sessionStorage
+  const apiKeyInput = document.getElementById('apiKey');
+  const savedKey = sessionStorage.getItem('geminiApiKey');
+  if (savedKey) apiKeyInput.value = savedKey;
+  apiKeyInput.addEventListener('input', () => {
+    sessionStorage.setItem('geminiApiKey', apiKeyInput.value.trim());
+  });
+
+  // Gemini fetch
+  async function callGemini(apiKey, prompt) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+      }
+    );
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message);
+    return data.candidates[0].content.parts[0].text;
+  }
+
+  // Parse numbered list response into array of hook strings
+  function parseHooks(text) {
+    // Split on lines starting with a number followed by . or )
+    const lines = text.split('\n');
+    const hooks = [];
+    let current = '';
+
+    for (const line of lines) {
+      const match = line.match(/^\s*\d+[\.\)]\s*(.*)/);
+      if (match) {
+        if (current.trim()) hooks.push(current.trim());
+        current = match[1];
+      } else if (current && line.trim()) {
+        current += ' ' + line.trim();
+      }
+    }
+    if (current.trim()) hooks.push(current.trim());
+
+    return hooks.slice(0, 5);
+  }
+
+  // Render hook cards
+  function renderHooks(hooks) {
+    const container = document.getElementById('hooksContainer');
+    container.innerHTML = '';
+
+    hooks.forEach((hook, i) => {
+      const card = document.createElement('div');
+      card.style.cssText = 'background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 16px;';
+
+      const left = document.createElement('div');
+      left.style.cssText = 'display: flex; align-items: flex-start; gap: 14px; flex: 1; min-width: 0;';
+
+      const badge = document.createElement('span');
+      badge.style.cssText = 'background: rgba(124,58,237,0.2); color: #9D5FF0; font-family: \'Space Grotesk\', sans-serif; font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; flex-shrink: 0;';
+      badge.textContent = `#${i + 1}`;
+
+      const hookText = document.createElement('p');
+      hookText.style.cssText = 'color: #F0F0F8; font-family: \'Inter\', sans-serif; font-size: 0.97rem; line-height: 1.6; margin: 0; word-break: break-word;';
+      hookText.textContent = hook;
+
+      left.appendChild(badge);
+      left.appendChild(hookText);
+
+      const copyBtn = document.createElement('button');
+      copyBtn.style.cssText = 'background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); color: #06B6D4; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: \'Space Grotesk\', sans-serif; font-weight: 600; font-size: 0.85rem; white-space: nowrap; transition: all 0.2s; flex-shrink: 0;';
+      copyBtn.textContent = 'Copy';
+      copyBtn.setAttribute('aria-label', `Copy hook ${i + 1}`);
+
+      copyBtn.addEventListener('mouseenter', () => {
+        copyBtn.style.background = 'rgba(6,182,212,0.2)';
+      });
+      copyBtn.addEventListener('mouseleave', () => {
+        if (copyBtn.textContent !== 'Copied!') {
+          copyBtn.style.background = 'rgba(6,182,212,0.1)';
+        }
+      });
+
+      copyBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(hook).then(() => {
+          copyBtn.textContent = 'Copied!';
+          copyBtn.style.background = 'rgba(52,211,153,0.15)';
+          copyBtn.style.borderColor = 'rgba(52,211,153,0.4)';
+          copyBtn.style.color = '#34d399';
+          setTimeout(() => {
+            copyBtn.textContent = 'Copy';
+            copyBtn.style.background = 'rgba(6,182,212,0.1)';
+            copyBtn.style.borderColor = 'rgba(6,182,212,0.3)';
+            copyBtn.style.color = '#06B6D4';
+          }, 2000);
+        });
+      });
+
+      card.appendChild(left);
+      card.appendChild(copyBtn);
+      container.appendChild(card);
+    });
+  }
+
+  // Form submit
+  document.getElementById('hookForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const apiKey = apiKeyInput.value.trim();
+    const topic = document.getElementById('topic').value.trim();
+    const audience = document.getElementById('audience').value.trim();
+    const style = document.getElementById('style').value;
+
+    const errorBox = document.getElementById('errorBox');
+    const spinner = document.getElementById('spinner');
+    const results = document.getElementById('results');
+    const submitBtn = document.getElementById('submitBtn');
+
+    // Reset state
+    errorBox.style.display = 'none';
+    errorBox.textContent = '';
+    results.style.display = 'none';
+
+    // Validate
+    if (!apiKey) {
+      errorBox.textContent = 'Please enter your Gemini API key.';
+      errorBox.style.display = 'block';
+      apiKeyInput.focus();
+      return;
+    }
+    if (!topic) {
+      errorBox.textContent = 'Please enter a video topic.';
+      errorBox.style.display = 'block';
+      document.getElementById('topic').focus();
+      return;
+    }
+    if (!audience) {
+      errorBox.textContent = 'Please enter a target audience.';
+      errorBox.style.display = 'block';
+      document.getElementById('audience').focus();
+      return;
+    }
+
+    // Show spinner, disable button
+    spinner.style.display = 'block';
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.6';
+    submitBtn.style.cursor = 'not-allowed';
+
+    const prompt = `You are an expert YouTube scriptwriter. Generate 5 powerful, high-retention video hooks for a YouTube video with this information: Topic: ${topic}, Target audience: ${audience}, Video style: ${style}. Each hook should be 2-3 sentences max. Use proven hook formulas: curiosity gap, bold claim, surprising stat, relatable problem, or story teaser. Format as a numbered list. Only output the hooks, no extra commentary.`;
+
+    try {
+      const raw = await callGemini(apiKey, prompt);
+      const hooks = parseHooks(raw);
+
+      if (hooks.length === 0) {
+        throw new Error('Could not parse hooks from the response. Please try again.');
+      }
+
+      renderHooks(hooks);
+      results.style.display = 'block';
+      results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (err) {
+      errorBox.textContent = 'Error: ' + (err.message || 'Something went wrong. Please try again.');
+      errorBox.style.display = 'block';
+    } finally {
+      spinner.style.display = 'none';
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = '1';
+      submitBtn.style.cursor = 'pointer';
+    }
+  });
+</script>
+</body>
+</html>

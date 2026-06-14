@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube SEO Auditor — Free Tool — Robby J</title>
+  <meta name="description" content="Instantly audit your YouTube video title and description for SEO. Free tool." />
+  <meta property="og:title" content="YouTube SEO Auditor — Free Tool — Robby J" />
+  <meta property="og:description" content="Instantly audit your YouTube video title and description for SEO. Free tool." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/youtube-seo-auditor.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero {
+      padding: 60px 0 40px;
+      text-align: center;
+    }
+    .tool-hero h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .tool-hero p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 52ch;
+      margin: 0 auto;
+    }
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      max-width: 820px;
+      margin: 0 auto 60px;
+      box-shadow: var(--glow-purple), 0 24px 48px rgba(0,0,0,0.4);
+    }
+    .field-label {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      color: var(--text);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .field-hint {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-left: 8px;
+      font-weight: 400;
+    }
+    .tool-input {
+      width: 100%;
+      background: rgba(10,10,15,0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      padding: 12px 16px;
+      outline: none;
+      transition: var(--transition);
+      box-sizing: border-box;
+    }
+    .tool-input:focus {
+      border-color: var(--cyan);
+      box-shadow: 0 0 0 3px rgba(6,182,212,0.15);
+    }
+    textarea.tool-input {
+      min-height: 140px;
+      resize: vertical;
+    }
+    .field-group {
+      margin-bottom: 22px;
+    }
+    .audit-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      padding: 14px 32px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--glow-purple);
+    }
+    .audit-btn:hover {
+      background: var(--purple-light);
+      transform: translateY(-2px);
+      box-shadow: 0 0 48px rgba(124,58,237,0.5);
+    }
+    .results-section {
+      margin-top: 36px;
+      display: none;
+    }
+    .results-section.visible {
+      display: block;
+    }
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 28px 0;
+    }
+    .overall-score {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .score-ring {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .score-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+    .score-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-family: 'Inter', sans-serif;
+    }
+    .score-green  { color: #34d399; }
+    .score-yellow { color: #fbbf24; }
+    .score-red    { color: #f87171; }
+    .checks-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 16px;
+      background: rgba(10,10,15,0.5);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .badge {
+      flex-shrink: 0;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 99px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 1px;
+    }
+    .badge-pass   { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+    .badge-warn   { background: rgba(251,191,36,0.15);  color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+    .badge-fail   { background: rgba(248,113,113,0.15); color: #f87171; border: 1px solid rgba(248,113,113,0.3); }
+    .check-text strong {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text);
+      margin-bottom: 2px;
+    }
+    .check-text span {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .tips-box {
+      margin-top: 24px;
+      background: rgba(124,58,237,0.08);
+      border: 1px solid rgba(124,58,237,0.25);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+    }
+    .tips-box h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--purple-light);
+      margin-bottom: 12px;
+    }
+    .tips-box ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .tips-box ul li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+    .tips-box ul li:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="container">
+    <div class="tool-hero">
+      <h1>YouTube SEO Auditor</h1>
+      <p>Paste your video title and description to instantly score your SEO and get actionable tips to rank higher.</p>
+    </div>
+
+    <div class="tool-card">
+      <div class="field-group">
+        <label for="yt-title" class="field-label">Video Title <span class="field-hint">e.g. "How I Built an AI Bot in 10 Minutes"</span></label>
+        <input
+          type="text"
+          id="yt-title"
+          class="tool-input"
+          placeholder="Enter your YouTube video title..."
+          maxlength="300"
+          aria-label="Video title"
+        />
+      </div>
+
+      <div class="field-group">
+        <label for="yt-desc" class="field-label">Video Description <span class="field-hint">paste the full description</span></label>
+        <textarea
+          id="yt-desc"
+          class="tool-input"
+          placeholder="Paste your full video description here..."
+          aria-label="Video description"
+        ></textarea>
+      </div>
+
+      <button class="audit-btn" id="audit-btn" aria-label="Run SEO audit">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        Audit Now
+      </button>
+
+      <!-- Results -->
+      <div class="results-section" id="results-section" aria-live="polite">
+        <hr class="section-divider" />
+
+        <div class="overall-score">
+          <div class="score-ring">
+            <span class="score-number" id="overall-score-num">—</span>
+            <span class="score-label">Overall SEO Score / 100</span>
+          </div>
+        </div>
+
+        <div class="checks-list" id="checks-list">
+          <!-- populated by JS -->
+        </div>
+
+        <div class="tips-box" id="tips-box">
+          <h3>Actionable Tips</h3>
+          <ul id="tips-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const STOP_WORDS = new Set(['a','an','the','and','or','but','in','on','at','to','for','of','with','by','is','it','this','that','was','are','as','be','has','had','have','do','did','will','would','could','should','may','might','from','not','no','so','if','then','than','about','up','out','into','over','after','before','just','also','can','when','what','who','which','how','why','where','any','all','more','my','your','his','her','their','our']);
+
+  const POWER_WORDS = ['how', 'why', 'best', 'free', 'ultimate', 'top', 'easy', 'simple', 'fast', 'quick', 'complete', 'full', 'guide', 'tutorial', 'secret', 'proven', 'new', 'tips', 'tricks', 'mistakes', 'avoid', 'never', 'always'];
+
+  function wordCount(text) {
+    return text.trim().split(/\s+/).filter(w => w.length > 0).length;
+  }
+
+  function runChecks(title, desc) {
+    const tLower  = title.toLowerCase();
+    const dLower  = desc.toLowerCase();
+    const tLen    = title.trim().length;
+    const dWords  = wordCount(desc);
+    const firstWord = title.trim().split(/\s+/)[0] || '';
+    const firstWordClean = firstWord.replace(/[^a-zA-Z]/g, '').toLowerCase();
+
+    const checks = [];
+
+    // 1. Title length
+    const titleLenPass = tLen >= 50 && tLen <= 70;
+    const titleLenWarn = tLen > 0 && (tLen < 50 || tLen > 70);
+    checks.push({
+      label: 'Title length',
+      status: titleLenPass ? 'pass' : (tLen === 0 ? 'fail' : 'warn'),
+      detail: tLen === 0
+        ? 'No title entered.'
+        : `${tLen} characters. Ideal range is 50–70 chars.`,
+      tip: !titleLenPass && tLen > 0
+        ? (tLen < 50 ? 'Expand your title to at least 50 characters to improve visibility in search results.' : 'Trim your title to 70 characters or fewer — longer titles get cut off in search results.')
+        : null,
+      weight: 20
+    });
+
+    // 2. Title starts with keyword
+    const isKeywordStart = firstWord.length > 0 && /^[A-Z]/.test(firstWord) && !STOP_WORDS.has(firstWordClean);
+    checks.push({
+      label: 'Title starts with a keyword',
+      status: isKeywordStart ? 'pass' : 'warn',
+      detail: isKeywordStart
+        ? `"${firstWord}" looks like a strong opener.`
+        : 'Your title should start with a capitalized keyword, not a stop word (a, the, and, etc.).',
+      tip: !isKeywordStart
+        ? 'Front-load your main keyword. YouTube and Google weight words at the beginning of your title more heavily.'
+        : null,
+      weight: 15
+    });
+
+    // 3. Description length
+    const descPass = dWords >= 200;
+    checks.push({
+      label: 'Description length',
+      status: descPass ? 'pass' : (dWords >= 80 ? 'warn' : 'fail'),
+      detail: `${dWords} words. Ideal is 200+ words.`,
+      tip: !descPass
+        ? 'Write a longer description (200+ words). Include your keywords naturally and summarize what viewers will learn.'
+        : null,
+      weight: 20
+    });
+
+    // 4. Timestamps
+    const hasTimestamps = /\d+:\d\d/.test(desc);
+    checks.push({
+      label: 'Has timestamps',
+      status: hasTimestamps ? 'pass' : 'warn',
+      detail: hasTimestamps
+        ? 'Timestamps found — great for engagement and chapters.'
+        : 'No timestamps detected (pattern like 0:00).',
+      tip: !hasTimestamps
+        ? 'Add chapter timestamps (e.g. 0:00 Intro, 1:30 Main Topic). They improve UX and can help your video rank for specific moments.'
+        : null,
+      weight: 10
+    });
+
+    // 5. Call to action
+    const hasCTA = ['subscribe', 'like', 'comment'].some(w => dLower.includes(w));
+    checks.push({
+      label: 'Call to action in description',
+      status: hasCTA ? 'pass' : 'warn',
+      detail: hasCTA
+        ? 'Found a call to action — good for engagement signals.'
+        : 'No "subscribe", "like", or "comment" found in description.',
+      tip: !hasCTA
+        ? 'Add a call to action like "Subscribe for more AI content" or "Drop a comment below with your question."'
+        : null,
+      weight: 10
+    });
+
+    // 6. Links
+    const hasLinks = /https?:\/\//.test(desc);
+    checks.push({
+      label: 'Links in description',
+      status: hasLinks ? 'pass' : 'warn',
+      detail: hasLinks
+        ? 'Links found — drives traffic and signals authority.'
+        : 'No links found in description.',
+      tip: !hasLinks
+        ? 'Include at least one link (your website, a related video, or a free resource). It improves description richness.'
+        : null,
+      weight: 10
+    });
+
+    // 7. Numbers or power words in title
+    const hasNumbers   = /\d/.test(title);
+    const hasPowerWord = POWER_WORDS.some(w => tLower.includes(w));
+    const hasPower     = hasNumbers || hasPowerWord;
+    checks.push({
+      label: 'Title has numbers or power words',
+      status: hasPower ? 'pass' : 'warn',
+      detail: hasPower
+        ? (hasNumbers ? 'Title contains a number — great for CTR.' : `Power word detected — strong click signals.`)
+        : 'No numbers or power words found.',
+      tip: !hasPower
+        ? 'Add a number ("5 Ways", "10 Mistakes") or a power word ("How", "Best", "Free", "Ultimate") to boost click-through rate.'
+        : null,
+      weight: 15
+    });
+
+    return checks;
+  }
+
+  function scoreColor(score) {
+    if (score >= 75) return 'score-green';
+    if (score >= 45) return 'score-yellow';
+    return 'score-red';
+  }
+
+  function badgeClass(status) {
+    if (status === 'pass') return 'badge-pass';
+    if (status === 'warn') return 'badge-warn';
+    return 'badge-fail';
+  }
+
+  document.getElementById('audit-btn').addEventListener('click', () => {
+    const title = document.getElementById('yt-title').value;
+    const desc  = document.getElementById('yt-desc').value;
+
+    if (!title.trim() && !desc.trim()) {
+      alert('Please enter a title or description to audit.');
+      return;
+    }
+
+    const checks = runChecks(title, desc);
+
+    // Calculate overall score (weighted)
+    let totalWeight = 0, earnedWeight = 0;
+    checks.forEach(c => {
+      totalWeight += c.weight;
+      if (c.status === 'pass') earnedWeight += c.weight;
+      else if (c.status === 'warn') earnedWeight += c.weight * 0.5;
+    });
+    const overallScore = Math.round((earnedWeight / totalWeight) * 100);
+
+    // Render score
+    const scoreEl = document.getElementById('overall-score-num');
+    scoreEl.textContent = overallScore;
+    scoreEl.className = 'score-number ' + scoreColor(overallScore);
+
+    // Render checks
+    const list = document.getElementById('checks-list');
+    list.innerHTML = '';
+    checks.forEach(c => {
+      const item = document.createElement('div');
+      item.className = 'check-item';
+      item.innerHTML = `
+        <span class="badge ${badgeClass(c.status)}">${c.status}</span>
+        <div class="check-text">
+          <strong>${c.label}</strong>
+          <span>${c.detail}</span>
+        </div>
+      `;
+      list.appendChild(item);
+    });
+
+    // Render tips (from failed/warned checks, max 3)
+    const tips = checks
+      .filter(c => c.tip)
+      .slice(0, 3)
+      .map(c => c.tip);
+
+    const tipsList = document.getElementById('tips-list');
+    tipsList.innerHTML = '';
+    if (tips.length === 0) {
+      tipsList.innerHTML = '<li>Looking great! No major issues found. Keep creating.</li>';
+    } else {
+      tips.forEach(tip => {
+        const li = document.createElement('li');
+        li.textContent = tip;
+        tipsList.appendChild(li);
+      });
+    }
+
+    // Show results
+    const resultsEl = document.getElementById('results-section');
+    resultsEl.classList.add('visible');
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  });
+
+  // Run on Enter in title field
+  document.getElementById('yt-title').addEventListener('keydown', e => {
+    if (e.key === 'Enter') document.getElementById('audit-btn').click();
+  });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

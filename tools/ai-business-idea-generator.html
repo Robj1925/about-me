@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Business Idea Generator — Free Tool — Robby J</title>
+  <meta name="description" content="Generate 5 personalized AI business ideas based on your skills and budget. Free tool." />
+  <meta property="og:title" content="AI Business Idea Generator — Free Tool — Robby J" />
+  <meta property="og:description" content="Generate 5 personalized AI business ideas based on your skills and budget. Free tool." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/ai-business-idea-generator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main style="padding-top: 120px; padding-bottom: 80px; min-height: 100vh;">
+  <div style="max-width: 760px; margin: 0 auto; padding: 0 24px;">
+
+    <!-- Hero -->
+    <div style="text-align: center; margin-bottom: 48px;">
+      <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: #F0F0F8; margin-bottom: 14px;">AI Business Idea Generator</h1>
+      <p style="color: #8888AA; font-size: 1.05rem; max-width: 54ch; margin: 0 auto 12px;">Get 5 personalized, actionable AI business ideas based on your skills, budget, and goals.</p>
+      <span style="display: inline-block; background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.35); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em; padding: 4px 12px; border-radius: 99px;">Powered by Gemini AI</span>
+    </div>
+
+    <!-- API Key Card -->
+    <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px;">
+      <label for="apiKey" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Gemini API Key</label>
+      <input
+        type="password"
+        id="apiKey"
+        placeholder="Enter your Gemini API key"
+        style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none;"
+      />
+      <p style="margin-top: 8px; font-size: 0.85rem; color: #8888AA;">
+        Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: #06B6D4;">Get a free key →</a>
+      </p>
+    </div>
+
+    <!-- Form Card -->
+    <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px;">
+
+      <!-- Skills -->
+      <div style="margin-bottom: 20px;">
+        <label for="skills" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Your Skills / Background</label>
+        <textarea
+          id="skills"
+          rows="3"
+          placeholder="Software developer with 5 years experience, good at Python and automation"
+          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; resize: vertical; outline: none;"
+        ></textarea>
+      </div>
+
+      <!-- Budget -->
+      <div style="margin-bottom: 20px;">
+        <label for="budget" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Budget to Start</label>
+        <select
+          id="budget"
+          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
+        >
+          <option value="$0 (Bootstrap)">$0 (Bootstrap)</option>
+          <option value="Under $500">Under $500</option>
+          <option value="$500-$2000">$500-$2000</option>
+          <option value="$2000+">$2000+</option>
+        </select>
+      </div>
+
+      <!-- Time -->
+      <div style="margin-bottom: 20px;">
+        <label for="time" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Time Available Per Week</label>
+        <select
+          id="time"
+          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
+        >
+          <option value="1-5 hours per week">1-5 hrs</option>
+          <option value="5-10 hours per week">5-10 hrs</option>
+          <option value="10-20 hours per week">10-20 hrs</option>
+          <option value="Full-time">Full-time</option>
+        </select>
+      </div>
+
+      <!-- Income Goal -->
+      <div style="margin-bottom: 20px;">
+        <label for="income" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Target Income Goal</label>
+        <select
+          id="income"
+          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
+        >
+          <option value="Side income $1-2k/month">Side income $1-2k/mo</option>
+          <option value="Part-time $3-5k/month">Part-time $3-5k/mo</option>
+          <option value="Full-time $10k+/month">Full-time $10k+/mo</option>
+        </select>
+      </div>
+
+      <!-- Industry Focus (optional) -->
+      <div style="margin-bottom: 28px;">
+        <label for="industry" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Industry Focus <span style="text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem; color: #555577;">(optional)</span></label>
+        <input
+          type="text"
+          id="industry"
+          placeholder="E-commerce, healthcare, content creation..."
+          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none;"
+        />
+      </div>
+
+      <!-- Submit -->
+      <button
+        id="generateBtn"
+        onclick="handleGenerate()"
+        class="btn btn-primary"
+        style="width: 100%; font-size: 1rem; padding: 14px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; cursor: pointer;"
+      >
+        Generate Business Ideas
+      </button>
+    </div>
+
+    <!-- Spinner -->
+    <div id="spinner" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid rgba(124,58,237,0.3); border-top-color: #7C3AED; animation: spin 0.8s linear infinite; margin: 32px auto; display: none;"></div>
+
+    <!-- Error -->
+    <div id="errorBox" style="color: #EF4444; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 12px 16px; border-radius: 8px; display: none; margin-bottom: 16px;"></div>
+
+    <!-- Results -->
+    <div id="results"></div>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Nav scroll shadow ──────────────────────────────────────────────────────
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (nav) {
+      nav.style.boxShadow = window.scrollY > 10
+        ? '0 2px 20px rgba(0,0,0,0.4)'
+        : '';
+    }
+  });
+
+  // ── Restore saved API key ──────────────────────────────────────────────────
+  const savedKey = sessionStorage.getItem('geminiApiKey');
+  if (savedKey) document.getElementById('apiKey').value = savedKey;
+
+  // ── Gemini fetch ───────────────────────────────────────────────────────────
+  async function callGemini(apiKey, prompt) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+      }
+    );
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message);
+    return data.candidates[0].content.parts[0].text;
+  }
+
+  // ── Extract a field value from a block of text ─────────────────────────────
+  function extractField(text, labels) {
+    for (const label of labels) {
+      const regex = new RegExp(label + '[:\\s]+([^\\n]+(?:\\n(?![\\d]+\\.|[A-Z][^:]+:)[^\\n]+)*)', 'i');
+      const match = text.match(regex);
+      if (match) return match[1].trim();
+    }
+    return '';
+  }
+
+  // ── Parse the raw Gemini text into 5 idea objects ─────────────────────────
+  function parseIdeas(raw) {
+    // Split on numbered idea headers like "1.", "2.", "**1.", "1)" etc.
+    const blocks = raw.split(/\n(?=\*{0,2}\d+[\.\)])/);
+    const ideas = [];
+
+    for (const block of blocks) {
+      if (!block.trim()) continue;
+      const lines = block.trim().split('\n').map(l => l.trim()).filter(Boolean);
+      if (!lines.length) continue;
+
+      // Business name: look for "Business Name:" field first, else first non-number line
+      let name = extractField(block, ['Business Name', 'Name']);
+      if (!name) {
+        // Try to find a bolded or titled first line after stripping the number prefix
+        const firstLine = lines[0].replace(/^\*{0,2}\d+[\.\)]\s*\*{0,2}/, '').replace(/\*+/g, '').trim();
+        name = firstLine || 'Untitled Idea';
+      }
+
+      const description = extractField(block, ['One-sentence description', 'Description', 'Overview', 'Summary']);
+      const targetCustomer = extractField(block, ['Target [Cc]ustomer', 'Target Market', 'Customer']);
+      const aiUsage = extractField(block, ['How AI is used', 'AI [Uu]sage', 'How AI', 'AI Application']);
+      const firstStep = extractField(block, ['First step to start this week', 'First [Ss]tep', 'Getting [Ss]tarted', 'Action [Ss]tep']);
+      const revenue = extractField(block, ['Estimated monthly revenue potential', 'Revenue [Pp]otential', 'Monthly [Rr]evenue', 'Revenue']);
+
+      ideas.push({ name, description, targetCustomer, aiUsage, firstStep, revenue });
+      if (ideas.length === 5) break;
+    }
+
+    return ideas;
+  }
+
+  // ── Render idea cards ──────────────────────────────────────────────────────
+  function renderIdeas(ideas) {
+    const container = document.getElementById('results');
+    container.innerHTML = '';
+
+    ideas.forEach((idea, i) => {
+      const cardId = `idea-card-${i}`;
+      const detailsId = `idea-details-${i}`;
+      const btnId = `idea-btn-${i}`;
+
+      const detailRow = (label, value) => value ? `
+        <div style="margin-bottom: 12px;">
+          <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; color: #06B6D4; text-transform: uppercase; letter-spacing: 0.05em;">${label}</div>
+          <div style="color: #F0F0F8; font-size: 0.95rem; margin-top: 3px;">${value}</div>
+        </div>
+      ` : '';
+
+      const card = document.createElement('div');
+      card.id = cardId;
+      card.style.cssText = 'background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px;';
+
+      card.innerHTML = `
+        <div>
+          <span style="background: rgba(124,58,237,0.2); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; margin-right: 12px; display: inline-block;">Idea ${i + 1}</span>
+          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; color: #F0F0F8; display: inline;">${idea.name}</span>
+        </div>
+        ${idea.description ? `<p style="color: #8888AA; margin-top: 8px; font-size: 0.95rem; margin-bottom: 0;">${idea.description}</p>` : ''}
+        <button
+          id="${btnId}"
+          onclick="toggleDetails('${detailsId}', '${btnId}')"
+          style="background: transparent; border: 1px solid rgba(124,58,237,0.3); color: #9D5FF0; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.85rem; margin-top: 12px; transition: all 0.2s;"
+        >See Details ▾</button>
+        <div id="${detailsId}" style="display: none; margin-top: 20px; border-top: 1px solid rgba(124,58,237,0.15); padding-top: 20px;">
+          ${detailRow('Target Customer', idea.targetCustomer)}
+          ${detailRow('How AI Is Used', idea.aiUsage)}
+          ${detailRow('First Step to Start This Week', idea.firstStep)}
+          ${detailRow('Estimated Monthly Revenue Potential', idea.revenue)}
+        </div>
+      `;
+
+      container.appendChild(card);
+    });
+  }
+
+  // ── Toggle expand/collapse ─────────────────────────────────────────────────
+  function toggleDetails(detailsId, btnId) {
+    const details = document.getElementById(detailsId);
+    const btn = document.getElementById(btnId);
+    if (!details || !btn) return;
+
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+      btn.textContent = 'Hide Details ▴';
+    } else {
+      details.style.display = 'none';
+      btn.textContent = 'See Details ▾';
+    }
+  }
+
+  // ── Main generate handler ──────────────────────────────────────────────────
+  async function handleGenerate() {
+    const apiKey = document.getElementById('apiKey').value.trim();
+    const skills = document.getElementById('skills').value.trim();
+    const budget = document.getElementById('budget').value;
+    const time = document.getElementById('time').value;
+    const income = document.getElementById('income').value;
+    const industry = document.getElementById('industry').value.trim() || 'any';
+
+    const spinner = document.getElementById('spinner');
+    const errorBox = document.getElementById('errorBox');
+    const generateBtn = document.getElementById('generateBtn');
+    const results = document.getElementById('results');
+
+    // Clear previous state
+    errorBox.style.display = 'none';
+    errorBox.textContent = '';
+    results.innerHTML = '';
+
+    if (!apiKey) {
+      errorBox.textContent = 'Please enter your Gemini API key.';
+      errorBox.style.display = 'block';
+      return;
+    }
+    if (!skills) {
+      errorBox.textContent = 'Please describe your skills or background.';
+      errorBox.style.display = 'block';
+      return;
+    }
+
+    // Save API key for the session
+    sessionStorage.setItem('geminiApiKey', apiKey);
+
+    // Show loading state
+    spinner.style.display = 'block';
+    generateBtn.disabled = true;
+    generateBtn.textContent = 'Generating…';
+
+    const prompt = `You are a startup advisor specializing in AI businesses. Generate 5 specific, actionable AI business ideas for someone with: Skills: ${skills}, Budget: ${budget}, Time: ${time}, Income goal: ${income}, Industry: ${industry}. For each idea provide: Business name, One-sentence description, Target customer, How AI is used, First step to start this week, Estimated monthly revenue potential. Format clearly with numbered ideas.`;
+
+    try {
+      const raw = await callGemini(apiKey, prompt);
+      const ideas = parseIdeas(raw);
+
+      if (!ideas.length) {
+        throw new Error('Could not parse ideas from response. Please try again.');
+      }
+
+      renderIdeas(ideas);
+    } catch (err) {
+      errorBox.textContent = 'Error: ' + (err.message || 'Something went wrong. Please try again.');
+      errorBox.style.display = 'block';
+    } finally {
+      spinner.style.display = 'none';
+      generateBtn.disabled = false;
+      generateBtn.textContent = 'Generate Business Ideas';
+    }
+  }
+
+  // Allow Enter key in inputs to trigger generation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') {
+      handleGenerate();
+    }
+  });
+</script>
+
+</body>
+</html>

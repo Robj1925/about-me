@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Agent Blueprint Generator — Free Tool — Robby J</title>
+  <meta name="description" content="Generate a ready-to-run Python AI agent starter script in seconds. Free tool." />
+  <meta property="og:title" content="AI Agent Blueprint Generator — Free Tool — Robby J" />
+  <meta property="og:description" content="Generate a ready-to-run Python AI agent starter script in seconds. Free tool." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/ai-agent-blueprint-generator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    /* ===== TOOL PAGE LAYOUT ===== */
+    .tool-main {
+      padding-top: 120px;
+      padding-bottom: 96px;
+      min-height: 100vh;
+    }
+    .tool-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+    .tool-header .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(124,58,237,0.15);
+      border: 1px solid rgba(124,58,237,0.35);
+      color: #9D5FF0;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 20px;
+    }
+    .tool-header h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #F0F0F8 0%, #9D5FF0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tool-header p {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    /* ===== FORM CARD ===== */
+    .tool-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      margin-bottom: 40px;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-group.full-width {
+      grid-column: 1 / -1;
+    }
+    .form-group label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.02em;
+    }
+    .form-group label span {
+      color: var(--text-muted);
+      font-weight: 400;
+      margin-left: 4px;
+    }
+    .form-control {
+      background: rgba(10,10,15,0.6);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px 16px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      appearance: none;
+      -webkit-appearance: none;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--purple);
+      box-shadow: 0 0 0 3px rgba(124,58,237,0.15);
+    }
+    .form-control::placeholder {
+      color: var(--text-muted);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 100px;
+      line-height: 1.6;
+    }
+    select.form-control {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238888AA' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    /* ===== CHECKBOXES ===== */
+    .checkbox-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      padding: 8px 14px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: rgba(10,10,15,0.4);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      transition: var(--transition);
+      user-select: none;
+    }
+    .checkbox-label:hover {
+      border-color: var(--purple);
+      color: var(--text);
+    }
+    .checkbox-label input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: var(--purple);
+      cursor: pointer;
+    }
+    .checkbox-label:has(input:checked) {
+      border-color: var(--purple);
+      background: rgba(124,58,237,0.1);
+      color: var(--text);
+    }
+
+    /* ===== GENERATE BUTTON ===== */
+    .generate-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--purple) 0%, #5B21B6 100%);
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 14px 36px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--glow-purple);
+      margin-top: 8px;
+    }
+    .generate-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 48px rgba(124,58,237,0.55);
+    }
+    .generate-btn:active {
+      transform: translateY(0);
+    }
+
+    /* ===== OUTPUT SECTION ===== */
+    .output-section {
+      display: none;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .output-section.visible {
+      display: flex;
+    }
+    .output-block {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .output-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+      background: rgba(124,58,237,0.06);
+    }
+    .output-block-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .output-block-title .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--purple-light);
+    }
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(124,58,237,0.12);
+      border: 1px solid rgba(124,58,237,0.3);
+      color: var(--purple-light);
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .copy-btn:hover {
+      background: rgba(124,58,237,0.22);
+      border-color: var(--purple);
+    }
+    .copy-btn.copied {
+      background: rgba(6,182,212,0.12);
+      border-color: rgba(6,182,212,0.4);
+      color: var(--cyan);
+    }
+    .output-code {
+      display: block;
+      padding: 28px;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      line-height: 1.75;
+      color: #C9D1D9;
+      white-space: pre;
+      overflow-x: auto;
+      background: #0D1117;
+    }
+
+    /* ===== SECTION DIVIDER ===== */
+    .section-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ===== INFO BOX ===== */
+    .info-box {
+      background: rgba(6,182,212,0.06);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: var(--radius);
+      padding: 20px 24px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-top: 16px;
+    }
+    .info-box strong {
+      color: var(--cyan);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 640px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-group.full-width {
+        grid-column: 1;
+      }
+      .tool-card {
+        padding: 24px 20px;
+      }
+      .output-code {
+        padding: 20px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main class="tool-main">
+  <div class="container" style="max-width: 860px;">
+
+    <!-- Header -->
+    <header class="tool-header">
+      <div class="badge">⚡ Free Tool</div>
+      <h1>AI Agent Blueprint Generator</h1>
+      <p>Fill in the details below and get a ready-to-run Python starter script for your AI agent — including the system prompt and all the boilerplate — in seconds.</p>
+    </header>
+
+    <!-- Form Card -->
+    <div class="tool-card">
+      <p class="section-label">Configure Your Agent</p>
+      <form id="blueprintForm" novalidate>
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="agentName">Agent Name</label>
+            <input
+              type="text"
+              id="agentName"
+              class="form-control"
+              placeholder="My Research Agent"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="platform">Platform</label>
+            <select id="platform" class="form-control">
+              <option value="cli">CLI</option>
+              <option value="slack">Slack Bot</option>
+              <option value="discord">Discord Bot</option>
+              <option value="telegram">Telegram Bot</option>
+              <option value="webapi">Web API</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="agentGoal">Agent Goal</label>
+            <textarea
+              id="agentGoal"
+              class="form-control"
+              placeholder="Search the web for the latest AI news and summarize it into bullet points"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="aiModel">AI Model</label>
+            <select id="aiModel" class="form-control">
+              <option value="gemini">Gemini Flash</option>
+              <option value="gpt4o">GPT-4o</option>
+              <option value="claude">Claude Haiku</option>
+              <option value="o1">OpenAI o1</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label>Tools / Capabilities <span>(select all that apply)</span></label>
+            <div class="checkbox-grid">
+              <label class="checkbox-label">
+                <input type="checkbox" name="tools" value="web_search" /> Web Search
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="tools" value="file_rw" /> File Read/Write
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="tools" value="send_email" /> Send Email
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="tools" value="db_query" /> Database Query
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="tools" value="api_calls" /> API Calls
+              </label>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top:28px;">
+          <button type="button" class="generate-btn" id="generateBtn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Generate Blueprint
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Output Section -->
+    <div class="output-section" id="outputSection">
+
+      <!-- System Prompt Block -->
+      <div class="output-block">
+        <div class="output-block-header">
+          <div class="output-block-title"><span class="dot"></span> System Prompt</div>
+          <button class="copy-btn" id="copyPromptBtn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy
+          </button>
+        </div>
+        <code class="output-code" id="systemPromptOutput"></code>
+      </div>
+
+      <!-- Python Starter Code Block -->
+      <div class="output-block">
+        <div class="output-block-header">
+          <div class="output-block-title"><span class="dot" style="background:var(--cyan)"></span> Python Starter Code</div>
+          <button class="copy-btn" id="copyCodeBtn">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy
+          </button>
+        </div>
+        <code class="output-code" id="pythonCodeOutput"></code>
+      </div>
+
+      <div class="info-box">
+        <strong>Next steps:</strong> Install dependencies with <code>pip install</code>, add your API key as an environment variable, then run <code>python agent.py</code>. Watch the <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" style="color:var(--cyan)">YouTube channel</a> for deep-dives on building production AI agents.
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ===== NAV SHADOW =====
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  // ===== MODEL CONFIG =====
+  const modelConfig = {
+    gemini: {
+      label: 'Gemini Flash',
+      package: 'google-generativeai',
+      imports: `import google.generativeai as genai\nimport os`,
+      clientSetup: `genai.configure(api_key=os.environ["GEMINI_API_KEY"])\nmodel = genai.GenerativeModel(\n    model_name="gemini-1.5-flash",\n    system_instruction=SYSTEM_PROMPT\n)`,
+      callFn: `def call_model(messages: list[dict]) -> str:\n    history = [\n        {"role": m["role"], "parts": [m["content"]]} for m in messages[:-1]\n    ]\n    chat = model.start_chat(history=history)\n    response = chat.send_message(messages[-1]["content"])\n    return response.text`,
+    },
+    gpt4o: {
+      label: 'GPT-4o',
+      package: 'openai',
+      imports: `from openai import OpenAI\nimport os`,
+      clientSetup: `client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])`,
+      callFn: `def call_model(messages: list[dict]) -> str:\n    response = client.chat.completions.create(\n        model="gpt-4o",\n        messages=[{"role": "system", "content": SYSTEM_PROMPT}] + messages,\n    )\n    return response.choices[0].message.content`,
+    },
+    claude: {
+      label: 'Claude Haiku',
+      package: 'anthropic',
+      imports: `import anthropic\nimport os`,
+      clientSetup: `client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])`,
+      callFn: `def call_model(messages: list[dict]) -> str:\n    response = client.messages.create(\n        model="claude-haiku-4-5",\n        max_tokens=2048,\n        system=SYSTEM_PROMPT,\n        messages=messages,\n    )\n    return response.content[0].text`,
+    },
+    o1: {
+      label: 'OpenAI o1',
+      package: 'openai',
+      imports: `from openai import OpenAI\nimport os`,
+      clientSetup: `client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])`,
+      callFn: `def call_model(messages: list[dict]) -> str:\n    # o1 uses a different message format — system prompt is injected as user turn\n    all_messages = [{"role": "user", "content": "System context:\\n" + SYSTEM_PROMPT}] + messages\n    response = client.chat.completions.create(\n        model="o1-mini",\n        messages=all_messages,\n    )\n    return response.choices[0].message.content`,
+    },
+  };
+
+  const toolConfig = {
+    web_search: {
+      label: 'Web Search',
+      fn: `def web_search(query: str) -> str:\n    """Search the web for the given query. Returns a string of results.\n    TODO: Integrate with SerpAPI, Tavily, or DuckDuckGo.\n    \"\"\"\n    # pip install tavily-python\n    # from tavily import TavilyClient\n    # client = TavilyClient(api_key=os.environ["TAVILY_API_KEY"])\n    # return client.search(query=query)["results"][0]["content"]\n    raise NotImplementedError("Connect a search API here")`,
+    },
+    file_rw: {
+      label: 'File Read/Write',
+      fn: `def read_file(path: str) -> str:\n    """Read a file from the local filesystem.\"\"\"\n    with open(path, "r", encoding="utf-8") as f:\n        return f.read()\n\ndef write_file(path: str, content: str) -> None:\n    """Write content to a file on the local filesystem.\"\"\"\n    with open(path, "w", encoding="utf-8") as f:\n        f.write(content)\n    print(f"[file_rw] Wrote {len(content)} chars to {path}")`,
+    },
+    send_email: {
+      label: 'Send Email',
+      fn: `def send_email(to: str, subject: str, body: str) -> None:\n    """Send an email via SMTP. Configure SMTP_HOST, SMTP_USER, SMTP_PASS env vars.\n    TODO: Replace with SendGrid, Resend, or your preferred provider.\n    \"\"\"\n    import smtplib\n    from email.mime.text import MIMEText\n    msg = MIMEText(body)\n    msg["Subject"] = subject\n    msg["From"] = os.environ["SMTP_USER"]\n    msg["To"] = to\n    with smtplib.SMTP_SSL(os.environ["SMTP_HOST"], 465) as smtp:\n        smtp.login(os.environ["SMTP_USER"], os.environ["SMTP_PASS"])\n        smtp.send_message(msg)\n    print(f"[send_email] Email sent to {to}")`,
+    },
+    db_query: {
+      label: 'Database Query',
+      fn: `def db_query(sql: str, params: tuple = ()) -> list[dict]:\n    """Run a SQL query against a SQLite database (swap for Postgres/MySQL as needed).\n    TODO: Update DB_PATH or swap sqlite3 for psycopg2 / SQLAlchemy.\n    \"\"\"\n    import sqlite3\n    DB_PATH = os.environ.get("DB_PATH", "agent.db")\n    con = sqlite3.connect(DB_PATH)\n    con.row_factory = sqlite3.Row\n    cur = con.execute(sql, params)\n    rows = [dict(row) for row in cur.fetchall()]\n    con.close()\n    return rows`,
+    },
+    api_calls: {
+      label: 'API Calls',
+      fn: `def api_call(url: str, method: str = "GET", payload: dict | None = None, headers: dict | None = None) -> dict:\n    """Make an HTTP request to an external API.\n    TODO: Add authentication headers as needed.\n    \"\"\"\n    import urllib.request, json\n    req = urllib.request.Request(\n        url,\n        data=json.dumps(payload).encode() if payload else None,\n        headers={**(headers or {}), "Content-Type": "application/json"},\n        method=method.upper(),\n    )\n    with urllib.request.urlopen(req) as res:\n        return json.loads(res.read().decode())`,
+    },
+  };
+
+  const platformLabels = {
+    cli: 'CLI',
+    slack: 'Slack Bot',
+    discord: 'Discord Bot',
+    telegram: 'Telegram Bot',
+    webapi: 'Web API',
+  };
+
+  // ===== GENERATE =====
+  document.getElementById('generateBtn').addEventListener('click', () => {
+    const agentName = document.getElementById('agentName').value.trim() || 'My AI Agent';
+    const agentGoal = document.getElementById('agentGoal').value.trim() || 'Help users accomplish their tasks efficiently.';
+    const platform = document.getElementById('platform').value;
+    const aiModel = document.getElementById('aiModel').value;
+    const selectedTools = [...document.querySelectorAll('input[name="tools"]:checked')].map(cb => cb.value);
+
+    const mc = modelConfig[aiModel];
+    const platformLabel = platformLabels[platform];
+
+    // ===== BUILD SYSTEM PROMPT =====
+    const toolLines = selectedTools.length
+      ? selectedTools.map(t => `- ${toolConfig[t].label}`).join('\n')
+      : '- (no specific tools selected — respond conversationally)';
+
+    const systemPrompt =
+`You are ${agentName}, an AI agent deployed as a ${platformLabel}.
+
+## Your Goal
+${agentGoal}
+
+## Available Tools
+${toolLines}
+
+## Behavior Guidelines
+- Always think step-by-step before taking action.
+- When you use a tool, explain what you are doing and why.
+- If you are unsure, ask a clarifying question before proceeding.
+- Keep responses concise and actionable.
+- Never fabricate facts. If you don't know something, say so.
+- When the task is complete, summarize what was accomplished.
+
+## Output Format
+- Use markdown formatting where appropriate.
+- Bullet points for lists, code blocks for code snippets.
+- Always end your response with a clear "Next step:" if further action is needed.`;
+
+    // ===== BUILD TOOL FUNCTIONS =====
+    const toolFunctions = selectedTools.length
+      ? selectedTools.map(t => toolConfig[t].fn).join('\n\n\n')
+      : '# No tools selected — add tool functions here as needed';
+
+    // ===== BUILD PLATFORM-SPECIFIC LOOP =====
+    const platformLoop = buildPlatformLoop(platform, agentName);
+
+    // ===== BUILD FULL PYTHON SCRIPT =====
+    const safeAgentName = agentName.replace(/[^a-zA-Z0-9_]/g, '_');
+    const pythonCode =
+`# ${agentName} — AI Agent Starter Script
+# Generated by automatewithrobby.fyi/tools/ai-agent-blueprint-generator.html
+#
+# Install dependencies:
+#   pip install ${mc.package}
+#
+# Set environment variable(s):
+#   ${getEnvVarHint(aiModel)}
+
+${mc.imports}
+
+# ---------------------------------------------------------------------------
+# SYSTEM PROMPT
+# ---------------------------------------------------------------------------
+SYSTEM_PROMPT = """${systemPrompt}"""
+
+# ---------------------------------------------------------------------------
+# MODEL CLIENT
+# ---------------------------------------------------------------------------
+${mc.clientSetup}
+
+# ---------------------------------------------------------------------------
+# TOOL FUNCTIONS
+# ---------------------------------------------------------------------------
+${toolFunctions}
+
+# ---------------------------------------------------------------------------
+# MODEL CALL WRAPPER
+# ---------------------------------------------------------------------------
+${mc.callFn}
+
+# ---------------------------------------------------------------------------
+# CONVERSATION HISTORY
+# ---------------------------------------------------------------------------
+conversation_history: list[dict] = []
+
+def chat(user_message: str) -> str:
+    """Send a user message and return the agent's reply."""
+    conversation_history.append({"role": "user", "content": user_message})
+    reply = call_model(conversation_history)
+    conversation_history.append({"role": "assistant", "content": reply})
+    return reply
+
+# ---------------------------------------------------------------------------
+# ENTRY POINT — ${platformLabel}
+# ---------------------------------------------------------------------------
+${platformLoop}`;
+
+    // ===== RENDER OUTPUT =====
+    document.getElementById('systemPromptOutput').textContent = systemPrompt;
+    document.getElementById('pythonCodeOutput').textContent = pythonCode;
+
+    const outputSection = document.getElementById('outputSection');
+    outputSection.classList.add('visible');
+    setTimeout(() => outputSection.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+  });
+
+  function getEnvVarHint(model) {
+    const hints = {
+      gemini: 'export GEMINI_API_KEY="your-key-here"',
+      gpt4o: 'export OPENAI_API_KEY="your-key-here"',
+      claude: 'export ANTHROPIC_API_KEY="your-key-here"',
+      o1: 'export OPENAI_API_KEY="your-key-here"',
+    };
+    return hints[model];
+  }
+
+  function buildPlatformLoop(platform, agentName) {
+    switch (platform) {
+      case 'cli':
+        return `if __name__ == "__main__":
+    print(f"\\n{'='*55}")
+    print(f"  {agentName}")
+    print(f"  Type 'quit' or 'exit' to stop.")
+    print(f"{'='*55}\\n")
+    while True:
+        try:
+            user_input = input("You: ").strip()
+        except (EOFError, KeyboardInterrupt):
+            print("\\nGoodbye!")
+            break
+        if not user_input:
+            continue
+        if user_input.lower() in ("quit", "exit", "bye"):
+            print("Goodbye!")
+            break
+        reply = chat(user_input)
+        print(f"\\nAgent: {reply}\\n")`;
+
+      case 'slack':
+        return `# Slack Bot using Bolt for Python
+# pip install slack-bolt
+# Set SLACK_BOT_TOKEN and SLACK_SIGNING_SECRET env vars
+#
+# from slack_bolt import App
+# from slack_bolt.adapter.socket_mode import SocketModeHandler
+#
+# slack_app = App(token=os.environ["SLACK_BOT_TOKEN"])
+#
+# @slack_app.message("")
+# def handle_message(message, say):
+#     user_text = message.get("text", "")
+#     reply = chat(user_text)
+#     say(reply)
+#
+# if __name__ == "__main__":
+#     SocketModeHandler(slack_app, os.environ["SLACK_APP_TOKEN"]).start()
+
+if __name__ == "__main__":
+    print("Uncomment the Slack Bolt code above and install: pip install slack-bolt")`;
+
+      case 'discord':
+        return `# Discord Bot using discord.py
+# pip install discord.py
+# Set DISCORD_BOT_TOKEN env var
+#
+# import discord
+# intents = discord.Intents.default()
+# intents.message_content = True
+# bot = discord.Client(intents=intents)
+#
+# @bot.event
+# async def on_message(message):
+#     if message.author == bot.user:
+#         return
+#     reply = chat(message.content)
+#     await message.channel.send(reply)
+#
+# if __name__ == "__main__":
+#     bot.run(os.environ["DISCORD_BOT_TOKEN"])
+
+if __name__ == "__main__":
+    print("Uncomment the discord.py code above and install: pip install discord.py")`;
+
+      case 'telegram':
+        return `# Telegram Bot using python-telegram-bot
+# pip install python-telegram-bot
+# Set TELEGRAM_BOT_TOKEN env var
+#
+# from telegram import Update
+# from telegram.ext import Application, MessageHandler, filters, ContextTypes
+#
+# async def handle_update(update: Update, ctx: ContextTypes.DEFAULT_TYPE) -> None:
+#     user_text = update.message.text or ""
+#     reply = chat(user_text)
+#     await update.message.reply_text(reply)
+#
+# if __name__ == "__main__":
+#     app = Application.builder().token(os.environ["TELEGRAM_BOT_TOKEN"]).build()
+#     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_update))
+#     app.run_polling()
+
+if __name__ == "__main__":
+    print("Uncomment the Telegram code above and install: pip install python-telegram-bot")`;
+
+      case 'webapi':
+        return `# Web API using FastAPI
+# pip install fastapi uvicorn
+#
+# from fastapi import FastAPI
+# from pydantic import BaseModel
+#
+# api = FastAPI(title="${agentName} API")
+#
+# class ChatRequest(BaseModel):
+#     message: str
+#     reset: bool = False
+#
+# @api.post("/chat")
+# def chat_endpoint(req: ChatRequest):
+#     if req.reset:
+#         conversation_history.clear()
+#     reply = chat(req.message)
+#     return {"reply": reply}
+#
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(api, host="0.0.0.0", port=8000)
+
+if __name__ == "__main__":
+    print("Uncomment the FastAPI code above and install: pip install fastapi uvicorn")`;
+
+      default:
+        return `if __name__ == "__main__":\n    reply = chat("Hello, what can you do?")\n    print(reply)`;
+    }
+  }
+
+  // ===== COPY BUTTONS =====
+  function setupCopyBtn(btnId, sourceId) {
+    document.getElementById(btnId).addEventListener('click', async () => {
+      const text = document.getElementById(sourceId).textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        const btn = document.getElementById(btnId);
+        btn.classList.add('copied');
+        btn.textContent = '✓ Copied!';
+        setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy`;
+        }, 2000);
+      } catch {
+        console.warn('Clipboard API unavailable. Select and copy manually.');
+      }
+    });
+  }
+
+  setupCopyBtn('copyPromptBtn', 'systemPromptOutput');
+  setupCopyBtn('copyCodeBtn', 'pythonCodeOutput');
+</script>
+</body>
+</html>

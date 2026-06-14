@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free AI Cold Email Writer — Robby J</title>
+  <meta name="description" content="Generate 3 personalized cold email templates with AI in seconds. Free tool." />
+  <meta property="og:title" content="Free AI Cold Email Writer — Robby J" />
+  <meta property="og:description" content="Generate 3 personalized cold email templates with AI in seconds. Free tool." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/cold-email-writer.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body style="background: #0A0A0F; color: #F0F0F8; font-family: 'Inter', sans-serif; margin: 0;">
+
+  <!-- Skool Banner -->
+  <div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+    Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+  </div>
+
+  <!-- Nav -->
+  <nav aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+      <div class="nav-cta">
+        <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+        <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main style="padding-top: 120px; padding-bottom: 80px; min-height: 100vh;">
+    <div style="max-width: 760px; margin: 0 auto; padding: 0 20px;">
+
+      <!-- Hero -->
+      <div style="text-align: center; margin-bottom: 48px;">
+        <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: #F0F0F8; margin: 0 0 12px;">Free AI Cold Email Writer</h1>
+        <p style="color: #8888AA; font-size: 1.05rem; max-width: 52ch; margin: 0 auto 16px;">Generate 3 personalized cold email templates in seconds. Stop staring at a blank page.</p>
+        <span style="display: inline-block; background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); color: #06B6D4; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; padding: 4px 14px; border-radius: 20px; letter-spacing: 0.05em;">Powered by Gemini AI</span>
+      </div>
+
+      <!-- API Key Card -->
+      <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+        <div style="margin-bottom: 0;">
+          <label for="apiKey" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Gemini API Key</label>
+          <input
+            type="password"
+            id="apiKey"
+            placeholder="Enter your Gemini API key"
+            style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none;"
+          />
+          <p style="margin: 8px 0 0; font-size: 0.85rem; color: #8888AA;">
+            Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: #06B6D4; text-decoration: none;">Get a free key →</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Form Card -->
+      <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+        <form id="emailForm">
+
+          <!-- Business -->
+          <div style="margin-bottom: 20px;">
+            <label for="business" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Your Business / Service</label>
+            <input
+              type="text"
+              id="business"
+              placeholder="AI automation consulting"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none;"
+            />
+          </div>
+
+          <!-- Target Customer -->
+          <div style="margin-bottom: 20px;">
+            <label for="target" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Target Customer</label>
+            <input
+              type="text"
+              id="target"
+              placeholder="E-commerce store owners doing $1M+ revenue"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none;"
+            />
+          </div>
+
+          <!-- Offer -->
+          <div style="margin-bottom: 20px;">
+            <label for="offer" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Your Main Offer / Value Prop</label>
+            <textarea
+              id="offer"
+              rows="4"
+              placeholder="I help e-commerce brands automate their customer service using AI agents, saving 20+ hours/week"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none; resize: vertical;"
+            ></textarea>
+          </div>
+
+          <!-- Tone -->
+          <div style="margin-bottom: 28px;">
+            <label for="tone" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Tone</label>
+            <select
+              id="tone"
+              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none; cursor: pointer; appearance: none; -webkit-appearance: none;"
+            >
+              <option value="Professional">Professional</option>
+              <option value="Casual & Direct">Casual &amp; Direct</option>
+              <option value="Challenger">Challenger</option>
+              <option value="Story-based">Story-based</option>
+            </select>
+          </div>
+
+          <!-- Submit -->
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="width: 100%; padding: 14px; font-size: 1rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; border: none; cursor: pointer;"
+          >Generate Emails</button>
+        </form>
+      </div>
+
+      <!-- Spinner -->
+      <div id="spinner" style="display: none; text-align: center; margin: 32px auto;">
+        <div style="width: 40px; height: 40px; border: 3px solid rgba(124,58,237,0.3); border-top-color: #7C3AED; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto;"></div>
+        <p style="color: #8888AA; font-size: 0.9rem; margin-top: 16px; font-family: 'Space Grotesk', sans-serif;">Writing your emails...</p>
+      </div>
+
+      <!-- Error -->
+      <div id="errorMsg" style="display: none; color: #EF4444; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 12px 16px; border-radius: 8px; margin-bottom: 24px; font-family: 'Inter', sans-serif; font-size: 0.95rem;"></div>
+
+      <!-- Results -->
+      <div id="results" style="display: none;">
+        <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 700; color: #F0F0F8; margin: 0 0 24px;">Your Cold Emails</h2>
+        <div id="emailCards"></div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-bottom" style="border-top:none;padding-top:0">
+        <span>© 2026 Robby J · Built with ❤️ + AI</span>
+        <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    input:focus, textarea:focus, select:focus {
+      border-color: rgba(124,58,237,0.6) !important;
+    }
+    .copy-btn:hover {
+      background: rgba(6,182,212,0.2) !important;
+      border-color: rgba(6,182,212,0.5) !important;
+    }
+    nav.scrolled {
+      box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+    }
+  </style>
+
+  <script>
+    // Nav scroll shadow
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (nav) {
+        nav.classList.toggle('scrolled', window.scrollY > 10);
+      }
+    });
+
+    // Session storage for API key
+    const apiKeyInput = document.getElementById('apiKey');
+    const savedKey = sessionStorage.getItem('geminiApiKey');
+    if (savedKey) apiKeyInput.value = savedKey;
+    apiKeyInput.addEventListener('input', () => {
+      sessionStorage.setItem('geminiApiKey', apiKeyInput.value.trim());
+    });
+
+    // Gemini fetch
+    async function callGemini(apiKey, prompt) {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+        }
+      );
+      const data = await res.json();
+      if (data.error) throw new Error(data.error.message);
+      return data.candidates[0].content.parts[0].text;
+    }
+
+    // Parse emails from text
+    function parseEmails(text) {
+      const emails = [];
+      // Split on EMAIL 1, EMAIL 2, EMAIL 3 markers (case-insensitive, may have ** or # formatting)
+      const parts = text.split(/(?:^|\n)\s*(?:\*{1,2}|#{1,3})\s*EMAIL\s+[123]\s*(?:\*{1,2})?\s*(?:\n|$)/i);
+      // Also handle plain "EMAIL 1" without markdown
+      const plainParts = text.split(/(?:^|\n)\s*EMAIL\s+[123]\s*(?:\n|$)/i);
+      const segments = (parts.length >= 3 ? parts : plainParts).filter(s => s.trim().length > 0);
+
+      for (let i = 0; i < 3 && i < segments.length; i++) {
+        const block = segments[i + (segments.length > 3 ? 1 : 0)] || segments[i];
+        const lines = block.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+
+        let subject = '';
+        let ps = '';
+        const bodyLines = [];
+        let inBody = false;
+
+        for (const line of lines) {
+          const subjectMatch = line.match(/^(?:\*{1,2})?Subject\s*:\s*(?:\*{1,2})?(.*)/i);
+          const psMatch = line.match(/^(?:P\.S\.|PS)\s*[:\-]?\s*(.*)/i);
+
+          if (subjectMatch) {
+            subject = subjectMatch[1].replace(/\*+/g, '').trim();
+            inBody = true;
+          } else if (psMatch) {
+            ps = psMatch[1].replace(/\*+/g, '').trim();
+            inBody = false;
+          } else if (inBody) {
+            bodyLines.push(line.replace(/\*+/g, ''));
+          }
+        }
+
+        emails.push({
+          subject: subject || 'No subject found',
+          body: bodyLines.join('\n').trim() || 'No body found',
+          ps: ps || ''
+        });
+      }
+
+      return emails;
+    }
+
+    // Render email cards
+    function renderEmails(emails) {
+      const container = document.getElementById('emailCards');
+      container.innerHTML = '';
+
+      emails.forEach((email, idx) => {
+        const num = idx + 1;
+        const card = document.createElement('div');
+        card.style.cssText = 'background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 24px;';
+
+        const fullEmail = `Subject: ${email.subject}\n\n${email.body}${email.ps ? '\n\nP.S. ' + email.ps : ''}`;
+
+        card.innerHTML = `
+          <div style="display: inline-block; background: rgba(124,58,237,0.2); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 16px;">EMAIL ${num}</div>
+          <div style="background: rgba(6,182,212,0.05); border-left: 3px solid #06B6D4; padding: 10px 16px; border-radius: 0 8px 8px 0; margin-bottom: 16px;">
+            <span style="color: #06B6D4; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.85rem;">Subject:</span>
+            <span style="color: #F0F0F8; font-weight: 700; font-family: 'Inter', sans-serif; margin-left: 8px;">${escapeHtml(email.subject)}</span>
+          </div>
+          <div style="color: #F0F0F8; font-family: 'Inter', sans-serif; line-height: 1.7; white-space: pre-wrap; font-size: 0.95rem;">${escapeHtml(email.body)}</div>
+          ${email.ps ? `<div style="margin-top: 16px; color: #8888AA; font-family: 'Inter', sans-serif; font-size: 0.9rem; line-height: 1.6;"><span style="font-weight: 600;">P.S.</span> ${escapeHtml(email.ps)}</div>` : ''}
+          <button
+            class="copy-btn"
+            data-email="${escapeAttr(fullEmail)}"
+            style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); color: #06B6D4; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.85rem; transition: all 0.2s; margin-top: 16px;"
+          >Copy Email</button>
+        `;
+
+        container.appendChild(card);
+      });
+
+      // Attach copy handlers
+      container.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', async () => {
+          const text = btn.getAttribute('data-email');
+          try {
+            await navigator.clipboard.writeText(text);
+            const original = btn.textContent;
+            btn.textContent = 'Copied!';
+            btn.style.background = 'rgba(6,182,212,0.25)';
+            setTimeout(() => {
+              btn.textContent = original;
+              btn.style.background = 'rgba(6,182,212,0.1)';
+            }, 2000);
+          } catch (e) {
+            btn.textContent = 'Copy failed';
+            setTimeout(() => { btn.textContent = 'Copy Email'; }, 2000);
+          }
+        });
+      });
+    }
+
+    function escapeHtml(str) {
+      return str
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    function escapeAttr(str) {
+      return str.replace(/"/g, '&quot;').replace(/\n/g, '&#10;');
+    }
+
+    // Form submit
+    document.getElementById('emailForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const apiKey = document.getElementById('apiKey').value.trim();
+      const business = document.getElementById('business').value.trim();
+      const target = document.getElementById('target').value.trim();
+      const offer = document.getElementById('offer').value.trim();
+      const tone = document.getElementById('tone').value;
+
+      const errorEl = document.getElementById('errorMsg');
+      const spinner = document.getElementById('spinner');
+      const results = document.getElementById('results');
+
+      // Hide previous results
+      errorEl.style.display = 'none';
+      results.style.display = 'none';
+
+      // Validate
+      if (!apiKey) {
+        errorEl.textContent = 'Please enter your Gemini API key.';
+        errorEl.style.display = 'block';
+        return;
+      }
+      if (!business || !target || !offer) {
+        errorEl.textContent = 'Please fill in all fields before generating.';
+        errorEl.style.display = 'block';
+        return;
+      }
+
+      spinner.style.display = 'block';
+
+      const prompt = `You are an expert cold email copywriter. Write 3 different cold email templates with this info: Business/Service: ${business}, Target customer: ${target}, Offer: ${offer}, Tone: ${tone}. For each email, provide: Subject line, Email body (max 150 words), PS line. Format clearly with EMAIL 1, EMAIL 2, EMAIL 3 headers. Focus on the prospect's pain point, not your features.`;
+
+      try {
+        const rawText = await callGemini(apiKey, prompt);
+        const emails = parseEmails(rawText);
+
+        if (emails.length === 0) {
+          throw new Error('Could not parse the response. Please try again.');
+        }
+
+        renderEmails(emails);
+        results.style.display = 'block';
+        results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (err) {
+        errorEl.textContent = 'Error: ' + err.message;
+        errorEl.style.display = 'block';
+      } finally {
+        spinner.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>

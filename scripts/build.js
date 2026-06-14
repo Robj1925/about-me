@@ -66,6 +66,7 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
   <meta property="og:description" content="${excerpt}" />
   ${thumbnail ? `<meta property="og:image" content="https://automatewithrobby.fyi/${thumbnail}" />` : ''}
   <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/${slug}.html" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -204,6 +205,7 @@ function blogIndexTemplate(posts) {
   <meta property="og:title" content="Blog — Robby J" />
   <meta property="og:description" content="Written guides, deep dives, and tutorials on AI engineering and automation." />
   <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/" />
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -360,7 +362,7 @@ function build() {
   </url>
   <!-- Blog Index -->
   <url>
-    <loc>${domain}/blog/index.html</loc>
+    <loc>${domain}/blog/</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>

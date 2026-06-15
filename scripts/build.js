@@ -413,6 +413,24 @@ function build() {
     }
   }
 
+  // Scan services/ directory for service pages
+  const SERVICES_DIR = path.join(ROOT, 'services');
+  if (fs.existsSync(SERVICES_DIR)) {
+    const servicePages = fs.readdirSync(SERVICES_DIR).filter(f => f.endsWith('.html'));
+    for (const page of servicePages) {
+      const pagePath = path.join(SERVICES_DIR, page);
+      const stat = fs.statSync(pagePath);
+      const pageDate = stat.mtime.toISOString().split('T')[0];
+      const loc = page === 'index.html' ? `${domain}/services/` : `${domain}/services/${page}`;
+      sitemapXml += `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${pageDate}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>\n`;
+    }
+  }
+
   sitemapXml += `</urlset>`;
 
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml);

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Work With Robby J</title>
+  <meta name="description" content="Clear scope, real deliverables. Website builds, AI audits, and 1-on-1 AI consultations from Robby J — AI engineer and creator." />
+  <meta property="og:title" content="Services — Work With Robby J" />
+  <meta property="og:description" content="Clear scope, real deliverables. Website builds, AI audits, and 1-on-1 AI consultations." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/services/" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .service-detail {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px;
+      margin-bottom: 48px;
+      background: var(--surface);
+      scroll-margin-top: 100px;
+    }
+    .service-detail-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 8px;
+    }
+    .service-detail-icon { font-size: 2rem; }
+    .service-detail h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0;
+    }
+    .service-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      background: rgba(139, 92, 246, 0.15);
+      color: var(--purple-light);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .service-tagline {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin: 0 0 32px 0;
+    }
+    .service-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+    @media (max-width: 700px) {
+      .service-cols { grid-template-columns: 1fr; }
+      .service-detail { padding: 28px 20px; }
+    }
+    .service-col-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+    .service-col-title.included { color: var(--accent-cyan); }
+    .service-col-title.excluded { color: var(--text-muted); }
+    .check-list, .x-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .check-list li, .x-list li {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    .check-list li::before {
+      content: '✓';
+      color: var(--accent-cyan);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .x-list li::before {
+      content: '✕';
+      color: var(--text-muted);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+      opacity: 0.5;
+    }
+    .process-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+    .process-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .step-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      color: var(--accent-cyan);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .step-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .step-text strong { color: var(--text); }
+    .who-box {
+      background: rgba(6, 182, 212, 0.05);
+      border: 1px solid rgba(6, 182, 212, 0.15);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .who-box strong { color: var(--accent-cyan); }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
+    }
+    .section-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.9rem">← Home</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container" style="max-width:860px;">
+
+    <!-- Page Hero -->
+    <div class="section-header" style="margin-bottom:56px;">
+      <span class="section-tag">// services</span>
+      <h1>Work With Me</h1>
+      <p style="max-width:560px;margin:0 auto;">Clear scope, real deliverables, no fluff. Here's exactly what you get with each service.</p>
+    </div>
+
+    <!-- ===== WEBSITE BUILD ===== -->
+    <div class="service-detail" id="website-build">
+      <div class="service-detail-header">
+        <span class="service-detail-icon">🌐</span>
+        <h2>Website Build</h2>
+      </div>
+      <p class="service-tagline">A fast, modern, SEO-ready personal website — built and deployed for you.</p>
+
+      <div class="service-cols">
+        <div>
+          <p class="service-col-title included">What's Included</p>
+          <ul class="check-list">
+            <li>Custom design — dark or light theme, your brand colors and typography</li>
+            <li>All core sections: Hero, About, Services, Blog or Portfolio, Contact</li>
+            <li>Fully mobile-responsive on all screen sizes</li>
+            <li>SEO foundations: canonical tags, sitemap.xml, meta descriptions, OG tags</li>
+            <li>Deployed on GitHub Pages with your custom domain (.com, .fyi, etc.)</li>
+            <li>Blog system (optional) — write in Markdown, auto-builds to HTML</li>
+            <li>Google Analytics wired up from day one</li>
+            <li>2 rounds of revisions included</li>
+          </ul>
+        </div>
+        <div>
+          <p class="service-col-title excluded">What's NOT Included</p>
+          <ul class="x-list">
+            <li>E-commerce or payment processing</li>
+            <li>Backend servers or databases</li>
+            <li>Ongoing content updates after delivery</li>
+            <li>Logo or brand design — you provide assets</li>
+            <li>Copywriting — you provide the text, I handle layout and structure</li>
+            <li>Social media management</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">How It Works</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div class="step-text"><strong>Discovery call (30 min)</strong> — goals, target audience, and style references</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div class="step-text"><strong>Design draft</strong> — structure and layout shared for your feedback before building</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div class="step-text"><strong>Build</strong> — full site built locally, you review it in your browser</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div class="step-text"><strong>Revisions</strong> — up to 2 rounds of changes based on your feedback</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">5</div>
+          <div class="step-text"><strong>Launch</strong> — domain connected, deployed, analytics live</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">Who It's For</p>
+      <div class="who-box">
+        Creators, freelancers, and businesses who need a <strong>fast, professional web presence that ranks on Google</strong>. If you've been putting off building your site because you don't want to deal with WordPress, page builders, or expensive agencies — this is for you.
+      </div>
+
+      <span class="service-price" style="display:block;margin-bottom:16px;">Contact for Quote</span>
+      <a data-email class="btn btn-primary" id="services-page-website-cta" style="cursor:pointer;">Get in Touch →</a>
+    </div>
+
+    <!-- ===== AI AUDIT ===== -->
+    <div class="service-detail" id="ai-audit">
+      <div class="service-detail-header">
+        <span class="service-detail-icon">🔍</span>
+        <h2>AI Audit</h2>
+      </div>
+      <p class="service-tagline">A deep review of your codebase and workflows to find where AI can save you the most time.</p>
+
+      <div class="service-cols">
+        <div>
+          <p class="service-col-title included">What's Included</p>
+          <ul class="check-list">
+            <li>Deep review of your codebase and/or current workflows</li>
+            <li>Identification of high-impact AI automation opportunities</li>
+            <li>Prioritized report: what to automate first, which tools to use, rough effort estimates</li>
+            <li>30-minute readout call to walk through findings together</li>
+            <li>Written deliverable — yours to keep and act on</li>
+          </ul>
+        </div>
+        <div>
+          <p class="service-col-title excluded">What's NOT Included</p>
+          <ul class="x-list">
+            <li>Implementation or building — this is an audit, not a build engagement</li>
+            <li>Ongoing support after the readout call</li>
+            <li>Code changes or refactoring</li>
+            <li>Guarantees on specific outcomes — the report is my best professional judgement</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">How It Works</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div class="step-text"><strong>Intake</strong> — you share context about your stack, workflows, and goals</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div class="step-text"><strong>Review</strong> — I go deep on your codebase and/or processes</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div class="step-text"><strong>Report delivered</strong> — written findings with prioritized recommendations</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div class="step-text"><strong>Readout call</strong> — we walk through it together and you ask questions</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">Who It's For</p>
+      <div class="who-box">
+        Engineering teams or solo founders who <strong>suspect they could be saving significant time with AI</strong> but don't know where to start or what to prioritize. If your team is manually doing things that could be automated, this audit will show you exactly what to fix first.
+      </div>
+
+      <span class="service-price" style="display:block;margin-bottom:16px;">Contact for Quote</span>
+      <a data-email class="btn btn-primary" id="services-page-audit-cta" style="cursor:pointer;">Get in Touch →</a>
+    </div>
+
+    <!-- ===== AI CONSULTATION ===== -->
+    <div class="service-detail" id="ai-consultation">
+      <div class="service-detail-header">
+        <span class="service-detail-icon">💬</span>
+        <h2>AI Consultation <span class="service-badge">⭐ Most Popular</span></h2>
+      </div>
+      <p class="service-tagline">A focused 60-minute session to unblock you on any AI problem — fast.</p>
+
+      <div class="service-cols">
+        <div>
+          <p class="service-col-title included">What's Included</p>
+          <ul class="check-list">
+            <li>60-minute 1-on-1 video call</li>
+            <li>Any topic: agent tools, prompt engineering, API selection, automation strategy, debugging</li>
+            <li>Follow-up notes summarizing key decisions and next steps — sent within 24 hours</li>
+            <li>Honest, direct advice — no upsell, no filler</li>
+          </ul>
+        </div>
+        <div>
+          <p class="service-col-title excluded">What's NOT Included</p>
+          <ul class="x-list">
+            <li>Code written during or after the call</li>
+            <li>Ongoing mentorship or recurring check-ins — book another session if needed</li>
+            <li>Guaranteed outcomes — results depend on what you do with the advice</li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">How It Works</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <div class="step-text"><strong>Book via email</strong> — share your topic and questions upfront</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <div class="step-text"><strong>I prep beforehand</strong> — so we hit the ground running, no wasted time</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <div class="step-text"><strong>60-minute call</strong> — focused entirely on your specific situation</div>
+        </div>
+        <div class="process-step">
+          <div class="step-num">4</div>
+          <div class="step-text"><strong>Follow-up notes</strong> — key decisions and action items delivered within 24 hours</div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+
+      <p class="section-label">Who It's For</p>
+      <div class="who-box">
+        Developers, founders, and creators who are <strong>stuck on an AI problem and need expert eyes on it fast</strong>. Whether you're choosing between models, debugging a broken agent, or trying to figure out your AI strategy — one focused session can save you weeks of trial and error.
+      </div>
+
+      <span class="service-price" style="display:block;margin-bottom:16px;">Contact for Booking</span>
+      <a data-email class="btn btn-primary" id="services-page-consult-cta" style="cursor:pointer;">Book a Session →</a>
+    </div>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  // Email injection (same pattern as main site)
+  (function () {
+    const email = '___CONTACT_EMAIL___';
+    const displayEmail = (email && email !== '___CONTACT_EMAIL___') ? email : 'robj1925@gmail.com';
+    document.querySelectorAll('[data-email]').forEach(el => {
+      if (el.tagName === 'A') {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          navigator.clipboard.writeText(displayEmail).catch(() => {});
+          setTimeout(() => { window.location.href = 'mailto:' + displayEmail; }, 300);
+        });
+      }
+    });
+  })();
+</script>
+</body>
+</html>

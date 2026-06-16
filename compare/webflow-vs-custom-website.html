@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webflow vs. Custom Website Build: Is Webflow Worth the Price? — Robby J</title>
+  <meta name="description" content="Webflow is powerful — but is it right for your small business? We compare Webflow vs a custom-built site on cost, complexity, and long-term value." />
+  <meta property="og:title" content="Webflow vs. Custom Website Build: Is Webflow Worth the Price? — Robby J" />
+  <meta property="og:description" content="Webflow is powerful — but is it right for your small business? We compare Webflow vs a custom-built site on cost, complexity, and long-term value." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/compare/webflow-vs-custom-website.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    /* ===== COMPARE PAGE STYLES ===== */
+    .compare-hero {
+      text-align: center;
+      padding: 48px 0 40px;
+    }
+    .compare-hero h1 {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      max-width: 22ch;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .compare-hero .subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 54ch;
+      margin: 0 auto 32px;
+      line-height: 1.7;
+    }
+    .verdict-badges {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .verdict-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 22px;
+      border-radius: 99px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .verdict-badge.muted {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--text-muted);
+    }
+    .verdict-badge.winner {
+      background: rgba(6,182,212,0.08);
+      border: 1px solid var(--cyan);
+      color: var(--cyan);
+      box-shadow: var(--glow-cyan);
+    }
+    .verdict-badge .dot-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .verdict-badge.muted .dot-indicator { background: var(--text-muted); }
+    .verdict-badge.winner .dot-indicator { background: var(--cyan); box-shadow: 0 0 8px rgba(6,182,212,0.7); }
+
+    /* ===== COMPARE CARD ===== */
+    .compare-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+
+    /* ===== TABLE ===== */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    .compare-table th {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table th:first-child { color: var(--text); }
+    .compare-table td {
+      padding: 14px 16px;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      line-height: 1.5;
+    }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:nth-child(odd) td { background: rgba(255,255,255,0.025); }
+    .compare-table tr:nth-child(even) td { background: transparent; }
+    .compare-table td:first-child {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+      width: 28%;
+    }
+    .compare-table td.webflow-col { color: var(--text-muted); }
+    .compare-table td.custom-col { color: var(--cyan); }
+    .col-header-webflow { color: var(--text-muted) !important; }
+    .col-header-custom { color: var(--cyan) !important; }
+
+    /* ===== TWO-COL GRID ===== */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 700px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+
+    /* ===== CHECK / X LISTS ===== */
+    .check-list, .x-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .check-list li, .x-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+    .check-list li::before {
+      content: '✓';
+      color: var(--cyan);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .x-list li::before {
+      content: '✕';
+      color: #f87171;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ===== BREAKDOWN SECTION ===== */
+    .breakdown-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .breakdown-subtitle {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ===== PROSE SECTION ===== */
+    .prose-section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .prose-section p {
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-size: 0.97rem;
+    }
+    .prose-section p strong { color: var(--text); }
+
+    /* ===== WHO BOXES ===== */
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    @media (max-width: 700px) {
+      .who-grid { grid-template-columns: 1fr; }
+    }
+    .who-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+    .who-box.custom-box {
+      border-color: var(--cyan);
+      box-shadow: var(--glow-cyan);
+    }
+    .who-box-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .who-box-label.webflow-label { color: var(--text-muted); }
+    .who-box-label.custom-label { color: var(--cyan); }
+    .who-box h3 {
+      font-size: 1.05rem;
+      margin-bottom: 16px;
+    }
+    .who-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .who-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+    .who-list li::before {
+      content: '→';
+      color: var(--text-muted);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .who-box.custom-box .who-list li::before { color: var(--cyan); }
+
+    /* ===== BOTTOM LINE ===== */
+    .bottom-line-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+    .bottom-line-card p {
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-size: 0.97rem;
+    }
+    .bottom-line-card p strong { color: var(--text); }
+
+    /* ===== CTA CARD ===== */
+    .cta-card {
+      background: var(--bg-card);
+      border: 1px solid var(--cyan);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px;
+      text-align: center;
+      box-shadow: var(--glow-cyan);
+    }
+    .cta-card h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      margin-bottom: 16px;
+    }
+    .cta-card p {
+      color: var(--text-muted);
+      max-width: 50ch;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+      font-size: 0.97rem;
+    }
+    .cta-meta {
+      margin-top: 16px;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ===== SECTION SPACING ===== */
+    .compare-section {
+      margin-bottom: 56px;
+    }
+    .compare-section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    /* ===== RESPONSIVE TABLE ===== */
+    @media (max-width: 600px) {
+      .compare-table td:first-child { white-space: normal; width: auto; }
+      .compare-table th, .compare-table td { padding: 10px 12px; font-size: 0.88rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../services/index.html#website-build" class="btn btn-ghost" style="font-size:0.9rem">← Website Build</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container" style="max-width:860px;margin:0 auto;">
+
+    <!-- ===== 1. HERO ===== -->
+    <section class="compare-section" aria-label="comparison">
+      <span class="section-tag">// comparison</span>
+      <div class="compare-hero">
+        <h1>Webflow vs. Custom Website Build: Is Webflow Worth the Price?</h1>
+        <p class="subtitle">Webflow is powerful — but is it right for your small business? We compare Webflow vs a custom-built site on cost, complexity, and long-term value.</p>
+        <div class="verdict-badges">
+          <span class="verdict-badge muted">
+            <span class="dot-indicator"></span>
+            Webflow
+          </span>
+          <span class="verdict-badge winner">
+            <span class="dot-indicator"></span>
+            Custom Build
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. AT A GLANCE ===== -->
+    <section class="compare-section">
+      <div class="section-header" style="text-align:left;margin-bottom:24px;">
+        <span class="section-tag">// at a glance</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);margin-top:8px;">Quick Comparison</h2>
+      </div>
+      <div class="compare-card" style="padding:0;overflow:hidden;">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th class="col-header-webflow">Webflow</th>
+              <th class="col-header-custom">Custom Build (Robby J)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Monthly cost</td>
+              <td class="webflow-col">$14–$39/month ($168–$468/yr)</td>
+              <td class="custom-col">$0/month — free GitHub Pages hosting forever</td>
+            </tr>
+            <tr>
+              <td>Setup time</td>
+              <td class="webflow-col">Days to weeks just to learn the platform</td>
+              <td class="custom-col">1–2 weeks from first message to live site</td>
+            </tr>
+            <tr>
+              <td>SEO control</td>
+              <td class="webflow-col">Strong — built-in meta, OG, sitemap tools</td>
+              <td class="custom-col">Full — canonical tags, OG, sitemap.xml, meta descriptions baked in</td>
+            </tr>
+            <tr>
+              <td>Design freedom</td>
+              <td class="webflow-col">Very high — visual editor, any layout imaginable</td>
+              <td class="custom-col">High — dark or light theme, fully custom design per project</td>
+            </tr>
+            <tr>
+              <td>Who edits it</td>
+              <td class="webflow-col">You (after learning the editor)</td>
+              <td class="custom-col">Robby — contact him for text/image updates (or add a monthly plan)</td>
+            </tr>
+            <tr>
+              <td>Long-term cost</td>
+              <td class="webflow-col">$500–$1,400+ over 3 years, before any overages</td>
+              <td class="custom-col">One-time build fee + ~$10–$15/yr for your domain</td>
+            </tr>
+            <tr>
+              <td>Best for</td>
+              <td class="webflow-col">Designers & agencies who want visual control</td>
+              <td class="custom-col">SMBs, freelancers, side hustlers who want it done right</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== 3. HONEST BREAKDOWN ===== -->
+    <section class="compare-section">
+      <div class="section-header" style="text-align:left;margin-bottom:24px;">
+        <span class="section-tag">// honest breakdown</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);margin-top:8px;">The Honest Breakdown</h2>
+      </div>
+      <div class="two-col">
+        <div class="compare-card">
+          <div class="breakdown-title">Webflow</div>
+          <div class="breakdown-subtitle" style="margin-bottom:4px;">What it's good at</div>
+          <ul class="check-list">
+            <li>Stunning visual editor — drag-and-drop with pixel-level control and no hand-coding required</li>
+            <li>Clean, production-quality exported code that developers actually respect</li>
+            <li>Built-in CMS for blog-heavy or content-rich sites where editors update copy constantly</li>
+            <li>Solid native SEO controls — meta, OG, canonical, and sitemap all configurable in the UI</li>
+            <li>Strong ecosystem of templates and third-party integrations for rapid prototyping</li>
+            <li>Great choice for designers and agencies that need to deliver multiple client sites</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="breakdown-title">Webflow</div>
+          <div class="breakdown-subtitle" style="margin-bottom:4px;">Where it falls short</div>
+          <ul class="x-list">
+            <li>Steep learning curve — despite the "no-code" marketing, most non-designers struggle significantly with the editor</li>
+            <li>Monthly subscription runs $168–$468 per year, indefinitely, even if your site never changes</li>
+            <li>Platform lock-in — your site lives on Webflow's servers; leaving means rebuilding from scratch</li>
+            <li>Overkill for simple business sites that just need a hero, services section, and a contact form</li>
+            <li>Hosting and CMS tiers can get expensive fast as traffic or team size grows</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 4. WHERE A CUSTOM BUILD WINS ===== -->
+    <section class="compare-section">
+      <div class="section-header" style="text-align:left;margin-bottom:24px;">
+        <span class="section-tag">// custom build advantage</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);margin-top:8px;">Where a Custom Build Wins</h2>
+      </div>
+      <div class="compare-card prose-section">
+        <p><strong>Cost that actually makes sense long-term.</strong> Three years on Webflow's Basic plan runs you at minimum $504. Three years on the CMS plan — the one most small businesses actually need — is $1,404. A custom-built site hosted on GitHub Pages costs you zero dollars per month in hosting. You own the domain outright (~$12/year), and the code lives in your GitHub repo forever. There's no subscription to cancel, no pricing tier to outgrow, and no invoice waiting for you every month whether you changed anything or not.</p>
+        <p><strong>No platform lock-in, ever.</strong> When your site lives in a Webflow account, leaving means rebuilding it somewhere else from scratch. That's leverage Webflow holds over every customer. A custom-built site is just files — HTML, CSS, JavaScript — sitting in a GitHub repo that you own. You can move it to any host, hand it to any developer, or run it locally tomorrow. The work you paid for stays yours, unconditionally.</p>
+        <p><strong>SEO foundations without the guesswork.</strong> Every custom build includes a <code>sitemap.xml</code>, canonical tags, Open Graph metadata, and hand-written meta descriptions for every page — not boilerplate defaults. These are the exact signals search engines use to understand and rank your site. Unlike template-based platforms where defaults are often wrong or generic, a custom build gets these right from day one because someone who cares about your specific business wrote them.</p>
+        <p><strong>Personal service, not a ticket queue.</strong> When you work with Robby, you're not filing a support ticket with a faceless platform. You get direct communication, two full rounds of revisions, and a 7-day post-launch support window to catch anything that needs fixing. For small business owners who just want their site to look great and work correctly — without becoming a Webflow expert — that direct relationship is worth more than any visual editor.</p>
+      </div>
+    </section>
+
+    <!-- ===== 5. WHO SHOULD CHOOSE EACH ===== -->
+    <section class="compare-section">
+      <div class="section-header" style="text-align:left;margin-bottom:24px;">
+        <span class="section-tag">// who it's for</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);margin-top:8px;">Who Should Choose Each</h2>
+      </div>
+      <div class="who-grid">
+        <div class="who-box">
+          <div class="who-box-label webflow-label">Webflow</div>
+          <h3>Choose Webflow if...</h3>
+          <ul class="who-list">
+            <li>You're a designer or developer who wants to build and tweak your own site without touching code</li>
+            <li>You run a marketing or content team that needs non-technical editors updating layouts weekly</li>
+            <li>You're an agency building multiple client sites and need a repeatable visual workflow</li>
+            <li>Your site needs a robust visual CMS with custom content collections and complex filtering</li>
+          </ul>
+        </div>
+        <div class="who-box custom-box">
+          <div class="who-box-label custom-label">Custom Build</div>
+          <h3>Choose a custom build if...</h3>
+          <ul class="who-list">
+            <li>You're a small business owner, freelancer, or side hustler who wants it built and launched — not taught</li>
+            <li>You're tired of paying monthly platform fees for a site that rarely needs layout changes</li>
+            <li>You want a professional online presence with real SEO foundations, not defaults nobody checked</li>
+            <li>You want to own your site outright, with no platform holding your content hostage</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. THE BOTTOM LINE ===== -->
+    <section class="compare-section">
+      <div class="section-header" style="text-align:left;margin-bottom:24px;">
+        <span class="section-tag">// verdict</span>
+        <h2 style="font-size:clamp(1.4rem,3vw,1.9rem);margin-top:8px;">The Bottom Line</h2>
+      </div>
+      <div class="bottom-line-card">
+        <p>Webflow is a genuinely impressive tool — if you're the kind of person who will actually use it. For designers, agencies, and teams who live inside a visual editor, it earns its monthly fee. But for most small business owners and freelancers, Webflow is overkill: you'll spend days learning a platform just to produce a site you could have had in two weeks without touching a single setting. <strong>A custom build makes more financial and practical sense when you want a high-quality result, real SEO from day one, zero monthly fees, and a site you own completely</strong> — with someone available to handle the work so you don't have to.</p>
+      </div>
+    </section>
+
+    <!-- ===== 7. CTA ===== -->
+    <section class="compare-section">
+      <div class="cta-card">
+        <h2>Ready for a custom website?</h2>
+        <p>I build fast, modern, SEO-ready sites for small businesses and freelancers. 1–2 week turnaround, free GitHub Pages hosting, and I handle everything — including the copywriting.</p>
+        <a data-email class="btn btn-primary" style="cursor:pointer;">Get in Touch →</a>
+        <p class="cta-meta">Payment via Venmo or Zelle · Typical turnaround 1–2 weeks</p>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+  document.querySelectorAll('[data-email]').forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      window.location.href = 'mailto:robj1925@gmail.com';
+    });
+  });
+</script>
+</body>
+</html>

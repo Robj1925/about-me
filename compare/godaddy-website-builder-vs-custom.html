@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoDaddy Website Builder vs. Custom Website: Why Most Small Businesses Outgrow GoDaddy Fast — Robby J</title>
+  <meta name="description" content="GoDaddy's website builder is fast to set up — but the SEO limitations and generic look hurt small businesses long-term. Here's an honest comparison." />
+  <meta property="og:title" content="GoDaddy Website Builder vs. Custom Website: Why Most Small Businesses Outgrow GoDaddy Fast — Robby J" />
+  <meta property="og:description" content="GoDaddy's website builder is fast to set up — but the SEO limitations and generic look hurt small businesses long-term. Here's an honest comparison." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/compare/godaddy-website-builder-vs-custom.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    :root {
+      --surface: #13131A;
+    }
+
+    /* ── Page-level layout ── */
+    .compare-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    /* ── Hero ── */
+    .compare-hero {
+      padding-bottom: 16px;
+    }
+    .compare-hero h1 {
+      font-size: clamp(1.9rem, 4.5vw, 2.9rem);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .compare-hero .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      max-width: 64ch;
+      margin-bottom: 32px;
+    }
+    .verdict-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .verdict-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 20px;
+      border-radius: 10px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .verdict-badge.muted {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text-muted);
+    }
+    .verdict-badge.winner {
+      background: rgba(6,182,212,0.08);
+      border: 1px solid rgba(6,182,212,0.4);
+      color: var(--accent-cyan);
+      box-shadow: 0 0 20px rgba(6,182,212,0.18);
+    }
+    .verdict-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .verdict-dot.muted { background: var(--text-muted); }
+    .verdict-dot.cyan { background: var(--accent-cyan); box-shadow: 0 0 8px var(--accent-cyan); }
+
+    /* ── Section divider spacing ── */
+    .compare-section {
+      margin-top: 64px;
+    }
+    .compare-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 20px;
+    }
+
+    /* ── At-a-glance table ── */
+    .table-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .compare-table thead th {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 16px 20px;
+      text-align: left;
+      background: rgba(255,255,255,0.03);
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table thead th:first-child { color: var(--text-muted); }
+    .compare-table thead th:nth-child(2) { color: var(--text-muted); }
+    .compare-table thead th:nth-child(3) { color: var(--accent-cyan); }
+    .compare-table tbody tr {
+      border-bottom: 1px solid var(--border);
+      transition: background 0.15s;
+    }
+    .compare-table tbody tr:last-child { border-bottom: none; }
+    .compare-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.025);
+    }
+    .compare-table tbody tr:hover {
+      background: rgba(255,255,255,0.04);
+    }
+    .compare-table td {
+      padding: 14px 20px;
+      font-size: 0.93rem;
+      line-height: 1.5;
+      vertical-align: top;
+    }
+    .compare-table td:first-child {
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .compare-table td:nth-child(2) { color: var(--text-muted); }
+    .compare-table td:nth-child(3) { color: var(--text); }
+    .td-win { color: var(--accent-cyan) !important; font-weight: 600; }
+
+    @media (max-width: 600px) {
+      .compare-table thead th,
+      .compare-table td { padding: 12px 12px; font-size: 0.85rem; }
+      .compare-table td:first-child { white-space: normal; }
+    }
+
+    /* ── Honest breakdown two-col ── */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 700px) {
+      .two-col { grid-template-columns: 1fr; }
+    }
+    .breakdown-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+    .breakdown-card-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .breakdown-card-title.good { color: var(--text); }
+    .breakdown-card-title.bad { color: var(--text-muted); }
+
+    /* check-list / x-list (mirrors services/index.html pattern) */
+    .check-list, .x-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+    .check-list li, .x-list li {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    .check-list li::before {
+      content: '✓';
+      color: var(--accent-cyan);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .x-list li::before {
+      content: '✕';
+      color: #f87171;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    /* ── Prose section (where custom wins) ── */
+    .prose p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .prose p:last-child { margin-bottom: 0; }
+    .prose strong { color: var(--text); }
+
+    /* ── Who should choose each ── */
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 700px) {
+      .who-grid { grid-template-columns: 1fr; }
+    }
+    .who-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+    }
+    .who-card.custom-win {
+      border-color: rgba(6,182,212,0.35);
+      background: rgba(6,182,212,0.04);
+    }
+    .who-card-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 6px;
+    }
+    .who-card-label.godaddy-label { color: var(--text-muted); }
+    .who-card-label.custom-label { color: var(--accent-cyan); }
+    .who-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 16px;
+    }
+    .who-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .who-list li {
+      font-size: 0.93rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      line-height: 1.5;
+    }
+    .who-list li::before {
+      content: '→';
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .who-card.custom-win .who-list li::before { color: var(--accent-cyan); }
+    .who-card:not(.custom-win) .who-list li::before { color: var(--text-muted); }
+
+    /* ── Bottom line ── */
+    .bottom-line-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px;
+    }
+    .bottom-line-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+    .bottom-line-card strong { color: var(--text); }
+
+    /* ── CTA card ── */
+    .cta-card {
+      background: rgba(6,182,212,0.05);
+      border: 1px solid rgba(6,182,212,0.35);
+      border-radius: var(--radius-lg);
+      padding: 40px 36px;
+      text-align: center;
+      box-shadow: 0 0 40px rgba(6,182,212,0.08);
+    }
+    .cta-card h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+    .cta-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 52ch;
+      margin: 0 auto 28px;
+      line-height: 1.7;
+    }
+    .cta-card .cta-meta {
+      margin-top: 16px;
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ── Nav skool banner offset ── */
+    .nav-skool-offset { height: 44px; }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../services/index.html#website-build" class="btn btn-ghost" style="font-size:0.9rem">← Website Build</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container">
+    <div class="compare-wrap">
+
+      <!-- ===== 1. HERO ===== -->
+      <section class="compare-hero">
+        <span class="section-tag">// comparison</span>
+        <h1>GoDaddy Website Builder vs. Custom Website: Why Most Small Businesses Outgrow GoDaddy Fast</h1>
+        <p class="subtitle">GoDaddy's website builder is fast to set up — but the SEO limitations and generic look hurt small businesses long-term. Here's an honest comparison.</p>
+        <div class="verdict-row">
+          <div class="verdict-badge muted">
+            <span class="verdict-dot muted"></span>
+            GoDaddy Website Builder
+          </div>
+          <div class="verdict-badge winner">
+            <span class="verdict-dot cyan"></span>
+            Custom Build by Robby J
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. AT A GLANCE ===== -->
+      <div class="compare-section">
+        <div class="section-header" style="text-align:left;margin-bottom:20px;">
+          <span class="section-tag">// at a glance</span>
+          <h2 class="compare-section-title">Quick Comparison</h2>
+        </div>
+        <div class="table-card">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>GoDaddy Website Builder</th>
+                <th>Custom Build (Robby J)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly cost</td>
+                <td>$10–$25/mo ($120–$300/yr)</td>
+                <td class="td-win">One-time quote · $0/mo hosting</td>
+              </tr>
+              <tr>
+                <td>Setup time</td>
+                <td>Under an hour</td>
+                <td>1–2 weeks (done for you)</td>
+              </tr>
+              <tr>
+                <td>SEO control</td>
+                <td>Limited — weak crawlability, few controls</td>
+                <td class="td-win">Full — canonical tags, sitemap, OG, meta</td>
+              </tr>
+              <tr>
+                <td>Design freedom</td>
+                <td>Template-locked, generic look</td>
+                <td class="td-win">Fully custom — dark or light theme</td>
+              </tr>
+              <tr>
+                <td>Who edits it</td>
+                <td>You (drag-and-drop)</td>
+                <td>Robby handles changes (optional plan)</td>
+              </tr>
+              <tr>
+                <td>Long-term cost</td>
+                <td>$300+/yr, recurring — prices can increase</td>
+                <td class="td-win">Low — free GitHub Pages hosting forever</td>
+              </tr>
+              <tr>
+                <td>Best for</td>
+                <td>Absolute basics in under an hour</td>
+                <td class="td-win">SMBs that want to look pro and rank on Google</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ===== 3. HONEST BREAKDOWN ===== -->
+      <div class="compare-section">
+        <div class="section-header" style="text-align:left;margin-bottom:20px;">
+          <span class="section-tag">// honest breakdown</span>
+          <h2 class="compare-section-title">GoDaddy Website Builder: The Full Picture</h2>
+        </div>
+        <div class="two-col">
+          <div class="breakdown-card">
+            <p class="breakdown-card-title good">What it's good at</p>
+            <ul class="check-list">
+              <li>Extremely fast setup — you can have something live in under an hour</li>
+              <li>Domain, hosting, and builder all bundled in one renewal</li>
+              <li>No technical knowledge required whatsoever</li>
+              <li>Works fine if you already have a GoDaddy account</li>
+              <li>Cheap entry price for the most basic possible web presence</li>
+            </ul>
+          </div>
+          <div class="breakdown-card">
+            <p class="breakdown-card-title bad">Where it falls short</p>
+            <ul class="x-list">
+              <li>SEO performance is poor — one of the weakest builders for ranking on Google</li>
+              <li>Templates look dated and generic — it's obvious when a site is a GoDaddy site</li>
+              <li>Very limited design customization beyond the template</li>
+              <li>Upsell-heavy pricing — the cheap plan locks features you'll eventually need</li>
+              <li>GoDaddy is primarily a domain registrar, not a website company — the builder reflects that</li>
+              <li>Yearly renewal costs add up with no equity in your site</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== 4. WHERE A CUSTOM BUILD WINS ===== -->
+      <div class="compare-section">
+        <div class="section-header" style="text-align:left;margin-bottom:20px;">
+          <span class="section-tag">// why it matters</span>
+          <h2 class="compare-section-title">Where a Custom Build Actually Wins</h2>
+        </div>
+        <div class="prose">
+          <p><strong>SEO is where the gap is biggest.</strong> GoDaddy's builder is consistently rated among the poorest website builders for search engine visibility. It produces bloated markup, generates weak or missing canonical tags, and offers minimal control over meta descriptions and structured data. For a small business that needs people to actually find them on Google — whether that's "plumber in Austin" or "freelance graphic designer Chicago" — a GoDaddy site is starting with one hand tied behind its back. A custom build includes proper canonical tags, a clean sitemap.xml, OpenGraph tags, and sensible meta descriptions from day one.</p>
+          <p><strong>Cost over time tells a very different story.</strong> GoDaddy's entry plans look cheap at $10/month, but the plans with real features run $20–$25/month, and prices can increase at renewal. Over three years that's $720–$900 in hosting fees — for a site that looks like a GoDaddy site. A custom build is a one-time cost with free GitHub Pages hosting. You own the domain (roughly $10–$15/year from any registrar), and there are no platform lock-in fees. Three years out, the math consistently favors the custom approach.</p>
+          <p><strong>Design quality is not a vanity issue — it's a trust signal.</strong> Visitors decide whether to trust a business within seconds of landing on a page. GoDaddy templates are recognizable, and not in a good way. A custom design — built specifically around your brand, your services, and your audience — tells potential customers that you take your business seriously. Every section (Hero, About, Services, Blog, Contact) is crafted to move a visitor toward reaching out, not just to fill space on a page.</p>
+          <p><strong>You get a real person, not a ticket queue.</strong> When something needs to change on a GoDaddy site you have to log back in and figure it out yourself. With a custom build from Robby J, there's a 7-day post-launch support window, and an optional monthly support plan for ongoing text and image updates. You're not navigating a help center — you're texting a person who built your site.</p>
+        </div>
+      </div>
+
+      <!-- ===== 5. WHO SHOULD CHOOSE EACH ===== -->
+      <div class="compare-section">
+        <div class="section-header" style="text-align:left;margin-bottom:20px;">
+          <span class="section-tag">// decision guide</span>
+          <h2 class="compare-section-title">Who Should Choose Each</h2>
+        </div>
+        <div class="who-grid">
+          <div class="who-card">
+            <p class="who-card-label godaddy-label">GoDaddy Website Builder</p>
+            <h3>Choose GoDaddy if...</h3>
+            <ul class="who-list">
+              <li>You already have a GoDaddy account and just need something live today</li>
+              <li>You need the most bare-bones web presence possible with zero technical involvement</li>
+              <li>SEO and design quality are not priorities right now</li>
+              <li>You're testing a business idea and not yet ready to invest in a real site</li>
+            </ul>
+          </div>
+          <div class="who-card custom-win">
+            <p class="who-card-label custom-label">Custom Build by Robby J</p>
+            <h3>Choose a custom build if...</h3>
+            <ul class="who-list">
+              <li>You want your site to actually rank on Google and bring in leads</li>
+              <li>You're tired of your current site looking like every other builder template</li>
+              <li>You want a professional to handle the design, copy, and setup — not a tutorial</li>
+              <li>You're a freelancer, small business owner, or side hustler ready to take your online presence seriously</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== 6. BOTTOM LINE ===== -->
+      <div class="compare-section">
+        <div class="section-header" style="text-align:left;margin-bottom:20px;">
+          <span class="section-tag">// verdict</span>
+          <h2 class="compare-section-title">The Bottom Line</h2>
+        </div>
+        <div class="bottom-line-card">
+          <p>GoDaddy's website builder earns its place for one specific use case: getting something — anything — live in under an hour when you already have a GoDaddy account. Outside of that narrow window, it underdelivers on the two things that actually matter for small business growth: <strong>SEO and first impressions.</strong> The templates look dated, the SEO tools are weak, and the costs compound year after year with nothing to show for it. If you're serious about your business and want a site that looks sharp, loads fast, and has a real shot at ranking on Google, <strong>a custom build is the better investment</strong> — and at a one-time cost with free hosting, the math works in your favor almost immediately.</p>
+        </div>
+      </div>
+
+      <!-- ===== 7. CTA ===== -->
+      <div class="compare-section">
+        <div class="cta-card">
+          <h2>Ready for a custom website?</h2>
+          <p>I build fast, modern, SEO-ready sites for small businesses and freelancers. 1–2 week turnaround, free GitHub Pages hosting, and I handle everything — including the copywriting.</p>
+          <a data-email class="btn btn-primary" style="cursor:pointer;">Get in Touch →</a>
+          <p class="cta-meta">Payment via Venmo or Zelle · Typical turnaround 1–2 weeks</p>
+        </div>
+      </div>
+
+    </div><!-- /.compare-wrap -->
+  </div><!-- /.container -->
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+  document.querySelectorAll('[data-email]').forEach(el => {
+    el.addEventListener('click', e => {
+      e.preventDefault();
+      window.location.href = 'mailto:robj1925@gmail.com';
+    });
+  });
+</script>
+</body>
+</html>

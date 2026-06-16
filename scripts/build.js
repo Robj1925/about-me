@@ -431,6 +431,19 @@ function build() {
     }
   }
 
+  // Scan compare/ directory for comparison pages
+  const COMPARE_DIR = path.join(ROOT, 'compare');
+  if (fs.existsSync(COMPARE_DIR)) {
+    const comparePages = fs.readdirSync(COMPARE_DIR).filter(f => f.endsWith('.html'));
+    for (const page of comparePages) {
+      const pagePath = path.join(COMPARE_DIR, page);
+      const stat = fs.statSync(pagePath);
+      const pageDate = stat.mtime.toISOString().split('T')[0];
+      const loc = page === 'index.html' ? `${domain}/compare/` : `${domain}/compare/${page}`;
+      sitemapXml += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${pageDate}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n`;
+    }
+  }
+
   sitemapXml += `</urlset>`;
 
   fs.writeFileSync(path.join(ROOT, 'sitemap.xml'), sitemapXml);

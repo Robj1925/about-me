@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Model Selector — Robby J</title>
+  <meta name="description" content="Not sure which AI model to use? Answer a few questions and get a personalized recommendation — ChatGPT, Claude, Gemini, and more." />
+  <meta property="og:title" content="AI Model Selector — Robby J" />
+  <meta property="og:description" content="Not sure which AI model to use? Answer a few questions and get a personalized recommendation — ChatGPT, Claude, Gemini, and more." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/ai-model-selector.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero { padding:60px 0 40px; text-align:center; }
+    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
+    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
+    .question-group { margin-bottom:24px; }
+    .question-group:last-child { margin-bottom:0; }
+    .question-number { font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--accent-cyan,#06b6d4); font-weight:500; margin-bottom:6px; display:block; letter-spacing:0.06em; text-transform:uppercase; }
+    .primary-badge { display:inline-block; background:linear-gradient(135deg,rgba(6,182,212,0.2),rgba(139,92,246,0.2)); border:1px solid rgba(6,182,212,0.4); border-radius:4px; font-family:'Space Grotesk',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:var(--accent-cyan,#06b6d4); padding:3px 10px; margin-left:10px; vertical-align:middle; }
+    .runner-up-badge { display:inline-block; background:rgba(139,92,246,0.12); border:1px solid rgba(139,92,246,0.3); border-radius:4px; font-family:'Space Grotesk',sans-serif; font-size:0.72rem; font-weight:700; letter-spacing:0.08em; text-transform:uppercase; color:#a78bfa; padding:3px 10px; margin-left:10px; vertical-align:middle; }
+    .primary-result { background:rgba(6,182,212,0.07); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius); padding:20px 24px; margin-bottom:16px; }
+    .primary-result .model-name { font-family:'Space Grotesk',sans-serif; font-size:1.25rem; font-weight:700; color:var(--text); margin-bottom:10px; }
+    .runner-up-result { background:rgba(139,92,246,0.06); border:1px solid rgba(139,92,246,0.18); border-radius:var(--radius); padding:16px 20px; margin-bottom:10px; }
+    .runner-up-result .model-name { font-family:'Space Grotesk',sans-serif; font-size:1.05rem; font-weight:700; color:var(--text); margin-bottom:6px; }
+    .runner-up-result .model-note { font-size:0.9rem; color:var(--text-muted); line-height:1.55; }
+    .rationale { font-size:0.95rem; color:var(--text-muted); line-height:1.7; }
+    .section-heading { font-family:'Space Grotesk',sans-serif; font-size:0.82rem; font-weight:600; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin:20px 0 10px; }
+    .consult-box { background:linear-gradient(135deg,rgba(139,92,246,0.1),rgba(6,182,212,0.08)); border:1px solid rgba(139,92,246,0.25); border-radius:var(--radius); padding:18px 22px; margin-top:20px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+    .consult-box p { font-size:0.92rem; color:var(--text-muted); margin:0; line-height:1.5; }
+    .consult-box strong { color:var(--text); display:block; font-family:'Space Grotesk',sans-serif; margin-bottom:3px; }
+    .consult-box a { white-space:nowrap; }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container" style="max-width:760px;margin:0 auto;">
+
+    <div class="tool-hero">
+      <h1>AI Model Selector</h1>
+      <p>Not sure which AI model to use? Answer 4 quick questions and get a personalized recommendation — ChatGPT, Claude, Gemini, and more.</p>
+    </div>
+
+    <div class="tool-card">
+      <div class="question-group">
+        <span class="question-number">Question 1 of 4</span>
+        <label class="tool-label" for="q-task">What are you mainly trying to do?</label>
+        <select id="q-task" class="tool-select">
+          <option value="">— Select your primary use case —</option>
+          <option value="write">Write and edit text</option>
+          <option value="code">Code or debug</option>
+          <option value="analyze">Analyze images or documents</option>
+          <option value="converse">Have a conversation</option>
+          <option value="build">Build an app or agent</option>
+          <option value="research">Research a topic</option>
+        </select>
+      </div>
+
+      <div class="question-group">
+        <span class="question-number">Question 2 of 4</span>
+        <label class="tool-label" for="q-priority">How important is speed vs. quality?</label>
+        <select id="q-priority" class="tool-select">
+          <option value="">— Select your priority —</option>
+          <option value="speed">Speed is everything — I need instant</option>
+          <option value="balanced">Balanced</option>
+          <option value="quality">Quality over everything</option>
+        </select>
+      </div>
+
+      <div class="question-group">
+        <span class="question-number">Question 3 of 4</span>
+        <label class="tool-label" for="q-budget">What's your budget?</label>
+        <select id="q-budget" class="tool-select">
+          <option value="">— Select your budget —</option>
+          <option value="free">Free only</option>
+          <option value="low">Under $20/month</option>
+          <option value="mid">$20–50/month</option>
+          <option value="any">Cost doesn't matter</option>
+        </select>
+      </div>
+
+      <div class="question-group">
+        <span class="question-number">Question 4 of 4</span>
+        <label class="tool-label" for="q-multimodal">Do you need it to understand images or files?</label>
+        <select id="q-multimodal" class="tool-select">
+          <option value="">— Select an option —</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" style="width:100%;padding:14px;font-size:1rem;margin-top:8px" onclick="getRecommendation()">Get My Recommendation →</button>
+    </div>
+
+    <div class="results-card" id="results" style="display:none;">
+      <div id="results-inner"></div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  const MODELS = {
+    chatgpt4o: {
+      name: 'ChatGPT-4o',
+      url: 'https://chat.openai.com',
+      strengths: 'Multimodal powerhouse with image, file, and voice understanding. Excellent at writing, reasoning, and coding. Huge plugin/tool ecosystem.',
+      cost: 'Free tier available; Plus plan $20/month'
+    },
+    claudeSonnet: {
+      name: 'Claude Sonnet',
+      url: 'https://claude.ai',
+      strengths: 'Exceptional at long-form writing, nuanced reasoning, and following complex instructions. Handles very large documents. Ideal for agents and serious workflows.',
+      cost: 'Free tier; Pro plan $20/month'
+    },
+    geminiFlash: {
+      name: 'Gemini 2.0 Flash',
+      url: 'https://gemini.google.com',
+      strengths: 'Google\'s fastest multimodal model. Excellent for real-time tasks, image analysis, and integrates natively with Google Workspace.',
+      cost: 'Free in Gemini app; API very cheap'
+    },
+    gpt4omini: {
+      name: 'GPT-4o mini',
+      url: 'https://chat.openai.com',
+      strengths: 'Extremely fast and cheap. Great for high-volume tasks, quick drafts, and Q&A where you need instant responses without paying for the full model.',
+      cost: 'Free tier; API is ultra-low-cost'
+    },
+    claudeHaiku: {
+      name: 'Claude Haiku',
+      url: 'https://claude.ai',
+      strengths: 'Anthropic\'s fastest and most affordable model. Ideal for summarization, classification, and high-throughput API tasks where speed and cost matter most.',
+      cost: 'API only; very low cost per token'
+    },
+    geminiPro: {
+      name: 'Gemini 1.5 Pro',
+      url: 'https://gemini.google.com',
+      strengths: 'Massive 1M+ token context window. Best-in-class for analyzing huge documents, codebases, or long research papers in a single pass.',
+      cost: 'Free in Gemini app; Advanced plan $19.99/month'
+    },
+    perplexity: {
+      name: 'Perplexity AI',
+      url: 'https://perplexity.ai',
+      strengths: 'AI-native search engine. Cites sources in real time, always up-to-date, and ideal for research tasks where accuracy and references matter.',
+      cost: 'Free tier; Pro plan $20/month'
+    },
+    deepseek: {
+      name: 'DeepSeek',
+      url: 'https://chat.deepseek.com',
+      strengths: 'Open-source model with exceptional coding and math ability at a fraction of the cost. Strong reasoning model (R1) rivals top closed models.',
+      cost: 'Free to use; API extremely cheap'
+    }
+  };
+
+  function score(task, priority, budget, multimodal) {
+    const scores = {};
+    Object.keys(MODELS).forEach(k => scores[k] = 0);
+
+    // Task scoring
+    if (task === 'write') {
+      scores.claudeSonnet += 4; scores.chatgpt4o += 3; scores.gpt4omini += 2;
+      scores.claudeHaiku += 1; scores.geminiFlash += 1;
+    }
+    if (task === 'code') {
+      scores.chatgpt4o += 4; scores.claudeSonnet += 3; scores.deepseek += 4;
+      scores.gpt4omini += 2; scores.geminiFlash += 1;
+    }
+    if (task === 'analyze') {
+      scores.chatgpt4o += 4; scores.geminiPro += 4; scores.geminiFlash += 3;
+      scores.claudeSonnet += 2; scores.perplexity += 1;
+    }
+    if (task === 'converse') {
+      scores.chatgpt4o += 3; scores.claudeSonnet += 4; scores.geminiFlash += 2;
+      scores.gpt4omini += 2; scores.claudeHaiku += 1;
+    }
+    if (task === 'build') {
+      scores.claudeSonnet += 4; scores.chatgpt4o += 3; scores.deepseek += 3;
+      scores.claudeHaiku += 2; scores.gpt4omini += 1;
+    }
+    if (task === 'research') {
+      scores.perplexity += 5; scores.geminiPro += 3; scores.chatgpt4o += 2;
+      scores.claudeSonnet += 2; scores.geminiFlash += 1;
+    }
+
+    // Priority scoring
+    if (priority === 'speed') {
+      scores.geminiFlash += 3; scores.gpt4omini += 3; scores.claudeHaiku += 3;
+      scores.perplexity += 1; scores.deepseek += 1;
+    }
+    if (priority === 'balanced') {
+      scores.chatgpt4o += 2; scores.claudeSonnet += 2; scores.geminiFlash += 2;
+      scores.perplexity += 1;
+    }
+    if (priority === 'quality') {
+      scores.claudeSonnet += 3; scores.chatgpt4o += 3; scores.geminiPro += 2;
+      scores.deepseek += 2; scores.perplexity += 1;
+    }
+
+    // Budget scoring
+    if (budget === 'free') {
+      scores.geminiFlash += 3; scores.perplexity += 2; scores.deepseek += 3;
+      scores.chatgpt4o += 1; scores.claudeSonnet += 1; scores.gpt4omini += 1;
+      // Penalize paid-heavy models
+      scores.geminiPro -= 1; scores.claudeHaiku -= 1;
+    }
+    if (budget === 'low') {
+      scores.chatgpt4o += 2; scores.claudeSonnet += 2; scores.perplexity += 2;
+      scores.gpt4omini += 3; scores.geminiFlash += 2; scores.deepseek += 3;
+    }
+    if (budget === 'mid') {
+      scores.chatgpt4o += 3; scores.claudeSonnet += 3; scores.geminiPro += 2;
+      scores.perplexity += 2; scores.deepseek += 1;
+    }
+    if (budget === 'any') {
+      scores.claudeSonnet += 3; scores.chatgpt4o += 3; scores.geminiPro += 2;
+      scores.perplexity += 1; scores.deepseek += 1;
+    }
+
+    // Multimodal scoring
+    if (multimodal === 'yes') {
+      scores.chatgpt4o += 3; scores.geminiFlash += 3; scores.geminiPro += 3;
+      scores.claudeSonnet += 2;
+      // Penalize text-only
+      scores.deepseek -= 2; scores.claudeHaiku -= 1;
+    }
+    if (multimodal === 'no') {
+      scores.deepseek += 1; scores.claudeHaiku += 1; scores.perplexity += 1;
+    }
+
+    return scores;
+  }
+
+  function getRationale(primary, task, priority, budget, multimodal) {
+    const m = MODELS[primary].name;
+    const taskLabels = {
+      write: 'writing and editing text',
+      code: 'coding and debugging',
+      analyze: 'analyzing images and documents',
+      converse: 'conversational use',
+      build: 'building apps and agents',
+      research: 'researching topics'
+    };
+    const priorityLabels = {
+      speed: 'speed is your top priority',
+      balanced: 'you want a balance of speed and quality',
+      quality: 'quality is what matters most to you'
+    };
+    const budgetLabels = {
+      free: 'you want to stay on a free plan',
+      low: 'you have a budget under $20/month',
+      mid: 'you\'re comfortable spending $20–50/month',
+      any: 'cost isn\'t a constraint'
+    };
+    const mmLabel = multimodal === 'yes' ? 'and you need image/file understanding' : 'and you don\'t need multimodal input';
+
+    return `Based on your answers — ${taskLabels[task]}, ${priorityLabels[priority]}, ${budgetLabels[budget]}, ${mmLabel} — <strong>${m}</strong> is your best match. ${MODELS[primary].strengths} (${MODELS[primary].cost}.)`;
+  }
+
+  function getRunnerUpNote(key, task, budget) {
+    const notes = {
+      chatgpt4o: 'Versatile all-rounder with the biggest ecosystem. A strong choice if you want one tool that does everything.',
+      claudeSonnet: 'Outstanding for long documents and nuanced writing. If you work with complex instructions or large context, try this next.',
+      geminiFlash: 'Blazing fast and free. Perfect if you\'re in the Google ecosystem or just need quick answers without a subscription.',
+      gpt4omini: 'The best "fast and cheap" option from OpenAI. Use it when you don\'t need full GPT-4o power but want reliability.',
+      claudeHaiku: 'Anthropic\'s speed-focused model. Great for API integrations where you need low latency at scale.',
+      geminiPro: 'Unmatched context window — feed it entire books or codebases. A must-try for heavy document work.',
+      perplexity: 'The go-to for real-time research with citations. If accuracy and up-to-date sources matter, this one stands out.',
+      deepseek: 'Surprisingly powerful, especially on code and math. Open-source and nearly free — worth trying before paying for anything else.'
+    };
+    return notes[key];
+  }
+
+  function getRecommendation() {
+    const task = document.getElementById('q-task').value;
+    const priority = document.getElementById('q-priority').value;
+    const budget = document.getElementById('q-budget').value;
+    const multimodal = document.getElementById('q-multimodal').value;
+
+    if (!task || !priority || !budget || !multimodal) {
+      alert('Please answer all 4 questions before getting your recommendation.');
+      return;
+    }
+
+    const scores = score(task, priority, budget, multimodal);
+    const ranked = Object.entries(scores).sort((a, b) => b[1] - a[1]);
+    const [primaryKey] = ranked[0];
+    const runnerUps = ranked.slice(1, 3).map(r => r[0]);
+
+    const rationale = getRationale(primaryKey, task, priority, budget, multimodal);
+
+    let html = `
+      <div class="result-label" style="margin-bottom:14px;">Your Recommendation</div>
+
+      <div class="primary-result">
+        <div class="model-name">${MODELS[primaryKey].name} <span class="primary-badge">Top Pick</span></div>
+        <div class="rationale">${rationale}</div>
+      </div>
+
+      <div class="section-heading">Runner-up Alternatives</div>
+    `;
+
+    runnerUps.forEach(key => {
+      html += `
+        <div class="runner-up-result">
+          <div class="model-name">${MODELS[key].name} <span class="runner-up-badge">Runner-up</span></div>
+          <div class="model-note">${getRunnerUpNote(key, task, budget)}</div>
+        </div>
+      `;
+    });
+
+    html += `
+      <div class="consult-box">
+        <div>
+          <strong>Need help choosing the right AI stack?</strong>
+          <p>Not sure how to put all the pieces together for your workflow or business? Let's figure it out together.</p>
+        </div>
+        <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.9rem;padding:10px 20px;">Book a 60-min Consultation</a>
+      </div>
+    `;
+
+    const resultsEl = document.getElementById('results');
+    document.getElementById('results-inner').innerHTML = html;
+    resultsEl.style.display = 'block';
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+</script>
+</body>
+</html>

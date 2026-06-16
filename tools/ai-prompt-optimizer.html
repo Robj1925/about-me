@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Prompt Optimizer — Robby J</title>
+  <meta name="description" content="Paste any AI prompt and get an improved version with an explanation of what changed and why. Free prompt engineering tool." />
+  <meta property="og:title" content="AI Prompt Optimizer — Robby J" />
+  <meta property="og:description" content="Paste any AI prompt and get an improved version with an explanation of what changed and why. Free prompt engineering tool." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/ai-prompt-optimizer.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    /* ===== TOOL PAGE LAYOUT ===== */
+    .tool-main {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      min-height: 100vh;
+    }
+    .tool-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ===== HERO ===== */
+    .tool-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .tool-header .gemini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(6,182,212,0.12);
+      border: 1px solid rgba(6,182,212,0.35);
+      color: #06B6D4;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 100px;
+      margin-bottom: 22px;
+    }
+    .tool-header .gemini-badge svg {
+      flex-shrink: 0;
+    }
+    .tool-header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 700;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #F0F0F8 0%, #06B6D4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .tool-header p {
+      color: #8888AA;
+      font-family: 'Inter', sans-serif;
+      font-size: 1.08rem;
+      line-height: 1.65;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ===== CARDS ===== */
+    .tool-card {
+      background: #13131A;
+      border: 1px solid rgba(124,58,237,0.2);
+      border-radius: 14px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+    .card-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #8888AA;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    /* ===== FORM ELEMENTS ===== */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .form-group:last-child {
+      margin-bottom: 0;
+    }
+    .form-group label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8888AA;
+    }
+    .form-group label .hint {
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      color: #55556A;
+      font-size: 0.8rem;
+      margin-left: 6px;
+    }
+    .form-control {
+      background: rgba(10,10,15,0.7);
+      border: 1px solid rgba(124,58,237,0.25);
+      border-radius: 9px;
+      padding: 12px 16px;
+      color: #F0F0F8;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: rgba(124,58,237,0.65);
+      box-shadow: 0 0 0 3px rgba(124,58,237,0.12);
+    }
+    .form-control::placeholder {
+      color: #44445A;
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 140px;
+      line-height: 1.65;
+      font-family: 'Inter', sans-serif;
+    }
+    select.form-control {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238888AA' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+    .api-key-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: #06B6D4;
+      text-decoration: none;
+      margin-top: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: opacity 0.2s;
+    }
+    .api-key-link:hover {
+      opacity: 0.8;
+    }
+
+    /* ===== TWO-COL GRID ===== */
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 580px) {
+      .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ===== GENERATE BUTTON ===== */
+    .generate-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: #7C3AED;
+      color: #fff;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      width: 100%;
+      height: 48px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 0 24px rgba(124,58,237,0.35);
+      margin-top: 8px;
+    }
+    .generate-btn:hover {
+      background: #6D28D9;
+      transform: translateY(-2px);
+      box-shadow: 0 0 36px rgba(124,58,237,0.5);
+    }
+    .generate-btn:active {
+      transform: translateY(0);
+    }
+    .generate-btn:disabled {
+      background: #3B275E;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* ===== LOADING SPINNER ===== */
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    .spinner {
+      display: none;
+      text-align: center;
+      padding: 48px 0 32px;
+    }
+    .spinner.visible {
+      display: block;
+    }
+    .spinner-ring {
+      width: 44px;
+      height: 44px;
+      border: 3px solid rgba(124,58,237,0.2);
+      border-top-color: #7C3AED;
+      border-radius: 50%;
+      animation: spin 0.75s linear infinite;
+      margin: 0 auto 16px;
+    }
+    .spinner p {
+      color: #8888AA;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.92rem;
+    }
+
+    /* ===== ERROR ===== */
+    .error-msg {
+      display: none;
+      background: rgba(239,68,68,0.08);
+      border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 9px;
+      padding: 12px 16px;
+      color: #F87171;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      margin-bottom: 20px;
+    }
+    .error-msg.visible {
+      display: block;
+    }
+
+    /* ===== OUTPUT SECTION ===== */
+    .output-section {
+      display: none;
+    }
+    .output-section.visible {
+      display: block;
+    }
+    .output-section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #F0F0F8;
+      margin: 0 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .output-section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: rgba(124,58,237,0.2);
+    }
+
+    /* ===== OUTPUT BLOCK ===== */
+    .output-block {
+      background: #13131A;
+      border: 1px solid rgba(6,182,212,0.25);
+      border-radius: 14px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .output-block-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(6,182,212,0.15);
+      background: rgba(6,182,212,0.04);
+    }
+    .output-block-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #F0F0F8;
+      letter-spacing: 0.02em;
+    }
+    .output-block-title .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #06B6D4;
+      flex-shrink: 0;
+    }
+    .output-block-title .dot.purple {
+      background: #9D5FF0;
+    }
+    .copy-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      background: rgba(6,182,212,0.1);
+      border: 1px solid rgba(6,182,212,0.3);
+      color: #06B6D4;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .copy-btn:hover {
+      background: rgba(6,182,212,0.2);
+      border-color: rgba(6,182,212,0.5);
+    }
+    .copy-btn.copied {
+      background: rgba(34,197,94,0.1);
+      border-color: rgba(34,197,94,0.35);
+      color: #4ADE80;
+    }
+    .output-block-body {
+      padding: 24px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: #D0D0E8;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+    .output-block-body.mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.88rem;
+      background: #0D1117;
+      color: #C9D1D9;
+    }
+
+    /* ===== CHANGES LIST ===== */
+    .changes-list {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .change-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .change-number {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      background: rgba(124,58,237,0.2);
+      border: 1px solid rgba(124,58,237,0.35);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #9D5FF0;
+      margin-top: 1px;
+    }
+    .change-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.92rem;
+      color: #C0C0D8;
+      line-height: 1.6;
+    }
+    .change-text strong {
+      color: #F0F0F8;
+      font-weight: 600;
+    }
+
+    /* ===== SCORE BADGE ===== */
+    .score-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px 24px;
+      border-bottom: 1px solid rgba(6,182,212,0.15);
+      flex-wrap: wrap;
+    }
+    .score-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 100px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+    .score-pill.before {
+      background: rgba(239,68,68,0.1);
+      border: 1px solid rgba(239,68,68,0.3);
+      color: #F87171;
+    }
+    .score-pill.after {
+      background: rgba(34,197,94,0.1);
+      border: 1px solid rgba(34,197,94,0.3);
+      color: #4ADE80;
+    }
+    .score-arrow {
+      color: #8888AA;
+      font-size: 1rem;
+    }
+
+    /* ===== INFO BOX ===== */
+    .info-box {
+      background: rgba(6,182,212,0.05);
+      border: 1px solid rgba(6,182,212,0.18);
+      border-radius: 10px;
+      padding: 18px 22px;
+      color: #8888AA;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin-top: 8px;
+    }
+    .info-box strong {
+      color: #06B6D4;
+    }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 580px) {
+      .tool-card {
+        padding: 22px 18px;
+      }
+      .output-block-body {
+        padding: 18px 16px;
+      }
+      .changes-list {
+        padding: 18px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:120px;padding-bottom:80px;min-height:100vh;">
+  <div style="max-width:760px;margin:0 auto;padding:0 20px;">
+
+    <!-- ===== HERO ===== -->
+    <header class="tool-header">
+      <div class="gemini-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        Powered by Gemini AI
+      </div>
+      <h1>AI Prompt Optimizer</h1>
+      <p>Paste any AI prompt and instantly get a professionally engineered version — plus a clear explanation of every change and why it matters.</p>
+    </header>
+
+    <!-- ===== API KEY CARD ===== -->
+    <div class="tool-card">
+      <div class="form-group" style="margin-bottom:0;">
+        <label for="apiKey">Gemini API Key</label>
+        <input
+          type="password"
+          id="apiKey"
+          class="form-control"
+          placeholder="Enter your Gemini API key"
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" class="api-key-link">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Get a free key →
+        </a>
+      </div>
+    </div>
+
+    <!-- ===== INPUT FORM CARD ===== -->
+    <div class="tool-card">
+
+      <div class="form-group">
+        <label for="originalPrompt">Your Prompt <span class="hint">— paste the prompt you want to improve</span></label>
+        <textarea
+          id="originalPrompt"
+          class="form-control"
+          placeholder="e.g. Write me a blog post about AI"
+          rows="6"
+        ></textarea>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-group">
+          <label for="targetModel">Target AI Model</label>
+          <select id="targetModel" class="form-control">
+            <option value="any">Any / General</option>
+            <option value="ChatGPT / GPT-4o">ChatGPT / GPT-4o</option>
+            <option value="Claude">Claude</option>
+            <option value="Gemini">Gemini</option>
+            <option value="Llama / Open-source">Llama / Open-source</option>
+            <option value="Midjourney">Midjourney (image)</option>
+            <option value="DALL·E">DALL·E (image)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="useCase">Use Case</label>
+          <select id="useCase" class="form-control">
+            <option value="General writing">General writing</option>
+            <option value="Code generation">Code generation</option>
+            <option value="Summarization">Summarization</option>
+            <option value="Data analysis">Data analysis</option>
+            <option value="Customer support">Customer support</option>
+            <option value="Marketing copy">Marketing copy</option>
+            <option value="Research">Research</option>
+            <option value="Creative / storytelling">Creative / storytelling</option>
+            <option value="Image generation">Image generation</option>
+            <option value="Chatbot / agent">Chatbot / agent</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="optimizationGoal">What do you want to improve? <span class="hint">— optional, be specific</span></label>
+        <input
+          type="text"
+          id="optimizationGoal"
+          class="form-control"
+          placeholder="e.g. Make it more specific, get longer output, stop hallucinations, add structure"
+        />
+      </div>
+
+      <div class="form-group" style="margin-bottom:0;">
+        <label for="outputStyle">Preferred output style</label>
+        <select id="outputStyle" class="form-control">
+          <option value="Balanced">Balanced (minor to moderate edits)</option>
+          <option value="Aggressive">Aggressive (full rewrite if needed)</option>
+          <option value="Minimal">Minimal (small targeted fixes only)</option>
+        </select>
+      </div>
+
+    </div>
+
+    <!-- ERROR -->
+    <div class="error-msg" id="errorMsg"></div>
+
+    <!-- GENERATE BUTTON -->
+    <button class="generate-btn" id="generateBtn" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      Optimize My Prompt
+    </button>
+
+    <!-- LOADING -->
+    <div class="spinner" id="spinner">
+      <div class="spinner-ring"></div>
+      <p>Analyzing and optimizing your prompt...</p>
+    </div>
+
+    <!-- ===== OUTPUT SECTION ===== -->
+    <div class="output-section" id="outputSection" style="margin-top:40px;">
+
+      <p class="output-section-title">Optimization Results</p>
+
+      <!-- Optimized Prompt Block -->
+      <div class="output-block" id="optimizedBlock">
+        <div class="output-block-header">
+          <div class="output-block-title">
+            <span class="dot"></span>
+            Optimized Prompt
+          </div>
+          <button class="copy-btn" id="copyOptimizedBtn">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy
+          </button>
+        </div>
+        <div class="output-block-body" id="optimizedPromptOutput"></div>
+      </div>
+
+      <!-- What Changed Block -->
+      <div class="output-block" id="changesBlock">
+        <div class="output-block-header">
+          <div class="output-block-title">
+            <span class="dot purple"></span>
+            What Changed &amp; Why
+          </div>
+          <button class="copy-btn" id="copyChangesBtn">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy
+          </button>
+        </div>
+        <div class="changes-list" id="changesOutput"></div>
+      </div>
+
+      <!-- Pro Tips Block -->
+      <div class="output-block" id="tipsBlock">
+        <div class="output-block-header">
+          <div class="output-block-title">
+            <span class="dot" style="background:#F59E0B;"></span>
+            Pro Tips for This Prompt
+          </div>
+          <button class="copy-btn" id="copyTipsBtn">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copy
+          </button>
+        </div>
+        <div class="output-block-body" id="tipsOutput"></div>
+      </div>
+
+      <div class="info-box">
+        <strong>How to use this:</strong> Copy the optimized prompt and paste it directly into your AI tool of choice. If results still aren't right, tweak the "What do you want to improve?" field and regenerate — specificity is everything in prompt engineering.
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  // ===== SESSION STORAGE FOR API KEY =====
+  const apiKeyInput = document.getElementById('apiKey');
+  const savedKey = sessionStorage.getItem('gemini_api_key');
+  if (savedKey) apiKeyInput.value = savedKey;
+  apiKeyInput.addEventListener('input', () => {
+    sessionStorage.setItem('gemini_api_key', apiKeyInput.value.trim());
+  });
+
+  // ===== GEMINI API CALL =====
+  async function callGemini(apiKey, prompt) {
+    const res = await fetch(
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${encodeURIComponent(apiKey)}`,
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+      }
+    );
+    const data = await res.json();
+    if (data.error) throw new Error(data.error.message || 'Gemini API error');
+    return data.candidates[0].content.parts[0].text;
+  }
+
+  // ===== BUILD SYSTEM PROMPT =====
+  function buildSystemPrompt(originalPrompt, targetModel, useCase, optimizationGoal, outputStyle) {
+    const modelLine = targetModel === 'any'
+      ? 'The target AI model is not specified — optimize for general use across modern LLMs.'
+      : `The target AI model is: ${targetModel}.`;
+
+    const goalLine = optimizationGoal.trim()
+      ? `The user specifically wants to improve: ${optimizationGoal.trim()}.`
+      : 'No specific improvement goal was stated — apply all relevant best practices.';
+
+    return `You are an expert prompt engineer with deep knowledge of how large language models interpret instructions. Your job is to analyze a user-submitted AI prompt and return a structured, professional optimization.
+
+${modelLine}
+Use case: ${useCase}.
+${goalLine}
+Edit intensity: ${outputStyle} — apply this level of editing when rewriting the prompt.
+
+ORIGINAL PROMPT TO OPTIMIZE:
+"""
+${originalPrompt}
+"""
+
+Analyze the original prompt and return your response in EXACTLY this format — no deviations, no extra text before or after:
+
+===OPTIMIZED_PROMPT===
+[Write the fully optimized, ready-to-use prompt here. Apply prompt engineering best practices: add role assignment if missing, clarify the task and expected output format, add constraints or tone guidance where helpful, remove ambiguity, and structure with clear sections if the prompt is complex. Match the edit intensity level specified.]
+
+===CHANGES===
+[List 3 to 6 specific changes you made, one per line, in this exact format:
+CHANGE: [short name of the change] | REASON: [clear, practical explanation of why this change improves the output]
+
+Example:
+CHANGE: Added expert role | REASON: Assigning a role (e.g., "You are an expert copywriter") primes the model to respond with domain-appropriate vocabulary and confidence, improving output quality.
+]
+
+===TIPS===
+[Write 3 to 5 practical, actionable tips for getting the best results from this optimized prompt. Focus on things specific to this use case and target model. Each tip should be on its own line starting with a bullet point (•). Keep tips concise and immediately actionable.]
+
+Rules you MUST follow:
+- Never add placeholder text like [INSERT X HERE] — only add real, usable content.
+- Keep the optimized prompt in the same language as the original.
+- If the original prompt is already excellent, say so in the changes section and make only minor polish edits.
+- Do not add unnecessary length — every word in the optimized prompt must earn its place.
+- The CHANGES section must use the exact pipe-separated format shown above.
+- Do not include any commentary, preamble, or summary outside the three tagged sections.`;
+  }
+
+  // ===== PARSE RESPONSE =====
+  function parseResponse(rawText) {
+    const optimizedMatch = rawText.match(/===OPTIMIZED_PROMPT===([\s\S]*?)===CHANGES===/);
+    const changesMatch = rawText.match(/===CHANGES===([\s\S]*?)===TIPS===/);
+    const tipsMatch = rawText.match(/===TIPS===([\s\S]*?)$/);
+
+    return {
+      optimized: optimizedMatch ? optimizedMatch[1].trim() : '',
+      changes: changesMatch ? changesMatch[1].trim() : '',
+      tips: tipsMatch ? tipsMatch[1].trim() : ''
+    };
+  }
+
+  // ===== PARSE CHANGES INTO STRUCTURED ITEMS =====
+  function parseChanges(changesText) {
+    const lines = changesText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+    const items = [];
+    for (const line of lines) {
+      const pipeIdx = line.indexOf(' | REASON:');
+      if (pipeIdx !== -1) {
+        const changePart = line.replace(/^CHANGE:\s*/i, '').substring(0, pipeIdx - 'CHANGE: '.length + 'CHANGE: '.length).replace(/^CHANGE:\s*/i, '');
+        // simpler parse
+        const changeMatch = line.match(/^CHANGE:\s*(.+?)\s*\|\s*REASON:\s*(.+)$/i);
+        if (changeMatch) {
+          items.push({ name: changeMatch[1].trim(), reason: changeMatch[2].trim() });
+        } else {
+          items.push({ name: '', reason: line });
+        }
+      } else {
+        // fallback: treat entire line as a reason
+        items.push({ name: '', reason: line.replace(/^[-•*]\s*/, '') });
+      }
+    }
+    return items;
+  }
+
+  // ===== RENDER CHANGES =====
+  function renderChanges(changesText) {
+    const container = document.getElementById('changesOutput');
+    const items = parseChanges(changesText);
+    container.innerHTML = '';
+
+    if (items.length === 0) {
+      container.innerHTML = `<p style="color:#8888AA;font-family:'Inter',sans-serif;font-size:0.92rem;padding:8px 0;">${escapeHtml(changesText)}</p>`;
+      return;
+    }
+
+    items.forEach((item, idx) => {
+      const div = document.createElement('div');
+      div.className = 'change-item';
+      div.innerHTML = `
+        <div class="change-number">${idx + 1}</div>
+        <div class="change-text">
+          ${item.name ? `<strong>${escapeHtml(item.name)}</strong> — ` : ''}${escapeHtml(item.reason)}
+        </div>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  // ===== COPY BUTTON HELPER =====
+  function attachCopyBtn(btnId, getTextFn) {
+    const btn = document.getElementById(btnId);
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(getTextFn());
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => {
+          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy`;
+          btn.classList.remove('copied');
+        }, 2200);
+      } catch (e) {
+        btn.textContent = 'Failed';
+        setTimeout(() => {
+          btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copy`;
+        }, 2000);
+      }
+    });
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  // ===== STORED OUTPUT FOR COPY =====
+  let storedOptimized = '';
+  let storedChanges = '';
+  let storedTips = '';
+
+  attachCopyBtn('copyOptimizedBtn', () => storedOptimized);
+  attachCopyBtn('copyChangesBtn', () => storedChanges);
+  attachCopyBtn('copyTipsBtn', () => storedTips);
+
+  // ===== GENERATE =====
+  document.getElementById('generateBtn').addEventListener('click', async () => {
+    const apiKey = apiKeyInput.value.trim();
+    const originalPrompt = document.getElementById('originalPrompt').value.trim();
+    const targetModel = document.getElementById('targetModel').value;
+    const useCase = document.getElementById('useCase').value;
+    const optimizationGoal = document.getElementById('optimizationGoal').value.trim();
+    const outputStyle = document.getElementById('outputStyle').value;
+
+    const errorEl = document.getElementById('errorMsg');
+    const spinner = document.getElementById('spinner');
+    const outputSection = document.getElementById('outputSection');
+    const generateBtn = document.getElementById('generateBtn');
+
+    // Reset UI
+    errorEl.classList.remove('visible');
+    errorEl.textContent = '';
+    outputSection.classList.remove('visible');
+
+    // Validate
+    if (!apiKey) {
+      errorEl.textContent = 'Please enter your Gemini API key to continue.';
+      errorEl.classList.add('visible');
+      apiKeyInput.focus();
+      return;
+    }
+    if (!originalPrompt) {
+      errorEl.textContent = 'Please paste the prompt you want to optimize.';
+      errorEl.classList.add('visible');
+      document.getElementById('originalPrompt').focus();
+      return;
+    }
+
+    // Loading state
+    spinner.classList.add('visible');
+    generateBtn.disabled = true;
+
+    try {
+      const systemPrompt = buildSystemPrompt(originalPrompt, targetModel, useCase, optimizationGoal, outputStyle);
+      const rawText = await callGemini(apiKey, systemPrompt);
+      const parsed = parseResponse(rawText);
+
+      if (!parsed.optimized && !parsed.changes) {
+        throw new Error('Unexpected response format. Please try again.');
+      }
+
+      // Store for copy buttons
+      storedOptimized = parsed.optimized;
+      storedChanges = parsed.changes;
+      storedTips = parsed.tips;
+
+      // Render
+      document.getElementById('optimizedPromptOutput').textContent = parsed.optimized;
+      renderChanges(parsed.changes);
+      document.getElementById('tipsOutput').textContent = parsed.tips;
+
+      // Show output
+      outputSection.classList.add('visible');
+      setTimeout(() => outputSection.scrollIntoView({ behavior: 'smooth', block: 'start' }), 80);
+
+    } catch (err) {
+      errorEl.textContent = 'Error: ' + (err.message || 'Something went wrong. Please check your API key and try again.');
+      errorEl.classList.add('visible');
+    } finally {
+      spinner.classList.remove('visible');
+      generateBtn.disabled = false;
+    }
+  });
+
+  // Allow Ctrl+Enter / Cmd+Enter in textarea to trigger generation
+  document.getElementById('originalPrompt').addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+      e.preventDefault();
+      document.getElementById('generateBtn').click();
+    }
+  });
+</script>
+</body>
+</html>

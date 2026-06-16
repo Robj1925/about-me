@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelancer Website Checklist — Robby J</title>
+  <meta name="description" content="Check your freelancer or small business website against 15 essential elements. Get a score and see what's missing." />
+  <meta property="og:title" content="Freelancer Website Checklist — Robby J" />
+  <meta property="og:description" content="Check your freelancer or small business website against 15 essential elements. Get a score and see what's missing." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/freelancer-website-checklist.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero { padding:60px 0 40px; text-align:center; }
+    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
+    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
+
+    .group-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-cyan, #06b6d4);
+      margin: 0 0 16px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(6,182,212,0.2);
+    }
+    .checklist-group {
+      margin-bottom: 28px;
+    }
+    .checklist-group:last-of-type {
+      margin-bottom: 0;
+    }
+    .check-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      cursor: pointer;
+    }
+    .check-item:last-child {
+      border-bottom: none;
+    }
+    .check-item input[type="checkbox"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      min-width: 20px;
+      border: 2px solid rgba(255,255,255,0.2);
+      border-radius: 5px;
+      background: rgba(10,10,15,0.6);
+      cursor: pointer;
+      position: relative;
+      margin-top: 1px;
+      transition: all 0.18s ease;
+    }
+    .check-item input[type="checkbox"]:checked {
+      background: var(--accent-cyan, #06b6d4);
+      border-color: var(--accent-cyan, #06b6d4);
+    }
+    .check-item input[type="checkbox"]:checked::after {
+      content: '';
+      position: absolute;
+      left: 5px;
+      top: 2px;
+      width: 6px;
+      height: 10px;
+      border: 2px solid #fff;
+      border-top: none;
+      border-left: none;
+      transform: rotate(45deg);
+    }
+    .check-item label {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text-muted, #9ca3af);
+      line-height: 1.5;
+      cursor: pointer;
+      transition: color 0.18s ease;
+      user-select: none;
+    }
+    .check-item input[type="checkbox"]:checked + label {
+      color: var(--text, #f1f5f9);
+      text-decoration: line-through;
+      text-decoration-color: rgba(6,182,212,0.5);
+    }
+
+    .score-display {
+      text-align: center;
+      padding: 28px 0 20px;
+    }
+    .score-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(3rem, 8vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1;
+      color: var(--accent-cyan, #06b6d4);
+      margin-bottom: 6px;
+    }
+    .score-label {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 16px;
+    }
+    .score-tier {
+      display: inline-block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      padding: 8px 22px;
+      border-radius: 999px;
+      margin-bottom: 20px;
+    }
+    .tier-needs-work { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
+    .tier-getting-there { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+    .tier-almost-pro { background: rgba(139,92,246,0.15); color: #a78bfa; border: 1px solid rgba(139,92,246,0.3); }
+    .tier-set { background: rgba(6,182,212,0.12); color: #06b6d4; border: 1px solid rgba(6,182,212,0.3); }
+
+    .progress-bar-wrap {
+      background: rgba(255,255,255,0.06);
+      border-radius: 999px;
+      height: 10px;
+      margin: 0 0 28px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+      transition: width 0.6s cubic-bezier(0.34,1.56,0.64,1);
+    }
+
+    .missing-section {
+      margin-top: 8px;
+    }
+    .missing-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #f87171;
+      margin-bottom: 12px;
+    }
+    .missing-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 9px 14px;
+      background: rgba(239,68,68,0.07);
+      border: 1px solid rgba(239,68,68,0.18);
+      border-radius: var(--radius, 8px);
+      margin-bottom: 8px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .missing-item::before {
+      content: '✗';
+      color: #f87171;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .all-good-msg {
+      text-align: center;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #34d399;
+      padding: 16px 0 8px;
+    }
+
+    .cta-box {
+      background: linear-gradient(135deg, rgba(139,92,246,0.12), rgba(6,182,212,0.08));
+      border: 1px solid rgba(139,92,246,0.25);
+      border-radius: var(--radius-lg, 16px);
+      padding: 24px 28px;
+      margin-top: 24px;
+      text-align: center;
+    }
+    .cta-box p {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      line-height: 1.6;
+    }
+    .cta-box strong {
+      color: var(--text);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container" style="max-width:760px;margin:0 auto;">
+
+    <div class="tool-hero">
+      <h1>Freelancer Website Checklist</h1>
+      <p>Check your freelancer or small business website against 15 essential elements. Get a score and see exactly what's missing.</p>
+    </div>
+
+    <!-- ===== CHECKLIST CARD ===== -->
+    <div class="tool-card">
+
+      <!-- GROUP 1: BASICS -->
+      <div class="checklist-group">
+        <p class="group-title">Basics</p>
+
+        <div class="check-item">
+          <input type="checkbox" id="c1" />
+          <label for="c1">Clear headline that states exactly what you do and who you help</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c2" />
+          <label for="c2">Contact info visible without scrolling (phone, email, or contact button above the fold)</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c3" />
+          <label for="c3">Mobile-friendly layout that looks good on a phone</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c4" />
+          <label for="c4">Professional photo or logo that builds trust on first impression</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c5" />
+          <label for="c5">Fast loading — no huge unoptimized images slowing the page down</label>
+        </div>
+      </div>
+
+      <!-- GROUP 2: TRUST -->
+      <div class="checklist-group">
+        <p class="group-title">Trust</p>
+
+        <div class="check-item">
+          <input type="checkbox" id="c6" />
+          <label for="c6">Client testimonials or reviews displayed prominently</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c7" />
+          <label for="c7">Portfolio or work samples showing real results</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c8" />
+          <label for="c8">About section that feels human — not a generic bio</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c9" />
+          <label for="c9">Social proof visible (follower count, years of experience, number of clients served)</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c10" />
+          <label for="c10">Clear call-to-action button that tells visitors what to do next</label>
+        </div>
+      </div>
+
+      <!-- GROUP 3: SEO & DISCOVERABILITY -->
+      <div class="checklist-group">
+        <p class="group-title">SEO &amp; Discoverability</p>
+
+        <div class="check-item">
+          <input type="checkbox" id="c11" />
+          <label for="c11">Meta description on every page (what shows up in Google search results)</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c12" />
+          <label for="c12">Google Search Console connected and verified</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c13" />
+          <label for="c13">Sitemap.xml present and submitted to Google</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c14" />
+          <label for="c14">Blog or content section attracting search traffic</label>
+        </div>
+        <div class="check-item">
+          <input type="checkbox" id="c15" />
+          <label for="c15">Google Business Profile linked and up to date</label>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="scoreChecklist()" style="width:100%;padding:14px;font-size:1rem;margin-top:8px">
+        Check My Score →
+      </button>
+    </div>
+
+    <!-- ===== RESULTS CARD ===== -->
+    <div class="results-card" id="results" style="display:none;">
+
+      <div class="score-display">
+        <div class="score-number" id="scoreNumber">0/15</div>
+        <div class="score-label">Elements Complete</div>
+        <div id="scoreTier" class="score-tier"></div>
+      </div>
+
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progressBar" style="width:0%"></div>
+      </div>
+
+      <div class="missing-section" id="missingSection"></div>
+
+      <div class="cta-box" id="ctaBox"></div>
+
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+<script>
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  const items = [
+    { id: 'c1',  label: 'Clear headline that states what you do',              group: 'Basics' },
+    { id: 'c2',  label: 'Contact info visible without scrolling',              group: 'Basics' },
+    { id: 'c3',  label: 'Mobile-friendly layout',                              group: 'Basics' },
+    { id: 'c4',  label: 'Professional photo or logo',                          group: 'Basics' },
+    { id: 'c5',  label: 'Fast loading (no huge unoptimized images)',           group: 'Basics' },
+    { id: 'c6',  label: 'Client testimonials or reviews',                      group: 'Trust' },
+    { id: 'c7',  label: 'Portfolio or work samples',                           group: 'Trust' },
+    { id: 'c8',  label: 'About section that feels human',                      group: 'Trust' },
+    { id: 'c9',  label: 'Social proof (followers, years of experience, etc.)', group: 'Trust' },
+    { id: 'c10', label: 'Clear call-to-action button',                         group: 'Trust' },
+    { id: 'c11', label: 'Meta description on every page',                      group: 'SEO & Discoverability' },
+    { id: 'c12', label: 'Google Search Console connected',                     group: 'SEO & Discoverability' },
+    { id: 'c13', label: 'Sitemap.xml present and submitted',                   group: 'SEO & Discoverability' },
+    { id: 'c14', label: 'Blog or content section for search traffic',          group: 'SEO & Discoverability' },
+    { id: 'c15', label: 'Google Business Profile linked',                      group: 'SEO & Discoverability' },
+  ];
+
+  function scoreChecklist() {
+    let score = 0;
+    const missing = [];
+
+    items.forEach(item => {
+      const cb = document.getElementById(item.id);
+      if (cb.checked) {
+        score++;
+      } else {
+        missing.push(item);
+      }
+    });
+
+    document.getElementById('scoreNumber').textContent = score + '/15';
+
+    const pct = Math.round((score / 15) * 100);
+    document.getElementById('progressBar').style.width = pct + '%';
+
+    let tierClass, tierText, ctaHeading, ctaCopy;
+    if (score <= 5) {
+      tierClass = 'tier-needs-work';
+      tierText = 'Needs Work';
+      ctaHeading = 'Your website needs some serious love.';
+      ctaCopy = 'You\'re leaving clients on the table. Let\'s fix that — I can help you build or upgrade your site so it actually converts visitors into paying customers.';
+    } else if (score <= 10) {
+      tierClass = 'tier-getting-there';
+      tierText = 'Getting There';
+      ctaHeading = 'You have a foundation — now let\'s optimize it.';
+      ctaCopy = 'You\'ve got the basics in place but there are still gaps that cost you clients. Let\'s knock out the missing pieces and take your site to the next level.';
+    } else if (score <= 14) {
+      tierClass = 'tier-almost-pro';
+      tierText = 'Almost Pro';
+      ctaHeading = 'So close — just a few tweaks left.';
+      ctaCopy = 'Your site is in solid shape. Knock out those last items and you\'ll have a website that works hard for you around the clock.';
+    } else {
+      tierClass = 'tier-set';
+      tierText = "You're Set!";
+      ctaHeading = 'Your website is dialed in.';
+      ctaCopy = 'You\'ve checked every box — nice work. If you want to go even further with AI automation, lead generation, or content, I\'d love to help.';
+    }
+
+    const tierEl = document.getElementById('scoreTier');
+    tierEl.className = 'score-tier ' + tierClass;
+    tierEl.textContent = tierText;
+
+    const missingSection = document.getElementById('missingSection');
+    if (missing.length === 0) {
+      missingSection.innerHTML = '<div class="all-good-msg">You checked every box — perfect score!</div>';
+    } else {
+      let html = '<p class="missing-title">What you\'re missing (' + missing.length + ' item' + (missing.length > 1 ? 's' : '') + ')</p>';
+      missing.forEach(m => {
+        html += '<div class="missing-item"><span>' + m.label + ' <span style="color:rgba(255,255,255,0.3);font-size:0.8rem">— ' + m.group + '</span></span></div>';
+      });
+      missingSection.innerHTML = html;
+    }
+
+    document.getElementById('ctaBox').innerHTML = `
+      <p><strong>${ctaHeading}</strong><br>${ctaCopy}</p>
+      <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener" class="btn btn-primary" style="margin-right:10px;margin-bottom:8px;">
+        Join the AI Academy
+      </a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-ghost">
+        Watch Free Tutorials
+      </a>
+    `;
+
+    const resultsEl = document.getElementById('results');
+    resultsEl.style.display = 'block';
+    setTimeout(() => {
+      resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 80);
+  }
+</script>
+</body>
+</html>

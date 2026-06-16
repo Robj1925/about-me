@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Cost Estimator — Robby J</title>
+  <meta name="description" content="Find out how much a website should cost for your business. Free quiz-based estimator." />
+  <meta property="og:title" content="Website Cost Estimator — Robby J" />
+  <meta property="og:description" content="Find out how much a website should cost for your business. Free quiz-based estimator." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/website-cost-estimator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero { padding:60px 0 40px; text-align:center; }
+    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2306b6d4' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
+    .tool-select option { background:#0a0a0f; color:var(--text); }
+    .field-group { margin-bottom:22px; }
+    .field-group:last-of-type { margin-bottom:0; }
+
+    /* Yes/No toggle buttons */
+    .toggle-group { display:flex; gap:10px; }
+    .toggle-btn { flex:1; padding:11px 14px; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-muted); font-family:'Space Grotesk',sans-serif; font-size:0.95rem; font-weight:600; cursor:pointer; transition:var(--transition); text-align:center; }
+    .toggle-btn:hover { border-color:rgba(6,182,212,0.4); color:var(--text); }
+    .toggle-btn.active { background:rgba(6,182,212,0.12); border-color:var(--cyan); color:var(--cyan); box-shadow:0 0 0 2px rgba(6,182,212,0.15); }
+
+    /* Results */
+    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
+    .price-hero { text-align:center; margin-bottom:28px; padding:28px 20px; background:rgba(124,58,237,0.08); border:1px solid rgba(124,58,237,0.25); border-radius:var(--radius-lg); }
+    .price-range { font-family:'Space Grotesk',sans-serif; font-size:clamp(2rem,5vw,3rem); font-weight:700; color:var(--purple-light); line-height:1; margin-bottom:8px; }
+    .price-label { font-family:'Inter',sans-serif; font-size:0.85rem; color:var(--text-muted); }
+    .breakdown-table { width:100%; border-collapse:collapse; margin-bottom:20px; }
+    .breakdown-table th { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); text-align:left; padding:8px 12px; border-bottom:1px solid var(--border); }
+    .breakdown-table td { font-family:'Inter',sans-serif; font-size:0.88rem; color:var(--text); padding:10px 12px; border-bottom:1px solid rgba(255,255,255,0.04); vertical-align:top; }
+    .breakdown-table tr:last-child td { border-bottom:none; }
+    .breakdown-table td.cost-cell { font-family:'JetBrains Mono',monospace; color:var(--cyan); white-space:nowrap; }
+    .breakdown-table tr.total-row td { font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--text); border-top:1px solid var(--border); border-bottom:none; padding-top:14px; }
+    .breakdown-table tr.total-row td.cost-cell { color:var(--purple-light); }
+    .cta-block { background:rgba(37,99,235,0.08); border:1px solid rgba(37,99,235,0.25); border-radius:var(--radius); padding:20px 24px; margin-top:8px; text-align:center; }
+    .cta-block p { font-family:'Inter',sans-serif; font-size:0.92rem; color:var(--text-muted); margin:0 0 14px; line-height:1.6; }
+    .cta-block p strong { color:var(--text); }
+    .section-divider { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:16px; }
+    @media (max-width:480px) {
+      .tool-card, .results-card { padding:22px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh">
+  <div class="container" style="max-width:760px;margin:0 auto;">
+
+    <div class="tool-hero">
+      <h1>Website Cost Estimator</h1>
+      <p>Answer 5 quick questions and get a realistic price range for your next website — no fluff, no sales pressure.</p>
+    </div>
+
+    <!-- Quiz Card -->
+    <div class="tool-card">
+      <p class="section-divider">Tell us about your project</p>
+
+      <!-- Q1: Website Type -->
+      <div class="field-group">
+        <label for="site-type" class="tool-label">1. What type of website do you need?</label>
+        <select id="site-type" class="tool-select">
+          <option value="personal">Personal / Portfolio</option>
+          <option value="small-business" selected>Small Business</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="nonprofit">Non-profit</option>
+        </select>
+      </div>
+
+      <!-- Q2: Number of Pages -->
+      <div class="field-group">
+        <label for="num-pages" class="tool-label">2. How many pages do you need?</label>
+        <select id="num-pages" class="tool-select">
+          <option value="1-3" selected>1–3 pages (e.g. Home, About, Contact)</option>
+          <option value="4-6">4–6 pages (adds Services, Portfolio, etc.)</option>
+          <option value="7-10">7–10 pages (full site)</option>
+          <option value="10+">10+ pages (large site)</option>
+        </select>
+      </div>
+
+      <!-- Q3: Contact Form -->
+      <div class="field-group">
+        <label class="tool-label">3. Do you need a contact form?</label>
+        <div class="toggle-group" role="group" aria-label="Contact form">
+          <button type="button" class="toggle-btn active" data-group="contact" data-value="yes">Yes</button>
+          <button type="button" class="toggle-btn" data-group="contact" data-value="no">No</button>
+        </div>
+        <input type="hidden" id="contact-form" value="yes" />
+      </div>
+
+      <!-- Q4: Blog -->
+      <div class="field-group">
+        <label class="tool-label">4. Do you need a blog?</label>
+        <div class="toggle-group" role="group" aria-label="Blog">
+          <button type="button" class="toggle-btn" data-group="blog" data-value="yes">Yes</button>
+          <button type="button" class="toggle-btn active" data-group="blog" data-value="no">No</button>
+        </div>
+        <input type="hidden" id="blog" value="no" />
+      </div>
+
+      <!-- Q5: Online Store -->
+      <div class="field-group" style="margin-bottom:0">
+        <label class="tool-label">5. Do you need an online store?</label>
+        <div class="toggle-group" role="group" aria-label="Online store">
+          <button type="button" class="toggle-btn" data-group="store" data-value="yes">Yes</button>
+          <button type="button" class="toggle-btn active" data-group="store" data-value="no">No</button>
+        </div>
+        <input type="hidden" id="store" value="no" />
+      </div>
+    </div>
+
+    <button id="estimate-btn" class="btn btn-primary" style="width:100%;padding:14px;font-size:1rem;margin-top:8px">
+      Get My Estimate →
+    </button>
+
+    <!-- Results Card (hidden initially) -->
+    <div id="results" class="results-card" style="display:none;margin-top:28px">
+      <p class="section-divider" style="color:rgba(6,182,212,0.7);">Your Estimate</p>
+
+      <div class="price-hero">
+        <div class="price-range" id="res-price-range">$400–$800</div>
+        <div class="price-label">Estimated one-time build cost (USD)</div>
+      </div>
+
+      <p class="section-divider">What's driving the cost</p>
+
+      <table class="breakdown-table" id="breakdown-table">
+        <thead>
+          <tr>
+            <th>Line Item</th>
+            <th>Est. Cost</th>
+          </tr>
+        </thead>
+        <tbody id="breakdown-body">
+        </tbody>
+      </table>
+
+      <div id="res-note" class="result-item" style="margin-bottom:20px">
+        <div class="result-label">Good to know</div>
+        <div class="result-value" id="res-note-text"></div>
+      </div>
+
+      <div class="cta-block">
+        <p><strong>Want an exact quote?</strong> Robby J builds sites in this range — fast, clean, and AI-assisted to keep costs down.</p>
+        <a
+          href="#"
+          id="cta-email"
+          data-email="shobelove15@gmail.com"
+          class="btn btn-primary"
+          style="display:inline-block;padding:12px 28px;font-size:0.95rem"
+        >
+          Get in Touch →
+        </a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Toggle buttons ──────────────────────────────────────────────────────────
+  document.querySelectorAll('.toggle-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var group = btn.dataset.group;
+      document.querySelectorAll('[data-group="' + group + '"]').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+      document.getElementById(group === 'contact' ? 'contact-form' : group).value = btn.dataset.value;
+    });
+  });
+
+  // ── Estimator logic ─────────────────────────────────────────────────────────
+  var COSTS = {
+    // Base cost by site type
+    type: {
+      'personal':      { low: 250,  high: 500,  label: 'Personal / Portfolio site' },
+      'small-business':{ low: 500,  high: 900,  label: 'Small Business site' },
+      'freelancer':    { low: 350,  high: 700,  label: 'Freelancer site' },
+      'nonprofit':     { low: 400,  high: 750,  label: 'Non-profit site' }
+    },
+    // Extra by page count
+    pages: {
+      '1-3': { low: 0,   high: 0,   label: '1–3 pages' },
+      '4-6': { low: 200, high: 400, label: '4–6 pages (+design & copy layout)' },
+      '7-10':{ low: 450, high: 800, label: '7–10 pages (+structure & dev time)' },
+      '10+': { low: 800, high: 1500,label: '10+ pages (+full site architecture)' }
+    },
+    contact: { low: 75, high: 150,  label: 'Contact form (setup + spam protection)' },
+    blog:    { low: 200, high: 400, label: 'Blog / CMS integration' },
+    store:   { low: 600, high: 1200,label: 'Online store (e-commerce setup)' }
+  };
+
+  var NOTES = {
+    'personal':       'Personal and portfolio sites are the most affordable. Clean design and fast load times are more important than features.',
+    'small-business': 'Small business sites benefit most from a strong homepage, clear services section, and an easy-to-find contact method.',
+    'freelancer':     'Freelancer sites are all about trust — great portfolio work, testimonials, and a clear call-to-action keep costs lean.',
+    'nonprofit':      'Many developers offer nonprofit discounts. Be sure to ask — you may qualify for reduced rates or grant-funded web work.'
+  };
+
+  function fmt(n) {
+    return '$' + n.toLocaleString('en-US');
+  }
+
+  function estimate() {
+    var siteType    = document.getElementById('site-type').value;
+    var numPages    = document.getElementById('num-pages').value;
+    var hasContact  = document.getElementById('contact-form').value === 'yes';
+    var hasBlog     = document.getElementById('blog').value === 'yes';
+    var hasStore    = document.getElementById('store').value === 'yes';
+
+    var rows = [];
+    var totalLow = 0, totalHigh = 0;
+
+    // Base
+    var base = COSTS.type[siteType];
+    rows.push({ label: base.label + ' (base)', low: base.low, high: base.high });
+    totalLow  += base.low;
+    totalHigh += base.high;
+
+    // Pages
+    var pages = COSTS.pages[numPages];
+    if (pages.low > 0) {
+      rows.push({ label: pages.label, low: pages.low, high: pages.high });
+      totalLow  += pages.low;
+      totalHigh += pages.high;
+    } else {
+      rows.push({ label: pages.label + ' (included in base)', low: 0, high: 0, included: true });
+    }
+
+    // Contact form
+    if (hasContact) {
+      rows.push({ label: COSTS.contact.label, low: COSTS.contact.low, high: COSTS.contact.high });
+      totalLow  += COSTS.contact.low;
+      totalHigh += COSTS.contact.high;
+    }
+
+    // Blog
+    if (hasBlog) {
+      rows.push({ label: COSTS.blog.label, low: COSTS.blog.low, high: COSTS.blog.high });
+      totalLow  += COSTS.blog.low;
+      totalHigh += COSTS.blog.high;
+    }
+
+    // Store
+    if (hasStore) {
+      rows.push({ label: COSTS.store.label, low: COSTS.store.low, high: COSTS.store.high });
+      totalLow  += COSTS.store.low;
+      totalHigh += COSTS.store.high;
+    }
+
+    // Render price hero
+    document.getElementById('res-price-range').textContent = fmt(totalLow) + '–' + fmt(totalHigh);
+
+    // Render breakdown table
+    var tbody = document.getElementById('breakdown-body');
+    tbody.innerHTML = '';
+    rows.forEach(function(row) {
+      var tr = document.createElement('tr');
+      var costText = row.included ? '—' : (fmt(row.low) + ' – ' + fmt(row.high));
+      tr.innerHTML = '<td>' + row.label + '</td><td class="cost-cell">' + costText + '</td>';
+      tbody.appendChild(tr);
+    });
+
+    // Total row
+    var totalTr = document.createElement('tr');
+    totalTr.className = 'total-row';
+    totalTr.innerHTML = '<td>Estimated Total</td><td class="cost-cell">' + fmt(totalLow) + ' – ' + fmt(totalHigh) + '</td>';
+    tbody.appendChild(totalTr);
+
+    // Note
+    document.getElementById('res-note-text').textContent = NOTES[siteType];
+
+    // CTA email link
+    var subject = encodeURIComponent('Website Quote Request');
+    var body = encodeURIComponent(
+      'Hi Robby,\n\nI used your Website Cost Estimator and got a range of ' +
+      fmt(totalLow) + '–' + fmt(totalHigh) + '.\n\n' +
+      'Site type: ' + document.getElementById('site-type').options[document.getElementById('site-type').selectedIndex].text + '\n' +
+      'Pages: ' + numPages + '\n' +
+      'Contact form: ' + (hasContact ? 'Yes' : 'No') + '\n' +
+      'Blog: ' + (hasBlog ? 'Yes' : 'No') + '\n' +
+      'Online store: ' + (hasStore ? 'Yes' : 'No') + '\n\n' +
+      "I'd love to get an exact quote. Thanks!"
+    );
+    var emailAddr = document.getElementById('cta-email').dataset.email;
+    document.getElementById('cta-email').href = 'mailto:' + emailAddr + '?subject=' + subject + '&body=' + body;
+
+    // Show results
+    var resultsEl = document.getElementById('results');
+    resultsEl.style.display = 'block';
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.getElementById('estimate-btn').addEventListener('click', estimate);
+
+  // Nav scroll shadow
+  var navEl = document.querySelector('nav');
+  window.addEventListener('scroll', function() {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

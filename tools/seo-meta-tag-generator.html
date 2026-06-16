@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEO Meta Tag Generator — Robby J</title>
+  <meta name="description" content="Generate complete meta tags, OG tags, and Twitter cards for any web page. Copy-paste ready HTML." />
+  <meta property="og:title" content="SEO Meta Tag Generator — Robby J" />
+  <meta property="og:description" content="Generate complete meta tags, OG tags, and Twitter cards for any web page. Copy-paste ready HTML." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/seo-meta-tag-generator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero { padding:60px 0 40px; text-align:center; }
+    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
+    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
+
+    /* Tool-specific styles */
+    .tool-input {
+      width:100%;
+      background:rgba(10,10,15,0.6);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      color:var(--text);
+      font-family:'Inter',sans-serif;
+      font-size:1rem;
+      padding:11px 14px;
+      outline:none;
+      transition:var(--transition);
+      box-sizing:border-box;
+    }
+    .tool-input:focus {
+      border-color:var(--cyan);
+      box-shadow:0 0 0 3px rgba(6,182,212,0.15);
+    }
+    .tool-input::placeholder { color:rgba(180,180,200,0.35); }
+    textarea.tool-input { resize:vertical; min-height:90px; line-height:1.6; }
+
+    .char-counter {
+      font-family:'JetBrains Mono',monospace;
+      font-size:0.78rem;
+      text-align:right;
+      margin-top:5px;
+      transition:color 0.2s;
+    }
+    .char-ok { color:var(--accent-cyan, #06b6d4); }
+    .char-warn { color:#f59e0b; }
+    .char-over { color:#ef4444; }
+
+    .field-group { margin-bottom:22px; }
+    .field-group:last-of-type { margin-bottom:0; }
+
+    .field-hint {
+      font-size:0.8rem;
+      color:var(--text-muted);
+      margin-top:5px;
+    }
+
+    .title-len-bar {
+      height:3px;
+      border-radius:2px;
+      margin-top:6px;
+      background:rgba(255,255,255,0.07);
+      overflow:hidden;
+    }
+    .title-len-fill {
+      height:100%;
+      border-radius:2px;
+      transition:width 0.2s, background 0.2s;
+    }
+
+    /* Code tag blocks */
+    .tag-block {
+      background:rgba(10,10,20,0.7);
+      border:1px solid rgba(6,182,212,0.18);
+      border-radius:var(--radius);
+      padding:0;
+      margin-bottom:14px;
+      overflow:hidden;
+    }
+    .tag-block-header {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:8px 14px;
+      background:rgba(6,182,212,0.07);
+      border-bottom:1px solid rgba(6,182,212,0.12);
+    }
+    .tag-block-label {
+      font-family:'Space Grotesk',sans-serif;
+      font-size:0.75rem;
+      font-weight:600;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      color:var(--accent-cyan, #06b6d4);
+    }
+    .copy-btn {
+      background:rgba(6,182,212,0.12);
+      border:1px solid rgba(6,182,212,0.3);
+      border-radius:6px;
+      color:var(--accent-cyan, #06b6d4);
+      font-family:'Space Grotesk',sans-serif;
+      font-size:0.75rem;
+      font-weight:600;
+      padding:4px 10px;
+      cursor:pointer;
+      transition:background 0.15s, color 0.15s;
+      white-space:nowrap;
+    }
+    .copy-btn:hover { background:rgba(6,182,212,0.25); color:#fff; }
+    .copy-btn.copied { background:rgba(34,197,94,0.18); border-color:rgba(34,197,94,0.4); color:#22c55e; }
+
+    .tag-code {
+      display:block;
+      font-family:'JetBrains Mono',monospace;
+      font-size:0.82rem;
+      color:#c4c4d4;
+      padding:14px 16px;
+      white-space:pre-wrap;
+      word-break:break-all;
+      line-height:1.65;
+      margin:0;
+    }
+
+    /* Copy all button area */
+    .copy-all-wrap {
+      margin-top:8px;
+      text-align:center;
+    }
+
+    /* Results section heading */
+    .results-heading {
+      font-family:'Space Grotesk',sans-serif;
+      font-size:1.15rem;
+      font-weight:700;
+      color:var(--text);
+      margin:0 0 6px 0;
+    }
+    .results-sub {
+      font-size:0.88rem;
+      color:var(--text-muted);
+      margin-bottom:24px;
+    }
+
+    /* Section dividers inside results */
+    .results-section-title {
+      font-family:'Space Grotesk',sans-serif;
+      font-size:0.72rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.1em;
+      color:rgba(180,180,210,0.5);
+      margin:20px 0 10px;
+    }
+    .results-section-title:first-of-type { margin-top:0; }
+
+    /* Warning badge */
+    .warn-badge {
+      display:inline-block;
+      background:rgba(245,158,11,0.12);
+      border:1px solid rgba(245,158,11,0.35);
+      border-radius:6px;
+      color:#f59e0b;
+      font-family:'Space Grotesk',sans-serif;
+      font-size:0.75rem;
+      font-weight:600;
+      padding:2px 8px;
+      margin-left:8px;
+      vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container" style="max-width:760px;margin:0 auto;">
+
+    <!-- Hero -->
+    <div class="tool-hero">
+      <h1>SEO Meta Tag Generator</h1>
+      <p>Generate complete meta tags, Open Graph tags, and Twitter Cards for any page. Copy-paste ready HTML in seconds.</p>
+    </div>
+
+    <!-- Input Card -->
+    <div class="tool-card">
+
+      <div class="field-group">
+        <label class="tool-label" for="pageTitle">Page Title <span style="color:#ef4444">*</span></label>
+        <input
+          type="text"
+          id="pageTitle"
+          class="tool-input"
+          placeholder="e.g. Best Coffee Shops in Austin | CoffeeFinder"
+          maxlength="120"
+        />
+        <div class="title-len-bar"><div class="title-len-fill" id="titleFill" style="width:0%;background:#06b6d4;"></div></div>
+        <div class="char-counter char-ok" id="titleCounter">0 / 60 recommended</div>
+      </div>
+
+      <div class="field-group">
+        <label class="tool-label" for="metaDesc">Meta Description <span style="color:#ef4444">*</span></label>
+        <textarea
+          id="metaDesc"
+          class="tool-input"
+          placeholder="Briefly describe what this page is about. Aim for 120–160 characters for best search snippet coverage."
+          maxlength="300"
+        ></textarea>
+        <div class="char-counter char-ok" id="descCounter">0 / 160 recommended</div>
+      </div>
+
+      <div class="field-group">
+        <label class="tool-label" for="pageUrl">Page URL <span style="color:#ef4444">*</span></label>
+        <input
+          type="url"
+          id="pageUrl"
+          class="tool-input"
+          placeholder="https://example.com/your-page"
+        />
+        <div class="field-hint">Used for the canonical tag and og:url. Include the full https:// URL.</div>
+      </div>
+
+      <div class="field-group">
+        <label class="tool-label" for="ogImage">OG Image URL <span style="color:var(--text-muted);font-weight:400;font-size:0.8rem;">(optional)</span></label>
+        <input
+          type="url"
+          id="ogImage"
+          class="tool-input"
+          placeholder="https://example.com/images/og-image.jpg"
+        />
+        <div class="field-hint">Recommended size: 1200 × 630 px. Shown when shared on social media.</div>
+      </div>
+
+      <div class="field-group">
+        <label class="tool-label" for="twitterHandle">Twitter / X Handle <span style="color:var(--text-muted);font-weight:400;font-size:0.8rem;">(optional)</span></label>
+        <input
+          type="text"
+          id="twitterHandle"
+          class="tool-input"
+          placeholder="@yourhandle"
+        />
+        <div class="field-hint">Added as twitter:site. Include the @ symbol.</div>
+      </div>
+
+      <div class="field-group" style="margin-bottom:0;">
+        <label class="tool-label" for="ogType">Page / Content Type</label>
+        <select id="ogType" class="tool-select">
+          <option value="website">website — general page (default)</option>
+          <option value="article">article — blog post / news</option>
+          <option value="product">product — e-commerce listing</option>
+          <option value="profile">profile — person / author page</option>
+          <option value="video.other">video — video content page</option>
+        </select>
+      </div>
+
+    </div><!-- /tool-card -->
+
+    <button
+      class="btn btn-primary"
+      style="width:100%;padding:14px;font-size:1rem;margin-top:8px"
+      onclick="generateTags()"
+    >Generate Meta Tags</button>
+
+    <!-- Results Card -->
+    <div class="results-card" id="results" style="display:none;margin-top:28px;">
+
+      <p class="results-heading">Your Meta Tags</p>
+      <p class="results-sub">Copy each tag individually or grab everything at once.</p>
+
+      <!-- Basic SEO -->
+      <div class="results-section-title">Basic SEO</div>
+
+      <div class="tag-block" id="block-title">
+        <div class="tag-block-header">
+          <span class="tag-block-label">title</span>
+          <button class="copy-btn" onclick="copyTag('code-title', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-title"></code>
+      </div>
+
+      <div class="tag-block" id="block-desc">
+        <div class="tag-block-header">
+          <span class="tag-block-label">meta description <span class="warn-badge" id="descWarn" style="display:none;">Too long</span></span>
+          <button class="copy-btn" onclick="copyTag('code-desc', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-desc"></code>
+      </div>
+
+      <div class="tag-block" id="block-canonical">
+        <div class="tag-block-header">
+          <span class="tag-block-label">canonical</span>
+          <button class="copy-btn" onclick="copyTag('code-canonical', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-canonical"></code>
+      </div>
+
+      <!-- Open Graph -->
+      <div class="results-section-title">Open Graph (Facebook, LinkedIn, Slack…)</div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">og:title</span>
+          <button class="copy-btn" onclick="copyTag('code-og-title', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-og-title"></code>
+      </div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">og:description</span>
+          <button class="copy-btn" onclick="copyTag('code-og-desc', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-og-desc"></code>
+      </div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">og:url</span>
+          <button class="copy-btn" onclick="copyTag('code-og-url', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-og-url"></code>
+      </div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">og:type</span>
+          <button class="copy-btn" onclick="copyTag('code-og-type', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-og-type"></code>
+      </div>
+
+      <div class="tag-block" id="block-og-image" style="display:none;">
+        <div class="tag-block-header">
+          <span class="tag-block-label">og:image</span>
+          <button class="copy-btn" onclick="copyTag('code-og-image', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-og-image"></code>
+      </div>
+
+      <!-- Twitter / X -->
+      <div class="results-section-title">Twitter / X Cards</div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">twitter:card</span>
+          <button class="copy-btn" onclick="copyTag('code-tw-card', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-tw-card"></code>
+      </div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">twitter:title</span>
+          <button class="copy-btn" onclick="copyTag('code-tw-title', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-tw-title"></code>
+      </div>
+
+      <div class="tag-block">
+        <div class="tag-block-header">
+          <span class="tag-block-label">twitter:description</span>
+          <button class="copy-btn" onclick="copyTag('code-tw-desc', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-tw-desc"></code>
+      </div>
+
+      <div class="tag-block" id="block-tw-image" style="display:none;">
+        <div class="tag-block-header">
+          <span class="tag-block-label">twitter:image</span>
+          <button class="copy-btn" onclick="copyTag('code-tw-image', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-tw-image"></code>
+      </div>
+
+      <div class="tag-block" id="block-tw-site" style="display:none;">
+        <div class="tag-block-header">
+          <span class="tag-block-label">twitter:site</span>
+          <button class="copy-btn" onclick="copyTag('code-tw-site', this)">Copy</button>
+        </div>
+        <code class="tag-code" id="code-tw-site"></code>
+      </div>
+
+      <!-- Copy All -->
+      <div class="copy-all-wrap">
+        <button class="btn btn-primary" style="padding:12px 32px;font-size:0.95rem;" id="copyAllBtn" onclick="copyAll()">Copy All Tags</button>
+      </div>
+
+    </div><!-- /results-card -->
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+
+  // --- Live character counters ---
+  const titleInput = document.getElementById('pageTitle');
+  const descInput  = document.getElementById('metaDesc');
+  const titleCounter = document.getElementById('titleCounter');
+  const descCounter  = document.getElementById('descCounter');
+  const titleFill    = document.getElementById('titleFill');
+
+  titleInput.addEventListener('input', updateTitleCounter);
+  descInput.addEventListener('input', updateDescCounter);
+
+  function updateTitleCounter() {
+    const len = titleInput.value.length;
+    const pct = Math.min(len / 60 * 100, 100);
+    titleFill.style.width = pct + '%';
+    if (len === 0) {
+      titleFill.style.background = '#06b6d4';
+      titleCounter.textContent = '0 / 60 recommended';
+      titleCounter.className = 'char-counter char-ok';
+    } else if (len <= 60) {
+      titleFill.style.background = '#06b6d4';
+      titleCounter.textContent = len + ' / 60 recommended';
+      titleCounter.className = 'char-counter char-ok';
+    } else if (len <= 70) {
+      titleFill.style.background = '#f59e0b';
+      titleCounter.textContent = len + ' / 60 recommended (a bit long)';
+      titleCounter.className = 'char-counter char-warn';
+    } else {
+      titleFill.style.background = '#ef4444';
+      titleCounter.textContent = len + ' / 60 recommended (too long for SERPs)';
+      titleCounter.className = 'char-counter char-over';
+    }
+  }
+
+  function updateDescCounter() {
+    const len = descInput.value.length;
+    if (len === 0) {
+      descCounter.textContent = '0 / 160 recommended';
+      descCounter.className = 'char-counter char-ok';
+    } else if (len <= 120) {
+      descCounter.textContent = len + ' / 160 recommended (could be longer)';
+      descCounter.className = 'char-counter char-warn';
+    } else if (len <= 160) {
+      descCounter.textContent = len + ' / 160 — great length';
+      descCounter.className = 'char-counter char-ok';
+    } else {
+      descCounter.textContent = len + ' / 160 — may be truncated in search results';
+      descCounter.className = 'char-counter char-over';
+    }
+  }
+
+  // --- Escape HTML attribute values ---
+  function escAttr(str) {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/"/g, '&quot;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+  }
+
+  // --- Generate ---
+  function generateTags() {
+    const title   = titleInput.value.trim();
+    const desc    = descInput.value.trim();
+    const url     = document.getElementById('pageUrl').value.trim();
+    const image   = document.getElementById('ogImage').value.trim();
+    const handle  = document.getElementById('twitterHandle').value.trim();
+    const ogType  = document.getElementById('ogType').value;
+
+    if (!title) { alert('Please enter a page title.'); titleInput.focus(); return; }
+    if (!desc)  { alert('Please enter a meta description.'); descInput.focus(); return; }
+    if (!url)   { alert('Please enter the page URL.'); document.getElementById('pageUrl').focus(); return; }
+
+    // Normalise twitter handle
+    const twHandle = handle ? (handle.startsWith('@') ? handle : '@' + handle) : '';
+
+    // Twitter card type
+    const twCard = image ? 'summary_large_image' : 'summary';
+
+    // Set tag content
+    setText('code-title',    `<title>${escAttr(title)}</title>`);
+    setText('code-desc',     `<meta name="description" content="${escAttr(desc)}" />`);
+    setText('code-canonical',`<link rel="canonical" href="${escAttr(url)}" />`);
+    setText('code-og-title', `<meta property="og:title" content="${escAttr(title)}" />`);
+    setText('code-og-desc',  `<meta property="og:description" content="${escAttr(desc)}" />`);
+    setText('code-og-url',   `<meta property="og:url" content="${escAttr(url)}" />`);
+    setText('code-og-type',  `<meta property="og:type" content="${escAttr(ogType)}" />`);
+    setText('code-tw-card',  `<meta name="twitter:card" content="${twCard}" />`);
+    setText('code-tw-title', `<meta name="twitter:title" content="${escAttr(title)}" />`);
+    setText('code-tw-desc',  `<meta name="twitter:description" content="${escAttr(desc)}" />`);
+
+    // OG Image (optional)
+    const imgBlock   = document.getElementById('block-og-image');
+    const twImgBlock = document.getElementById('block-tw-image');
+    if (image) {
+      setText('code-og-image', `<meta property="og:image" content="${escAttr(image)}" />`);
+      setText('code-tw-image', `<meta name="twitter:image" content="${escAttr(image)}" />`);
+      imgBlock.style.display   = '';
+      twImgBlock.style.display = '';
+    } else {
+      imgBlock.style.display   = 'none';
+      twImgBlock.style.display = 'none';
+    }
+
+    // Twitter site handle (optional)
+    const twSiteBlock = document.getElementById('block-tw-site');
+    if (twHandle) {
+      setText('code-tw-site', `<meta name="twitter:site" content="${escAttr(twHandle)}" />`);
+      twSiteBlock.style.display = '';
+    } else {
+      twSiteBlock.style.display = 'none';
+    }
+
+    // Description length warning badge
+    document.getElementById('descWarn').style.display = desc.length > 160 ? '' : 'none';
+
+    // Show results
+    const resultsEl = document.getElementById('results');
+    resultsEl.style.display = '';
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    // Reset copy-all button
+    const copyAllBtn = document.getElementById('copyAllBtn');
+    copyAllBtn.textContent = 'Copy All Tags';
+    copyAllBtn.classList.remove('copied');
+  }
+
+  function setText(id, text) {
+    document.getElementById(id).textContent = text;
+  }
+
+  // --- Individual copy ---
+  function copyTag(codeId, btn) {
+    const text = document.getElementById(codeId).textContent;
+    navigator.clipboard.writeText(text).then(() => {
+      btn.textContent = 'Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = 'Copy';
+        btn.classList.remove('copied');
+      }, 1800);
+    }).catch(() => fallbackCopy(text));
+  }
+
+  // --- Copy all visible tags ---
+  function copyAll() {
+    const ids = [
+      'code-title',
+      'code-desc',
+      'code-canonical',
+      'code-og-title',
+      'code-og-desc',
+      'code-og-url',
+      'code-og-type',
+      'code-og-image',
+      'code-tw-card',
+      'code-tw-title',
+      'code-tw-desc',
+      'code-tw-image',
+      'code-tw-site'
+    ];
+
+    const lines = [];
+    ids.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && el.closest('.tag-block') && el.closest('.tag-block').style.display !== 'none') {
+        lines.push(el.textContent);
+      }
+    });
+
+    const allText = lines.join('\n');
+    navigator.clipboard.writeText(allText).then(() => {
+      const btn = document.getElementById('copyAllBtn');
+      btn.textContent = 'All Copied!';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.textContent = 'Copy All Tags';
+        btn.classList.remove('copied');
+      }, 2200);
+    }).catch(() => fallbackCopy(allText));
+  }
+
+  // Fallback for older browsers
+  function fallbackCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.position = 'fixed';
+    ta.style.opacity = '0';
+    document.body.appendChild(ta);
+    ta.select();
+    document.execCommand('copy');
+    document.body.removeChild(ta);
+  }
+
+  // Allow Enter key on URL field to trigger generation
+  document.getElementById('pageUrl').addEventListener('keydown', e => {
+    if (e.key === 'Enter') generateTags();
+  });
+</script>
+</body>
+</html>

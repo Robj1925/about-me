@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Workflow Audit Quiz — Robby J</title>
+  <meta name="description" content="Discover which parts of your business are most ready for AI automation. Get a free automation opportunity score." />
+  <meta property="og:title" content="AI Workflow Audit Quiz — Robby J" />
+  <meta property="og:description" content="Discover which parts of your business are most ready for AI automation. Get a free automation opportunity score." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/ai-workflow-audit-quiz.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <style>
+    .tool-hero { padding:60px 0 40px; text-align:center; }
+    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
+    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
+    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
+
+    /* Progress bar */
+    .progress-wrap { margin-bottom: 28px; }
+    .progress-meta { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+    .progress-label { font-family:'Space Grotesk',sans-serif; font-size:0.82rem; font-weight:600; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.07em; }
+    .progress-count { font-family:'JetBrains Mono',monospace; font-size:0.82rem; color:var(--cyan); }
+    .progress-track { width:100%; height:6px; background:var(--border); border-radius:3px; overflow:hidden; }
+    .progress-fill { height:100%; border-radius:3px; background:linear-gradient(90deg,var(--purple-light),var(--cyan)); transition:width 0.4s ease; }
+
+    /* Question card */
+    .question-number { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.09em; color:var(--accent-cyan,var(--cyan)); margin-bottom:10px; }
+    .question-text { font-family:'Space Grotesk',sans-serif; font-size:1.1rem; font-weight:600; color:var(--text); margin-bottom:20px; line-height:1.45; }
+
+    /* Radio options */
+    .radio-group { display:flex; flex-direction:column; gap:10px; }
+    .radio-option { display:flex; align-items:center; gap:12px; padding:13px 16px; background:rgba(10,10,15,0.5); border:1px solid var(--border); border-radius:var(--radius); cursor:pointer; transition:var(--transition); user-select:none; }
+    .radio-option:hover { border-color:rgba(6,182,212,0.4); background:rgba(6,182,212,0.04); }
+    .radio-option.selected { border-color:var(--cyan); background:rgba(6,182,212,0.08); }
+    .radio-option input[type="radio"] { display:none; }
+    .radio-dot { width:18px; height:18px; border-radius:50%; border:2px solid var(--border); flex-shrink:0; display:flex; align-items:center; justify-content:center; transition:var(--transition); }
+    .radio-option.selected .radio-dot { border-color:var(--cyan); background:var(--cyan); box-shadow:0 0 8px rgba(6,182,212,0.5); }
+    .radio-dot::after { content:''; width:6px; height:6px; border-radius:50%; background:white; opacity:0; transition:opacity 0.2s; }
+    .radio-option.selected .radio-dot::after { opacity:1; }
+    .radio-text { font-family:'Inter',sans-serif; font-size:0.95rem; color:var(--text); }
+
+    /* Nav dots */
+    .quiz-nav { display:flex; justify-content:space-between; align-items:center; margin-top:24px; gap:12px; }
+    .btn-back { background:transparent; border:1px solid var(--border); color:var(--text-muted); font-family:'Space Grotesk',sans-serif; font-size:0.9rem; font-weight:600; padding:10px 20px; border-radius:var(--radius); cursor:pointer; transition:var(--transition); }
+    .btn-back:hover { border-color:var(--border); color:var(--text); }
+    .btn-next { background:linear-gradient(135deg,var(--purple-light),var(--cyan)); color:white; border:none; font-family:'Space Grotesk',sans-serif; font-size:0.95rem; font-weight:700; padding:12px 28px; border-radius:var(--radius); cursor:pointer; transition:var(--transition); }
+    .btn-next:hover { opacity:0.9; transform:translateY(-1px); }
+    .btn-next:disabled { opacity:0.35; cursor:not-allowed; transform:none; }
+
+    /* Step dots */
+    .step-dots { display:flex; gap:6px; align-items:center; }
+    .step-dot { width:8px; height:8px; border-radius:50%; background:var(--border); transition:var(--transition); }
+    .step-dot.done { background:var(--cyan); }
+    .step-dot.active { background:var(--purple-light); width:20px; border-radius:4px; }
+
+    /* Score display */
+    .score-ring-wrap { text-align:center; margin-bottom:28px; }
+    .score-ring { display:inline-block; position:relative; width:140px; height:140px; }
+    .score-ring svg { transform:rotate(-90deg); }
+    .score-ring-inner { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+    .score-number { font-family:'Space Grotesk',sans-serif; font-size:2.4rem; font-weight:700; color:var(--cyan); line-height:1; }
+    .score-denom { font-family:'JetBrains Mono',monospace; font-size:0.78rem; color:var(--text-muted); margin-top:2px; }
+    .score-tier-badge { display:inline-block; font-family:'Space Grotesk',sans-serif; font-size:0.85rem; font-weight:700; padding:6px 18px; border-radius:99px; margin-top:12px; }
+    .tier-low { background:rgba(100,116,139,0.2); border:1px solid rgba(100,116,139,0.4); color:#94a3b8; }
+    .tier-moderate { background:rgba(251,191,36,0.12); border:1px solid rgba(251,191,36,0.3); color:#fbbf24; }
+    .tier-high { background:rgba(6,182,212,0.12); border:1px solid rgba(6,182,212,0.3); color:var(--cyan); }
+    .tier-ready { background:rgba(124,58,237,0.15); border:1px solid rgba(124,58,237,0.4); color:var(--purple-light); }
+
+    .tier-headline { font-family:'Space Grotesk',sans-serif; font-size:1.15rem; font-weight:700; color:var(--text); text-align:center; margin-bottom:6px; }
+    .tier-desc { font-size:0.9rem; color:var(--text-muted); text-align:center; margin-bottom:28px; line-height:1.6; }
+
+    /* Suggestions */
+    .suggestions-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.09em; color:var(--accent-cyan,var(--cyan)); margin-bottom:14px; }
+    .suggestion-item { display:flex; gap:14px; align-items:flex-start; padding:16px; background:rgba(124,58,237,0.06); border:1px solid rgba(124,58,237,0.18); border-radius:var(--radius); margin-bottom:10px; }
+    .suggestion-icon { font-size:1.3rem; flex-shrink:0; margin-top:1px; }
+    .suggestion-title { font-family:'Space Grotesk',sans-serif; font-size:0.92rem; font-weight:700; color:var(--text); margin-bottom:3px; }
+    .suggestion-detail { font-family:'Inter',sans-serif; font-size:0.85rem; color:var(--text-muted); line-height:1.5; }
+
+    /* CTA box */
+    .cta-box { background:rgba(6,182,212,0.06); border:1px solid rgba(6,182,212,0.2); border-radius:var(--radius-lg); padding:24px 28px; text-align:center; margin-top:24px; }
+    .cta-box p { font-family:'Inter',sans-serif; font-size:0.92rem; color:var(--text-muted); margin-bottom:16px; line-height:1.6; }
+    .cta-box strong { color:var(--text); }
+
+    /* Retake */
+    .btn-retake { background:transparent; border:1px solid var(--border); color:var(--text-muted); font-family:'Space Grotesk',sans-serif; font-size:0.88rem; font-weight:600; padding:9px 20px; border-radius:var(--radius); cursor:pointer; transition:var(--transition); margin-top:12px; }
+    .btn-retake:hover { color:var(--text); border-color:rgba(6,182,212,0.4); }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+  Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
+</div>
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
+  <div class="container" style="max-width:760px;margin:0 auto;">
+
+    <div class="tool-hero">
+      <h1>AI Workflow Audit Quiz</h1>
+      <p>Discover which parts of your business are most ready for AI automation. Get a free automation opportunity score.</p>
+    </div>
+
+    <!-- Quiz wrapper -->
+    <div id="quiz-wrap">
+
+      <!-- Progress bar -->
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span class="progress-label">Your Progress</span>
+          <span class="progress-count" id="progress-count">Question 1 of 8</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="progress-fill" style="width:12.5%"></div>
+        </div>
+      </div>
+
+      <!-- Step dots -->
+      <div class="step-dots" style="margin-bottom:24px;" id="step-dots"></div>
+
+      <!-- Question card -->
+      <div class="tool-card" id="question-card">
+        <div class="question-number" id="q-number">Question 1</div>
+        <div class="question-text" id="q-text"></div>
+        <div class="radio-group" id="q-options"></div>
+        <div class="quiz-nav">
+          <button class="btn-back" id="btn-back" onclick="goBack()">← Back</button>
+          <button class="btn-next" id="btn-next" onclick="goNext()" disabled>Next →</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Results -->
+    <div id="results" style="display:none;">
+      <div class="results-card">
+        <div class="score-ring-wrap">
+          <div class="score-ring">
+            <svg width="140" height="140" viewBox="0 0 140 140">
+              <circle cx="70" cy="70" r="58" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="12"/>
+              <circle cx="70" cy="70" r="58" fill="none" stroke="url(#scoreGrad)" stroke-width="12"
+                stroke-linecap="round" stroke-dasharray="364.42" id="score-arc" stroke-dashoffset="364.42"/>
+              <defs>
+                <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#7c3aed"/>
+                  <stop offset="100%" stop-color="#06b6d4"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="score-ring-inner">
+              <div class="score-number" id="res-score">0</div>
+              <div class="score-denom">out of 24</div>
+            </div>
+          </div>
+          <br>
+          <span class="score-tier-badge" id="res-tier-badge"></span>
+        </div>
+
+        <div class="tier-headline" id="res-headline"></div>
+        <div class="tier-desc" id="res-desc"></div>
+
+        <div class="suggestions-label">Your Top Automation Opportunities</div>
+        <div id="res-suggestions"></div>
+
+        <div class="cta-box">
+          <p><strong>Ready to turn these insights into action?</strong><br>Book a free 30-minute AI Audit call and I'll map out a custom automation plan for your business — no tech skills required.</p>
+          <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:1rem;padding:13px 28px;display:inline-block;">Book a Free AI Audit →</a>
+          <br>
+          <button class="btn-retake" onclick="retakeQuiz()">Retake Quiz</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ── Questions ──────────────────────────────────────────────────────────────
+  const QUESTIONS = [
+    {
+      id: 'team_size',
+      text: 'How many employees or contractors do you work with?',
+      options: ['Just me', '2–5 people', '6–20 people', '20+ people'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'Team Coordination & Onboarding Automation',
+        detail: 'AI can handle onboarding docs, status updates, task reminders, and internal Q&A — the bigger the team, the bigger the payoff.',
+        icon: '👥'
+      }
+    },
+    {
+      id: 'repetitive_time',
+      text: 'How much time per week do you spend on repetitive tasks?',
+      options: ['Less than 1 hour', '1–5 hours', '5–15 hours', '15+ hours'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'Workflow & Task Automation',
+        detail: 'The more repetitive hours you log, the more AI tools like Zapier AI, Make.com, or custom GPT workflows can reclaim your week.',
+        icon: '⚙️'
+      }
+    },
+    {
+      id: 'emails',
+      text: 'Do you send similar emails or messages regularly?',
+      options: ['Never', 'Sometimes', 'Often', 'Constantly'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'Email & Messaging Automation',
+        detail: 'AI drafting tools and email sequence automation can handle routine outreach, follow-ups, and responses — freeing you for high-value conversations.',
+        icon: '✉️'
+      }
+    },
+    {
+      id: 'reports',
+      text: 'Do you create reports or summaries from data?',
+      options: ['Never', 'Monthly', 'Weekly', 'Daily'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'Automated Reporting & Data Summaries',
+        detail: 'AI can pull from spreadsheets, CRMs, and dashboards to auto-generate reports and send them on a schedule — zero manual effort.',
+        icon: '📊'
+      }
+    },
+    {
+      id: 'scheduling',
+      text: 'Do you manually schedule or coordinate appointments?',
+      options: ['Never', 'Rarely', 'Sometimes', 'All the time'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'Scheduling & Calendar Automation',
+        detail: 'AI scheduling assistants like Cal.ai or Calendly + AI integrations can handle bookings, rescheduling, and reminders automatically.',
+        icon: '📅'
+      }
+    },
+    {
+      id: 'research',
+      text: 'Do you research or gather information from the web regularly?',
+      options: ['Never', 'Sometimes', 'Often', "It's my whole job"],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'AI-Powered Research & Intelligence Gathering',
+        detail: 'AI agents can browse, summarize, and synthesize information from dozens of sources in minutes — turning hours of research into a 5-minute briefing.',
+        icon: '🔍'
+      }
+    },
+    {
+      id: 'content',
+      text: 'Do you write similar content repeatedly (posts, proposals, descriptions)?',
+      options: ['Never', 'Sometimes', 'Often', 'Always'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'Content & Copy Generation Automation',
+        detail: 'AI writing tools trained on your brand voice can produce first drafts of proposals, social posts, product descriptions, and more in seconds.',
+        icon: '✍️'
+      }
+    },
+    {
+      id: 'ai_usage',
+      text: 'Do you currently use any AI tools?',
+      options: ["No, I haven't started", "I've tried a few", 'Yes, I use them regularly', 'We have an AI strategy'],
+      scores: [0, 1, 2, 3],
+      automation: {
+        title: 'AI Strategy & Tool Stack Optimization',
+        detail: 'Whether you are just starting or already using AI, there is almost always a gap between your current stack and what is possible — a quick audit can find it.',
+        icon: '🤖'
+      }
+    }
+  ];
+
+  // ── State ──────────────────────────────────────────────────────────────────
+  let currentQ = 0;
+  let answers  = new Array(QUESTIONS.length).fill(null); // index of selected option
+
+  // ── Render helpers ─────────────────────────────────────────────────────────
+  function renderQuestion(idx) {
+    const q = QUESTIONS[idx];
+
+    document.getElementById('q-number').textContent = `Question ${idx + 1}`;
+    document.getElementById('q-text').textContent   = q.text;
+
+    // Options
+    const group = document.getElementById('q-options');
+    group.innerHTML = '';
+    q.options.forEach((opt, i) => {
+      const label = document.createElement('label');
+      label.className = 'radio-option' + (answers[idx] === i ? ' selected' : '');
+      label.innerHTML = `
+        <input type="radio" name="q${idx}" value="${i}" ${answers[idx] === i ? 'checked' : ''}>
+        <span class="radio-dot"></span>
+        <span class="radio-text">${opt}</span>
+      `;
+      label.addEventListener('click', () => selectOption(idx, i));
+      group.appendChild(label);
+    });
+
+    // Progress
+    const pct = ((idx + 1) / QUESTIONS.length) * 100;
+    document.getElementById('progress-fill').style.width = pct + '%';
+    document.getElementById('progress-count').textContent = `Question ${idx + 1} of ${QUESTIONS.length}`;
+
+    // Step dots
+    renderDots(idx);
+
+    // Buttons
+    document.getElementById('btn-back').style.visibility = idx === 0 ? 'hidden' : 'visible';
+    document.getElementById('btn-next').disabled = answers[idx] === null;
+    document.getElementById('btn-next').textContent = idx === QUESTIONS.length - 1 ? 'See My Results →' : 'Next →';
+  }
+
+  function renderDots(activeIdx) {
+    const wrap = document.getElementById('step-dots');
+    wrap.innerHTML = '';
+    QUESTIONS.forEach((_, i) => {
+      const dot = document.createElement('span');
+      dot.className = 'step-dot' + (i < activeIdx ? ' done' : '') + (i === activeIdx ? ' active' : '');
+      wrap.appendChild(dot);
+    });
+  }
+
+  function selectOption(qIdx, optIdx) {
+    answers[qIdx] = optIdx;
+    // Update visual selection
+    document.querySelectorAll('#q-options .radio-option').forEach((el, i) => {
+      el.classList.toggle('selected', i === optIdx);
+    });
+    document.getElementById('btn-next').disabled = false;
+  }
+
+  function goNext() {
+    if (answers[currentQ] === null) return;
+    if (currentQ < QUESTIONS.length - 1) {
+      currentQ++;
+      renderQuestion(currentQ);
+    } else {
+      showResults();
+    }
+  }
+
+  function goBack() {
+    if (currentQ > 0) {
+      currentQ--;
+      renderQuestion(currentQ);
+    }
+  }
+
+  // ── Results ────────────────────────────────────────────────────────────────
+  function showResults() {
+    // Hide quiz
+    document.getElementById('quiz-wrap').style.display = 'none';
+    const resultsEl = document.getElementById('results');
+    resultsEl.style.display = 'block';
+
+    // Compute total score
+    let total = 0;
+    answers.forEach((ans, i) => {
+      if (ans !== null) total += QUESTIONS[i].scores[ans];
+    });
+
+    // Tier
+    let tierClass, tierLabel, headline, desc;
+    if (total <= 6) {
+      tierClass = 'tier-low';
+      tierLabel = 'Low Opportunity';
+      headline  = 'AI might not be your biggest lever right now.';
+      desc      = 'Your workflows are lean and your repetitive workload is low. That said, a few strategic AI tools could still save you time — especially as you grow. Come back when your volume increases.';
+    } else if (total <= 12) {
+      tierClass = 'tier-moderate';
+      tierLabel = 'Moderate Opportunity';
+      headline  = 'A few quick wins are within reach.';
+      desc      = 'You have identifiable areas where AI can help, but the ROI is targeted rather than sweeping. Picking one or two high-impact automations is the smart starting move.';
+    } else if (total <= 18) {
+      tierClass = 'tier-high';
+      tierLabel = 'High Opportunity';
+      headline  = 'You could automate several workflows today.';
+      desc      = 'Multiple areas of your business are ripe for automation. Implementing AI tools now could save you 5–15 hours per week and meaningfully cut costs.';
+    } else {
+      tierClass = 'tier-ready';
+      tierLabel = 'Automation Ready';
+      headline  = 'Significant time and money are on the table.';
+      desc      = 'Your business is highly automatable. Without AI systems in place, you are likely leaving dozens of hours and thousands of dollars on the table every month.';
+    }
+
+    // Score arc animation
+    const circumference = 364.42;
+    const fraction = total / 24;
+    const offset = circumference - fraction * circumference;
+    setTimeout(() => {
+      document.getElementById('score-arc').style.transition = 'stroke-dashoffset 1s ease';
+      document.getElementById('score-arc').style.strokeDashoffset = offset;
+    }, 80);
+
+    document.getElementById('res-score').textContent = total;
+    const badge = document.getElementById('res-tier-badge');
+    badge.textContent = tierLabel;
+    badge.className   = 'score-tier-badge ' + tierClass;
+    document.getElementById('res-headline').textContent = headline;
+    document.getElementById('res-desc').textContent     = desc;
+
+    // Top 3 suggestions — pick questions with highest individual scores
+    const ranked = answers
+      .map((ans, i) => ({ i, score: ans !== null ? QUESTIONS[i].scores[ans] : 0 }))
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 3);
+
+    const sugWrap = document.getElementById('res-suggestions');
+    sugWrap.innerHTML = '';
+    ranked.forEach(({ i }) => {
+      const auto = QUESTIONS[i].automation;
+      const el   = document.createElement('div');
+      el.className = 'suggestion-item';
+      el.innerHTML = `
+        <div class="suggestion-icon">${auto.icon}</div>
+        <div>
+          <div class="suggestion-title">${auto.title}</div>
+          <div class="suggestion-detail">${auto.detail}</div>
+        </div>
+      `;
+      sugWrap.appendChild(el);
+    });
+
+    // Scroll results into view
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function retakeQuiz() {
+    answers  = new Array(QUESTIONS.length).fill(null);
+    currentQ = 0;
+    document.getElementById('results').style.display   = 'none';
+    document.getElementById('quiz-wrap').style.display = 'block';
+    // Reset arc
+    document.getElementById('score-arc').style.transition = 'none';
+    document.getElementById('score-arc').style.strokeDashoffset = '364.42';
+    renderQuestion(0);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  renderQuestion(0);
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

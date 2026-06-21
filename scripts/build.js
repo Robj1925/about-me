@@ -109,6 +109,12 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
 <main class="post-main">
   <article class="post-article">
 
+    <!-- YouTube Embed -->
+    ${youtubeEmbed}
+
+    <!-- Hero Image -->
+    ${heroImage}
+
     <!-- Header -->
     <header class="post-header">
       <div class="post-tags">${tagBadges}</div>
@@ -120,12 +126,6 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
         <span>⏱ ${readTime} min read</span>
       </div>
     </header>
-
-    <!-- Hero Image -->
-    ${heroImage}
-
-    <!-- YouTube Embed -->
-    ${youtubeEmbed}
 
     <!-- Content -->
     <div class="post-content">

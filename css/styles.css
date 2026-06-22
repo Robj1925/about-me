@@ -47,6 +47,10 @@ p { text-wrap: pretty; }
 .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 section { padding: 96px 0; }
 
+/* ===== SKIP LINK ===== */
+.skip-link { position: absolute; top: 0; left: 0; transform: translateY(-100%); padding: 8px 16px; background: var(--purple); color: #fff; font-size: 0.9rem; font-weight: 600; border-radius: 0 0 8px 0; transition: transform 0.2s; z-index: var(--z-toast); }
+.skip-link:focus { transform: translateY(0); }
+
 /* ===== FOCUS ===== */
 :focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 4px; }
 

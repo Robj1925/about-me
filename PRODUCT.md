@@ -50,6 +50,6 @@ Three-word anchor: **precise · direct · earned**.
 
 ## Accessibility & Inclusion
 
-WCAG 2.1 AA as the floor. Body text (#F0F0F8 on #0A0A0F) is high contrast — maintain it. `--text-muted` (#8888AA on #0A0A0F) measures 5.78:1 — passes WCAG AA at all text sizes. No contrast risk in the current palette.
+WCAG 2.1 AA as the floor. Body text (`--text` #F5F0E8 on `--bg` #0C0B08) measures 17.5:1 — maintain it. `--text-muted` (#9B9480 on #0C0B08) measures 6.50:1 — passes AA at all text sizes. `--amber` (#F59E0B) on dark bg measures 9.0:1. **Amber-background elements** (buttons, gradient badges, avatars) use `color: var(--bg)` for dark text — white text fails on amber (1.9:1). No contrast risk in the current palette.
 
 No known specific user needs beyond standard web accessibility. Reduced motion support required for any animations added to the site.

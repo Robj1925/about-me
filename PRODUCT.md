@@ -50,6 +50,6 @@ Three-word anchor: **precise · direct · earned**.
 
 ## Accessibility & Inclusion
 
-WCAG 2.1 AA as the floor. Body text (#F0F0F8 on #0A0A0F) is high contrast — maintain it. Current risk area: `--text-muted` (#8888AA on #0A0A0F) reads at approximately 3.5:1 — acceptable for large/bold text but fails for small body copy; watch for muted-color text used at sizes below 18px or unbold.
+WCAG 2.1 AA as the floor. Body text (#F0F0F8 on #0A0A0F) is high contrast — maintain it. `--text-muted` (#8888AA on #0A0A0F) measures 5.78:1 — passes WCAG AA at all text sizes. No contrast risk in the current palette.
 
 No known specific user needs beyond standard web accessibility. Reduced motion support required for any animations added to the site.

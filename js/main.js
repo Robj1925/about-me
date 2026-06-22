@@ -5,7 +5,10 @@ const mobileMenu = document.getElementById('mobile-menu');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  const isOpen = mobileMenu.classList.contains('open');
+  document.body.style.overflow = isOpen ? 'hidden' : '';
+  hamburger.setAttribute('aria-expanded', isOpen);
+  mobileMenu.setAttribute('aria-hidden', !isOpen);
 });
 
 mobileMenu.querySelectorAll('a').forEach(link => {
@@ -13,6 +16,8 @@ mobileMenu.querySelectorAll('a').forEach(link => {
     hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
     document.body.style.overflow = '';
+    hamburger.setAttribute('aria-expanded', false);
+    mobileMenu.setAttribute('aria-hidden', true);
   });
 });
 
@@ -129,8 +134,23 @@ async function typeTerminal() {
   terminalBody.innerHTML = html;
 }
 
-// Start after a short delay
-setTimeout(typeTerminal, 800);
+// Start after a short delay — skip animation for users who prefer reduced motion
+if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  if (terminalBody) {
+    let html = '';
+    for (const line of lines) {
+      if (line.type === 'cursor') {
+        html += `<span class="t-prompt">~/projects $ </span><span class="t-cursor"></span>`;
+        break;
+      }
+      const cls = line.type === 'prompt' ? 't-prompt' : line.type === 'cmd' ? 't-cmd' : line.type === 'success' ? 't-success' : 't-output';
+      html += `<div><span class="${cls}">${line.text}</span></div>`;
+    }
+    terminalBody.innerHTML = html;
+  }
+} else {
+  setTimeout(typeTerminal, 800);
+}
 
 // ===== NAV SCROLL SHADOW =====
 const navEl = document.querySelector('nav');

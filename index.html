@@ -17,6 +17,7 @@
   <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -31,7 +32,7 @@
 <body>
 
 <!-- ===== MOBILE MENU ===== -->
-<div id="mobile-menu" class="mobile-menu" role="dialog" aria-label="Navigation menu">
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true" aria-label="Navigation menu">
   <a href="#services">Services</a>
   <a href="#blog">Blog</a>
   <a href="tools/index.html">Free Tools</a>
@@ -58,6 +59,7 @@
   </div>
 </nav>
 
+<main>
 <!-- ===== HERO ===== -->
 <section id="hero" aria-label="Hero">
   <div class="hero-bg" aria-hidden="true"></div>
@@ -123,7 +125,6 @@
     </div>
     <div class="about-content">
       <div>
-        <span class="section-tag">About Me</span>
         <h2 id="about-heading">Robby J</h2>
         <p class="about-tag">Software Engineer · AI Creator · M.S. Computer Science</p>
       </div>
@@ -141,7 +142,7 @@
           <img src="assets/images/skool_logo.jpeg" alt="Skool Academy" />
           Skool Academy
         </a>
-        <a data-email class="social-link" id="about-email-link" style="cursor: pointer;">
+        <a data-email class="social-link" id="about-email-link" aria-label="Email Robby" style="cursor: pointer;">
           <span>✉️</span>
         </a>
       </div>
@@ -292,7 +293,7 @@
       </article>
 
       <!-- Card 3: Placeholder -->
-      <article class="testimonial-card" id="testimonial-placeholder-2" style="opacity:0.55; border-style: dashed;">
+      <article class="testimonial-card" id="testimonial-placeholder-2" aria-hidden="true" style="opacity:0.55; border-style: dashed;">
         <div class="testimonial-quote-mark">"</div>
         <div class="testimonial-stars" aria-hidden="true">★★★★★</div>
         <p class="testimonial-text" style="font-style: italic;">
@@ -315,7 +316,6 @@
 <section id="videos" aria-labelledby="videos-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">// latest_videos</span>
       <h2 id="videos-heading">Latest Videos</h2>
       <p>Real tutorials from someone who's actually shipping code with AI every day.</p>
     </div>
@@ -355,7 +355,6 @@
 <section id="blog" aria-labelledby="blog-heading">
   <div class="container">
     <div class="section-header">
-      <span class="section-tag">// latest_posts</span>
       <h2 id="blog-heading">Latest Posts</h2>
       <p>Written deep dives and guides on AI engineering, automation, and developer tools.</p>
     </div>
@@ -373,7 +372,6 @@
   <div class="container">
     <div class="newsletter-inner">
       <div>
-        <span class="section-tag">// let_work_together</span>
         <h2 id="contact-heading">Let's Build Something Awesome</h2>
         <p style="color:var(--text-muted);margin-top:12px">Have an automation project in mind or want to book an AI consultation? Hit the button below and shoot me a message.</p>
       </div>
@@ -383,6 +381,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <!-- ===== FOOTER ===== -->
 <footer>

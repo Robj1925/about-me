@@ -4,7 +4,7 @@ window.BLOG_POSTS = [
     "slug": "generate-free-short-form-videos-with-moneyprinterturbo",
     "title": "Generate a Complete Short-Form Video for Free with MoneyPrinterTurbo",
     "date": "2026-06-23",
-    "excerpt": "Script, footage, voiceover, subtitles, background music. All free. Here's exactly how to go from zero to a publishable short-form video in 20 minutes using MoneyPrinterTurbo.",
+    "excerpt": "Script, footage, voiceover, subtitles, background music. All free. Here's exactly how to go from zero to a publishable short-form video in 20 minutes.",
     "thumbnail": "assets/images/blog-thumbnails/generate-free-short-form-videos-with-moneyprinterturbo.jpeg",
     "youtubeId": "mmYCbuZlHpQ",
     "tags": [
@@ -13,7 +13,7 @@ window.BLOG_POSTS = [
       "Tutorial",
       "Automation"
     ],
-    "readTime": 4
+    "readTime": 3
   },
   {
     "slug": "how-to-master-google-flow-agent-mode-for-professional-ai-video-production",

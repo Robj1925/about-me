@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Master Claude Code: The 7 Ways to Steer Its Behavior — Robby J</title>
+  <meta name="description" content="Most people only use CLAUDE.md. There are actually 7 ways to control Claude Code, each with different tradeoffs in context cost, persistence, and authority. Here is when to use each one." />
+  <meta property="og:title" content="Master Claude Code: The 7 Ways to Steer Its Behavior — Robby J" />
+  <meta property="og:description" content="Most people only use CLAUDE.md. There are actually 7 ways to control Claude Code, each with different tradeoffs in context cost, persistence, and authority. Here is when to use each one." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/master-claude-code-7-ways-to-steer-its-behavior.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/master-claude-code-7-ways-to-steer-its-behavior.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/master-claude-code-7-ways-to-steer-its-behavior.jpg" alt="Master Claude Code: The 7 Ways to Steer Its Behavior thumbnail" class="post-hero-img" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Claude Code</span><span class="post-tag">AI Tools</span><span class="post-tag">Tutorial</span></div>
+      <h1 class="post-title">Master Claude Code: The 7 Ways to Steer Its Behavior</h1>
+      <p class="post-excerpt">Most people only use CLAUDE.md. There are actually 7 ways to control Claude Code, each with different tradeoffs in context cost, persistence, and authority. Here is when to use each one.</p>
+      <div class="post-meta">
+        <span>📅 July 3, 2026</span>
+        <span>·</span>
+        <span>⏱ 7 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Most people steer Claude Code with one file: CLAUDE.md. They dump every rule, convention, and procedure into it, watch it balloon to 400 lines, and wonder why Claude starts ignoring half of it.</p>
+<p>The truth is there are seven different ways to control Claude Code, and each one is built for a different job. Pick the wrong tool and you either burn tokens on instructions Claude does not need yet, or you write a rule that quietly gets dropped the moment the session gets long. Pick the right one and Claude does exactly what you want without the bloat.</p>
+<p>Here is the full breakdown of all seven, what each one is actually for, and how to choose.</p>
+<h2 id="the-mental-model-first">The Mental Model First</h2>
+<p>Before the list, understand the three questions that decide everything:</p>
+<ol>
+<li><strong>When does it load?</strong> Some instructions load at session start and cost you tokens the whole time. Others load only when they become relevant.</li>
+<li><strong>Does it survive compaction?</strong> Long sessions get compacted (condensed) to save context. Some instructions get re-read after that. Some silently disappear.</li>
+<li><strong>How much authority does it have?</strong> A polite note in a markdown file is a suggestion. A hook that blocks a command is a wall.</li>
+</ol>
+<p>Every method below is a different answer to those three questions. Match the method to what you actually need.</p>
+<h2 id="1-claudemd">1. CLAUDE.md</h2>
+<p>The classic. A markdown file that loads at the start of every session and stays loaded the whole time. The root CLAUDE.md is always in context and gets re-read after compaction, so it is the most reliable place for facts Claude should never forget. Drop one inside a subdirectory and it loads only when Claude touches files in that folder, which is perfect for monorepos.</p>
+<p><strong>Use it for:</strong> build commands, directory structure, coding conventions, team norms. The facts Claude needs to hold in its head at all times.</p>
+<p><strong>The catch:</strong> every single line costs tokens for the entire session, whether it is relevant or not. Keep the root file under 200 lines. If it is growing past that, you are using it for things that belong somewhere else on this list.</p>
+<h2 id="2-rules">2. Rules</h2>
+<p>Markdown files in <code>.claude/rules/</code> that inject specific constraints. The important feature is the <code>paths</code> frontmatter field. Add it, and the rule loads only when Claude accesses matching files.</p>
+<p><strong>Use it for:</strong> file-specific constraints like &quot;database migrations are append-only&quot; or a validation convention that only applies to your API handlers.</p>
+<p><strong>Why it beats CLAUDE.md here:</strong> an unscoped rule loads always, just like CLAUDE.md. But a path-scoped rule stays out of context until it is actually needed. Something like <code>paths: [&quot;src/api/**&quot;, &quot;**/*.handler.ts&quot;]</code> keeps your API rules invisible while Claude works on the frontend, then loads them the second it opens a handler.</p>
+<h2 id="3-skills">3. Skills</h2>
+<p>Folders in <code>.claude/skills/</code> containing a SKILL.md file with a name, a description, and a body. This is the clever part: at session start, only the name and description load. The full body stays on disk until the skill is invoked, either by a slash command or by Claude auto-matching the description to your request.</p>
+<p><strong>Use it for:</strong> procedural workflows. Deploy checklists, release processes, code review procedures. Anything that is a sequence of steps rather than a fact.</p>
+<p><strong>Why it is efficient:</strong> a 200-line deploy procedure costs you almost nothing until the moment you actually deploy. That is the whole point. CLAUDE.md is for facts Claude holds always; skills are for procedures Claude loads on demand.</p>
+<h2 id="4-subagents">4. Subagents</h2>
+<p>Markdown files in <code>.claude/agents/</code> that define an isolated assistant with its own context window. The subagent runs its task separately, and only its final summary comes back to your main session. All the intermediate noise stays out of your conversation.</p>
+<p><strong>Use it for:</strong> side quests that would clutter the main thread. Deep codebase searches, log analysis, dependency audits. Work where you want the answer but not the 40 tool calls it took to get there.</p>
+<p><strong>Why it matters:</strong> isolation keeps your main context clean. The subagent can read a hundred files and think through a messy problem, and your primary session never sees any of it, just the conclusion.</p>
+<h2 id="5-hooks">5. Hooks</h2>
+<p>This is the one most people are missing. Hooks are commands, HTTP endpoints, or prompts registered in settings.json (or in a skill or agent&#39;s frontmatter) that fire deterministically on lifecycle events: after a file edit, before a tool call, at session start.</p>
+<p><strong>Use it for:</strong> deterministic automation. Run the linter after every edit. Post to Slack when a task finishes. Block a dangerous command before it ever runs.</p>
+<p><strong>Why it is different from everything else:</strong> a hook is code the harness runs, not an instruction Claude interprets. That distinction is everything. If you write &quot;always run the tests after editing&quot; in CLAUDE.md, Claude will do it most of the time, then forget under pressure in a long session. A PostToolUse hook runs the tests every single time, because it is not asking Claude to remember. It just fires. And it costs almost no context, because the configuration lives outside the conversation.</p>
+<h2 id="6-output-styles">6. Output Styles</h2>
+<p>Files in <code>.claude/output-styles/</code> that inject instructions directly into the system prompt. They are never compacted and always loaded, which gives them the highest instruction-following weight of anything on this list.</p>
+<p><strong>Use it for:</strong> significant role changes. Turning Claude from a coding assistant into a general-purpose assistant, for example. The built-in styles (Proactive, Explanatory, Learning) already cover most needs.</p>
+<p><strong>The catch:</strong> a custom output style replaces the default instructions unless you set <code>keep-coding-instructions: true</code>. Those defaults cover scope, comments, security, and testing habits, so know what you are turning off before you override them.</p>
+<h2 id="7-append-system-prompt">7. Append System Prompt</h2>
+<p>The <code>--append-system-prompt</code> CLI flag. It tacks additional instructions onto the system prompt for a single invocation, and it is purely additive.</p>
+<p><strong>Use it for:</strong> a one-off. A specific coding standard, an output format, or a piece of domain knowledge you need for this run and this run only.</p>
+<p><strong>Why it is cheap:</strong> prompt caching kicks in after the first request, so the extra instructions cost you very little across the session.</p>
+<h2 id="how-to-choose-the-quick-refactor-guide">How to Choose: The Quick Refactor Guide</h2>
+<p>If you are staring at a bloated CLAUDE.md right now, here is how to break it apart:</p>
+<table>
+<thead>
+<tr>
+<th>What you wrote</th>
+<th>Where it should go</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&quot;Every time X, always do Y&quot;</td>
+<td>A <strong>hook</strong>. Prompted rules fail under pressure; hooks fire every time.</td>
+</tr>
+<tr>
+<td>&quot;Never do this&quot;</td>
+<td>A <strong>PreToolUse hook</strong> or managed settings. Real guardrails, not polite requests.</td>
+</tr>
+<tr>
+<td>A 30-line procedure</td>
+<td>A <strong>skill</strong>. Load it on demand instead of paying for it all session.</td>
+</tr>
+<tr>
+<td>An API rule with no scope</td>
+<td>Add <code>paths:</code> frontmatter and make it a scoped <strong>rule</strong>.</td>
+</tr>
+<tr>
+<td>Your personal preferences</td>
+<td>The <strong>user-level</strong> version of these files, not the shared project ones.</td>
+</tr>
+</tbody></table>
+<p>The general principle: CLAUDE.md is for facts Claude should always hold. Everything conditional, procedural, or enforced belongs somewhere more specific.</p>
+<h2 id="quick-reference">Quick Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Loads</th>
+<th>Survives compaction</th>
+<th>Context cost</th>
+<th>Best for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CLAUDE.md (root)</td>
+<td>Session start</td>
+<td>Yes, re-read</td>
+<td>High</td>
+<td>Project facts, conventions</td>
+</tr>
+<tr>
+<td>Path-scoped rules</td>
+<td>On demand</td>
+<td>Until directory touched</td>
+<td>Low to medium</td>
+<td>Conditional constraints</td>
+</tr>
+<tr>
+<td>Skills</td>
+<td>On invocation</td>
+<td>Re-injected to budget</td>
+<td>Low</td>
+<td>Procedures, checklists</td>
+</tr>
+<tr>
+<td>Subagents</td>
+<td>On call</td>
+<td>Isolated</td>
+<td>Low</td>
+<td>Background tasks</td>
+</tr>
+<tr>
+<td>Hooks</td>
+<td>Lifecycle events</td>
+<td>Outside context</td>
+<td>Low</td>
+<td>Deterministic automation</td>
+</tr>
+<tr>
+<td>Output styles</td>
+<td>Session start</td>
+<td>Never compacted</td>
+<td>High</td>
+<td>Role changes</td>
+</tr>
+<tr>
+<td>Append system prompt</td>
+<td>Invocation</td>
+<td>That run only</td>
+<td>Low</td>
+<td>One-off instructions</td>
+</tr>
+</tbody></table>
+<h2 id="watch-the-full-breakdown">Watch the Full Breakdown</h2>
+<p>This post is the map. In the video below I walk through each of these seven methods with live examples inside Claude Code, so you can see exactly how they behave and when to reach for each one.</p>
+<div class="post-yt-embed">
+  <iframe
+    width="100%" height="100%"
+    src="https://www.youtube.com/embed/cV52QdcfA0s"
+    title="Master Claude Code: The 7 Ways to Steer Its Behavior"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

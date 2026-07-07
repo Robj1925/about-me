@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Build a Claude Skill in 60 Seconds — Robby J</title>
+  <meta name="description" content="A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one." />
+  <meta property="og:title" content="How to Build a Claude Skill in 60 Seconds — Robby J" />
+  <meta property="og:description" content="A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-to-build-a-claude-skill-in-60-seconds.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/how-to-build-a-claude-skill-in-60-seconds.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/how-to-build-a-claude-skill-in-60-seconds.jpg" alt="How to Build a Claude Skill in 60 Seconds thumbnail" class="post-hero-img" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Claude</span><span class="post-tag">Claude Code</span><span class="post-tag">Tutorial</span></div>
+      <h1 class="post-title">How to Build a Claude Skill in 60 Seconds</h1>
+      <p class="post-excerpt">A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one.</p>
+      <div class="post-meta">
+        <span>📅 July 4, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>A Claude skill sounds complicated. It is not. It is a folder with a markdown file inside it. That is the whole thing. And once you understand it, you can teach Claude a workflow one time and reuse it in every chat after that.</p>
+<h2 id="what-a-skill-actually-is">What a Skill Actually Is</h2>
+<p>A skill is a way to package a workflow so you never have to explain it again. Instead of pasting the same instructions into every conversation, you write them once into a <code>SKILL.md</code> file, and Claude pulls them in whenever they are relevant.</p>
+<p>Think deploy checklist, code review process, a specific way you want reports formatted. Anything you find yourself re-explaining is a candidate for a skill.</p>
+<h2 id="the-clever-part">The Clever Part</h2>
+<p>Here is what makes skills efficient instead of expensive.</p>
+<p>A <code>SKILL.md</code> file has two pieces that load at different times:</p>
+<ul>
+<li><strong>Name plus description:</strong> This sits in context up front. It costs almost nothing. It is just enough for Claude to know the skill exists and when it might be useful.</li>
+<li><strong>The full instructions:</strong> These load only when Claude decides the task is actually relevant.</li>
+</ul>
+<p>That split is the whole trick. You can have dozens of skills installed and pay basically zero tokens until one of them fires. The body stays on disk until it is needed.</p>
+<h2 id="writing-the-description-is-the-real-skill">Writing the Description Is the Real Skill</h2>
+<p>The single most important part is the description. That is what Claude reads to decide whether to load the skill. A vague description means the skill never fires, or fires at the wrong time.</p>
+<p>Be specific about what the skill does and when to use it. Name the triggers. If it is a deploy checklist, say so and list the situations that should invoke it. A good description is the difference between a skill that quietly works and one that just sits there.</p>
+<h2 id="it-works-everywhere">It Works Everywhere</h2>
+<p>The best part: the same skill works across Claude.ai, Claude Code, and the API without changing a single thing. Write it once, use it everywhere.</p>
+<p>If you are brand new to this, there are tools that walk you through building your first skill in about 15 to 30 minutes. But the core idea takes 60 seconds to understand: a folder, a markdown file, a sharp description.</p>
+<p>Skills are one of seven different ways to steer Claude Code. If you want the full picture of when to use skills versus rules, hooks, or subagents, I broke all of them down in <a href="master-claude-code-7-ways-to-steer-its-behavior.html">The 7 Ways to Steer Claude Code</a>.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

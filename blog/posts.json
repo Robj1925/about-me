@@ -1,5 +1,33 @@
 [
   {
+    "slug": "fable-5-got-banned-for-something-gpt-5-5-can-also-do",
+    "title": "Fable 5 Got Banned for Something GPT 5.5 Can Also Do",
+    "date": "2026-07-07",
+    "excerpt": "Claude Fable 5 is back online. It got hit with export controls over a jailbreak that writes exploit code, but new tests show every major model has the exact same weakness.",
+    "thumbnail": "assets/images/blog-thumbnails/fable-5-got-banned-for-something-gpt-5-5-can-also-do.jpg",
+    "youtubeId": null,
+    "tags": [
+      "Claude",
+      "AI News",
+      "AI Safety"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-to-build-a-claude-skill-in-60-seconds",
+    "title": "How to Build a Claude Skill in 60 Seconds",
+    "date": "2026-07-05",
+    "excerpt": "A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-build-a-claude-skill-in-60-seconds.jpg",
+    "youtubeId": null,
+    "tags": [
+      "Claude",
+      "Claude Code",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "master-claude-code-7-ways-to-steer-its-behavior",
     "title": "Master Claude Code: The 7 Ways to Steer Its Behavior",
     "date": "2026-07-04",
@@ -12,6 +40,20 @@
       "Tutorial"
     ],
     "readTime": 7
+  },
+  {
+    "slug": "openais-new-chip-jalapeno-isnt-a-gpu",
+    "title": "OpenAI's New Chip Isn't a GPU. It's Something Else.",
+    "date": "2026-07-04",
+    "excerpt": "OpenAI just announced Jalapeño, a custom chip built from scratch for AI inference. The wild part: OpenAI used its own models to design it in nine months.",
+    "thumbnail": "assets/images/blog-thumbnails/openais-new-chip-jalapeno-isnt-a-gpu.jpg",
+    "youtubeId": null,
+    "tags": [
+      "OpenAI",
+      "AI Hardware",
+      "AI News"
+    ],
+    "readTime": 2
   },
   {
     "slug": "ai-video-now-uses-real-google-maps-imagery",

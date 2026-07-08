@@ -152,12 +152,6 @@ if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   setTimeout(typeTerminal, 800);
 }
 
-// ===== NAV SCROLL SHADOW =====
-const navEl = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-  navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
-}, { passive: true });
-
 // ===== DYNAMIC BLOG CARDS =====
 // Data is pre-loaded by blog/posts-data.js (sets window.BLOG_POSTS)
 // This avoids fetch() path issues on GitHub Pages

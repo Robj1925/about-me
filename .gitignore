@@ -3,3 +3,6 @@ website_implementation_plan.md
 node_modules/
 .openclaw
 CLAUDE.md
+.DS_Store
+.agents/
+skills-lock.json

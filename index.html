@@ -10,6 +10,7 @@
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://automatewithrobby.fyi/" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/home.css" />
   <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
   <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
@@ -29,7 +30,7 @@
     gtag('config', 'G-T1RQQC7CB5');
   </script>
 </head>
-<body>
+<body class="home">
 
 <a href="#main" class="skip-link">Skip to main content</a>
 
@@ -67,27 +68,23 @@
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="container hero-inner">
     <div class="hero-content">
-      <div class="eyebrow" aria-label="Role">⚡ AI Engineer &amp; Creator</div>
-      <h1 class="hero-title">I Build AI Systems That <span>Actually Work.</span></h1>
-      <p class="hero-sub">Software engineer, content creator, and open-source builder. I teach developers how to automate their world with AI.</p>
-      <div class="hero-actions">
+      <div class="eyebrow" aria-label="Role" data-hero="eyebrow">AI engineer &amp; creator</div>
+      <h1 class="hero-title" data-hero="title">I build AI systems that <span>actually work.</span></h1>
+      <p class="hero-sub" data-hero="sub">Software engineer, content creator, and open-source builder. I teach developers how to automate their world with AI.</p>
+      <div class="hero-actions" data-hero="actions">
         <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary" id="hero-yt-cta">
           <img src="assets/images/youtube_logo.webp" alt="" style="width:20px; height:20px; object-fit:contain;" />
           Subscribe on YouTube
         </a>
-        <a href="#projects" class="btn btn-ghost" id="hero-projects-cta">→ See My Projects</a>
-      </div>
-      <div class="scroll-indicator" aria-hidden="true">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 10l5 5 5-5"/></svg>
-        Scroll to explore
+        <a href="#projects" class="btn btn-ghost" id="hero-projects-cta">See my projects</a>
       </div>
     </div>
-    <div class="terminal" aria-label="Terminal demo" role="img">
+    <div class="terminal" aria-label="Terminal demo" role="img" data-hero="terminal">
       <div class="terminal-bar">
         <span class="dot dot-red"></span>
         <span class="dot dot-yellow"></span>
         <span class="dot dot-green"></span>
-        <span class="terminal-title">openclaw — zsh</span>
+        <span class="terminal-title">openclaw - zsh</span>
       </div>
       <div class="terminal-body mono" id="terminal-body" aria-live="polite"></div>
     </div>
@@ -123,14 +120,18 @@
 <section id="about" aria-labelledby="about-heading">
   <div class="container about-grid">
     <div class="about-photo-wrap">
-      <img src="assets/images/robby-headshot.jpg" alt="Robby J — Software Engineer and AI Creator" class="about-photo" loading="lazy" />
+      <img src="assets/images/robby-headshot.jpg" alt="Robby J, software engineer and AI creator" class="about-photo" loading="lazy" />
     </div>
-    <div class="about-content">
-      <div>
+    <div class="about-panel">
+      <div class="about-panel-head">
         <h2 id="about-heading">Robby J</h2>
-        <p class="about-tag">Software Engineer · AI Creator · M.S. Computer Science</p>
+        <div class="about-tags" aria-label="Credentials">
+          <span class="about-tag-pill">Software engineer</span>
+          <span class="about-tag-pill">AI creator</span>
+          <span class="about-tag-pill">M.S. Computer Science</span>
+        </div>
       </div>
-      <p class="about-bio">I'm a software engineer with a Master's in Computer Science, building AI systems and automation tools that actually ship in production.<br><br>On YouTube (<strong>Code With Robby</strong>), I break down the latest AI tools, not as a reviewer, but as someone who's shipping real code with them every day. I build with powerful AI frameworks and I'm obsessed with designing workflows that make developers 10x faster.<br><br>I also run the <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener"><strong>AI Academy</strong></a> Skool community, where I teach developers and power users how to build and deploy their own AI systems.</p>
+      <p class="about-bio">I'm a software engineer with a Master's in Computer Science, building AI systems and automation tools that actually ship in production.<br><br>On YouTube (<strong>Code With Robby</strong>), I break down the latest AI tools, not as a reviewer, but as someone shipping real code with them every day. I build with powerful AI frameworks and I'm obsessed with designing workflows that make developers 10x faster.<br><br>I also run the <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener"><strong>AI Academy</strong></a> Skool community, where I teach developers and power users how to build and deploy their own AI systems.</p>
       <div class="social-links">
         <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="social-link" id="about-yt-link">
           <img src="assets/images/youtube_logo.webp" alt="YouTube" />
@@ -155,14 +156,13 @@
 <!-- ===== TESTIMONIALS ===== -->
 <section id="testimonials" aria-labelledby="testimonials-heading">
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">// client_results</span>
-      <h2 id="testimonials-heading">What Clients Say</h2>
-      <p>Real outcomes from real clients, shipped end-to-end.</p>
+    <div class="home-head">
+      <h2 id="testimonials-heading">What clients say</h2>
+      <p>Real outcomes from real clients, shipped end to end.</p>
     </div>
     <div class="testimonials-grid">
 
-      <!-- Card 1: Raquel's Beauty Salon — Featured -->
+      <!-- Card 1: Raquel's Beauty Salon (Featured) -->
       <article class="testimonial-card featured" id="testimonial-raquel">
         <span class="testimonial-tag">✦ Featured Client</span>
         <div class="testimonial-quote-mark">"</div>
@@ -222,46 +222,51 @@
 <!-- ===== SERVICES ===== -->
 <section id="services" aria-labelledby="services-heading">
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">// services</span>
-      <h2 id="services-heading">Work With Me</h2>
+    <div class="home-head">
+      <h2 id="services-heading">Work with me</h2>
       <p>Consulting engagements for teams ready to build AI systems that actually work.</p>
     </div>
-    <div class="services-grid">
-      <article class="service-card">
-        <div class="service-icon">🔍</div>
-        <h3 class="service-title">AI Audit</h3>
-        <p class="service-desc">A deep review of your codebase and workflows to identify high-impact AI automation opportunities.</p>
-        <ul class="service-features">
-          <li>Codebase & workflow analysis</li>
-          <li>Prioritized opportunity report</li>
-          <li>30-min readout call</li>
-        </ul>
-        <span class="service-price">Contact for Quote</span>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a data-email class="btn btn-primary" id="service-audit-cta" style="cursor:pointer;">Get in Touch</a>
-          <a href="services/index.html#ai-audit" class="btn btn-ghost" style="font-size:0.9rem;">Learn More →</a>
+    <div class="services-layout">
+      <article class="service-card service-primary">
+        <span class="recommended-badge">⭐ Recommended</span>
+        <div class="service-primary-grid">
+          <div class="service-primary-lead">
+            <div class="service-icon">💬</div>
+            <h3 class="service-title">AI consultation</h3>
+            <p class="service-desc">Book a 1-on-1 session to pick my brain on anything AI, whether you need troubleshooting or tool guidance.</p>
+          </div>
+          <div class="service-primary-detail">
+            <ul class="service-features">
+              <li>60-minute deep dive video call</li>
+              <li>Troubleshoot developer and agent tools</li>
+              <li>Custom AI strategy and advice</li>
+            </ul>
+            <span class="service-price">Contact for Booking</span>
+            <div class="service-cta-row">
+              <a data-email class="btn btn-primary" id="service-agent-cta" style="cursor:pointer;">Book a session</a>
+              <a href="services/index.html#ai-consultation" class="btn btn-ghost" style="font-size:0.9rem;">Learn more</a>
+            </div>
+          </div>
         </div>
       </article>
       <article class="service-card">
-        <span class="recommended-badge">⭐ Recommended</span>
-        <div class="service-icon">💬</div>
-        <h3 class="service-title">AI Consultation</h3>
-        <p class="service-desc">Book a 1-on-1 session to pick my brain on anything AI, whether you need troubleshooting or tool guidance.</p>
+        <div class="service-icon">🔍</div>
+        <h3 class="service-title">AI audit</h3>
+        <p class="service-desc">A deep review of your codebase and workflows to identify high-impact AI automation opportunities.</p>
         <ul class="service-features">
-          <li>60-Minute Deep Dive Video Call</li>
-          <li>Troubleshoot developer & agent tools</li>
-          <li>Custom AI strategy & advice</li>
+          <li>Codebase and workflow analysis</li>
+          <li>Prioritized opportunity report</li>
+          <li>30-minute readout call</li>
         </ul>
-        <span class="service-price">Contact for Booking</span>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a data-email class="btn btn-primary" id="service-agent-cta" style="cursor:pointer;">Book a Session</a>
-          <a href="services/index.html#ai-consultation" class="btn btn-ghost" style="font-size:0.9rem;">Learn More →</a>
+        <span class="service-price">Contact for Quote</span>
+        <div class="service-cta-row">
+          <a data-email class="btn btn-primary" id="service-audit-cta" style="cursor:pointer;">Request an audit</a>
+          <a href="services/index.html#ai-audit" class="btn btn-ghost" style="font-size:0.9rem;">Learn more</a>
         </div>
       </article>
       <article class="service-card">
         <div class="service-icon">🌐</div>
-        <h3 class="service-title">Website Build</h3>
+        <h3 class="service-title">Website build</h3>
         <p class="service-desc">I design and build fast, modern personal websites: portfolio sites, landing pages, and personal brands. Clean code, optimized for Google search from day one.</p>
         <ul class="service-features">
           <li>Custom design tailored to your brand</li>
@@ -269,9 +274,9 @@
           <li>Deployed on GitHub Pages with a custom domain</li>
         </ul>
         <span class="service-price">Contact for Quote</span>
-        <div style="display:flex;gap:10px;flex-wrap:wrap;">
-          <a data-email class="btn btn-primary" id="service-website-cta" style="cursor:pointer;">Get in Touch</a>
-          <a href="services/index.html#website-build" class="btn btn-ghost" style="font-size:0.9rem;">Learn More →</a>
+        <div class="service-cta-row">
+          <a data-email class="btn btn-primary" id="service-website-cta" style="cursor:pointer;">Start a build</a>
+          <a href="services/index.html#website-build" class="btn btn-ghost" style="font-size:0.9rem;">Learn more</a>
         </div>
       </article>
     </div>
@@ -281,54 +286,63 @@
 <!-- ===== VIDEOS ===== -->
 <section id="videos" aria-labelledby="videos-heading">
   <div class="container">
-    <div class="section-header">
-      <h2 id="videos-heading">Latest Videos</h2>
-      <p>Real tutorials from someone who's actually shipping code with AI every day.</p>
+    <div class="home-head">
+      <h2 id="videos-heading">Latest videos</h2>
+      <p>Real tutorials from someone who is actually shipping code with AI every day.</p>
     </div>
-    <div class="blog-grid">
-      <a href="https://www.youtube.com/watch?v=43yvFUIPyOM" target="_blank" rel="noopener" class="blog-card blog-card-link">
-        <img src="https://i1.ytimg.com/vi/43yvFUIPyOM/hqdefault.jpg" alt="How to Master Google Flow's Agent Mode for Professional AI Video Production thumbnail" class="blog-thumb" loading="lazy" />
-        <div class="blog-body">
-          <span class="blog-tag">AI Video</span>
-          <h3 class="blog-title">How to Master Google Flow's Agent Mode for Professional AI Video Production</h3>
-          <span class="blog-date">June 2026</span>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/watch?v=teKF78kX6u0" target="_blank" rel="noopener" class="blog-card blog-card-link">
-        <img src="https://i1.ytimg.com/vi/teKF78kX6u0/hqdefault.jpg" alt="Claude Mythos 5 Explained: The AI Built for Hackers & Scientists thumbnail" class="blog-thumb" loading="lazy" />
-        <div class="blog-body">
-          <span class="blog-tag">AI Models</span>
-          <h3 class="blog-title">Claude Mythos 5 Explained: The AI Built for Hackers & Scientists</h3>
-          <span class="blog-date">June 2026</span>
-        </div>
-      </a>
-      <a href="https://www.youtube.com/watch?v=o4YKj2Rebpo" target="_blank" rel="noopener" class="blog-card blog-card-link">
-        <img src="https://i4.ytimg.com/vi/o4YKj2Rebpo/hqdefault.jpg" alt="I Scraped Thousands of Free Leads Using Antigravity (Insane Results) thumbnail" class="blog-thumb" loading="lazy" />
-        <div class="blog-body">
-          <span class="blog-tag">Automation</span>
-          <h3 class="blog-title">I Scraped Thousands of Free Leads Using Antigravity (Insane Results)</h3>
-          <span class="blog-date">May 2026</span>
-        </div>
-      </a>
-    </div>
-    <div style="text-align:center; margin-top: var(--space-8)">
-      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-ghost" id="all-videos-btn">View All Videos →</a>
-    </div>
+  </div>
+  <div class="video-rail" role="list" aria-label="Latest videos">
+    <a href="https://www.youtube.com/watch?v=43yvFUIPyOM" target="_blank" rel="noopener" class="video-card" role="listitem">
+      <div class="video-thumb-wrap">
+        <img src="https://i1.ytimg.com/vi/43yvFUIPyOM/hqdefault.jpg" alt="How to Master Google Flow's Agent Mode for Professional AI Video Production thumbnail" class="video-thumb" loading="lazy" />
+        <span class="video-play" aria-hidden="true">▶</span>
+      </div>
+      <div class="video-card-body">
+        <span class="video-tag">AI Video</span>
+        <h3 class="video-title">How to Master Google Flow's Agent Mode for Professional AI Video Production</h3>
+        <span class="video-date">June 2026</span>
+      </div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=teKF78kX6u0" target="_blank" rel="noopener" class="video-card" role="listitem">
+      <div class="video-thumb-wrap">
+        <img src="https://i1.ytimg.com/vi/teKF78kX6u0/hqdefault.jpg" alt="Claude Mythos 5 Explained: The AI Built for Hackers and Scientists thumbnail" class="video-thumb" loading="lazy" />
+        <span class="video-play" aria-hidden="true">▶</span>
+      </div>
+      <div class="video-card-body">
+        <span class="video-tag">AI Models</span>
+        <h3 class="video-title">Claude Mythos 5 Explained: The AI Built for Hackers and Scientists</h3>
+        <span class="video-date">June 2026</span>
+      </div>
+    </a>
+    <a href="https://www.youtube.com/watch?v=o4YKj2Rebpo" target="_blank" rel="noopener" class="video-card" role="listitem">
+      <div class="video-thumb-wrap">
+        <img src="https://i4.ytimg.com/vi/o4YKj2Rebpo/hqdefault.jpg" alt="I Scraped Thousands of Free Leads Using Antigravity (Insane Results) thumbnail" class="video-thumb" loading="lazy" />
+        <span class="video-play" aria-hidden="true">▶</span>
+      </div>
+      <div class="video-card-body">
+        <span class="video-tag">Automation</span>
+        <h3 class="video-title">I Scraped Thousands of Free Leads Using Antigravity (Insane Results)</h3>
+        <span class="video-date">May 2026</span>
+      </div>
+    </a>
+  </div>
+  <div class="container home-more">
+    <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-ghost" id="all-videos-btn">View all videos</a>
   </div>
 </section>
 
 <!-- ===== BLOG ===== -->
 <section id="blog" aria-labelledby="blog-heading">
   <div class="container">
-    <div class="section-header">
-      <h2 id="blog-heading">Latest Posts</h2>
+    <div class="home-head">
+      <h2 id="blog-heading">Latest posts</h2>
       <p>Written deep dives and guides on AI engineering, automation, and developer tools.</p>
     </div>
     <div class="blog-grid" id="blog-grid" aria-live="polite">
       <!-- Populated by blog/posts-data.js -->
     </div>
-    <div style="text-align:center; margin-top: var(--space-8)">
-      <a href="blog/index.html" class="btn btn-ghost" id="all-posts-btn">View All Posts →</a>
+    <div class="home-more">
+      <a href="blog/index.html" class="btn btn-ghost" id="all-posts-btn">View all posts</a>
     </div>
   </div>
 </section>
@@ -336,50 +350,64 @@
 <!-- ===== PROJECTS ===== -->
 <section id="projects" aria-labelledby="projects-heading">
   <div class="container">
-    <div class="section-header">
-      <span class="section-tag">// featured_projects</span>
-      <h2 id="projects-heading">What I've Built</h2>
+    <div class="home-head">
+      <h2 id="projects-heading">What I've built</h2>
       <p>Open-source tools and AI systems I've shipped in production.</p>
     </div>
-    <div class="projects-grid">
-      <article class="project-card">
-        <span class="project-tag tag-open">Open Source</span>
-        <h3 class="project-title">skool-pp-cli</h3>
-        <p class="project-desc">A high-performance CLI for Skool community owners. Sync data, perform deep analytics, and manage communities from the terminal.</p>
-        <a href="https://github.com/Robj1925/skool-pp-cli" target="_blank" rel="noopener" class="project-link" id="project-skool-cli-link">
+    <ol class="proj-list" role="list">
+      <li class="proj-row">
+        <span class="proj-index" aria-hidden="true">01</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <h3 class="proj-title">skool-pp-cli</h3>
+            <span class="proj-tag">Open source</span>
+          </div>
+          <p class="proj-desc">A high-performance CLI for Skool community owners. Sync data, perform deep analytics, and manage communities from the terminal.</p>
+        </div>
+        <a href="https://github.com/Robj1925/skool-pp-cli" target="_blank" rel="noopener" class="proj-link" id="project-skool-cli-link">
           View on GitHub <span aria-hidden="true">→</span>
         </a>
-      </article>
-      <article class="project-card">
-        <span class="project-tag tag-tool">Tool</span>
-        <h3 class="project-title">YT Timestamp Autoposter</h3>
-        <p class="project-desc">Whisper + Gemini pipeline that auto-generates chapters and SEO descriptions for YouTube uploads. Zero manual effort.</p>
-        <a href="https://github.com/robj1925" target="_blank" rel="noopener" class="project-link" id="project-yt-seo-link">
+      </li>
+      <li class="proj-row">
+        <span class="proj-index" aria-hidden="true">02</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <h3 class="proj-title">YT Timestamp Autoposter</h3>
+            <span class="proj-tag">Tool</span>
+          </div>
+          <p class="proj-desc">Whisper plus Gemini pipeline that auto-generates chapters and SEO descriptions for YouTube uploads. Zero manual effort.</p>
+        </div>
+        <a href="https://github.com/robj1925" target="_blank" rel="noopener" class="proj-link" id="project-yt-seo-link">
           View on GitHub <span aria-hidden="true">→</span>
         </a>
-      </article>
-      <article class="project-card">
-        <span class="project-tag tag-wip">In Progress</span>
-        <h3 class="project-title">Custom MCP Servers</h3>
-        <p class="project-desc">A suite of personal Model Context Protocol servers for YouTube analytics, OBS control, and Jira sync.</p>
-        <a href="https://github.com/robj1925" target="_blank" rel="noopener" class="project-link" id="project-mcp-link">
+      </li>
+      <li class="proj-row">
+        <span class="proj-index" aria-hidden="true">03</span>
+        <div class="proj-body">
+          <div class="proj-head">
+            <h3 class="proj-title">Custom MCP Servers</h3>
+            <span class="proj-tag">In progress</span>
+          </div>
+          <p class="proj-desc">A suite of personal Model Context Protocol servers for YouTube analytics, OBS control, and Jira sync.</p>
+        </div>
+        <a href="https://github.com/robj1925" target="_blank" rel="noopener" class="proj-link" id="project-mcp-link">
           View on GitHub <span aria-hidden="true">→</span>
         </a>
-      </article>
-    </div>
+      </li>
+    </ol>
   </div>
 </section>
 
 <!-- ===== CONTACT ===== -->
 <section id="contact" aria-labelledby="contact-heading">
   <div class="container">
-    <div class="newsletter-inner">
-      <div>
-        <h2 id="contact-heading">Let's Build Something Awesome</h2>
-        <p style="color:var(--text-muted);margin-top:12px">Have an automation project in mind or want to book an AI consultation? Hit the button below and shoot me a message.</p>
+    <div class="contact-band">
+      <div class="contact-copy">
+        <h2 id="contact-heading">Let's build something awesome</h2>
+        <p>Have an automation project in mind or want to book an AI consultation? Hit the button and send me a message.</p>
       </div>
-      <div style="display:flex; align-items:center; justify-content:center; min-height:80px;">
-        <a data-email class="btn btn-primary" id="contact-cta-btn" style="padding:16px 32px; font-size:1.1rem; cursor: pointer;">Email Me Directly →</a>
+      <div class="contact-action">
+        <a data-email class="btn btn-primary" id="contact-cta-btn" style="cursor: pointer;">Email me directly</a>
       </div>
     </div>
   </div>
@@ -424,5 +452,8 @@
 
 <script src="blog/posts-data.js?v=1.0.3" defer></script>
 <script src="js/main.js?v=1.0.3" defer></script>
+<script src="js/vendor/gsap.min.js" defer></script>
+<script src="js/vendor/ScrollTrigger.min.js" defer></script>
+<script src="js/home-motion.js?v=1.0.0" defer></script>
 </body>
 </html>

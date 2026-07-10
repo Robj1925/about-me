@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
   <script>
@@ -24,27 +24,27 @@
   </script>
   <style>
     .tool-hero { padding:60px 0 40px; text-align:center; }
-    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero h1 { font-family:var(--font-display); font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
     .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
-    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
-    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
-    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
-    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
-    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
-    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
-    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow: var(--shadow-md); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(37,99,235,0.28); border-radius:var(--radius-lg); padding:32px; box-shadow: var(--shadow-md); margin-bottom:24px; }
+    .tool-label { font-family:var(--font-display); font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:var(--surface-2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-body); font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .result-item { background:var(--accent-soft); border:1px solid var(--accent-soft); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:var(--font-display); font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
     .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
 
     .group-title {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: var(--accent-cyan, #06b6d4);
+      color: var(--accent-cyan, var(--accent));
       margin: 0 0 16px 0;
       padding-bottom: 10px;
-      border-bottom: 1px solid rgba(6,182,212,0.2);
+      border-bottom: 1px solid rgba(37,99,235,0.28);
     }
     .checklist-group {
       margin-bottom: 28px;
@@ -57,7 +57,7 @@
       align-items: flex-start;
       gap: 12px;
       padding: 10px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
+      border-bottom: 1px solid var(--surface-2);
       cursor: pointer;
     }
     .check-item:last-child {
@@ -69,17 +69,17 @@
       width: 20px;
       height: 20px;
       min-width: 20px;
-      border: 2px solid rgba(255,255,255,0.2);
+      border: 2px solid var(--surface-2);
       border-radius: 5px;
-      background: rgba(10,10,15,0.6);
+      background: var(--surface-2);
       cursor: pointer;
       position: relative;
       margin-top: 1px;
       transition: all 0.18s ease;
     }
     .check-item input[type="checkbox"]:checked {
-      background: var(--accent-cyan, #06b6d4);
-      border-color: var(--accent-cyan, #06b6d4);
+      background: var(--accent-cyan, var(--accent));
+      border-color: var(--accent-cyan, var(--accent));
     }
     .check-item input[type="checkbox"]:checked::after {
       content: '';
@@ -94,18 +94,18 @@
       transform: rotate(45deg);
     }
     .check-item label {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
       font-size: 0.95rem;
-      color: var(--text-muted, #9ca3af);
+      color: var(--text-muted, var(--ink-muted));
       line-height: 1.5;
       cursor: pointer;
       transition: color 0.18s ease;
       user-select: none;
     }
     .check-item input[type="checkbox"]:checked + label {
-      color: var(--text, #f1f5f9);
+      color: var(--text, var(--ink));
       text-decoration: line-through;
-      text-decoration-color: rgba(6,182,212,0.5);
+      text-decoration-color: rgba(37,99,235,0.28);
     }
 
     .score-display {
@@ -113,15 +113,15 @@
       padding: 28px 0 20px;
     }
     .score-number {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: clamp(3rem, 8vw, 4.5rem);
       font-weight: 700;
       line-height: 1;
-      color: var(--accent-cyan, #06b6d4);
+      color: var(--accent-cyan, var(--accent));
       margin-bottom: 6px;
     }
     .score-label {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.85rem;
       font-weight: 600;
       color: var(--text-muted);
@@ -131,20 +131,20 @@
     }
     .score-tier {
       display: inline-block;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1.15rem;
       font-weight: 700;
       padding: 8px 22px;
       border-radius: 999px;
       margin-bottom: 20px;
     }
-    .tier-needs-work { background: rgba(239,68,68,0.15); color: #f87171; border: 1px solid rgba(239,68,68,0.3); }
-    .tier-getting-there { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
-    .tier-almost-pro { background: rgba(139,92,246,0.15); color: #a78bfa; border: 1px solid rgba(139,92,246,0.3); }
-    .tier-set { background: rgba(6,182,212,0.12); color: #06b6d4; border: 1px solid rgba(6,182,212,0.3); }
+    .tier-needs-work { background: rgba(185,28,28,0.09); color: #b91c1c; border: 1px solid rgba(185,28,28,0.30); }
+    .tier-getting-there { background: rgba(180,83,9,0.10); color: #b45309; border: 1px solid rgba(180,83,9,0.30); }
+    .tier-almost-pro { background: var(--accent-soft); color: var(--accent); border: 1px solid rgba(37,99,235,0.28); }
+    .tier-set { background: var(--accent-soft); color: var(--accent); border: 1px solid rgba(37,99,235,0.28); }
 
     .progress-bar-wrap {
-      background: rgba(255,255,255,0.06);
+      background: var(--surface-2);
       border-radius: 999px;
       height: 10px;
       margin: 0 0 28px;
@@ -153,7 +153,7 @@
     .progress-bar-fill {
       height: 100%;
       border-radius: 999px;
-      background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+      background: linear-gradient(90deg, var(--accent), var(--accent));
       transition: width 0.6s cubic-bezier(0.34,1.56,0.64,1);
     }
 
@@ -161,12 +161,12 @@
       margin-top: 8px;
     }
     .missing-title {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.78rem;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.1em;
-      color: #f87171;
+      color: #b91c1c;
       margin-bottom: 12px;
     }
     .missing-item {
@@ -174,41 +174,41 @@
       align-items: flex-start;
       gap: 10px;
       padding: 9px 14px;
-      background: rgba(239,68,68,0.07);
-      border: 1px solid rgba(239,68,68,0.18);
+      background: rgba(185,28,28,0.09);
+      border: 1px solid rgba(185,28,28,0.09);
       border-radius: var(--radius, 8px);
       margin-bottom: 8px;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
       font-size: 0.9rem;
       color: var(--text-muted);
       line-height: 1.5;
     }
     .missing-item::before {
       content: '✗';
-      color: #f87171;
+      color: #b91c1c;
       font-weight: 700;
       flex-shrink: 0;
       margin-top: 1px;
     }
     .all-good-msg {
       text-align: center;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1.1rem;
       font-weight: 600;
-      color: #34d399;
+      color: #047857;
       padding: 16px 0 8px;
     }
 
     .cta-box {
-      background: linear-gradient(135deg, rgba(139,92,246,0.12), rgba(6,182,212,0.08));
-      border: 1px solid rgba(139,92,246,0.25);
+      background: linear-gradient(135deg, var(--accent-soft), var(--accent-soft));
+      border: 1px solid rgba(37,99,235,0.28);
       border-radius: var(--radius-lg, 16px);
       padding: 24px 28px;
       margin-top: 24px;
       text-align: center;
     }
     .cta-box p {
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
       font-size: 0.95rem;
       color: var(--text-muted);
       margin-bottom: 16px;
@@ -222,7 +222,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+<div class="skool-banner" style="background:var(--accent);color:white;text-align:center;padding:12px;font-weight:600;font-family:var(--font-display);">
   Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
 </div>
 <nav aria-label="Main navigation">
@@ -362,7 +362,7 @@
 <script>
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
   }, { passive: true });
 
   const items = [
@@ -434,7 +434,7 @@
     } else {
       let html = '<p class="missing-title">What you\'re missing (' + missing.length + ' item' + (missing.length > 1 ? 's' : '') + ')</p>';
       missing.forEach(m => {
-        html += '<div class="missing-item"><span>' + m.label + ' <span style="color:rgba(255,255,255,0.3);font-size:0.8rem">— ' + m.group + '</span></span></div>';
+        html += '<div class="missing-item"><span>' + m.label + ' <span style="color:var(--surface-2);font-size:0.8rem">— ' + m.group + '</span></span></div>';
       });
       missingSection.innerHTML = html;
     }

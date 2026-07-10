@@ -18,7 +18,7 @@
   <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -62,15 +62,14 @@
   </div>
 </nav>
 
-<main>
+<main id="main">
 <!-- ===== HERO ===== -->
-<section id="hero" aria-label="Hero">
-  <div class="hero-bg" aria-hidden="true"></div>
+<section id="hero" aria-label="Introduction">
   <div class="container hero-inner">
     <div class="hero-content">
-      <div class="eyebrow" aria-label="Role" data-hero="eyebrow">AI engineer &amp; creator</div>
+      <p class="hero-eyebrow" data-hero="eyebrow">AI engineer, creator, and builder</p>
       <h1 class="hero-title" data-hero="title">I build AI systems that <span>actually work.</span></h1>
-      <p class="hero-sub" data-hero="sub">Software engineer, content creator, and open-source builder. I teach developers how to automate their world with AI.</p>
+      <p class="hero-lead" data-hero="lead">Software engineer, content creator, and open-source builder. I teach developers how to automate their world with AI.</p>
       <div class="hero-actions" data-hero="actions">
         <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary" id="hero-yt-cta">
           <img src="assets/images/youtube_logo.webp" alt="" style="width:20px; height:20px; object-fit:contain;" />
@@ -79,59 +78,47 @@
         <a href="#projects" class="btn btn-ghost" id="hero-projects-cta">See my projects</a>
       </div>
     </div>
-    <div class="terminal" aria-label="Terminal demo" role="img" data-hero="terminal">
-      <div class="terminal-bar">
-        <span class="dot dot-red"></span>
-        <span class="dot dot-yellow"></span>
-        <span class="dot dot-green"></span>
-        <span class="terminal-title">openclaw - zsh</span>
+    <div class="hero-portrait" data-hero="portrait">
+      <div class="hero-portrait-frame">
+        <img src="assets/images/robby-headshot.jpg" alt="Robby J, software engineer and AI creator" class="hero-portrait-img" fetchpriority="high" />
       </div>
-      <div class="terminal-body mono" id="terminal-body" aria-live="polite"></div>
+      <span class="hero-portrait-tag">Code With Robby</span>
     </div>
   </div>
 </section>
 
 <!-- ===== SOCIAL PROOF ===== -->
-<div id="social-proof" aria-label="Credentials">
-  <div class="strip-track">
-    <div class="strip-inner" aria-hidden="true">
-      <div class="strip-item"><span class="icon">📺</span><span><span class="highlight">69,227</span> Combined Views</span></div>
-      <span class="strip-divider">|</span>
-      <div class="strip-item"><span class="icon">🛠️</span><span><span class="highlight">skool-pp-cli</span> Creator</span></div>
-      <span class="strip-divider">|</span>
-      <div class="strip-item"><span class="icon">🤖</span><span><span class="highlight">AI Automation</span> Builder</span></div>
-      <span class="strip-divider">|</span>
-      <div class="strip-item"><span class="icon">🎓</span><span><span class="highlight">M.S.</span> Computer Science</span></div>
-      <span class="strip-divider">|</span>
-      <!-- duplicate for infinite scroll -->
-      <div class="strip-item"><span class="icon">📺</span><span><span class="highlight">69,227</span> Combined Views</span></div>
-      <span class="strip-divider">|</span>
-      <div class="strip-item"><span class="icon">🛠️</span><span><span class="highlight">skool-pp-cli</span> Creator</span></div>
-      <span class="strip-divider">|</span>
-      <div class="strip-item"><span class="icon">🤖</span><span><span class="highlight">AI Automation</span> Builder</span></div>
-      <span class="strip-divider">|</span>
-      <div class="strip-item"><span class="icon">🎓</span><span><span class="highlight">M.S.</span> Computer Science</span></div>
-      <span class="strip-divider">|</span>
+<section id="social-proof" aria-label="Credentials and reach">
+  <div class="container proof-row">
+    <div class="proof-item">
+      <span class="proof-key">69,227</span>
+      <span class="proof-label">Combined views</span>
+    </div>
+    <div class="proof-item">
+      <span class="proof-key">skool-pp-cli</span>
+      <span class="proof-label">Open-source creator</span>
+    </div>
+    <div class="proof-item">
+      <span class="proof-key">AI automation</span>
+      <span class="proof-label">Systems builder</span>
+    </div>
+    <div class="proof-item">
+      <span class="proof-key">M.S.</span>
+      <span class="proof-label">Computer Science</span>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ===== ABOUT ===== -->
 <section id="about" aria-labelledby="about-heading">
   <div class="container about-grid">
-    <div class="about-photo-wrap">
-      <img src="assets/images/robby-headshot.jpg" alt="Robby J, software engineer and AI creator" class="about-photo" loading="lazy" />
-    </div>
-    <div class="about-panel">
-      <div class="about-panel-head">
-        <h2 id="about-heading">Robby J</h2>
-        <div class="about-tags" aria-label="Credentials">
-          <span class="about-tag-pill">Software engineer</span>
-          <span class="about-tag-pill">AI creator</span>
-          <span class="about-tag-pill">M.S. Computer Science</span>
-        </div>
+    <div class="about-intro">
+      <h2 id="about-heading">Robby J</h2>
+      <div class="about-tags" aria-label="Credentials">
+        <span class="about-tag-pill">Software engineer</span>
+        <span class="about-tag-pill">AI creator</span>
+        <span class="about-tag-pill">M.S. Computer Science</span>
       </div>
-      <p class="about-bio">I'm a software engineer with a Master's in Computer Science, building AI systems and automation tools that actually ship in production.<br><br>On YouTube (<strong>Code With Robby</strong>), I break down the latest AI tools, not as a reviewer, but as someone shipping real code with them every day. I build with powerful AI frameworks and I'm obsessed with designing workflows that make developers 10x faster.<br><br>I also run the <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener"><strong>AI Academy</strong></a> Skool community, where I teach developers and power users how to build and deploy their own AI systems.</p>
       <div class="social-links">
         <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="social-link" id="about-yt-link">
           <img src="assets/images/youtube_logo.webp" alt="YouTube" />
@@ -150,6 +137,11 @@
         </a>
       </div>
     </div>
+    <div class="about-body">
+      <p class="about-bio">I'm a software engineer with a Master's in Computer Science, building AI systems and automation tools that actually ship in production.</p>
+      <p class="about-bio">On YouTube (<strong>Code With Robby</strong>), I break down the latest AI tools, not as a reviewer, but as someone shipping real code with them every day. I build with powerful AI frameworks and I'm obsessed with designing workflows that make developers 10x faster.</p>
+      <p class="about-bio">I also run the <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener"><strong>AI Academy</strong></a> Skool community, where I teach developers and power users how to build and deploy their own AI systems.</p>
+    </div>
   </div>
 </section>
 
@@ -162,58 +154,53 @@
     </div>
     <div class="testimonials-grid">
 
-      <!-- Card 1: Raquel's Beauty Salon (Featured) -->
-      <article class="testimonial-card featured" id="testimonial-raquel">
-        <span class="testimonial-tag">✦ Featured Client</span>
-        <div class="testimonial-quote-mark">"</div>
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">
-          ★★★★★
-        </div>
-        <p class="testimonial-text">
+      <!-- Raquel's Beauty Salon (Featured) -->
+      <figure class="quote quote-featured" id="testimonial-raquel">
+        <span class="quote-label">Featured client</span>
+        <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="quote-text">
           Robby built us a <strong>complete professional website from the ground up.</strong> I had nothing before, and now I have a full online presence. He created our gallery, wrote all the content, and even set up a <strong>Spanish version of the site</strong> so our community could feel right at home.<br><br>
           He handled everything: added a <strong>now hiring section</strong> to help us recruit, listed our services including my daughter Vanessa's makeup appointments, added <strong>both phone numbers</strong>, and fixed every detail we asked about fast. He even walked me through how to post on Google Business. I didn't have to worry about a single technical thing. <strong>My clients can finally find us online.</strong>
-        </p>
-        <div class="testimonial-author">
-          <img src="assets/images/raquel-profile.jpg" alt="Raquel" class="testimonial-avatar" style="object-fit: cover; border-radius: 50%;" />
-          <div class="testimonial-author-info">
-            <span class="testimonial-name">Raquel</span>
-            <span class="testimonial-role">Owner, Raquel's Beauty Salon, Central NJ</span>
-          </div>
-        </div>
-      </article>
+        </blockquote>
+        <figcaption class="quote-author">
+          <img src="assets/images/raquel-profile.jpg" alt="Raquel" class="quote-avatar" style="object-fit: cover;" />
+          <span class="quote-author-info">
+            <span class="quote-name">Raquel</span>
+            <span class="quote-role">Owner, Raquel's Beauty Salon, Central NJ</span>
+          </span>
+        </figcaption>
+      </figure>
 
-      <!-- Card 2: Super Power Electrical Contractors -->
-      <article class="testimonial-card" id="testimonial-superpower">
-        <div class="testimonial-quote-mark">"</div>
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-text">
+      <!-- Super Power Electrical Contractors -->
+      <figure class="quote" id="testimonial-superpower">
+        <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="quote-text">
           Robby built a <strong>complete high-performance website</strong> for my 26-year-old contracting business. He took my actual work photos, set up all of our custom emergency generator and panel service details, and <strong>got the site live in record time.</strong> No generic templates or stock AI pictures, just our real brand. The site has <strong>immediately started bringing in new client calls</strong> and it represents my company exactly the way I wanted.
-        </p>
-        <div class="testimonial-author">
-          <img src="assets/images/superpower-logo.png" alt="Super Power Logo" class="testimonial-avatar" style="object-fit: cover; border-radius: 50%;" />
-          <div class="testimonial-author-info">
-            <span class="testimonial-name">Mark</span>
-            <span class="testimonial-role">Owner, Super Power Electrical Contractors, Vineland, NJ</span>
-          </div>
-        </div>
-      </article>
+        </blockquote>
+        <figcaption class="quote-author">
+          <img src="assets/images/superpower-logo.png" alt="Super Power logo" class="quote-avatar" style="object-fit: cover;" />
+          <span class="quote-author-info">
+            <span class="quote-name">Mark</span>
+            <span class="quote-role">Owner, Super Power Electrical Contractors, Vineland, NJ</span>
+          </span>
+        </figcaption>
+      </figure>
 
-      <!-- Card 3: Randolph's Shoe Care -->
-      <article class="testimonial-card" id="testimonial-randolph">
-        <div class="testimonial-quote-mark">"</div>
-        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <p class="testimonial-text">
+      <!-- Randolph's Shoe Care -->
+      <figure class="quote" id="testimonial-randolph">
+        <div class="quote-stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <blockquote class="quote-text">
           Robby built us a <strong>complete professional website</strong> that finally shows off the quality of our work. He set up our full gallery, listed all our services properly, and made it easy for customers to call us right from the page.<br><br>
           We've been in business <strong>since 1991</strong> and this is the first time our online presence actually matches what we do. <strong>Customers mention the site when they walk in now.</strong>
-        </p>
-        <div class="testimonial-author">
-          <img src="assets/images/randolphs-logo.webp" alt="Randolph's Shoe Care" class="testimonial-avatar" style="object-fit: contain; border-radius: 50%; padding: 6px; background: #fff;" />
-          <div class="testimonial-author-info">
-            <span class="testimonial-name">Randolph</span>
-            <span class="testimonial-role">Owner, Randolph's Shoe Care, Central NJ</span>
-          </div>
-        </div>
-      </article>
+        </blockquote>
+        <figcaption class="quote-author">
+          <img src="assets/images/randolphs-logo.webp" alt="Randolph's Shoe Care" class="quote-avatar" style="object-fit: contain; padding: 6px; background: #fff;" />
+          <span class="quote-author-info">
+            <span class="quote-name">Randolph</span>
+            <span class="quote-role">Owner, Randolph's Shoe Care, Central NJ</span>
+          </span>
+        </figcaption>
+      </figure>
 
     </div>
   </div>
@@ -224,14 +211,14 @@
   <div class="container">
     <div class="home-head">
       <h2 id="services-heading">Work with me</h2>
-      <p>Consulting engagements for teams ready to build AI systems that actually work.</p>
+      <p>Consulting engagements for teams and builders ready to ship AI systems that actually work.</p>
     </div>
     <div class="services-layout">
       <article class="service-card service-primary">
-        <span class="recommended-badge">⭐ Recommended</span>
+        <span class="recommended-badge">Recommended</span>
         <div class="service-primary-grid">
           <div class="service-primary-lead">
-            <div class="service-icon">💬</div>
+            <div class="service-icon" aria-hidden="true">💬</div>
             <h3 class="service-title">AI consultation</h3>
             <p class="service-desc">Book a 1-on-1 session to pick my brain on anything AI, whether you need troubleshooting or tool guidance.</p>
           </div>
@@ -241,16 +228,16 @@
               <li>Troubleshoot developer and agent tools</li>
               <li>Custom AI strategy and advice</li>
             </ul>
-            <span class="service-price">Contact for Booking</span>
+            <span class="service-price">Contact for booking</span>
             <div class="service-cta-row">
               <a data-email class="btn btn-primary" id="service-agent-cta" style="cursor:pointer;">Book a session</a>
-              <a href="services/index.html#ai-consultation" class="btn btn-ghost" style="font-size:0.9rem;">Learn more</a>
+              <a href="services/index.html#ai-consultation" class="service-learn">Learn more</a>
             </div>
           </div>
         </div>
       </article>
       <article class="service-card">
-        <div class="service-icon">🔍</div>
+        <div class="service-icon" aria-hidden="true">🔍</div>
         <h3 class="service-title">AI audit</h3>
         <p class="service-desc">A deep review of your codebase and workflows to identify high-impact AI automation opportunities.</p>
         <ul class="service-features">
@@ -258,14 +245,14 @@
           <li>Prioritized opportunity report</li>
           <li>30-minute readout call</li>
         </ul>
-        <span class="service-price">Contact for Quote</span>
+        <span class="service-price">Contact for quote</span>
         <div class="service-cta-row">
           <a data-email class="btn btn-primary" id="service-audit-cta" style="cursor:pointer;">Request an audit</a>
-          <a href="services/index.html#ai-audit" class="btn btn-ghost" style="font-size:0.9rem;">Learn more</a>
+          <a href="services/index.html#ai-audit" class="service-learn">Learn more</a>
         </div>
       </article>
       <article class="service-card">
-        <div class="service-icon">🌐</div>
+        <div class="service-icon" aria-hidden="true">🌐</div>
         <h3 class="service-title">Website build</h3>
         <p class="service-desc">I design and build fast, modern personal websites: portfolio sites, landing pages, and personal brands. Clean code, optimized for Google search from day one.</p>
         <ul class="service-features">
@@ -273,10 +260,10 @@
           <li>SEO-ready from launch (canonical tags, sitemap, structured metadata)</li>
           <li>Deployed on GitHub Pages with a custom domain</li>
         </ul>
-        <span class="service-price">Contact for Quote</span>
+        <span class="service-price">Contact for quote</span>
         <div class="service-cta-row">
           <a data-email class="btn btn-primary" id="service-website-cta" style="cursor:pointer;">Start a build</a>
-          <a href="services/index.html#website-build" class="btn btn-ghost" style="font-size:0.9rem;">Learn more</a>
+          <a href="services/index.html#website-build" class="service-learn">Learn more</a>
         </div>
       </article>
     </div>
@@ -298,7 +285,7 @@
         <span class="video-play" aria-hidden="true">▶</span>
       </div>
       <div class="video-card-body">
-        <span class="video-tag">AI Video</span>
+        <span class="video-tag">AI video</span>
         <h3 class="video-title">How to Master Google Flow's Agent Mode for Professional AI Video Production</h3>
         <span class="video-date">June 2026</span>
       </div>
@@ -309,7 +296,7 @@
         <span class="video-play" aria-hidden="true">▶</span>
       </div>
       <div class="video-card-body">
-        <span class="video-tag">AI Models</span>
+        <span class="video-tag">AI models</span>
         <h3 class="video-title">Claude Mythos 5 Explained: The AI Built for Hackers and Scientists</h3>
         <span class="video-date">June 2026</span>
       </div>
@@ -354,9 +341,8 @@
       <h2 id="projects-heading">What I've built</h2>
       <p>Open-source tools and AI systems I've shipped in production.</p>
     </div>
-    <ol class="proj-list" role="list">
+    <ul class="proj-list" role="list">
       <li class="proj-row">
-        <span class="proj-index" aria-hidden="true">01</span>
         <div class="proj-body">
           <div class="proj-head">
             <h3 class="proj-title">skool-pp-cli</h3>
@@ -369,7 +355,6 @@
         </a>
       </li>
       <li class="proj-row">
-        <span class="proj-index" aria-hidden="true">02</span>
         <div class="proj-body">
           <div class="proj-head">
             <h3 class="proj-title">YT Timestamp Autoposter</h3>
@@ -382,11 +367,10 @@
         </a>
       </li>
       <li class="proj-row">
-        <span class="proj-index" aria-hidden="true">03</span>
         <div class="proj-body">
           <div class="proj-head">
             <h3 class="proj-title">Custom MCP Servers</h3>
-            <span class="proj-tag">In progress</span>
+            <span class="proj-tag proj-tag-wip">In progress</span>
           </div>
           <p class="proj-desc">A suite of personal Model Context Protocol servers for YouTube analytics, OBS control, and Jira sync.</p>
         </div>
@@ -394,7 +378,7 @@
           View on GitHub <span aria-hidden="true">→</span>
         </a>
       </li>
-    </ol>
+    </ul>
   </div>
 </section>
 
@@ -444,7 +428,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <span>© 2026 Robby J · Built with care and AI</span>
       <span><a href="#">Privacy Policy</a></span>
     </div>
   </div>

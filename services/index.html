@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
   <script>
@@ -25,7 +25,7 @@
   <style>
     .service-detail {
       border: 1px solid var(--border);
-      border-radius: 16px;
+      border-radius: 12px;
       padding: 48px;
       margin-bottom: 48px;
       background: var(--surface);
@@ -39,7 +39,7 @@
     }
     .service-detail-icon { font-size: 2rem; }
     .service-detail h2 {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1.75rem;
       font-weight: 700;
       color: var(--text);
@@ -51,9 +51,9 @@
       font-weight: 600;
       padding: 3px 10px;
       border-radius: 20px;
-      background: rgba(139, 92, 246, 0.15);
-      color: var(--purple-light);
-      border: 1px solid rgba(139, 92, 246, 0.3);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid var(--accent);
       margin-left: 8px;
       vertical-align: middle;
     }
@@ -73,7 +73,7 @@
       .service-detail { padding: 28px 20px; }
     }
     .service-col-title {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.85rem;
       font-weight: 600;
       text-transform: uppercase;
@@ -128,8 +128,8 @@
       width: 28px;
       height: 28px;
       border-radius: 50%;
-      background: rgba(6, 182, 212, 0.12);
-      border: 1px solid rgba(6, 182, 212, 0.3);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
       color: var(--accent-cyan);
       font-size: 0.8rem;
       font-weight: 700;
@@ -146,8 +146,8 @@
     }
     .step-text strong { color: var(--text); }
     .who-box {
-      background: rgba(6, 182, 212, 0.05);
-      border: 1px solid rgba(6, 182, 212, 0.15);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
       border-radius: 10px;
       padding: 16px 20px;
       margin-bottom: 28px;
@@ -174,7 +174,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+<div class="skool-banner" style="background:var(--accent);color:white;text-align:center;padding:12px;font-weight:600;font-family:var(--font-display);">
   Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
 </div>
 
@@ -487,7 +487,7 @@
 <script>
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 
   // Email injection (same pattern as main site)

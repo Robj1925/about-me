@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -33,7 +33,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+<div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
   Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
 </div>
 
@@ -54,45 +54,45 @@
 
     <!-- Hero -->
     <div style="text-align: center; margin-bottom: 48px;">
-      <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: #F0F0F8; margin-bottom: 14px;">AI Business Idea Generator</h1>
-      <p style="color: #8888AA; font-size: 1.05rem; max-width: 54ch; margin: 0 auto 12px;">Get 5 personalized, actionable AI business ideas based on your skills, budget, and goals.</p>
-      <span style="display: inline-block; background: rgba(124,58,237,0.15); border: 1px solid rgba(124,58,237,0.35); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em; padding: 4px 12px; border-radius: 99px;">Powered by Gemini AI</span>
+      <h1 style="font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; color: var(--ink); margin-bottom: 14px;">AI Business Idea Generator</h1>
+      <p style="color: var(--ink-muted); font-size: 1.05rem; max-width: 54ch; margin: 0 auto 12px;">Get 5 personalized, actionable AI business ideas based on your skills, budget, and goals.</p>
+      <span style="display: inline-block; background: var(--accent-soft); border: 1px solid rgba(37,99,235,0.28); color: var(--accent); font-family: var(--font-display); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.07em; padding: 4px 12px; border-radius: 99px;">Powered by Gemini AI</span>
     </div>
 
     <!-- API Key Card -->
-    <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px;">
-      <label for="apiKey" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Gemini API Key</label>
+    <div style="background: var(--surface); border: 1px solid rgba(37,99,235,0.28); border-radius: 12px; padding: 24px; margin-bottom: 16px;">
+      <label for="apiKey" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Gemini API Key</label>
       <input
         type="password"
         id="apiKey"
         placeholder="Enter your Gemini API key"
-        style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none;"
+        style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); margin-top: 6px; box-sizing: border-box; outline: none;"
       />
-      <p style="margin-top: 8px; font-size: 0.85rem; color: #8888AA;">
-        Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: #06B6D4;">Get a free key →</a>
+      <p style="margin-top: 8px; font-size: 0.85rem; color: var(--ink-muted);">
+        Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent);">Get a free key →</a>
       </p>
     </div>
 
     <!-- Form Card -->
-    <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px;">
+    <div style="background: var(--surface); border: 1px solid rgba(37,99,235,0.28); border-radius: 12px; padding: 24px; margin-bottom: 16px;">
 
       <!-- Skills -->
       <div style="margin-bottom: 20px;">
-        <label for="skills" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Your Skills / Background</label>
+        <label for="skills" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Your Skills / Background</label>
         <textarea
           id="skills"
           rows="3"
           placeholder="Software developer with 5 years experience, good at Python and automation"
-          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; resize: vertical; outline: none;"
+          style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); margin-top: 6px; box-sizing: border-box; resize: vertical; outline: none;"
         ></textarea>
       </div>
 
       <!-- Budget -->
       <div style="margin-bottom: 20px;">
-        <label for="budget" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Budget to Start</label>
+        <label for="budget" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Budget to Start</label>
         <select
           id="budget"
-          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
+          style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
         >
           <option value="$0 (Bootstrap)">$0 (Bootstrap)</option>
           <option value="Under $500">Under $500</option>
@@ -103,10 +103,10 @@
 
       <!-- Time -->
       <div style="margin-bottom: 20px;">
-        <label for="time" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Time Available Per Week</label>
+        <label for="time" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Time Available Per Week</label>
         <select
           id="time"
-          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
+          style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
         >
           <option value="1-5 hours per week">1-5 hrs</option>
           <option value="5-10 hours per week">5-10 hrs</option>
@@ -117,10 +117,10 @@
 
       <!-- Income Goal -->
       <div style="margin-bottom: 20px;">
-        <label for="income" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Target Income Goal</label>
+        <label for="income" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Target Income Goal</label>
         <select
           id="income"
-          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
+          style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); margin-top: 6px; box-sizing: border-box; outline: none; cursor: pointer;"
         >
           <option value="Side income $1-2k/month">Side income $1-2k/mo</option>
           <option value="Part-time $3-5k/month">Part-time $3-5k/mo</option>
@@ -130,12 +130,12 @@
 
       <!-- Industry Focus (optional) -->
       <div style="margin-bottom: 28px;">
-        <label for="industry" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Industry Focus <span style="text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem; color: #555577;">(optional)</span></label>
+        <label for="industry" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 4px;">Industry Focus <span style="text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem; color: var(--ink-muted);">(optional)</span></label>
         <input
           type="text"
           id="industry"
           placeholder="E-commerce, healthcare, content creation..."
-          style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; margin-top: 6px; box-sizing: border-box; outline: none;"
+          style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); margin-top: 6px; box-sizing: border-box; outline: none;"
         />
       </div>
 
@@ -144,17 +144,17 @@
         id="generateBtn"
         onclick="handleGenerate()"
         class="btn btn-primary"
-        style="width: 100%; font-size: 1rem; padding: 14px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; cursor: pointer;"
+        style="width: 100%; font-size: 1rem; padding: 14px; font-family: var(--font-display); font-weight: 700; cursor: pointer;"
       >
         Generate Business Ideas
       </button>
     </div>
 
     <!-- Spinner -->
-    <div id="spinner" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid rgba(124,58,237,0.3); border-top-color: #7C3AED; animation: spin 0.8s linear infinite; margin: 32px auto; display: none;"></div>
+    <div id="spinner" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid rgba(37,99,235,0.28); border-top-color: var(--accent); animation: spin 0.8s linear infinite; margin: 32px auto; display: none;"></div>
 
     <!-- Error -->
-    <div id="errorBox" style="color: #EF4444; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 12px 16px; border-radius: 8px; display: none; margin-bottom: 16px;"></div>
+    <div id="errorBox" style="color: #b91c1c; background: rgba(185,28,28,0.09); border: 1px solid rgba(185,28,28,0.30); padding: 12px 16px; border-radius: 8px; display: none; margin-bottom: 16px;"></div>
 
     <!-- Results -->
     <div id="results"></div>
@@ -178,7 +178,7 @@
     const nav = document.querySelector('nav');
     if (nav) {
       nav.style.boxShadow = window.scrollY > 10
-        ? '0 2px 20px rgba(0,0,0,0.4)'
+        ? '0 2px 20px rgba(38,32,26,0.10)'
         : '';
     }
   });
@@ -256,27 +256,27 @@
 
       const detailRow = (label, value) => value ? `
         <div style="margin-bottom: 12px;">
-          <div style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; color: #06B6D4; text-transform: uppercase; letter-spacing: 0.05em;">${label}</div>
-          <div style="color: #F0F0F8; font-size: 0.95rem; margin-top: 3px;">${value}</div>
+          <div style="font-family: var(--font-display); font-weight: 600; font-size: 0.8rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em;">${label}</div>
+          <div style="color: var(--ink); font-size: 0.95rem; margin-top: 3px;">${value}</div>
         </div>
       ` : '';
 
       const card = document.createElement('div');
       card.id = cardId;
-      card.style.cssText = 'background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 16px;';
+      card.style.cssText = 'background: var(--surface); border: 1px solid rgba(37,99,235,0.28); border-radius: 12px; padding: 24px; margin-bottom: 16px;';
 
       card.innerHTML = `
         <div>
-          <span style="background: rgba(124,58,237,0.2); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; margin-right: 12px; display: inline-block;">Idea ${i + 1}</span>
-          <span style="font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 1.1rem; color: #F0F0F8; display: inline;">${idea.name}</span>
+          <span style="background: rgba(37,99,235,0.28); color: var(--accent); font-family: var(--font-display); font-weight: 700; padding: 4px 10px; border-radius: 6px; font-size: 0.85rem; margin-right: 12px; display: inline-block;">Idea ${i + 1}</span>
+          <span style="font-family: var(--font-display); font-weight: 700; font-size: 1.1rem; color: var(--ink); display: inline;">${idea.name}</span>
         </div>
-        ${idea.description ? `<p style="color: #8888AA; margin-top: 8px; font-size: 0.95rem; margin-bottom: 0;">${idea.description}</p>` : ''}
+        ${idea.description ? `<p style="color: var(--ink-muted); margin-top: 8px; font-size: 0.95rem; margin-bottom: 0;">${idea.description}</p>` : ''}
         <button
           id="${btnId}"
           onclick="toggleDetails('${detailsId}', '${btnId}')"
-          style="background: transparent; border: 1px solid rgba(124,58,237,0.3); color: #9D5FF0; padding: 6px 14px; border-radius: 6px; cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.85rem; margin-top: 12px; transition: all 0.2s;"
+          style="background: transparent; border: 1px solid rgba(37,99,235,0.28); color: var(--accent); padding: 6px 14px; border-radius: 6px; cursor: pointer; font-family: var(--font-display); font-weight: 600; font-size: 0.85rem; margin-top: 12px; transition: all 0.2s;"
         >See Details ▾</button>
-        <div id="${detailsId}" style="display: none; margin-top: 20px; border-top: 1px solid rgba(124,58,237,0.15); padding-top: 20px;">
+        <div id="${detailsId}" style="display: none; margin-top: 20px; border-top: 1px solid var(--accent-soft); padding-top: 20px;">
           ${detailRow('Target Customer', idea.targetCustomer)}
           ${detailRow('How AI Is Used', idea.aiUsage)}
           ${detailRow('First Step to Start This Week', idea.firstStep)}

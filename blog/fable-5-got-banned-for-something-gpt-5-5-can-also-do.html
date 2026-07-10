@@ -15,7 +15,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -30,8 +30,8 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
-  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
 </div>
 
 <!-- ===== PROGRESS BAR ===== -->
@@ -123,14 +123,14 @@
     const doc = document.documentElement;
     const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
     const pct = Math.min(100, Math.round(scrolled * 100));
-    bar.style.width = pct + '%';
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
     bar.setAttribute('aria-valuenow', pct);
   }, { passive: true });
 
   // Nav scroll shadow
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 </script>
 </body>

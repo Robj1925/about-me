@@ -1,93 +1,79 @@
 /* =========================================================================
-   home-motion.js - GSAP + ScrollTrigger entrance choreography (homepage only)
-   MOTION_INTENSITY 7. Every animation is justified (hierarchy / feedback /
-   sequence). No window scroll listeners. All motion is gated behind
-   prefers-reduced-motion: content is fully visible by default in CSS, and
-   GSAP only ever hides-then-reveals when motion is allowed.
-
-   Reveals use set() + onEnter -> to({opacity:1}) rather than from(). A
-   gsap.from() reveal combined with ScrollTrigger.refresh() (fired on load and
-   after the async blog cards inject) can re-record the "natural" value while
-   the element is still hidden and animate from 0 to 0, stranding content
-   invisible. Animating explicitly TO opacity 1 can never strand.
+   home-motion.js — restrained homepage motion (light design-engineer site).
+   Motion only ENHANCES: content is fully visible by default in CSS. We only
+   hide-then-reveal when motion is allowed, and reveals use IntersectionObserver
+   (observes real element visibility) so they can never be stranded invisible by
+   a mis-timed ScrollTrigger position calc against async images / injected cards.
+   No window scroll listeners. Reduced motion: early-return, everything visible.
    ========================================================================= */
 (function () {
   'use strict';
 
-  if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-  gsap.registerPlugin(ScrollTrigger);
+  if (typeof gsap === 'undefined') return;
+  var hasST = typeof ScrollTrigger !== 'undefined';
+  if (hasST) gsap.registerPlugin(ScrollTrigger);
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  // Reduced motion: run nothing. CSS keeps every element visible and in place.
-  if (reduce) return;
+  if (reduce) return; // CSS renders every element visible and in place.
 
-  var nav = document.querySelector('body.home nav');
-
-  /* Refresh-proof reveal: explicit hidden -> explicit visible, once. */
-  function reveal(triggerEl, itemsSel) {
+  /* Reveal a section's items on first intersection, with a gentle stagger.
+     IntersectionObserver fires immediately for anything already in view, so
+     nothing stays hidden if it is on-screen at load. */
+  function reveal(triggerSel, itemsSel) {
+    var trigger = document.querySelector(triggerSel);
     var items = gsap.utils.toArray(itemsSel);
-    if (!items.length) return;
-    gsap.set(items, { opacity: 0, y: 30 });
-    ScrollTrigger.create({
-      trigger: triggerEl,
-      start: 'top 80%',
-      once: true,
-      onEnter: function () {
+    if (!trigger || !items.length) return;
+    gsap.set(items, { opacity: 0, y: 24 });
+    var io = new IntersectionObserver(function (entries, obs) {
+      if (entries[0].isIntersecting) {
         gsap.to(items, {
-          opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
+          opacity: 1, y: 0, duration: 0.6, ease: 'power3.out',
           stagger: 0.08, overwrite: 'auto'
         });
+        obs.disconnect();
       }
-    });
+    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.01 });
+    io.observe(trigger);
   }
 
-  /* --- HERO: staggered load-in (sequence communicates reading order).
-         Above the fold, no ScrollTrigger, plays once on load -> safe. --- */
+  /* --- HERO: one orchestrated load-in (above the fold, plays once). --- */
   gsap.timeline({ defaults: { ease: 'power3.out' } })
-    .from('[data-hero="eyebrow"]',  { y: 18, opacity: 0, duration: 0.5 })
-    .from('[data-hero="title"]',    { y: 34, opacity: 0, duration: 0.8 }, '-=0.25')
-    .from('[data-hero="sub"]',      { y: 22, opacity: 0, duration: 0.7 }, '-=0.5')
-    .from('[data-hero="actions"]',  { y: 18, opacity: 0, duration: 0.6 }, '-=0.45')
-    .from('[data-hero="terminal"]', { y: 32, opacity: 0, scale: 0.98, duration: 0.9, ease: 'expo.out' }, '-=0.55');
+    .from('[data-hero="eyebrow"]',  { y: 16, opacity: 0, duration: 0.5 })
+    .from('[data-hero="title"]',    { y: 30, opacity: 0, duration: 0.8 }, '-=0.25')
+    .from('[data-hero="lead"]',     { y: 20, opacity: 0, duration: 0.7 }, '-=0.5')
+    .from('[data-hero="actions"]',  { y: 16, opacity: 0, duration: 0.6 }, '-=0.45')
+    .from('[data-hero="portrait"]', { y: 28, opacity: 0, scale: 0.985, duration: 0.9, ease: 'expo.out' }, '-=0.6');
 
-  /* --- SECTION REVEALS (static sections set up immediately). --- */
-  reveal('#about',        '#about .about-photo-wrap, #about .about-panel');
-  reveal('#testimonials', '#testimonials .home-head, #testimonials .testimonial-card');
+  /* --- SECTION REVEALS (static sections). --- */
+  reveal('#social-proof', '#social-proof .proof-item');
+  reveal('#about',        '#about .about-intro, #about .about-body');
+  reveal('#testimonials', '#testimonials .home-head, #testimonials .quote');
   reveal('#services',     '#services .home-head, #services .service-card');
   reveal('#videos',       '#videos .home-head, #videos .video-card');
   reveal('#projects',     '#projects .home-head, #projects .proj-row');
   reveal('#contact',      '#contact .contact-band');
 
-  /* --- NAV compaction on scroll (replaces the removed scroll listener). --- */
-  if (nav) {
+  /* --- NAV compaction on scroll (ScrollTrigger, not a scroll listener). --- */
+  var nav = document.querySelector('body.home nav');
+  if (nav && hasST) {
     ScrollTrigger.create({
-      start: 'top top',
-      end: 'max',
-      onUpdate: function (self) {
-        nav.classList.toggle('scrolled', self.scroll() > 24);
-      }
+      start: 'top top', end: 'max',
+      onUpdate: function (self) { nav.classList.toggle('scrolled', self.scroll() > 24); }
     });
   }
 
-  /* --- Magnetic pull on the primary hero CTA (feedback micro-physics).
-         Uses gsap.quickTo - no per-frame state, runs off the render cycle. --- */
-  var magnet = document.getElementById('hero-yt-cta');
-  if (magnet && window.matchMedia('(pointer: fine)').matches) {
-    var xTo = gsap.quickTo(magnet, 'x', { duration: 0.4, ease: 'power3' });
-    var yTo = gsap.quickTo(magnet, 'y', { duration: 0.4, ease: 'power3' });
-    magnet.addEventListener('pointermove', function (e) {
-      var r = magnet.getBoundingClientRect();
-      xTo((e.clientX - (r.left + r.width / 2)) * 0.3);
-      yTo((e.clientY - (r.top + r.height / 2)) * 0.4);
-    });
-    magnet.addEventListener('pointerleave', function () { xTo(0); yTo(0); });
-  }
-
-  /* --- Blog cards are injected by main.js after this script runs. Set up
-         their reveal once they exist (load), then refresh trigger positions
-         now that the page height is final. --- */
+  /* --- Blog cards inject via main.js after this runs; reveal them once present. --- */
   window.addEventListener('load', function () {
     reveal('#blog', '#blog .home-head, #blog .blog-card');
-    ScrollTrigger.refresh();
   });
+
+  /* Failsafe: if anything reveal-tracked is still hidden a few seconds in
+     (e.g. an observer edge case), force it visible. Motion is a bonus, never a
+     gate on content. */
+  setTimeout(function () {
+    gsap.utils.toArray('#social-proof .proof-item, #about .about-intro, #about .about-body, #testimonials .quote, #services .service-card, #videos .video-card, #projects .proj-row, #contact .contact-band, #blog .blog-card, .home-head')
+      .forEach(function (el) {
+        if (parseFloat(getComputedStyle(el).opacity) < 0.05) gsap.set(el, { opacity: 1, y: 0 });
+      });
+  }, 4000);
 })();

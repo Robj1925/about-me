@@ -1,566 +1,356 @@
 /* =========================================================================
-   home.css - BOLD homepage redesign overrides (Taste Skill)
-   Dials: DESIGN_VARIANCE 8 · MOTION_INTENSITY 7 · VISUAL_DENSITY 4
-   Aesthetic family: dark-tech / terminal personal brand. Accent: amber only.
-
-   HARD ISOLATION: every selector is scoped to `body.home` so nothing leaks
-   into the 140+ shared blog/tool/service/compare pages that also load
-   styles.css. Tokens are reused from styles.css; new tokens are declared
-   locally inside `body.home`.
+   home.css — Homepage-only layouts (light design-engineer portfolio).
+   Linked only from index.html. Scoped to body.home to stay clear of the
+   shared component styles used by blog/tools/services/compare.
+   Reuses the tokens defined in css/styles.css.
    ========================================================================= */
 
-/* ---- Local tokens (scoped, additive - never redefine shared tokens) ---- */
 body.home {
-  --home-maxw: 1200px;
-  --display-1: clamp(2.75rem, 6.4vw, 5.5rem);   /* hero headline */
-  --display-2: clamp(2rem, 4.2vw, 3.4rem);      /* section headings */
-  --track-display: -0.03em;
+  --home-maxw: 1160px;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --amber-tint-08: rgba(244, 63, 94, 0.08);
-  --amber-tint-12: rgba(244, 63, 94, 0.12);
-  --amber-line: linear-gradient(90deg, var(--amber), var(--amber-light));
-
-  /* ---- Deep Rose color scheme (homepage only) ----
-     Reassigns the brand tokens so every var(--amber) / --border / --glow on
-     the homepage renders rose. The variable NAMES stay the same (amber, cyan),
-     so all existing rules keep working; only their values shift. Scoped to
-     body.home, so the amber identity on every other page is untouched. */
-  --bg: #0C0A0B;             /* near-black */
-  --bg-card: #17110F;        /* card surface */
-  --amber: #F43F5E;          /* PRIMARY accent (rose), replaces amber */
-  --amber-light: #FB7185;    /* hover / light rose */
-  --cyan: #FB7185;           /* secondary: light rose (gradient depth,
-                                terminal prompt, focus ring stay on-scheme) */
-  --yellow: #FB7185;         /* stars / wip tag -> rose (one-accent lock) */
-  --text: #F4ECEE;           /* warm off-white */
-  --text-secondary: #C9BEC0;
-  --text-muted: #978C90;     /* mauve-gray, passes AA on --bg */
-  --border: rgba(244, 63, 94, 0.22);
-  --glow-amber: 0 0 28px rgba(244, 63, 94, 0.40);
-  --glow-cyan: 0 0 24px rgba(244, 63, 94, 0.28);
 }
-
-/* Wider, bolder container just for the homepage */
 body.home .container { max-width: var(--home-maxw); }
 
-/* Amber-only decorative accent: retint the brand cursor away from cyan
-   (cyan is reserved for terminal syntax + the focus ring only). */
-body.home .nav-logo .cursor { background: var(--amber); }
+/* ---- Section background rhythm (alternating warm off-white / sunken) ---- */
+body.home #hero        { background: var(--bg); }
+body.home #social-proof{ background: var(--surface-2); }
+body.home #about       { background: var(--bg); }
+body.home #testimonials{ background: var(--surface-2); }
+body.home #services    { background: var(--bg); }
+body.home #videos      { background: var(--surface-2); }
+body.home #blog        { background: var(--bg); }
+body.home #projects    { background: var(--surface-2); }
+body.home #contact     { background: var(--bg); }
 
-/* =========================================================================
-   NAV - single line, <= 72px, compacts on scroll (class toggled by GSAP)
-   ========================================================================= */
-body.home nav {
-  padding: 14px 0;
-  background: rgba(12, 11, 8, 0.72);
-  box-shadow: 0 1px 0 rgba(244, 63, 94, 0.06);
-}
-body.home nav.scrolled {
-  padding: 9px 0;
-  background: rgba(12, 11, 8, 0.94);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
-}
-body.home .nav-logo { letter-spacing: -0.01em; }
-body.home .nav-links a { font-weight: 500; }
-body.home .nav-links a:hover { color: var(--amber-light); }
-
-/* =========================================================================
-   SECTION HEADER - left-aligned / asymmetric (replaces centered pattern)
-   ========================================================================= */
+/* ---- Shared left-aligned section header for the homepage ---- */
 body.home .home-head {
-  max-width: 40ch;
-  margin: 0 0 clamp(36px, 5vw, 60px);
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+  max-width: 48ch;
+  margin: 0 0 clamp(36px, 5vw, 56px);
+  display: flex; flex-direction: column; gap: 14px;
 }
-body.home .home-head h2 {
-  font-size: var(--display-2);
-  letter-spacing: var(--track-display);
-  line-height: 1.05;
-  margin: 0;
-}
-body.home .home-head p {
-  color: var(--text-muted);
-  font-size: 1.05rem;
-  max-width: 46ch;
-  margin: 0;
-}
-/* shared "view all" button rows, left-aligned to match headers */
-body.home .home-more {
-  margin-top: clamp(32px, 4vw, 44px);
-  display: flex;
-  justify-content: flex-start;
-}
+body.home .home-head p { color: var(--ink-muted); font-size: 1.05rem; max-width: 52ch; margin: 0; }
+body.home .home-more { margin-top: clamp(32px, 4vw, 44px); display: flex; justify-content: flex-start; }
 
 /* =========================================================================
-   HERO - asymmetric split, content left (wider), terminal right + offset
+   HERO — asymmetric split: copy left, framed portrait right (offset accent)
    ========================================================================= */
 body.home #hero {
-  min-height: 100dvh;
-  padding: 6rem 0 3rem;          /* top padding <= 6rem cap, clears fixed nav */
-  align-items: center;
-}
-/* amber-only ambient wash (drop the cyan radial for the color lock) */
-body.home .hero-bg {
-  background:
-    radial-gradient(ellipse 78% 60% at 62% 38%, rgba(244, 63, 94, 0.20) 0%, transparent 68%),
-    radial-gradient(ellipse 46% 44% at 14% 72%, rgba(244, 63, 94, 0.07) 0%, transparent 62%);
+  min-height: calc(100dvh - 66px);
+  display: flex; align-items: center;
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(2.5rem, 5vw, 4rem);
 }
 body.home .hero-inner {
-  grid-template-columns: 1.12fr 0.88fr;
-  gap: 56px;
-  align-items: center;
+  display: grid; grid-template-columns: 1.08fr 0.92fr;
+  gap: clamp(36px, 6vw, 72px); align-items: center; width: 100%;
 }
-body.home .hero-content { gap: 24px; }
-
-/* Eyebrow: retinted amber (was cyan), terminal-style mono role label */
-body.home .eyebrow {
-  background: var(--amber-tint-12);
-  color: var(--amber-light);
-  box-shadow: none;
-  border: 1px solid var(--border);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  padding: 7px 14px;
+body.home .hero-content { display: flex; flex-direction: column; gap: 22px; }
+body.home .hero-eyebrow {
+  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
 }
 body.home .hero-title {
-  font-size: var(--display-1);
-  letter-spacing: var(--track-display);
-  line-height: 1.02;
-  max-width: 15ch;
-  font-weight: 700;
+  font-size: clamp(2.75rem, 6vw, 5.5rem); font-weight: 800;
+  letter-spacing: -0.03em; line-height: 1.02; max-width: 15ch; margin: 0;
 }
-body.home .hero-title span { color: var(--amber-light); }
-body.home .hero-sub {
-  color: var(--text-secondary);
-  font-size: 1.15rem;
-  max-width: 44ch;
-  line-height: 1.6;
+body.home .hero-title span { color: var(--accent); }
+body.home .hero-lead {
+  color: var(--ink-muted); font-size: clamp(1.1rem, 1.6vw, 1.2rem);
+  max-width: 46ch; line-height: 1.6;
 }
-body.home .hero-actions { gap: 14px; margin-top: 6px; }
-body.home #hero-yt-cta { will-change: transform; }
+body.home .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 6px; }
 
-/* Terminal: vertical offset for the asymmetric composition + depth */
-body.home .hero-inner .terminal {
-  transform: translateY(20px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(244, 63, 94, 0.12);
+/* Portrait: framed photo + a single cobalt accent block offset behind it */
+body.home .hero-portrait {
+  position: relative; justify-self: end; width: 100%; max-width: 420px;
+}
+body.home .hero-portrait::before {
+  content: ''; position: absolute; z-index: 0;
+  right: -16px; bottom: -16px; width: 66%; height: 62%;
+  background: var(--accent); border-radius: var(--radius);
+}
+body.home .hero-portrait-frame {
+  position: relative; z-index: 1;
+  border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border); box-shadow: var(--shadow-md);
+}
+body.home .hero-portrait-img {
+  width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 22%;
+}
+body.home .hero-portrait-tag {
+  position: absolute; z-index: 2; left: 14px; bottom: 14px;
+  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.02em; color: var(--ink);
+  background: color-mix(in oklab, var(--surface) 88%, transparent);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  border: 1px solid var(--border); padding: 6px 12px; border-radius: var(--radius-pill);
 }
 
 /* =========================================================================
-   SOCIAL PROOF - the ONE marquee. Edge-fade masks, amber highlights.
+   SOCIAL PROOF — clean static stat band (no marquee)
    ========================================================================= */
-body.home #social-proof .strip-track {
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
-          mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+body.home #social-proof {
+  padding: clamp(30px, 4vw, 44px) 0;
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
 }
-body.home #social-proof .strip-item span.highlight { color: var(--amber-light); }
-body.home #social-proof .strip-divider { color: rgba(244, 63, 94, 0.28); }
+body.home .proof-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+body.home .proof-item { display: flex; flex-direction: column; gap: 4px; padding-left: 22px; }
+body.home .proof-item + .proof-item { border-left: 1px solid var(--border); }
+body.home .proof-key {
+  font-family: var(--font-display); font-size: clamp(1.4rem, 2.4vw, 1.95rem);
+  font-weight: 700; letter-spacing: -0.02em; color: var(--ink); line-height: 1.1;
+}
+body.home .proof-label { font-size: 0.85rem; color: var(--ink-muted); }
 
 /* =========================================================================
-   ABOUT - editorial split, headshot overlapping a panel (depth via overlap)
-   Distinct proportions + overlap so it reads as a different layout family
-   from the hero split.
+   ABOUT — editorial two-column (no photo; distinct from the hero split)
    ========================================================================= */
 body.home .about-grid {
-  grid-template-columns: 0.82fr 1.18fr;
-  gap: 0;
-  align-items: center;
+  display: grid; grid-template-columns: 0.82fr 1.18fr;
+  gap: clamp(32px, 6vw, 80px); align-items: start;
 }
-body.home .about-photo-wrap { position: relative; z-index: 2; }
-body.home .about-photo {
-  max-width: 400px;
-  aspect-ratio: 4 / 5;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+body.home .about-intro { display: flex; flex-direction: column; gap: 22px; }
+body.home .about-intro::before {
+  content: ''; width: 46px; height: 4px; background: var(--accent); border-radius: 2px;
 }
-/* amber-only glow frame behind the photo (was amber->cyan) */
-body.home .about-photo-wrap::before {
-  background: linear-gradient(150deg, var(--amber), rgba(244, 63, 94, 0.15));
-  opacity: 0.5;
-  inset: -2px;
-}
-body.home .about-panel {
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  padding: 44px 44px 44px 76px;
-  margin-left: -56px;             /* tuck the panel under the photo edge */
-}
-body.home .about-panel-head { display: flex; flex-direction: column; gap: 16px; }
-body.home .about-panel-head h2 {
-  font-size: clamp(2.2rem, 3.6vw, 3rem);
-  letter-spacing: var(--track-display);
-  line-height: 1;
-}
+body.home #about-heading { font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1; margin: 0; }
 body.home .about-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 body.home .about-tag-pill {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--amber-light);
-  background: var(--amber-tint-08);
-  border: 1px solid var(--border);
-  padding: 5px 12px;
-  border-radius: 99px;
+  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.01em;
+  color: var(--accent-hover); background: var(--accent-soft);
+  padding: 5px 12px; border-radius: var(--radius-pill);
 }
-body.home .about-bio { color: var(--text-secondary); max-width: 58ch; font-size: 1rem; }
-body.home .about-bio a { color: var(--amber-light); text-decoration: underline; text-underline-offset: 3px; }
-body.home .social-link:hover { border-color: var(--amber); color: var(--amber-light); }
+body.home .about-body { display: flex; flex-direction: column; gap: 20px; }
+body.home .about-bio { color: var(--ink-muted); max-width: 62ch; font-size: 1.0625rem; line-height: 1.65; }
+body.home .about-bio:first-child { color: var(--ink); font-size: clamp(1.15rem, 1.7vw, 1.3rem); max-width: 30ch; }
+body.home .about-bio strong { color: var(--ink); }
+body.home .about-bio a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+body.home .about-bio a:hover { color: var(--accent-hover); }
+
+/* Social links (about) — chips; the email chip is expanded by main.js */
+body.home .social-links { display: flex; gap: 12px; flex-wrap: wrap; }
+body.home .social-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 16px; border-radius: var(--radius-sm);
+  font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--ink);
+  background: var(--surface); border: 1px solid var(--border-strong); transition: var(--transition);
+}
+body.home .social-link:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+body.home .social-link svg, body.home .social-link img { width: 18px; height: 18px; }
+body.home .social-link img { border-radius: 4px; object-fit: cover; }
 
 /* =========================================================================
-   TESTIMONIALS - bold bento: one featured (tall left) + two supporting right
-   Retint every amber->cyan decorative gradient to amber-only.
+   TESTIMONIALS — editorial pull-quotes (featured full-width, two below)
    ========================================================================= */
-body.home .testimonials-grid { gap: 20px; padding-top: 8px; }
-body.home .testimonial-card::before { background: var(--amber-line); }
-body.home .testimonial-card:hover { border-color: var(--amber); }
-body.home .testimonial-card.featured {
-  border-color: var(--amber);
-  background: linear-gradient(160deg, rgba(244, 63, 94, 0.06), var(--bg-card) 60%);
+body.home .testimonials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+body.home .quote {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: clamp(26px, 3vw, 34px); display: flex; flex-direction: column; gap: 18px;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
 }
-body.home .testimonial-tag,
-body.home .recommended-badge { background: var(--amber-line); }
-/* avatar frame: amber-only (was amber->cyan) */
-body.home .testimonial-avatar { background: linear-gradient(135deg, var(--amber), var(--amber-light)); }
-body.home .testimonial-stars { color: var(--amber-light); }
-body.home .testimonial-name { letter-spacing: -0.01em; }
+body.home .quote:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--border-strong); }
+body.home .quote-featured {
+  grid-column: 1 / -1;
+  background: var(--accent-soft);
+  border-color: color-mix(in oklab, var(--accent) 24%, var(--border));
+}
+body.home .quote-label {
+  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-hover);
+}
+body.home .quote-stars { color: var(--accent); font-size: 0.95rem; letter-spacing: 2px; }
+body.home .quote-text {
+  color: var(--ink); font-size: 1.02rem; line-height: 1.65; margin: 0; font-style: normal;
+}
+body.home .quote-featured .quote-text { font-size: 1.08rem; max-width: 70ch; }
+body.home .quote-text strong { color: var(--ink); font-weight: 600; }
+body.home .quote-author {
+  display: flex; align-items: center; gap: 14px; margin-top: auto;
+  padding-top: 18px; border-top: 1px solid var(--border);
+}
+body.home .quote-avatar {
+  width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0;
+  border: 1px solid var(--border); background: var(--surface);
+}
+body.home .quote-author-info { display: flex; flex-direction: column; gap: 2px; }
+body.home .quote-name { font-family: var(--font-display); font-weight: 600; font-size: 0.95rem; color: var(--ink); }
+body.home .quote-role { font-size: 0.8rem; color: var(--ink-muted); }
 
 /* =========================================================================
-   SERVICES - asymmetric feature layout: Consultation = wide primary tile
-   on top, AI audit + Website build as two supporting tiles below.
-   (NOT three equal cards.)
+   SERVICES — asymmetric: consultation as wide primary tile, two below
    ========================================================================= */
-body.home .services-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  align-items: stretch;
-}
-/* left-align the cards for the bolder editorial feel (shared is centered) */
+body.home .services-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: stretch; }
 body.home .service-card {
-  text-align: left;
-  border-radius: var(--radius-lg);
-  gap: 18px;
+  position: relative; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: clamp(26px, 3vw, 32px);
+  display: flex; flex-direction: column; gap: 16px; text-align: left;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
 }
-/* neutralise the shared nth-child(2) "recommended" styling - the recommended
-   tile is now .service-primary, and child 2 here is the AI audit tile. */
-body.home .services-layout .service-card:nth-child(2) {
-  border-color: var(--border);
-  background: var(--bg-card);
-  padding: 32px 28px;
-}
-body.home .services-layout .service-card:nth-child(2):hover { transform: translateY(-6px); }
-
-/* Primary tile - spans full width, amber-lit, internal two-column split */
+body.home .service-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--border-strong); }
 body.home .service-primary {
   grid-column: 1 / -1;
-  border-color: var(--amber);
-  background: linear-gradient(140deg, rgba(244, 63, 94, 0.08), var(--bg-card) 55%);
-  padding: 40px 40px 44px;
+  background: var(--accent-soft);
+  border-color: color-mix(in oklab, var(--accent) 26%, var(--border));
+  padding: clamp(30px, 4vw, 44px);
 }
-body.home .service-primary-grid {
-  display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 40px;
-  align-items: center;
-}
-body.home .service-primary-lead { display: flex; flex-direction: column; gap: 14px; }
-body.home .service-primary-lead .service-title {
-  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
-  letter-spacing: var(--track-display);
-}
-body.home .service-primary-lead .service-desc { font-size: 1.02rem; max-width: 34ch; }
+body.home .service-primary:hover { transform: translateY(-3px); }
+body.home .service-primary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 4vw, 40px); align-items: center; }
+body.home .service-primary-lead { display: flex; flex-direction: column; gap: 12px; }
 body.home .service-primary-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding-left: 40px;
-  border-left: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: 16px;
+  padding-left: clamp(24px, 3vw, 40px);
+  border-left: 1px solid color-mix(in oklab, var(--accent) 20%, var(--border));
 }
-body.home .service-icon { font-size: 2.2rem; }
-body.home .service-title { letter-spacing: -0.01em; }
-body.home .service-features li::before { color: var(--amber); }
-body.home .service-cta-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
-body.home .service-cta-row .btn-ghost { min-height: 40px; padding: 0 18px; }
+body.home .recommended-badge {
+  position: absolute; top: -12px; left: clamp(24px, 3vw, 40px);
+  background: var(--accent); color: var(--accent-ink);
+  font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500;
+  letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; border-radius: var(--radius-pill);
+}
+body.home .service-icon { font-size: 2rem; line-height: 1; }
+body.home .service-title { font-size: 1.25rem; margin: 0; }
+body.home .service-primary-lead .service-title { font-size: clamp(1.55rem, 2.4vw, 2.05rem); letter-spacing: -0.02em; }
+body.home .service-desc { color: var(--ink-muted); font-size: 0.95rem; margin: 0; }
+body.home .service-primary-lead .service-desc { font-size: 1.02rem; max-width: 34ch; }
+body.home .service-features { display: flex; flex-direction: column; gap: 8px; margin: 0; }
+body.home .service-features li { display: flex; align-items: flex-start; gap: 8px; color: var(--ink-muted); font-size: 0.92rem; }
+body.home .service-features li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+body.home .service-price { color: var(--ink-faint); font-size: 0.82rem; font-family: var(--font-mono); }
+body.home .service-cta-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-top: 2px; }
+body.home .service-learn { color: var(--accent); font-weight: 600; font-size: 0.9rem; transition: color var(--transition); }
+body.home .service-learn:hover { color: var(--accent-hover); }
 
 /* =========================================================================
-   VIDEOS - horizontal scroll-snap rail (distinct family from the blog grid)
+   VIDEOS — horizontal scroll-snap rail (distinct family from the blog grid)
    ========================================================================= */
 body.home .video-rail {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: minmax(300px, 360px);
-  gap: 22px;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  padding: 8px max(24px, calc((100vw - var(--home-maxw)) / 2)) 22px;
-  scrollbar-width: thin;
-  scrollbar-color: rgba(244, 63, 94, 0.4) transparent;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior-x: contain;
+  display: grid; grid-auto-flow: column; grid-auto-columns: minmax(288px, 360px);
+  gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory;
+  padding: 4px max(24px, calc((100vw - var(--home-maxw)) / 2)) 18px;
+  scrollbar-width: thin; scrollbar-color: var(--border-strong) transparent;
+  -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain;
 }
 body.home .video-rail::-webkit-scrollbar { height: 8px; }
-body.home .video-rail::-webkit-scrollbar-track { background: transparent; }
-body.home .video-rail::-webkit-scrollbar-thumb {
-  background: rgba(244, 63, 94, 0.35);
-  border-radius: 99px;
-}
+body.home .video-rail::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: var(--radius-pill); }
 body.home .video-card {
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  transition: transform var(--transition), border-color var(--transition);
-  color: inherit;
+  scroll-snap-align: start; display: flex; flex-direction: column;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  overflow: hidden; color: inherit;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
 }
-body.home .video-card:hover { transform: translateY(-6px); border-color: var(--amber); }
+body.home .video-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); border-color: var(--border-strong); }
 body.home .video-thumb-wrap { position: relative; }
-body.home .video-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+body.home .video-thumb { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--surface-2); }
 body.home .video-play {
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  width: 54px; height: 54px;
-  display: flex; align-items: center; justify-content: center;
-  border-radius: 50%;
-  background: rgba(244, 63, 94, 0.92);
-  color: var(--bg);
-  font-size: 1.1rem;
-  padding-left: 3px;             /* optical centering of the glyph */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 52px; height: 52px; display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+  font-size: 1rem; padding-left: 3px; box-shadow: var(--shadow-md);
   transition: transform var(--transition);
 }
-body.home .video-card:hover .video-play { transform: translate(-50%, -50%) scale(1.08); }
-body.home .video-card-body { padding: 20px 22px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+body.home .video-card:hover .video-play { transform: translate(-50%, -50%) scale(1.06); }
+body.home .video-card-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 body.home .video-tag {
-  align-self: flex-start;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--amber-light);
-  background: var(--amber-tint-12);
-  border: 1px solid var(--border);
-  padding: 3px 10px;
-  border-radius: 99px;
+  align-self: flex-start; font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent-hover);
+  background: var(--accent-soft); padding: 4px 10px; border-radius: var(--radius-pill);
 }
 body.home .video-title {
-  font-family: var(--font-heading);
-  font-size: 1.02rem;
-  font-weight: 600;
-  line-height: 1.3;
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  font-family: var(--font-display); font-size: 1.02rem; font-weight: 600; color: var(--ink);
+  line-height: 1.3; margin: 0;
+  overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
 }
-body.home .video-date { color: var(--text-muted); font-size: 0.8rem; font-family: var(--font-mono); margin-top: auto; }
+body.home .video-date { color: var(--ink-faint); font-size: 0.8rem; font-family: var(--font-mono); margin-top: auto; }
 
 /* =========================================================================
-   BLOG - refined grid (main.js injects .blog-card here). First card gets
-   emphasis (amber border) for hierarchy without an empty grid cell.
+   PROJECTS — refined divided list (no numbered scaffolding)
    ========================================================================= */
-body.home #blog-grid { gap: 22px; }
-body.home #blog-grid .blog-card { border-radius: var(--radius-lg); }
-body.home #blog-grid .blog-card:first-child { border-color: rgba(244, 63, 94, 0.45); }
-body.home #blog-grid .blog-card:hover,
-body.home #blog-grid .blog-card-link:hover { border-color: var(--amber); }
-body.home #blog-grid .blog-tag { color: var(--amber-light); }
-body.home #blog-grid .blog-title { font-size: 1.05rem; letter-spacing: -0.01em; }
-/* retint the injected "Read article ->" accent from cyan to amber */
-body.home #blog-grid .blog-body span[style*="accent-cyan"] { color: var(--amber-light) !important; }
-
-/* =========================================================================
-   PROJECTS - bold divided list with large index numbers + kinetic hover
-   ========================================================================= */
-body.home #projects { background: rgba(244, 63, 94, 0.03); }
-body.home .proj-list {
-  border-top: 1px solid var(--border);
-  margin: 0;
-  padding: 0;
-}
+body.home .proj-list { border-top: 1px solid var(--border); margin: 0; padding: 0; }
 body.home .proj-row {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  gap: 28px;
-  padding: 30px 20px;
-  border-bottom: 1px solid var(--border);
-  border-radius: var(--radius);
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 24px;
+  padding: 26px 10px; border-bottom: 1px solid var(--border); border-radius: var(--radius);
   transition: background var(--transition);
 }
-body.home .proj-row:hover { background: var(--amber-tint-08); }
-body.home .proj-index {
-  font-family: var(--font-mono);
-  font-size: clamp(1.6rem, 3.4vw, 2.6rem);
-  font-weight: 500;
-  line-height: 1;
-  color: rgba(244, 63, 94, 0.35);
-  min-width: 2.2ch;
-  transition: color var(--transition), transform var(--transition);
-}
-body.home .proj-body {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  transition: transform var(--transition);
-}
-/* kinetic hover via transform (GPU-friendly, no layout thrash) */
-body.home .proj-row:hover .proj-index { color: var(--amber); transform: translateX(10px); }
-body.home .proj-row:hover .proj-body { transform: translateX(10px); }
+body.home .proj-row:hover { background: var(--surface); }
+body.home .proj-body { display: flex; flex-direction: column; gap: 8px; }
 body.home .proj-head { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
-body.home .proj-title {
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  letter-spacing: -0.01em;
-  font-weight: 600;
-}
+body.home .proj-title { font-size: clamp(1.15rem, 2vw, 1.45rem); font-weight: 600; letter-spacing: -0.01em; margin: 0; }
 body.home .proj-tag {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--amber-light);
-  background: var(--amber-tint-12);
-  border: 1px solid var(--border);
-  padding: 4px 11px;
-  border-radius: 99px;
-  white-space: nowrap;
+  font-family: var(--font-mono); font-size: 0.66rem; font-weight: 500; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--accent-hover); background: var(--accent-soft);
+  padding: 4px 11px; border-radius: var(--radius-pill); white-space: nowrap;
 }
-body.home .proj-desc { color: var(--text-muted); font-size: 0.95rem; max-width: 60ch; }
+body.home .proj-tag-wip { color: var(--ink-muted); background: var(--surface-2); border: 1px solid var(--border-strong); }
+body.home .proj-desc { color: var(--ink-muted); font-size: 0.95rem; max-width: 62ch; margin: 0; }
 body.home .proj-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--amber-light);
-  font-family: var(--font-heading);
-  font-size: 0.92rem;
-  font-weight: 600;
-  white-space: nowrap;
-  transition: gap var(--transition);
+  display: inline-flex; align-items: center; gap: 8px; color: var(--accent);
+  font-weight: 600; font-size: 0.92rem; white-space: nowrap; transition: gap var(--transition), color var(--transition);
 }
+body.home .proj-link:hover { color: var(--accent-hover); }
 body.home .proj-row:hover .proj-link { gap: 12px; }
 
 /* =========================================================================
-   CONTACT - full-width bold CTA band, oversized headline, single CTA
+   CONTACT — bold closing band (cobalt fill), single CTA
    ========================================================================= */
 body.home .contact-band {
-  display: grid;
-  grid-template-columns: 1.4fr auto;
-  align-items: center;
-  gap: 40px;
-  background: linear-gradient(135deg, rgba(244, 63, 94, 0.12), var(--bg-card) 70%);
-  border: 1px solid var(--amber);
-  border-radius: var(--radius-lg);
-  padding: clamp(36px, 5vw, 64px);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  display: grid; grid-template-columns: 1.4fr auto; align-items: center; gap: 40px;
+  background: var(--accent); border-radius: var(--radius); padding: clamp(36px, 5vw, 60px);
 }
-body.home .contact-copy { display: flex; flex-direction: column; gap: 16px; }
-body.home #contact-heading {
-  font-size: var(--display-2);
-  letter-spacing: var(--track-display);
-  line-height: 1.02;
-  max-width: 16ch;
-}
-body.home .contact-copy p { color: var(--text-secondary); max-width: 46ch; font-size: 1.05rem; }
+body.home .contact-copy { display: flex; flex-direction: column; gap: 14px; }
+body.home #contact-heading { color: var(--accent-ink); max-width: 16ch; margin: 0; }
+body.home .contact-copy p { color: color-mix(in oklab, #fff 88%, var(--accent)); max-width: 46ch; font-size: 1.05rem; margin: 0; }
 body.home .contact-action { display: flex; justify-content: flex-end; }
-body.home #contact-cta-btn { min-height: 56px; padding: 0 34px; font-size: 1.05rem; }
+body.home #contact-cta-btn {
+  background: var(--accent-ink); color: var(--accent);
+  min-height: 56px; padding: 0 34px; font-size: 1.02rem;
+}
+body.home #contact-cta-btn:hover {
+  background: color-mix(in oklab, #fff 92%, var(--accent)); color: var(--accent-hover);
+  box-shadow: none; transform: translateY(-1px);
+}
 
 /* =========================================================================
-   FOOTER - light scoped enhancement only (shared structure preserved)
+   RESPONSIVE
    ========================================================================= */
-body.home footer .footer-brand-name { letter-spacing: -0.01em; }
-body.home footer .footer-links a:hover,
-body.home footer .footer-bottom a:hover { color: var(--amber-light); }
+@media (max-width: 980px) {
+  body.home .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+  body.home .hero-portrait { justify-self: start; max-width: 360px; }
+  body.home #hero { min-height: 0; padding-top: clamp(2.5rem, 7vw, 4rem); }
 
-/* =========================================================================
-   RESPONSIVE - explicit mobile collapse for every new asymmetric layout
-   ========================================================================= */
-@media (max-width: 900px) {
-  body.home .hero-inner { grid-template-columns: 1fr; }
-  body.home .hero-inner .terminal { transform: none; }
+  body.home .about-grid { grid-template-columns: 1fr; gap: 28px; }
+  body.home .about-bio:first-child { max-width: 46ch; }
 
-  body.home .about-grid { grid-template-columns: 1fr; gap: 0; }
-  body.home .about-photo { max-width: 300px; }
-  body.home .about-panel {
-    margin-left: 0;
-    margin-top: -40px;           /* keep the overlap idea vertically on mobile */
-    padding: 56px 28px 32px;
-  }
+  body.home .testimonials-grid { grid-template-columns: 1fr; }
 
   body.home .services-layout { grid-template-columns: 1fr; }
-  body.home .service-primary { grid-column: auto; padding: 32px 28px; }
-  body.home .service-primary-grid { grid-template-columns: 1fr; gap: 24px; }
-  body.home .service-primary-detail { padding-left: 0; border-left: none; padding-top: 20px; border-top: 1px solid var(--border); }
+  body.home .service-primary { grid-column: auto; }
+  body.home .service-primary-grid { grid-template-columns: 1fr; gap: 22px; }
+  body.home .service-primary-detail { padding-left: 0; border-left: none; padding-top: 20px; border-top: 1px solid color-mix(in oklab, var(--accent) 20%, var(--border)); }
 
-  body.home .contact-band { grid-template-columns: 1fr; gap: 28px; }
+  body.home .contact-band { grid-template-columns: 1fr; gap: 26px; }
   body.home .contact-action { justify-content: flex-start; }
 }
 
-@media (max-width: 768px) {
-  body.home #hero { padding-top: 5.5rem; }
-  body.home .video-rail { grid-auto-columns: minmax(260px, 82%); padding-left: 24px; padding-right: 24px; }
-  body.home .proj-row { grid-template-columns: auto 1fr; gap: 16px 18px; padding: 26px 14px; }
-  body.home .proj-link { grid-column: 1 / -1; justify-self: start; }
+@media (max-width: 620px) {
+  body.home .proof-row { grid-template-columns: 1fr 1fr; gap: 20px 16px; }
+  body.home .proof-item:nth-child(odd) { padding-left: 0; border-left: none; }
+  body.home .video-rail { grid-auto-columns: minmax(260px, 80%); padding-left: 24px; padding-right: 24px; }
+  body.home .proj-row { grid-template-columns: 1fr; gap: 14px; padding: 24px 8px; }
+  body.home .proj-link { justify-self: start; }
 }
 
 @media (max-width: 480px) {
   body.home .hero-actions { flex-direction: column; align-items: stretch; }
-  body.home .hero-actions .btn { justify-content: center; }
-  body.home .proj-head { gap: 10px; }
-  body.home .proj-index { font-size: 1.5rem; }
+  body.home .hero-actions .btn { width: 100%; }
 }
 
 /* =========================================================================
-   REDUCED MOTION - JS already skips all entrance animation; make sure the
-   scoped decorative motion is calm too. Content is always visible by default.
+   REDUCED MOTION — keep hovers calm; JS entrance is already skipped
    ========================================================================= */
 @media (prefers-reduced-motion: reduce) {
-  body.home .hero-inner .terminal { transform: none; }
+  body.home .quote:hover,
+  body.home .service-card:hover,
   body.home .video-card:hover,
-  body.home #blog-grid .blog-card:hover,
-  body.home .testimonial-card:hover,
-  body.home .service-card:hover { transform: none; }
-  body.home .proj-row:hover .proj-index,
-  body.home .proj-row:hover .proj-body { transform: none; }
+  body.home .blog-card:hover,
+  body.home .service-primary:hover { transform: none; }
+  body.home .video-card:hover .video-play { transform: translate(-50%, -50%); }
 }
-
-/* =========================================================================
-   Deep Rose - overrides for styles.css hardcoded amber (homepage only).
-   These styles.css rules use literal rgba(245,158,11,...) instead of tokens,
-   so the token reassignment above cannot reach them. Re-tint to rose here.
-   All body.home-scoped, so shared pages keep their amber.
-   ========================================================================= */
-body.home #about {
-  background: radial-gradient(ellipse 60% 50% at 80% 50%, rgba(244,63,94,0.07) 0%, transparent 70%);
-}
-body.home #services {
-  background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(244,63,94,0.06) 0%, transparent 70%);
-}
-body.home #testimonials {
-  background: radial-gradient(ellipse 70% 50% at 30% 60%, rgba(244,63,94,0.06) 0%, transparent 65%),
-              radial-gradient(ellipse 60% 50% at 80% 30%, rgba(244,63,94,0.08) 0%, transparent 65%);
-}
-body.home #blog { background: rgba(244,63,94,0.03); }
-body.home #contact {
-  background: radial-gradient(ellipse 70% 60% at 50% 50%, rgba(244,63,94,0.12) 0%, transparent 70%);
-}
-body.home .btn-primary:hover { box-shadow: 0 0 48px rgba(244,63,94,0.5); }
-body.home .terminal { background: #140F11; border-color: rgba(244,63,94,0.30); }
-body.home .terminal-bar { background: #1C1517; }
-body.home .blog-tag { background: rgba(244,63,94,0.12); border-color: rgba(244,63,94,0.25); }
-body.home .testimonial-quote-mark { color: rgba(244,63,94,0.40); }
-
-/* Mobile-menu primary button: `.mobile-menu a` (styles.css) forces light text,
-   which fails contrast on the rose fill. Force dark label like every other CTA. */
-body.home .mobile-menu .btn-primary { color: var(--bg); }

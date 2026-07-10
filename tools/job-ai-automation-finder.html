@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
   <script>
@@ -26,28 +26,28 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      background: #0a0a0f;
-      color: #e2e8f0;
-      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: var(--font-body);
       line-height: 1.6;
     }
 
     .skool-banner {
-      background: #2563eb;
+      background: var(--accent);
       color: white;
       text-align: center;
       padding: 12px;
       font-weight: 600;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
     }
 
     nav {
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(10, 10, 15, 0.92);
+      background: color-mix(in oklab, var(--bg) 82%, transparent);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid var(--border);
       transition: box-shadow 0.3s ease;
     }
 
@@ -61,10 +61,10 @@
     }
 
     .nav-logo {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1.25rem;
       font-weight: 700;
-      color: #fff;
+      color: var(--ink);
       text-decoration: none;
       letter-spacing: -0.02em;
     }
@@ -73,7 +73,7 @@
       display: inline-block;
       width: 2px;
       height: 1em;
-      background: #06b6d4;
+      background: var(--accent);
       margin-left: 2px;
       vertical-align: middle;
       animation: blink 1s step-end infinite;
@@ -89,7 +89,7 @@
       gap: 6px;
       padding: 9px 18px;
       border-radius: 8px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-weight: 600;
       font-size: 0.9rem;
       text-decoration: none;
@@ -99,17 +99,17 @@
     }
 
     .btn-ghost {
-      background: rgba(255,255,255,0.06);
-      color: #cbd5e1;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: transparent;
+      color: var(--ink);
+      border: 1px solid var(--border-strong);
     }
-    .btn-ghost:hover { background: rgba(255,255,255,0.1); color: #fff; }
+    .btn-ghost:hover { background: transparent; color: var(--accent); border-color: var(--accent); }
 
     .btn-primary {
-      background: #7c3aed;
+      background: var(--accent);
       color: #fff;
     }
-    .btn-primary:hover { background: #6d28d9; transform: translateY(-1px); }
+    .btn-primary:hover { background: var(--accent); transform: translateY(-1px); }
 
     main {
       padding-top: 120px;
@@ -127,20 +127,20 @@
     .hero { margin-bottom: 40px; }
 
     .hero h1 {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: clamp(1.8rem, 4vw, 2.6rem);
       font-weight: 700;
-      color: #f8fafc;
+      color: var(--ink);
       letter-spacing: -0.03em;
       line-height: 1.2;
       margin-bottom: 14px;
     }
 
-    .hero h1 span { color: #7c3aed; }
+    .hero h1 span { color: var(--accent); }
 
     .hero-subtitle {
       font-size: 1.05rem;
-      color: #94a3b8;
+      color: var(--ink-muted);
       margin-bottom: 18px;
       max-width: 560px;
     }
@@ -149,13 +149,13 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(6,182,212,0.12);
-      color: #06b6d4;
-      border: 1px solid rgba(6,182,212,0.3);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid rgba(37,99,235,0.28);
       padding: 5px 14px;
       border-radius: 999px;
       font-size: 0.8rem;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-weight: 600;
       letter-spacing: 0.04em;
     }
@@ -165,7 +165,7 @@
       width: 7px;
       height: 7px;
       border-radius: 50%;
-      background: #06b6d4;
+      background: var(--accent);
       animation: pulse-dot 2s ease-in-out infinite;
     }
 
@@ -176,9 +176,9 @@
 
     /* Cards */
     .card {
-      background: #13131a;
-      border: 1px solid rgba(124,58,237,0.2);
-      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid rgba(37,99,235,0.28);
+      border-radius: 12px;
       padding: 28px;
       margin-bottom: 20px;
     }
@@ -188,17 +188,17 @@
       font-size: 0.72rem;
       font-weight: 500;
       letter-spacing: 0.1em;
-      color: #7c3aed;
+      color: var(--accent);
       text-transform: uppercase;
       margin-bottom: 8px;
       display: block;
     }
 
     .card-title {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1rem;
       font-weight: 600;
-      color: #f1f5f9;
+      color: var(--ink);
       margin-bottom: 16px;
     }
 
@@ -207,11 +207,11 @@
     select,
     textarea {
       width: 100%;
-      background: #0d0d14;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: var(--bg);
+      border: 1px solid var(--surface-2);
       border-radius: 8px;
-      color: #e2e8f0;
-      font-family: 'Inter', sans-serif;
+      color: var(--ink);
+      font-family: var(--font-body);
       font-size: 0.95rem;
       padding: 12px 14px;
       outline: none;
@@ -224,19 +224,19 @@
     input[type="text"]:focus,
     select:focus,
     textarea:focus {
-      border-color: rgba(124,58,237,0.6);
-      box-shadow: 0 0 0 3px rgba(124,58,237,0.12);
+      border-color: rgba(37,99,235,0.28);
+      box-shadow: 0 0 0 3px var(--accent-soft);
     }
 
-    input::placeholder, textarea::placeholder { color: #475569; }
+    input::placeholder, textarea::placeholder { color: var(--ink-muted); }
 
     select { cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; padding-right: 36px; }
-    select option { background: #13131a; }
+    select option { background: var(--surface); }
 
     .key-link {
       display: inline-block;
       margin-top: 10px;
-      color: #06b6d4;
+      color: var(--accent);
       font-size: 0.85rem;
       font-weight: 500;
       text-decoration: none;
@@ -251,18 +251,18 @@
 
     .field-hint {
       font-size: 0.8rem;
-      color: #64748b;
+      color: var(--ink-muted);
       margin-top: 6px;
     }
 
     .btn-generate {
       width: 100%;
       height: 48px;
-      background: #7c3aed;
+      background: var(--accent);
       color: #fff;
       border: none;
       border-radius: 10px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-weight: 600;
       font-size: 1rem;
       cursor: pointer;
@@ -270,15 +270,15 @@
       letter-spacing: 0.01em;
       margin-bottom: 24px;
     }
-    .btn-generate:hover:not(:disabled) { background: #6d28d9; transform: translateY(-1px); box-shadow: 0 6px 24px rgba(124,58,237,0.4); }
+    .btn-generate:hover:not(:disabled) { background: var(--accent); transform: translateY(-1px); box-shadow: var(--shadow-md); }
     .btn-generate:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
 
     /* Output */
     .output-card {
       display: none;
-      background: #13131a;
-      border: 1px solid rgba(6,182,212,0.25);
-      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid rgba(37,99,235,0.28);
+      border-radius: 12px;
       padding: 28px;
       margin-bottom: 20px;
     }
@@ -295,27 +295,27 @@
     }
 
     .output-title {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1.1rem;
       font-weight: 700;
-      color: #06b6d4;
+      color: var(--accent);
     }
 
     .btn-copy {
-      background: rgba(6,182,212,0.1);
-      border: 1px solid rgba(6,182,212,0.3);
-      color: #06b6d4;
+      background: var(--accent-soft);
+      border: 1px solid rgba(37,99,235,0.28);
+      color: var(--accent);
       padding: 6px 14px;
       border-radius: 6px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.78rem;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
       letter-spacing: 0.04em;
     }
-    .btn-copy:hover { background: rgba(6,182,212,0.2); }
-    .btn-copy.copied { background: rgba(16,185,129,0.15); border-color: rgba(16,185,129,0.4); color: #10b981; }
+    .btn-copy:hover { background: rgba(37,99,235,0.28); }
+    .btn-copy.copied { background: rgba(4,120,87,0.10); border-color: rgba(4,120,87,0.28); color: #047857; }
 
     /* Loading */
     .loading-state {
@@ -330,17 +330,17 @@
     .spinner {
       width: 40px;
       height: 40px;
-      border: 3px solid rgba(124,58,237,0.2);
-      border-top-color: #7c3aed;
+      border: 3px solid rgba(37,99,235,0.28);
+      border-top-color: var(--accent);
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     .loading-text {
-      color: #94a3b8;
+      color: var(--ink-muted);
       font-size: 0.9rem;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
     }
 
     /* Result content */
@@ -350,7 +350,7 @@
     .result-section {
       margin-bottom: 28px;
       padding-bottom: 28px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid var(--surface-2);
       position: relative;
     }
     .result-section:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
@@ -364,10 +364,10 @@
     }
 
     .result-section-title {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.95rem;
       font-weight: 700;
-      color: #f1f5f9;
+      color: var(--ink);
       display: flex;
       align-items: center;
       gap: 8px;
@@ -379,21 +379,21 @@
 
     .result-text {
       font-size: 0.92rem;
-      color: #cbd5e1;
+      color: var(--ink-muted);
       line-height: 1.75;
       white-space: pre-wrap;
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
     }
 
     .result-text strong {
-      color: #f1f5f9;
+      color: var(--ink);
       font-weight: 600;
     }
 
     .error-msg {
-      background: rgba(239,68,68,0.1);
-      border: 1px solid rgba(239,68,68,0.3);
-      color: #fca5a5;
+      background: rgba(185,28,28,0.09);
+      border: 1px solid rgba(185,28,28,0.30);
+      color: #b91c1c;
       border-radius: 8px;
       padding: 14px 18px;
       font-size: 0.9rem;
@@ -404,7 +404,7 @@
 
     /* Footer */
     footer {
-      border-top: 1px solid rgba(255,255,255,0.06);
+      border-top: 1px solid var(--surface-2);
       padding: 24px 0;
     }
 
@@ -414,7 +414,7 @@
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 12px;
-      color: #64748b;
+      color: var(--ink-muted);
       font-size: 0.88rem;
     }
   </style>
@@ -422,7 +422,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+<div class="skool-banner" style="background:var(--accent);color:white;text-align:center;padding:12px;font-weight:600;font-family:var(--font-display);">
   Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
 </div>
 
@@ -450,7 +450,7 @@
     <div class="card">
       <span class="card-label">Step 1</span>
       <div class="card-title">Your Gemini API Key</div>
-      <label for="api-key" style="display:block;font-size:0.8rem;color:#94a3b8;margin-bottom:8px;font-family:'Space Grotesk',sans-serif;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;">GEMINI API KEY</label>
+      <label for="api-key" style="display:block;font-size:0.8rem;color:var(--ink-muted);margin-bottom:8px;font-family:var(--font-display);font-weight:500;letter-spacing:0.06em;text-transform:uppercase;">GEMINI API KEY</label>
       <input type="password" id="api-key" placeholder="Enter your Gemini API key" autocomplete="off" />
       <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" class="key-link">Get a free key →</a>
     </div>
@@ -566,7 +566,7 @@
 <script>
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
   }, { passive: true });
 
   // Pre-fill API key from sessionStorage
@@ -776,8 +776,8 @@ IMPORTANT RULES:
   function formatBody(html) {
     return html
       .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-      .replace(/^(Task \d+:.+)$/gm, '<strong style="color:#a78bfa;display:block;margin-top:16px;margin-bottom:4px;">$1</strong>')
-      .replace(/^(What it is:|AI Solution:|Best Tools:|Time Saved:|Difficulty to Implement:)/gm, '<strong style="color:#7c3aed;">$1</strong>')
+      .replace(/^(Task \d+:.+)$/gm, '<strong style="color:var(--accent);display:block;margin-top:16px;margin-bottom:4px;">$1</strong>')
+      .replace(/^(What it is:|AI Solution:|Best Tools:|Time Saved:|Difficulty to Implement:)/gm, '<strong style="color:var(--accent);">$1</strong>')
       .replace(/\n{2,}/g, '\n\n');
   }
 

@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
   <script>
@@ -26,7 +26,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+<div class="skool-banner" style="background:var(--accent);color:white;text-align:center;padding:12px;font-weight:600;font-family:var(--font-display);">
   Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
 </div>
 <nav aria-label="Main navigation">
@@ -44,102 +44,102 @@
 
     <!-- Hero -->
     <div style="text-align:center;margin-bottom:48px;">
-      <span style="display:inline-block;background:rgba(6,182,212,0.12);color:#06B6D4;border:1px solid rgba(6,182,212,0.3);border-radius:999px;padding:4px 16px;font-size:0.78rem;font-weight:600;font-family:'Space Grotesk',sans-serif;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;">Powered by Gemini AI</span>
-      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:700;color:#F8F8FF;margin:0 0 16px;">Website Copy Generator</h1>
-      <p style="font-family:'Inter',sans-serif;font-size:1.1rem;color:#A0A0B0;margin:0;line-height:1.6;">Generate professional website copy for your hero, about, and services sections in seconds.</p>
+      <span style="display:inline-block;background:var(--accent-soft);color:var(--accent);border:1px solid rgba(37,99,235,0.28);border-radius:999px;padding:4px 16px;font-size:0.78rem;font-weight:600;font-family:var(--font-display);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:20px;">Powered by Gemini AI</span>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2rem,5vw,3rem);font-weight:700;color:var(--ink);margin:0 0 16px;">Website Copy Generator</h1>
+      <p style="font-family:var(--font-body);font-size:1.1rem;color:var(--ink-muted);margin:0;line-height:1.6;">Generate professional website copy for your hero, about, and services sections in seconds.</p>
     </div>
 
     <!-- API Key Card -->
-    <div style="background:#13131A;border:1px solid rgba(124,58,237,0.2);border-radius:16px;padding:28px 32px;margin-bottom:24px;">
-      <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;" for="apiKey">Gemini API Key</label>
+    <div style="background:var(--surface);border:1px solid rgba(37,99,235,0.28);border-radius:12px;padding:28px 32px;margin-bottom:24px;">
+      <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:10px;" for="apiKey">Gemini API Key</label>
       <input
         type="password"
         id="apiKey"
         placeholder="Enter your Gemini API key"
-        style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'JetBrains Mono',monospace;font-size:0.9rem;color:#E8E8F0;outline:none;box-sizing:border-box;transition:border-color 0.2s;"
-        onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-        onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+        style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:'JetBrains Mono',monospace;font-size:0.9rem;color:var(--ink);outline:none;box-sizing:border-box;transition:border-color 0.2s;"
+        onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+        onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
       />
-      <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;font-family:'Inter',sans-serif;font-size:0.83rem;color:#06B6D4;text-decoration:none;">Get a free key →</a>
+      <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;font-family:var(--font-body);font-size:0.83rem;color:var(--accent);text-decoration:none;">Get a free key →</a>
     </div>
 
     <!-- Input Form Card -->
-    <div style="background:#13131A;border:1px solid rgba(124,58,237,0.2);border-radius:16px;padding:28px 32px;margin-bottom:24px;">
-      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;color:#F8F8FF;margin:0 0 24px;">Your Business Details</h2>
+    <div style="background:var(--surface);border:1px solid rgba(37,99,235,0.28);border-radius:12px;padding:28px 32px;margin-bottom:24px;">
+      <h2 style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--ink);margin:0 0 24px;">Your Business Details</h2>
 
       <!-- Business Name -->
       <div style="margin-bottom:20px;">
-        <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="businessName">Business / Brand Name</label>
+        <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="businessName">Business / Brand Name</label>
         <input
           type="text"
           id="businessName"
           placeholder="e.g. Apex Creative Studio"
-          style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:0.92rem;color:#E8E8F0;outline:none;box-sizing:border-box;transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-          onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+          style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:var(--font-body);font-size:0.92rem;color:var(--ink);outline:none;box-sizing:border-box;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+          onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
         />
       </div>
 
       <!-- Industry / Niche -->
       <div style="margin-bottom:20px;">
-        <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="industry">Industry / Niche</label>
+        <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="industry">Industry / Niche</label>
         <input
           type="text"
           id="industry"
           placeholder="e.g. Digital Marketing Agency, SaaS, Freelance Designer"
-          style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:0.92rem;color:#E8E8F0;outline:none;box-sizing:border-box;transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-          onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+          style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:var(--font-body);font-size:0.92rem;color:var(--ink);outline:none;box-sizing:border-box;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+          onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
         />
       </div>
 
       <!-- Target Audience -->
       <div style="margin-bottom:20px;">
-        <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="audience">Target Audience</label>
+        <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="audience">Target Audience</label>
         <input
           type="text"
           id="audience"
           placeholder="e.g. Small business owners, e-commerce brands, tech startups"
-          style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:0.92rem;color:#E8E8F0;outline:none;box-sizing:border-box;transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-          onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+          style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:var(--font-body);font-size:0.92rem;color:var(--ink);outline:none;box-sizing:border-box;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+          onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
         />
       </div>
 
       <!-- Core Services -->
       <div style="margin-bottom:20px;">
-        <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="services">Core Services / Offerings <span style="color:#A0A0B0;font-size:0.68rem;text-transform:none;letter-spacing:0;">(comma-separated)</span></label>
+        <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="services">Core Services / Offerings <span style="color:var(--ink-muted);font-size:0.68rem;text-transform:none;letter-spacing:0;">(comma-separated)</span></label>
         <input
           type="text"
           id="services"
           placeholder="e.g. Brand Strategy, Social Media Management, Paid Ads"
-          style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:0.92rem;color:#E8E8F0;outline:none;box-sizing:border-box;transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-          onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+          style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:var(--font-body);font-size:0.92rem;color:var(--ink);outline:none;box-sizing:border-box;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+          onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
         />
       </div>
 
       <!-- Unique Value Proposition -->
       <div style="margin-bottom:20px;">
-        <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="uvp">What Makes You Different?</label>
+        <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="uvp">What Makes You Different?</label>
         <textarea
           id="uvp"
           rows="3"
           placeholder="e.g. We focus exclusively on service businesses and guarantee measurable ROI within 90 days."
-          style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:0.92rem;color:#E8E8F0;outline:none;box-sizing:border-box;resize:vertical;line-height:1.5;transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-          onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+          style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:var(--font-body);font-size:0.92rem;color:var(--ink);outline:none;box-sizing:border-box;resize:vertical;line-height:1.5;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+          onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
         ></textarea>
       </div>
 
       <!-- Tone -->
       <div style="margin-bottom:4px;">
-        <label style="display:block;font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#7C3AED;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="tone">Brand Tone</label>
+        <label style="display:block;font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;margin-bottom:8px;" for="tone">Brand Tone</label>
         <select
           id="tone"
-          style="width:100%;background:#0D0D14;border:1px solid rgba(124,58,237,0.25);border-radius:10px;padding:12px 16px;font-family:'Inter',sans-serif;font-size:0.92rem;color:#E8E8F0;outline:none;box-sizing:border-box;appearance:none;cursor:pointer;transition:border-color 0.2s;"
-          onfocus="this.style.borderColor='rgba(124,58,237,0.6)'"
-          onblur="this.style.borderColor='rgba(124,58,237,0.25)'"
+          style="width:100%;background:var(--bg);border:1px solid rgba(37,99,235,0.28);border-radius:10px;padding:12px 16px;font-family:var(--font-body);font-size:0.92rem;color:var(--ink);outline:none;box-sizing:border-box;appearance:none;cursor:pointer;transition:border-color 0.2s;"
+          onfocus="this.style.borderColor='rgba(37,99,235,0.28)'"
+          onblur="this.style.borderColor='rgba(37,99,235,0.28)'"
         >
           <option value="professional">Professional & Authoritative</option>
           <option value="friendly">Friendly & Approachable</option>
@@ -155,9 +155,9 @@
     <button
       id="generateBtn"
       onclick="generateCopy()"
-      style="width:100%;height:48px;background:#7C3AED;color:white;border:none;border-radius:10px;font-family:'Space Grotesk',sans-serif;font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s,transform 0.1s;letter-spacing:0.01em;"
-      onmouseover="this.style.background='#6D28D9'"
-      onmouseout="this.style.background='#7C3AED'"
+      style="width:100%;height:48px;background:var(--accent);color:white;border:none;border-radius:10px;font-family:var(--font-display);font-size:1rem;font-weight:600;cursor:pointer;transition:background 0.2s,transform 0.1s;letter-spacing:0.01em;"
+      onmouseover="this.style.background='var(--accent)'"
+      onmouseout="this.style.background='var(--accent)'"
       onmousedown="this.style.transform='scale(0.98)'"
       onmouseup="this.style.transform='scale(1)'"
     >
@@ -169,57 +169,57 @@
 
       <!-- Loading State -->
       <div id="loadingState" style="display:none;text-align:center;padding:48px 0;">
-        <div style="display:inline-block;width:40px;height:40px;border:3px solid rgba(124,58,237,0.2);border-top-color:#7C3AED;border-radius:50%;animation:spin 0.8s linear infinite;margin-bottom:16px;"></div>
-        <p style="font-family:'Inter',sans-serif;color:#A0A0B0;margin:0;">Crafting your website copy...</p>
+        <div style="display:inline-block;width:40px;height:40px;border:3px solid rgba(37,99,235,0.28);border-top-color:var(--accent);border-radius:50%;animation:spin 0.8s linear infinite;margin-bottom:16px;"></div>
+        <p style="font-family:var(--font-body);color:var(--ink-muted);margin:0;">Crafting your website copy...</p>
       </div>
 
       <!-- Results -->
       <div id="resultsState" style="display:none;">
         <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
-          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#06B6D4;box-shadow:0 0 8px #06B6D4;"></span>
-          <span style="font-family:'Space Grotesk',sans-serif;font-size:0.85rem;color:#06B6D4;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;">Copy Generated</span>
+          <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow: none;"></span>
+          <span style="font-family:var(--font-display);font-size:0.85rem;color:var(--accent);font-weight:600;letter-spacing:0.05em;text-transform:uppercase;">Copy Generated</span>
         </div>
 
         <!-- Hero Section Output -->
-        <div style="background:#13131A;border:1px solid rgba(6,182,212,0.25);border-radius:16px;padding:28px 32px;margin-bottom:20px;position:relative;">
+        <div style="background:var(--surface);border:1px solid rgba(37,99,235,0.28);border-radius:12px;padding:28px 32px;margin-bottom:20px;position:relative;">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
-            <span style="font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#06B6D4;letter-spacing:0.1em;text-transform:uppercase;">Hero Section</span>
-            <button onclick="copyBlock('heroOutput')" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.25);color:#06B6D4;border-radius:6px;padding:4px 12px;font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(6,182,212,0.2)'" onmouseout="this.style.background='rgba(6,182,212,0.1)'" id="heroBtn">Copy</button>
+            <span style="font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;">Hero Section</span>
+            <button onclick="copyBlock('heroOutput')" style="background:var(--accent-soft);border:1px solid rgba(37,99,235,0.28);color:var(--accent);border-radius:6px;padding:4px 12px;font-family:var(--font-body);font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(37,99,235,0.28)'" onmouseout="this.style.background='var(--accent-soft)'" id="heroBtn">Copy</button>
           </div>
-          <div id="heroOutput" style="font-family:'Inter',sans-serif;font-size:0.92rem;color:#D0D0E0;line-height:1.7;white-space:pre-wrap;"></div>
+          <div id="heroOutput" style="font-family:var(--font-body);font-size:0.92rem;color:var(--ink-muted);line-height:1.7;white-space:pre-wrap;"></div>
         </div>
 
         <!-- About Section Output -->
-        <div style="background:#13131A;border:1px solid rgba(6,182,212,0.25);border-radius:16px;padding:28px 32px;margin-bottom:20px;position:relative;">
+        <div style="background:var(--surface);border:1px solid rgba(37,99,235,0.28);border-radius:12px;padding:28px 32px;margin-bottom:20px;position:relative;">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
-            <span style="font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#06B6D4;letter-spacing:0.1em;text-transform:uppercase;">About Section</span>
-            <button onclick="copyBlock('aboutOutput')" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.25);color:#06B6D4;border-radius:6px;padding:4px 12px;font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(6,182,212,0.2)'" onmouseout="this.style.background='rgba(6,182,212,0.1)'" id="aboutBtn">Copy</button>
+            <span style="font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;">About Section</span>
+            <button onclick="copyBlock('aboutOutput')" style="background:var(--accent-soft);border:1px solid rgba(37,99,235,0.28);color:var(--accent);border-radius:6px;padding:4px 12px;font-family:var(--font-body);font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(37,99,235,0.28)'" onmouseout="this.style.background='var(--accent-soft)'" id="aboutBtn">Copy</button>
           </div>
-          <div id="aboutOutput" style="font-family:'Inter',sans-serif;font-size:0.92rem;color:#D0D0E0;line-height:1.7;white-space:pre-wrap;"></div>
+          <div id="aboutOutput" style="font-family:var(--font-body);font-size:0.92rem;color:var(--ink-muted);line-height:1.7;white-space:pre-wrap;"></div>
         </div>
 
         <!-- Services Section Output -->
-        <div style="background:#13131A;border:1px solid rgba(6,182,212,0.25);border-radius:16px;padding:28px 32px;margin-bottom:20px;position:relative;">
+        <div style="background:var(--surface);border:1px solid rgba(37,99,235,0.28);border-radius:12px;padding:28px 32px;margin-bottom:20px;position:relative;">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
-            <span style="font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#06B6D4;letter-spacing:0.1em;text-transform:uppercase;">Services Section</span>
-            <button onclick="copyBlock('servicesOutput')" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.25);color:#06B6D4;border-radius:6px;padding:4px 12px;font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(6,182,212,0.2)'" onmouseout="this.style.background='rgba(6,182,212,0.1)'" id="servicesBtn">Copy</button>
+            <span style="font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;">Services Section</span>
+            <button onclick="copyBlock('servicesOutput')" style="background:var(--accent-soft);border:1px solid rgba(37,99,235,0.28);color:var(--accent);border-radius:6px;padding:4px 12px;font-family:var(--font-body);font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(37,99,235,0.28)'" onmouseout="this.style.background='var(--accent-soft)'" id="servicesBtn">Copy</button>
           </div>
-          <div id="servicesOutput" style="font-family:'Inter',sans-serif;font-size:0.92rem;color:#D0D0E0;line-height:1.7;white-space:pre-wrap;"></div>
+          <div id="servicesOutput" style="font-family:var(--font-body);font-size:0.92rem;color:var(--ink-muted);line-height:1.7;white-space:pre-wrap;"></div>
         </div>
 
         <!-- CTA Section Output -->
-        <div style="background:#13131A;border:1px solid rgba(6,182,212,0.25);border-radius:16px;padding:28px 32px;position:relative;">
+        <div style="background:var(--surface);border:1px solid rgba(37,99,235,0.28);border-radius:12px;padding:28px 32px;position:relative;">
           <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
-            <span style="font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:600;color:#06B6D4;letter-spacing:0.1em;text-transform:uppercase;">Call-to-Action Copy</span>
-            <button onclick="copyBlock('ctaOutput')" style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.25);color:#06B6D4;border-radius:6px;padding:4px 12px;font-family:'Inter',sans-serif;font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(6,182,212,0.2)'" onmouseout="this.style.background='rgba(6,182,212,0.1)'" id="ctaBtn">Copy</button>
+            <span style="font-family:var(--font-display);font-size:0.72rem;font-weight:600;color:var(--accent);letter-spacing:0.1em;text-transform:uppercase;">Call-to-Action Copy</span>
+            <button onclick="copyBlock('ctaOutput')" style="background:var(--accent-soft);border:1px solid rgba(37,99,235,0.28);color:var(--accent);border-radius:6px;padding:4px 12px;font-family:var(--font-body);font-size:0.78rem;font-weight:600;cursor:pointer;transition:background 0.2s;" onmouseover="this.style.background='rgba(37,99,235,0.28)'" onmouseout="this.style.background='var(--accent-soft)'" id="ctaBtn">Copy</button>
           </div>
-          <div id="ctaOutput" style="font-family:'Inter',sans-serif;font-size:0.92rem;color:#D0D0E0;line-height:1.7;white-space:pre-wrap;"></div>
+          <div id="ctaOutput" style="font-family:var(--font-body);font-size:0.92rem;color:var(--ink-muted);line-height:1.7;white-space:pre-wrap;"></div>
         </div>
       </div>
 
       <!-- Error State -->
-      <div id="errorState" style="display:none;background:#13131A;border:1px solid rgba(239,68,68,0.3);border-radius:16px;padding:24px 28px;">
-        <p style="font-family:'Inter',sans-serif;color:#F87171;margin:0;font-size:0.92rem;" id="errorMsg">Something went wrong. Please check your API key and try again.</p>
+      <div id="errorState" style="display:none;background:var(--surface);border:1px solid rgba(185,28,28,0.30);border-radius:12px;padding:24px 28px;">
+        <p style="font-family:var(--font-body);color:#b91c1c;margin:0;font-size:0.92rem;" id="errorMsg">Something went wrong. Please check your API key and try again.</p>
       </div>
     </div>
 
@@ -411,10 +411,10 @@ Write three variations of a closing CTA section that appears at the bottom of th
       if (btn) {
         const orig = btn.textContent;
         btn.textContent = 'Copied!';
-        btn.style.background = 'rgba(6,182,212,0.25)';
+        btn.style.background = 'rgba(37,99,235,0.28)';
         setTimeout(() => {
           btn.textContent = orig;
-          btn.style.background = 'rgba(6,182,212,0.1)';
+          btn.style.background = 'var(--accent-soft)';
         }, 2000);
       }
     }).catch(() => {
@@ -442,7 +442,7 @@ Write three variations of a closing CTA section that appears at the bottom of th
 <script>
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
   }, { passive: true });
 </script>
 </body>

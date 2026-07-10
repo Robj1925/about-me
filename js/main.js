@@ -98,59 +98,6 @@ document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(a => {
     }
   });
 })();
-// ===== TERMINAL TYPEWRITER =====
-const lines = [
-  { type: 'prompt', text: '~/projects $ ' },
-  { type: 'cmd',    text: 'claw run ai-audit --client acme-corp' },
-  { type: 'output', text: '⚡ Loading skill: ai-audit...' },
-  { type: 'output', text: '🔍 Scanning codebase for AI opportunities...' },
-  { type: 'success', text: '✓ Found 14 automation candidates' },
-  { type: 'success', text: '✓ Report saved → /output/audit-acme.md' },
-  { type: 'prompt', text: '~/projects $ ' },
-  { type: 'cmd',    text: 'claw skill mcp-server --deploy youtube' },
-  { type: 'output', text: '🚀 Deploying MCP server...' },
-  { type: 'success', text: '✓ YouTube MCP online at localhost:3000' },
-  { type: 'cursor', text: '' },
-];
-
-const terminalBody = document.getElementById('terminal-body');
-
-async function typeTerminal() {
-  if (!terminalBody) return;
-  let html = '';
-  for (const line of lines) {
-    if (line.type === 'cursor') {
-      html += `<span class="t-prompt">~/projects $ </span><span class="t-cursor"></span>`;
-      break;
-    }
-    const cls = line.type === 'prompt' ? 't-prompt'
-               : line.type === 'cmd'    ? 't-cmd'
-               : line.type === 'success' ? 't-success'
-               : 't-output';
-    html += `<div><span class="${cls}">${line.text}</span></div>`;
-    terminalBody.innerHTML = html + `<span class="t-cursor"></span>`;
-    await new Promise(r => setTimeout(r, line.type === 'prompt' ? 300 : 80 + Math.random() * 120));
-  }
-  terminalBody.innerHTML = html;
-}
-
-// Start after a short delay — skip animation for users who prefer reduced motion
-if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  if (terminalBody) {
-    let html = '';
-    for (const line of lines) {
-      if (line.type === 'cursor') {
-        html += `<span class="t-prompt">~/projects $ </span><span class="t-cursor"></span>`;
-        break;
-      }
-      const cls = line.type === 'prompt' ? 't-prompt' : line.type === 'cmd' ? 't-cmd' : line.type === 'success' ? 't-success' : 't-output';
-      html += `<div><span class="${cls}">${line.text}</span></div>`;
-    }
-    terminalBody.innerHTML = html;
-  }
-} else {
-  setTimeout(typeTerminal, 800);
-}
 
 // ===== DYNAMIC BLOG CARDS =====
 // Data is pre-loaded by blog/posts-data.js (sets window.BLOG_POSTS)

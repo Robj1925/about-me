@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -39,10 +39,10 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: rgba(124,58,237,0.15);
-      border: 1px solid rgba(124,58,237,0.35);
-      color: #9D5FF0;
-      font-family: 'Space Grotesk', sans-serif;
+      background: var(--accent-soft);
+      border: 1px solid rgba(37,99,235,0.28);
+      color: var(--accent);
+      font-family: var(--font-display);
       font-size: 0.8rem;
       font-weight: 600;
       letter-spacing: 0.08em;
@@ -54,11 +54,8 @@
     .tool-header h1 {
       font-size: clamp(2rem, 5vw, 3.2rem);
       margin-bottom: 16px;
-      background: linear-gradient(135deg, #F0F0F8 0%, #9D5FF0 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
+      color: var(--ink);
+}
     .tool-header p {
       color: var(--text-muted);
       font-size: 1.1rem;
@@ -87,14 +84,14 @@
       border-radius: 12px;
       padding: 14px 16px 14px 46px;
       color: var(--text);
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-body);
       font-size: 0.95rem;
       transition: var(--transition);
     }
     .search-input:focus {
       outline: none;
-      border-color: var(--purple);
-      box-shadow: 0 0 0 3px rgba(124,58,237,0.15);
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
     }
     .search-input::placeholder {
       color: var(--text-muted);
@@ -114,7 +111,7 @@
       gap: 6px;
       padding: 8px 18px;
       border-radius: 100px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.88rem;
       font-weight: 600;
       border: 1px solid var(--border);
@@ -124,14 +121,14 @@
       transition: var(--transition);
     }
     .filter-btn:hover {
-      border-color: var(--purple);
+      border-color: var(--accent);
       color: var(--text);
     }
     .filter-btn.active {
-      background: var(--purple);
-      border-color: var(--purple);
+      background: var(--accent);
+      border-color: var(--accent);
       color: #fff;
-      box-shadow: 0 0 20px rgba(124,58,237,0.35);
+      box-shadow: none;
     }
 
     /* ===== RESULTS META ===== */
@@ -144,9 +141,9 @@
       gap: 8px;
     }
     .results-count {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-weight: 700;
-      color: var(--purple-light);
+      color: var(--accent);
     }
 
     /* ===== TOOL GRID ===== */
@@ -174,14 +171,14 @@
       position: absolute;
       inset: 0;
       border-radius: var(--radius-lg);
-      background: linear-gradient(135deg, rgba(124,58,237,0.05) 0%, transparent 60%);
+      background: linear-gradient(135deg, var(--accent-soft) 0%, transparent 60%);
       opacity: 0;
       transition: var(--transition);
     }
     .tool-card:hover {
-      border-color: rgba(124,58,237,0.45);
+      border-color: rgba(37,99,235,0.28);
       transform: translateY(-3px);
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4), var(--glow-purple);
+      box-shadow: var(--shadow-md);
     }
     .tool-card:hover::before {
       opacity: 1;
@@ -193,7 +190,7 @@
       gap: 12px;
     }
     .tool-name {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 1.05rem;
       font-weight: 700;
       color: var(--text);
@@ -205,7 +202,7 @@
       gap: 4px;
       padding: 4px 10px;
       border-radius: 100px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-display);
       font-size: 0.72rem;
       font-weight: 700;
       letter-spacing: 0.06em;
@@ -225,8 +222,8 @@
       gap: 6px;
       font-size: 0.8rem;
       color: var(--text-muted);
-      background: rgba(6,182,212,0.08);
-      border: 1px solid rgba(6,182,212,0.18);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent-soft);
       border-radius: 8px;
       padding: 6px 10px;
     }
@@ -240,9 +237,9 @@
       gap: 6px;
     }
     .tag {
-      background: rgba(124,58,237,0.1);
-      border: 1px solid rgba(124,58,237,0.2);
-      color: #A78BFA;
+      background: var(--accent-soft);
+      border: 1px solid rgba(37,99,235,0.28);
+      color: var(--accent);
       font-size: 0.72rem;
       font-family: 'JetBrains Mono', monospace;
       padding: 3px 8px;
@@ -254,10 +251,10 @@
       gap: 6px;
       padding: 9px 18px;
       border-radius: 8px;
-      background: rgba(124,58,237,0.12);
-      border: 1px solid rgba(124,58,237,0.3);
-      color: var(--purple-light);
-      font-family: 'Space Grotesk', sans-serif;
+      background: var(--accent-soft);
+      border: 1px solid rgba(37,99,235,0.28);
+      color: var(--accent);
+      font-family: var(--font-display);
       font-size: 0.85rem;
       font-weight: 600;
       text-decoration: none;
@@ -266,20 +263,20 @@
       margin-top: 2px;
     }
     .try-btn:hover {
-      background: var(--purple);
-      border-color: var(--purple);
+      background: var(--accent);
+      border-color: var(--accent);
       color: #fff;
       transform: translateX(2px);
     }
 
     /* ===== CATEGORY COLORS ===== */
-    .cat-writing    { background: rgba(124,58,237,0.15); color: #C4B5FD; border: 1px solid rgba(124,58,237,0.3); }
-    .cat-video      { background: rgba(239,68,68,0.12);  color: #FCA5A5; border: 1px solid rgba(239,68,68,0.25); }
-    .cat-image      { background: rgba(249,115,22,0.12); color: #FDB57C; border: 1px solid rgba(249,115,22,0.25); }
-    .cat-coding     { background: rgba(6,182,212,0.12);  color: #67E8F9; border: 1px solid rgba(6,182,212,0.25); }
-    .cat-audio      { background: rgba(16,185,129,0.12); color: #6EE7B7; border: 1px solid rgba(16,185,129,0.25); }
-    .cat-automation { background: rgba(245,158,11,0.12); color: #FCD34D; border: 1px solid rgba(245,158,11,0.25); }
-    .cat-research   { background: rgba(59,130,246,0.12); color: #93C5FD; border: 1px solid rgba(59,130,246,0.25); }
+    .cat-writing    { background: var(--accent-soft); color: var(--accent); border: 1px solid rgba(37,99,235,0.28); }
+    .cat-video      { background: rgba(185,28,28,0.09);  color: #b91c1c; border: 1px solid rgba(185,28,28,0.30); }
+    .cat-image      { background: rgba(249,115,22,0.12); color: #b45309; border: 1px solid rgba(249,115,22,0.25); }
+    .cat-coding     { background: var(--accent-soft);  color: var(--accent); border: 1px solid rgba(37,99,235,0.28); }
+    .cat-audio      { background: rgba(4,120,87,0.10); color: #047857; border: 1px solid rgba(4,120,87,0.28); }
+    .cat-automation { background: rgba(180,83,9,0.10); color: #b45309; border: 1px solid rgba(180,83,9,0.30); }
+    .cat-research   { background: rgba(59,130,246,0.12); color: var(--accent); border: 1px solid rgba(59,130,246,0.25); }
 
     /* ===== EMPTY STATE ===== */
     .empty-state {
@@ -315,7 +312,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+<div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
   Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
 </div>
 
@@ -395,7 +392,7 @@
   // ===== NAV SHADOW =====
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
   }, { passive: true });
 
   // ===== TOOLS DATA =====

@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
   <script>
@@ -24,41 +24,41 @@
   </script>
   <style>
     .tool-hero { padding:60px 0 40px; text-align:center; }
-    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero h1 { font-family:var(--font-display); font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
     .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
-    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
-    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
-    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
-    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2306b6d4' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; }
-    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
-    .tool-select option { background:#0a0a0f; color:var(--text); }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow: var(--shadow-md); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(37,99,235,0.28); border-radius:var(--radius-lg); padding:32px; box-shadow: var(--shadow-md); margin-bottom:24px; }
+    .tool-label { font-family:var(--font-display); font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:var(--surface-2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-body); font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; appearance:none; -webkit-appearance:none; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2306b6d4' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat:no-repeat; background-position:right 14px center; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .tool-select option { background:var(--bg); color:var(--text); }
     .field-group { margin-bottom:22px; }
     .field-group:last-of-type { margin-bottom:0; }
 
     /* Yes/No toggle buttons */
     .toggle-group { display:flex; gap:10px; }
-    .toggle-btn { flex:1; padding:11px 14px; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-muted); font-family:'Space Grotesk',sans-serif; font-size:0.95rem; font-weight:600; cursor:pointer; transition:var(--transition); text-align:center; }
-    .toggle-btn:hover { border-color:rgba(6,182,212,0.4); color:var(--text); }
-    .toggle-btn.active { background:rgba(6,182,212,0.12); border-color:var(--cyan); color:var(--cyan); box-shadow:0 0 0 2px rgba(6,182,212,0.15); }
+    .toggle-btn { flex:1; padding:11px 14px; background:var(--surface-2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text-muted); font-family:var(--font-display); font-size:0.95rem; font-weight:600; cursor:pointer; transition:var(--transition); text-align:center; }
+    .toggle-btn:hover { border-color:rgba(37,99,235,0.28); color:var(--text); }
+    .toggle-btn.active { background:var(--accent-soft); border-color:var(--cyan); color:var(--cyan); box-shadow: 0 0 0 3px var(--accent-soft); }
 
     /* Results */
-    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
-    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .result-item { background:var(--accent-soft); border:1px solid var(--accent-soft); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:var(--font-display); font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
     .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
-    .price-hero { text-align:center; margin-bottom:28px; padding:28px 20px; background:rgba(124,58,237,0.08); border:1px solid rgba(124,58,237,0.25); border-radius:var(--radius-lg); }
-    .price-range { font-family:'Space Grotesk',sans-serif; font-size:clamp(2rem,5vw,3rem); font-weight:700; color:var(--purple-light); line-height:1; margin-bottom:8px; }
-    .price-label { font-family:'Inter',sans-serif; font-size:0.85rem; color:var(--text-muted); }
+    .price-hero { text-align:center; margin-bottom:28px; padding:28px 20px; background:var(--accent-soft); border:1px solid rgba(37,99,235,0.28); border-radius:var(--radius-lg); }
+    .price-range { font-family:var(--font-display); font-size:clamp(2rem,5vw,3rem); font-weight:700; color:var(--accent); line-height:1; margin-bottom:8px; }
+    .price-label { font-family:var(--font-body); font-size:0.85rem; color:var(--text-muted); }
     .breakdown-table { width:100%; border-collapse:collapse; margin-bottom:20px; }
-    .breakdown-table th { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); text-align:left; padding:8px 12px; border-bottom:1px solid var(--border); }
-    .breakdown-table td { font-family:'Inter',sans-serif; font-size:0.88rem; color:var(--text); padding:10px 12px; border-bottom:1px solid rgba(255,255,255,0.04); vertical-align:top; }
+    .breakdown-table th { font-family:var(--font-display); font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.06em; color:var(--text-muted); text-align:left; padding:8px 12px; border-bottom:1px solid var(--border); }
+    .breakdown-table td { font-family:var(--font-body); font-size:0.88rem; color:var(--text); padding:10px 12px; border-bottom:1px solid var(--surface-2); vertical-align:top; }
     .breakdown-table tr:last-child td { border-bottom:none; }
     .breakdown-table td.cost-cell { font-family:'JetBrains Mono',monospace; color:var(--cyan); white-space:nowrap; }
-    .breakdown-table tr.total-row td { font-family:'Space Grotesk',sans-serif; font-weight:700; color:var(--text); border-top:1px solid var(--border); border-bottom:none; padding-top:14px; }
-    .breakdown-table tr.total-row td.cost-cell { color:var(--purple-light); }
-    .cta-block { background:rgba(37,99,235,0.08); border:1px solid rgba(37,99,235,0.25); border-radius:var(--radius); padding:20px 24px; margin-top:8px; text-align:center; }
-    .cta-block p { font-family:'Inter',sans-serif; font-size:0.92rem; color:var(--text-muted); margin:0 0 14px; line-height:1.6; }
+    .breakdown-table tr.total-row td { font-family:var(--font-display); font-weight:700; color:var(--text); border-top:1px solid var(--border); border-bottom:none; padding-top:14px; }
+    .breakdown-table tr.total-row td.cost-cell { color:var(--accent); }
+    .cta-block { background:var(--accent-soft); border:1px solid rgba(37,99,235,0.28); border-radius:var(--radius); padding:20px 24px; margin-top:8px; text-align:center; }
+    .cta-block p { font-family:var(--font-body); font-size:0.92rem; color:var(--text-muted); margin:0 0 14px; line-height:1.6; }
     .cta-block p strong { color:var(--text); }
-    .section-divider { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:16px; }
+    .section-divider { font-family:var(--font-display); font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:16px; }
     @media (max-width:480px) {
       .tool-card, .results-card { padding:22px 18px; }
     }
@@ -67,7 +67,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+<div class="skool-banner" style="background:var(--accent);color:white;text-align:center;padding:12px;font-weight:600;font-family:var(--font-display);">
   Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
 </div>
 <nav aria-label="Main navigation">
@@ -151,7 +151,7 @@
 
     <!-- Results Card (hidden initially) -->
     <div id="results" class="results-card" style="display:none;margin-top:28px">
-      <p class="section-divider" style="color:rgba(6,182,212,0.7);">Your Estimate</p>
+      <p class="section-divider" style="color:rgba(37,99,235,0.28);">Your Estimate</p>
 
       <div class="price-hero">
         <div class="price-range" id="res-price-range">$400–$800</div>
@@ -342,7 +342,7 @@
   // Nav scroll shadow
   var navEl = document.querySelector('nav');
   window.addEventListener('scroll', function() {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
   }, { passive: true });
 </script>
 </body>

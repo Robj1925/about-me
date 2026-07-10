@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -25,10 +25,10 @@
     gtag('config', 'G-T1RQQC7CB5');
   </script>
 </head>
-<body style="background: #0A0A0F; color: #F0F0F8; font-family: 'Inter', sans-serif; margin: 0;">
+<body style="background: var(--bg); color: var(--ink); font-family: var(--font-body); margin: 0;">
 
   <!-- Skool Banner -->
-  <div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  <div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
     Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
   </div>
 
@@ -49,70 +49,70 @@
 
       <!-- Hero -->
       <div style="text-align: center; margin-bottom: 48px;">
-        <h1 style="font-family: 'Space Grotesk', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: #F0F0F8; margin: 0 0 12px;">Free AI Cold Email Writer</h1>
-        <p style="color: #8888AA; font-size: 1.05rem; max-width: 52ch; margin: 0 auto 16px;">Generate 3 personalized cold email templates in seconds. Stop staring at a blank page.</p>
-        <span style="display: inline-block; background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); color: #06B6D4; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.8rem; padding: 4px 14px; border-radius: 20px; letter-spacing: 0.05em;">Powered by Gemini AI</span>
+        <h1 style="font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 700; color: var(--ink); margin: 0 0 12px;">Free AI Cold Email Writer</h1>
+        <p style="color: var(--ink-muted); font-size: 1.05rem; max-width: 52ch; margin: 0 auto 16px;">Generate 3 personalized cold email templates in seconds. Stop staring at a blank page.</p>
+        <span style="display: inline-block; background: var(--accent-soft); border: 1px solid rgba(37,99,235,0.28); color: var(--accent); font-family: var(--font-display); font-weight: 600; font-size: 0.8rem; padding: 4px 14px; border-radius: 20px; letter-spacing: 0.05em;">Powered by Gemini AI</span>
       </div>
 
       <!-- API Key Card -->
-      <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+      <div style="background: var(--surface); border: 1px solid rgba(37,99,235,0.28); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
         <div style="margin-bottom: 0;">
-          <label for="apiKey" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Gemini API Key</label>
+          <label for="apiKey" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Gemini API Key</label>
           <input
             type="password"
             id="apiKey"
             placeholder="Enter your Gemini API key"
-            style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none;"
+            style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); box-sizing: border-box; outline: none;"
           />
-          <p style="margin: 8px 0 0; font-size: 0.85rem; color: #8888AA;">
-            Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: #06B6D4; text-decoration: none;">Get a free key →</a>
+          <p style="margin: 8px 0 0; font-size: 0.85rem; color: var(--ink-muted);">
+            Don't have one? <a href="https://aistudio.google.com/app/apikey" target="_blank" style="color: var(--accent); text-decoration: none;">Get a free key →</a>
           </p>
         </div>
       </div>
 
       <!-- Form Card -->
-      <div style="background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
+      <div style="background: var(--surface); border: 1px solid rgba(37,99,235,0.28); border-radius: 12px; padding: 24px; margin-bottom: 24px;">
         <form id="emailForm">
 
           <!-- Business -->
           <div style="margin-bottom: 20px;">
-            <label for="business" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Your Business / Service</label>
+            <label for="business" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Your Business / Service</label>
             <input
               type="text"
               id="business"
               placeholder="AI automation consulting"
-              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none;"
+              style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); box-sizing: border-box; outline: none;"
             />
           </div>
 
           <!-- Target Customer -->
           <div style="margin-bottom: 20px;">
-            <label for="target" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Target Customer</label>
+            <label for="target" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Target Customer</label>
             <input
               type="text"
               id="target"
               placeholder="E-commerce store owners doing $1M+ revenue"
-              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none;"
+              style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); box-sizing: border-box; outline: none;"
             />
           </div>
 
           <!-- Offer -->
           <div style="margin-bottom: 20px;">
-            <label for="offer" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Your Main Offer / Value Prop</label>
+            <label for="offer" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Your Main Offer / Value Prop</label>
             <textarea
               id="offer"
               rows="4"
               placeholder="I help e-commerce brands automate their customer service using AI agents, saving 20+ hours/week"
-              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none; resize: vertical;"
+              style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); box-sizing: border-box; outline: none; resize: vertical;"
             ></textarea>
           </div>
 
           <!-- Tone -->
           <div style="margin-bottom: 28px;">
-            <label for="tone" style="font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.9rem; color: #8888AA; text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Tone</label>
+            <label for="tone" style="font-family: var(--font-display); font-weight: 600; font-size: 0.9rem; color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 6px;">Tone</label>
             <select
               id="tone"
-              style="width: 100%; padding: 12px 16px; background: #0A0A0F; border: 1px solid rgba(124,58,237,0.3); border-radius: 8px; color: #F0F0F8; font-size: 1rem; font-family: 'Inter', sans-serif; box-sizing: border-box; outline: none; cursor: pointer; appearance: none; -webkit-appearance: none;"
+              style="width: 100%; padding: 12px 16px; background: var(--bg); border: 1px solid rgba(37,99,235,0.28); border-radius: 8px; color: var(--ink); font-size: 1rem; font-family: var(--font-body); box-sizing: border-box; outline: none; cursor: pointer; appearance: none; -webkit-appearance: none;"
             >
               <option value="Professional">Professional</option>
               <option value="Casual & Direct">Casual &amp; Direct</option>
@@ -125,23 +125,23 @@
           <button
             type="submit"
             class="btn btn-primary"
-            style="width: 100%; padding: 14px; font-size: 1rem; font-family: 'Space Grotesk', sans-serif; font-weight: 700; border: none; cursor: pointer;"
+            style="width: 100%; padding: 14px; font-size: 1rem; font-family: var(--font-display); font-weight: 700; border: none; cursor: pointer;"
           >Generate Emails</button>
         </form>
       </div>
 
       <!-- Spinner -->
       <div id="spinner" style="display: none; text-align: center; margin: 32px auto;">
-        <div style="width: 40px; height: 40px; border: 3px solid rgba(124,58,237,0.3); border-top-color: #7C3AED; border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto;"></div>
-        <p style="color: #8888AA; font-size: 0.9rem; margin-top: 16px; font-family: 'Space Grotesk', sans-serif;">Writing your emails...</p>
+        <div style="width: 40px; height: 40px; border: 3px solid rgba(37,99,235,0.28); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto;"></div>
+        <p style="color: var(--ink-muted); font-size: 0.9rem; margin-top: 16px; font-family: var(--font-display);">Writing your emails...</p>
       </div>
 
       <!-- Error -->
-      <div id="errorMsg" style="display: none; color: #EF4444; background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); padding: 12px 16px; border-radius: 8px; margin-bottom: 24px; font-family: 'Inter', sans-serif; font-size: 0.95rem;"></div>
+      <div id="errorMsg" style="display: none; color: #b91c1c; background: rgba(185,28,28,0.09); border: 1px solid rgba(185,28,28,0.30); padding: 12px 16px; border-radius: 8px; margin-bottom: 24px; font-family: var(--font-body); font-size: 0.95rem;"></div>
 
       <!-- Results -->
       <div id="results" style="display: none;">
-        <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.3rem; font-weight: 700; color: #F0F0F8; margin: 0 0 24px;">Your Cold Emails</h2>
+        <h2 style="font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; color: var(--ink); margin: 0 0 24px;">Your Cold Emails</h2>
         <div id="emailCards"></div>
       </div>
 
@@ -163,14 +163,14 @@
       to { transform: rotate(360deg); }
     }
     input:focus, textarea:focus, select:focus {
-      border-color: rgba(124,58,237,0.6) !important;
+      border-color: rgba(37,99,235,0.28) !important;
     }
     .copy-btn:hover {
-      background: rgba(6,182,212,0.2) !important;
-      border-color: rgba(6,182,212,0.5) !important;
+      background: rgba(37,99,235,0.28) !important;
+      border-color: rgba(37,99,235,0.28) !important;
     }
     nav.scrolled {
-      box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+      box-shadow: var(--shadow-md);
     }
   </style>
 
@@ -257,22 +257,22 @@
       emails.forEach((email, idx) => {
         const num = idx + 1;
         const card = document.createElement('div');
-        card.style.cssText = 'background: #13131A; border: 1px solid rgba(124,58,237,0.2); border-radius: 12px; padding: 24px; margin-bottom: 24px;';
+        card.style.cssText = 'background: var(--surface); border: 1px solid rgba(37,99,235,0.28); border-radius: 12px; padding: 24px; margin-bottom: 24px;';
 
         const fullEmail = `Subject: ${email.subject}\n\n${email.body}${email.ps ? '\n\nP.S. ' + email.ps : ''}`;
 
         card.innerHTML = `
-          <div style="display: inline-block; background: rgba(124,58,237,0.2); color: #9D5FF0; font-family: 'Space Grotesk', sans-serif; font-weight: 700; padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 16px;">EMAIL ${num}</div>
-          <div style="background: rgba(6,182,212,0.05); border-left: 3px solid #06B6D4; padding: 10px 16px; border-radius: 0 8px 8px 0; margin-bottom: 16px;">
-            <span style="color: #06B6D4; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.85rem;">Subject:</span>
-            <span style="color: #F0F0F8; font-weight: 700; font-family: 'Inter', sans-serif; margin-left: 8px;">${escapeHtml(email.subject)}</span>
+          <div style="display: inline-block; background: rgba(37,99,235,0.28); color: var(--accent); font-family: var(--font-display); font-weight: 700; padding: 4px 12px; border-radius: 6px; font-size: 0.85rem; margin-bottom: 16px;">EMAIL ${num}</div>
+          <div style="background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 10px 16px; border-radius: 0 8px 8px 0; margin-bottom: 16px;">
+            <span style="color: var(--accent); font-family: var(--font-display); font-weight: 600; font-size: 0.85rem;">Subject:</span>
+            <span style="color: var(--ink); font-weight: 700; font-family: var(--font-body); margin-left: 8px;">${escapeHtml(email.subject)}</span>
           </div>
-          <div style="color: #F0F0F8; font-family: 'Inter', sans-serif; line-height: 1.7; white-space: pre-wrap; font-size: 0.95rem;">${escapeHtml(email.body)}</div>
-          ${email.ps ? `<div style="margin-top: 16px; color: #8888AA; font-family: 'Inter', sans-serif; font-size: 0.9rem; line-height: 1.6;"><span style="font-weight: 600;">P.S.</span> ${escapeHtml(email.ps)}</div>` : ''}
+          <div style="color: var(--ink); font-family: var(--font-body); line-height: 1.7; white-space: pre-wrap; font-size: 0.95rem;">${escapeHtml(email.body)}</div>
+          ${email.ps ? `<div style="margin-top: 16px; color: var(--ink-muted); font-family: var(--font-body); font-size: 0.9rem; line-height: 1.6;"><span style="font-weight: 600;">P.S.</span> ${escapeHtml(email.ps)}</div>` : ''}
           <button
             class="copy-btn"
             data-email="${escapeAttr(fullEmail)}"
-            style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3); color: #06B6D4; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 0.85rem; transition: all 0.2s; margin-top: 16px;"
+            style="background: var(--accent-soft); border: 1px solid rgba(37,99,235,0.28); color: var(--accent); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-family: var(--font-display); font-weight: 600; font-size: 0.85rem; transition: all 0.2s; margin-top: 16px;"
           >Copy Email</button>
         `;
 
@@ -287,10 +287,10 @@
             await navigator.clipboard.writeText(text);
             const original = btn.textContent;
             btn.textContent = 'Copied!';
-            btn.style.background = 'rgba(6,182,212,0.25)';
+            btn.style.background = 'rgba(37,99,235,0.28)';
             setTimeout(() => {
               btn.textContent = original;
-              btn.style.background = 'rgba(6,182,212,0.1)';
+              btn.style.background = 'var(--accent-soft)';
             }, 2000);
           } catch (e) {
             btn.textContent = 'Copy failed';

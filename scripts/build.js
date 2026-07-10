@@ -72,7 +72,7 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -87,8 +87,8 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
-  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
 </div>
 
 <!-- ===== PROGRESS BAR ===== -->
@@ -159,14 +159,14 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
     const doc = document.documentElement;
     const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
     const pct = Math.min(100, Math.round(scrolled * 100));
-    bar.style.width = pct + '%';
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
     bar.setAttribute('aria-valuenow', pct);
   }, { passive: true });
 
   // Nav scroll shadow
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 </script>
 </body>
@@ -184,12 +184,12 @@ function blogIndexTemplate(posts) {
     <a href="${p.slug}.html" class="blog-card blog-card-link" aria-label="Read: ${p.title}">
       ${thumb}
       <div class="blog-body">
-        <div class="blog-tags">${tagBadges}</div>
+        <div class="blog-tags" style="display:flex; gap:6px; flex-wrap:wrap">${tagBadges}</div>
         <h2 class="blog-title">${p.title}</h2>
         <p class="blog-excerpt">${p.excerpt}</p>
-        <div class="blog-footer">
+        <div class="blog-footer" style="display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:auto; padding-top:4px">
           <span class="blog-date">${formatDate(p.date)}</span>
-          <span class="blog-readmore">Read article →</span>
+          <span class="blog-readmore" style="color:var(--accent); font-weight:600; font-size:0.875rem">Read article →</span>
         </div>
       </div>
     </a>`;
@@ -210,7 +210,7 @@ function blogIndexTemplate(posts) {
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
   <!-- Umami Analytics -->
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <!-- Google tag (gtag.js) -->
@@ -225,8 +225,8 @@ function blogIndexTemplate(posts) {
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
-  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
 </div>
 
 <!-- ===== NAV ===== -->
@@ -248,11 +248,11 @@ function blogIndexTemplate(posts) {
         <span class="section-tag">// all_posts</span>
         <h1 id="blog-index-heading">Blog</h1>
         <p>Written guides, deep dives, and tutorials on AI engineering and automation.</p>
-        <div class="skool-promo-card" style="margin-top: 1.5rem; padding: 1.25rem; background: rgba(37, 99, 235, 0.1); border: 1px solid rgba(37, 99, 235, 0.2); border-radius: 8px; text-align: left; display: inline-flex; align-items: center; gap: 1rem; max-width: 600px;">
+        <div class="skool-promo-card" style="margin-top: 1.5rem; padding: 1.25rem; background: var(--accent-soft); border: 1px solid var(--border); border-radius: var(--radius); text-align: left; display: inline-flex; align-items: center; gap: 1rem; max-width: 600px;">
           <div style="font-size: 2rem;">🎓</div>
           <div>
-            <h4 style="margin: 0; font-family: 'Space Grotesk', sans-serif; font-size: 1.1rem; color: #f8fafc;">Join the AI Academy Community</h4>
-            <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: #94a3b8; line-height: 1.4;">Master AI engineering, access automated workflows, and connect with other builders. <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener" style="color: #60a5fa; text-decoration: underline; font-weight: 500;">Join on Skool →</a></p>
+            <h4 style="margin: 0; font-family: var(--font-display); font-size: 1.1rem; color: var(--ink);">Join the AI Academy Community</h4>
+            <p style="margin: 0.25rem 0 0 0; font-size: 0.9rem; color: var(--ink-muted); line-height: 1.4;">Master AI engineering, access automated workflows, and connect with other builders. <a href="https://www.skool.com/ai-academy-with-robby-6849/about" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline; font-weight: 500;">Join on Skool →</a></p>
           </div>
         </div>
       </div>
@@ -275,7 +275,7 @@ function blogIndexTemplate(posts) {
 <script>
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
   }, { passive: true });
 </script>
 </body>

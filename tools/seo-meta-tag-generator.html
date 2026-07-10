@@ -13,7 +13,7 @@
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
   <script>
@@ -24,25 +24,25 @@
   </script>
   <style>
     .tool-hero { padding:60px 0 40px; text-align:center; }
-    .tool-hero h1 { font-family:'Space Grotesk',sans-serif; font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
+    .tool-hero h1 { font-family:var(--font-display); font-size:clamp(1.8rem,4vw,2.8rem); font-weight:700; color:var(--text); margin-bottom:12px; }
     .tool-hero p { color:var(--text-muted); font-size:1.05rem; max-width:52ch; margin:0 auto; }
-    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-purple),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
-    .results-card { background:var(--bg-card); border:1px solid rgba(6,182,212,0.25); border-radius:var(--radius-lg); padding:32px; box-shadow:var(--glow-cyan),0 24px 48px rgba(0,0,0,0.4); margin-bottom:24px; }
-    .tool-label { font-family:'Space Grotesk',sans-serif; font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
-    .tool-select { width:100%; background:rgba(10,10,15,0.6); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:'Inter',sans-serif; font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
-    .tool-select:focus { border-color:var(--cyan); box-shadow:0 0 0 3px rgba(6,182,212,0.15); }
-    .result-item { background:rgba(6,182,212,0.05); border:1px solid rgba(6,182,212,0.15); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
-    .result-label { font-family:'Space Grotesk',sans-serif; font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
+    .tool-card { background:var(--bg-card); border:1px solid var(--border); border-radius:var(--radius-lg); padding:32px; box-shadow: var(--shadow-md); margin-bottom:24px; }
+    .results-card { background:var(--bg-card); border:1px solid rgba(37,99,235,0.28); border-radius:var(--radius-lg); padding:32px; box-shadow: var(--shadow-md); margin-bottom:24px; }
+    .tool-label { font-family:var(--font-display); font-weight:600; color:var(--text); font-size:0.9rem; margin-bottom:8px; display:block; }
+    .tool-select { width:100%; background:var(--surface-2); border:1px solid var(--border); border-radius:var(--radius); color:var(--text); font-family:var(--font-body); font-size:1rem; padding:11px 14px; outline:none; transition:var(--transition); box-sizing:border-box; cursor:pointer; }
+    .tool-select:focus { border-color:var(--cyan); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .result-item { background:var(--accent-soft); border:1px solid var(--accent-soft); border-radius:var(--radius); padding:16px 20px; margin-bottom:12px; }
+    .result-label { font-family:var(--font-display); font-size:0.78rem; font-weight:600; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-cyan); margin-bottom:6px; }
     .result-value { font-size:0.95rem; color:var(--text); line-height:1.6; }
 
     /* Tool-specific styles */
     .tool-input {
       width:100%;
-      background:rgba(10,10,15,0.6);
+      background:var(--surface-2);
       border:1px solid var(--border);
       border-radius:var(--radius);
       color:var(--text);
-      font-family:'Inter',sans-serif;
+      font-family:var(--font-body);
       font-size:1rem;
       padding:11px 14px;
       outline:none;
@@ -51,7 +51,7 @@
     }
     .tool-input:focus {
       border-color:var(--cyan);
-      box-shadow:0 0 0 3px rgba(6,182,212,0.15);
+      box-shadow: 0 0 0 3px var(--accent-soft);
     }
     .tool-input::placeholder { color:rgba(180,180,200,0.35); }
     textarea.tool-input { resize:vertical; min-height:90px; line-height:1.6; }
@@ -63,9 +63,9 @@
       margin-top:5px;
       transition:color 0.2s;
     }
-    .char-ok { color:var(--accent-cyan, #06b6d4); }
-    .char-warn { color:#f59e0b; }
-    .char-over { color:#ef4444; }
+    .char-ok { color:var(--accent-cyan, var(--accent)); }
+    .char-warn { color:#b45309; }
+    .char-over { color:#b91c1c; }
 
     .field-group { margin-bottom:22px; }
     .field-group:last-of-type { margin-bottom:0; }
@@ -80,7 +80,7 @@
       height:3px;
       border-radius:2px;
       margin-top:6px;
-      background:rgba(255,255,255,0.07);
+      background:var(--surface-2);
       overflow:hidden;
     }
     .title-len-fill {
@@ -92,7 +92,7 @@
     /* Code tag blocks */
     .tag-block {
       background:rgba(10,10,20,0.7);
-      border:1px solid rgba(6,182,212,0.18);
+      border:1px solid var(--accent-soft);
       border-radius:var(--radius);
       padding:0;
       margin-bottom:14px;
@@ -103,23 +103,23 @@
       align-items:center;
       justify-content:space-between;
       padding:8px 14px;
-      background:rgba(6,182,212,0.07);
-      border-bottom:1px solid rgba(6,182,212,0.12);
+      background:var(--accent-soft);
+      border-bottom:1px solid var(--accent-soft);
     }
     .tag-block-label {
-      font-family:'Space Grotesk',sans-serif;
+      font-family:var(--font-display);
       font-size:0.75rem;
       font-weight:600;
       text-transform:uppercase;
       letter-spacing:0.08em;
-      color:var(--accent-cyan, #06b6d4);
+      color:var(--accent-cyan, var(--accent));
     }
     .copy-btn {
-      background:rgba(6,182,212,0.12);
-      border:1px solid rgba(6,182,212,0.3);
+      background:var(--accent-soft);
+      border:1px solid rgba(37,99,235,0.28);
       border-radius:6px;
-      color:var(--accent-cyan, #06b6d4);
-      font-family:'Space Grotesk',sans-serif;
+      color:var(--accent-cyan, var(--accent));
+      font-family:var(--font-display);
       font-size:0.75rem;
       font-weight:600;
       padding:4px 10px;
@@ -127,14 +127,14 @@
       transition:background 0.15s, color 0.15s;
       white-space:nowrap;
     }
-    .copy-btn:hover { background:rgba(6,182,212,0.25); color:#fff; }
-    .copy-btn.copied { background:rgba(34,197,94,0.18); border-color:rgba(34,197,94,0.4); color:#22c55e; }
+    .copy-btn:hover { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .copy-btn.copied { background:rgba(4,120,87,0.10); border-color:rgba(4,120,87,0.28); color:#047857; }
 
     .tag-code {
       display:block;
       font-family:'JetBrains Mono',monospace;
       font-size:0.82rem;
-      color:#c4c4d4;
+      color:var(--ink-muted);
       padding:14px 16px;
       white-space:pre-wrap;
       word-break:break-all;
@@ -150,7 +150,7 @@
 
     /* Results section heading */
     .results-heading {
-      font-family:'Space Grotesk',sans-serif;
+      font-family:var(--font-display);
       font-size:1.15rem;
       font-weight:700;
       color:var(--text);
@@ -164,7 +164,7 @@
 
     /* Section dividers inside results */
     .results-section-title {
-      font-family:'Space Grotesk',sans-serif;
+      font-family:var(--font-display);
       font-size:0.72rem;
       font-weight:700;
       text-transform:uppercase;
@@ -177,11 +177,11 @@
     /* Warning badge */
     .warn-badge {
       display:inline-block;
-      background:rgba(245,158,11,0.12);
-      border:1px solid rgba(245,158,11,0.35);
+      background:rgba(180,83,9,0.10);
+      border:1px solid rgba(180,83,9,0.30);
       border-radius:6px;
-      color:#f59e0b;
-      font-family:'Space Grotesk',sans-serif;
+      color:#b45309;
+      font-family:var(--font-display);
       font-size:0.75rem;
       font-weight:600;
       padding:2px 8px;
@@ -193,7 +193,7 @@
 <body>
 
 <!-- ===== SKOOL BANNER ===== -->
-<div class="skool-banner" style="background:#2563eb;color:white;text-align:center;padding:12px;font-weight:600;font-family:'Space Grotesk',sans-serif;">
+<div class="skool-banner" style="background:var(--accent);color:white;text-align:center;padding:12px;font-weight:600;font-family:var(--font-display);">
   Want to learn how to save time and money with AI? → <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color:white;text-decoration:underline;margin-left:5px;">Join the AI Academy</a>
 </div>
 <nav aria-label="Main navigation">
@@ -219,7 +219,7 @@
     <div class="tool-card">
 
       <div class="field-group">
-        <label class="tool-label" for="pageTitle">Page Title <span style="color:#ef4444">*</span></label>
+        <label class="tool-label" for="pageTitle">Page Title <span style="color:#b91c1c">*</span></label>
         <input
           type="text"
           id="pageTitle"
@@ -227,12 +227,12 @@
           placeholder="e.g. Best Coffee Shops in Austin | CoffeeFinder"
           maxlength="120"
         />
-        <div class="title-len-bar"><div class="title-len-fill" id="titleFill" style="width:0%;background:#06b6d4;"></div></div>
+        <div class="title-len-bar"><div class="title-len-fill" id="titleFill" style="width:0%;background:var(--accent);"></div></div>
         <div class="char-counter char-ok" id="titleCounter">0 / 60 recommended</div>
       </div>
 
       <div class="field-group">
-        <label class="tool-label" for="metaDesc">Meta Description <span style="color:#ef4444">*</span></label>
+        <label class="tool-label" for="metaDesc">Meta Description <span style="color:#b91c1c">*</span></label>
         <textarea
           id="metaDesc"
           class="tool-input"
@@ -243,7 +243,7 @@
       </div>
 
       <div class="field-group">
-        <label class="tool-label" for="pageUrl">Page URL <span style="color:#ef4444">*</span></label>
+        <label class="tool-label" for="pageUrl">Page URL <span style="color:#b91c1c">*</span></label>
         <input
           type="url"
           id="pageUrl"
@@ -436,7 +436,7 @@
   // Nav scroll shadow
   const navEl = document.querySelector('nav');
   window.addEventListener('scroll', () => {
-    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
   }, { passive: true });
 
   // --- Live character counters ---
@@ -454,19 +454,19 @@
     const pct = Math.min(len / 60 * 100, 100);
     titleFill.style.width = pct + '%';
     if (len === 0) {
-      titleFill.style.background = '#06b6d4';
+      titleFill.style.background = 'var(--accent)';
       titleCounter.textContent = '0 / 60 recommended';
       titleCounter.className = 'char-counter char-ok';
     } else if (len <= 60) {
-      titleFill.style.background = '#06b6d4';
+      titleFill.style.background = 'var(--accent)';
       titleCounter.textContent = len + ' / 60 recommended';
       titleCounter.className = 'char-counter char-ok';
     } else if (len <= 70) {
-      titleFill.style.background = '#f59e0b';
+      titleFill.style.background = '#b45309';
       titleCounter.textContent = len + ' / 60 recommended (a bit long)';
       titleCounter.className = 'char-counter char-warn';
     } else {
-      titleFill.style.background = '#ef4444';
+      titleFill.style.background = '#b91c1c';
       titleCounter.textContent = len + ' / 60 recommended (too long for SERPs)';
       titleCounter.className = 'char-counter char-over';
     }

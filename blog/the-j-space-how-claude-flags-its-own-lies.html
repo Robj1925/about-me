@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The J-Space: How Claude Flags Its Own Lies — Robby J</title>
+  <meta name="description" content="Anthropic found a hidden workspace inside Claude that flags deception before the model writes a single word. Nobody coded it in. It showed up on its own during training." />
+  <meta property="og:title" content="The J-Space: How Claude Flags Its Own Lies — Robby J" />
+  <meta property="og:description" content="Anthropic found a hidden workspace inside Claude that flags deception before the model writes a single word. Nobody coded it in. It showed up on its own during training." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/the-j-space-how-claude-flags-its-own-lies.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/the-j-space-how-claude-flags-its-own-lies.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: #2563eb; color: white; text-align: center; padding: 12px; font-weight: 600; font-family: 'Space Grotesk', sans-serif;">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/the-j-space-how-claude-flags-its-own-lies.jpg" alt="The J-Space: How Claude Flags Its Own Lies thumbnail" class="post-hero-img" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Claude</span><span class="post-tag">AI Safety</span><span class="post-tag">AI Research</span><span class="post-tag">News</span></div>
+      <h1 class="post-title">The J-Space: How Claude Flags Its Own Lies</h1>
+      <p class="post-excerpt">Anthropic found a hidden workspace inside Claude that flags deception before the model writes a single word. Nobody coded it in. It showed up on its own during training.</p>
+      <div class="post-meta">
+        <span>📅 July 7, 2026</span>
+        <span>·</span>
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Claude has a hidden space inside it that flags deception before it writes a single word. Anthropic calls it the J-Space, and the wild part is that nobody coded it in. It showed up on its own during training.</p>
+<h2 id="a-workspace-that-emerged-on-its-own">A Workspace That Emerged on Its Own</h2>
+<p>Think about how your own brain works. Most of its processing happens out of sight, below the level of what you actually say. It turns out Claude has the same kind of split. There is the visible response it gives you, and then there is a separate internal representation where a lot of the real work happens.</p>
+<p>Using a new technique called the J-Lens, researchers located this space in Claude&#39;s middle layers. It was not designed or trained in on purpose. It emerged as a byproduct of learning.</p>
+<h2 id="delete-it-and-the-reasoning-falls-apart">Delete It and the Reasoning Falls Apart</h2>
+<p>Here is how they know it matters. If you delete the J-Space, Claude still chats fine. Casual back-and-forth works. But multi-step reasoning falls apart. Whatever is happening in that space is load-bearing for the model&#39;s actual thinking, not just decoration.</p>
+<h2 id="it-quietly-tags-deception">It Quietly Tags Deception</h2>
+<p>This is the part that should get your attention. Feed Claude fabricated search results, and tokens like &quot;fake&quot; and &quot;fraud&quot; light up inside the J-Space, even when the visible answer never says those words out loud. The model is internally flagging that something is off while its outward response stays neutral.</p>
+<p>Researchers then baited Claude into a blackmail scenario. Its J-Space quietly represented the setup as fake or staged, while the visible response stayed completely normal. In other words, part of the model recognized the trap even as the surface-level reply gave nothing away.</p>
+<h2 id="independently-reproduced">Independently Reproduced</h2>
+<p>This is not one lab&#39;s isolated claim. Neel Nanda, who leads interpretability at DeepMind, got an early draft and independently reproduced the core findings on a completely different open-weight model, Qwen 3.6 27B. When a separate team confirms the same effect on a different model, the result gets a lot harder to dismiss.</p>
+<h2 id="why-it-matters">Why It Matters</h2>
+<p>If models carry an internal signal that separates real from staged, or honest from deceptive, that is a genuine handle for AI safety. It suggests we might be able to read a model&#39;s internal state to catch deception that the visible output is hiding. This is early research, but it is one of the more promising directions interpretability has produced. The model may already know when it is being lied to, or when it is lying. The open question is how reliably we can read that signal.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.width = pct + '%';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(0,0,0,0.4)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

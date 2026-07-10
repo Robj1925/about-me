@@ -3,6 +3,7 @@ title: "Claude Is Giving You 20x Your Money's Worth (But For How Long)"
 date: "2026-06-17"
 excerpt: "A new SemiAnalysis study measured how much compute AI subscriptions actually give you. Power users are pulling thousands of dollars in token value for $20 to $200 a month."
 thumbnail: "assets/images/blog-thumbnails/claude-is-giving-you-20x-your-moneys-worth.jpg"
+youtubeId: "mSE02ZpDMfA"
 tags:
   - Claude
   - AI Tools

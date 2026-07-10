@@ -3,6 +3,7 @@ title: "Fable 5 Got Banned for Something GPT 5.5 Can Also Do"
 date: "2026-07-07"
 excerpt: "Claude Fable 5 is back online. It got hit with export controls over a jailbreak that writes exploit code, but new tests show every major model has the exact same weakness."
 thumbnail: "assets/images/blog-thumbnails/fable-5-got-banned-for-something-gpt-5-5-can-also-do.jpg"
+youtubeId: "SiPFD49Xsa8"
 tags:
   - Claude
   - AI News

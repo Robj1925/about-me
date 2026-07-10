@@ -3,6 +3,7 @@ title: "How to Build a Claude Skill in 60 Seconds"
 date: "2026-07-05"
 excerpt: "A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one."
 thumbnail: "assets/images/blog-thumbnails/how-to-build-a-claude-skill-in-60-seconds.jpg"
+youtubeId: "EGhSccJ5JcQ"
 tags:
   - Claude
   - Claude Code

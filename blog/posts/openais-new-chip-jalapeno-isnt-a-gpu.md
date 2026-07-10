@@ -3,6 +3,7 @@ title: "OpenAI's New Chip Isn't a GPU. It's Something Else."
 date: "2026-07-04"
 excerpt: "OpenAI just announced Jalapeño, a custom chip built from scratch for AI inference. The wild part: OpenAI used its own models to design it in nine months."
 thumbnail: "assets/images/blog-thumbnails/openais-new-chip-jalapeno-isnt-a-gpu.jpg"
+youtubeId: "Rzlgw_BZBKc"
 tags:
   - OpenAI
   - AI Hardware

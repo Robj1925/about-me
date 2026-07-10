@@ -3,7 +3,7 @@ title: "OpenClaw Skills Explained: A Beginner's Guide"
 date: "2026-04-05"
 excerpt: "OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own."
 thumbnail: "assets/images/blog-thumb-3.jpg"
-youtubeId: ""
+youtubeId: "Jxtue8U7__s"
 tags: ["Beginner Guide", "OpenClaw", "AI Automation"]
 ---
 

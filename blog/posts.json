@@ -5,7 +5,7 @@
     "date": "2026-07-09",
     "excerpt": "A new open-weight coding model handled a real bug fix, found the root cause, and deployed a dashboard for $3.36. Here is why it is becoming a default workhorse.",
     "thumbnail": "assets/images/blog-thumbnails/glm-5-2-fixed-a-bug-for-3-36-in-45-minutes.jpg",
-    "youtubeId": null,
+    "youtubeId": "CXrNMyItvnU",
     "tags": [
       "AI Models",
       "Coding",
@@ -20,7 +20,7 @@
     "date": "2026-07-09",
     "excerpt": "OpenAI's new voice model processes speech directly instead of converting it to text first. That means less lag, smoother conversations, and it finally stops mangling order numbers.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-realtime-2-1-the-speech-to-speech-voice-model.jpg",
-    "youtubeId": null,
+    "youtubeId": "--LpmFDKwOY",
     "tags": [
       "OpenAI",
       "Voice AI",
@@ -35,7 +35,7 @@
     "date": "2026-07-08",
     "excerpt": "Anthropic found a hidden workspace inside Claude that flags deception before the model writes a single word. Nobody coded it in. It showed up on its own during training.",
     "thumbnail": "assets/images/blog-thumbnails/the-j-space-how-claude-flags-its-own-lies.jpg",
-    "youtubeId": null,
+    "youtubeId": "N__Bt2CjJWg",
     "tags": [
       "Claude",
       "AI Safety",
@@ -50,7 +50,7 @@
     "date": "2026-07-07",
     "excerpt": "Anthropic just shipped a desktop app that doesn't just talk about science. It writes and runs the code to analyze proteins, molecules, and genomics, and it checks its own work.",
     "thumbnail": "assets/images/blog-thumbnails/claude-science-anthropics-ai-app-for-real-lab-work.jpg",
-    "youtubeId": null,
+    "youtubeId": "s9bcenCD1AM",
     "tags": [
       "Claude",
       "AI Tools",
@@ -64,7 +64,7 @@
     "date": "2026-07-07",
     "excerpt": "Claude Fable 5 is back online. It got hit with export controls over a jailbreak that writes exploit code, but new tests show every major model has the exact same weakness.",
     "thumbnail": "assets/images/blog-thumbnails/fable-5-got-banned-for-something-gpt-5-5-can-also-do.jpg",
-    "youtubeId": null,
+    "youtubeId": "SiPFD49Xsa8",
     "tags": [
       "Claude",
       "AI News",
@@ -78,7 +78,7 @@
     "date": "2026-07-05",
     "excerpt": "A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-build-a-claude-skill-in-60-seconds.jpg",
-    "youtubeId": null,
+    "youtubeId": "EGhSccJ5JcQ",
     "tags": [
       "Claude",
       "Claude Code",
@@ -106,7 +106,7 @@
     "date": "2026-07-04",
     "excerpt": "OpenAI just announced Jalapeño, a custom chip built from scratch for AI inference. The wild part: OpenAI used its own models to design it in nine months.",
     "thumbnail": "assets/images/blog-thumbnails/openais-new-chip-jalapeno-isnt-a-gpu.jpg",
-    "youtubeId": null,
+    "youtubeId": "Rzlgw_BZBKc",
     "tags": [
       "OpenAI",
       "AI Hardware",
@@ -120,7 +120,7 @@
     "date": "2026-07-01",
     "excerpt": "Google Flow now pulls real Google Maps Street View data into AI video generation. Type a landmark, get a scene that actually matches the real location.",
     "thumbnail": "assets/images/blog-thumbnails/ai-video-now-uses-real-google-maps-imagery.jpg",
-    "youtubeId": null,
+    "youtubeId": "Vox578tuyRQ",
     "tags": [
       "AI Video",
       "Google Flow",
@@ -149,7 +149,7 @@
     "date": "2026-06-23",
     "excerpt": "Fugu from Sakana AI is not a single model. It is a multi-agent system that orchestrates Claude, GPT, and Gemini under one API, and it tops the leaderboard on nearly every benchmark.",
     "thumbnail": "assets/images/blog-thumbnails/sakana-fugu-beats-claude-gpt-5-and-gemini-on-every-benchmark.png",
-    "youtubeId": null,
+    "youtubeId": "_aQp6PClhFQ",
     "tags": [
       "AI Models",
       "Sakana AI",
@@ -164,7 +164,7 @@
     "date": "2026-06-17",
     "excerpt": "A new SemiAnalysis study measured how much compute AI subscriptions actually give you. Power users are pulling thousands of dollars in token value for $20 to $200 a month.",
     "thumbnail": "assets/images/blog-thumbnails/claude-is-giving-you-20x-your-moneys-worth.jpg",
-    "youtubeId": null,
+    "youtubeId": "mSE02ZpDMfA",
     "tags": [
       "Claude",
       "AI Tools",
@@ -343,22 +343,6 @@
     "readTime": 3
   },
   {
-    "slug": "notebooklm-full-course-the-complete-guide-2026",
-    "title": "Master NotebookLM: The Ultimate Guide to Organizing Your AI Knowledge (2026)",
-    "date": "2026-05-08",
-    "excerpt": "Learn how to turn your notes, videos, and PDFs into an organized AI brain using the latest features in NotebookLM.",
-    "thumbnail": "assets/images/blog-thumbnails/notebooklm-full-course-the-complete-guide-2026.jpg",
-    "youtubeId": "PgmwxA1I94Y",
-    "tags": [
-      "AI",
-      "NotebookLM",
-      "Productivity",
-      "Machine Learning",
-      "Tech Tutorial"
-    ],
-    "readTime": 3
-  },
-  {
     "slug": "openclaw-5-4-is-insane-here-s-why",
     "title": "OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant",
     "date": "2026-05-06",
@@ -425,7 +409,7 @@
     "date": "2026-05-01",
     "excerpt": "Everything you need to know about Google's NotebookLM — from uploading sources and asking questions, to generating audio overviews and building research workflows.",
     "thumbnail": "assets/images/blog-thumb-1.jpg",
-    "youtubeId": null,
+    "youtubeId": "PgmwxA1I94Y",
     "tags": [
       "Full Course",
       "NotebookLM",
@@ -561,7 +545,7 @@
     "date": "2026-04-05",
     "excerpt": "OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own.",
     "thumbnail": "assets/images/blog-thumb-3.jpg",
-    "youtubeId": null,
+    "youtubeId": "Jxtue8U7__s",
     "tags": [
       "Beginner Guide",
       "OpenClaw",
@@ -647,22 +631,6 @@
       "Software Engineering"
     ],
     "readTime": 2
-  },
-  {
-    "slug": "openclaw-skills-explained-a-beginner-s-guide",
-    "title": "OpenClaw Skills: How to Turn Your AI Into a Super-Powered Helper",
-    "date": "2026-03-20",
-    "excerpt": "Learn how to turn your AI from a simple chatbot into a real-world helper using OpenClaw Skills. This guide shows you how to automate tasks with simple plugins.",
-    "thumbnail": "assets/images/blog-thumbnails/openclaw-skills-explained-a-beginner-s-guide.jpg",
-    "youtubeId": "Jxtue8U7__s",
-    "tags": [
-      "AI",
-      "OpenClaw",
-      "Automation",
-      "Python",
-      "Tutorial"
-    ],
-    "readTime": 3
   },
   {
     "slug": "build-your-first-clawdbot-skill-complete-walkthrough",

@@ -3,6 +3,7 @@ title: "The J-Space: How Claude Flags Its Own Lies"
 date: "2026-07-08"
 excerpt: "Anthropic found a hidden workspace inside Claude that flags deception before the model writes a single word. Nobody coded it in. It showed up on its own during training."
 thumbnail: "assets/images/blog-thumbnails/the-j-space-how-claude-flags-its-own-lies.jpg"
+youtubeId: "N__Bt2CjJWg"
 tags:
   - Claude
   - AI Safety

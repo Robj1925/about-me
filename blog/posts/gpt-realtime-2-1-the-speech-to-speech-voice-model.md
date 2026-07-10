@@ -3,6 +3,7 @@ title: "GPT Realtime 2.1: The Speech-to-Speech Voice Model"
 date: "2026-07-09"
 excerpt: "OpenAI's new voice model processes speech directly instead of converting it to text first. That means less lag, smoother conversations, and it finally stops mangling order numbers."
 thumbnail: "assets/images/blog-thumbnails/gpt-realtime-2-1-the-speech-to-speech-voice-model.jpg"
+youtubeId: "--LpmFDKwOY"
 tags:
   - OpenAI
   - Voice AI

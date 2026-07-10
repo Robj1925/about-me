@@ -3,7 +3,7 @@ title: "NotebookLM Full Course 2026: The Complete Beginner's Guide"
 date: "2026-05-01"
 excerpt: "Everything you need to know about Google's NotebookLM — from uploading sources and asking questions, to generating audio overviews and building research workflows."
 thumbnail: "assets/images/blog-thumb-1.jpg"
-youtubeId: ""
+youtubeId: "PgmwxA1I94Y"
 tags: ["Full Course", "NotebookLM", "AI Tools"]
 ---
 

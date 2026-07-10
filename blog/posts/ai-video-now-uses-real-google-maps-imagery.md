@@ -3,6 +3,7 @@ title: "AI Video Now Uses Real Google Maps Imagery"
 date: "2026-07-01"
 excerpt: "Google Flow now pulls real Google Maps Street View data into AI video generation. Type a landmark, get a scene that actually matches the real location."
 thumbnail: "assets/images/blog-thumbnails/ai-video-now-uses-real-google-maps-imagery.jpg"
+youtubeId: "Vox578tuyRQ"
 tags:
   - AI Video
   - Google Flow

@@ -3,6 +3,7 @@ title: "Sakana Fugu Just Beat Claude, GPT-5, and Gemini on Nearly Every Benchmar
 date: "2026-06-23"
 excerpt: "Fugu from Sakana AI is not a single model. It is a multi-agent system that orchestrates Claude, GPT, and Gemini under one API, and it tops the leaderboard on nearly every benchmark."
 thumbnail: "assets/images/blog-thumbnails/sakana-fugu-beats-claude-gpt-5-and-gemini-on-every-benchmark.png"
+youtubeId: "_aQp6PClhFQ"
 tags:
   - AI Models
   - Sakana AI

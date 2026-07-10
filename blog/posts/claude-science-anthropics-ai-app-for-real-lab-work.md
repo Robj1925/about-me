@@ -3,6 +3,7 @@ title: "Claude Science: Anthropic's AI App for Real Lab Work"
 date: "2026-07-07"
 excerpt: "Anthropic just shipped a desktop app that doesn't just talk about science. It writes and runs the code to analyze proteins, molecules, and genomics, and it checks its own work."
 thumbnail: "assets/images/blog-thumbnails/claude-science-anthropics-ai-app-for-real-lab-work.jpg"
+youtubeId: "s9bcenCD1AM"
 tags:
   - Claude
   - AI Tools

@@ -3,6 +3,7 @@ title: "GLM-5.2 Fixed a Bug for $3.36 in 45 Minutes"
 date: "2026-07-09"
 excerpt: "A new open-weight coding model handled a real bug fix, found the root cause, and deployed a dashboard for $3.36. Here is why it is becoming a default workhorse."
 thumbnail: "assets/images/blog-thumbnails/glm-5-2-fixed-a-bug-for-3-36-in-45-minutes.jpg"
+youtubeId: "CXrNMyItvnU"
 tags:
   - AI Models
   - Coding

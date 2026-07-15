@@ -6,7 +6,7 @@ window.BLOG_POSTS = [
     "date": "2026-07-14",
     "excerpt": "Ask an AI agent for two pages and you get two different looking websites. Google just open sourced a single markdown file that fixes it, and it can catch its own accessibility bugs.",
     "thumbnail": "assets/images/blog-thumbnails/googles-design-md-fixes-ais-brand-consistency-problem.jpg",
-    "youtubeId": null,
+    "youtubeId": "BpFhJFatpx4",
     "tags": [
       "AI Tools",
       "Design Systems",

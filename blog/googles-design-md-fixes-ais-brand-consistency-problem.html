@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google's DESIGN.md Fixes AI's Brand Consistency Problem — Robby J</title>
+  <meta name="description" content="Ask an AI agent for two pages and you get two different looking websites. Google just open sourced a single markdown file that fixes it, and it can catch its own accessibility bugs." />
+  <meta property="og:title" content="Google's DESIGN.md Fixes AI's Brand Consistency Problem — Robby J" />
+  <meta property="og:description" content="Ask an AI agent for two pages and you get two different looking websites. Google just open sourced a single markdown file that fixes it, and it can catch its own accessibility bugs." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/googles-design-md-fixes-ais-brand-consistency-problem.jpg" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/googles-design-md-fixes-ais-brand-consistency-problem.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/googles-design-md-fixes-ais-brand-consistency-problem.jpg" alt="Google's DESIGN.md Fixes AI's Brand Consistency Problem thumbnail" class="post-hero-img" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI Tools</span><span class="post-tag">Design Systems</span><span class="post-tag">Google</span><span class="post-tag">Tutorial</span></div>
+      <h1 class="post-title">Google's DESIGN.md Fixes AI's Brand Consistency Problem</h1>
+      <p class="post-excerpt">Ask an AI agent for two pages and you get two different looking websites. Google just open sourced a single markdown file that fixes it, and it can catch its own accessibility bugs.</p>
+      <div class="post-meta">
+        <span>📅 July 13, 2026</span>
+        <span>·</span>
+        <span>⏱ 5 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>You ask Claude Code for two pages and you get two different looking websites. Different blues, different buttons, no consistency. Google just fixed that with one markdown file called DESIGN.md.</p>
+<h2 id="the-problem-it-actually-solves">The Problem It Actually Solves</h2>
+<p>Every design system holds two kinds of information: the reasoning (why you chose a color or font) and the values (the actual hex codes and sizes). Normally those live in separate places. Reasoning sits in a style guide, values sit in a config file like Tailwind, and over time they drift apart. The docs say one thing, the code says another, and your AI agent has no idea which one to trust.</p>
+<p>DESIGN.md is one file that holds your colors, fonts, spacing, and component rules, plus the reasoning behind all of it. Your AI agent reads it before it builds anything, so it stops guessing what your brand looks like.</p>
+<p>It started inside Google Stitch, Google&#39;s AI design tool. Google just open sourced the spec, so now it works in any tool: Claude Code, Cursor, Codex, same file, same result.</p>
+<h2 id="tokens-are-decisions-not-hex-codes">Tokens Are Decisions, Not Hex Codes</h2>
+<p>This is the most important idea in the standard. Get this and everything else clicks.</p>
+<p>Inside a DESIGN.md file, you will see the word &quot;token&quot; everywhere. Your instinct is that a token is a variable, a saved color. It is not. A token is a decision.</p>
+<p>When the file says <code>primary</code> is a color, primary is really a role: the main ink of your page, your text and headlines. The hex code is just whatever fills that role right now. Same with type. <code>body</code> is not a font size. It is the role of your default body copy.</p>
+<p>The spec makes some of this mandatory. Every DESIGN.md file needs a <code>primary</code> (your ink and text) and a <code>neutral</code> (your canvas and background). Once you start thinking in roles instead of specific hex values, you design differently. You stop trying to match a specific blue and start reaching for a role that serves a purpose.</p>
+<h2 id="the-structure-two-layers">The Structure: Two Layers</h2>
+<p>A DESIGN.md file has two layers. Up top, YAML frontmatter holds your tokens. Below it, a normal markdown body holds the reasoning in sections.</p>
+<p>Here is a real example from Google&#39;s own spec, a system they call Heritage:</p>
+<pre><code class="language-yaml">name: Heritage
+colors:
+  primary:  &quot;#1A1C1E&quot;  # the ink, your text
+  neutral:  &quot;#F7F5F2&quot;  # the canvas
+  tertiary: &quot;#B8422E&quot;  # the accent
+typography:
+  h1: { fontFamily: Public Sans, fontSize: 3rem }
+</code></pre>
+<p>The body below it follows a fixed section order: Overview, Colors, Typography, Layout, Elevation, Shapes, Components, and Do&#39;s and Don&#39;ts. That last section is exactly what it sounds like: a list of things you never do. It keeps an agent on brand.</p>
+<p>The glue is token references. Instead of pasting a hex value directly into a button, you point it at <code>colors.primary</code>. The button borrows the role instead of owning a color. Change what primary points to, and everything referencing it updates at once.</p>
+<h2 id="three-things-google-just-shipped">Three Things Google Just Shipped</h2>
+<p>This is news right now because Google shipped an update with three parts:</p>
+<ol>
+<li><strong>The spec itself.</strong> The first documented draft of what a DESIGN.md file is, published on GitHub. Before this, every tool generated a slightly different version and none of them matched. The spec is the common ground.</li>
+<li><strong>The tokens section.</strong> Keeps the reasoning and the values together in one place instead of three.</li>
+<li><strong>A command line tool.</strong> One <code>npx</code> command. This is where it stops being a text file and starts being something an agent can trust.</li>
+</ol>
+<h2 id="the-cli-validates-not-just-formats">The CLI Validates, Not Just Formats</h2>
+<p>The CLI does not just clean up formatting. It validates the file against the spec. Whenever an agent makes a change, it can check its own work.</p>
+<p>Here is the demo that sold me. An agent adds an accent button with white text on a gold background. It looks fine. Then it runs the linter:</p>
+<pre><code>$ npx @google/design.md lint DESIGN.md
+warning: textColor (#ffffff) on backgroundColor (#f2a900) has contrast ratio
+2.01:1, below WCAG AA minimum of 4.5:1.
+</code></pre>
+<p>The agent&#39;s own accessibility bug, caught before anyone ever saw the page. The fix is one line: point the button at the primary ink color instead of white. Lint again, zero warnings.</p>
+<p>The linter also flags broken references, a missing primary, orphaned tokens, and sections that are out of order. As Google&#39;s David East put it, the file is not just something an agent consumes. It is something an agent can rely on. The CLI can also diff two versions to show exactly what changed, and export your tokens straight into Tailwind so it plugs directly into a real codebase.</p>
+<h2 id="running-it-hands-free">Running It Hands Free</h2>
+<p>In Antigravity, you can skip the terminal entirely. Point an agent at your DESIGN.md file and ask it in plain English: &quot;Add a call to action button to the components section using white text on a gold accent background.&quot; The agent edits the file, runs the linter itself, sees the same contrast warning, and corrects the color on its own. You never touch the terminal.</p>
+<p>That is the whole point. Keep one file in your repo, point your agent at it, whether that is Antigravity, Claude Code, or Cursor. It builds, checks its own work, and fixes what it finds. Same tool, same file, every time.</p>
+<h2 id="the-honest-caveat">The Honest Caveat</h2>
+<p>This is still the alpha version. The spec, the CLI, and the components sections are all still moving. Google says it plainly: treat DESIGN.md as a strong workflow pattern, not a replacement for designers, accessibility review, or brand approval.</p>
+<p>But the core idea is right: a portable, plain text design system that any agent can read and check itself against. This is where the industry is headed, and getting in early is worth it. If you build with Claude Code, generate a DESIGN.md file, drop it in your repo, and point your agent at it.</p>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

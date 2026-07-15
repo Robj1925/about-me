@@ -46,7 +46,10 @@ def create_ico(png_paths, ico_path):
     print(f"Created ICO at {ico_path}")
 
 def main():
-    src_png = "/Users/robby/.gemini/antigravity/brain/eb854c2f-561a-4ba9-b9ed-d6406c2bc14c/robby_animated_avatar_1779456694113.png"
+    # Source: cobalt tile, bold white "R" (Bricolage Grotesque), rendered at 2048x2048
+    # via a chrome-devtools screenshot of scripts/favicon-source.html, matching the
+    # site's light/cobalt redesign. Re-render that HTML file to regenerate this PNG.
+    src_png = "/Users/robby/Documents/Projects/about-me/scripts/favicon-source.png"
     dest_dir = "/Users/robby/Documents/Projects/about-me/assets/images/favicon"
     os.makedirs(dest_dir, exist_ok=True)
     

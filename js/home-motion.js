@@ -47,6 +47,7 @@
   /* --- SECTION REVEALS (static sections). --- */
   reveal('#social-proof', '#social-proof .proof-item');
   reveal('#about',        '#about .about-intro, #about .about-body');
+  reveal('#products',     '#products .home-head, #products .product-card');
   reveal('#testimonials', '#testimonials .home-head, #testimonials .quote');
   reveal('#services',     '#services .home-head, #services .service-card');
   reveal('#videos',       '#videos .home-head, #videos .video-card');
@@ -71,7 +72,7 @@
      (e.g. an observer edge case), force it visible. Motion is a bonus, never a
      gate on content. */
   setTimeout(function () {
-    gsap.utils.toArray('#social-proof .proof-item, #about .about-intro, #about .about-body, #testimonials .quote, #services .service-card, #videos .video-card, #projects .proj-row, #contact .contact-band, #blog .blog-card, .home-head')
+    gsap.utils.toArray('#social-proof .proof-item, #about .about-intro, #about .about-body, #products .product-card, #testimonials .quote, #services .service-card, #videos .video-card, #projects .proj-row, #contact .contact-band, #blog .blog-card, .home-head')
       .forEach(function (el) {
         if (parseFloat(getComputedStyle(el).opacity) < 0.05) gsap.set(el, { opacity: 1, y: 0 });
       });

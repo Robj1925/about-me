@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Free AI Tools — Robby J</title>
-  <meta name="description" content="Free AI tools for developers, content creators, and business owners. Built by Robby J — AI engineer and creator." />
-  <meta property="og:title" content="Free AI Tools — Robby J" />
-  <meta property="og:description" content="Free AI tools for developers, content creators, and business owners." />
+  <title>Products &amp; Free AI Tools — Robby J</title>
+  <meta name="description" content="Products and free AI tools by Robby J: Recording Studio (browser screen + camera recorder), OpenFlow (on-device macOS dictation), and 20+ free tools for developers and creators." />
+  <meta property="og:title" content="Products &amp; Free AI Tools — Robby J" />
+  <meta property="og:description" content="Recording Studio, OpenFlow, and 20+ free AI tools for developers, content creators, and business owners." />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://automatewithrobby.fyi/tools/" />
   <link rel="stylesheet" href="../css/styles.css" />
@@ -22,6 +22,32 @@
     gtag('js', new Date());
     gtag('config', 'G-T1RQQC7CB5');
   </script>
+  <style>
+    /* Featured product cards (mirrors the homepage products section) */
+    .products-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 8px; }
+    .product-card {
+      display: flex; flex-direction: column;
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden; color: inherit;
+      transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+    }
+    .product-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: var(--border-strong); }
+    .product-shot { aspect-ratio: 16 / 9; overflow: hidden; border-bottom: 1px solid var(--border); background: var(--surface-2); }
+    .product-shot img { width: 100%; height: 100%; object-fit: cover; object-position: top center; display: block; }
+    .product-body { display: flex; flex-direction: column; gap: 12px; padding: 24px 26px 26px; flex: 1; }
+    .product-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .product-name { font-family: var(--font-display); font-size: 1.35rem; font-weight: 700; letter-spacing: -0.01em; margin: 0; color: var(--ink); }
+    .product-badge {
+      font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.02em; white-space: nowrap;
+      color: var(--accent-hover); background: var(--accent-soft); padding: 5px 12px; border-radius: var(--radius-pill);
+    }
+    .product-badge-pro { color: var(--accent-ink); background: var(--accent); }
+    .product-desc { color: var(--ink-muted); font-size: 0.975rem; line-height: 1.6; margin: 0; flex: 1; }
+    .product-cta { display: inline-flex; align-items: center; gap: 6px; color: var(--accent); font-weight: 600; font-size: 0.95rem; transition: gap var(--transition); }
+    .product-card:hover .product-cta { gap: 10px; color: var(--accent-hover); }
+    @media (max-width: 900px) { .products-grid { grid-template-columns: 1fr; } }
+    @media (prefers-reduced-motion: reduce) { .product-card:hover { transform: none; } }
+  </style>
 </head>
 <body>
 
@@ -45,9 +71,48 @@
 <main style="padding-top:100px;padding-bottom:80px;min-height:100vh;">
   <div class="container">
     <div class="section-header" style="margin-bottom:48px;">
-      <span class="section-tag">// free_tools</span>
-      <h1>Free AI Tools</h1>
-      <p style="max-width:560px;margin:0 auto;">No login required. No credit card. Just useful tools built for developers, creators, and business owners working with AI.</p>
+      <span class="section-tag">// products</span>
+      <h1>Products</h1>
+      <p style="max-width:560px;margin:0 auto;">Software I built and use every day. Two flagship products up top, plus 20+ free AI tools below.</p>
+    </div>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <div class="products-grid">
+
+      <a href="https://recording-studio-7vg.pages.dev" target="_blank" rel="noopener" class="product-card" id="product-recording-studio">
+        <div class="product-shot">
+          <img src="../assets/images/products/recording-studio.jpg" alt="Recording Studio: browser-based screen and camera recorder with a broadcast-console interface" loading="lazy" />
+        </div>
+        <div class="product-body">
+          <div class="product-head">
+            <h2 class="product-name">Recording Studio</h2>
+            <span class="product-badge product-badge-pro">Free + Pro</span>
+          </div>
+          <p class="product-desc">A recording studio in your browser tab. Screen plus camera, green-screen keying, 4K, editor-ready MP4/MOV exports. Your footage never leaves your machine.</p>
+          <span class="product-cta">Launch the studio <span aria-hidden="true">&rarr;</span></span>
+        </div>
+      </a>
+
+      <a href="https://robj1925.github.io/open-flow/" target="_blank" rel="noopener" class="product-card" id="product-openflow">
+        <div class="product-shot">
+          <img src="../assets/images/products/openflow.png" alt="OpenFlow: on-device voice dictation for macOS. Talk, your Mac types." loading="lazy" />
+        </div>
+        <div class="product-body">
+          <div class="product-head">
+            <h2 class="product-name">OpenFlow</h2>
+            <span class="product-badge">Free &amp; open source</span>
+          </div>
+          <p class="product-desc">On-device voice dictation for macOS. Hold a key, speak, release: your words land wherever your cursor is. No cloud, no subscription.</p>
+          <span class="product-cta">Get it for Mac <span aria-hidden="true">&rarr;</span></span>
+        </div>
+      </a>
+
+    </div>
+
+    <!-- ===== FREE TOOLS ===== -->
+    <div class="section-header" id="free-tools" style="margin:80px 0 40px;">
+      <h2>Free AI tools</h2>
+      <p style="max-width:560px;margin:12px auto 0;">No login required. No credit card. Just useful tools built for developers, creators, and business owners working with AI.</p>
     </div>
 
     <div class="blog-grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
@@ -157,7 +222,7 @@
           <div style="font-size:2rem;margin-bottom:12px;">💸</div>
           <span class="blog-tag">No API Key</span>
           <h2 class="blog-title" style="font-size:1.1rem;">Website Cost Estimator</h2>
-          <p class="blog-excerpt">Answer 5 questions about your business and get a personalized website cost estimate — plus see if you're overpaying.</p>
+          <p class="blog-excerpt">Answer 5 questions about your business and get a personalized website cost estimate, plus see if you're overpaying.</p>
           <span style="font-size:0.85rem;color:var(--accent-cyan);font-weight:500;">Use Tool →</span>
         </div>
       </a>
@@ -167,7 +232,7 @@
           <div style="font-size:2rem;margin-bottom:12px;">✍️</div>
           <span class="blog-tag">Gemini API</span>
           <h2 class="blog-title" style="font-size:1.1rem;">Website Copy Generator</h2>
-          <p class="blog-excerpt">Enter your business name, what you do, and who you serve — get ready-to-use hero, about, and services copy in seconds.</p>
+          <p class="blog-excerpt">Enter your business name, what you do, and who you serve. Get ready-to-use hero, about, and services copy in seconds.</p>
           <span style="font-size:0.85rem;color:var(--accent-cyan);font-weight:500;">Use Tool →</span>
         </div>
       </a>
@@ -187,7 +252,7 @@
           <div style="font-size:2rem;margin-bottom:12px;">🔧</div>
           <span class="blog-tag">No API Key</span>
           <h2 class="blog-title" style="font-size:1.1rem;">Website Maintenance Cost Calculator</h2>
-          <p class="blog-excerpt">See what you're actually spending on website maintenance — and whether a monthly support plan would save you money.</p>
+          <p class="blog-excerpt">See what you're actually spending on website maintenance, and whether a monthly support plan would save you money.</p>
           <span style="font-size:0.85rem;color:var(--accent-cyan);font-weight:500;">Use Tool →</span>
         </div>
       </a>
@@ -217,7 +282,7 @@
           <div style="font-size:2rem;margin-bottom:12px;">⚡</div>
           <span class="blog-tag">Gemini API</span>
           <h2 class="blog-title" style="font-size:1.1rem;">AI Prompt Optimizer</h2>
-          <p class="blog-excerpt">Paste any prompt — get a better version back with a breakdown of exactly what changed and why it works better.</p>
+          <p class="blog-excerpt">Paste any prompt and get a better version back with a breakdown of exactly what changed and why it works better.</p>
           <span style="font-size:0.85rem;color:var(--accent-cyan);font-weight:500;">Use Tool →</span>
         </div>
       </a>

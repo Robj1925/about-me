@@ -15,12 +15,13 @@ body.home .container { max-width: var(--home-maxw); }
 body.home #hero        { background: var(--bg); }
 body.home #social-proof{ background: var(--surface-2); }
 body.home #about       { background: var(--bg); }
-body.home #testimonials{ background: var(--surface-2); }
-body.home #services    { background: var(--bg); }
-body.home #videos      { background: var(--surface-2); }
-body.home #blog        { background: var(--bg); }
-body.home #projects    { background: var(--surface-2); }
-body.home #contact     { background: var(--bg); }
+body.home #products    { background: var(--surface-2); }
+body.home #testimonials{ background: var(--bg); }
+body.home #services    { background: var(--surface-2); }
+body.home #videos      { background: var(--bg); }
+body.home #blog        { background: var(--surface-2); }
+body.home #projects    { background: var(--bg); }
+body.home #contact     { background: var(--surface-2); }
 
 /* ---- Shared left-aligned section header for the homepage ---- */
 body.home .home-head {
@@ -312,6 +313,7 @@ body.home #contact-cta-btn:hover {
    RESPONSIVE
    ========================================================================= */
 @media (max-width: 980px) {
+  body.home .products-grid { grid-template-columns: 1fr; }
   body.home .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   body.home .hero-portrait { justify-self: start; max-width: 360px; }
   body.home #hero { min-height: 0; padding-top: clamp(2.5rem, 7vw, 4rem); }
@@ -351,6 +353,67 @@ body.home #contact-cta-btn:hover {
   body.home .service-card:hover,
   body.home .video-card:hover,
   body.home .blog-card:hover,
-  body.home .service-primary:hover { transform: none; }
+  body.home .service-primary:hover,
+  body.home .product-card:hover { transform: none; }
   body.home .video-card:hover .video-play { transform: translate(-50%, -50%); }
 }
+
+/* =========================================================================
+   PRODUCTS — two flagship product cards (Recording Studio, OpenFlow)
+   ========================================================================= */
+body.home .products-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+}
+body.home .product-card {
+  display: flex; flex-direction: column;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+body.home .product-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--border-strong);
+}
+body.home .product-shot {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+}
+body.home .product-shot img {
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
+}
+body.home .product-body {
+  display: flex; flex-direction: column; gap: 12px;
+  padding: 24px 26px 26px;
+  flex: 1;
+}
+body.home .product-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+}
+body.home .product-name {
+  font-family: var(--font-display); font-size: 1.35rem; font-weight: 700;
+  letter-spacing: -0.01em; margin: 0; color: var(--ink);
+}
+body.home .product-badge {
+  font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.02em; white-space: nowrap;
+  color: var(--accent-hover); background: var(--accent-soft);
+  padding: 5px 12px; border-radius: var(--radius-pill);
+}
+body.home .product-badge-pro {
+  color: var(--accent-ink); background: var(--accent);
+}
+body.home .product-desc {
+  color: var(--ink-muted); font-size: 0.975rem; line-height: 1.6; margin: 0; flex: 1;
+}
+body.home .product-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--accent); font-weight: 600; font-size: 0.95rem;
+  transition: gap var(--transition);
+}
+body.home .product-card:hover .product-cta { gap: 10px; color: var(--accent-hover); }
+

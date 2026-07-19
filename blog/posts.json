@@ -1,5 +1,80 @@
 [
   {
+    "slug": "grok-4-5-least-hallucinating-ai-model",
+    "title": "Grok 4.5 Is the AI That Hallucinates the Least (And Costs a Fraction)",
+    "date": "2026-07-18",
+    "excerpt": "xAI's Grok 4.5 tops the one benchmark that rewards correct answers and punishes confident wrong ones. It ranks number one, and it undercuts the frontier models on price.",
+    "thumbnail": "assets/images/blog-thumbnails/grok-4-5-least-hallucinating-ai-model.jpg",
+    "youtubeId": null,
+    "tags": [
+      "AI Models",
+      "xAI",
+      "Benchmarks",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "chatgpt-can-now-talk-gpt-live-full-duplex-voice",
+    "title": "ChatGPT Can Now Talk: OpenAI's GPT Live Goes Full Duplex",
+    "date": "2026-07-17",
+    "excerpt": "OpenAI made GPT Live the default ChatGPT voice for everyone, free users included. It reacts while you talk, quietly calls in a smarter model for hard questions, and people prefer it 76 percent of the time.",
+    "thumbnail": "assets/images/blog-thumbnails/chatgpt-can-now-talk-gpt-live-full-duplex-voice.jpg",
+    "youtubeId": null,
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "Voice AI",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "dont-lose-your-job-to-ai-remote-labor-index",
+    "title": "Don't Lose Your Job to AI: The Remote Labor Index Results",
+    "date": "2026-07-17",
+    "excerpt": "The Center for AI Safety graded AI agents on real paid freelance work against human professionals. Eight months ago the best model finished 4 percent of a project start to finish. Now it finishes 16 percent.",
+    "thumbnail": "assets/images/blog-thumbnails/dont-lose-your-job-to-ai-remote-labor-index.jpg",
+    "youtubeId": null,
+    "tags": [
+      "AI Safety",
+      "Tech Jobs",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "ora-directory-agentic-index-of-the-web",
+    "title": "Ora Directory: AI Agents Now Have Their Own Google",
+    "date": "2026-07-17",
+    "excerpt": "Ora Directory is the agentic index of the web. It scores tools on whether an AI agent can discover, read, and act on them, so you can plug the best ones straight into your projects.",
+    "thumbnail": "assets/images/blog-thumbnails/ora-directory-agentic-index-of-the-web.jpg",
+    "youtubeId": null,
+    "tags": [
+      "AI Agents",
+      "AI Tools",
+      "SEO",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "openflow-free-open-source-wispr-flow-alternative-mac",
+    "title": "OpenFlow: The Free, Open Source Wispr Flow Alternative for Mac",
+    "date": "2026-07-15",
+    "excerpt": "OpenFlow is a free, open source voice dictation app for macOS. Hold a key, speak, and your words appear at your cursor. On device, no cloud, no subscription.",
+    "thumbnail": "assets/images/blog-thumbnails/openflow-free-open-source-wispr-flow-alternative-mac.png",
+    "youtubeId": null,
+    "tags": [
+      "OpenFlow",
+      "Voice AI",
+      "macOS",
+      "Open Source",
+      "Privacy"
+    ],
+    "readTime": 8
+  },
+  {
     "slug": "the-2026-ai-stack-6-tools-that-replaced-the-old-ones",
     "title": "The 2026 AI Stack: 6 Tools That Replaced the Old Ones",
     "date": "2026-07-15",

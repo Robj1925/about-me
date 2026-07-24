@@ -3,6 +3,7 @@ title: "Meta's AI Reads What You Type From Your Brain"
 date: "2026-07-13"
 excerpt: "No implant, no surgery. Meta's Brain2Qwerty reads a sentence you are typing straight from your brain signals, and version 2 just made a massive accuracy jump."
 thumbnail: "assets/images/blog-thumbnails/metas-ai-reads-what-you-type-from-your-brain.jpg"
+youtubeId: "bkLoAq4TmV0"
 tags:
   - AI Research
   - Meta

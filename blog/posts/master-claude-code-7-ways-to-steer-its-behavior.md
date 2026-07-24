@@ -3,6 +3,7 @@ title: "Master Claude Code: The 7 Ways to Steer Its Behavior"
 date: "2026-07-04"
 excerpt: "Most people only use CLAUDE.md. There are actually 7 ways to control Claude Code, each with different tradeoffs in context cost, persistence, and authority. Here is when to use each one."
 thumbnail: "assets/images/blog-thumbnails/master-claude-code-7-ways-to-steer-its-behavior.jpg"
+youtubeId: "cV52QdcfA0s"
 tags:
   - Claude Code
   - AI Tools

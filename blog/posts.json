@@ -1,11 +1,71 @@
 [
   {
+    "slug": "meta-muse-image-the-ai-that-fixes-its-own-images",
+    "title": "Meta Muse Image: The AI That Fixes Its Own Images",
+    "date": "2026-07-24",
+    "excerpt": "Meta's new Muse Image model reviews its own outputs and redoes the weak parts, a behavior Meta says it never programmed. It is already the number two image model in the world.",
+    "thumbnail": "assets/images/blog-thumbnails/meta-muse-image-the-ai-that-fixes-its-own-images.jpg",
+    "youtubeId": null,
+    "tags": [
+      "Meta",
+      "Image Generation",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "4-ways-to-force-claude-code-to-build-beautiful-websites",
+    "title": "4 Ways to Force Claude Code to Build Beautiful Websites",
+    "date": "2026-07-21",
+    "excerpt": "Claude Code defaults to AI slop: Inter font, purple gradients, card grids. These four methods force it to produce websites that look designed instead.",
+    "thumbnail": "assets/images/blog-thumbnails/4-ways-to-force-claude-code-to-build-beautiful-websites.jpg",
+    "youtubeId": "ABF2tF11Bgc",
+    "tags": [
+      "Claude Code",
+      "Web Development",
+      "AI Tools",
+      "Tutorial"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "gemini-3-6-flash-beats-sonnet-5-at-computer-use",
+    "title": "Gemini 3.6 Flash Beats Sonnet 5 at Computer Use (and Costs Less Than Ever)",
+    "date": "2026-07-21",
+    "excerpt": "Google's new Flash models cut agent costs two ways at once, and buried in the announcement: the Gemini 4 pre-training run has already started.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-3-6-flash-beats-sonnet-5-at-computer-use.jpg",
+    "youtubeId": "PEnMO_arIYk",
+    "tags": [
+      "Gemini",
+      "Google",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "kimi-k3-open-source-model-beats-claude-frontend-code",
+    "title": "Kimi K3: The Open Source Model That Just Beat Claude at Frontend Code",
+    "date": "2026-07-20",
+    "excerpt": "Moonshot AI's Kimi K3 is the biggest open model ever built at 2.8 trillion parameters. It ranks number one for frontend code and deep web research, and you can use it free right now.",
+    "thumbnail": "assets/images/blog-thumbnails/kimi-k3-open-source-model-beats-claude-frontend-code.jpg",
+    "youtubeId": "ZkbLjdHQF34",
+    "tags": [
+      "Open Source",
+      "AI Models",
+      "Moonshot AI",
+      "Benchmarks",
+      "News"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "grok-4-5-least-hallucinating-ai-model",
     "title": "Grok 4.5 Is the AI That Hallucinates the Least (And Costs a Fraction)",
     "date": "2026-07-18",
     "excerpt": "xAI's Grok 4.5 tops the one benchmark that rewards correct answers and punishes confident wrong ones. It ranks number one, and it undercuts the frontier models on price.",
     "thumbnail": "assets/images/blog-thumbnails/grok-4-5-least-hallucinating-ai-model.jpg",
-    "youtubeId": null,
+    "youtubeId": "1t-tPUD5uOE",
     "tags": [
       "AI Models",
       "xAI",
@@ -20,7 +80,7 @@
     "date": "2026-07-17",
     "excerpt": "OpenAI made GPT Live the default ChatGPT voice for everyone, free users included. It reacts while you talk, quietly calls in a smarter model for hard questions, and people prefer it 76 percent of the time.",
     "thumbnail": "assets/images/blog-thumbnails/chatgpt-can-now-talk-gpt-live-full-duplex-voice.jpg",
-    "youtubeId": null,
+    "youtubeId": "M5vZ9PjKzS8",
     "tags": [
       "OpenAI",
       "ChatGPT",
@@ -35,7 +95,7 @@
     "date": "2026-07-17",
     "excerpt": "The Center for AI Safety graded AI agents on real paid freelance work against human professionals. Eight months ago the best model finished 4 percent of a project start to finish. Now it finishes 16 percent.",
     "thumbnail": "assets/images/blog-thumbnails/dont-lose-your-job-to-ai-remote-labor-index.jpg",
-    "youtubeId": null,
+    "youtubeId": "kgFszj_uoVg",
     "tags": [
       "AI Safety",
       "Tech Jobs",
@@ -49,7 +109,7 @@
     "date": "2026-07-17",
     "excerpt": "Ora Directory is the agentic index of the web. It scores tools on whether an AI agent can discover, read, and act on them, so you can plug the best ones straight into your projects.",
     "thumbnail": "assets/images/blog-thumbnails/ora-directory-agentic-index-of-the-web.jpg",
-    "youtubeId": null,
+    "youtubeId": "OS0NCmVKELo",
     "tags": [
       "AI Agents",
       "AI Tools",
@@ -109,7 +169,7 @@
     "date": "2026-07-13",
     "excerpt": "I taught Claude to edit my videos for me. Transcription, take selection, and polish, all automated, and you can run the exact same skill on your own recordings for free.",
     "thumbnail": "assets/images/blog-thumbnails/how-i-use-claude-code-to-edit-my-youtube-videos.jpg",
-    "youtubeId": null,
+    "youtubeId": "5XO0_yf0vcY",
     "tags": [
       "Claude Code",
       "Video Editing",
@@ -124,7 +184,7 @@
     "date": "2026-07-13",
     "excerpt": "No implant, no surgery. Meta's Brain2Qwerty reads a sentence you are typing straight from your brain signals, and version 2 just made a massive accuracy jump.",
     "thumbnail": "assets/images/blog-thumbnails/metas-ai-reads-what-you-type-from-your-brain.jpg",
-    "youtubeId": null,
+    "youtubeId": "bkLoAq4TmV0",
     "tags": [
       "AI Research",
       "Meta",
@@ -138,7 +198,7 @@
     "date": "2026-07-10",
     "excerpt": "OpenAI just previewed their most powerful model ever, and you can't use it. Not because it's broken. The government asked them to hold it back.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-5-6-openais-most-powerful-model-is-locked.jpg",
-    "youtubeId": null,
+    "youtubeId": "N0JDE2LrDOw",
     "tags": [
       "OpenAI",
       "AI Models",
@@ -240,7 +300,7 @@
     "date": "2026-07-04",
     "excerpt": "Most people only use CLAUDE.md. There are actually 7 ways to control Claude Code, each with different tradeoffs in context cost, persistence, and authority. Here is when to use each one.",
     "thumbnail": "assets/images/blog-thumbnails/master-claude-code-7-ways-to-steer-its-behavior.jpg",
-    "youtubeId": null,
+    "youtubeId": "cV52QdcfA0s",
     "tags": [
       "Claude Code",
       "AI Tools",

@@ -196,7 +196,7 @@
 </tr>
 <tr>
 <td>Speech engine</td>
-<td>Parakeet TDT v2 or Whisper</td>
+<td>Parakeet TDT v3 or Whisper</td>
 <td>Proprietary cloud</td>
 <td>Apple built in</td>
 </tr>
@@ -205,7 +205,7 @@
 <h2 id="what-speech-engine-does-openflow-use">What speech engine does OpenFlow use?</h2>
 <p>OpenFlow ships with two local transcription engines you can switch between in Settings:</p>
 <ul>
-<li><strong>Parakeet TDT v2</strong> is the default. It is an NVIDIA speech model running through <a href="https://github.com/FluidInference/FluidAudio">FluidAudio</a>, and it is the fastest and most accurate option for English. In testing it runs at roughly 35 times realtime, so a 10 second clip transcribes in well under a second.</li>
+<li><strong>Parakeet TDT v3</strong> is the default. It is an NVIDIA speech model running through <a href="https://github.com/FluidInference/FluidAudio">FluidAudio</a>, and it is the fastest and most accurate option for English. It also covers 24 European languages. In testing it runs at roughly 35 times realtime, so a 10 second clip transcribes in well under a second.</li>
 <li><strong>Whisper</strong> (via WhisperKit) is there for other languages. The multilingual <code>large-v3-turbo</code> model covers around 100 languages. The <code>small.en</code> and <code>base.en</code> builds are faster English-only options.</li>
 </ul>
 <p>Both engines run on Apple&#39;s Neural Engine using CoreML. The models download once, cache locally at about 600 MB each, and never phone home after that.</p>
@@ -222,7 +222,7 @@
 </ul>
 <p><img src="../assets/images/openflow/openflow-settings.png" alt="OpenFlow General settings: hotkey, activation style, language, on-device Apple Intelligence cleanup, and text output method"></p>
 <p>The app lives quietly in your menu bar with no dock icon. A glance tells you which engine is active and whether it is ready to go.</p>
-<p><img src="../assets/images/openflow/openflow-menu-bar.png" alt="OpenFlow menu bar dropdown showing Ready with the Parakeet TDT v2 engine active and a Hold fn to dictate hint"></p>
+<p><img src="../assets/images/openflow/openflow-menu-bar.png" alt="OpenFlow menu bar dropdown showing Ready with the Parakeet TDT v3 engine active and a Hold fn to dictate hint"></p>
 <h2 id="how-do-i-install-openflow">How do I install OpenFlow?</h2>
 <p>Installation takes about two minutes:</p>
 <ol>

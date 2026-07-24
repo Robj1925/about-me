@@ -3,6 +3,7 @@ title: "How I Use Claude Code to Edit My YouTube Videos For Me"
 date: "2026-07-13"
 excerpt: "I taught Claude to edit my videos for me. Transcription, take selection, and polish, all automated, and you can run the exact same skill on your own recordings for free."
 thumbnail: "assets/images/blog-thumbnails/how-i-use-claude-code-to-edit-my-youtube-videos.jpg"
+youtubeId: "5XO0_yf0vcY"
 tags:
   - Claude Code
   - Video Editing

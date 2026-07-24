@@ -3,6 +3,7 @@ title: "GPT 5.6: OpenAI's Most Powerful Model Is Here (But Locked)"
 date: "2026-07-10"
 excerpt: "OpenAI just previewed their most powerful model ever, and you can't use it. Not because it's broken. The government asked them to hold it back."
 thumbnail: "assets/images/blog-thumbnails/gpt-5-6-openais-most-powerful-model-is-locked.jpg"
+youtubeId: "N0JDE2LrDOw"
 tags:
   - OpenAI
   - AI Models

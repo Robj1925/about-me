@@ -3,6 +3,7 @@ title: "Don't Lose Your Job to AI: The Remote Labor Index Results"
 date: "2026-07-17"
 excerpt: "The Center for AI Safety graded AI agents on real paid freelance work against human professionals. Eight months ago the best model finished 4 percent of a project start to finish. Now it finishes 16 percent."
 thumbnail: "assets/images/blog-thumbnails/dont-lose-your-job-to-ai-remote-labor-index.jpg"
+youtubeId: "kgFszj_uoVg"
 tags:
   - AI Safety
   - Tech Jobs

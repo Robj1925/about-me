@@ -3,6 +3,7 @@ title: "Ora Directory: AI Agents Now Have Their Own Google"
 date: "2026-07-17"
 excerpt: "Ora Directory is the agentic index of the web. It scores tools on whether an AI agent can discover, read, and act on them, so you can plug the best ones straight into your projects."
 thumbnail: "assets/images/blog-thumbnails/ora-directory-agentic-index-of-the-web.jpg"
+youtubeId: "OS0NCmVKELo"
 tags:
   - AI Agents
   - AI Tools

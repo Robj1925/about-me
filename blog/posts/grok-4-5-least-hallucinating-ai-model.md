@@ -3,6 +3,7 @@ title: "Grok 4.5 Is the AI That Hallucinates the Least (And Costs a Fraction)"
 date: "2026-07-18"
 excerpt: "xAI's Grok 4.5 tops the one benchmark that rewards correct answers and punishes confident wrong ones. It ranks number one, and it undercuts the frontier models on price."
 thumbnail: "assets/images/blog-thumbnails/grok-4-5-least-hallucinating-ai-model.jpg"
+youtubeId: "1t-tPUD5uOE"
 tags:
   - AI Models
   - xAI

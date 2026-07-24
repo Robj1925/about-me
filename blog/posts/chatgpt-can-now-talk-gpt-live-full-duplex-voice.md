@@ -3,6 +3,7 @@ title: "ChatGPT Can Now Talk: OpenAI's GPT Live Goes Full Duplex"
 date: "2026-07-17"
 excerpt: "OpenAI made GPT Live the default ChatGPT voice for everyone, free users included. It reacts while you talk, quietly calls in a smarter model for hard questions, and people prefer it 76 percent of the time."
 thumbnail: "assets/images/blog-thumbnails/chatgpt-can-now-talk-gpt-live-full-duplex-voice.jpg"
+youtubeId: "M5vZ9PjKzS8"
 tags:
   - OpenAI
   - ChatGPT

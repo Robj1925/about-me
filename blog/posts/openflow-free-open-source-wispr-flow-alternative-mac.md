@@ -108,7 +108,7 @@ Here is the honest breakdown of where each option lands on the things people act
 | Open source | Yes (MIT) | No | No |
 | Custom dictionary | Yes | Yes | Limited |
 | Works system wide | Yes | Yes | Yes |
-| Speech engine | Parakeet TDT v2 or Whisper | Proprietary cloud | Apple built in |
+| Speech engine | Parakeet TDT v3 or Whisper | Proprietary cloud | Apple built in |
 
 Apple Dictation is a genuinely good free option and it is private on Apple Silicon. Where OpenFlow pulls ahead is accuracy on technical vocabulary, a custom dictionary you fully control, an optional AI cleanup pass, and the fact that you can see exactly what the code does.
 
@@ -116,7 +116,7 @@ Apple Dictation is a genuinely good free option and it is private on Apple Silic
 
 OpenFlow ships with two local transcription engines you can switch between in Settings:
 
-- **Parakeet TDT v2** is the default. It is an NVIDIA speech model running through [FluidAudio](https://github.com/FluidInference/FluidAudio), and it is the fastest and most accurate option for English. In testing it runs at roughly 35 times realtime, so a 10 second clip transcribes in well under a second.
+- **Parakeet TDT v3** is the default. It is an NVIDIA speech model running through [FluidAudio](https://github.com/FluidInference/FluidAudio), and it is the fastest and most accurate option for English. It also covers 24 European languages. In testing it runs at roughly 35 times realtime, so a 10 second clip transcribes in well under a second.
 - **Whisper** (via WhisperKit) is there for other languages. The multilingual `large-v3-turbo` model covers around 100 languages. The `small.en` and `base.en` builds are faster English-only options.
 
 Both engines run on Apple's Neural Engine using CoreML. The models download once, cache locally at about 600 MB each, and never phone home after that.
@@ -140,7 +140,7 @@ Beyond the core dictate-and-paste loop, OpenFlow has the quality-of-life feature
 
 The app lives quietly in your menu bar with no dock icon. A glance tells you which engine is active and whether it is ready to go.
 
-![OpenFlow menu bar dropdown showing Ready with the Parakeet TDT v2 engine active and a Hold fn to dictate hint](../assets/images/openflow/openflow-menu-bar.png)
+![OpenFlow menu bar dropdown showing Ready with the Parakeet TDT v3 engine active and a Hold fn to dictate hint](../assets/images/openflow/openflow-menu-bar.png)
 
 ## How do I install OpenFlow?
 

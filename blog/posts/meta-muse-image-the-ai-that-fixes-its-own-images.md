@@ -3,6 +3,7 @@ title: "Meta Muse Image: The AI That Fixes Its Own Images"
 date: "2026-07-24"
 excerpt: "Meta's new Muse Image model reviews its own outputs and redoes the weak parts, a behavior Meta says it never programmed. It is already the number two image model in the world."
 thumbnail: "assets/images/blog-thumbnails/meta-muse-image-the-ai-that-fixes-its-own-images.jpg"
+youtubeId: "8MZcXXVKeR4"
 tags:
   - Meta
   - Image Generation

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mic Test: Check Your Microphone Online (Free, No Install) — Robby J</title>
+  <meta name="description" content="Test your microphone online in seconds. See a live volume meter, record and play back your voice, and fix common mic problems. Free, private, runs in your browser." />
+  <meta property="og:title" content="Mic Test: Check Your Microphone Online (Free, No Install) — Robby J" />
+  <meta property="og:description" content="Test your microphone online in seconds. See a live volume meter, record and play back your voice, and fix common mic problems. Free, private, runs in your browser." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/mic-test.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Online Mic Test",
+        "url": "https://automatewithrobby.fyi/tools/mic-test.html",
+        "description": "Free online microphone test with a live volume meter and record-and-playback check. Runs entirely in your browser. No audio is uploaded.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern browser with microphone access",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Robby J", "url": "https://automatewithrobby.fyi/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://automatewithrobby.fyi/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://automatewithrobby.fyi/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Mic Test", "item": "https://automatewithrobby.fyi/tools/mic-test.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I test my microphone online?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Click Start mic test, allow microphone access when your browser asks, and speak normally. If the volume meter moves while you talk, your microphone works. You can also record a short clip and play it back to hear exactly how you sound." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my mic not working?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The most common causes are: your browser blocked microphone permission, the wrong input device is selected, a hardware mute switch is on, or another app is using the microphone. Check the address bar permission icon, pick the right device from the dropdown, and close apps like Zoom or Teams that may be holding the mic." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my audio uploaded anywhere?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. This test runs entirely in your browser using the Web Audio API. Your audio never leaves your machine, nothing is uploaded, and nothing is stored after you close the tab." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my mic sound quiet?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Raise the input volume in your system sound settings, move the microphone closer to your mouth (a hand's width is a good starting point), and make sure you are speaking into the correct side of the mic. USB and XLR mics often have a physical gain knob too." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which browsers does this mic test work in?",
+            "acceptedAnswer": { "@type": "Answer", "text": "It works in any modern browser: Chrome, Edge, Firefox, Safari, Brave, and Arc, on desktop and mobile. The page must be served over HTTPS, which this site is." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .tool-hero { padding: 60px 0 28px; text-align: center; }
+    .tool-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .tool-hero p { color: var(--ink-muted); font-size: 1.05rem; max-width: 62ch; margin: 0 auto; }
+    .tool-wrap { max-width: 760px; margin: 0 auto 56px; }
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+    }
+    .mic-status {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;
+      color: var(--ink-muted); margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .status-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border-strong); flex: none; }
+    .status-dot.live { background: #047857; box-shadow: 0 0 0 4px rgba(4,120,87,0.15); }
+    .status-dot.err { background: #b91c1c; }
+    #meter-canvas { width: 100%; height: 56px; display: block; border-radius: var(--radius-sm); background: var(--surface-2); border: 1px solid var(--border); }
+    .meter-labels { display: flex; justify-content: space-between; font-size: 0.72rem; color: var(--ink-faint); font-family: 'JetBrains Mono', monospace; margin-top: 6px; }
+    .controls-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 22px; align-items: center; }
+    .device-row { margin-top: 18px; }
+    .device-row label { display: block; font-family: var(--font-display); font-weight: 600; font-size: 0.85rem; color: var(--ink); margin-bottom: 6px; }
+    #device-select {
+      width: 100%; background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--ink);
+      font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; padding: 10px 12px; outline: none;
+    }
+    #device-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .hint-box {
+      margin-top: 18px; padding: 14px 18px; border-radius: var(--radius-sm);
+      background: var(--surface-2); border: 1px solid var(--border);
+      font-size: 0.9rem; color: var(--ink-muted); line-height: 1.55; display: none;
+    }
+    .hint-box.error { background: rgba(185,28,28,0.06); border-color: rgba(185,28,28,0.25); color: #7f1d1d; display: block; }
+    .hint-box.show { display: block; }
+    #playback-area { margin-top: 18px; display: none; }
+    #playback-area audio { width: 100%; }
+    .privacy-note { margin-top: 16px; font-size: 0.8rem; color: var(--ink-faint); text-align: center; }
+    .cta-card {
+      margin-top: 28px; padding: 26px 28px; border-radius: var(--radius);
+      background: var(--accent-soft); border: 1px solid var(--border-strong);
+      display: none;
+    }
+    .cta-card.show { display: block; }
+    .cta-card h2 { font-family: var(--font-display); font-size: 1.2rem; color: var(--ink); margin-bottom: 8px; }
+    .cta-card p { color: var(--ink-muted); font-size: 0.95rem; margin-bottom: 16px; line-height: 1.55; }
+    .cta-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .seo-section { max-width: 720px; margin: 0 auto 48px; }
+    .seo-section h2 { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .seo-section p, .seo-section li { color: var(--ink-muted); line-height: 1.7; font-size: 0.98rem; }
+    .seo-section ul, .seo-section ol { padding-left: 22px; margin: 10px 0; }
+    .seo-section li { margin-bottom: 8px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-item h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+    .related-tools { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="container">
+    <div class="tool-hero">
+      <h1>Mic Test: Check Your Microphone Online</h1>
+      <p>Test your mic in seconds. Click start, allow access, and speak: if the meter moves, your microphone works. You can also record a short clip and play it back. Everything runs in your browser, and no audio ever leaves your machine.</p>
+    </div>
+
+    <div class="tool-wrap">
+      <div class="tool-card">
+        <div class="mic-status">
+          <span class="status-dot" id="status-dot"></span>
+          <span id="status-text">Mic not started yet</span>
+        </div>
+
+        <canvas id="meter-canvas" height="56" aria-label="Live microphone volume meter"></canvas>
+        <div class="meter-labels"><span>quiet</span><span>good</span><span>loud</span></div>
+
+        <div class="controls-row">
+          <button id="start-btn" class="btn btn-primary">Start mic test</button>
+          <button id="record-btn" class="btn btn-ghost" disabled>Record 5s clip</button>
+          <button id="stop-btn" class="btn btn-ghost" style="display:none">Stop test</button>
+        </div>
+
+        <div class="device-row" id="device-row" style="display:none">
+          <label for="device-select">Microphone</label>
+          <select id="device-select" aria-label="Choose microphone input device"></select>
+        </div>
+
+        <div class="hint-box" id="hint-box"></div>
+
+        <div id="playback-area">
+          <p style="font-family:var(--font-display);font-weight:600;font-size:0.9rem;color:var(--ink);margin-bottom:8px;">Your recording (this is how you sound to others):</p>
+          <audio id="playback-audio" controls></audio>
+        </div>
+
+        <p class="privacy-note">Private by design: audio is processed locally with the Web Audio API. Nothing is uploaded or stored.</p>
+      </div>
+
+      <div class="cta-card" id="cta-card">
+        <h2>Your mic works. Put it to use.</h2>
+        <p>You already have working audio. Two free ways to use it today: record your screen and camera in the browser with Recording Studio, or write 3x faster on your Mac by dictating with OpenFlow.</p>
+        <div class="cta-links">
+          <a href="https://recording-studio-7vg.pages.dev" target="_blank" rel="noopener" class="btn btn-primary">Open Recording Studio</a>
+          <a href="https://robj1925.github.io/open-flow/" target="_blank" rel="noopener" class="btn btn-ghost">Get OpenFlow for Mac</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="seo-section">
+      <h2>How do I test my microphone online?</h2>
+      <ol>
+        <li>Click the Start mic test button above.</li>
+        <li>When your browser asks for permission, click Allow.</li>
+        <li>Speak normally. If the volume meter moves, your mic is working.</li>
+        <li>Optional: click Record 5s clip, then play it back to hear how you actually sound to other people.</li>
+      </ol>
+      <p>The whole check takes about ten seconds and works with built in laptop mics, USB microphones, XLR interfaces, headsets, and AirPods.</p>
+
+      <h2>Why is my mic not working?</h2>
+      <ul>
+        <li><strong>Permission blocked:</strong> click the camera/mic icon in your browser's address bar and set microphone access to Allow, then reload.</li>
+        <li><strong>Wrong input selected:</strong> use the Microphone dropdown above to switch devices. Laptops often default to an internal mic even when a USB mic is plugged in.</li>
+        <li><strong>Hardware mute:</strong> many headsets and mics have a physical mute switch or a tap to mute area. Check it.</li>
+        <li><strong>Another app has the mic:</strong> close Zoom, Teams, Discord, or OBS and try again.</li>
+        <li><strong>System settings:</strong> on macOS check System Settings, Privacy and Security, Microphone. On Windows check Settings, Privacy, Microphone.</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h3>Is my audio uploaded anywhere?</h3>
+        <p>No. This test runs entirely in your browser using the Web Audio API. Your audio never leaves your machine, nothing is uploaded, and nothing is stored after you close the tab.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why does my mic sound quiet?</h3>
+        <p>Raise the input volume in your system sound settings, move the mic closer to your mouth (a hand's width is a good starting point), and make sure you are speaking into the correct side of the mic. USB and XLR mics often have a physical gain knob too.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Which browsers does this work in?</h3>
+        <p>Any modern browser: Chrome, Edge, Firefox, Safari, Brave, and Arc, on desktop and mobile.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is a good level on the meter?</h3>
+        <p>Aim for the meter to sit in the middle zone while you speak normally, with peaks near the top only when you get loud. If it is pinned at the top constantly, lower your gain: your audio is likely clipping.</p>
+      </div>
+
+      <h2>More free tools</h2>
+      <div class="related-tools">
+        <a href="webcam-test.html" class="btn btn-ghost">Webcam Test</a>
+        <a href="typing-vs-speaking-test.html" class="btn btn-ghost">Typing vs Speaking Speed Test</a>
+        <a href="video-file-size-calculator.html" class="btn btn-ghost">Video File Size Calculator</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const startBtn   = document.getElementById('start-btn');
+  const stopBtn    = document.getElementById('stop-btn');
+  const recordBtn  = document.getElementById('record-btn');
+  const statusDot  = document.getElementById('status-dot');
+  const statusText = document.getElementById('status-text');
+  const hintBox    = document.getElementById('hint-box');
+  const deviceRow  = document.getElementById('device-row');
+  const deviceSel  = document.getElementById('device-select');
+  const ctaCard    = document.getElementById('cta-card');
+  const canvas     = document.getElementById('meter-canvas');
+  const ctx        = canvas.getContext('2d');
+
+  let stream = null, audioCtx = null, analyser = null, rafId = null;
+  let mediaRecorder = null, heardVoice = false, silentFrames = 0;
+
+  function setStatus(kind, text) {
+    statusDot.className = 'status-dot' + (kind === 'live' ? ' live' : kind === 'err' ? ' err' : '');
+    statusText.textContent = text;
+  }
+
+  function showHint(text, isError) {
+    hintBox.className = 'hint-box ' + (isError ? 'error' : 'show');
+    hintBox.textContent = text;
+  }
+  function clearHint() { hintBox.className = 'hint-box'; hintBox.textContent = ''; }
+
+  function resizeCanvas() {
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = canvas.clientWidth * dpr;
+    canvas.height = 56 * dpr;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  window.addEventListener('resize', () => { resizeCanvas(); if (!rafId) drawMeter(0); });
+
+  function drawMeter(level) {
+    const w = canvas.clientWidth, h = 56;
+    ctx.clearRect(0, 0, w, h);
+    const segments = 28, gap = 4;
+    const segW = (w - gap * (segments - 1)) / segments;
+    const lit = Math.round(level * segments);
+    for (let i = 0; i < segments; i++) {
+      const frac = i / segments;
+      let color;
+      if (i < lit) {
+        color = frac < 0.6 ? '#047857' : frac < 0.85 ? '#b45309' : '#b91c1c';
+      } else {
+        color = 'rgba(38,32,26,0.08)';
+      }
+      ctx.fillStyle = color;
+      const segH = 18 + frac * 26;
+      ctx.beginPath();
+      ctx.roundRect(i * (segW + gap), (h - segH) / 2, segW, segH, 3);
+      ctx.fill();
+    }
+  }
+
+  function loop() {
+    const data = new Uint8Array(analyser.fftSize);
+    analyser.getByteTimeDomainData(data);
+    let sum = 0;
+    for (let i = 0; i < data.length; i++) {
+      const v = (data[i] - 128) / 128;
+      sum += v * v;
+    }
+    const rms = Math.sqrt(sum / data.length);
+    const level = Math.min(1, rms * 4.5);
+    drawMeter(level);
+
+    if (level > 0.06) {
+      silentFrames = 0;
+      if (!heardVoice) {
+        heardVoice = true;
+        setStatus('live', 'Mic is working. We can hear you.');
+        clearHint();
+        ctaCard.classList.add('show');
+      }
+    } else if (heardVoice === false) {
+      silentFrames++;
+      if (silentFrames === 300) {
+        showHint('We are not hearing anything yet. Try speaking louder, check the mute switch on your mic or headset, or pick a different device from the dropdown below.', false);
+      }
+    }
+    rafId = requestAnimationFrame(loop);
+  }
+
+  async function listDevices(currentId) {
+    try {
+      const devices = await navigator.mediaDevices.enumerateDevices();
+      const mics = devices.filter(d => d.kind === 'audioinput');
+      if (mics.length === 0) return;
+      deviceSel.innerHTML = '';
+      mics.forEach((d, i) => {
+        const opt = document.createElement('option');
+        opt.value = d.deviceId;
+        opt.textContent = d.label || ('Microphone ' + (i + 1));
+        if (d.deviceId === currentId) opt.selected = true;
+        deviceSel.appendChild(opt);
+      });
+      deviceRow.style.display = 'block';
+    } catch (e) { /* non-fatal */ }
+  }
+
+  async function startTest(deviceId) {
+    stopTest(true);
+    try {
+      const constraints = { audio: deviceId ? { deviceId: { exact: deviceId } } : true };
+      stream = await navigator.mediaDevices.getUserMedia(constraints);
+    } catch (err) {
+      if (err.name === 'NotAllowedError' || err.name === 'SecurityError') {
+        setStatus('err', 'Microphone access blocked');
+        showHint('Your browser blocked microphone access. Click the mic icon in the address bar, choose Allow, then reload this page and try again.', true);
+      } else if (err.name === 'NotFoundError' || err.name === 'OverconstrainedError') {
+        setStatus('err', 'No microphone found');
+        showHint('No microphone was detected. Plug one in (or check that your built in mic is enabled in system settings) and try again.', true);
+      } else {
+        setStatus('err', 'Could not start the mic');
+        showHint('Something went wrong starting the microphone: ' + err.name + '. Close other apps that may be using the mic and try again.', true);
+      }
+      return;
+    }
+
+    resizeCanvas();
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const source = audioCtx.createMediaStreamSource(stream);
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 2048;
+    source.connect(analyser);
+    heardVoice = false;
+    silentFrames = 0;
+    setStatus('live', 'Listening... speak into your mic');
+    clearHint();
+    loop();
+
+    const track = stream.getAudioTracks()[0];
+    const currentId = track.getSettings().deviceId;
+    listDevices(currentId);
+
+    startBtn.style.display = 'none';
+    stopBtn.style.display = '';
+    recordBtn.disabled = false;
+  }
+
+  function stopTest(silent) {
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = null;
+    if (stream) { stream.getTracks().forEach(t => t.stop()); stream = null; }
+    if (audioCtx) { audioCtx.close(); audioCtx = null; }
+    if (!silent) {
+      setStatus('', 'Test stopped');
+      drawMeter(0);
+      startBtn.style.display = '';
+      stopBtn.style.display = 'none';
+      recordBtn.disabled = true;
+    }
+  }
+
+  async function recordClip() {
+    if (!stream) return;
+    recordBtn.disabled = true;
+    const originalText = recordBtn.textContent;
+    let secs = 5;
+    recordBtn.textContent = 'Recording... ' + secs;
+    const chunks = [];
+    try {
+      mediaRecorder = new MediaRecorder(stream);
+    } catch (e) {
+      showHint('Recording is not supported in this browser, but the live meter above still verifies your mic works.', false);
+      recordBtn.textContent = originalText;
+      return;
+    }
+    mediaRecorder.ondataavailable = e => { if (e.data.size) chunks.push(e.data); };
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(chunks, { type: mediaRecorder.mimeType || 'audio/webm' });
+      const url = URL.createObjectURL(blob);
+      const audio = document.getElementById('playback-audio');
+      audio.src = url;
+      document.getElementById('playback-area').style.display = 'block';
+      recordBtn.textContent = originalText;
+      recordBtn.disabled = false;
+    };
+    mediaRecorder.start();
+    const timer = setInterval(() => {
+      secs--;
+      if (secs <= 0) {
+        clearInterval(timer);
+        if (mediaRecorder.state !== 'inactive') mediaRecorder.stop();
+      } else {
+        recordBtn.textContent = 'Recording... ' + secs;
+      }
+    }, 1000);
+  }
+
+  startBtn.addEventListener('click', () => startTest());
+  stopBtn.addEventListener('click', () => stopTest(false));
+  recordBtn.addEventListener('click', recordClip);
+  deviceSel.addEventListener('change', () => startTest(deviceSel.value));
+  window.addEventListener('beforeunload', () => stopTest(true));
+
+  resizeCanvas();
+  drawMeter(0);
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

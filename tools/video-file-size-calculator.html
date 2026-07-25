@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video File Size Calculator: 720p, 1080p, 1440p, 4K — Robby J</title>
+  <meta name="description" content="Calculate video file size from resolution, frame rate, bitrate, and duration. See how big a 10 minute 1080p or 1 hour 4K video really is, plus upload time." />
+  <meta property="og:title" content="Video File Size Calculator: 720p, 1080p, 1440p, 4K — Robby J" />
+  <meta property="og:description" content="Calculate video file size from resolution, frame rate, bitrate, and duration. See how big a 10 minute 1080p or 1 hour 4K video really is, plus upload time." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/video-file-size-calculator.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Video File Size Calculator",
+        "url": "https://automatewithrobby.fyi/tools/video-file-size-calculator.html",
+        "description": "Free calculator that estimates video file size from resolution, frame rate, bitrate, and duration, with presets for 720p, 1080p, 1440p, and 4K plus upload time estimates.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Robby J", "url": "https://automatewithrobby.fyi/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://automatewithrobby.fyi/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://automatewithrobby.fyi/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Video File Size Calculator", "item": "https://automatewithrobby.fyi/tools/video-file-size-calculator.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I calculate video file size?",
+            "acceptedAnswer": { "@type": "Answer", "text": "File size equals bitrate multiplied by duration, divided by 8 to convert bits to bytes. For example, a 10 minute video at 8 Mbps is 8 x 600 / 8 = 600 megabytes. Audio adds a little on top, usually 128 to 320 kbps." }
+          },
+          {
+            "@type": "Question",
+            "name": "How big is a 10 minute 1080p video?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At a standard 8 Mbps H.264 bitrate, a 10 minute 1080p 30fps video is about 600 MB. At 60fps (12 Mbps) it is about 900 MB. Screen recordings compress better and often land around half that." }
+          },
+          {
+            "@type": "Question",
+            "name": "How big is 1 hour of 4K video?",
+            "acceptedAnswer": { "@type": "Answer", "text": "At the commonly recommended 45 Mbps for 4K 30fps H.264, one hour is about 20 GB. At 4K 60fps (68 Mbps) it is about 30 GB. High quality editing codecs like ProRes are far larger." }
+          },
+          {
+            "@type": "Question",
+            "name": "What bitrate should I use for screen recording?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Screen content compresses well because most of the frame does not change. 4 to 6 Mbps works for 1080p screen recording, and 15 to 25 Mbps for 4K. Talking head footage needs more than static slides." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my real file bigger or smaller than the estimate?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most encoders use variable bitrate, so the actual average depends on how much motion and detail your footage has. High motion gameplay comes out larger, static screen shares smaller. Codec choice matters too: H.265 and AV1 produce files roughly 30 to 50 percent smaller than H.264 at the same quality." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .tool-hero { padding: 60px 0 28px; text-align: center; }
+    .tool-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .tool-hero p { color: var(--ink-muted); font-size: 1.05rem; max-width: 62ch; margin: 0 auto; }
+    .tool-layout {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 28px;
+      max-width: 980px; margin: 0 auto 56px; align-items: start;
+    }
+    @media (max-width: 700px) { .tool-layout { grid-template-columns: 1fr; } }
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+    }
+    .card-title {
+      font-family: var(--font-display); font-size: 1rem; font-weight: 700;
+      color: var(--ink-muted); text-transform: uppercase; letter-spacing: 0.07em;
+      margin-bottom: 24px;
+    }
+    .field-group { margin-bottom: 20px; }
+    .field-label {
+      display: block; font-family: var(--font-display); font-weight: 600;
+      color: var(--ink); font-size: 0.9rem; margin-bottom: 8px;
+    }
+    .tool-select, .tool-input-number {
+      width: 100%; background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--ink);
+      font-family: 'JetBrains Mono', monospace; font-size: 0.95rem;
+      padding: 11px 14px; outline: none; transition: var(--transition); box-sizing: border-box;
+    }
+    .tool-select:focus, .tool-input-number:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .duration-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .sub-label { font-size: 0.72rem; color: var(--ink-faint); font-family: 'JetBrains Mono', monospace; margin-top: 4px; display: block; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .stat-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 18px 16px; text-align: center;
+    }
+    .stat-card.hero {
+      grid-column: 1 / -1; background: var(--accent-soft); border-color: var(--border-strong); padding: 24px 16px;
+    }
+    .stat-number { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1.1; margin-bottom: 4px; }
+    .stat-card.hero .stat-number { font-size: 2.6rem; }
+    .stat-desc { font-size: 0.78rem; color: var(--ink-muted); line-height: 1.4; }
+    .bitrate-note { font-size: 0.8rem; color: var(--ink-faint); text-align: center; margin-top: 14px; line-height: 1.5; }
+    .cta-card {
+      margin-top: 24px; padding: 24px 26px; border-radius: var(--radius);
+      background: var(--accent-soft); border: 1px solid var(--border-strong);
+    }
+    .cta-card h2 { font-family: var(--font-display); font-size: 1.15rem; color: var(--ink); margin-bottom: 8px; }
+    .cta-card p { color: var(--ink-muted); font-size: 0.92rem; margin-bottom: 14px; line-height: 1.55; }
+    .seo-section { max-width: 720px; margin: 0 auto 48px; }
+    .seo-section h2 { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .seo-section p, .seo-section li { color: var(--ink-muted); line-height: 1.7; font-size: 0.98rem; }
+    .seo-section ul, .seo-section ol { padding-left: 22px; margin: 10px 0; }
+    .seo-section li { margin-bottom: 8px; }
+    .seo-section table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.92rem; }
+    .seo-section th, .seo-section td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--ink-muted); }
+    .seo-section th { font-family: var(--font-display); color: var(--ink); font-weight: 600; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-item h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+    .related-tools { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="container">
+    <div class="tool-hero">
+      <h1>Video File Size Calculator</h1>
+      <p>File size is just bitrate times duration. Pick your resolution, frame rate, and length below to see exactly how big your video will be, and how long it takes to upload. Quick answer: 10 minutes of 1080p at a standard 8 Mbps is about 600 MB.</p>
+    </div>
+
+    <div class="tool-layout">
+      <!-- Inputs -->
+      <div class="tool-card">
+        <p class="card-title">Your Video</p>
+
+        <div class="field-group">
+          <label for="res-select" class="field-label">Resolution and frame rate</label>
+          <select id="res-select" class="tool-select" aria-label="Resolution and frame rate">
+            <option value="5">720p 30fps</option>
+            <option value="7.5">720p 60fps</option>
+            <option value="8" selected>1080p 30fps</option>
+            <option value="12">1080p 60fps</option>
+            <option value="16">1440p 30fps</option>
+            <option value="24">1440p 60fps</option>
+            <option value="45">4K 30fps</option>
+            <option value="68">4K 60fps</option>
+          </select>
+          <span class="sub-label">Bitrates follow standard H.264 upload recommendations</span>
+        </div>
+
+        <div class="field-group">
+          <label for="content-select" class="field-label">Content type</label>
+          <select id="content-select" class="tool-select" aria-label="Content type">
+            <option value="1" selected>Camera footage (standard)</option>
+            <option value="0.55">Screen recording (low motion)</option>
+            <option value="1.6">High motion (gameplay, sports)</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="dur-min">Duration</label>
+          <div class="duration-row">
+            <div>
+              <input type="number" id="dur-min" class="tool-input-number" value="10" min="0" max="10000" step="1" aria-label="Duration minutes" />
+              <span class="sub-label">minutes</span>
+            </div>
+            <div>
+              <input type="number" id="dur-sec" class="tool-input-number" value="0" min="0" max="59" step="1" aria-label="Duration seconds" />
+              <span class="sub-label">seconds</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="custom-bitrate" class="field-label">Custom bitrate (optional, Mbps)</label>
+          <input type="number" id="custom-bitrate" class="tool-input-number" min="0" max="1000" step="0.5" placeholder="Leave empty to use the preset" aria-label="Custom bitrate in megabits per second" />
+        </div>
+
+        <div class="field-group" style="margin-bottom:0">
+          <label for="upload-speed" class="field-label">Your upload speed (Mbps)</label>
+          <input type="number" id="upload-speed" class="tool-input-number" value="20" min="1" max="10000" step="1" aria-label="Upload speed in megabits per second" />
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div>
+        <div class="tool-card">
+          <p class="card-title">Estimated Size</p>
+          <div class="stat-grid">
+            <div class="stat-card hero">
+              <div class="stat-number" id="r-size">600 MB</div>
+              <div class="stat-desc">Estimated file size</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="r-bitrate">8 Mbps</div>
+              <div class="stat-desc">Effective bitrate</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="r-upload">4m 00s</div>
+              <div class="stat-desc">Upload time</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="r-per-hour">3.6 GB</div>
+              <div class="stat-desc">Per hour of footage</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="r-per-gb">17m</div>
+              <div class="stat-desc">Footage per 1 GB</div>
+            </div>
+          </div>
+          <p class="bitrate-note">Estimates use bitrate x duration / 8, plus 192 kbps audio. Real encoders vary with motion and detail.</p>
+        </div>
+
+        <div class="cta-card">
+          <h2>Recording your screen or camera?</h2>
+          <p>Recording Studio runs in your browser: screen plus camera together, green screen keying, 4K, and editor ready MP4/MOV exports. Free to use, and your footage never leaves your machine.</p>
+          <a href="https://recording-studio-7vg.pages.dev" target="_blank" rel="noopener" class="btn btn-primary">Open Recording Studio</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="seo-section">
+      <h2>How do I calculate video file size?</h2>
+      <p>The formula is simple: <strong>file size = bitrate x duration / 8</strong>. Bitrate is measured in megabits per second (Mbps), and dividing by 8 converts bits to bytes. A 10 minute video at 8 Mbps works out to 8 x 600 seconds / 8 = 600 MB. Audio rides on top, but at 128 to 320 kbps it adds only about 1 to 2 percent.</p>
+      <p>Resolution and frame rate do not directly set the file size: bitrate does. But higher resolutions need higher bitrates to look good, which is why 4K files are so much larger than 1080p.</p>
+
+      <h2>Common video sizes at standard bitrates</h2>
+      <table>
+        <thead><tr><th>Format</th><th>Bitrate</th><th>10 minutes</th><th>1 hour</th></tr></thead>
+        <tbody>
+          <tr><td>720p 30fps</td><td>5 Mbps</td><td>375 MB</td><td>2.3 GB</td></tr>
+          <tr><td>1080p 30fps</td><td>8 Mbps</td><td>600 MB</td><td>3.6 GB</td></tr>
+          <tr><td>1080p 60fps</td><td>12 Mbps</td><td>900 MB</td><td>5.4 GB</td></tr>
+          <tr><td>1440p 30fps</td><td>16 Mbps</td><td>1.2 GB</td><td>7.2 GB</td></tr>
+          <tr><td>4K 30fps</td><td>45 Mbps</td><td>3.4 GB</td><td>20.3 GB</td></tr>
+          <tr><td>4K 60fps</td><td>68 Mbps</td><td>5.1 GB</td><td>30.6 GB</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h3>What bitrate should I use for screen recording?</h3>
+        <p>Screen content compresses well because most of the frame does not change between frames. 4 to 6 Mbps is plenty for 1080p screen recording, and 15 to 25 Mbps for 4K. That is why this calculator's screen recording preset cuts the standard bitrate roughly in half.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why is my real file bigger or smaller than the estimate?</h3>
+        <p>Most encoders use variable bitrate, so the actual average depends on how much motion and detail your footage has. High motion gameplay comes out larger, static screen shares smaller. Codec matters too: H.265 and AV1 produce files roughly 30 to 50 percent smaller than H.264 at the same visual quality.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How much video fits on my drive?</h3>
+        <p>Divide your free space by the per hour number above. A 256 GB drive holds about 70 hours of 1080p 30fps footage at 8 Mbps, or about 12 hours of 4K 30fps at 45 Mbps.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Does frame rate change file size?</h3>
+        <p>Only through bitrate. Doubling the frame rate does not double the size, because consecutive frames are similar and compress efficiently. In practice 60fps needs roughly 50 percent more bitrate than 30fps at the same resolution, which is what the presets here use.</p>
+      </div>
+
+      <h2>More free tools</h2>
+      <div class="related-tools">
+        <a href="webcam-test.html" class="btn btn-ghost">Webcam Test</a>
+        <a href="mic-test.html" class="btn btn-ghost">Mic Test</a>
+        <a href="typing-vs-speaking-test.html" class="btn btn-ghost">Typing vs Speaking Speed Test</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const AUDIO_MBPS = 0.192;
+
+  function fmtSize(mb) {
+    if (mb >= 1024) return (mb / 1024).toFixed(mb >= 10240 ? 0 : 1) + ' GB';
+    if (mb >= 100) return Math.round(mb) + ' MB';
+    return mb.toFixed(1) + ' MB';
+  }
+
+  function fmtTime(totalSec) {
+    if (!isFinite(totalSec) || totalSec <= 0) return '0s';
+    if (totalSec < 60) return Math.ceil(totalSec) + 's';
+    const h = Math.floor(totalSec / 3600);
+    const m = Math.floor((totalSec % 3600) / 60);
+    const s = Math.round(totalSec % 60);
+    if (h > 0) return h + 'h ' + String(m).padStart(2, '0') + 'm';
+    return m + 'm ' + String(s).padStart(2, '0') + 's';
+  }
+
+  function fmtFootagePerGB(minutes) {
+    if (!isFinite(minutes) || minutes <= 0) return '0m';
+    if (minutes < 1) return Math.round(minutes * 60) + 's';
+    if (minutes >= 90) return (minutes / 60).toFixed(1) + 'h';
+    return Math.round(minutes) + 'm';
+  }
+
+  function calculate() {
+    const presetMbps  = Number(document.getElementById('res-select').value);
+    const contentMult = Number(document.getElementById('content-select').value);
+    const customRaw   = document.getElementById('custom-bitrate').value;
+    const custom      = customRaw === '' ? null : Math.max(0, Number(customRaw));
+    const mins        = Math.max(0, Number(document.getElementById('dur-min').value) || 0);
+    const secs        = Math.max(0, Number(document.getElementById('dur-sec').value) || 0);
+    const upMbps      = Math.max(1, Number(document.getElementById('upload-speed').value) || 20);
+
+    const videoMbps = custom !== null && custom > 0 ? custom : presetMbps * contentMult;
+    const totalMbps = videoMbps + AUDIO_MBPS;
+    const durationS = mins * 60 + secs;
+
+    const sizeMB    = (totalMbps * durationS) / 8;
+    const perHourMB = (totalMbps * 3600) / 8;
+    const uploadS   = (sizeMB * 8) / upMbps;
+    const minPerGB  = perHourMB > 0 ? (1024 / perHourMB) * 60 : 0;
+
+    document.getElementById('r-size').textContent     = fmtSize(sizeMB);
+    document.getElementById('r-bitrate').textContent  = (Math.round(totalMbps * 10) / 10) + ' Mbps';
+    document.getElementById('r-upload').textContent   = fmtTime(uploadS);
+    document.getElementById('r-per-hour').textContent = fmtSize(perHourMB);
+    document.getElementById('r-per-gb').textContent   = fmtFootagePerGB(minPerGB);
+  }
+
+  ['res-select', 'content-select', 'dur-min', 'dur-sec', 'custom-bitrate', 'upload-speed'].forEach(id => {
+    document.getElementById(id).addEventListener('input', calculate);
+  });
+  calculate();
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

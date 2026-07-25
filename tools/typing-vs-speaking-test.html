@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Typing vs Speaking Speed Test: How Much Faster Could You Write? — Robby J</title>
+  <meta name="description" content="Take a free 60 second typing test, get your WPM and accuracy, and see how your speed compares to talking. Most people speak 3x faster than they type." />
+  <meta property="og:title" content="Typing vs Speaking Speed Test: How Much Faster Could You Write? — Robby J" />
+  <meta property="og:description" content="Take a free 60 second typing test, get your WPM and accuracy, and see how your speed compares to talking. Most people speak 3x faster than they type." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/typing-vs-speaking-test.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Typing vs Speaking Speed Test",
+        "url": "https://automatewithrobby.fyi/tools/typing-vs-speaking-test.html",
+        "description": "Free 60 second typing speed test that measures your WPM and accuracy, then compares your typing speed to average speaking speed and estimates the writing time you could save with voice dictation.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Robby J", "url": "https://automatewithrobby.fyi/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://automatewithrobby.fyi/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://automatewithrobby.fyi/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Typing vs Speaking Speed Test", "item": "https://automatewithrobby.fyi/tools/typing-vs-speaking-test.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the average typing speed?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The average typing speed is about 40 words per minute. Office professionals usually land between 50 and 70 WPM, and fast typists reach 80 to 100 WPM. Anything above 60 WPM is considered good." }
+          },
+          {
+            "@type": "Question",
+            "name": "How fast do people speak in words per minute?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Conversational English runs about 150 words per minute, with a typical range of 120 to 160 WPM. That is roughly 3x faster than the average typing speed of 40 WPM." }
+          },
+          {
+            "@type": "Question",
+            "name": "How is WPM calculated?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The standard formula counts every 5 characters typed (including spaces) as one word, then divides by minutes elapsed. This test uses correctly typed characters, so errors do not inflate your score." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is dictation really faster than typing?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For drafting, yes. Speaking at 150 WPM is about 3x faster than typing at 40 to 50 WPM, and modern on device speech models are accurate enough for everyday writing like messages, emails, notes, and prompts. Editing and code are still usually faster by keyboard." }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good typing speed?",
+            "acceptedAnswer": { "@type": "Answer", "text": "60 WPM or higher is a good typing speed, 80 or higher is fast, and 100 or higher is exceptional. But even at 100 WPM you would still be writing slower than you talk." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .tool-hero { padding: 60px 0 28px; text-align: center; }
+    .tool-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .tool-hero p { color: var(--ink-muted); font-size: 1.05rem; max-width: 62ch; margin: 0 auto; }
+    .tool-wrap { max-width: 760px; margin: 0 auto 56px; }
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+    }
+    .test-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
+    .timer-chip {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; font-weight: 700;
+      background: var(--surface-2); border: 1px solid var(--border);
+      color: var(--ink); border-radius: 999px; padding: 6px 14px;
+    }
+    .timer-chip.running { border-color: var(--accent); color: var(--accent); }
+    .live-wpm { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: var(--ink-muted); }
+    #passage {
+      font-family: 'JetBrains Mono', monospace; font-size: 1.02rem; line-height: 1.9;
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 20px 22px; user-select: none;
+      color: var(--ink-muted);
+    }
+    #passage span.ok { color: #047857; }
+    #passage span.bad { color: #b91c1c; background: rgba(185,28,28,0.10); border-radius: 2px; }
+    #passage span.cur { background: var(--accent-soft); border-radius: 2px; box-shadow: inset 0 -2px 0 var(--accent); }
+    #type-input {
+      width: 100%; margin-top: 16px; box-sizing: border-box;
+      background: var(--surface); border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm); color: var(--ink);
+      font-family: 'JetBrains Mono', monospace; font-size: 1rem;
+      padding: 13px 15px; outline: none; transition: var(--transition);
+    }
+    #type-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    #type-input:disabled { opacity: 0.55; }
+    .controls-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 18px; align-items: center; }
+    .daily-row { display: flex; align-items: center; gap: 10px; margin-top: 18px; flex-wrap: wrap; }
+    .daily-row label { font-family: var(--font-display); font-weight: 600; font-size: 0.88rem; color: var(--ink); }
+    #daily-minutes {
+      width: 90px; background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--ink);
+      font-family: 'JetBrains Mono', monospace; font-size: 0.95rem; padding: 9px 11px; outline: none;
+    }
+    #daily-minutes:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .results-card { margin-top: 26px; display: none; }
+    .results-card.show { display: block; }
+    .stat-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    @media (max-width: 560px) { .stat-grid { grid-template-columns: 1fr; } }
+    .stat-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 18px 14px; text-align: center;
+    }
+    .stat-number { font-family: var(--font-display); font-size: 2rem; font-weight: 700; color: var(--accent); line-height: 1; margin-bottom: 5px; }
+    .stat-desc { font-size: 0.78rem; color: var(--ink-muted); line-height: 1.4; }
+    .compare-bars { margin-top: 20px; }
+    .bar-row { margin-bottom: 14px; }
+    .bar-label { display: flex; justify-content: space-between; font-size: 0.85rem; font-family: var(--font-display); font-weight: 600; color: var(--ink); margin-bottom: 6px; }
+    .bar-track { height: 14px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+    .bar-fill { height: 100%; border-radius: 999px; background: var(--accent); width: 100%; transform: scaleX(0); transform-origin: left; transition: transform 0.8s cubic-bezier(.22,1,.36,1); }
+    @media (prefers-reduced-motion: reduce) { .bar-fill { transition: none; } }
+    .bar-fill.speak { background: #047857; }
+    .verdict {
+      margin-top: 20px; padding: 18px 20px; border-radius: var(--radius-sm);
+      background: var(--accent-soft); border: 1px solid var(--border-strong);
+      font-family: var(--font-display); font-size: 0.98rem; color: var(--ink);
+      line-height: 1.6; text-align: center;
+    }
+    .verdict strong { color: var(--accent); }
+    .cta-links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-top: 16px; }
+    .seo-section { max-width: 720px; margin: 0 auto 48px; }
+    .seo-section h2 { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .seo-section p, .seo-section li { color: var(--ink-muted); line-height: 1.7; font-size: 0.98rem; }
+    .seo-section ul, .seo-section ol { padding-left: 22px; margin: 10px 0; }
+    .seo-section li { margin-bottom: 8px; }
+    .seo-section table { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 0.92rem; }
+    .seo-section th, .seo-section td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--ink-muted); }
+    .seo-section th { font-family: var(--font-display); color: var(--ink); font-weight: 600; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-item h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+    .related-tools { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="container">
+    <div class="tool-hero">
+      <h1>Typing vs Speaking: How Much Faster Could You Write?</h1>
+      <p>Take the 60 second test below to measure your typing speed in WPM. Then see the part most speed tests skip: how your fingers compare to your voice. People speak around 150 words per minute. The average person types 40.</p>
+    </div>
+
+    <div class="tool-wrap">
+      <div class="tool-card">
+        <div class="test-meta">
+          <span class="timer-chip" id="timer-chip">60s</span>
+          <span class="live-wpm" id="live-wpm">Start typing to begin the timer</span>
+        </div>
+
+        <div id="passage" aria-label="Passage to type"></div>
+
+        <input
+          type="text"
+          id="type-input"
+          autocomplete="off"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          aria-label="Type the passage here"
+          placeholder="Click here and start typing the passage above..."
+        />
+
+        <div class="daily-row">
+          <label for="daily-minutes">Minutes you spend writing per day:</label>
+          <input type="number" id="daily-minutes" value="60" min="5" max="600" step="5" aria-label="Minutes spent writing per day" />
+        </div>
+
+        <div class="controls-row">
+          <button id="restart-btn" class="btn btn-ghost">New passage / restart</button>
+        </div>
+
+        <div class="results-card" id="results-card">
+          <div class="stat-grid">
+            <div class="stat-card">
+              <div class="stat-number" id="r-wpm">0</div>
+              <div class="stat-desc">Your typing speed<br>(WPM)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="r-acc">0%</div>
+              <div class="stat-desc">Accuracy</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" id="r-mult">3.0x</div>
+              <div class="stat-desc">How much faster<br>your voice is</div>
+            </div>
+          </div>
+
+          <div class="compare-bars">
+            <div class="bar-row">
+              <div class="bar-label"><span>Your typing</span><span id="bar-type-label">0 WPM</span></div>
+              <div class="bar-track"><div class="bar-fill" id="bar-type"></div></div>
+            </div>
+            <div class="bar-row">
+              <div class="bar-label"><span>Average speaking</span><span>150 WPM</span></div>
+              <div class="bar-track"><div class="bar-fill speak" id="bar-speak"></div></div>
+            </div>
+          </div>
+
+          <div class="verdict" id="verdict"></div>
+
+          <div class="cta-links">
+            <a href="https://robj1925.github.io/open-flow/" target="_blank" rel="noopener" class="btn btn-primary">Get OpenFlow for Mac (free)</a>
+            <a href="mic-test.html" class="btn btn-ghost">Test your mic first</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seo-section">
+      <h2>What is a good typing speed?</h2>
+      <p>The average typing speed is about 40 words per minute. Office professionals usually land between 50 and 70 WPM. Anything above 60 is good, above 80 is fast, and above 100 is exceptional. Accuracy matters as much as raw speed: a fast typist with sloppy accuracy spends the saved time fixing mistakes.</p>
+      <table>
+        <thead><tr><th>Speed</th><th>Rating</th></tr></thead>
+        <tbody>
+          <tr><td>Under 30 WPM</td><td>Below average</td></tr>
+          <tr><td>30 to 50 WPM</td><td>Average</td></tr>
+          <tr><td>50 to 70 WPM</td><td>Good (typical office professional)</td></tr>
+          <tr><td>70 to 100 WPM</td><td>Fast</td></tr>
+          <tr><td>100+ WPM</td><td>Exceptional</td></tr>
+          <tr><td>~150 WPM</td><td>Average speaking speed</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why compare typing to speaking?</h2>
+      <p>Because your voice is the writing tool you already own and almost never use. Conversational speech runs about 150 words per minute. Even a fast 80 WPM typist writes at barely half their talking pace, and the average typist at 40 WPM is going almost 4x slower than they speak.</p>
+      <p>That gap used to not matter because dictation software was clumsy. On device speech models changed that: they are fast, accurate, and private. For first drafts, messages, emails, notes, and AI prompts, speaking is simply the faster input. Keyboards still win for editing and code.</p>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h3>How is WPM calculated?</h3>
+        <p>The standard formula counts every 5 characters typed (including spaces) as one word, then divides by the minutes elapsed. This test counts only correctly typed characters, so errors do not inflate your score.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How fast do people speak?</h3>
+        <p>Conversational English runs about 150 words per minute, with a typical range of 120 to 160. Audiobook narration is slower (about 130) and auctioneers famously hit 250 or more.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is dictation really faster than typing?</h3>
+        <p>For drafting, yes. Speaking at 150 WPM is about 3x faster than typing at 40 to 50 WPM. The catch used to be accuracy, but modern on device models transcribe everyday speech reliably. If you write a lot every day, the hours add up fast: that is exactly what the calculator above shows.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What tool do I use to write by voice on a Mac?</h3>
+        <p>I built <a href="https://robj1925.github.io/open-flow/" target="_blank" rel="noopener">OpenFlow</a>, a free and open source dictation app for macOS. Hold a key, speak, release: your words land wherever your cursor is. It runs on device, so nothing you say leaves your machine, and there is no subscription.</p>
+      </div>
+
+      <h2>More free tools</h2>
+      <div class="related-tools">
+        <a href="mic-test.html" class="btn btn-ghost">Mic Test</a>
+        <a href="webcam-test.html" class="btn btn-ghost">Webcam Test</a>
+        <a href="video-file-size-calculator.html" class="btn btn-ghost">Video File Size Calculator</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const PASSAGES = [
+    "The best tools disappear into the background. You stop thinking about the keyboard, the app, or the settings, and you just work. That is the goal of good design: to remove every step between the thought in your head and the thing on the screen. Speed matters less than flow, but when you get both at once, work starts to feel easy.",
+    "Every morning the inbox fills up again. Messages, updates, questions, and drafts that all need words. Most of us pour an hour or two into writing before lunch without ever noticing the cost. The faster your ideas get out of your head, the more time you keep for the work that actually moves things forward.",
+    "Automation is not about replacing people. It is about taking the boring, repeated parts of a job and handing them to a machine so a person can do the interesting parts. Start small: one task, one script, one saved hour a week. Those hours stack up faster than you expect, and they compound over a year.",
+    "A good habit beats a burst of motivation. Write a little every day and the pages pile up. Practice a skill for twenty minutes each morning and in a year you are unrecognizable. The trick is to lower the cost of starting, because the hardest part of any task is almost always the first thirty seconds."
+  ];
+  const SPEAK_WPM = 150;
+  const TEST_SECONDS = 60;
+
+  const passageEl = document.getElementById('passage');
+  const inputEl   = document.getElementById('type-input');
+  const timerChip = document.getElementById('timer-chip');
+  const liveWpm   = document.getElementById('live-wpm');
+  const resultsEl = document.getElementById('results-card');
+  const dailyEl   = document.getElementById('daily-minutes');
+
+  let passage = '', spans = [], started = false, finished = false;
+  let startTime = 0, timerId = null, lastWpm = 0;
+
+  function pickPassage() {
+    let next;
+    do { next = PASSAGES[Math.floor(Math.random() * PASSAGES.length)]; } while (next === passage && PASSAGES.length > 1);
+    passage = next;
+    passageEl.innerHTML = '';
+    spans = [];
+    for (const ch of passage) {
+      const s = document.createElement('span');
+      s.textContent = ch;
+      passageEl.appendChild(s);
+      spans.push(s);
+    }
+    if (spans.length) spans[0].classList.add('cur');
+  }
+
+  function correctChars(typed) {
+    let n = 0;
+    for (let i = 0; i < typed.length && i < passage.length; i++) {
+      if (typed[i] === passage[i]) n++;
+    }
+    return n;
+  }
+
+  function paint(typed) {
+    for (let i = 0; i < spans.length; i++) {
+      const s = spans[i];
+      s.className = '';
+      if (i < typed.length) {
+        s.classList.add(typed[i] === passage[i] ? 'ok' : 'bad');
+      } else if (i === typed.length) {
+        s.classList.add('cur');
+      }
+    }
+  }
+
+  function elapsedMin() { return (Date.now() - startTime) / 60000; }
+
+  function computeWpm(typed) {
+    const mins = Math.max(elapsedMin(), 1 / 60);
+    return Math.round((correctChars(typed) / 5) / mins);
+  }
+
+  function tick() {
+    const remaining = Math.max(0, TEST_SECONDS - Math.floor((Date.now() - startTime) / 1000));
+    timerChip.textContent = remaining + 's';
+    lastWpm = computeWpm(inputEl.value);
+    liveWpm.textContent = lastWpm + ' WPM so far';
+    if (remaining <= 0) finish();
+  }
+
+  function start() {
+    started = true;
+    startTime = Date.now();
+    timerChip.classList.add('running');
+    timerId = setInterval(tick, 250);
+  }
+
+  function finish() {
+    if (finished) return;
+    finished = true;
+    clearInterval(timerId);
+    inputEl.disabled = true;
+    timerChip.textContent = 'Done';
+    timerChip.classList.remove('running');
+
+    const typed = inputEl.value;
+    const wpm = computeWpm(typed);
+    const acc = typed.length ? Math.round((correctChars(typed) / typed.length) * 100) : 0;
+    const mult = wpm > 0 ? SPEAK_WPM / wpm : SPEAK_WPM / 1;
+    const multLabel = (Math.round(mult * 10) / 10).toFixed(1) + 'x';
+
+    document.getElementById('r-wpm').textContent = wpm;
+    document.getElementById('r-acc').textContent = acc + '%';
+    document.getElementById('r-mult').textContent = multLabel;
+    document.getElementById('bar-type-label').textContent = wpm + ' WPM';
+
+    const maxWpm = Math.max(SPEAK_WPM, wpm);
+    document.getElementById('bar-type').style.transform = 'scaleX(' + Math.max(0.02, wpm / maxWpm) + ')';
+    document.getElementById('bar-speak').style.transform = 'scaleX(' + (SPEAK_WPM / maxWpm) + ')';
+
+    const daily = Math.min(600, Math.max(5, Number(dailyEl.value) || 60));
+    let verdictHtml;
+    if (wpm >= SPEAK_WPM) {
+      verdictHtml = 'You type <strong>faster than people talk</strong>. Genuinely rare. For you, voice is a break for your hands, not a speed upgrade.';
+    } else {
+      const savedFrac = 1 - (wpm / SPEAK_WPM);
+      const hoursYear = Math.round((daily * savedFrac * 365) / 60);
+      const weeks = (hoursYear / 40).toFixed(1);
+      verdictHtml = 'Your voice is <strong>' + multLabel + ' faster</strong> than your fingers. At ' + daily +
+        ' minutes of writing a day, dictating your drafts could save you about <strong>' + hoursYear +
+        ' hours a year</strong> (roughly ' + weeks + ' work weeks).';
+    }
+    document.getElementById('verdict').innerHTML = verdictHtml;
+    resultsEl.classList.add('show');
+    resultsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function reset() {
+    clearInterval(timerId);
+    started = false; finished = false; lastWpm = 0;
+    inputEl.disabled = false;
+    inputEl.value = '';
+    timerChip.textContent = TEST_SECONDS + 's';
+    timerChip.classList.remove('running');
+    liveWpm.textContent = 'Start typing to begin the timer';
+    resultsEl.classList.remove('show');
+    pickPassage();
+    inputEl.focus();
+  }
+
+  inputEl.addEventListener('input', () => {
+    if (finished) return;
+    if (!started && inputEl.value.length > 0) start();
+    paint(inputEl.value);
+    if (inputEl.value.length >= passage.length) finish();
+  });
+
+  document.getElementById('restart-btn').addEventListener('click', reset);
+  dailyEl.addEventListener('input', () => { if (finished) { finished = false; finish(); } });
+
+  pickPassage();
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

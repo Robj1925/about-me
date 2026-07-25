@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webcam Test: Check Your Camera Online (Free, No Install) — Robby J</title>
+  <meta name="description" content="Test your webcam online in seconds. See a live preview, check your real resolution and frame rate, take a snapshot, and fix common camera problems. Free and private." />
+  <meta property="og:title" content="Webcam Test: Check Your Camera Online (Free, No Install) — Robby J" />
+  <meta property="og:description" content="Test your webcam online in seconds. See a live preview, check your real resolution and frame rate, take a snapshot, and fix common camera problems. Free and private." />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/tools/webcam-test.html" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        "name": "Online Webcam Test",
+        "url": "https://automatewithrobby.fyi/tools/webcam-test.html",
+        "description": "Free online webcam test with live preview, resolution and frame rate readout, mirror toggle, and snapshot. Runs entirely in your browser. No video is uploaded.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "browserRequirements": "Requires a modern browser with camera access",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@type": "Person", "name": "Robby J", "url": "https://automatewithrobby.fyi/" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://automatewithrobby.fyi/" },
+          { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://automatewithrobby.fyi/tools/" },
+          { "@type": "ListItem", "position": 3, "name": "Webcam Test", "item": "https://automatewithrobby.fyi/tools/webcam-test.html" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I test my webcam online?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Click Start camera test, allow camera access when your browser asks, and you will see yourself in the live preview. The tool also shows the actual resolution and frame rate your camera is delivering, and lets you take a snapshot." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my camera showing a black screen?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Common causes: a physical privacy shutter is closed, another app (Zoom, Teams, OBS) is holding the camera, browser permission is blocked, or the wrong camera is selected. Close other video apps, open the shutter, check the address bar permission icon, and switch devices in the dropdown." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my video uploaded anywhere?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. The preview runs entirely in your browser. Your video never leaves your machine, nothing is uploaded, and snapshots are saved directly to your device only if you click download." }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do I look mirrored in the preview?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Most video apps mirror your self view so it feels like a mirror, but other people see you un-mirrored. Use the mirror toggle to see both versions. Snapshots are taken un-mirrored, which is how others see you." }
+          },
+          {
+            "@type": "Question",
+            "name": "What resolution should my webcam be?",
+            "acceptedAnswer": { "@type": "Answer", "text": "720p (1280x720) is the minimum for professional looking calls, 1080p (1920x1080) is the sweet spot, and 4K matters mainly for recorded content. If the readout shows less than your camera's advertised resolution, poor lighting or another app's settings are usually the cause." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .tool-hero { padding: 60px 0 28px; text-align: center; }
+    .tool-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 12px;
+    }
+    .tool-hero p { color: var(--ink-muted); font-size: 1.05rem; max-width: 62ch; margin: 0 auto; }
+    .tool-wrap { max-width: 760px; margin: 0 auto 56px; }
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-md);
+    }
+    .cam-status {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;
+      color: var(--ink-muted); margin-bottom: 18px; flex-wrap: wrap;
+    }
+    .status-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--border-strong); flex: none; }
+    .status-dot.live { background: #047857; box-shadow: 0 0 0 4px rgba(4,120,87,0.15); }
+    .status-dot.err { background: #b91c1c; }
+    .video-frame {
+      position: relative; width: 100%; aspect-ratio: 16 / 9;
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); overflow: hidden;
+    }
+    #cam-video { width: 100%; height: 100%; object-fit: cover; display: block; }
+    #cam-video.mirrored { transform: scaleX(-1); }
+    .video-placeholder {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+      color: var(--ink-faint); font-family: 'JetBrains Mono', monospace; font-size: 0.9rem;
+      text-align: center; padding: 20px;
+    }
+    .readout-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; }
+    @media (max-width: 560px) { .readout-grid { grid-template-columns: 1fr; } }
+    .readout-card {
+      background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 14px 12px; text-align: center;
+    }
+    .readout-value { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+    .readout-label { font-size: 0.75rem; color: var(--ink-muted); margin-top: 3px; }
+    .controls-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 20px; align-items: center; }
+    .device-row { margin-top: 18px; }
+    .device-row label { display: block; font-family: var(--font-display); font-weight: 600; font-size: 0.85rem; color: var(--ink); margin-bottom: 6px; }
+    #device-select {
+      width: 100%; background: var(--surface-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); color: var(--ink);
+      font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; padding: 10px 12px; outline: none;
+    }
+    #device-select:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft); }
+    .hint-box {
+      margin-top: 18px; padding: 14px 18px; border-radius: var(--radius-sm);
+      background: var(--surface-2); border: 1px solid var(--border);
+      font-size: 0.9rem; color: var(--ink-muted); line-height: 1.55; display: none;
+    }
+    .hint-box.error { background: rgba(185,28,28,0.06); border-color: rgba(185,28,28,0.25); color: #7f1d1d; display: block; }
+    .privacy-note { margin-top: 16px; font-size: 0.8rem; color: var(--ink-faint); text-align: center; }
+    .cta-card {
+      margin-top: 28px; padding: 26px 28px; border-radius: var(--radius);
+      background: var(--accent-soft); border: 1px solid var(--border-strong);
+      display: none;
+    }
+    .cta-card.show { display: block; }
+    .cta-card h2 { font-family: var(--font-display); font-size: 1.2rem; color: var(--ink); margin-bottom: 8px; }
+    .cta-card p { color: var(--ink-muted); font-size: 0.95rem; margin-bottom: 16px; line-height: 1.55; }
+    .cta-links { display: flex; gap: 12px; flex-wrap: wrap; }
+    .seo-section { max-width: 720px; margin: 0 auto 48px; }
+    .seo-section h2 { font-family: var(--font-display); font-size: 1.45rem; font-weight: 700; color: var(--ink); margin: 40px 0 14px; }
+    .seo-section p, .seo-section li { color: var(--ink-muted); line-height: 1.7; font-size: 0.98rem; }
+    .seo-section ul, .seo-section ol { padding-left: 22px; margin: 10px 0; }
+    .seo-section li { margin-bottom: 8px; }
+    .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+    .faq-item h3 { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+    .related-tools { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+  </style>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: white; text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -&gt; <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: white; text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Tools</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+  <div class="container">
+    <div class="tool-hero">
+      <h1>Webcam Test: Check Your Camera Online</h1>
+      <p>See yourself instantly, check the real resolution and frame rate your camera delivers, and grab a snapshot. Everything runs in your browser: no installs, no uploads, and your video never leaves your machine.</p>
+    </div>
+
+    <div class="tool-wrap">
+      <div class="tool-card">
+        <div class="cam-status">
+          <span class="status-dot" id="status-dot"></span>
+          <span id="status-text">Camera not started yet</span>
+        </div>
+
+        <div class="video-frame">
+          <video id="cam-video" class="mirrored" autoplay playsinline muted></video>
+          <div class="video-placeholder" id="video-placeholder">Click Start camera test below and allow access to see your preview</div>
+        </div>
+
+        <div class="readout-grid">
+          <div class="readout-card">
+            <div class="readout-value" id="r-res">...</div>
+            <div class="readout-label">Resolution</div>
+          </div>
+          <div class="readout-card">
+            <div class="readout-value" id="r-fps">...</div>
+            <div class="readout-label">Frame rate</div>
+          </div>
+          <div class="readout-card">
+            <div class="readout-value" id="r-ratio">...</div>
+            <div class="readout-label">Aspect ratio</div>
+          </div>
+        </div>
+
+        <div class="controls-row">
+          <button id="start-btn" class="btn btn-primary">Start camera test</button>
+          <button id="mirror-btn" class="btn btn-ghost" disabled>Un-mirror view</button>
+          <button id="snap-btn" class="btn btn-ghost" disabled>Take snapshot</button>
+          <button id="stop-btn" class="btn btn-ghost" style="display:none">Stop test</button>
+        </div>
+
+        <div class="device-row" id="device-row" style="display:none">
+          <label for="device-select">Camera</label>
+          <select id="device-select" aria-label="Choose camera device"></select>
+        </div>
+
+        <div class="hint-box" id="hint-box"></div>
+
+        <p class="privacy-note">Private by design: the preview is rendered locally. Nothing is uploaded or stored.</p>
+      </div>
+
+      <div class="cta-card" id="cta-card">
+        <h2>Your camera works. Now record with it.</h2>
+        <p>Recording Studio turns this same browser into a full recording setup: screen plus camera together, green screen keying, 4K, and editor ready MP4/MOV exports. Free to use, and your footage never leaves your machine.</p>
+        <div class="cta-links">
+          <a href="https://recording-studio-7vg.pages.dev" target="_blank" rel="noopener" class="btn btn-primary">Open Recording Studio</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="seo-section">
+      <h2>How do I test my webcam online?</h2>
+      <ol>
+        <li>Click the Start camera test button above.</li>
+        <li>When your browser asks for permission, click Allow.</li>
+        <li>You should see yourself in the preview. The cards below it show the actual resolution and frame rate your camera is delivering right now.</li>
+        <li>Optional: take a snapshot to check how you look, or use the mirror toggle to see the un-mirrored view other people see.</li>
+      </ol>
+
+      <h2>Why is my camera not working or showing black?</h2>
+      <ul>
+        <li><strong>Privacy shutter closed:</strong> many webcams and laptops have a physical cover over the lens. Slide it open.</li>
+        <li><strong>Another app has the camera:</strong> only one app can use most webcams at a time. Close Zoom, Teams, Discord, or OBS and reload.</li>
+        <li><strong>Permission blocked:</strong> click the camera icon in the address bar, set camera access to Allow, then reload.</li>
+        <li><strong>Wrong camera selected:</strong> if you have a virtual camera installed (OBS Virtual Camera, Snap Camera), your browser may pick it by default. Switch devices in the dropdown above.</li>
+        <li><strong>System settings:</strong> on macOS check System Settings, Privacy and Security, Camera. On Windows check Settings, Privacy, Camera.</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <div class="faq-item">
+        <h3>Is my video uploaded anywhere?</h3>
+        <p>No. The preview runs entirely in your browser. Your video never leaves your machine, and snapshots are saved directly to your device only if you click download.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why do I look mirrored?</h3>
+        <p>Self views are usually mirrored so they feel like a mirror, but other people see you un-mirrored. Use the toggle above to preview both. Snapshots are taken un-mirrored, which is how you appear to others.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What resolution should my webcam be?</h3>
+        <p>720p is the minimum for professional looking calls, 1080p is the sweet spot, and 4K matters mainly for recorded content. If the readout shows less than your camera's advertised spec, poor lighting is the usual cause: cameras drop resolution and frame rate in the dark.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Why is my frame rate low?</h3>
+        <p>Add light. Webcams slow their shutter in dim rooms, which cuts the frame rate and adds motion blur. A window in front of you or a cheap desk light fixes more webcam problems than any setting.</p>
+      </div>
+
+      <h2>More free tools</h2>
+      <div class="related-tools">
+        <a href="mic-test.html" class="btn btn-ghost">Mic Test</a>
+        <a href="video-file-size-calculator.html" class="btn btn-ghost">Video File Size Calculator</a>
+        <a href="typing-vs-speaking-test.html" class="btn btn-ghost">Typing vs Speaking Speed Test</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const startBtn  = document.getElementById('start-btn');
+  const stopBtn   = document.getElementById('stop-btn');
+  const mirrorBtn = document.getElementById('mirror-btn');
+  const snapBtn   = document.getElementById('snap-btn');
+  const statusDot = document.getElementById('status-dot');
+  const statusText= document.getElementById('status-text');
+  const hintBox   = document.getElementById('hint-box');
+  const deviceRow = document.getElementById('device-row');
+  const deviceSel = document.getElementById('device-select');
+  const ctaCard   = document.getElementById('cta-card');
+  const video     = document.getElementById('cam-video');
+  const placeholder = document.getElementById('video-placeholder');
+
+  let stream = null, readoutTimer = null;
+
+  function setStatus(kind, text) {
+    statusDot.className = 'status-dot' + (kind === 'live' ? ' live' : kind === 'err' ? ' err' : '');
+    statusText.textContent = text;
+  }
+  function showHint(text, isError) {
+    hintBox.className = 'hint-box' + (isError ? ' error' : '');
+    hintBox.style.display = 'block';
+    hintBox.textContent = text;
+  }
+  function clearHint() { hintBox.style.display = 'none'; hintBox.textContent = ''; }
+
+  function gcd(a, b) { return b ? gcd(b, a % b) : a; }
+  function ratioLabel(w, h) {
+    if (!w || !h) return '...';
+    const g = gcd(w, h);
+    const rw = w / g, rh = h / g;
+    if (rw > 50 || rh > 50) return (w / h).toFixed(2) + ':1';
+    return rw + ':' + rh;
+  }
+
+  function updateReadout() {
+    if (!stream) return;
+    const track = stream.getVideoTracks()[0];
+    if (!track) return;
+    const s = track.getSettings();
+    document.getElementById('r-res').textContent = (s.width && s.height) ? s.width + 'x' + s.height : '...';
+    document.getElementById('r-fps').textContent = s.frameRate ? Math.round(s.frameRate) + ' fps' : '...';
+    document.getElementById('r-ratio').textContent = ratioLabel(s.width, s.height);
+  }
+
+  async function listDevices(currentId) {
+    try {
+      const devices = await navigator.mediaDevices.enumerateDevices();
+      const cams = devices.filter(d => d.kind === 'videoinput');
+      if (cams.length === 0) return;
+      deviceSel.innerHTML = '';
+      cams.forEach((d, i) => {
+        const opt = document.createElement('option');
+        opt.value = d.deviceId;
+        opt.textContent = d.label || ('Camera ' + (i + 1));
+        if (d.deviceId === currentId) opt.selected = true;
+        deviceSel.appendChild(opt);
+      });
+      deviceRow.style.display = 'block';
+    } catch (e) { /* non-fatal */ }
+  }
+
+  async function startTest(deviceId) {
+    stopTest(true);
+    try {
+      const constraints = {
+        video: deviceId
+          ? { deviceId: { exact: deviceId }, width: { ideal: 1920 }, height: { ideal: 1080 } }
+          : { width: { ideal: 1920 }, height: { ideal: 1080 } }
+      };
+      stream = await navigator.mediaDevices.getUserMedia(constraints);
+    } catch (err) {
+      if (err.name === 'NotAllowedError' || err.name === 'SecurityError') {
+        setStatus('err', 'Camera access blocked');
+        showHint('Your browser blocked camera access. Click the camera icon in the address bar, choose Allow, then reload this page and try again.', true);
+      } else if (err.name === 'NotFoundError' || err.name === 'OverconstrainedError') {
+        setStatus('err', 'No camera found');
+        showHint('No camera was detected. Plug one in, open the privacy shutter, or check that your built in camera is enabled in system settings.', true);
+      } else if (err.name === 'NotReadableError') {
+        setStatus('err', 'Camera is in use by another app');
+        showHint('Your camera is busy. Close Zoom, Teams, Discord, OBS, or any other app using it, then try again.', true);
+      } else {
+        setStatus('err', 'Could not start the camera');
+        showHint('Something went wrong starting the camera: ' + err.name + '. Try a different camera from the dropdown or reload the page.', true);
+      }
+      return;
+    }
+
+    video.srcObject = stream;
+    placeholder.style.display = 'none';
+    setStatus('live', 'Camera is working. This is your live preview.');
+    clearHint();
+    ctaCard.classList.add('show');
+
+    const track = stream.getVideoTracks()[0];
+    listDevices(track.getSettings().deviceId);
+    updateReadout();
+    readoutTimer = setInterval(updateReadout, 1500);
+
+    startBtn.style.display = 'none';
+    stopBtn.style.display = '';
+    mirrorBtn.disabled = false;
+    snapBtn.disabled = false;
+  }
+
+  function stopTest(silent) {
+    if (readoutTimer) { clearInterval(readoutTimer); readoutTimer = null; }
+    if (stream) { stream.getTracks().forEach(t => t.stop()); stream = null; }
+    video.srcObject = null;
+    if (!silent) {
+      setStatus('', 'Test stopped');
+      placeholder.style.display = 'flex';
+      document.getElementById('r-res').textContent = '...';
+      document.getElementById('r-fps').textContent = '...';
+      document.getElementById('r-ratio').textContent = '...';
+      startBtn.style.display = '';
+      stopBtn.style.display = 'none';
+      mirrorBtn.disabled = true;
+      snapBtn.disabled = true;
+    }
+  }
+
+  function takeSnapshot() {
+    if (!stream) return;
+    const track = stream.getVideoTracks()[0];
+    const s = track.getSettings();
+    const canvas = document.createElement('canvas');
+    canvas.width = s.width || video.videoWidth;
+    canvas.height = s.height || video.videoHeight;
+    const c = canvas.getContext('2d');
+    c.drawImage(video, 0, 0, canvas.width, canvas.height);
+    const link = document.createElement('a');
+    link.download = 'webcam-snapshot.png';
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  }
+
+  startBtn.addEventListener('click', () => startTest());
+  stopBtn.addEventListener('click', () => stopTest(false));
+  snapBtn.addEventListener('click', takeSnapshot);
+  mirrorBtn.addEventListener('click', () => {
+    video.classList.toggle('mirrored');
+    mirrorBtn.textContent = video.classList.contains('mirrored') ? 'Un-mirror view' : 'Mirror view';
+  });
+  deviceSel.addEventListener('change', () => startTest(deviceSel.value));
+  window.addEventListener('beforeunload', () => stopTest(true));
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.style.boxShadow = window.scrollY > 20 ? '0 4px 32px rgba(38,32,26,0.10)' : '';
+  }, { passive: true });
+</script>
+</body>
+</html>

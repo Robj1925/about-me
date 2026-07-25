@@ -25,7 +25,7 @@ This one is mine. OpenFlow is my own open source dictation app for macOS. Hold a
 
 I built it because Wispr Flow is genuinely good but locks the best features behind a subscription, and I wanted something I could point at my own hardware without a monthly fee. It uses Parakeet or Whisper locally depending on the language, so it works fully offline once the models are downloaded.
 
-[Grab OpenFlow for free](https://robj1925.github.io/open-flow/). It is free and open source, no catch.
+[Grab OpenFlow for free](https://robj1925.github.io/open-flow/). It is free and open source, no catch. And if you are not sure the switch is worth it, my [typing vs speaking speed test](../tools/typing-vs-speaking-test.html) shows you exactly how much faster your voice is than your fingers.
 
 ## ChatGPT Images replaced Nano Banana
 

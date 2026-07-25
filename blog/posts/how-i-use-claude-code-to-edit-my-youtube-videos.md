@@ -58,6 +58,8 @@ In the video, I run the skill live in a Claude Code session by calling `/short-f
 
 The before-and-after says it all. The raw take is full of dead air, restarts, and mess-ups. The edited version is tight, the silences are gone, and the L-cut overlaps are there if you know where to look for them, subtle enough that you would never guess it was automated.
 
+One tip if you record your own videos: check your gear before you hit record, not after. I keep a free [mic test](../tools/mic-test.html) on this site so you never lose a take to a muted input, and a [video file size calculator](../tools/video-file-size-calculator.html) to figure out how much drive space a recording session will actually need.
+
 ## Get the Skill
 
 I packaged this entire workflow into a skill and put it in my community for free. No trial, no catch. Grab it, drop the folder into Claude Code or any AI agent, set one API key, and run it on your next video.

@@ -78,6 +78,8 @@ tags:
 
 If you want the speed of Wispr Flow without the subscription or the cloud, OpenFlow is the answer. **OpenFlow is a free, open source voice dictation app for macOS that transcribes your speech entirely on your own Mac.** You hold a key, talk, release, and your words appear wherever your cursor already is. No account, no monthly fee, and no audio ever leaves your machine.
 
+Curious what the speed gap looks like for you personally? Take the free [typing vs speaking speed test](../tools/typing-vs-speaking-test.html) and see how many hours a year your voice could save you.
+
 I built it because I loved the idea behind Wispr Flow but not the price or the privacy tradeoff. This post explains what OpenFlow does, how it compares to the alternatives, and how to install it in about two minutes.
 
 ## What is OpenFlow?

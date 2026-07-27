@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Build Your Own iMessage Autoresponder with AI — Robby J</title>
+  <title>How to Build Your Own iMessage Autoresponder with AI</title>
   <meta name="description" content="Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide." />
-  <meta property="og:title" content="How to Build Your Own iMessage Autoresponder with AI — Robby J" />
+  <meta property="og:title" content="How to Build Your Own iMessage Autoresponder with AI" />
   <meta property="og:description" content="Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide." />
   <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:type" content="article" />
   <link rel="canonical" href="https://automatewithrobby.fyi/blog/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Build Your Own iMessage Autoresponder with AI",
+      "description": "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg",
+      "datePublished": "2026-03-07",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.html",
+      "keywords": "AI, Programming, Clawdbot, Automation, Python",
+      "timeRequired": "PT2M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Build Your Own iMessage Autoresponder with AI",
+          "item": "https://automatewithrobby.fyi/blog/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "How to Build Your Own iMessage Autoresponder with AI",
+      "description": "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg",
+      "uploadDate": "2026-03-07",
+      "embedUrl": "https://www.youtube.com/embed/Sm-sUYFuXnA",
+      "contentUrl": "https://www.youtube.com/watch?v=Sm-sUYFuXnA",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -54,18 +122,14 @@
 
     <!-- YouTube Embed -->
     <div class="post-yt-embed">
-        <iframe
-          width="100%" height="100%"
-          src="https://www.youtube.com/embed/Sm-sUYFuXnA"
-          title="YouTube video: How to Build Your Own iMessage Autoresponder with AI"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <button type="button" class="yt-facade" data-yt-id="Sm-sUYFuXnA" aria-label="Play video: How to Build Your Own iMessage Autoresponder with AI">
+          <img src="https://i.ytimg.com/vi/Sm-sUYFuXnA/hqdefault.jpg" alt="Play video: How to Build Your Own iMessage Autoresponder with AI" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
       </div>
 
     <!-- Hero Image -->
-    <img src="../assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg" alt="How to Build Your Own iMessage Autoresponder with AI thumbnail" class="post-hero-img" />
+    <img src="../assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg" alt="How to Build Your Own iMessage Autoresponder with AI thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
 
     <!-- Header -->
     <header class="post-header">
@@ -73,16 +137,18 @@
       <h1 class="post-title">How to Build Your Own iMessage Autoresponder with AI</h1>
       <p class="post-excerpt">Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.</p>
       <div class="post-meta">
-        <span>📅 March 6, 2026</span>
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
         <span>·</span>
+        <span>📅 <time datetime="2026-03-07">March 7, 2026</time></span>
+        <span>·</span>
+        
         <span>⏱ 2 min read</span>
       </div>
     </header>
 
     <!-- Content -->
     <div class="post-content">
-      <p>🚀 Learn to automate like an engineer with direct 1:1 guidance → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
-<h2 id="hey-everyone-its-robby">Hey Everyone! It’s Robby.</h2>
+      <h2 id="hey-everyone-its-robby">Hey Everyone! It’s Robby.</h2>
 <p>I’m a software engineer, and I love building cool AI projects. Today, I want to show you something fun: how to make your own smart autoresponder for iMessage using a tool called Clawdbot. </p>
 <p>We are going to write some code to make your computer reply to your messages automatically. Let’s dive in!</p>
 <h2 id="what-is-a-clawdbot-skill">What is a Clawdbot Skill?</h2>
@@ -107,11 +173,21 @@
 
     </div>
 
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="build-your-first-clawdbot-skill-complete-walkthrough.html">Build Your First Clawdbot Skill: A Beginner's Guide to AI Automation</a></li>
+        <li><a href="clawdbot-skill-setup-real-time-problem-solving-building-live-006.html">How to Build AI Tools: A Real Look at My Clawdbot Project</a></li>
+        <li><a href="building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.html">Build Your Own AI iMessage Assistant: A Step-by-Step Guide</a></li>
+      </ul>
+    </aside>
+
     <!-- CTA -->
     <div class="post-cta-box">
       <h3>Enjoyed this?</h3>
-      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
       <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
     </div>
 
   </article>
@@ -120,14 +196,63 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
-      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
       <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
     </div>
   </div>
 </footer>
 
 <script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
   // Reading progress bar
   const bar = document.getElementById('read-progress');
   window.addEventListener('scroll', () => {

@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory — Robby J</title>
+  <title>Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory</title>
   <meta name="description" content="Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans." />
-  <meta property="og:title" content="Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory — Robby J" />
+  <meta property="og:title" content="Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory" />
   <meta property="og:description" content="Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans." />
   <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:type" content="article" />
   <link rel="canonical" href="https://automatewithrobby.fyi/blog/stop-building-dumb-ai-agents-do-this-instead.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory",
+      "description": "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg",
+      "datePublished": "2026-04-17",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/stop-building-dumb-ai-agents-do-this-instead.html",
+      "keywords": "AI, Gemini, Productivity, Software Engineering",
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory",
+          "item": "https://automatewithrobby.fyi/blog/stop-building-dumb-ai-agents-do-this-instead.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory",
+      "description": "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg",
+      "uploadDate": "2026-04-17",
+      "embedUrl": "https://www.youtube.com/embed/uCqbwJca8ks",
+      "contentUrl": "https://www.youtube.com/watch?v=uCqbwJca8ks",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -54,18 +122,14 @@
 
     <!-- YouTube Embed -->
     <div class="post-yt-embed">
-        <iframe
-          width="100%" height="100%"
-          src="https://www.youtube.com/embed/uCqbwJca8ks"
-          title="YouTube video: Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <button type="button" class="yt-facade" data-yt-id="uCqbwJca8ks" aria-label="Play video: Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory">
+          <img src="https://i.ytimg.com/vi/uCqbwJca8ks/hqdefault.jpg" alt="Play video: Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
       </div>
 
     <!-- Hero Image -->
-    <img src="../assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg" alt="Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory thumbnail" class="post-hero-img" />
+    <img src="../assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg" alt="Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
 
     <!-- Header -->
     <header class="post-header">
@@ -73,16 +137,18 @@
       <h1 class="post-title">Stop Building Dumb AI Agents: How to Give Your AI a Long-Term Memory</h1>
       <p class="post-excerpt">Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.</p>
       <div class="post-meta">
-        <span>📅 April 16, 2026</span>
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
         <span>·</span>
+        <span>📅 <time datetime="2026-04-17">April 17, 2026</time></span>
+        <span>·</span>
+        
         <span>⏱ 3 min read</span>
       </div>
     </header>
 
     <!-- Content -->
     <div class="post-content">
-      <p>⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
-<h2 id="stop-starting-from-zero">Stop Starting From Zero</h2>
+      <h2 id="stop-starting-from-zero">Stop Starting From Zero</h2>
 <p>Hi everyone! I’m Robby. I spend my days building AI systems, and I see one big mistake people make all the time: they treat AI like a search engine. They ask a question, get an answer, and then start over the next day. </p>
 <p>If you want to get real work done, your AI needs to be more than just a chatbot. It needs to be a <strong>partner</strong> that actually remembers what you are working on. Today, I’m going to show you how to stop the &quot;blank slate&quot; problem and turn your ideas into a real plan.</p>
 <h2 id="why-your-ai-feels-dumb">Why Your AI Feels &quot;Dumb&quot;</h2>
@@ -101,11 +167,21 @@
 
     </div>
 
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="openclaw-5-4-is-insane-here-s-why.html">OpenClaw 5.4 Is Here: Meet Your New AI Meeting Assistant</a></li>
+        <li><a href="claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.html">Meet Your New AI Teammate: Claude Code 4.7 and the 'Grumpy Senior' Update</a></li>
+        <li><a href="gpt-5-5-explained-features-price-the-future-of-agents.html">GPT-5.5 'Spud' Is Here: Everything You Need to Know About the New AI Agent Era</a></li>
+      </ul>
+    </aside>
+
     <!-- CTA -->
     <div class="post-cta-box">
       <h3>Enjoyed this?</h3>
-      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
       <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
     </div>
 
   </article>
@@ -114,14 +190,63 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
-      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
       <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
     </div>
   </div>
 </footer>
 
 <script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
   // Reading progress bar
   const bar = document.getElementById('read-progress');
   window.addEventListener('scroll', () => {

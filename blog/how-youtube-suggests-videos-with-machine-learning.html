@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How Does YouTube Know What You Want to Watch Next? — Robby J</title>
+  <title>How Does YouTube Know What You Want to Watch Next?</title>
   <meta name="description" content="Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage." />
-  <meta property="og:title" content="How Does YouTube Know What You Want to Watch Next? — Robby J" />
+  <meta property="og:title" content="How Does YouTube Know What You Want to Watch Next?" />
   <meta property="og:description" content="Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage." />
   <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:type" content="article" />
   <link rel="canonical" href="https://automatewithrobby.fyi/blog/how-youtube-suggests-videos-with-machine-learning.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How Does YouTube Know What You Want to Watch Next?",
+      "description": "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg",
+      "datePublished": "2025-12-13",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/how-youtube-suggests-videos-with-machine-learning.html",
+      "keywords": "AI, Machine Learning, YouTube Algorithm, Tech Explained",
+      "timeRequired": "PT2M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Does YouTube Know What You Want to Watch Next?",
+          "item": "https://automatewithrobby.fyi/blog/how-youtube-suggests-videos-with-machine-learning.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "How Does YouTube Know What You Want to Watch Next?",
+      "description": "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg",
+      "uploadDate": "2025-12-13",
+      "embedUrl": "https://www.youtube.com/embed/a5Ti8QLA7C4",
+      "contentUrl": "https://www.youtube.com/watch?v=a5Ti8QLA7C4",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -54,18 +122,14 @@
 
     <!-- YouTube Embed -->
     <div class="post-yt-embed">
-        <iframe
-          width="100%" height="100%"
-          src="https://www.youtube.com/embed/a5Ti8QLA7C4"
-          title="YouTube video: How Does YouTube Know What You Want to Watch Next?"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <button type="button" class="yt-facade" data-yt-id="a5Ti8QLA7C4" aria-label="Play video: How Does YouTube Know What You Want to Watch Next?">
+          <img src="https://i.ytimg.com/vi/a5Ti8QLA7C4/hqdefault.jpg" alt="Play video: How Does YouTube Know What You Want to Watch Next?" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
       </div>
 
     <!-- Hero Image -->
-    <img src="../assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg" alt="How Does YouTube Know What You Want to Watch Next? thumbnail" class="post-hero-img" />
+    <img src="../assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg" alt="How Does YouTube Know What You Want to Watch Next? thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
 
     <!-- Header -->
     <header class="post-header">
@@ -73,16 +137,18 @@
       <h1 class="post-title">How Does YouTube Know What You Want to Watch Next?</h1>
       <p class="post-excerpt">Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.</p>
       <div class="post-meta">
-        <span>📅 December 12, 2025</span>
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
         <span>·</span>
+        <span>📅 <time datetime="2025-12-13">December 13, 2025</time></span>
+        <span>·</span>
+        
         <span>⏱ 2 min read</span>
       </div>
     </header>
 
     <!-- Content -->
     <div class="post-content">
-      <p>🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
-<h2 id="ever-wonder-why-youtube-feels-like-it-knows-you">Ever wonder why YouTube feels like it knows you?</h2>
+      <h2 id="ever-wonder-why-youtube-feels-like-it-knows-you">Ever wonder why YouTube feels like it knows you?</h2>
 <p>Hi! I’m Robby. I spend my days building AI systems, and one of the coolest examples of AI in the real world is sitting right on your phone: the YouTube algorithm.</p>
 <p>Every single minute, people upload 500 hours of video to YouTube. That is way too much for any human to watch! So, how does the site show you the perfect video for your coffee break? It uses a super-fast computer brain called a neural network.</p>
 <h2 id="the-two-step-secret">The Two-Step Secret</h2>
@@ -106,11 +172,21 @@
 
     </div>
 
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="why-llms-suddenly-became-so-powerful-in-2025.html">Why Did AI Get So Smart So Fast? The Secret Behind LLMs</a></li>
+        <li><a href="how-spotify-predicts-what-you-want-to-listen-to.html">How Spotify Knows Exactly What You Want to Hear</a></li>
+        <li><a href="what-is-fine-tuning-a-model.html">What is AI Fine-Tuning? Turn Your Chatbot into an Expert</a></li>
+      </ul>
+    </aside>
+
     <!-- CTA -->
     <div class="post-cta-box">
       <h3>Enjoyed this?</h3>
-      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
       <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
     </div>
 
   </article>
@@ -119,14 +195,63 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
-      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
       <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
     </div>
   </div>
 </footer>
 
 <script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
   // Reading progress bar
   const bar = document.getElementById('read-progress');
   window.addEventListener('scroll', () => {

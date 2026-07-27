@@ -3,13 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Why Does Netflix Know What You Want to Watch? How AI Makes It Happen — Robby J</title>
+  <title>Why Does Netflix Know What You Want to Watch? How AI Makes It Happen</title>
   <meta name="description" content="Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show." />
-  <meta property="og:title" content="Why Does Netflix Know What You Want to Watch? How AI Makes It Happen — Robby J" />
+  <meta property="og:title" content="Why Does Netflix Know What You Want to Watch? How AI Makes It Happen" />
   <meta property="og:description" content="Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show." />
   <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:type" content="article" />
   <link rel="canonical" href="https://automatewithrobby.fyi/blog/how-netflix-s-recommendation-system-actually-works.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen",
+      "description": "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg",
+      "datePublished": "2025-12-17",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/how-netflix-s-recommendation-system-actually-works.html",
+      "keywords": "AI, Netflix, Machine Learning, Personalization, Technology",
+      "timeRequired": "PT2M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen",
+          "item": "https://automatewithrobby.fyi/blog/how-netflix-s-recommendation-system-actually-works.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Why Does Netflix Know What You Want to Watch? How AI Makes It Happen",
+      "description": "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg",
+      "uploadDate": "2025-12-17",
+      "embedUrl": "https://www.youtube.com/embed/DiQaXiJk0_s",
+      "contentUrl": "https://www.youtube.com/watch?v=DiQaXiJk0_s",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -54,18 +122,14 @@
 
     <!-- YouTube Embed -->
     <div class="post-yt-embed">
-        <iframe
-          width="100%" height="100%"
-          src="https://www.youtube.com/embed/DiQaXiJk0_s"
-          title="YouTube video: Why Does Netflix Know What You Want to Watch? How AI Makes It Happen"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <button type="button" class="yt-facade" data-yt-id="DiQaXiJk0_s" aria-label="Play video: Why Does Netflix Know What You Want to Watch? How AI Makes It Happen">
+          <img src="https://i.ytimg.com/vi/DiQaXiJk0_s/hqdefault.jpg" alt="Play video: Why Does Netflix Know What You Want to Watch? How AI Makes It Happen" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
       </div>
 
     <!-- Hero Image -->
-    <img src="../assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg" alt="Why Does Netflix Know What You Want to Watch? How AI Makes It Happen thumbnail" class="post-hero-img" />
+    <img src="../assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg" alt="Why Does Netflix Know What You Want to Watch? How AI Makes It Happen thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
 
     <!-- Header -->
     <header class="post-header">
@@ -73,16 +137,18 @@
       <h1 class="post-title">Why Does Netflix Know What You Want to Watch? How AI Makes It Happen</h1>
       <p class="post-excerpt">Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.</p>
       <div class="post-meta">
-        <span>📅 December 16, 2025</span>
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
         <span>·</span>
+        <span>📅 <time datetime="2025-12-17">December 17, 2025</time></span>
+        <span>·</span>
+        
         <span>⏱ 2 min read</span>
       </div>
     </header>
 
     <!-- Content -->
     <div class="post-content">
-      <p>🧠 Get 1:1 help from a Software Engineer to automate your workflow → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
-<h2 id="why-is-your-netflix-different-from-mine">Why Is Your Netflix Different From Mine?</h2>
+      <h2 id="why-is-your-netflix-different-from-mine">Why Is Your Netflix Different From Mine?</h2>
 <p>Hi everyone! I’m Robby. I spend my days building AI systems, and one of the coolest examples of AI in the real world is right on your TV. Have you ever noticed that your Netflix homepage looks totally different from your friend’s page? </p>
 <p>It isn’t magic, and it isn’t random. It’s a smart piece of technology called a <strong>recommendation system.</strong> </p>
 <h3 id="how-it-works-the-power-of-micro-tags">How It Works: The Power of Micro-Tags</h3>
@@ -104,11 +170,21 @@
 
     </div>
 
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.html">Meet ZAYA1-8B: The Tiny AI Model That Thinks Like a Giant</a></li>
+        <li><a href="how-ai-understands-human-language-nlp-explained-simply.html">How Does AI Understand You? NLP Explained Simply</a></li>
+        <li><a href="what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images.html">How Does AI See? A Simple Guide to Convolutional Neural Networks</a></li>
+      </ul>
+    </aside>
+
     <!-- CTA -->
     <div class="post-cta-box">
       <h3>Enjoyed this?</h3>
-      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
       <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
     </div>
 
   </article>
@@ -117,14 +193,63 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
-      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
       <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
     </div>
   </div>
 </footer>
 
 <script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
   // Reading progress bar
   const bar = document.getElementById('read-progress');
   window.addEventListener('scroll', () => {

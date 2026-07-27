@@ -33,7 +33,7 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
         run: |
           mkdir dist
-          cp -r assets css js index.html sitemap.xml blog tools services compare dist/
+          cp -r assets css js index.html sitemap.xml robots.txt llms.txt 404.html blog tools services compare dist/
           sed -i "s/___CONTACT_EMAIL___/${EMAIL}/g" dist/js/main.js
 
       - name: Setup Pages

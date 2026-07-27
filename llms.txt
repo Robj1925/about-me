@@ -1,0 +1,44 @@
+# Automate with Robby (Robby J)
+
+> Personal site of Robby J, a software engineer (M.S. Computer Science) and creator of the YouTube channel Code With Robby. He builds AI automation systems, publishes plain-English AI/ML explainers and AI model news, ships two free products (Recording Studio, a browser screen + camera recorder, and OpenFlow, on-device voice dictation for macOS), hosts 24+ free browser tools, and offers AI consulting, AI audits, and custom website builds.
+
+Key facts: Robby J runs the Code With Robby YouTube channel (https://www.youtube.com/@Code-With-Robby), the AI Academy community on Skool (https://www.skool.com/ai-academy-with-robby-6849/about), and publishes open source tools at https://github.com/robj1925. All browser tools on this site are free, run entirely client-side, and upload nothing.
+
+## Products
+
+- [Recording Studio](https://recording-studio-7vg.pages.dev): Browser-based screen + camera recorder with green-screen keying, 4K capture, and editor-ready MP4/MOV exports. Footage never leaves the user's machine. Free with a Pro tier.
+- [OpenFlow](https://robj1925.github.io/open-flow/): Free, open source, on-device voice dictation for macOS. Hold a key, speak, and the words are typed at the cursor. No cloud, no subscription.
+- [Products and free tools overview](https://automatewithrobby.fyi/tools/): Full directory of products and 24+ free browser tools.
+
+## Free Browser Tools
+
+- [Mic Test](https://automatewithrobby.fyi/tools/mic-test.html): Test a microphone online with a live volume meter and record-and-playback check. Runs in the browser, no audio uploaded.
+- [Webcam Test](https://automatewithrobby.fyi/tools/webcam-test.html): Check that a camera works, with live preview, resolution and frame rate readout, in the browser.
+- [Typing vs Speaking Speed Test](https://automatewithrobby.fyi/tools/typing-vs-speaking-test.html): Measure typing WPM against speaking WPM to see how much faster dictation is.
+- [Video File Size Calculator](https://automatewithrobby.fyi/tools/video-file-size-calculator.html): Estimate video file size from resolution, frame rate, bitrate, and duration (720p, 1080p, 1440p, 4K), plus upload time.
+- [AI Model Pricing Calculator](https://automatewithrobby.fyi/tools/ai-model-pricing-calculator.html): Compare LLM API costs across models.
+- [AI Model Selector](https://automatewithrobby.fyi/tools/ai-model-selector.html): Pick the right AI model for a task.
+- [Free AI Tools Directory](https://automatewithrobby.fyi/tools/free-ai-tools-directory.html): Curated directory of free AI tools.
+
+## Blog: AI and ML Explainers (evergreen)
+
+- [Deep Learning vs. Machine Learning: What Is the Difference?](https://automatewithrobby.fyi/blog/deep-learning-vs-machine-learning-what-s-the-difference.html): Plain-English comparison using the nesting-dolls analogy.
+- [AI vs ML vs Deep Learning](https://automatewithrobby.fyi/blog/ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech.html): How the three terms relate.
+- [Activation Functions Explained: ReLU, Sigmoid, and Tanh](https://automatewithrobby.fyi/blog/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.html): Visual guide to activation functions.
+- [Backpropagation: Calculating Hidden Layer Errors](https://automatewithrobby.fyi/blog/backpropagation-calculating-hidden-layer-errors.html): How neural networks assign blame during training.
+- [AI Training Sets Explained Simply](https://automatewithrobby.fyi/blog/ai-training-sets-explained-simply.html): What training data is and why it matters.
+
+## Blog: Tutorials and AI News
+
+- [Blog index](https://automatewithrobby.fyi/blog/): 160+ posts on AI engineering, model news and comparisons, and automation tutorials, updated weekly.
+- [How to Build Your First AI-Powered Slack Bot with Python](https://automatewithrobby.fyi/blog/build-a-slack-ai-agent-step-by-step.html): Step-by-step Slack + Gemini agent tutorial.
+- [Gemini API Tutorial: From API Key to Your First LLM Call](https://automatewithrobby.fyi/blog/gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough.html): Complete beginner walkthrough.
+
+## Services
+
+- [Services](https://automatewithrobby.fyi/services/): 1-on-1 AI consultation calls, AI automation audits of codebases and workflows, and custom website builds (SEO-ready, deployed on GitHub Pages with a custom domain).
+- [Website builder comparisons](https://automatewithrobby.fyi/compare/wix-vs-custom-website.html): Wix, Squarespace, WordPress, Webflow, Framer, and GoDaddy vs. a custom-built website.
+
+## Optional
+
+- [Homepage](https://automatewithrobby.fyi/): About Robby J, client testimonials, and open source projects.

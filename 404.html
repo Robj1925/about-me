@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found — Robby J</title>
+  <meta name="robots" content="noindex" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" type="image/png" href="/assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    .nf-wrap { min-height: 70vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 60px 20px; }
+    .nf-code { font-family: var(--font-display); font-size: clamp(4rem, 12vw, 7rem); font-weight: 800; color: var(--accent); line-height: 1; }
+    .nf-wrap h1 { font-family: var(--font-display); font-size: clamp(1.3rem, 3vw, 1.8rem); color: var(--ink); margin: 14px 0 10px; }
+    .nf-wrap p { color: var(--ink-muted); max-width: 46ch; margin-bottom: 26px; }
+    .nf-links { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+  </div>
+</nav>
+
+<main>
+  <div class="nf-wrap">
+    <div class="nf-code">404</div>
+    <h1>This page does not exist</h1>
+    <p>The link may be outdated or mistyped. Everything worth finding is one click away.</p>
+    <div class="nf-links">
+      <a href="/" class="btn btn-primary">Back to Home</a>
+      <a href="/blog/" class="btn btn-ghost">Read the Blog</a>
+      <a href="/tools/" class="btn btn-ghost">Free Tools</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -28,7 +28,9 @@ function slugify(filename) {
 
 function formatDate(dateStr) {
   const d = new Date(dateStr);
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  // Format in UTC so "2026-07-24" (parsed as UTC midnight) renders as July 24,
+  // not the previous day in local timezones west of UTC.
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
 }
 
 function readingTime(content) {
@@ -37,36 +39,114 @@ function readingTime(content) {
 }
 
 // ── Post Page Template ─────────────────────────────────────────────────────
-function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlContent, slug, readTime }) {
+// Pick up to `limit` related posts, ranked by shared tags then recency.
+function pickRelated(post, allPosts, limit = 3) {
+  const myTags = new Set((post.tags || []).map(t => t.toLowerCase()));
+  return allPosts
+    .filter(p => p.slug !== post.slug)
+    .map(p => ({
+      post: p,
+      shared: (p.tags || []).filter(t => myTags.has(t.toLowerCase())).length,
+    }))
+    .filter(x => x.shared > 0)
+    .sort((a, b) => b.shared - a.shared || new Date(b.post.date) - new Date(a.post.date))
+    .slice(0, limit)
+    .map(x => x.post);
+}
+
+function postTemplate({ title, date, updated, tags, thumbnail, youtubeId, excerpt, htmlContent, slug, readTime, related = [] }) {
   const tagBadges = (tags || []).map(t => `<span class="post-tag">${t}</span>`).join('');
+  // The hero sits below the video on video posts (so lazy), and is the LCP element otherwise.
   const heroImage = thumbnail
-    ? `<img src="../${thumbnail}" alt="${title} thumbnail" class="post-hero-img" />`
+    ? `<img src="../${thumbnail}" alt="${title} thumbnail" class="post-hero-img" width="1600" height="900" ${youtubeId ? 'loading="lazy" decoding="async"' : 'fetchpriority="high"'} />`
     : '';
+  // Facade: ship a poster image, swap in the real iframe on click. Avoids ~500KB
+  // of YouTube JS on first paint for every post.
   const youtubeEmbed = youtubeId
     ? `<div class="post-yt-embed">
-        <iframe
-          width="100%" height="100%"
-          src="https://www.youtube.com/embed/${youtubeId}"
-          title="YouTube video: ${title}"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+        <button type="button" class="yt-facade" data-yt-id="${youtubeId}" aria-label="Play video: ${title}">
+          <img src="https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg" alt="Play video: ${title}" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
       </div>`
     : '';
+  const relatedBlock = related.length
+    ? `<aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        ${related.map(r => `<li><a href="${r.slug}.html">${r.title}</a></li>`).join('\n        ')}
+      </ul>
+    </aside>`
+    : '';
+
+  // Only append the brand suffix when the result still fits in a SERP title (~60 chars).
+  const pageTitle = title.length <= 46 ? `${title} · Robby J` : title;
+
+  // JSON-LD structured data (BlogPosting + BreadcrumbList + VideoObject)
+  const pageUrl = `https://automatewithrobby.fyi/blog/${slug}.html`;
+  const imageUrl = thumbnail ? `https://automatewithrobby.fyi/${thumbnail}` : null;
+  const authorNode = {
+    '@id': 'https://automatewithrobby.fyi/#robby',
+    '@type': 'Person',
+    name: 'Robby J',
+    url: 'https://automatewithrobby.fyi/',
+  };
+  const ldGraph = [
+    {
+      '@type': 'BlogPosting',
+      headline: title,
+      description: excerpt,
+      ...(imageUrl ? { image: imageUrl } : {}),
+      datePublished: date,
+      ...(updated ? { dateModified: updated } : {}),
+      author: authorNode,
+      publisher: authorNode,
+      mainEntityOfPage: pageUrl,
+      ...(tags && tags.length ? { keywords: tags.join(', ') } : {}),
+      timeRequired: `PT${readTime}M`,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://automatewithrobby.fyi/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://automatewithrobby.fyi/blog/' },
+        { '@type': 'ListItem', position: 3, name: title, item: pageUrl },
+      ],
+    },
+  ];
+  if (youtubeId) {
+    ldGraph.push({
+      '@type': 'VideoObject',
+      name: title,
+      description: excerpt,
+      thumbnailUrl: imageUrl || `https://i.ytimg.com/vi/${youtubeId}/hqdefault.jpg`,
+      uploadDate: date,
+      embedUrl: `https://www.youtube.com/embed/${youtubeId}`,
+      contentUrl: `https://www.youtube.com/watch?v=${youtubeId}`,
+      author: authorNode,
+    });
+  }
+  // Skip injection when the post body hand-embeds its own JSON-LD block
+  const jsonLd = htmlContent.includes('application/ld+json')
+    ? ''
+    : `<script type="application/ld+json">
+${JSON.stringify({ '@context': 'https://schema.org', '@graph': ldGraph }, null, 2).replace(/</g, '\\u003c')}
+<\/script>`;
 
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${title} — Robby J</title>
+  <title>${pageTitle}</title>
   <meta name="description" content="${excerpt}" />
-  <meta property="og:title" content="${title} — Robby J" />
+  <meta property="og:title" content="${pageTitle}" />
   <meta property="og:description" content="${excerpt}" />
   ${thumbnail ? `<meta property="og:image" content="https://automatewithrobby.fyi/${thumbnail}" />` : ''}
+  <meta name="twitter:card" content="summary_large_image" />
   <meta property="og:type" content="article" />
   <link rel="canonical" href="https://automatewithrobby.fyi/blog/${slug}.html" />
+  ${jsonLd}
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="../css/post.css" />
   <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
@@ -121,8 +201,12 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
       <h1 class="post-title">${title}</h1>
       <p class="post-excerpt">${excerpt}</p>
       <div class="post-meta">
-        <span>📅 ${formatDate(date)}</span>
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
         <span>·</span>
+        <span>📅 <time datetime="${date}">${formatDate(date)}</time></span>
+        <span>·</span>
+        ${updated ? `<span>🔄 Updated <time datetime="${updated}">${formatDate(updated)}</time></span>
+        <span>·</span>` : ''}
         <span>⏱ ${readTime} min read</span>
       </div>
     </header>
@@ -132,11 +216,14 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
       ${htmlContent}
     </div>
 
+    ${relatedBlock}
+
     <!-- CTA -->
     <div class="post-cta-box">
       <h3>Enjoyed this?</h3>
-      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content.</p>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
       <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
     </div>
 
   </article>
@@ -145,14 +232,63 @@ function postTemplate({ title, date, tags, thumbnail, youtubeId, excerpt, htmlCo
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container">
-    <div class="footer-bottom" style="border-top:none;padding-top:0">
-      <span>© 2026 Robby J · Built with ❤️ + AI</span>
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
       <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
     </div>
   </div>
 </footer>
 
 <script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
   // Reading progress bar
   const bar = document.getElementById('read-progress');
   window.addEventListener('scroll', () => {
@@ -315,23 +451,31 @@ function build() {
       slug,
       title:     fm.title     || slug,
       date:      fm.date      || new Date().toISOString(),
+      updated:   fm.updated   || null,
       excerpt:   fm.excerpt   || '',
       thumbnail: fm.thumbnail || null,
       youtubeId: fm.youtubeId || null,
       tags:      fm.tags      || [],
       readTime,
+      htmlContent: html,
     };
-
-    // Write individual post page
-    const postHtml = postTemplate({ ...post, htmlContent: html });
-    fs.writeFileSync(path.join(BLOG_OUT, `${slug}.html`), postHtml);
-    console.log(`  ✓ Built post: ${slug}.html`);
 
     posts.push(post);
   }
 
   // Sort newest first
   posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Render pages in a second pass so related-post links can reference every post
+  for (const post of posts) {
+    const postHtml = postTemplate({ ...post, related: pickRelated(post, posts) });
+    fs.writeFileSync(path.join(BLOG_OUT, `${post.slug}.html`), postHtml);
+    console.log(`  ✓ Built post: ${post.slug}.html`);
+  }
+
+  // Strip rendered HTML before serializing: posts.json / posts-data.js ship to the
+  // browser and only need card metadata.
+  posts.forEach(p => { delete p.htmlContent; });
 
   // Write posts.json (backup reference)
   fs.writeFileSync(POSTS_JSON, JSON.stringify(posts, null, 2));
@@ -371,7 +515,7 @@ function build() {
 
   // Add all dynamically generated blog posts to sitemap XML
   for (const post of posts) {
-    const postDate = new Date(post.date).toISOString().split('T')[0];
+    const postDate = new Date(post.updated || post.date).toISOString().split('T')[0];
     sitemapXml += `  <url>
     <loc>${domain}/blog/${post.slug}.html</loc>
     <lastmod>${postDate}</lastmod>

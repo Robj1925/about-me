@@ -114,6 +114,112 @@
   border: 0;
 }
 
+/* Facade: poster + play button shown until the viewer clicks */
+.yt-facade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: var(--surface-2);
+  cursor: pointer;
+  display: block;
+}
+
+.yt-facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.yt-facade-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 68px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.72);
+  transition: background var(--transition, .22s ease);
+}
+
+.yt-facade-play::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  border-style: solid;
+  border-width: 10px 0 10px 17px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.yt-facade:hover .yt-facade-play,
+.yt-facade:focus-visible .yt-facade-play {
+  background: #ff0000;
+}
+
+/* ── Related posts ── */
+.post-related {
+  margin: var(--space-8) 0 0;
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface-2);
+}
+
+.post-related h2 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+
+.post-related ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.post-related li { margin-bottom: 8px; }
+
+.post-related a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.post-related a:hover { text-decoration: underline; }
+
+/* ── Footer nav ── */
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 28px;
+  padding: 8px 0 28px;
+}
+
+.footer-nav h3 {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin: 0 0 10px;
+}
+
+.footer-nav ul { list-style: none; margin: 0; padding: 0; }
+.footer-nav li { margin-bottom: 6px; }
+
+.footer-nav a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-nav a:hover { color: var(--accent); }
+
 /* ── Post Content Typography ── */
 .post-content {
   max-width: 68ch;           /* comfortable reading measure */

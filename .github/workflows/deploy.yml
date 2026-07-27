@@ -33,7 +33,10 @@ jobs:
           EMAIL: ${{ secrets.EMAIL }}
         run: |
           mkdir dist
-          cp -r assets css js index.html sitemap.xml robots.txt llms.txt 404.html blog tools services compare dist/
+          # Copy every root-level .html (index, about, 404, ...) so new root pages
+          # never silently fail to deploy, plus the crawl files and section dirs.
+          cp -r assets css js blog tools services compare dist/
+          cp ./*.html sitemap.xml robots.txt llms.txt dist/
           sed -i "s/___CONTACT_EMAIL___/${EMAIL}/g" dist/js/main.js
 
       - name: Setup Pages

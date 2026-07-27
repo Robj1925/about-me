@@ -11,8 +11,6 @@ tags:
   - Future Tech
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## AI Just Got a Major Upgrade
 
 Hi everyone! I’m Robby, a software engineer who spends his days building AI systems. For a long time, AI was a bit like a person sitting in a dark room. It could read books and write essays, but it couldn't see what was happening outside or hear the world around it. It was basically a super-smart text machine.

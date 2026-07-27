@@ -11,8 +11,6 @@ tags:
   - Beginner Guide
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi there! I’m Robby.
 
 As a software engineer who builds AI systems every day, I get asked a lot of big questions. One of the most common ones is: *How does a computer actually 'think'?*

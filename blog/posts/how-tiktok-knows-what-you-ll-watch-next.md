@@ -12,8 +12,6 @@ tags:
   - Technology
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Why Does Your TikTok Feed Feel So Smart?
 
 Hi! I’m Robby. As an AI engineer, I spend my days building systems that help computers learn. One of the coolest things to study is the TikTok algorithm. 

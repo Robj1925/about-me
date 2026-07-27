@@ -12,8 +12,6 @@ tags:
   - MachineLearning
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Big News for AI Fans
 
 Hey everyone! It’s Robby here. I spend my days building AI systems, and I have to tell you—the new **Grok 4.3** update is a really big deal. xAI just released some features that change how we use AI to solve problems and get work done.

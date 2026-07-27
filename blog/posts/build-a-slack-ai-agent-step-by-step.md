@@ -12,8 +12,6 @@ tags:
   - Tutorial
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Build Your First AI Agent Today
 
 Hi! I’m Robby. I’m a software engineer, and I love building AI systems that actually help people work better. Today, I want to show you how to build a real-world tool: an AI agent that sends motivational posts to your team's Slack channel automatically.

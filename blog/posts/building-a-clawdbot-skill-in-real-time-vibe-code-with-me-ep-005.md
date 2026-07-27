@@ -12,8 +12,6 @@ tags:
   - Python
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hey Everyone! It’s Robby.
 
 I’m a software engineer, and I love building cool AI projects. Today, I want to show you something fun: how to make your own smart autoresponder for iMessage using a tool called Clawdbot. 

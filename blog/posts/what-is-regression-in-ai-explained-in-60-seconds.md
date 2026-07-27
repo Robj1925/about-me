@@ -11,8 +11,6 @@ tags:
   - Beginner AI
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I’m Robby!
 
 As a software engineer, I spend my days building AI systems that solve real-world problems. One of the most important tools in my kit is something called **Regression**. It sounds like a big, fancy math word, but it’s actually quite simple once you break it down.

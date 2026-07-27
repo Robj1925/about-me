@@ -11,8 +11,6 @@ tags:
   - Computer Science
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### How Do Computers Actually Learn?
 
 Hi there! I’m Robby. I spend my days building AI systems, and people often ask me: "How does a computer know what a cat looks like?"

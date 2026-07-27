@@ -7,8 +7,6 @@ youtubeId: "PgmwxA1I94Y"
 tags: ["Full Course", "NotebookLM", "AI Tools"]
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Google's **NotebookLM** is one of the most underrated AI tools available today. Unlike a generic chatbot, it only answers questions based on *your* sources — PDFs, YouTube videos, Google Docs, websites — which makes it dramatically more useful for real research and learning.
 
 In this guide, I'll walk you through everything you need to know to go from zero to productive with NotebookLM.

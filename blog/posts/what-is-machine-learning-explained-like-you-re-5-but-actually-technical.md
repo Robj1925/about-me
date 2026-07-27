@@ -11,8 +11,6 @@ tags:
   - Artificial Intelligence
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## What Exactly is Machine Learning?
 
 Hi there! I’m Robby. I spend my days building AI systems, and one question I get asked all the time is: *How does a computer actually 'learn'?*

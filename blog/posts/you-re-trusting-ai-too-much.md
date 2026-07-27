@@ -11,8 +11,6 @@ tags:
   - Large Language Models
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### Hey everyone, it’s Robby!
 
 As a software engineer who builds AI systems for a living, I get asked this question all the time: *"Robby, how does the AI know so much?"*

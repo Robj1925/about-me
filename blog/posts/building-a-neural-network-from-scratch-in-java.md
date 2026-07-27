@@ -12,8 +12,6 @@ tags:
   - Programming
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Ever Wonder How AI Actually Thinks?
 
 Hi! I’m Robby. As a software engineer, I spend a lot of time building complex AI systems. But the best way to really understand how AI works isn't by using big, fancy libraries—it’s by building one from scratch.

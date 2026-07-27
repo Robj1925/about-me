@@ -2,7 +2,7 @@
 title: "What Is Gemma 4? How to Use Its Massive 256K Context Window"
 date: "2026-04-04"
 excerpt: "Learn how Google's new Gemma 4 model uses a huge 256K context window to help AI agents remember long conversations and solve complex problems."
-thumbnail: "assets/images/blog-thumbnails/gemma-4-s-256k-context-agentic-workflows-live-coding-demo.png"
+thumbnail: "assets/images/blog-thumbnails/gemma-4-s-256k-context-agentic-workflows-live-coding-demo.jpg"
 youtubeId: "kH7wa2NQPOs"
 tags:
   - AI
@@ -11,8 +11,6 @@ tags:
   - Coding
   - Google AI
 ---
-
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Meet Gemma 4: The AI That Remembers Everything
 

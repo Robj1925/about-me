@@ -2,7 +2,7 @@
 title: "How AI Learns: A Simple Guide to Training Models"
 date: "2025-11-26"
 excerpt: "Ever wonder how computers get so smart? Learn how AI models learn from examples and feedback in this easy-to-understand guide."
-thumbnail: "assets/images/blog-thumbnails/how-ai-learns-training-a-model-simply-explained.png"
+thumbnail: "assets/images/blog-thumbnails/how-ai-learns-training-a-model-simply-explained.jpg"
 youtubeId: "n3DjZe0PvPs"
 tags:
   - AI
@@ -10,8 +10,6 @@ tags:
   - Artificial Intelligence
   - Tech Explained
 ---
-
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ### Hi there! I'm Robby.
 

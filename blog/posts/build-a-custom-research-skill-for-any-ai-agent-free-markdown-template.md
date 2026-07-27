@@ -12,8 +12,6 @@ tags:
   - AI Agents
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Tired of Searching for AI News?
 
 Hi! I’m Robby. As a software engineer, I spend a lot of time keeping up with the fast-paced world of AI. Between new models from Google, Anthropic, and OpenAI, it’s impossible to keep track of everything by hand.

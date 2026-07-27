@@ -11,8 +11,6 @@ tags:
   - Technology Explained
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi! I’m Robby.
 
 I spend my days building AI systems, and one question I get asked all the time is: *How does a computer actually 'understand' language?*

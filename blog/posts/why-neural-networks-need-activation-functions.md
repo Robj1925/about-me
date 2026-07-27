@@ -12,8 +12,6 @@ tags:
   - Data Science
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Why Neural Networks Need Activation Functions
 
 Hi! I’m Robby. As an engineer who builds AI systems, I spend a lot of time working with data. One thing I’ve learned is that the real world is messy. Data doesn't follow perfect, straight lines.

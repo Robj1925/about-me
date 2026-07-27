@@ -12,8 +12,6 @@ tags:
   - Tutorial
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 I’m a software engineer, and I love building things with AI. Today, I want to show you how to connect to Google’s powerful AI, Gemini. You don’t need to be a genius to do this—we are going to break it down into simple, bite-sized steps.

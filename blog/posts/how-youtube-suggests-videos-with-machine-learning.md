@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Ever wonder why YouTube feels like it knows you?
 
 Hi! I’m Robby. I spend my days building AI systems, and one of the coolest examples of AI in the real world is sitting right on your phone: the YouTube algorithm.

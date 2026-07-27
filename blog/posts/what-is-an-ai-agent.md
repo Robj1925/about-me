@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi there! I’m Robby.
 
 I spend my days building real-world AI systems. Lately, everyone has been asking me one question: *"Robby, what exactly is an AI Agent?"*

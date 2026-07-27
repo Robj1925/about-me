@@ -12,8 +12,6 @@ tags:
   - GenerativeAI
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet Your New AI Research Assistant
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and today I want to show you how to build something really cool: an AI agent that can do your research for you.

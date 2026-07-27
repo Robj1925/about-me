@@ -11,8 +11,6 @@ tags:
   - Video Creation
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Turn Your Pictures into Movies
 
 Hi! I’m Robby. As a software engineer, I spend a lot of time building AI systems. Sometimes, I want to make cool videos without spending hours on complex editing software. That’s where **Google AI Creative Studio Flow** comes in.

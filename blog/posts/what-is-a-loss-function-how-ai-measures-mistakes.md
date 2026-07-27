@@ -1,5 +1,5 @@
 ---
-title: "What Is a Loss Function? How AI Learns from Its Mistakes"
+title: "What Is a Loss Function? The Scoreboard That Teaches AI"
 date: "2025-12-01"
 excerpt: "Ever wonder how AI learns? Discover how a loss function acts like a scoreboard to help computers fix their mistakes and get smarter."
 thumbnail: "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.jpg"
@@ -10,8 +10,6 @@ tags:
   - Artificial Intelligence
   - Beginner AI
 ---
-
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi! I’m Robby.
 

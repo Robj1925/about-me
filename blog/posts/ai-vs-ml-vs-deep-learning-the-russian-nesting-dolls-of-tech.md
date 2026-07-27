@@ -12,8 +12,6 @@ tags:
   - Artificial Intelligence
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## The Tech Nesting Dolls
 
 Hi! I’m Robby. I spend my days building AI systems, and I know how confusing these tech terms can be. People throw around words like AI, Machine Learning, and Deep Learning as if they are the same thing. 

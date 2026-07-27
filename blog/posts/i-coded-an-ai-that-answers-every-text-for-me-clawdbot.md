@@ -12,8 +12,6 @@ tags:
   - Tech Experiments
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Could an AI Replace Your Texting?
 
 Hi, I’m Robby! I’m a software engineer who loves building AI systems. I’ve always wondered: could I let an AI handle my social life for a day? So, I decided to find out.

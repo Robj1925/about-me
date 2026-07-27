@@ -11,8 +11,6 @@ tags:
   - Data Science
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## How Does Google Maps See the Future?
 
 Hi everyone! I’m Robby. As a software engineer who builds AI systems, I spend a lot of time thinking about how computers "think." One of the coolest examples of AI in your pocket is Google Maps.

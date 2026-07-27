@@ -11,8 +11,6 @@ tags:
   - Future of Tech
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## From Calculators to Creators
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and I’m often asked one big question: *How does this technology actually work?*

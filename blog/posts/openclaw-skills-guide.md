@@ -7,8 +7,6 @@ youtubeId: "Jxtue8U7__s"
 tags: ["Beginner Guide", "OpenClaw", "AI Automation"]
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 If you've ever wanted your AI assistant to do more than just chat — to actually *take actions*, run scripts, and automate repetitive tasks — OpenClaw Skills are the answer.
 
 This guide is for people who are new to OpenClaw and want to understand how the skill system works before diving into building their own.

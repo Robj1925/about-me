@@ -11,8 +11,6 @@ tags:
   - Beginner Guide
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### Hi, I’m Robby!
 
 As a software engineer, I spend my days building AI systems. One question I get a lot is: "How does a computer actually 'learn'?" 

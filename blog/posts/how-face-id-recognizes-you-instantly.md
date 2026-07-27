@@ -12,8 +12,6 @@ tags:
   - Technology
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## It’s Not a Camera, It’s a 3D Map
 
 Hi! I’m Robby. I spend my days building AI systems, and I’m always amazed by how Apple designed Face ID. Most people think their phone is taking a photo of them, but that is not how it works at all.

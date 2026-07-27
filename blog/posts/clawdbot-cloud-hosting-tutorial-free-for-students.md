@@ -2,7 +2,7 @@
 title: "How to Host Your Own Bot for Free: A Student’s Guide to Azure"
 date: "2026-02-02"
 excerpt: "Learn how to use your student email to get free cloud hosting for your bots using the GitHub Student Developer Pack and Microsoft Azure."
-thumbnail: "assets/images/blog-thumbnails/clawdbot-cloud-hosting-tutorial-free-for-students.png"
+thumbnail: "assets/images/blog-thumbnails/clawdbot-cloud-hosting-tutorial-free-for-students.jpg"
 youtubeId: "0YDYKb_48pQ"
 tags:
   - AI
@@ -11,8 +11,6 @@ tags:
   - GitHub
   - Programming
 ---
-
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Build Like a Pro Without Spending a Dime
 

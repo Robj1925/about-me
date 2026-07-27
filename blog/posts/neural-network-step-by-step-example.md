@@ -2,7 +2,7 @@
 title: "How Do AI Models Think? A Simple Guide to Neural Networks"
 date: "2025-11-13"
 excerpt: "Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide."
-thumbnail: "assets/images/blog-thumbnails/neural-network-step-by-step-example.png"
+thumbnail: "assets/images/blog-thumbnails/neural-network-step-by-step-example.jpg"
 youtubeId: "3AnekoX-V4Q"
 tags:
   - AI
@@ -10,8 +10,6 @@ tags:
   - Neural Networks
   - Tech Explained
 ---
-
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi, I’m Robby!
 

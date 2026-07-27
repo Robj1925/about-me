@@ -11,8 +11,6 @@ tags:
   - Beginner Guide
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet the Brains Behind AI
 
 Hi! I’m Robby. I spend my days building real-world AI systems, and people often ask me, "What exactly *is* an AI model?"

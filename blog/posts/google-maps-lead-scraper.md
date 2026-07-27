@@ -2,7 +2,7 @@
 title: "I Scraped Thousands of Free Leads Using AI Agents (Zero API Fees)"
 date: "2026-05-23"
 excerpt: "Tired of expensive Google Maps API quotas? Learn how I built and open-sourced a dynamic U.S. lead generation scraper using Playwright and DuckDuckGo."
-thumbnail: "assets/images/blog-thumbnails/google-maps-lead-scraper.png"
+thumbnail: "assets/images/blog-thumbnails/google-maps-lead-scraper.jpg"
 tags: ["Lead Generation", "Google Maps", "Python", "Playwright", "AI Agents", "Open Source"]
 meta_title: "How to Scrape Free Leads from Google Maps Using Playwright & Python"
 meta_description: "Discover how to target website-less business leads dynamically across 3,143 U.S. counties, locate emails on DuckDuckGo, and sync results for automated outreach campaigns."

@@ -11,8 +11,6 @@ tags:
   - Software Engineering
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## OpenClaw 5.4: A Huge Step Forward
 
 Hi everyone! I’m Robby. As a software engineer, I am always looking for ways to make my daily work easier. The new OpenClaw 5.4 update just dropped, and it is a game-changer for anyone who uses AI agents to get things done.

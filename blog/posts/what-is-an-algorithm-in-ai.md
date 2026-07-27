@@ -12,8 +12,6 @@ tags:
   - Tech Explained
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 I’m a software engineer, and I spend my days building AI systems that solve real-world problems. People often ask me, "Robby, what exactly is an AI algorithm?" It sounds like a big, scary math word, but it’s actually quite simple.

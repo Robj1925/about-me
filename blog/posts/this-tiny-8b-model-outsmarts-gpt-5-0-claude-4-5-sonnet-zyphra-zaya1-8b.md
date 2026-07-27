@@ -12,8 +12,6 @@ tags:
   - Coding
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## A New Player in the AI World
 
 Hi everyone! I’m Robby, a software engineer. Today, I want to talk about something really exciting in the world of Artificial Intelligence. There is a new model called **ZAYA1-8B** from a company called Zyphra, and it is doing things that people thought were impossible for a small model.

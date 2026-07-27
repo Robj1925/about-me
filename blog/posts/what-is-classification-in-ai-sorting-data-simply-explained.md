@@ -11,8 +11,6 @@ tags:
   - Data Science
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 As a software engineer who builds AI systems for a living, I get asked a lot of questions about how computers "think." One of the most important things an AI does is called **classification**. 

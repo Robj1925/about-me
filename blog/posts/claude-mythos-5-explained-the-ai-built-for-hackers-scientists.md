@@ -12,8 +12,6 @@ tags:
   - Technology
 ---
 
-Want to learn how to save time and money with AI? -> https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## What is Claude Mythos 5?
 
 Hi everyone! I’m Robby. As a software engineer, I spend my days building AI systems, and I am honestly blown away by the news coming out of Anthropic today. They just announced **Claude Mythos 5**, a brand-new, super-powered AI model.

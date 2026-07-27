@@ -12,8 +12,6 @@ tags:
   - Local AI
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Say Goodbye to Monthly Subscriptions
 
 Hi everyone, I’m Robby! As a software engineer, I love finding ways to run powerful AI tools right on my own computer. Today, I want to show you a tool called VoiceBox.

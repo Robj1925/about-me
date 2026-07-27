@@ -11,8 +11,6 @@ tags:
   - LLMs
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## It Didn't Happen by Accident
 
 Hi, I’m Robby! As a software engineer, I spend my days building real-world AI systems. Lately, everyone has been asking me the same question: *“Robby, why did AI get so smart so quickly?”*

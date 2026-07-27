@@ -11,8 +11,6 @@ tags:
   - Logistic Regression
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Is it Regression? Nope!
 
 Hi there! I’m Robby. As an AI engineer, I see people get confused by this all the time. When you hear the word "regression" in math, you usually think about predicting a number—like the price of a house or the temperature tomorrow.

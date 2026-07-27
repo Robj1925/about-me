@@ -10,8 +10,6 @@ tags:
   - ByteDance
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ByteDance (the parent company of TikTok) just released **UI-TARS**, a cutting-edge, open-source Vision-Language AI agent that can autonomously control your computer, mobile device, or web browser.
 
 Acting as a "virtual operator," UI-TARS can take natural language commands and execute them directly on your interface, performing tasks just like a human would.

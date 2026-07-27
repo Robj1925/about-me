@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## What is Machine Learning?
 
 Hi there! I’m Robby. I spend my days building AI systems, but today I want to strip away the jargon. People often ask me: "Robby, how is machine learning different from regular computer programming?"

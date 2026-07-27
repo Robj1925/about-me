@@ -11,8 +11,6 @@ tags:
   - Beginner Guide
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### Hi, I’m Robby!
 
 I’m a software engineer who builds AI systems every day. A lot of people think AI is magic, but it’s actually built on some really cool, simple math. Today, we are going to talk about one of the most important tools in my toolbox: **Linear Regression**.

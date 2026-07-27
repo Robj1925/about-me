@@ -12,8 +12,6 @@ tags:
   - Beginner Guide
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### Hey there! I’m Robby.
 
 I spend my days building AI systems, but today I want to explain the technology in a way that anyone can understand. Forget the confusing jargon—let’s talk about what Artificial Intelligence (AI) really is.

@@ -11,8 +11,6 @@ tags:
   - Productivity
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## A Big Shift in AI
 
 Hi everyone! I’m Robby. As a software engineer who builds AI systems every day, I am always looking for ways to make code faster and smarter. We are moving away from AI that just waits for a question. Now, we are entering the age of **proactive perception**.

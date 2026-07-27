@@ -10,8 +10,6 @@ tags:
   - Best Practices
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Think of your context window as an **array**.
 
 Your LLM doesn't have "real" memory. Every time you prompt it, this entire array gets sent to the model. Inside it, you might have:

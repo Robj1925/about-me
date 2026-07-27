@@ -11,8 +11,6 @@ tags:
   - Artificial Intelligence
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi there! I’m Robby.
 
 I spend my days building AI systems, and I get asked this question all the time: **How does an AI actually write a sentence?**

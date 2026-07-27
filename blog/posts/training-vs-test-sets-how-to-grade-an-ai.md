@@ -11,8 +11,6 @@ tags:
   - Coding for Beginners
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Does Your AI Actually Know Its Stuff?
 
 Hi! I’m Robby. I’m a software engineer, and I spend my days building AI systems. One of the most important things I’ve learned is that an AI is only as good as its final exam.

@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet Your AI: From Graduate to Specialist
 
 Hi everyone! I’m Robby, a software engineer. I spend my days building AI systems, and I get asked this question a lot: *“Robby, do I really need $100 million to build a smart AI?”*

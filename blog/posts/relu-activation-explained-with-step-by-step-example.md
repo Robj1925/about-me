@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi! I’m Robby.
 
 I spend my days building real-world AI systems, and I have a Master's degree in Computer Science. Today, I want to talk about something that sounds complicated but is actually quite simple: **ReLU**.

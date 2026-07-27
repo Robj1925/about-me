@@ -11,8 +11,6 @@ tags:
   - Data Science
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I’m Robby!
 
 As a software engineer who builds AI systems every day, I get asked one question a lot: *How does a computer actually learn?* 

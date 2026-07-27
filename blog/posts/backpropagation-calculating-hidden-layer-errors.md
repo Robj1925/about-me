@@ -12,8 +12,6 @@ tags:
   - Beginner Tech
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi! I’m Robby.
 
 I spend my days building AI systems, but today I want to talk about something fundamental: **How does an AI actually learn from its mistakes?**

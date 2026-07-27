@@ -2,7 +2,7 @@
 title: "Master the Google Gemini Mac App: A Simple Guide to Boosting Your Productivity"
 date: "2026-04-19"
 excerpt: "Learn how to set up and master the Google Gemini app for macOS. Discover hidden tricks to make your computer smarter and get your work done faster."
-thumbnail: "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.png"
+thumbnail: "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.jpg"
 youtubeId: "ao3nvWKX3PI"
 tags:
   - Google Gemini
@@ -10,8 +10,6 @@ tags:
   - AI Productivity
   - Tech Tips
 ---
-
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi, I'm Robby!
 

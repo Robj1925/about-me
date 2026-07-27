@@ -11,8 +11,6 @@ tags:
   - Technology
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Do Computers Read Like Us?
 
 Hi! I’m Robby. I spend my days building AI systems, and I get asked this question a lot: *“Does ChatGPT read a book just like I do?”*

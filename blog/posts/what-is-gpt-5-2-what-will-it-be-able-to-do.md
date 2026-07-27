@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Beyond Just Words: What’s Next for AI?
 
 Hi! I’m Robby. I spend my days building AI systems, and I get asked a lot of questions about where this technology is going. People often ask me, "Is the next version of AI just going to be bigger?"

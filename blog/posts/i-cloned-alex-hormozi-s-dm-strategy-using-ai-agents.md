@@ -12,8 +12,6 @@ tags:
   - Cold Outreach
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Stop Sending Boring DMs
 
 Hi everyone! I’m Robby. As a software engineer, I love finding ways to use AI to make hard work easier. One of the best ways to grow your network is by reaching out to people for interviews. But let’s be honest: writing custom messages to everyone takes forever.

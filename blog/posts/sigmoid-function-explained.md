@@ -11,8 +11,6 @@ tags:
   - Math
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 I spend my days building AI systems, and I love breaking down complex math into bite-sized pieces. Today, we are looking at something called the **Sigmoid Function**. It sounds fancy, but I promise it’s actually quite simple!

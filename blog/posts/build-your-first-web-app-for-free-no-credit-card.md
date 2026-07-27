@@ -12,8 +12,6 @@ tags:
   - Render
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Getting Your Code on the Web
 
 Hi everyone! I’m Robby. As a software engineer, one of the coolest parts of the job is taking a project from my laptop and making it live for the world to see. If you are new to coding, putting your first website online might feel like magic, but it’s actually a simple process once you know the steps.

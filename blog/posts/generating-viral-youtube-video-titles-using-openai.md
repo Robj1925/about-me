@@ -12,8 +12,6 @@ tags:
   - Content Creation
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Stop Staring at a Blank Screen
 
 Hi everyone! I’m Robby. As a software engineer who builds AI systems, I know that one of the hardest parts of creating content is coming up with that perfect title. You want something that grabs attention, but it’s easy to get stuck.

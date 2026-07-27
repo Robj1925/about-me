@@ -11,8 +11,6 @@ tags:
   - Software Engineering
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Hi everyone! I’m Robby. As an AI engineer, I spend a lot of time testing new tools. This week, the team behind OpenClaw dropped some huge updates (versions 3.24 to 3.28), and honestly, it’s a game changer for building AI agents.
 
 If you want to keep your workflow fast and smart, here is the breakdown of what is new.

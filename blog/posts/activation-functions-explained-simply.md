@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## How Does AI Actually "Think"?
 
 Hi! I’m Robby. As an AI engineer, I spend a lot of time building systems that can "see" and "learn." A lot of people ask me, "How does a computer actually understand messy, real-world data?"

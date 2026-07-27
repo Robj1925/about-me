@@ -11,8 +11,6 @@ tags:
   - Data Science
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 As a software engineer, I spend a lot of time building AI systems. People often ask me: "Robby, how do you make sure an AI actually learns instead of just memorizing answers?"

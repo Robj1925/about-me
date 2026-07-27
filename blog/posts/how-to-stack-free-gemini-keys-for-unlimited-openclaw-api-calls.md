@@ -12,8 +12,6 @@ tags:
   - API
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Stop Waiting for Your AI to Work
 
 Have you ever been working on a project, asking your AI questions, and suddenly it just stops? You get a "429 Error." This is called a rate limit. It means you’ve asked the AI too many questions too fast, and now you have to wait.

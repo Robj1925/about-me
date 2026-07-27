@@ -11,8 +11,6 @@ tags:
   - Machine Learning
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I’m Robby!
 
 As a software engineer, I spend my days building systems that help computers learn. One of the coolest parts of my job is teaching machines how to talk and listen. You might have heard of something called **NLP**. 

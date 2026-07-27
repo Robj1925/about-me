@@ -7,8 +7,6 @@ youtubeId: "M351KD77Lfs"
 tags: ["Engineering", "Claude Code", "AI Dev Tools"]
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Claude Code is one of the best AI coding tools available right now, but most developers are using it wrong. They're treating it like a magic code generator. In production engineering, that mindset will burn you quickly.
 
 Here's how I actually use it in real brownfield projects.

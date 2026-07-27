@@ -12,8 +12,6 @@ tags:
   - Coding
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Build Your Own AI iMessage Assistant
 
 Hi everyone! I’m Robby. As an engineer, I love building tools that save time and make life more fun. Today, I want to show you how to build your very own AI assistant that lives right inside your iMessage app.

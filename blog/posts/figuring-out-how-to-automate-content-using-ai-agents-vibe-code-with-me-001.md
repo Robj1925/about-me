@@ -12,8 +12,6 @@ tags:
   - Coding
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Welcome to Vibe Code!
 
 Hi everyone! I’m Robby. I’m a software engineer, and I love building cool AI systems. But more than that, I love making the process fun and chill. 

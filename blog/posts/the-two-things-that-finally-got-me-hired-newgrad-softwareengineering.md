@@ -11,8 +11,6 @@ tags:
   - Coding Interviews
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Why You Aren't Getting That Job Offer
 
 Hi! I’m Robby. I have a Master’s in Computer Science, but even I spent months sending out hundreds of job applications without getting a single "yes." It was frustrating and lonely.

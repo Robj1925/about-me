@@ -12,8 +12,6 @@ tags:
   - Technology
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Why Is Your Netflix Different From Mine?
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and one of the coolest examples of AI in the real world is right on your TV. Have you ever noticed that your Netflix homepage looks totally different from your friend’s page? 

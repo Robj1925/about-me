@@ -12,8 +12,6 @@ tags:
   - AI Tools
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Hi, I'm Robby. If you've been using Google Flow to make AI videos, you've probably run into the same problem I did: your characters and styles look different from clip to clip. Agent Mode fixes exactly that. In this guide, I'll walk you through how to use it to build professional, consistent AI video projects from scratch.
 
 ## What Is Agent Mode in Google Flow?

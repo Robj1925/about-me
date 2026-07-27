@@ -12,8 +12,6 @@ tags:
   - How It Works
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Hi everyone! I’m Robby. I spend my days building AI systems, and people often ask me, "How does a computer actually learn?" 
 
 It sounds like magic, but it’s actually a lot like learning to shoot a basketball. Let’s break it down into three simple steps.

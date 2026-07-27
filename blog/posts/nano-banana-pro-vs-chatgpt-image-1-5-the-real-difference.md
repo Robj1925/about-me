@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Why Most People Compare AI Wrong
 
 Hi! I’m Robby. I spend my days building AI systems, and I see people making the same mistake all the time: they try to compare two different tools as if they do the exact same job. 

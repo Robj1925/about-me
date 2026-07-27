@@ -11,8 +11,6 @@ tags:
   - Data Science
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### What are Labels in AI?
 
 Hi! I’m Robby. I spend my days building AI systems, and people often ask me: "How does a computer actually learn?"

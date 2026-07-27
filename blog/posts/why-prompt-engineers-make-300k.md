@@ -11,8 +11,6 @@ tags:
   - Software Development
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Stop Using AI Like a Magic Wand
 
 Hi everyone! I’m Robby. I have a Master’s degree in Computer Science and I build AI systems for a living. 

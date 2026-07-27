@@ -12,8 +12,6 @@ tags:
   - Technology
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi! I’m Robby
 
 I’m a software engineer who builds AI systems for a living. People often ask me, "Robby, how does a computer actually learn to be smart?" The answer is simple: **Data.**

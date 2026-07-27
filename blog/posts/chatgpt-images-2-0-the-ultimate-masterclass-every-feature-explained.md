@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Say Goodbye to DALL-E
 
 Hi everyone! I’m Robby. As an AI engineer, I’ve spent years working with image models, and I am excited to talk about the biggest update in AI art history. OpenAI has officially retired DALL-E and replaced it with **ChatGPT Images 2.0**.

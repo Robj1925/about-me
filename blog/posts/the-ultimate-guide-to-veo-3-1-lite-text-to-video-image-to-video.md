@@ -12,8 +12,6 @@ tags:
   - Generative AI
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet Your New Favorite AI Video Tool
 
 Hi everyone! I’m Robby. As a software engineer, I spend a lot of time testing new AI tools to see what they can actually do. Today, I’m excited to talk about Google’s brand new model: **Veo 3.1 Lite**.

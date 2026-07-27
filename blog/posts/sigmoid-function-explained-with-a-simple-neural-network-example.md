@@ -12,8 +12,6 @@ tags:
   - Beginner AI
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 I’m a software engineer who builds AI systems every day. Sometimes, the math behind artificial intelligence sounds super complicated. But the truth? A lot of it is just simple logic. Today, let’s talk about something called the **Sigmoid Function**.

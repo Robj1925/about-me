@@ -12,8 +12,6 @@ tags:
   - Android
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Big News for AI Automation
 
 Hi everyone! I’m Robby, a software engineer who loves building AI systems. Today, I’m excited to talk about the latest update to OpenClaw. Version 4.8 just dropped, and it honestly changes how we use AI agents. It’s faster, smarter, and much easier to use.

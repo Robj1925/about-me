@@ -1,5 +1,5 @@
 ---
-title: "What Is Linear Regression? Learn How Computers Predict the Future"
+title: "Linear Regression: The Math Behind AI Predictions"
 date: "2025-12-02"
 excerpt: "Curious how AI makes predictions? Learn how linear regression uses simple math to help computers guess everything from gas mileage to future sales."
 thumbnail: "assets/images/blog-thumbnails/linear-regression-explained-the-math-of-prediction-yt.jpg"
@@ -11,8 +11,6 @@ tags:
   - Linear Regression
   - Programming
 ---
-
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi, I'm Robby!
 

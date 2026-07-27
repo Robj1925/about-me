@@ -12,8 +12,6 @@ tags:
   - Software Engineering
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Behind the Scenes of Building AI
 
 Hi there! I’m Robby. I’m a software engineer, and I love building cool things with AI. Most of the time, when you watch videos about coding, you only see the finished, perfect version. But that’s not how real life works!

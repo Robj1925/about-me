@@ -12,8 +12,6 @@ tags:
   - Beginner AI
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 As a software engineer who builds AI systems, I get asked one question a lot: **How does a computer actually learn?** 

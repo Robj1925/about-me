@@ -11,8 +11,6 @@ tags:
   - Transformers
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi! I’m Robby.
 
 I’m a software engineer who builds AI systems. People always ask me: "How does a computer know what the next word in a sentence should be?" 

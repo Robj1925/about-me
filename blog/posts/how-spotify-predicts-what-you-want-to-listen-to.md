@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Is It Magic or Math?
 
 Have you ever finished a song on Spotify and wondered, “How did they know I would love the next one?” It feels like magic, but I promise you—it’s just math! 

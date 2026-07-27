@@ -11,8 +11,6 @@ tags:
   - Artificial Intelligence
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet the Team Inside Your AI
 
 Hi! I’m Robby. As an AI engineer, I get asked a lot: *“Why does an AI model need so many 'heads' to read a sentence?”* 

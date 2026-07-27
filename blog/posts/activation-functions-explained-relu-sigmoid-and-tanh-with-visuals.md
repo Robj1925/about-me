@@ -8,8 +8,6 @@ tags:
   - AI
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ```json
 {
   "title": "Activation Functions: How AI Makes Decisions",

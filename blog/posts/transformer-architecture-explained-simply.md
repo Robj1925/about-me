@@ -11,8 +11,6 @@ tags:
   - Technology Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet the Brain Behind ChatGPT
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and I get asked this question a lot: What is the secret sauce behind tools like ChatGPT? 

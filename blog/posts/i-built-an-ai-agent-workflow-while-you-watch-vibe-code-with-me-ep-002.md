@@ -2,7 +2,7 @@
 title: "How to Build Your Own AI Content Robot: A Relaxing Guide"
 date: "2026-03-04"
 excerpt: "Learn how to build an AI agent that automates your content creation. Join me as we code, troubleshoot, and explore the world of AI workflows."
-thumbnail: "assets/images/blog-thumbnails/i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002.png"
+thumbnail: "assets/images/blog-thumbnails/i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002.jpg"
 youtubeId: "bqcEVRiUIi0"
 tags:
   - AI
@@ -11,8 +11,6 @@ tags:
   - Coding
   - Tech
 ---
-
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Welcome to the Chill Zone
 

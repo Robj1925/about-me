@@ -2,7 +2,7 @@
 title: "What is Qwen 3.5 Omni? The Future of AI Agents is Here"
 date: "2026-04-01"
 excerpt: "Alibaba just released Qwen 3.5 Omni, an AI that sees, hears, and speaks at the same time. Learn how this new model is changing the way we build apps."
-thumbnail: "assets/images/blog-thumbnails/qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo.png"
+thumbnail: "assets/images/blog-thumbnails/qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo.jpg"
 youtubeId: "sGGF_2NfghA"
 tags:
   - AI
@@ -11,8 +11,6 @@ tags:
   - Tech Explained
   - Artificial Intelligence
 ---
-
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Meet Qwen 3.5 Omni
 

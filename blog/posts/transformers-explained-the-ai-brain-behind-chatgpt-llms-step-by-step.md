@@ -12,8 +12,6 @@ tags:
   - Beginner AI
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Hi everyone! I’m Robby. I spend my days building AI systems, and today I want to pull back the curtain on the technology behind tools like ChatGPT. It is called the **Transformer**. 
 
 At its heart, the Transformer is a smart engine that helps computers understand language. To show you how it works, let’s look at how it translates the English sentence "The cat sat on the mat" into French.

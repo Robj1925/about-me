@@ -12,8 +12,6 @@ tags:
   - AssemblyAI
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I’m Robby!
 
 I’m a software engineer, and today I want to show you something really cool. Have you ever wondered how apps turn someone's voice into written words? It’s called "Speech-to-Text," and today we are going to build our own using Java and an AI tool called AssemblyAI.

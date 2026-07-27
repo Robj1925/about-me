@@ -12,8 +12,6 @@ tags:
   - Beginner AI
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### Hi, I’m Robby! 
 
 As a software engineer who builds AI systems every day, people often ask me: "How does a computer actually 'think'?" While it isn't magic, it is pretty cool. Today, I want to show you how a neural network makes a decision using a simple example: approving a loan.

@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet the AI's Brain Power
 
 Hi everyone! I’m Robby. As a software engineer who builds AI, people often ask me: "How does a computer actually 'think'?"

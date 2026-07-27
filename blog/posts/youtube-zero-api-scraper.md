@@ -2,7 +2,7 @@
 title: "Bypass Quota Limits: Building a Zero-API YouTube Scraper"
 date: "2026-05-22"
 excerpt: "Tired of YouTube API quota limits? Learn how I built a zero-API YouTube scraping engine and SQLite-cached Go CLI that connects directly to AI agents via MCP."
-thumbnail: "assets/images/blog-thumbnails/youtube-zero-api-scraper.png"
+thumbnail: "assets/images/blog-thumbnails/youtube-zero-api-scraper.jpg"
 tags: ["YouTube", "Go", "Python", "SQLite", "AI Agents", "MCP"]
 meta_title: "How to Build a Zero-API YouTube Analytics CLI with Go and SQLite"
 meta_description: "Discover how to bypass YouTube API limits using an on-demand zero-API scraper engine, Python FastAPI, Go CLI tool, and SQLite persistence for LLM-ready data."

@@ -11,8 +11,6 @@ tags:
   - Artificial Intelligence
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I'm Robby!
 
 As a software engineer, I spend a lot of time building AI systems. One of the most common questions I get is: *How does a computer actually 'read' a sentence?*

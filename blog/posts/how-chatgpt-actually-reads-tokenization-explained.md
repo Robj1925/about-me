@@ -11,8 +11,6 @@ tags:
   - Technology Explained
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Hi, I’m Robby!
 
 As a software engineer, I spend my days building AI systems. People always ask me, "Robby, how does ChatGPT actually understand what I’m saying?" 

@@ -12,8 +12,6 @@ tags:
   - Tutorial
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ### What is CrewAI?
 
 Hi everyone! I’m Robby. As an AI engineer, I love finding ways to make machines work together like a team. That is exactly what **CrewAI** does. It lets you create multiple AI "agents" that talk to each other to finish big tasks.

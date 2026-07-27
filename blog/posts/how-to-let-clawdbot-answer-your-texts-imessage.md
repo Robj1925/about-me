@@ -12,8 +12,6 @@ tags:
   - Coding
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Build Your Own AI Text Assistant
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and today I want to show you something really cool. Have you ever wished your phone could answer texts for you? 

@@ -11,8 +11,6 @@ tags:
   - Software Engineering
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Stop Starting From Zero
 
 Hi everyone! I’m Robby. I spend my days building AI systems, and I see one big mistake people make all the time: they treat AI like a search engine. They ask a question, get an answer, and then start over the next day. 

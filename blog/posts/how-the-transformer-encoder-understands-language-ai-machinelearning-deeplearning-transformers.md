@@ -11,8 +11,6 @@ tags:
   - Artificial Intelligence
 ---
 
-🚀 Work 1:1 with a Software Engineer and automate everything you hate doing → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Meet the Brains Behind AI
 
 Hi everyone! I’m Robby. I’m a software engineer, and I spend my days building AI systems. People always ask me: "How does a computer actually 'read' a sentence?"

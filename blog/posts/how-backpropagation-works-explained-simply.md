@@ -12,8 +12,6 @@ tags:
   - Beginner AI
 ---
 
-⚡️ Learn how to automate repetitive work with 1:1 help from a Software Engineer → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## How Do Computers Learn?
 
 Hi, I’m Robby! I spend my days building AI systems, and a lot of people ask me, "How does a computer actually 'learn'?" 

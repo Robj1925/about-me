@@ -12,8 +12,6 @@ tags:
   - LLMs
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## What is an AI Agent?
 
 Hi! I’m Robby. As an AI engineer, I get asked one question a lot: "What is an AI Agent, and how is it different from the chatbot I use every day?"

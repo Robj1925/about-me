@@ -12,8 +12,6 @@ tags:
   - Data Science
 ---
 
-🚀 Work 1:1 with a Software Engineer and let AI handle the busywork → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Why Does AI Need a Safety Net?
 
 Hi! I’m Robby. I spend my days building real-world AI systems, and one thing I’ve learned is that teaching a computer to "think" is hard. If you give a model too much new information at once, it can get lost and forget what it already knew. 

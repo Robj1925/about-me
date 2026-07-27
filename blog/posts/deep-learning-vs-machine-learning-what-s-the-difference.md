@@ -11,8 +11,6 @@ tags:
   - Tech Explained
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 Hi! I’m Robby. I spend my days building AI systems, and I get asked this question all the time: *What is the difference between Machine Learning and Deep Learning?*
 
 Think of it like a set of Russian nesting dolls. They are related, but one fits inside the other!

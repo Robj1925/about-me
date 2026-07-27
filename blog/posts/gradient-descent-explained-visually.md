@@ -11,8 +11,6 @@ tags:
   - Beginner Tech
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Imagine You Are Lost on a Mountain
 
 Hi! I’m Robby. I spend my days building AI systems, and I get asked all the time: "How does a computer actually learn?"

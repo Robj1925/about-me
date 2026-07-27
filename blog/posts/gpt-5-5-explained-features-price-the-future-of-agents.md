@@ -11,8 +11,6 @@ tags:
   - Software Engineering
 ---
 
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## Welcome to the Agentic Era
 
 Hi everyone, I’m Robby! As an engineer who builds AI systems every day, I’ve seen a lot of updates. But the surprise launch of OpenAI’s **GPT-5.5 (codename Spud)**? This is different. We aren’t just talking about a chatbot anymore; we are entering the "Agentic Era."

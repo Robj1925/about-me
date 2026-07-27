@@ -1,5 +1,5 @@
 ---
-title: "How AI Learns: Backpropagation Explained Simply"
+title: "Backpropagation: The Core of How Neural Networks Train"
 date: "2025-12-04"
 excerpt: "Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide."
 thumbnail: "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.jpg"
@@ -10,8 +10,6 @@ tags:
   - Neural Networks
   - Data Science
 ---
-
-🚀 Learn to automate like an engineer with direct 1:1 guidance → https://www.skool.com/ai-academy-with-robby-6849/about
 
 ## Hi there! I'm Robby.
 

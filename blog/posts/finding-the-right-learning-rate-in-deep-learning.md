@@ -11,8 +11,6 @@ tags:
   - Neural Networks
 ---
 
-🧠 Get 1:1 help from a Software Engineer to automate your workflow → https://www.skool.com/ai-academy-with-robby-6849/about
-
 ## How Does AI Actually Learn?
 
 Hi! I’m Robby. As a software engineer who builds AI systems every day, I get asked a lot about how computers "learn." It sounds like magic, but it’s actually just a lot of math happening very fast.

@@ -3,16 +3,28 @@
   <!-- Main Home Page -->
   <url>
     <loc>https://automatewithrobby.fyi/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Blog Index -->
   <url>
     <loc>https://automatewithrobby.fyi/blog/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/kimi-k3-is-open-source-you-still-cant-run-it.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/kimi-k3-vs-claude-fable-5-same-bug-wild-results.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://automatewithrobby.fyi/blog/hallmark-free-skill-stops-claude-code-building-ai-slop.html</loc>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kimi K3 Is Open Source. You Still Can't Run It.</title>
+  <meta name="description" content="Kimi K3's weights are genuinely open, no license gate, no waitlist. The download is 594GB and the floor to load it is eight H100s. Here is what the hardware actually costs, why the community quantization is a trap right now, and the three real ways to use K3." />
+  <meta property="og:title" content="Kimi K3 Is Open Source. You Still Can't Run It." />
+  <meta property="og:description" content="Kimi K3's weights are genuinely open, no license gate, no waitlist. The download is 594GB and the floor to load it is eight H100s. Here is what the hardware actually costs, why the community quantization is a trap right now, and the three real ways to use K3." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/kimi-k3-is-open-source-you-still-cant-run-it.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/kimi-k3-is-open-source-you-still-cant-run-it.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Kimi K3 Is Open Source. You Still Can't Run It.",
+      "description": "Kimi K3's weights are genuinely open, no license gate, no waitlist. The download is 594GB and the floor to load it is eight H100s. Here is what the hardware actually costs, why the community quantization is a trap right now, and the three real ways to use K3.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/kimi-k3-is-open-source-you-still-cant-run-it.jpg",
+      "datePublished": "2026-07-29",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/kimi-k3-is-open-source-you-still-cant-run-it.html",
+      "keywords": "Kimi K3, Open Source, Moonshot AI, Local AI, AI Models",
+      "timeRequired": "PT6M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Kimi K3 Is Open Source. You Still Can't Run It.",
+          "item": "https://automatewithrobby.fyi/blog/kimi-k3-is-open-source-you-still-cant-run-it.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Kimi K3 Is Open Source. You Still Can't Run It.",
+      "description": "Kimi K3's weights are genuinely open, no license gate, no waitlist. The download is 594GB and the floor to load it is eight H100s. Here is what the hardware actually costs, why the community quantization is a trap right now, and the three real ways to use K3.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/kimi-k3-is-open-source-you-still-cant-run-it.jpg",
+      "uploadDate": "2026-07-29",
+      "embedUrl": "https://www.youtube.com/embed/Y91e-FwhwPs",
+      "contentUrl": "https://www.youtube.com/watch?v=Y91e-FwhwPs",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="Y91e-FwhwPs" aria-label="Play video: Kimi K3 Is Open Source. You Still Can't Run It.">
+          <img src="https://i.ytimg.com/vi/Y91e-FwhwPs/hqdefault.jpg" alt="Play video: Kimi K3 Is Open Source. You Still Can't Run It." width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/kimi-k3-is-open-source-you-still-cant-run-it.jpg" alt="Kimi K3 Is Open Source. You Still Can't Run It. thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Kimi K3</span><span class="post-tag">Open Source</span><span class="post-tag">Moonshot AI</span><span class="post-tag">Local AI</span><span class="post-tag">AI Models</span></div>
+      <h1 class="post-title">Kimi K3 Is Open Source. You Still Can't Run It.</h1>
+      <p class="post-excerpt">Kimi K3's weights are genuinely open, no license gate, no waitlist. The download is 594GB and the floor to load it is eight H100s. Here is what the hardware actually costs, why the community quantization is a trap right now, and the three real ways to use K3.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-07-29">July 29, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 6 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Kimi K3&#39;s weights went public, and they are genuinely open. Not gated, not waitlisted. You do not even have to accept a license agreement to see the files. Which is why your feed is full of videos with the word &quot;free&quot; in the title.</p>
+<p>So I went and looked at what it actually takes to run. Here is the part nobody is saying: open weights and runnable are not the same thing.</p>
+<h2 id="what-the-model-actually-is">What the model actually is</h2>
+<p>K3 is 2.8 trillion total parameters with 104 billion active, a mixture of experts setup with 96 experts and 16 activated per token.</p>
+<p>In plain English: the 2.8 trillion is the size of the library. The 104 billion is how many books it pulls off the shelf for any given word. The catch is that you still have to own the entire library. Active parameters do not save you here.</p>
+<p>It also ships with a 1 million token context window, and it is multimodal, so you can hand it text or an image. The vision side is the MoonViT V2 encoder at 401 million parameters.</p>
+<p>Two details that matter more than they sound. First, it is already a 4 bit model. Moonshot shipped it compressed. Second, it carries the Kimi K3 license, an open weights license, not MIT and not Apache 2.0.</p>
+<h2 id="the-download-and-the-floor">The download and the floor</h2>
+<p>The download is roughly 594GB. This is not something you kick off before bed. Plan for at least a day, and check your free disk space before you start, not after.</p>
+<p>Now the important number. The bare minimum to load it is eight H100s at 80GB each. That is about 640GB of VRAM to hold a 594GB model.</p>
+<p>For perspective: a single RTX 4090 has 24GB. Mac Studio unified memory does not get there either. This is not a &quot;buy one more stick of RAM&quot; problem. It is a &quot;buy hundreds more sticks of RAM&quot; problem.</p>
+<p>Supported inference engines right now are vLLM, SGLang, and TokenSpeed. Note what is missing: llama.cpp does not support Kimi K3.</p>
+<p>The 1 million token window makes the hardware story worse, not better, because the KV cache scales with context. Local deployment guides suggest starting at 128K to 256K rather than the full million unless you are spreading across many GPUs. So even on real hardware, the first thing you give up is the headline feature.</p>
+<p>To be clear, Moonshot is not doing anything wrong. A 2.8 trillion parameter model is a data center object by design. The problem is everyone putting &quot;free&quot; in the title.</p>
+<h2 id="the-quantization-is-a-trap-right-now">The quantization is a trap right now</h2>
+<p>Someone did quantize it, and here is what happened. The compressed version came out to 865GB. The original is 594GB. Somebody shrank it and it got 270GB bigger.</p>
+<p>The reason is simple: K3 was already compressed when Moonshot shipped it. Squeezing something that is already squeezed only adds packaging.</p>
+<p>It also does not run on stock llama.cpp. There is an open PR, but it is not merged yet.</p>
+<p>The author is upfront about the rest. They call it a theoretical quantization, meaning they lack the compute to test it properly. No reported perplexity, no quality benchmarks, plain round to nearest without importance matrices.</p>
+<p>That last part is the real risk. When you quantize experts unevenly, some experts go silent and the router learns to route around them. The model fails, but it looks like it succeeded. That is the worst possible failure mode. This will improve over the coming weeks, but right now it is not a shortcut.</p>
+<h2 id="way-1-the-free-tier">Way 1: the free tier</h2>
+<p>The free tier is called Adagio and it is genuinely zero dollars. What it gets you: one concurrent agent task, two scheduled tasks, two widget tasks, two projects, 500MB of project storage, and 15 plus plugin types.</p>
+<p>What it does not get you: Kimi Code, the 4x priority queue, swarm, dream memory, goal mode, and Kimi Claw. It is a free tier for chatting with the model, not a free agent platform.</p>
+<p>Worth knowing: there is now a banner saying new membership plans are coming soon and that Kimi and Kimi Code benefits will be separated. Every paid tier button currently says &quot;join the waitlist.&quot; Moonshot is actively splitting Kimi Code out of the Kimi membership into its own product, so the tiers you see are the incoming structure, not necessarily what you can buy today. Paid tiers run $180, $372, $948, and $1,908 per year, with 1x, 5x, 15x, and 30x credits.</p>
+<h2 id="way-2-the-api">Way 2: the API</h2>
+<p>There is no free production tier. List price is $3 per million input tokens and $15 per million output, with cache hits around 30 cents on input via the direct API. OpenRouter is the same $3 in and $15 out, but with no cached input tier.</p>
+<h2 id="way-3-rent-the-hardware">Way 3: rent the hardware</h2>
+<p>You can rent 8x H100 by the hour. Roughly $16 per hour on RunPod community, $19 to $23 per hour on secure cloud, and I found 8x H100 nodes at $49.24 per hour.</p>
+<p>Do the math and it falls apart fast. One hour of an 8x H100 node costs more than 5 million input tokens through the API.</p>
+<p>Unless you are running this continuously at scale, or you genuinely need the weights on your own systems for privacy or compliance, the API is cheaper than self hosting and it is not close.</p>
+<h2 id="the-part-that-makes-k3-worth-it-anyway">The part that makes K3 worth it anyway</h2>
+<p>In my head to head against Fable 5, K3 finished a real bug fix in 12 minutes with 34 tool calls and 1.2 million tokens for 92 cents. Fable did the same fix in 3.5 minutes with 18 tool calls and 30K tokens for $2.13. On a cost per real task basis, K3 genuinely wins.</p>
+<p>So the model is a legitimately cheap workhorse. It is the self hosting that does not add up.</p>
+<h2 id="the-short-version">The short version</h2>
+<p>The weights are real. The floor is eight H100s. The quantization is currently bigger than the original and untested. The API is dramatically cheaper than the hardware for basically everyone.</p>
+<p>None of that makes K3 a bad model. It is strong and it is cheap if you use it through the API. I am not telling you to avoid it. I am telling you what &quot;open source&quot; and &quot;free&quot; actually mean in this context.</p>
+<p>It is an option for companies. It is not a local model for your laptop.</p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="kimi-k3-open-source-model-beats-claude-frontend-code.html">Kimi K3: The Open Source Model That Just Beat Claude at Frontend Code</a></li>
+        <li><a href="kimi-k3-vs-claude-fable-5-same-bug-wild-results.html">Kimi K3 vs Claude Fable 5: Same Bug, Wild Results</a></li>
+        <li><a href="glm-5-2-fixed-a-bug-for-3-36-in-45-minutes.html">GLM-5.2 Fixed a Bug for $3.36 in 45 Minutes</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

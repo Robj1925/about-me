@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Claude Blocked Your Biology Questions (Until Now)</title>
+  <meta name="description" content="Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5." />
+  <meta property="og:title" content="Why Claude Blocked Your Biology Questions (Until Now)" />
+  <meta property="og:description" content="Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/claude-fable-5-biology-fallbacks-cut-85-percent.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/claude-fable-5-biology-fallbacks-cut-85-percent.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Why Claude Blocked Your Biology Questions (Until Now)",
+      "description": "Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/claude-fable-5-biology-fallbacks-cut-85-percent.jpg",
+      "datePublished": "2026-09-07",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/claude-fable-5-biology-fallbacks-cut-85-percent.html",
+      "keywords": "Anthropic, Claude Fable 5, AI Safety, News",
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Why Claude Blocked Your Biology Questions (Until Now)",
+          "item": "https://automatewithrobby.fyi/blog/claude-fable-5-biology-fallbacks-cut-85-percent.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Why Claude Blocked Your Biology Questions (Until Now)",
+      "description": "Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/claude-fable-5-biology-fallbacks-cut-85-percent.jpg",
+      "uploadDate": "2026-09-07",
+      "embedUrl": "https://www.youtube.com/embed/kS053RKIUs4",
+      "contentUrl": "https://www.youtube.com/watch?v=kS053RKIUs4",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="kS053RKIUs4" aria-label="Play video: Why Claude Blocked Your Biology Questions (Until Now)">
+          <img src="https://i.ytimg.com/vi/kS053RKIUs4/hqdefault.jpg" alt="Play video: Why Claude Blocked Your Biology Questions (Until Now)" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/claude-fable-5-biology-fallbacks-cut-85-percent.jpg" alt="Why Claude Blocked Your Biology Questions (Until Now) thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Anthropic</span><span class="post-tag">Claude Fable 5</span><span class="post-tag">AI Safety</span><span class="post-tag">News</span></div>
+      <h1 class="post-title">Why Claude Blocked Your Biology Questions (Until Now)</h1>
+      <p class="post-excerpt">Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-09-07">September 7, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Anthropic just cut Claude Fable 5&#39;s biology fallbacks by about 85%. If Fable ever gave you a weaker answer to a harmless biology or health question, this is the reason, and it is now mostly fixed.</p>
+<h2 id="what-a-fallback-actually-is">What a fallback actually is</h2>
+<p>Fable 5 does not answer every biology question itself. A safety classifier sits in front of it. Anthropic describes these classifiers as smaller, automated AI systems that detect when Fable 5 is asked to perform a safeguarded biology task. Think of it as a spam filter for dangerous biology.</p>
+<p>When the classifier fires, your request is rerouted to Opus 5. Opus 5 is still a capable model, but it does not have the same level of biological capability as Fable 5. Anthropic calls that reroute a fallback. The problem was false positives: the filter fired on innocent questions all the time, so people asking about a blood test got the smaller model without knowing why.</p>
+<h2 id="how-anthropic-fixed-it">How Anthropic fixed it</h2>
+<p>The classifier follows a constitution, a written rule set that tells it what counts as safeguarded and what is allowed. Anthropic rewrote that constitution with detailed carve-outs for benign uses, collected feedback from a range of outside experts, generated new training data from the revised rules, and retrained the classifier. Then they checked that it still blocks the harmful dual-use material.</p>
+<p>The result in their testing: biology fallbacks dropped by about 85% across product surfaces. Per product, Anthropic expects total fallbacks to drop by about:</p>
+<ul>
+<li>67% on Claude.ai</li>
+<li>55% in Cowork</li>
+<li>17% in Claude Code</li>
+<li>7% on the Claude Platform</li>
+</ul>
+<p>In practice, interpreting lab results, understanding symptoms, and learning biology in an educational context should now just work. Healthcare professionals also get more support from Fable 5 on clinical tasks.</p>
+<h2 id="why-this-was-hard-in-the-first-place">Why this was hard in the first place</h2>
+<p>Good biology and bad biology often look identical to a filter. Anthropic&#39;s own example is captopril, a real blood pressure drug. Scientists developed it by isolating toxic components of snake venom, the same compounds that crash blood pressure in humans. Same molecules, opposite intent. As Anthropic puts it, researching a treatment for a disease sometimes requires producing the dangerous compounds that cause that disease in the first place.</p>
+<p>That is why the fix has limits. Requests in virology, toxicology, and molecular design still fall back to Opus 5, because Anthropic treats them as dual-use. Anthropic says plainly that Fable 5 is not yet usable for professional biology research or drug development, that some false positives will remain, and that it is working on trusted access paths for researchers.</p>
+<p>So if you use Claude for health questions, coursework, or clinical reference, expect far fewer silent downgrades. If you work in drug discovery, the wall is still there.</p>
+<p>Read the full announcement: <a href="https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards">Improving Fable 5&#39;s biology safeguards (Anthropic)</a></p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="mythos-5-went-rogue-uk-government-cyber-test.html">Claude Mythos 5 Went Rogue During a UK Government Cyber Test</a></li>
+        <li><a href="why-everyone-is-talking-about-claude-opus-5-5.html">Why Everyone Is Talking About Claude Opus 5.5: Fable Level for 60% Less</a></li>
+        <li><a href="claude-can-now-control-robots-model-hardware-standard.html">Claude Can Now Control Robots and Lab Hardware</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

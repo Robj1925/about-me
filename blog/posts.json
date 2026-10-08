@@ -1,5 +1,90 @@
 [
   {
+    "slug": "gemini-4-argon-beats-opus-5-5-mostly",
+    "title": "Google's Gemini 4 Argon Beats Opus 5.5 (Mostly)",
+    "date": "2026-10-08",
+    "updated": null,
+    "excerpt": "Gemini 4 Argon launched at $2 per million input tokens, half of Claude Opus 5.5, and scores 77.9% on DeepSWE v1.1 against 74.2% for Opus. It still loses Terminal-bench 4.0, and almost nobody can use it yet.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-4-argon-beats-opus-5-5-mostly.jpg",
+    "youtubeId": "CGY-kGZuzXM",
+    "tags": [
+      "Google Gemini",
+      "Gemini 4 Argon",
+      "Benchmarks",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "mistral-large-4-le-chonk-does-what-claude-refuses",
+    "title": "Le Chonk: Mistral Large 4 Does What Claude Refuses",
+    "date": "2026-10-08",
+    "updated": null,
+    "excerpt": "Mistral Large 4 is a 1 trillion parameter open-weight model that solved 50 tasks on the Artificial Analysis Cyber Index, while Claude Opus 5.5 solved 29 because it kept refusing.",
+    "thumbnail": "assets/images/blog-thumbnails/mistral-large-4-le-chonk-does-what-claude-refuses.jpg",
+    "youtubeId": "GmdP3PhpXUM",
+    "tags": [
+      "Mistral",
+      "Open Weights",
+      "Cybersecurity",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "hyperframes-studio-video-editor-for-ai-agents",
+    "title": "HyperFrames Studio Lets Claude Code Edit Your Videos With You",
+    "date": "2026-10-07",
+    "updated": null,
+    "excerpt": "HeyGen released HyperFrames Studio, a desktop video editor where Claude Code or Codex does the editing. The open-source engine under it has about 59,000 GitHub stars and 813,100 npm downloads in a week.",
+    "thumbnail": "assets/images/blog-thumbnails/hyperframes-studio-video-editor-for-ai-agents.jpg",
+    "youtubeId": "x-6RvomtYJI",
+    "tags": [
+      "Claude Code",
+      "Video Editing",
+      "HeyGen",
+      "AI Agents"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "reflection-beam-is-the-new-face-of-open-source-ai",
+    "title": "Reflection Beam Is The New Face Of Open Source AI",
+    "date": "2026-10-07",
+    "updated": null,
+    "excerpt": "Reflection's Beam is a 501B open weight model from a US lab, under Apache 2.0. It is not the strongest open model. It matches GLM 5.2 while thinking about a third as much, and that is why it matters. Here are the full benchmarks, the efficiency chart, the demos and the catches.",
+    "thumbnail": "assets/images/blog-thumbnails/reflection-beam-is-the-new-face-of-open-source-ai.jpg",
+    "youtubeId": "4d6c0c5J6tc",
+    "tags": [
+      "Reflection AI",
+      "Beam",
+      "Open Source",
+      "AI Models",
+      "Benchmarks"
+    ],
+    "readTime": 7
+  },
+  {
+    "slug": "why-everyone-is-talking-about-claude-opus-5-5",
+    "title": "Why Everyone Is Talking About Claude Opus 5.5: Fable Level for 60% Less",
+    "date": "2026-09-23",
+    "updated": null,
+    "excerpt": "Claude Opus 5.5 is smarter than Fable 5.1 on most benchmarks and costs $4 in and $20 out per million tokens. The full benchmark table including the two losses, the independent check, what people built in the first 24 hours, and my verdict.",
+    "thumbnail": "assets/images/blog-thumbnails/why-everyone-is-talking-about-claude-opus-5-5.jpg",
+    "youtubeId": "qoiy5Jf6nuU",
+    "tags": [
+      "Claude Opus 5.5",
+      "Claude",
+      "Anthropic",
+      "AI Models",
+      "Benchmarks",
+      "News"
+    ],
+    "readTime": 12
+  },
+  {
     "slug": "notebooklm-is-now-gemini-notebook-the-complete-guide",
     "title": "NotebookLM Is Now Gemini Notebook: The Complete Guide (2026)",
     "date": "2026-09-17",
@@ -15,6 +100,186 @@
       "Tutorial"
     ],
     "readTime": 12
+  },
+  {
+    "slug": "employers-ask-students-about-ai-skills-kogod-study",
+    "title": "42.6% of Students Now Get Asked About AI Skills by Employers",
+    "date": "2026-09-16",
+    "updated": null,
+    "excerpt": "A three-year survey from American University's Kogod School of Business found the share of students asked about their AI skills by potential employers climbed from 11.6% in 2024 to 42.6% in 2026.",
+    "thumbnail": "assets/images/blog-thumbnails/employers-ask-students-about-ai-skills-kogod-study.jpg",
+    "youtubeId": "X11gzQGDdcI",
+    "tags": [
+      "AI Careers",
+      "AI in Education",
+      "Research",
+      "Hiring"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "meta-just-dropped-its-own-claude-code",
+    "title": "Meta Just Dropped Its Own Claude Code",
+    "date": "2026-09-15",
+    "updated": null,
+    "excerpt": "Meta released Muse Code, a terminal coding agent co-trained with its new Muse Spark 1.2 model. It scores 82.9% on Terminal-Bench 2.1 and ran a GPU kernel job for up to 24 hours straight.",
+    "thumbnail": "assets/images/blog-thumbnails/meta-just-dropped-its-own-claude-code.jpg",
+    "youtubeId": "-H1ocjpjQb0",
+    "tags": [
+      "Meta",
+      "AI Coding Agents",
+      "Muse Spark",
+      "Benchmarks",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "google-ai-leadership-shakeup-jeff-dean-leaves",
+    "title": "Google Just Shook Up Its Entire AI Leadership",
+    "date": "2026-09-14",
+    "updated": null,
+    "excerpt": "One Sundar Pichai memo moved Demis Hassabis to Chair of Google DeepMind, put Koray Kavukcuoglu in charge of Gemini, and confirmed Jeff Dean is leaving after 27 years, as the Gemini app passed 950M monthly users.",
+    "thumbnail": "assets/images/blog-thumbnails/google-ai-leadership-shakeup-jeff-dean-leaves.jpg",
+    "youtubeId": "8AT2eiReo4Y",
+    "tags": [
+      "Google",
+      "Google DeepMind",
+      "Gemini",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "flux-3-video-20-second-clips-with-sound",
+    "title": "FLUX 3 Video Makes 20 Second Clips With Sound",
+    "date": "2026-09-13",
+    "updated": null,
+    "excerpt": "Black Forest Labs' FLUX 3 Video generates clips up to 20 seconds long with dialogue and sound effects built in, and human raters ranked it first for text to video with an Elo score of 1135.",
+    "thumbnail": "assets/images/blog-thumbnails/flux-3-video-20-second-clips-with-sound.jpg",
+    "youtubeId": "f6UBQaUTLdE",
+    "tags": [
+      "Black Forest Labs",
+      "FLUX 3",
+      "AI Video",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "gemini-omni-1-1-flash-40-second-scenes-4k",
+    "title": "Gemini Omni 1.1 Flash: 40 Second Scenes, 4K Output",
+    "date": "2026-09-08",
+    "updated": null,
+    "excerpt": "Google's Gemini Omni 1.1 Flash extends a scene up to 40 seconds, renders 360p drafts at a third of the 720p cost, and upscales finals to 4K. Here is what changed and what it costs.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-omni-1-1-flash-40-second-scenes-4k.jpg",
+    "youtubeId": "CwZ6x4IKOj0",
+    "tags": [
+      "Google",
+      "Gemini Omni",
+      "AI Video",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-fable-5-biology-fallbacks-cut-85-percent",
+    "title": "Why Claude Blocked Your Biology Questions (Until Now)",
+    "date": "2026-09-07",
+    "updated": null,
+    "excerpt": "Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-fable-5-biology-fallbacks-cut-85-percent.jpg",
+    "youtubeId": "kS053RKIUs4",
+    "tags": [
+      "Anthropic",
+      "Claude Fable 5",
+      "AI Safety",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-can-now-control-robots-model-hardware-standard",
+    "title": "Claude Can Now Control Robots and Lab Hardware",
+    "date": "2026-09-06",
+    "updated": null,
+    "excerpt": "Anthropic's Model Hardware Standard lets AI agents run microscopes, robot arms and quantum computer lasers. At QuEra, Claude turned a laser recovery script that worked 58% of the time into one that passed 99.3% of 700 blind trials.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-can-now-control-robots-model-hardware-standard.jpg",
+    "youtubeId": "qPDQkHSVzH8",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "Robotics",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "surgeons-used-ai-in-real-time-to-remove-a-brain-tumour",
+    "title": "Surgeons Used AI in Real Time to Remove a Brain Tumour",
+    "date": "2026-09-05",
+    "updated": null,
+    "excerpt": "Surgeons in London removed an 11 millimetre pituitary tumour with an AI reading the live surgical video, a world first from UCL and UCLH. Within a week the patient was walking without glasses or sticks.",
+    "thumbnail": "assets/images/blog-thumbnails/surgeons-used-ai-in-real-time-to-remove-a-brain-tumour.jpg",
+    "youtubeId": "OtH2lPZdegQ",
+    "tags": [
+      "AI in Healthcare",
+      "Computer Vision",
+      "NVIDIA",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "mythos-5-went-rogue-uk-government-cyber-test",
+    "title": "Claude Mythos 5 Went Rogue During a UK Government Cyber Test",
+    "date": "2026-09-02",
+    "updated": null,
+    "excerpt": "The UK AI Security Institute ran one cyber challenge 122 times and logged 19 unsanctioned actions on the live internet. 17 came from Anthropic's Mythos 5, including an attempted supply chain attack on a real open-source project.",
+    "thumbnail": "assets/images/blog-thumbnails/mythos-5-went-rogue-uk-government-cyber-test.jpg",
+    "youtubeId": "KZ8A76GHreE",
+    "tags": [
+      "AI Safety",
+      "Cybersecurity",
+      "Anthropic",
+      "Claude Mythos",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "big-tech-agreed-on-one-ai-plugin-standard",
+    "title": "Big Tech Just Agreed on One AI Plugin Standard",
+    "date": "2026-09-01",
+    "updated": null,
+    "excerpt": "Agent Plugins 1.0 gives AI agents one shared package format for skills and MCP servers. A valid plugin needs only two files, and the same folder loads in ChatGPT, Codex, Cursor, GitHub Copilot, Kiro and VS Code.",
+    "thumbnail": "assets/images/blog-thumbnails/big-tech-agreed-on-one-ai-plugin-standard.jpg",
+    "youtubeId": "jcBWgI-_JEg",
+    "tags": [
+      "AI Agents",
+      "Agent Skills",
+      "MCP",
+      "Developer Tools",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-edits-videos-without-watching-them",
+    "title": "Claude Code Can Edit Your Videos Without Watching Them",
+    "date": "2026-08-30",
+    "updated": null,
+    "excerpt": "The Browser Use team open sourced video-use, a skill that turns any coding agent into a video editor. It reads your footage as text, so a full edit costs kilobytes instead of millions of tokens.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-edits-videos-without-watching-them.jpg",
+    "youtubeId": "sfQUjUXddSc",
+    "tags": [
+      "Claude Code",
+      "Video Editing",
+      "Free Tools",
+      "AI Agents"
+    ],
+    "readTime": 2
   },
   {
     "slug": "claude-ai-full-course-for-beginners",
@@ -49,6 +314,137 @@
       "Tutorial"
     ],
     "readTime": 13
+  },
+  {
+    "slug": "vercel-remote-agent-browser-cloud-browser-for-ai-agents",
+    "title": "Vercel Gave AI Agents Their Own Browser in the Cloud",
+    "date": "2026-08-17",
+    "updated": null,
+    "excerpt": "Vercel Labs' remote-agent-browser runs a real Chromium for your AI agent inside an isolated Vercel Sandbox. Its published benchmark opens and snapshots 100 pages in 8.01 seconds, sandbox boot included.",
+    "thumbnail": "assets/images/blog-thumbnails/vercel-remote-agent-browser-cloud-browser-for-ai-agents.jpg",
+    "youtubeId": "rgZLmdDsmD0",
+    "tags": [
+      "Vercel",
+      "AI Agents",
+      "Browser Automation",
+      "Developer Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "pwc-91-percent-of-finance-firms-pay-extra-for-ai-skills",
+    "title": "PwC: 91% of Finance Firms Now Pay Extra for AI Skills",
+    "date": "2026-08-16",
+    "updated": null,
+    "excerpt": "PwC surveyed 1,004 US financial services leaders. 91% are raising pay for employees with AI skills, and 86% say AI skills training is more valuable than an MBA for many new hires.",
+    "thumbnail": "assets/images/blog-thumbnails/pwc-91-percent-of-finance-firms-pay-extra-for-ai-skills.jpg",
+    "youtubeId": "U-OfN2itd2I",
+    "tags": [
+      "AI Careers",
+      "AI Skills",
+      "Finance",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "qwen-3-8-max-beat-87-percent-of-human-teams",
+    "title": "Qwen 3.8 Max: Alibaba's 2.4T Model Beat 87% of Human Teams",
+    "date": "2026-08-15",
+    "updated": null,
+    "excerpt": "Alibaba's Qwen 3.8 Max, a 2.4 trillion parameter model, beat 458 of 526 human teams in a 24 hour Tianchi contest and scored 93.0 on PaperBench. It is the first Max class Qwen model with open weights.",
+    "thumbnail": "assets/images/blog-thumbnails/qwen-3-8-max-beat-87-percent-of-human-teams.jpg",
+    "youtubeId": "Ro1j1w6JdA8",
+    "tags": [
+      "Qwen",
+      "Alibaba",
+      "Open Source",
+      "AI Models",
+      "Benchmarks"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "minimax-h3-open-weights-video-stereo-audio",
+    "title": "MiniMax H3: Open Weights Video With Stereo Audio in One Pass",
+    "date": "2026-08-14",
+    "updated": null,
+    "excerpt": "MiniMax released the weights of H3, a 33 billion parameter model that generates video and 32 kHz stereo audio together in one pass. The open checkpoints stop at 768p, and the license leaves out the US, EU, UK and South Korea.",
+    "thumbnail": "assets/images/blog-thumbnails/minimax-h3-open-weights-video-stereo-audio.jpg",
+    "youtubeId": "8yHKXbcfbgI",
+    "tags": [
+      "MiniMax",
+      "AI Video",
+      "Open Source",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "openai-astra-solved-10-open-math-problems",
+    "title": "OpenAI's Secret Astra Model Solved 10 Open Math Problems",
+    "date": "2026-08-14",
+    "updated": null,
+    "excerpt": "An internal version of OpenAI's next model, Astra, resolved or advanced 10 long-standing open problems, with every proof checked in Lean. The tokens to find all 10 would cost roughly $2,000.",
+    "thumbnail": "assets/images/blog-thumbnails/openai-astra-solved-10-open-math-problems.jpg",
+    "youtubeId": "_ANF6GifL4w",
+    "tags": [
+      "OpenAI",
+      "Astra",
+      "Mathematics",
+      "AI Research",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "anthropic-ai-published-real-malware-by-accident",
+    "title": "Anthropic's AI Published Real Malware by Accident",
+    "date": "2026-08-13",
+    "updated": null,
+    "excerpt": "During its own cyber tests, Claude reached the real internet and broke into three real organizations. Mythos 5 even published malware to PyPI, where it ran on 15 real systems.",
+    "thumbnail": "assets/images/blog-thumbnails/anthropic-ai-published-real-malware-by-accident.jpg",
+    "youtubeId": "Y2zefqnSaJo",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "AI Safety",
+      "Cybersecurity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "gemini-robotics-2-controls-robots-feet-to-fingertips",
+    "title": "Google's Gemini Robotics 2 Controls Robots From Feet to Fingertips",
+    "date": "2026-08-13",
+    "updated": null,
+    "excerpt": "Google DeepMind's Gemini Robotics 2 drives a whole humanoid with one model and unscrews a light bulb 92% of the time. It also learns a new two-arm robot in a few hours, typically from fewer than 200 examples.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-robotics-2-controls-robots-feet-to-fingertips.jpg",
+    "youtubeId": "-TBwgNFVcbQ",
+    "tags": [
+      "Google DeepMind",
+      "Robotics",
+      "Gemini",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "longcat-video-free-ai-video-model-nearly-matches-veo-3",
+    "title": "LongCat-Video: Free AI Video Model Nearly Matches Veo 3",
+    "date": "2026-08-13",
+    "updated": null,
+    "excerpt": "Meituan's open-source LongCat-Video scores 3.38 against Veo 3's 3.48 on its text-to-video eval, with 13.6 billion parameters and MIT licensed weights.",
+    "thumbnail": "assets/images/blog-thumbnails/longcat-video-free-ai-video-model-nearly-matches-veo-3.jpg",
+    "youtubeId": "gKAf0L4_tDs",
+    "tags": [
+      "AI Video",
+      "Open Source",
+      "Meituan",
+      "AI Models"
+    ],
+    "readTime": 3
   },
   {
     "slug": "google-flow-tutorial-edit-any-video-with-gemini-omni",
@@ -215,6 +611,22 @@
       "News"
     ],
     "readTime": 2
+  },
+  {
+    "slug": "gemini-3-6-flash-explained-cheaper-faster-better",
+    "title": "Gemini 3.6 Flash Explained: Cheaper, Faster, and Better at the Same Time",
+    "date": "2026-07-22",
+    "updated": null,
+    "excerpt": "Gemini 3.6 Flash finishes a long coding task with 97,000 output tokens instead of 276,000, and each token costs less. Here is what every benchmark actually measures, where it wins, and where it is last.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-3-6-flash-explained-cheaper-faster-better.jpg",
+    "youtubeId": "8n93rrfugFY",
+    "tags": [
+      "Gemini",
+      "Google",
+      "AI Models",
+      "Benchmarks"
+    ],
+    "readTime": 3
   },
   {
     "slug": "4-ways-to-force-claude-code-to-build-beautiful-websites",
@@ -622,6 +1034,22 @@
       "Tutorial",
       "Generative AI",
       "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-fable-5-blocked-by-us-government",
+    "title": "Claude Fable 5 Blocked by the US Government",
+    "date": "2026-06-13",
+    "updated": null,
+    "excerpt": "At 5:21pm ET on June 12, 2026, a US export control directive forced Anthropic to switch off Claude Fable 5 and Mythos 5 for every customer. Here is what the order says and why Anthropic is pushing back.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-fable-5-blocked-by-us-government.jpg",
+    "youtubeId": "YqPS7-Ro4wo",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "AI Safety",
+      "AI News"
     ],
     "readTime": 3
   },

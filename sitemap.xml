@@ -3,16 +3,28 @@
   <!-- Main Home Page -->
   <url>
     <loc>https://automatewithrobby.fyi/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Blog Index -->
   <url>
     <loc>https://automatewithrobby.fyi/blog/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-code-now-has-a-second-agent-watching-your-back.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/openai-just-dropped-722-math-papers-written-by-ai.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://automatewithrobby.fyi/blog/gemini-4-argon-beats-opus-5-5-mostly.html</loc>
@@ -387,7 +399,25 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-code-live-build-part-2-video-recorder-zoom-border-full-face-cam.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://automatewithrobby.fyi/blog/claude-is-giving-you-20x-your-moneys-worth.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/free-ai-video-generator-moneyprinterturbo-live-demo.html</loc>
+    <lastmod>2026-06-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/zero-to-shipped-live-build-video-recorder-app-claude-code.html</loc>
     <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -1,5 +1,256 @@
 [
   {
+    "slug": "make-unlimited-ai-videos-with-shortgpt-free",
+    "title": "Make Unlimited AI Videos with ShortGPT (Free)",
+    "date": "2026-10-19",
+    "updated": null,
+    "excerpt": "The Google Colab link in the ShortGPT repo no longer runs, so I fixed it with 7 patches in one cell. Three free API keys and one sentence give you a finished AI video, with script, stock footage, voiceover and edit done for you.",
+    "thumbnail": "assets/images/blog-thumbnails/make-unlimited-ai-videos-with-shortgpt-free.jpg",
+    "youtubeId": "be7vO2j7Fmc",
+    "tags": [
+      "AI Video",
+      "Open Source",
+      "Tutorial",
+      "Automation",
+      "Gemini"
+    ],
+    "readTime": 10
+  },
+  {
+    "slug": "this-uncensored-ai-image-model-changes-nothing",
+    "title": "This Uncensored AI Image Model Changes Nothing",
+    "date": "2026-10-19",
+    "updated": null,
+    "excerpt": "An uncensored Qwen Image 2.1 Turbo encoder pulled over 258,000 downloads in under a week. Its own makers tested 45 sensitive image prompts and found that zero of them changed.",
+    "thumbnail": "assets/images/blog-thumbnails/this-uncensored-ai-image-model-changes-nothing.jpg",
+    "youtubeId": "jYqYdIVWP54",
+    "tags": [
+      "AI",
+      "AI Images",
+      "Open Source",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "microsoft-is-betting-its-ai-on-its-own-chip",
+    "title": "Microsoft Is Betting Its AI on Its Own Chip",
+    "date": "2026-10-18",
+    "updated": null,
+    "excerpt": "Microsoft says its own Maia chips will be the primary inference system behind its products, at multi-gigawatt scale starting in 2027. The new Maia 300 packs 288 GB of HBM4 and 18 TB/s of bandwidth into 950 watts.",
+    "thumbnail": "assets/images/blog-thumbnails/microsoft-is-betting-its-ai-on-its-own-chip.jpg",
+    "youtubeId": "ZlbSGltgxLg",
+    "tags": [
+      "AI",
+      "AI Hardware",
+      "News",
+      "Technology"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "sora-is-coming-back-but-not-for-you",
+    "title": "Sora Is Coming Back (But Not for You)",
+    "date": "2026-10-18",
+    "updated": null,
+    "excerpt": "OpenAI shut the Sora app down on April 26, 2026. According to The Information, a startup from Jeffrey Katzenberg and former Sora research lead Bill Peebles is now in talks to bring it back as a tool for film studios.",
+    "thumbnail": "assets/images/blog-thumbnails/sora-is-coming-back-but-not-for-you.jpg",
+    "youtubeId": "rtf5ALXhexk",
+    "tags": [
+      "OpenAI",
+      "AI Video",
+      "AI",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "turn-your-iphone-apps-into-python-libraries",
+    "title": "Turn Your iPhone Apps Into Python Libraries",
+    "date": "2026-10-18",
+    "updated": null,
+    "excerpt": "mimic records the traffic from apps on your own iPhone, then Claude writes a Python client from every endpoint it saw. The open source repo had 2,762 GitHub stars when I checked it.",
+    "thumbnail": "assets/images/blog-thumbnails/turn-your-iphone-apps-into-python-libraries.jpg",
+    "youtubeId": "D28pf006Ch4",
+    "tags": [
+      "Claude Code",
+      "Python",
+      "Open Source",
+      "Automation",
+      "Coding"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "only-5000-people-have-seen-real-ai-karpathy",
+    "title": "Only 5,000 People Have Seen Real AI (Karpathy)",
+    "date": "2026-10-17",
+    "updated": null,
+    "excerpt": "Andrej Karpathy says only about 5,000 people have access to frontier AI systems internally, while about 6 billion have barely touched an LLM. Here is his four tier funnel and the one factor you control.",
+    "thumbnail": "assets/images/blog-thumbnails/only-5000-people-have-seen-real-ai-karpathy.jpg",
+    "youtubeId": "9WTpzmNpnMg",
+    "tags": [
+      "AI",
+      "AI Agents",
+      "Claude Code",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "this-claude-code-skill-turns-ideas-into-visuals",
+    "title": "This Claude Code Skill Turns Ideas into Visuals",
+    "date": "2026-10-16",
+    "updated": null,
+    "excerpt": "Anatomy is a free, MIT-licensed Claude Code skill that explains an idea by building it as a working isometric machine. It reached 9,471 GitHub stars in its first six days.",
+    "thumbnail": "assets/images/blog-thumbnails/this-claude-code-skill-turns-ideas-into-visuals.jpg",
+    "youtubeId": "JhtOy31FO-Q",
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Open Source",
+      "AI Tools",
+      "Coding"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "how-to-spot-fake-ai-content-instantly",
+    "title": "How to spot fake AI content instantly",
+    "date": "2026-10-14",
+    "updated": null,
+    "excerpt": "Google opened SynthID Detector to everyone. One upload checks images, video and audio for watermarks from Google, OpenAI, NVIDIA and Kakao, and Google has already watermarked over 180 billion images and videos.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-spot-fake-ai-content-instantly.jpg",
+    "youtubeId": "2bPfZbnwQFM",
+    "tags": [
+      "AI",
+      "Google",
+      "OpenAI",
+      "AI Safety",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-lost-to-this-free-open-source-agent",
+    "title": "Claude Code Lost to This Free Open-Source Agent",
+    "date": "2026-10-13",
+    "updated": null,
+    "excerpt": "Ten coding agents ran the same model on the same 113 real GitHub issues. CodeAF solved 62, Codex solved 51, and Claude Code solved 16, and CodeAF paid the least per fix.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-lost-to-this-free-open-source-agent.jpg",
+    "youtubeId": "qougS0C3IH8",
+    "tags": [
+      "AI Agents",
+      "Open Source",
+      "Claude Code",
+      "Coding",
+      "Benchmarks"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "gpt-6-now-builds-you-an-app-instead-of-an-answer",
+    "title": "GPT-6 Now Builds You an App Instead of an Answer",
+    "date": "2026-10-13",
+    "updated": null,
+    "excerpt": "GPT-6 in ChatGPT answers with Intelligent UI: charts, forms, buttons and small working tools instead of walls of text. On questions that need web search, GPT-6 Instant also starts answering 44% sooner than GPT-5.6 Instant.",
+    "thumbnail": "assets/images/blog-thumbnails/gpt-6-now-builds-you-an-app-instead-of-an-answer.jpg",
+    "youtubeId": "6L12V9KhSPY",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "i-tried-nano-banana-2-1-and-heres-what-happened",
+    "title": "I Tried Nano Banana 2.1 And Here's What Happened",
+    "date": "2026-10-13",
+    "updated": null,
+    "excerpt": "Nano Banana 2.1 costs about 3.4 cents per 1K image, half of Nano Banana 2, and Google says it beats Nano Banana Pro. I ran 7 tests, including the weaknesses Google lists in its own model card, and most of them passed.",
+    "thumbnail": "assets/images/blog-thumbnails/i-tried-nano-banana-2-1-and-heres-what-happened.jpg",
+    "youtubeId": "l1jmSBnxE8o",
+    "tags": [
+      "AI Images",
+      "Google",
+      "Gemini",
+      "AI Models",
+      "Benchmarks",
+      "AI"
+    ],
+    "readTime": 12
+  },
+  {
+    "slug": "your-200-claude-plan-is-worth-11726-a-month",
+    "title": "Your $200 Claude Plan Is Worth $11,726 a Month",
+    "date": "2026-10-12",
+    "updated": null,
+    "excerpt": "SemiAnalysis priced every AI subscription at API rates. The $200 Claude Max 20x plan is worth $11,726 a month on Opus 5.5, while the $200 ChatGPT Pro plan is worth $2,084.",
+    "thumbnail": "assets/images/blog-thumbnails/your-200-claude-plan-is-worth-11726-a-month.jpg",
+    "youtubeId": "x5n9l-D-9p0",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "OpenAI",
+      "AI Models",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "1-8-billion-to-build-a-virtual-human-cell-its-open",
+    "title": "$1.8 Billion to Build a Virtual Human Cell (It's Open)",
+    "date": "2026-10-11",
+    "updated": null,
+    "excerpt": "Google DeepMind, Meta, Isomorphic Labs and the US government joined Biohub's Virtual Biology Initiative, bringing it to $1.8 billion in funding, data and compute. The goal is open data at a scale that lets AI simulate a human cell.",
+    "thumbnail": "assets/images/blog-thumbnails/1-8-billion-to-build-a-virtual-human-cell-its-open.jpg",
+    "youtubeId": "UB3r0-7WG6o",
+    "tags": [
+      "AI",
+      "News",
+      "Open Source",
+      "Google DeepMind",
+      "AI in Healthcare"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "chatgpt-is-getting-an-invisible-watermark",
+    "title": "ChatGPT Is Getting an Invisible Watermark",
+    "date": "2026-10-11",
+    "updated": null,
+    "excerpt": "OpenAI's textGrain watermark is coming to ChatGPT and Codex in the EU. In OpenAI's own test it catches a 400 token answer about 92% of the time, but swap a quarter of the words and that falls to 17%.",
+    "thumbnail": "assets/images/blog-thumbnails/chatgpt-is-getting-an-invisible-watermark.jpg",
+    "youtubeId": "El9T7stgzm0",
+    "tags": [
+      "OpenAI",
+      "ChatGPT",
+      "AI Safety",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "the-ai-apps-people-actually-pay-for",
+    "title": "The AI Apps People Actually Pay For",
+    "date": "2026-10-10",
+    "updated": null,
+    "excerpt": "a16z's 7th Top 100 Gen AI Consumer Apps list ranks apps by real U.S. card spending for the first time. Replit is #48 on web traffic but #6 on spending, and 29 of the top 50 earners do not appear on the traffic lists at all.",
+    "thumbnail": "assets/images/blog-thumbnails/the-ai-apps-people-actually-pay-for.jpg",
+    "youtubeId": "sMlFZHraD5M",
+    "tags": [
+      "AI",
+      "News",
+      "AI Tools",
+      "Claude",
+      "Anthropic"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "claude-code-now-has-a-second-agent-watching-your-back",
     "title": "Claude Code Now Has a Second Agent Watching Your Back",
     "date": "2026-10-09",

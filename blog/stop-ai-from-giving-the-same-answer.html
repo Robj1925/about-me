@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stop AI From Giving the Same Answer · Robby J</title>
+  <meta name="description" content="Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing." />
+  <meta property="og:title" content="Stop AI From Giving the Same Answer · Robby J" />
+  <meta property="og:description" content="Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/stop-ai-from-giving-the-same-answer.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/stop-ai-from-giving-the-same-answer.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Stop AI From Giving the Same Answer",
+      "description": "Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/stop-ai-from-giving-the-same-answer.jpg",
+      "datePublished": "2026-10-23",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/stop-ai-from-giving-the-same-answer.html",
+      "keywords": "AI, ChatGPT, Claude, Gemini, Tech Explained",
+      "timeRequired": "PT4M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Stop AI From Giving the Same Answer",
+          "item": "https://automatewithrobby.fyi/blog/stop-ai-from-giving-the-same-answer.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Stop AI From Giving the Same Answer",
+      "description": "Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/stop-ai-from-giving-the-same-answer.jpg",
+      "uploadDate": "2026-10-23",
+      "embedUrl": "https://www.youtube.com/embed/hj6eirnuS60",
+      "contentUrl": "https://www.youtube.com/watch?v=hj6eirnuS60",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="hj6eirnuS60" aria-label="Play video: Stop AI From Giving the Same Answer">
+          <img src="https://i.ytimg.com/vi/hj6eirnuS60/hqdefault.jpg" alt="Play video: Stop AI From Giving the Same Answer" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/stop-ai-from-giving-the-same-answer.jpg" alt="Stop AI From Giving the Same Answer thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI</span><span class="post-tag">ChatGPT</span><span class="post-tag">Claude</span><span class="post-tag">Gemini</span><span class="post-tag">Tech Explained</span></div>
+      <h1 class="post-title">Stop AI From Giving the Same Answer</h1>
+      <p class="post-excerpt">Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-10-23">October 23, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 4 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>I asked ChatGPT, Claude and Gemini to pick a number from 1 to 10. In my test, all three said 7. Your results can change with the model and its settings, so try it yourself before you treat it as a law. But the pattern behind it is real, it has a name, and one prompt from a research paper fixes it.</p>
+<h2 id="people-do-this-too">People do this too</h2>
+<p>This is not an AI quirk first. It is a human one.</p>
+<p>In a 1976 study, Michael Kubovy and Joseph Psotka asked 558 people to give the first number between 0 and 9 that came to mind. A predominant 28.4% chose 7. Their explanation is that people pick the answer that will seem spontaneous: they avoid the ends of the range and the round numbers, and 7 is what is left.</p>
+<h2 id="why-the-models-make-it-worse">Why the models make it worse</h2>
+<p>The paper to read is <a href="https://arxiv.org/abs/2510.01171">Verbalized Sampling</a> (arXiv 2510.01171). Its argument is that the flattening does not come mainly from the algorithms. It comes from the data used to align models after training.</p>
+<p>The abstract calls it typicality bias: the annotators who rate answers systematically favor familiar text. The model learns from those ratings, so it learns to hand you its most typical answer every time. The name for the result is <strong>mode collapse</strong>.</p>
+<p>That is why your AI drafts feel interchangeable, and why three different chatbots can sound like the same person.</p>
+<h2 id="the-fix-ask-for-a-distribution">The fix: ask for a distribution</h2>
+<p>Verbalized Sampling is a training free prompting strategy. Instead of asking for one answer, you ask the model to verbalize a set of answers with the probability it would give each one.</p>
+<p>Here is the version I used on camera:</p>
+<pre><code class="language-text">Give me 5 different numbers between 1 and 10. For each one, write the
+probability that another AI would pick it (0 to 100%). Order them from
+most likely to least likely. The last 2 must have a probability under 10%.
+Just the 5 lines and the %.
+</code></pre>
+<p>Same three chats, new prompt, and now you see four other numbers next to the 7, each with its odds. You are choosing from a spread instead of taking the default.</p>
+<p>Swap &quot;numbers between 1 and 10&quot; for taglines, titles, names, story openings or test data. It works in any chat app. No plugin, no setup.</p>
+<h2 id="the-measured-proof">The measured proof</h2>
+<p>The paper&#39;s cleanest demonstration is a dice roll. The researchers asked models to simulate rolling a fair six sided die, 600 times.</p>
+<p>With direct prompting, Gemini 2.5 Pro collapsed onto a single face: it rolled a 4 <strong>297</strong> times out of 600, and a 1 exactly zero times. A fair die would land near 100 per face. With Verbalized Sampling, the same model spread out: every face landed between 70 and 120.</p>
+<p>On creative writing, the paper reports that Verbalized Sampling increases diversity by 1.6 to 2.1 times over direct prompting, without sacrificing factual accuracy and safety. The authors also note an emergent trend that more capable models benefit more from it.</p>
+<h2 id="the-limit">The limit</h2>
+<p>Rarer is not better. A low probability tagline can simply be a worse tagline. What changes is that you get to pick from a real range instead of accepting the one safe answer, and the judgment stays with you.</p>
+<h2 id="my-take">My take</h2>
+<p>This is the cheapest prompt upgrade I know. It costs you four lines and it works on every model you already pay for. I now use it any time I want options rather than an answer: titles, hooks, names, variations. If you want more prompting fundamentals, my post on <a href="/blog/how-chatgpt-actually-reads-tokenization-explained.html">how ChatGPT actually reads your text</a> covers what happens before the model ever picks a word.</p>
+<p>Sources: <a href="https://arxiv.org/abs/2510.01171">Verbalized Sampling (arXiv 2510.01171)</a> and <a href="https://gwern.net/doc/psychology/cognitive-bias/1976-kubovy.pdf">Kubovy and Psotka, 1976 (PDF)</a></p>
+<p>Watch the short above to see all three chatbots answer 7. If you want the Claude Code skills and AI workflows I use every day, join the AI Academy community on Skool: <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.html">ChatGPT Images 2.0: Everything You Need to Know About the New AI</a></li>
+        <li><a href="the-secret-to-infinite-ai-improvement.html">The Secret to Infinite AI Improvement</a></li>
+        <li><a href="i-tried-nano-banana-2-1-and-heres-what-happened.html">I Tried Nano Banana 2.1 And Here's What Happened</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

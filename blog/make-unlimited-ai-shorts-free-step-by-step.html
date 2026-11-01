@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Make Unlimited AI Shorts for FREE (Step by Step)</title>
+  <meta name="description" content="AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU." />
+  <meta property="og:title" content="How to Make Unlimited AI Shorts for FREE (Step by Step)" />
+  <meta property="og:description" content="AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/make-unlimited-ai-shorts-free-step-by-step.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/make-unlimited-ai-shorts-free-step-by-step.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "How to Make Unlimited AI Shorts for FREE (Step by Step)",
+      "description": "AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/make-unlimited-ai-shorts-free-step-by-step.jpg",
+      "datePublished": "2026-10-21",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/make-unlimited-ai-shorts-free-step-by-step.html",
+      "keywords": "AI Video, Open Source, Tutorial, Automation, Gemini",
+      "timeRequired": "PT10M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Make Unlimited AI Shorts for FREE (Step by Step)",
+          "item": "https://automatewithrobby.fyi/blog/make-unlimited-ai-shorts-free-step-by-step.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "How to Make Unlimited AI Shorts for FREE (Step by Step)",
+      "description": "AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/make-unlimited-ai-shorts-free-step-by-step.jpg",
+      "uploadDate": "2026-10-21",
+      "embedUrl": "https://www.youtube.com/embed/-2L2BuMVdyk",
+      "contentUrl": "https://www.youtube.com/watch?v=-2L2BuMVdyk",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="-2L2BuMVdyk" aria-label="Play video: How to Make Unlimited AI Shorts for FREE (Step by Step)">
+          <img src="https://i.ytimg.com/vi/-2L2BuMVdyk/hqdefault.jpg" alt="Play video: How to Make Unlimited AI Shorts for FREE (Step by Step)" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/make-unlimited-ai-shorts-free-step-by-step.jpg" alt="How to Make Unlimited AI Shorts for FREE (Step by Step) thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">AI Video</span><span class="post-tag">Open Source</span><span class="post-tag">Tutorial</span><span class="post-tag">Automation</span><span class="post-tag">Gemini</span></div>
+      <h1 class="post-title">How to Make Unlimited AI Shorts for FREE (Step by Step)</h1>
+      <p class="post-excerpt">AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-10-21">October 21, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 10 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p><strong>TL;DR:</strong> AI Shorts Generator is an open source (MIT) tool by Abdullah Naveed. You type one sentence, and it writes the script, makes the visuals, records the voiceover, burns in word by word captions and exports a 1080x1920 video with titles and hashtags for each platform. Out of the box it needs paid OpenAI and fal.ai keys, so I modified it to run 100% free in Google Colab. The only required key is a free Gemini key. The voices are free Microsoft Edge voices, every scene gets a free SDXL Turbo image made on Colab&#39;s free T4 GPU, and a free Pexels key adds real stock clips if you want them. No credit card, no payment.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#what-ai-shorts-generator-is">What AI Shorts Generator Is</a></li>
+<li><a href="#why-it-is-not-free-out-of-the-box">Why It Is Not Free Out of the Box</a></li>
+<li><a href="#what-i-changed">What I Changed</a></li>
+<li><a href="#what-you-need">What You Need</a></li>
+<li><a href="#step-1-open-the-notebook-and-select-the-t4-gpu">Step 1 Open the Notebook and Select the T4 GPU</a></li>
+<li><a href="#step-2-run-step-1-and-step-2">Step 2 Run Step 1 and Step 2</a></li>
+<li><a href="#step-3-paste-and-save-your-api-keys">Step 3 Paste and Save Your API Keys</a></li>
+<li><a href="#step-4-fill-in-the-create-tab">Step 4 Fill In the Create Tab</a></li>
+<li><a href="#step-5-watch-the-progress-log">Step 5 Watch the Progress Log</a></li>
+<li><a href="#step-6-preview-copy-and-download">Step 6 Preview, Copy and Download</a></li>
+<li><a href="#the-result">The Result</a></li>
+<li><a href="#tips-and-troubleshooting">Tips and Troubleshooting</a></li>
+<li><a href="#limits-and-catches">Limits and Catches</a></li>
+<li><a href="#how-it-compares">How It Compares</a></li>
+<li><a href="#frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+<p>🎬 Watch the full walkthrough on YouTube → <a href="https://youtu.be/-2L2BuMVdyk">https://youtu.be/-2L2BuMVdyk</a></p>
+<p>📓 Open the free notebook → <a href="https://colab.research.google.com/gist/Robj1925/2a60175cfcfec775bed65920806c8ced/AI_Shorts_Generator_Colab.ipynb">AI_Shorts_Generator_Colab.ipynb</a></p>
+<h2 id="what-ai-shorts-generator-is">What AI Shorts Generator Is</h2>
+<p><a href="https://github.com/AbdullahNaveed/ai-shorts-generator">AI Shorts Generator</a> was built by Abdullah Naveed. It is MIT licensed, and the README calls it &quot;a weekend project, shared openly in case it&#39;s useful to you too.&quot; So credit goes to him. My part is the free Colab version.</p>
+<p>The pipeline:</p>
+<ol>
+<li><strong>Topic and script.</strong> A language model writes the script as a few scenes.</li>
+<li><strong>Visuals.</strong> For each scene, it reuses a clip from its library or makes a new one.</li>
+<li><strong>Voiceover</strong> for each scene.</li>
+<li><strong>Word level captions</strong>, burned in.</li>
+<li><strong>The final MP4</strong>, plus titles, captions and hashtags for each platform.</li>
+</ol>
+<p>The smart part is the <strong>clip library</strong>. Every clip it downloads or makes is saved and tagged, so the next video can reuse a good shot instead of paying for a new one.</p>
+<h2 id="why-it-is-not-free-out-of-the-box">Why It Is Not Free Out of the Box</h2>
+<p>In the original repo, the script, the voice and the clip matching are all OpenAI calls, and the AI images and motion come from fal.ai. The README has its own cost table: about $0.02 per video for the script, voice and captions, and about $0.75 per video with Wan AI motion on 5 scenes.</p>
+<p>That is cheap, but it is not free, and you need a card on file with two companies. I wanted it completely free.</p>
+<h2 id="what-i-changed">What I Changed</h2>
+<p>My notebook keeps the tool and swaps every paid part for a free one:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Original</th>
+<th>My free version</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Script</td>
+<td>OpenAI</td>
+<td>Gemini 3.8 Flash, free Google AI Studio key</td>
+</tr>
+<tr>
+<td>Clip matching</td>
+<td>OpenAI embeddings</td>
+<td>Gemini embeddings, same free key</td>
+</tr>
+<tr>
+<td>Voiceover</td>
+<td>OpenAI voice model</td>
+<td>Microsoft Edge neural voices, no key, six voices in the menu</td>
+</tr>
+<tr>
+<td>Visuals</td>
+<td>fal.ai (paid)</td>
+<td>A free SDXL Turbo image on the Colab T4 GPU for every scene, with Ken Burns motion</td>
+</tr>
+<tr>
+<td>Stock footage</td>
+<td>Pexels</td>
+<td>Pexels, optional and free</td>
+</tr>
+<tr>
+<td>Captions</td>
+<td>Word by word</td>
+<td>Word by word with faster whisper</td>
+</tr>
+</tbody></table></div>
+<p>Other fixes, so it runs on Colab today:</p>
+<ul>
+<li>The repo and the packages that broke are pinned to tested versions.</li>
+<li>The match threshold went up to 0.70, so a scene only reuses a stock clip that really fits. In my tests, Gemini embeddings scored the right clip 0.78 to 0.86 and the wrong ones 0.59 to 0.64.</li>
+<li>I removed the paid fal.ai, watermark and outro options.</li>
+<li>It opens a simple web page with an API Keys tab, a Create tab with live progress, the video player and a copy box. Two cells: the first installs, the second opens the page. You never touch the code.</li>
+</ul>
+<h2 id="what-you-need">What You Need</h2>
+<ul>
+<li>A Google account, for Colab.</li>
+<li>A <strong>Gemini API key</strong>, required and free. If you do not have one, here is my guide on <a href="/blog/how-to-get-your-free-google-gemini-api-key-2026.html">how to get your free Google Gemini API key</a>.</li>
+<li>A <strong>Pexels API key</strong>, optional and free. Go to <a href="https://www.pexels.com/api/">pexels.com/api</a>, sign up and request a key. You only need it for real stock clips. I used one in the video.</li>
+</ul>
+<p>Your keys stay in your own Colab session. Nothing is saved to the notebook.</p>
+<h2 id="step-1-open-the-notebook-and-select-the-t4-gpu">Step 1 Open the Notebook and Select the T4 GPU</h2>
+<ol>
+<li>Open the <a href="https://colab.research.google.com/gist/Robj1925/2a60175cfcfec775bed65920806c8ced/AI_Shorts_Generator_Colab.ipynb">Colab notebook</a>.</li>
+<li>Click <strong>File &gt; Save a copy in Drive</strong>. Now it is yours.</li>
+<li>Click <strong>Runtime &gt; Change runtime type</strong>, pick <strong>T4 GPU</strong>, click <strong>Save</strong>, then <strong>Connect</strong>.</li>
+</ol>
+<p>This one does need the GPU, because the SDXL Turbo images are made on it. The T4 is part of Colab&#39;s free tier.</p>
+<h2 id="step-2-run-step-1-and-step-2">Step 2 Run Step 1 and Step 2</h2>
+<ol>
+<li>Click play on the first cell, <strong>Step 1: Install and patch</strong>.</li>
+<li>Google shows a warning because the notebook comes from GitHub, not from Google itself. That is normal for any shared public notebook. Click <strong>Run anyway</strong>.</li>
+<li>Step 1 took about a minute for me (the notebook says up to 2 minutes). It downloads the tools, installs everything and applies my free patches. Wait for <strong>Step 1 done</strong> in the console.</li>
+<li>Click play on <strong>Step 2</strong>. At the bottom of the console you get a link that ends in <strong>gradio.live</strong>. Click it.</li>
+</ol>
+<p>Keep the Colab tab open. The page stops when the session ends.</p>
+<h2 id="step-3-paste-and-save-your-api-keys">Step 3 Paste and Save Your API Keys</h2>
+<p>In the first tab of the new page, <strong>API Keys</strong>:</p>
+<ol>
+<li>Paste your Gemini key. It is 100% required.</li>
+<li>Paste your Pexels key if you have one.</li>
+<li>Click <strong>Save keys</strong>. The page tells you when they are saved.</li>
+</ol>
+<p>There is also an optional Pixabay field. Your saved keys survive a Step 2 rerun.</p>
+<h2 id="step-4-fill-in-the-create-tab">Step 4 Fill In the Create Tab</h2>
+<p>Now the fun part. In the <strong>Create Short Video</strong> tab:</p>
+<ul>
+<li><strong>Topic:</strong> one sentence, any topic you want. Or leave it empty and Gemini picks one for your niche. My topic was &quot;why the ocean glows blue at night&quot;.</li>
+<li><strong>Niche</strong> (optional): it focuses the writer. Think fitness, finance, AI tools, whatever your niche is. Clear the default and type your own.</li>
+<li><strong>Voice:</strong> six free Edge voices (Andrew, Christopher, Guy, Aria, Jenny and Ryan).</li>
+<li><strong>Length:</strong> 15 to 60 seconds.</li>
+<li><strong>Stock searches:</strong> you can leave it at 0. It only matters if you added a Pexels key, and each search takes about two minutes (5 clips per search).</li>
+</ul>
+<p>Click <strong>Generate Short Video</strong>. It can take a while.</p>
+<h2 id="step-5-watch-the-progress-log">Step 5 Watch the Progress Log</h2>
+<p>The log shows what happens behind the scenes:</p>
+<ol>
+<li>Gemini writes the script as four to five scenes.</li>
+<li>For each scene, it checks the stock library, then makes an SDXL Turbo image when nothing fits.</li>
+<li>The Edge voice reads each scene.</li>
+<li>faster whisper lines up the captions word by word.</li>
+<li>ffmpeg puts it all together with Ken Burns motion and the captions.</li>
+</ol>
+<p>The first video on a new runtime usually takes about four to five minutes, because the image model has to download first.</p>
+<h2 id="step-6-preview-copy-and-download">Step 6 Preview, Copy and Download</h2>
+<p>The finished short is 1080 by 1920, ready for YouTube Shorts, TikTok or Reels.</p>
+<p>The box next to the player has the YouTube title, the description, the TikTok caption, the X post, the hashtags and the script itself. Click the copy button to grab all of it, and download the video with the button on the player.</p>
+<h2 id="the-result">The Result</h2>
+<p>My short about the glowing ocean opens with: &quot;That glowing blue ocean water isn&#39;t magical nature. It&#39;s a desperate burglar alarm.&quot; Then it explains that the plankton light up when they are bent by force, so a bigger predator spots the attacker. It is a good hook, the captions are word by word, and the AI images follow the script.</p>
+<p>It is not perfect. The images are still pictures with Ken Burns motion, not real video, and there is no music bed in the free version. You can add music in CapCut or in YouTube.</p>
+<h2 id="tips-and-troubleshooting">Tips and Troubleshooting</h2>
+<ul>
+<li><strong>The second video is faster</strong>, because the image model is already downloaded.</li>
+<li><strong>If the gradio.live link stops working</strong>, the Colab session ended. Run Step 2 again (or both steps after a disconnect).</li>
+<li><strong>For your first video, leave Stock searches at 0</strong> so it renders as fast as possible.</li>
+<li><strong>Gemini has daily limits</strong> on the free key. That is plenty for a few videos a day.</li>
+</ul>
+<h2 id="limits-and-catches">Limits and Catches</h2>
+<ul>
+<li><strong>&quot;Unlimited&quot; means no cost, not no limits.</strong> Gemini, Pexels and Colab&#39;s free GPU time all have limits.</li>
+<li><strong>Colab can stop web UI sessions.</strong> The free tier can end runtimes that you use mostly through a web page. Short sessions worked for me. Download your videos as you go.</li>
+<li><strong>Stock matching is strict on purpose.</strong> With the 0.70 threshold, few stock clips match, so most scenes get an AI image. In one test only 1 of 9 scenes matched a stock clip.</li>
+<li><strong>No music.</strong> The free version is voice only.</li>
+<li><strong>You own the rights question.</strong> The README says you are responsible for the licensing of any footage, music or AI media you publish. Pexels footage is free to use.</li>
+</ul>
+<h2 id="how-it-compares">How It Compares</h2>
+<p>This is one of five free AI video tools I run in Colab. <a href="/blog/make-unlimited-ai-videos-with-shortgpt-free.html">ShortGPT</a> uses stock footage and has a dubbing mode. <a href="/blog/generate-free-short-form-videos-with-moneyprinterturbo.html">MoneyPrinterTurbo</a> has the most settings, but it took me about 20 minutes per video. <a href="/blog/free-ai-turns-one-sentence-into-viral-shorts.html">PurffleShorts</a> takes about the same time as this one and adds text message and Reddit stories. <a href="/blog/create-unlimited-ai-videos-free-with-moneyprinter.html">MoneyPrinter</a> runs a local Llama model and needs no AI key. AI Shorts Generator is the one that makes its own AI images for free.</p>
+<h2 id="frequently-asked-questions-faq">Frequently Asked Questions (FAQ)</h2>
+<p><strong>Is AI Shorts Generator free?</strong>
+The repo needs paid OpenAI and fal.ai keys. My Colab version replaces all of them with free tools. You only need a free Gemini key.</p>
+<p><strong>Do I need a GPU?</strong>
+Yes, select the free T4 GPU in Colab. The AI images are made on it.</p>
+<p><strong>Do I need a Pexels key?</strong>
+No. It is optional, for real stock clips. Without it, every scene gets an AI image.</p>
+<p><strong>How long does one video take?</strong>
+About four to five minutes for the first video on a new runtime. The next ones are faster.</p>
+<p><strong>Can it pick the topic for me?</strong>
+Yes. Leave the topic empty and Gemini picks one for your niche.</p>
+<p>Drop your video topic in the comments of the <a href="https://youtu.be/-2L2BuMVdyk">video</a>. I am curious to see what you make. If you want more tools like this, plus the Claude Code skills and GitHub repos I use to make my own Shorts, join the AI Academy community on Skool → <a href="https://www.skool.com/ai-academy-with-robby-6849/about">https://www.skool.com/ai-academy-with-robby-6849/about</a></p>
+<p>Sources: <a href="https://github.com/AbdullahNaveed/ai-shorts-generator">AI Shorts Generator on GitHub</a>, <a href="https://colab.research.google.com/gist/Robj1925/2a60175cfcfec775bed65920806c8ced/AI_Shorts_Generator_Colab.ipynb">My AI Shorts Generator Colab notebook</a>, <a href="https://gist.github.com/Robj1925/2a60175cfcfec775bed65920806c8ced">Notebook gist</a>, <a href="https://aistudio.google.com/">Google AI Studio</a>, <a href="https://www.pexels.com/api/">Pexels API</a></p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="free-ai-turns-one-sentence-into-viral-shorts.html">This FREE AI Turns One Sentence Into Viral Shorts</a></li>
+        <li><a href="make-unlimited-ai-videos-with-shortgpt-free.html">Make Unlimited AI Videos with ShortGPT (Free)</a></li>
+        <li><a href="create-unlimited-ai-videos-free-with-moneyprinter.html">Create Unlimited AI Videos for FREE with Money Printer</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

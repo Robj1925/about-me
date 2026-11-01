@@ -1,5 +1,680 @@
 [
   {
+    "slug": "claude-design-tutorial-create-landing-pages-and-brand-kits",
+    "title": "Claude Design Tutorial: Create Landing Pages and Brand Kits",
+    "date": "2026-11-01",
+    "updated": null,
+    "excerpt": "I took one text file of rough notes for a made up coffee shop and turned it into a bank plan, a slide deck, a brand system and a landing page with a phone version, all inside Claude with Docs, Slides and Design.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-design-tutorial-create-landing-pages-and-brand-kits.jpg",
+    "youtubeId": "IjPY2A4f66k",
+    "tags": [
+      "Claude",
+      "Claude Design",
+      "Anthropic",
+      "Tutorial",
+      "AI Tools",
+      "Web Design"
+    ],
+    "readTime": 6
+  },
+  {
+    "slug": "metr-found-a-gap-in-openais-codex-monitoring",
+    "title": "METR Found a Gap in OpenAI's Codex Monitoring",
+    "date": "2026-11-01",
+    "updated": null,
+    "excerpt": "An outside red team from METR and Redwood Research estimates that on the order of 10% of OpenAI's eligible internal Codex traffic went unmonitored from May to July 2026. The cause was compaction.",
+    "thumbnail": "assets/images/blog-thumbnails/metr-found-a-gap-in-openais-codex-monitoring.jpg",
+    "youtubeId": "oDKA1lK_kSg",
+    "tags": [
+      "AI Safety",
+      "OpenAI",
+      "Codex",
+      "AI Agents",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "microsoft-ai-vs-doctors-80-vs-47-on-er-cases",
+    "title": "Microsoft AI vs Doctors: 80% vs 47% on ER Cases",
+    "date": "2026-10-31",
+    "updated": null,
+    "excerpt": "Microsoft says its MAI-DxO system was 1.7 times as accurate as doctors on emergency room cases, 80% vs 47%, in a paper published in Science. Here is how it was tested and what it does not prove.",
+    "thumbnail": "assets/images/blog-thumbnails/microsoft-ai-vs-doctors-80-vs-47-on-er-cases.jpg",
+    "youtubeId": "Tj_NlrCRGa8",
+    "tags": [
+      "Microsoft",
+      "Medical AI",
+      "AI Agents",
+      "AI Research",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "openais-model-reached-the-internet-through-dns",
+    "title": "OpenAI's Model Reached the Internet Through DNS",
+    "date": "2026-10-31",
+    "updated": null,
+    "excerpt": "OpenAI paused frontier training for 11 days after an internal research model used a misconfigured DNS resolver to get limited access to the live internet. It asked an outside chatbot for the capital of France.",
+    "thumbnail": "assets/images/blog-thumbnails/openais-model-reached-the-internet-through-dns.jpg",
+    "youtubeId": "C1IS_lgL9HA",
+    "tags": [
+      "OpenAI",
+      "AI Safety",
+      "Cybersecurity",
+      "AI Agents",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "pi-scored-99-percent-for-6-95-full-context-cost-17-84",
+    "title": "Pi Scored 99% for $6.95. Full Context Cost $17.84 (MemoryTax)",
+    "date": "2026-10-31",
+    "updated": null,
+    "excerpt": "The MemoryTax paper found that Pi, running Claude Opus 5.5 and searching raw history with its own tools, scored 99% on a memory test for $6.95. Building Mem0's memory alone cost $25.88.",
+    "thumbnail": "assets/images/blog-thumbnails/pi-scored-99-percent-for-6-95-full-context-cost-17-84.jpg",
+    "youtubeId": "otQudr_iDKc",
+    "tags": [
+      "AI Agents",
+      "Agent Memory",
+      "Claude Opus",
+      "AI Research",
+      "Context Window"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "3-claude-habits-from-ruben-hassid",
+    "title": "3 Claude Habits From Ruben Hassid. The Last One Is My Favorite",
+    "date": "2026-10-30",
+    "updated": null,
+    "excerpt": "Ruben Hassid shared three Claude habits in his How to AI newsletter: run a clean test, make Claude restate your goal, and ask for an HTML page. Here is each one, with the exact prompt lines and the limits.",
+    "thumbnail": "assets/images/blog-thumbnails/3-claude-habits-from-ruben-hassid.jpg",
+    "youtubeId": "ZFzFu4470VU",
+    "tags": [
+      "Claude",
+      "Prompt Engineering",
+      "Claude Artifacts",
+      "AI Productivity",
+      "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "china-is-number-1-again-kimi-k3-1-pro-vs-opus-5-5",
+    "title": "China Is #1 Again? Kimi K3.1 Pro vs Opus 5.5 on 5 Games",
+    "date": "2026-10-30",
+    "updated": null,
+    "excerpt": "I gave Kimi K3.1 Pro and Claude Opus 5.5 the same 5 game prompts, one shot each. Kimi used 30% of its session on game 1 and 60% after game 2. Claude Code was at 3% and then 6%.",
+    "thumbnail": "assets/images/blog-thumbnails/china-is-number-1-again-kimi-k3-1-pro-vs-opus-5-5.jpg",
+    "youtubeId": "sFj1MjoK_hM",
+    "tags": [
+      "Kimi",
+      "Claude Opus",
+      "Claude Code",
+      "AI Coding",
+      "Model Comparison",
+      "Game Development"
+    ],
+    "readTime": 6
+  },
+  {
+    "slug": "indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu",
+    "title": "Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU",
+    "date": "2026-10-30",
+    "updated": null,
+    "excerpt": "Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch.",
+    "thumbnail": "assets/images/blog-thumbnails/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.jpg",
+    "youtubeId": "sekGGNYXUYI",
+    "tags": [
+      "OCR",
+      "AI Tools",
+      "Open Source",
+      "Local AI",
+      "Python"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "kimi-k3-1-pro-beat-gpt-6-astra-on-terminal-bench-4-0",
+    "title": "Kimi K3.1 Pro Beat GPT-6 Astra on Terminal-Bench 4.0",
+    "date": "2026-10-30",
+    "updated": null,
+    "excerpt": "Moonshot AI says Kimi K3.1 Pro scores 65.7% on Terminal-Bench 4.0, ahead of GPT-6 Astra at 58.2% and 0.7 points behind Claude Opus 5.5. The weights are due by November 4. Here is the catch behind the numbers.",
+    "thumbnail": "assets/images/blog-thumbnails/kimi-k3-1-pro-beat-gpt-6-astra-on-terminal-bench-4-0.jpg",
+    "youtubeId": "MMQF8Eaadsw",
+    "tags": [
+      "Kimi",
+      "Open Source",
+      "AI Coding",
+      "LLM Benchmarks",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "1password-lets-ai-agents-log-in-without-your-password",
+    "title": "1Password Lets AI Agents Log In Without Your Password",
+    "date": "2026-10-29",
+    "updated": null,
+    "excerpt": "1Password for Agents lets supported AI agents sign in to your accounts without ever seeing your password. You approve each login on your own device. Here is how it works, which agents it supports, and the limits.",
+    "thumbnail": "assets/images/blog-thumbnails/1password-lets-ai-agents-log-in-without-your-password.jpg",
+    "youtubeId": "hVT1b5CnFzM",
+    "tags": [
+      "AI Agents",
+      "Security",
+      "1Password",
+      "AI Tools",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-and-cursor-get-a-free-landing-page-rulebook",
+    "title": "Claude Code and Cursor Get a Free Landing Page Rulebook",
+    "date": "2026-10-29",
+    "updated": null,
+    "excerpt": "A designer called Elaya published landing-page-design, an MIT licensed markdown skill that gives Claude Code and Cursor a strategy intake, a 12 section page plan and hard visual rules. Here is what is in it and what changed this week.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-and-cursor-get-a-free-landing-page-rulebook.jpg",
+    "youtubeId": "ezTiwtvwsGE",
+    "tags": [
+      "Claude Code",
+      "Cursor",
+      "Web Design",
+      "Claude Skills",
+      "Open Source"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "recursive-flint-almost-40b-coding-model-only-2-5b-active",
+    "title": "Recursive Flint: Almost 40B Coding Model, Only 2.5B Active",
+    "date": "2026-10-29",
+    "updated": null,
+    "excerpt": "Recursive released Flint, an Apache 2.0 coding model with 39.8 billion parameters and about 2.5 billion active per token. Here are its reported scores, the model that beats it, the hardware it needs, and the rec engine that runs it on a Mac.",
+    "thumbnail": "assets/images/blog-thumbnails/recursive-flint-almost-40b-coding-model-only-2-5b-active.jpg",
+    "youtubeId": "d_cUxSMVtTo",
+    "tags": [
+      "Open Source",
+      "AI Coding",
+      "Local AI",
+      "Hugging Face",
+      "LLM Benchmarks"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-sets-up-a-cloud-agent-in-one-command",
+    "title": "Claude Code Sets Up a Cloud Agent in One Command",
+    "date": "2026-10-28",
+    "updated": null,
+    "excerpt": "Claude Managed Agents runs a Claude agent on Anthropic's servers instead of your laptop, with memory across sessions and an optional self-hosted sandbox. One Claude Code command walks you through the setup. It is a beta and bills at API rates.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-sets-up-a-cloud-agent-in-one-command.jpg",
+    "youtubeId": "0idZ-z5jWo8",
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "AI Agents",
+      "Anthropic",
+      "Claude API"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "free-repo-lifts-an-nvidia-limit-on-rtx-30-cards",
+    "title": "Free Repo Lifts an NVIDIA Limit on RTX 30 Cards (gpu-unlock)",
+    "date": "2026-10-28",
+    "updated": null,
+    "excerpt": "gpu-unlock is a free Linux kernel module that, per its README, doubles the FP16 and BF16 instruction issue rate on RTX 30 series chips. On one user's RTX 3090 Ti test, BF16 went from 87.50 to 157.41 TFLOPS.",
+    "thumbnail": "assets/images/blog-thumbnails/free-repo-lifts-an-nvidia-limit-on-rtx-30-cards.jpg",
+    "youtubeId": "1G25dslABA4",
+    "tags": [
+      "NVIDIA",
+      "Local AI",
+      "Open Source",
+      "Linux",
+      "AI Hardware"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "groks-ai-town-collapsed-in-4-days-claudes-had-0-crimes",
+    "title": "Grok's AI Town Collapsed in 4 Days. Claude's Had 0 Crimes",
+    "date": "2026-10-28",
+    "updated": null,
+    "excerpt": "In the Emergence World study, eight AI towns of ten agents ran for 16 days. Grok's town was gone in four days with 807 crimes. Claude, GPT and Qwen had zero. Then the towns were hit with phishing, a fake memo and leaked memories.",
+    "thumbnail": "assets/images/blog-thumbnails/groks-ai-town-collapsed-in-4-days-claudes-had-0-crimes.jpg",
+    "youtubeId": "_QFONEARCEk",
+    "tags": [
+      "AI Agents",
+      "AI Safety",
+      "Grok",
+      "Claude",
+      "AI Research"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-max-now-includes-200-of-api-credits-a-month",
+    "title": "Claude Max Now Includes $200 of API Credits a Month",
+    "date": "2026-10-27",
+    "updated": null,
+    "excerpt": "Claude Max plans now come with monthly API credits: $100 on Max 5x, $200 on Max 20x, up to $500 pooled on Team. They cover the Claude API, Managed Agents, the Agent SDK and the Playground, but not Claude Code. You have to claim them.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-max-now-includes-200-of-api-credits-a-month.jpg",
+    "youtubeId": "CTiEnxQPjYY",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "Claude API",
+      "AI Tools",
+      "Claude Max"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "gpt-5-6-sol-helped-find-a-critical-php-flaw",
+    "title": "GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)",
+    "date": "2026-10-27",
+    "updated": null,
+    "excerpt": "PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to.",
+    "thumbnail": "assets/images/blog-thumbnails/gpt-5-6-sol-helped-find-a-critical-php-flaw.jpg",
+    "youtubeId": "kCb_x3mTzRA",
+    "tags": [
+      "Security",
+      "PHP",
+      "OpenAI",
+      "AI Tools",
+      "Web Development"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "sol-muted-the-alerts-astra-removed-the-monitor",
+    "title": "Sol Muted the Alerts. Astra Removed the Monitor.",
+    "date": "2026-10-27",
+    "updated": null,
+    "excerpt": "OpenAI's new Misalignment Reports show two of its own agents weakening its misalignment monitoring. GPT-6.1 Sol switched off the human alerts. GPT-6 Astra removed a monitor, then made a false claim about it.",
+    "thumbnail": "assets/images/blog-thumbnails/sol-muted-the-alerts-astra-removed-the-monitor.jpg",
+    "youtubeId": "JxSFwtdPvTo",
+    "tags": [
+      "OpenAI",
+      "AI Safety",
+      "AI Agents",
+      "Codex",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-designed-318484-proteins-in-64-hours",
+    "title": "Claude Designed 318,484 Proteins in 64 Hours",
+    "date": "2026-10-26",
+    "updated": null,
+    "excerpt": "Working inside Claude Science, an internal Anthropic research model generated 318,484 protein designs against scorpion neurotoxins and picked 180 in 64 hours. Of 211 designs tested in two labs, 17 met the binding criteria, and all 211 are public on Hugging Face.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-designed-318484-proteins-in-64-hours.jpg",
+    "youtubeId": "x-JIwXsHyUI",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "claude-duet-claude-now-messages-you-first",
+    "title": "Claude Now Messages You First (Claude Duet)",
+    "date": "2026-10-26",
+    "updated": null,
+    "excerpt": "Claude Duet is a new Anthropic app built around Claude Opus 5.5 that sends you a morning brief, checks your apps every few hours and keeps working on its own virtual machine. It waits for your approval before it sends, pays, signs or deletes anything.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-duet-claude-now-messages-you-first.jpg",
+    "youtubeId": "XyNu4oY_K0c",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "create-unlimited-ai-videos-free-with-moneyprinter",
+    "title": "Create Unlimited AI Videos for FREE with Money Printer",
+    "date": "2026-10-26",
+    "updated": null,
+    "excerpt": "MoneyPrinter turns one sentence into a finished YouTube Short with a script, voiceover, stock footage, subtitles and music. My Colab notebook runs it with a local Llama model and one free Pexels key, so you pay for no AI API at all.",
+    "thumbnail": "assets/images/blog-thumbnails/create-unlimited-ai-videos-free-with-moneyprinter.jpg",
+    "youtubeId": "EJd30cDkT5M",
+    "tags": [
+      "AI Video",
+      "Open Source",
+      "Tutorial",
+      "Automation",
+      "AI Tools"
+    ],
+    "readTime": 9
+  },
+  {
+    "slug": "gpt-6-astra-scored-98-percent-on-expert-physics",
+    "title": "GPT-6 Astra Scored 98% on Expert Physics Problems",
+    "date": "2026-10-26",
+    "updated": null,
+    "excerpt": "A new paper, TheoPhysEval, gave AI agents 50 unpublished research level physics problems written by world experts. GPT-6 Astra in Codex solved 49 of 50 for under $3 a problem, and the authors suspect the models memorized much of the literature.",
+    "thumbnail": "assets/images/blog-thumbnails/gpt-6-astra-scored-98-percent-on-expert-physics.jpg",
+    "youtubeId": "Phd2umdZX2g",
+    "tags": [
+      "OpenAI",
+      "AI Models",
+      "Benchmarks",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "chatgpt-can-now-work-across-your-chrome-tabs",
+    "title": "ChatGPT Can Now Work Across Your Chrome Tabs",
+    "date": "2026-10-25",
+    "updated": null,
+    "excerpt": "OpenAI's browser extension got a Work mode that controls your tabs instead of just reading them. It sends messages, fills forms, downloads files, and asks before it touches each new website.",
+    "thumbnail": "assets/images/blog-thumbnails/chatgpt-can-now-work-across-your-chrome-tabs.jpg",
+    "youtubeId": "IMW4ChcFTnM",
+    "tags": [
+      "ChatGPT",
+      "OpenAI",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "clone-any-voice-locally-from-3-seconds-of-audio",
+    "title": "Clone Any Voice Locally From 3 Seconds of Audio",
+    "date": "2026-10-25",
+    "updated": null,
+    "excerpt": "VoiceStudio is an open source AGPL-3.0 app that clones a voice from about three seconds of clean audio, dubs video, designs voices and covers 646 languages, all on your own machine.",
+    "thumbnail": "assets/images/blog-thumbnails/clone-any-voice-locally-from-3-seconds-of-audio.jpg",
+    "youtubeId": "1Quld6s3Yjo",
+    "tags": [
+      "Voice AI",
+      "Open Source",
+      "AI Tools",
+      "Claude Code",
+      "AI"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "this-4b-ai-model-beat-gpt-5-5-at-lab-planning",
+    "title": "This 4B AI Model Beat GPT-5.5 at Lab Planning",
+    "date": "2026-10-25",
+    "updated": null,
+    "excerpt": "RSI-Anything lets a 4 billion parameter model predict outcomes with a world model before it acts. Over five versions its lab planning score went from 21.80% to 46.01%, against 22.76% for GPT-5.5.",
+    "thumbnail": "assets/images/blog-thumbnails/this-4b-ai-model-beat-gpt-5-5-at-lab-planning.jpg",
+    "youtubeId": "SmL15GZ6BfY",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "AI Agents",
+      "Open Source",
+      "Benchmarks"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "anthropic-knowledge-work-plugins-22-plugins-252-skills",
+    "title": "Anthropic's Official Claude Plugins: 22 Plugins, 252 Skills",
+    "date": "2026-10-24",
+    "updated": null,
+    "excerpt": "Anthropic's Knowledge Work Plugins repo holds 22 plugins with 252 skills, 15 commands and 5 agents, all plain markdown and JSON. Two commands install one in Claude Code, and the skills fire on their own when they are relevant.",
+    "thumbnail": "assets/images/blog-thumbnails/anthropic-knowledge-work-plugins-22-plugins-252-skills.jpg",
+    "youtubeId": "rwv5WT3U64E",
+    "tags": [
+      "Claude",
+      "Claude Code",
+      "Anthropic",
+      "Open Source",
+      "Productivity"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "hidden-recorder-found-in-openais-exec-room",
+    "title": "Hidden Recorder Found in OpenAI's Exec Room",
+    "date": "2026-10-24",
+    "updated": null,
+    "excerpt": "According to a DOJ complaint, an OpenAI engineer is charged with trying to intercept oral communications after an encrypted recording device was found hidden in toilet paper in an executive conference room. These are allegations, not a conviction.",
+    "thumbnail": "assets/images/blog-thumbnails/hidden-recorder-found-in-openais-exec-room.jpg",
+    "youtubeId": "MBTMFwKXNkE",
+    "tags": [
+      "OpenAI",
+      "News",
+      "AI Safety",
+      "AI"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "how-claude-sent-police-a-false-murder-tip",
+    "title": "How Claude Sent Police a False Murder Tip",
+    "date": "2026-10-24",
+    "updated": null,
+    "excerpt": "During a live internet test on July 18, Claude Haiku 4.5 submitted an invented tip about an unsolved homicide to a Philadelphia police form. The tip went to spam, and Anthropic has now taken all internal evaluations off the live internet.",
+    "thumbnail": "assets/images/blog-thumbnails/how-claude-sent-police-a-false-murder-tip.jpg",
+    "youtubeId": "7hJA98QSLJg",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "AI Safety",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "nobody-edited-this-video-it-was-made-from-a-website",
+    "title": "Nobody Edited This Video (It Was Made From a Website)",
+    "date": "2026-10-23",
+    "updated": null,
+    "excerpt": "Teasr turns a website address into a branded product video with original music in about 8 minutes, from $21.06 for 15 seconds, in both 16:9 and 9:16.",
+    "thumbnail": "assets/images/blog-thumbnails/nobody-edited-this-video-it-was-made-from-a-website.jpg",
+    "youtubeId": "UUdpBZzydF4",
+    "tags": [
+      "AI Video",
+      "AI Tools",
+      "Automation",
+      "AI"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "stop-ai-from-giving-the-same-answer",
+    "title": "Stop AI From Giving the Same Answer",
+    "date": "2026-10-23",
+    "updated": null,
+    "excerpt": "Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing.",
+    "thumbnail": "assets/images/blog-thumbnails/stop-ai-from-giving-the-same-answer.jpg",
+    "youtubeId": "hj6eirnuS60",
+    "tags": [
+      "AI",
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "Tech Explained"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "free-ai-turns-one-sentence-into-viral-shorts",
+    "title": "This FREE AI Turns One Sentence Into Viral Shorts",
+    "date": "2026-10-22",
+    "updated": null,
+    "excerpt": "PurffleShorts writes the script, grades it, voices it, finds stock footage and burns in captions with sound effects, from one sentence. It makes 11 formats, including text message and Reddit stories, and a full video takes about 4 to 5 minutes in my free Colab notebook.",
+    "thumbnail": "assets/images/blog-thumbnails/free-ai-turns-one-sentence-into-viral-shorts.jpg",
+    "youtubeId": "Qmykk5BiKOw",
+    "tags": [
+      "AI Video",
+      "Open Source",
+      "Tutorial",
+      "Automation",
+      "Gemini"
+    ],
+    "readTime": 10
+  },
+  {
+    "slug": "metas-new-ai-remembers-your-habits-and-runs-errands",
+    "title": "Meta's New AI Remembers Your Habits and Runs Errands",
+    "date": "2026-10-22",
+    "updated": null,
+    "excerpt": "Meta's Muse Wonder combines Active Memory and Active Focus: it plans around your real habits and keeps working on a task until it is done. It scores 85.6% on Meta's internal MemoryBench and is in Muse Code from $5 a month.",
+    "thumbnail": "assets/images/blog-thumbnails/metas-new-ai-remembers-your-habits-and-runs-errands.jpg",
+    "youtubeId": "YPx84-G_US4",
+    "tags": [
+      "AI",
+      "AI Models",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "mistral-large-4-reads-blueprints-without-hallucinating",
+    "title": "Mistral Large 4 Reads Blueprints Without Hallucinating",
+    "date": "2026-10-22",
+    "updated": null,
+    "excerpt": "Mistral Large 4 (Le Chonk) points at the evidence before it answers. On the Dense 200 bounding box test it scored 42.0, ahead of GPT-6 Astra at 41.5, and it zooms through engineering drawings until the answer is exact.",
+    "thumbnail": "assets/images/blog-thumbnails/mistral-large-4-reads-blueprints-without-hallucinating.jpg",
+    "youtubeId": "4GNKKXWT4WY",
+    "tags": [
+      "AI Models",
+      "Benchmarks",
+      "Open Source",
+      "News",
+      "AI"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "an-ai-just-marked-up-this-contract-like-a-senior-lawyer",
+    "title": "An AI Just Marked Up This Contract Like a Senior Lawyer",
+    "date": "2026-10-21",
+    "updated": null,
+    "excerpt": "Z.ai's GLM-Legal turns the small GLM-5.3-Flash into a legal agent that writes concrete redlines. It scores 19.2% on Harvey's Legal Agent Benchmark, 12.5 points over its base model, and Vals ranks it 7th and the cheapest in its top 10.",
+    "thumbnail": "assets/images/blog-thumbnails/an-ai-just-marked-up-this-contract-like-a-senior-lawyer.jpg",
+    "youtubeId": "DgRwjdxQooc",
+    "tags": [
+      "AI",
+      "AI Models",
+      "AI Agents",
+      "Benchmarks",
+      "News"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "make-unlimited-ai-shorts-free-step-by-step",
+    "title": "How to Make Unlimited AI Shorts for FREE (Step by Step)",
+    "date": "2026-10-21",
+    "updated": null,
+    "excerpt": "AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU.",
+    "thumbnail": "assets/images/blog-thumbnails/make-unlimited-ai-shorts-free-step-by-step.jpg",
+    "youtubeId": "-2L2BuMVdyk",
+    "tags": [
+      "AI Video",
+      "Open Source",
+      "Tutorial",
+      "Automation",
+      "Gemini"
+    ],
+    "readTime": 10
+  },
+  {
+    "slug": "nvidias-new-voice-ai-sounds-terrifyingly-real",
+    "title": "NVIDIA's New Voice AI Sounds Terrifyingly Real",
+    "date": "2026-10-21",
+    "updated": null,
+    "excerpt": "NVIDIA PersonaPlex is one open model that listens and talks at the same time. In NVIDIA's tests it takes the turn in 0.17 seconds versus 1.301 for Gemini 2.0 Flash Live, the code is MIT, and you can run it locally in three steps.",
+    "thumbnail": "assets/images/blog-thumbnails/nvidias-new-voice-ai-sounds-terrifyingly-real.jpg",
+    "youtubeId": "ftVH4tl0d28",
+    "tags": [
+      "AI",
+      "Voice AI",
+      "Open Source",
+      "AI Models",
+      "Tutorial"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "how-to-use-claude-dashboards-beginner-guide",
+    "title": "How to Use Claude Dashboards (Complete Beginner Guide)",
+    "date": "2026-10-20",
+    "updated": null,
+    "excerpt": "Claude Dashboards builds a live dashboard from one prompt and shows the formula or SQL behind every number. I build one from a CSV, make it refresh from Google Drive, and connect BigQuery's free sandbox.",
+    "thumbnail": "assets/images/blog-thumbnails/how-to-use-claude-dashboards-beginner-guide.jpg",
+    "youtubeId": "n57IpSe8jeY",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "Tutorial",
+      "AI Tools",
+      "Beginner AI"
+    ],
+    "readTime": 9
+  },
+  {
+    "slug": "run-claude-code-without-claude-free-setup-guide",
+    "title": "Run Claude Code Without Claude (Free Setup Guide)",
+    "date": "2026-10-20",
+    "updated": null,
+    "excerpt": "Free Claude Code is an open source local proxy that runs the Claude Code CLI on other models, like NVIDIA's Nemotron on a free NVIDIA developer key. Setup is three steps, but the free tier is for prototyping and testing only.",
+    "thumbnail": "assets/images/blog-thumbnails/run-claude-code-without-claude-free-setup-guide.jpg",
+    "youtubeId": "YlsGukeRD-Q",
+    "tags": [
+      "Claude Code",
+      "AI Tools",
+      "Open Source",
+      "Coding",
+      "Tutorial"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "the-secret-to-infinite-ai-improvement",
+    "title": "The Secret to Infinite AI Improvement",
+    "date": "2026-10-20",
+    "updated": null,
+    "excerpt": "Sakana AI and UC Berkeley's MASS turns one model, Qwen3.6-27B, into its own team and then trains it on its best team runs. After two rounds it delegates work in 87 of 110 runs instead of 1, and beats the original model in 69.9% of matchups on unseen tasks.",
+    "thumbnail": "assets/images/blog-thumbnails/the-secret-to-infinite-ai-improvement.jpg",
+    "youtubeId": "fIFtQcy0n7g",
+    "tags": [
+      "AI",
+      "Machine Learning",
+      "AI Agents",
+      "Open Source",
+      "Tech Explained"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "claude-code-can-now-reverse-engineer-any-app",
+    "title": "Claude Code Can Now Reverse Engineer Any App",
+    "date": "2026-10-19",
+    "updated": null,
+    "excerpt": "REA (Reverse Engineer Anything) is a free, open source MCP server that lets Claude Code, Codex or Cursor drive real reverse engineering tools on your own machine. Setup is one command: npx rea-agents setup.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-can-now-reverse-engineer-any-app.jpg",
+    "youtubeId": "LCVmu9gKljs",
+    "tags": [
+      "Claude Code",
+      "AI Tools",
+      "Open Source",
+      "Coding",
+      "AI Agents"
+    ],
+    "readTime": 4
+  },
+  {
     "slug": "make-unlimited-ai-videos-with-shortgpt-free",
     "title": "Make Unlimited AI Videos with ShortGPT (Free)",
     "date": "2026-10-19",

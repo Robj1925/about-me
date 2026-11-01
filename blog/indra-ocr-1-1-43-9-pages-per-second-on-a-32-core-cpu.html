@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU</title>
+  <meta name="description" content="Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch." />
+  <meta property="og:title" content="Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU" />
+  <meta property="og:description" content="Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU",
+      "description": "Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.jpg",
+      "datePublished": "2026-10-30",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.html",
+      "keywords": "OCR, AI Tools, Open Source, Local AI, Python",
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU",
+          "item": "https://automatewithrobby.fyi/blog/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU",
+      "description": "Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.jpg",
+      "uploadDate": "2026-10-30",
+      "embedUrl": "https://www.youtube.com/embed/sekGGNYXUYI",
+      "contentUrl": "https://www.youtube.com/watch?v=sekGGNYXUYI",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="sekGGNYXUYI" aria-label="Play video: Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU">
+          <img src="https://i.ytimg.com/vi/sekGGNYXUYI/hqdefault.jpg" alt="Play video: Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.jpg" alt="Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">OCR</span><span class="post-tag">AI Tools</span><span class="post-tag">Open Source</span><span class="post-tag">Local AI</span><span class="post-tag">Python</span></div>
+      <h1 class="post-title">Indra OCR 1.1: 43.9 Pages per Second on a 32 Core CPU</h1>
+      <p class="post-excerpt">Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-10-30">October 30, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Datalab&#39;s <a href="https://www.datalab.to/blog/indra-ocr-1-1">Indra OCR 1.1</a> reads 43.9 pages per second on a 32 core CPU. No GPU.</p>
+<p>OCR turns scans and photos into text. Think Tesseract, but tiny. The OCR model has 1 million parameters, and the whole default pipeline has 7 million. That is small enough that a plain CPU server can push through a lot of pages.</p>
+<h2 id="the-speed-test">The speed test</h2>
+<p>Datalab tested it on an AMD EPYC (Genoa) server with 32 cores. The setup: no GPU, OCR mode, one single threaded worker per core, and 300 pages from their OmniParseBench set.</p>
+<p>On that machine, Indra read 43.9 pages per second. Tesseract 5 read 2.92. That is 15 times faster on the same machine type. Datalab also lists PaddleOCR&#39;s PP-OCR text models at 4.28 pages per second, so roughly 10 times slower than Indra in the same table.</p>
+<p>Two things to keep in mind. This is Datalab&#39;s own benchmark, and it is a server number, not a laptop number. In the same table, 4 cores gets you 6.2 pages per second.</p>
+<h2 id="what-it-reads-now">What it reads now</h2>
+<p>Version 1.1 is a real step up from 1.0:</p>
+<ul>
+<li><strong>More than 80 languages on scans.</strong> Korean, Thai and Hebrew are in the examples. Datalab says that on held out printed pages in 95 languages, it reached a character F1 of 0.90 or higher on 83 of them.</li>
+<li><strong>Tilted pages.</strong> It straightens pages tilted up to 45 degrees.</li>
+<li><strong>Handwriting.</strong> Version 1.0 could not read handwriting at all. Version 1.1 can.</li>
+</ul>
+<p>The output is markdown, or JSON with lines, boxes and layout blocks if you want structure.</p>
+<h2 id="the-limits">The limits</h2>
+<p>The handwriting part needs an honest note. On OmniParseBench, the handwriting score went from 8.3 percent in 1.0 to 25.2 percent in 1.1. That is a big jump, but 25.2 is still low. Datalab says clear writing reads well, but cursive and faint pencil are harder.</p>
+<p>They also list limits on complex tables and on some diacritics, like Czech, Turkish and Kurmanji. If your documents look like that, test before you trust it.</p>
+<h2 id="try-it">Try it</h2>
+<p>It is one pip install:</p>
+<pre><code class="language-bash">pip install -U indra-ocr
+indra-ocr paper.pdf
+</code></pre>
+<p>The first run downloads about 76 MB of models. On a small x86 machine with 4 virtual CPUs, Datalab reports a median of 212 milliseconds per page, one page at a time (357 ms with <code>--math</code> turned on).</p>
+<p>Where I would use it: in front of a RAG pipeline, so scanned PDFs become searchable text before they ever hit the model.</p>
+<h2 id="the-license-catch">The license catch</h2>
+<p>Do not call this completely free. The code is Apache 2.0. The model weights use a modified OpenRAIL-M license: free for research, personal use, and startups under 20 million dollars in funding or revenue. The license also rules out use that competes with Datalab&#39;s own API. If your company is above that line, read the terms first.</p>
+<p>If you like small models that run on hardware you already own, I also covered <a href="/blog/clone-any-voice-locally-from-3-seconds-of-audio.html">cloning a voice locally from 3 seconds of audio</a>. And for another small model that runs on AMD hardware, see <a href="/blog/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.html">ZAYA1-8B</a>.</p>
+<p>Sources: <a href="https://www.datalab.to/blog/indra-ocr-1-1">Datalab: Indra OCR 1.1</a>, <a href="https://github.com/datalab-to/indra">GitHub: datalab-to/indra</a>, <a href="https://huggingface.co/datalab-to/indra-ocr">Hugging Face: datalab-to/indra-ocr</a></p>
+<p>Watch the Short above for the walkthrough. If you want the Claude Code skills and workflows I use to automate my content and my business, join the <a href="https://www.skool.com/ai-academy-with-robby-6849/about">AI Academy community on Skool</a>.</p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="recursive-flint-almost-40b-coding-model-only-2-5b-active.html">Recursive Flint: Almost 40B Coding Model, Only 2.5B Active</a></li>
+        <li><a href="free-repo-lifts-an-nvidia-limit-on-rtx-30-cards.html">Free Repo Lifts an NVIDIA Limit on RTX 30 Cards (gpu-unlock)</a></li>
+        <li><a href="create-unlimited-ai-videos-free-with-moneyprinter.html">Create Unlimited AI Videos for FREE with Money Printer</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

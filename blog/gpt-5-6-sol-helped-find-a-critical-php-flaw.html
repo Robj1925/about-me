@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)</title>
+  <meta name="description" content="PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to." />
+  <meta property="og:title" content="GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)" />
+  <meta property="og:description" content="PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/gpt-5-6-sol-helped-find-a-critical-php-flaw.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/gpt-5-6-sol-helped-find-a-critical-php-flaw.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)",
+      "description": "PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/gpt-5-6-sol-helped-find-a-critical-php-flaw.jpg",
+      "datePublished": "2026-10-27",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/gpt-5-6-sol-helped-find-a-critical-php-flaw.html",
+      "keywords": "Security, PHP, OpenAI, AI Tools, Web Development",
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)",
+          "item": "https://automatewithrobby.fyi/blog/gpt-5-6-sol-helped-find-a-critical-php-flaw.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)",
+      "description": "PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/gpt-5-6-sol-helped-find-a-critical-php-flaw.jpg",
+      "uploadDate": "2026-10-27",
+      "embedUrl": "https://www.youtube.com/embed/kCb_x3mTzRA",
+      "contentUrl": "https://www.youtube.com/watch?v=kCb_x3mTzRA",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="kCb_x3mTzRA" aria-label="Play video: GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)">
+          <img src="https://i.ytimg.com/vi/kCb_x3mTzRA/hqdefault.jpg" alt="Play video: GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/gpt-5-6-sol-helped-find-a-critical-php-flaw.jpg" alt="GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell) thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Security</span><span class="post-tag">PHP</span><span class="post-tag">OpenAI</span><span class="post-tag">AI Tools</span><span class="post-tag">Web Development</span></div>
+      <h1 class="post-title">GPT-5.6 Sol Helped Find a Critical PHP Flaw (PHP2Shell)</h1>
+      <p class="post-excerpt">PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-10-27">October 27, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>GPT-5.6 Sol just helped find a critical hole in PHP. W3Techs says PHP runs 69.3% of the websites where it can tell the server language (its chart is dated October 23, 2026). And this hole can let a stranger run code on your server.</p>
+<p>The bugs are known as PHP2Shell. On October 21, the PHP project shipped fixes for two critical vulnerabilities that, in its words, &quot;can allow unauthenticated remote code execution.&quot;</p>
+<h2 id="how-the-bug-works">How the bug works</h2>
+<p>When your PHP runs out of memory in the middle of a request, it can skip its cleanup. A later request then trusts memory your server already freed.</p>
+<p>It is in PHP itself, so updating your WordPress or your plugins does not fix it. Cloudflare says the same: updating website code or plugins alone does not fix these vulnerabilities. Calif traced one affected path back to PHP 5.4.0.</p>
+<h2 id="who-found-it">Who found it</h2>
+<ul>
+<li><strong>Calif</strong> found the first bug with GPT-5.6 Sol, a few days into its audit, as part of OpenAI&#39;s Patch the Planet initiative.</li>
+<li><strong>Wiz</strong> found both bugs on its own, using Wiz Atlas, Gemini 4 Argon and GPT-5.6 Sol.</li>
+</ul>
+<p>So this was not an OpenAI only find. And Calif adds an honest note: no model can unearth &quot;all bugs&quot; with simple prompts, at least for now. Its researcher knew where to look.</p>
+<h2 id="it-leaked-before-release-day">It leaked before release day</h2>
+<p>Cloudflare says the vulnerability leaked before the official release date, and that it saw attack traffic aimed at its customers. Cloudflare gives no counts, so I will not guess at how many sites were hit.</p>
+<h2 id="check-your-php-version">Check your PHP version</h2>
+<p>Run this on your server:</p>
+<pre><code class="language-bash">php -v
+</code></pre>
+<p>The fixed releases are:</p>
+<ul>
+<li>8.5.12</li>
+<li>8.4.27</li>
+<li>8.3.36</li>
+<li>8.2.35</li>
+</ul>
+<p>Then restart every PHP worker you run. Old processes keep running the vulnerable code until they restart.</p>
+<p>On 8.1 or older, the PHP project ships no new release. Upgrade to a supported version, or ask your hosting or LTS vendor whether they have a backported fix.</p>
+<h2 id="openais-checker">OpenAI&#39;s checker</h2>
+<p>OpenAI also shipped an open source checker, <a href="https://github.com/openai/php2shell-checker">php2shell-checker</a>, as a Codex skill. It reads your site&#39;s PHP headers and says OK, potentially vulnerable, or unknown if the headers are hidden. It never sends an exploit to your site.</p>
+<p>It does have one limit. OK only means the advertised version number looks fixed. The README says it does not verify the installation, so <code>php -v</code> on the server is still the real check.</p>
+<p>For more on the model behind the find, see <a href="/blog/gpt-5-6-openais-most-powerful-model-is-locked.html">GPT 5.6: OpenAI&#39;s most powerful model is here (but locked)</a>. The other model Wiz used is covered in <a href="/blog/gemini-4-argon-beats-opus-5-5-mostly.html">Gemini 4 Argon beats Opus 5.5 (mostly)</a>.</p>
+<p>Sources: <a href="https://www.php.net/archive/2026.php">PHP security advisory</a>, <a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities/">OpenAI: Patch the Planet</a>, <a href="https://calif.io/php2shell/">Calif write up</a>, <a href="https://www.wiz.io/blog/php2shell-php-rce">Wiz Research</a>, <a href="https://blog.cloudflare.com/php-vulnerabilities-waf-protection/">Cloudflare</a>, <a href="https://github.com/openai/php2shell-checker">OpenAI php2shell-checker</a>, <a href="https://w3techs.com/technologies/details/pl-php">W3Techs</a></p>
+<p>Watch the Short above for the walkthrough. If you want the Claude Code skills and workflows I use to automate my content and my business, join the <a href="https://www.skool.com/ai-academy-with-robby-6849/about">AI Academy community on Skool</a>.</p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="1password-lets-ai-agents-log-in-without-your-password.html">1Password Lets AI Agents Log In Without Your Password</a></li>
+        <li><a href="hallmark-free-skill-stops-claude-code-building-ai-slop.html">Hallmark Is a Free Skill That Stops Claude Code Building AI Slop</a></li>
+        <li><a href="4-ways-to-force-claude-code-to-build-beautiful-websites.html">4 Ways to Force Claude Code to Build Beautiful Websites</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

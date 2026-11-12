@@ -45,6 +45,6 @@ My other Muse Shorts are one time errands: a form, a part, a letter. This one is
 
 A daily job only works if the assistant keeps the history between runs. That is the Active Memory idea Meta pitched for Muse Wonder, and I broke down the official demos in [Meta's new AI remembers your habits and runs errands](/blog/metas-new-ai-remembers-your-habits-and-runs-errands.html). For where Muse runs, see [Meta just dropped its own Claude Code](/blog/meta-just-dropped-its-own-claude-code.html).
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

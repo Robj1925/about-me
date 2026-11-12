@@ -42,6 +42,6 @@ Before you pay a fine that comes with a photo, give the photo to an AI and ask w
 
 Muse can also follow through on a dispute without a phone call. In Meta's own launch demo, Muse Wonder found an error on a medical bill and sent the dispute email. I covered that in [Meta's new AI remembers your habits and runs errands](/blog/metas-new-ai-remembers-your-habits-and-runs-errands.html).
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

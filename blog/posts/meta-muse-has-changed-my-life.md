@@ -70,6 +70,6 @@ There is a lot of setup for this. You have to give the permissions to Claude, Mu
 
 If you want to save your Claude usage with Muse, see [10 ways to make Claude Code usage last longer](/blog/10-ways-to-make-claude-code-usage-last-longer.html). For the memory features behind it, read [Meta's new AI remembers your habits and runs errands](/blog/metas-new-ai-remembers-your-habits-and-runs-errands.html).
 
-Sources: [Muse](https://muse.meta.com/), [Meta Help Center: Muse subscriptions](https://www.meta.com/help/subscriptions/1021145227643680/)
+Sources: [Muse](https://www.muse.ai/), [Meta Help Center: Muse subscriptions](https://www.meta.com/help/subscriptions/1021145227643680/)
 
 Watch the video above for every use case on screen. If you want to set any of this up yourself, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about), where I will help you personally, along with the Claude Code skills and workflows I use to automate my content and my business.

@@ -42,6 +42,6 @@ Then Muse reached out to sellers directly to ask questions about condition and p
 
 The useful part here is not any single search. It is that one agent holds the loan math, the listings and the conversations together, so nothing gets lost between tabs.
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

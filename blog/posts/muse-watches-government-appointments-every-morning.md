@@ -44,6 +44,6 @@ A one time search gives up when it finds nothing. A watcher that takes your answ
 
 Any task that is "check this page every day until something changes" is a good job for an agent. Government appointments are just the most painful example.
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

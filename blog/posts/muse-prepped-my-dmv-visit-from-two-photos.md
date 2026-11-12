@@ -48,6 +48,6 @@ This is the "keep going when blocked" behavior that Meta pitched as Active Focus
 
 If you want the background on Meta's Muse lineup, start with [Meta just dropped its own Claude Code](/blog/meta-just-dropped-its-own-claude-code.html).
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

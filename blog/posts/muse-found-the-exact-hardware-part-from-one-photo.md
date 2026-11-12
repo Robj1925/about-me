@@ -51,6 +51,6 @@ The same two questions (what is this, and who has it nearby) apply to a lot more
 
 Most AI shopping help stops at "here is the product". The useful version answers the second question too, and closes the loop between your house and the store. For the official demos of Muse doing errands like this, read [Meta's new AI remembers your habits and runs errands](/blog/metas-new-ai-remembers-your-habits-and-runs-errands.html). And for Meta's image side, see [Meta Muse Image: the AI that fixes its own images](/blog/meta-muse-image-the-ai-that-fixes-its-own-images.html).
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

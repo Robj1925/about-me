@@ -47,6 +47,6 @@ You can run the same check on any suspicious letter:
 
 The red flags are not secret. The problem is that a scary letter makes you act before you think. An assistant that reads it calmly and then goes and checks the sender gives you the pause you need. That "check the facts, then act" loop is the same behavior Meta showed in its official billing demo, which I covered in [Meta's new AI remembers your habits and runs errands](/blog/metas-new-ai-remembers-your-habits-and-runs-errands.html).
 
-Sources: [Meta Muse](https://muse.meta.com/)
+Sources: [Meta Muse](https://www.muse.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

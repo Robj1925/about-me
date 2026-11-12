@@ -49,6 +49,6 @@ Most people compare AI agents as if you have to pick one. This shows a different
 
 For the background on Meta's agent tools, see [Meta just dropped its own Claude Code](/blog/meta-just-dropped-its-own-claude-code.html).
 
-Sources: [Meta Muse](https://muse.meta.com/) and [Claude](https://claude.ai/)
+Sources: [Meta Muse](https://www.muse.ai/) and [Claude](https://claude.ai/)
 
 Watch the Short above for the breakdown. If you want the Claude Code skills and workflows I use to automate my content and my business, join the [AI Academy community on Skool](https://www.skool.com/ai-academy-with-robby-6849/about).

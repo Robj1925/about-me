@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10 Ways to Make Claude Code Usage Last Longer · Robby J</title>
+  <meta name="description" content="Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do." />
+  <meta property="og:title" content="10 Ways to Make Claude Code Usage Last Longer · Robby J" />
+  <meta property="og:description" content="Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/10-ways-to-make-claude-code-usage-last-longer.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/10-ways-to-make-claude-code-usage-last-longer.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "10 Ways to Make Claude Code Usage Last Longer",
+      "description": "Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/10-ways-to-make-claude-code-usage-last-longer.jpg",
+      "datePublished": "2026-11-11",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/10-ways-to-make-claude-code-usage-last-longer.html",
+      "keywords": "Claude Code, Claude, Anthropic, AI Tools, Tutorial, AI Agents",
+      "timeRequired": "PT7M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "10 Ways to Make Claude Code Usage Last Longer",
+          "item": "https://automatewithrobby.fyi/blog/10-ways-to-make-claude-code-usage-last-longer.html"
+        }
+      ]
+    },
+    {
+      "@type": "VideoObject",
+      "name": "10 Ways to Make Claude Code Usage Last Longer",
+      "description": "Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do.",
+      "thumbnailUrl": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/10-ways-to-make-claude-code-usage-last-longer.jpg",
+      "uploadDate": "2026-11-11",
+      "embedUrl": "https://www.youtube.com/embed/gaVtt9fnRfg",
+      "contentUrl": "https://www.youtube.com/watch?v=gaVtt9fnRfg",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      }
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    <div class="post-yt-embed">
+        <button type="button" class="yt-facade" data-yt-id="gaVtt9fnRfg" aria-label="Play video: 10 Ways to Make Claude Code Usage Last Longer">
+          <img src="https://i.ytimg.com/vi/gaVtt9fnRfg/hqdefault.jpg" alt="Play video: 10 Ways to Make Claude Code Usage Last Longer" width="480" height="360" fetchpriority="high" />
+          <span class="yt-facade-play" aria-hidden="true"></span>
+        </button>
+      </div>
+
+    <!-- Hero Image -->
+    <img src="../assets/images/blog-thumbnails/10-ways-to-make-claude-code-usage-last-longer.jpg" alt="10 Ways to Make Claude Code Usage Last Longer thumbnail" class="post-hero-img" width="1600" height="900" loading="lazy" decoding="async" />
+
+    <!-- Header -->
+    <header class="post-header">
+      <div class="post-tags"><span class="post-tag">Claude Code</span><span class="post-tag">Claude</span><span class="post-tag">Anthropic</span><span class="post-tag">AI Tools</span><span class="post-tag">Tutorial</span><span class="post-tag">AI Agents</span></div>
+      <h1 class="post-title">10 Ways to Make Claude Code Usage Last Longer</h1>
+      <p class="post-excerpt">Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do.</p>
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-11-11">November 11, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 7 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Most people waste a big part of their Claude Code usage. These are ten practical tips to save usage and stop running out of it. I use Claude Code every day for coding, which is my day job. The last tip is the most underrated one.</p>
+<h2 id="tip-1-effort-levels">Tip 1: Effort levels</h2>
+<p>This is the simplest tip. Claude Code has five effort levels: low, medium, high, xhigh and max.</p>
+<p>In my experience, you do not need to go past medium. Medium is enough for most tasks, and it is also the default effort on Opus 5.5. So stop using high, xhigh and max for everything. Keep them for the few tasks that really need them.</p>
+<h2 id="tip-2-a-separate-session-for-small-tasks">Tip 2: A separate session for small tasks</h2>
+<p>Keep one session only for throwaway tasks. Mine is called Misc, for miscellaneous. All my random questions and random tasks go there.</p>
+<p>Keep that session on Sonnet 5.5 with high effort. Sonnet 5.5 is more than capable of small jobs. I use my Misc session to move files around, organize a directory and clean up my computer.</p>
+<p>Sonnet 5.5 on high uses a lot less than Opus 5.5 on medium. On Artificial Analysis, the API cost per task is $1.64 for Sonnet 5.5 on high and $2.45 for Opus 5.5 on medium. Do not use this session for the hard work that you actually care about.</p>
+<h2 id="tip-3-make-it-a-skill">Tip 3: Make it a skill</h2>
+<p>Some tasks need a lot of thinking, and more thinking means more usage. If you give Claude the same task again and again, have it turn that task into a script or a skill.</p>
+<p>Then Claude does not have to work out from scratch what you want. It has a reference that already says what to do and how to do it, so it spends fewer thinking tokens.</p>
+<p>This tip is becoming less necessary. Bigger models are better at knowing what to remember and what not to remember. It still helps for tasks you repeat a lot. If you have never made one, see <a href="/blog/how-to-build-a-claude-skill-in-60-seconds.html">how to build a Claude skill in 60 seconds</a>.</p>
+<h2 id="tip-4-give-the-path">Tip 4: Give the path</h2>
+<p>Tell Claude where the files are. I use Claude Code to help edit my videos. I do not say &quot;I have a video on my computer, go find it and edit it.&quot; I put the path to the folder in the prompt.</p>
+<p>Then Claude does not spend resources searching for the video. Bigger models search more efficiently now, but it is still a good habit.</p>
+<h2 id="tip-5-monthly-api-credits">Tip 5: Monthly API credits</h2>
+<p>Use the free credits your plan gives you. I am on the Max plan, and Max includes $100 of API credits every month. Ultra includes $200, and Team includes $20 or $100 per seat. Free, Pro and Enterprise do not include them.</p>
+<p>There is one catch to know. Anthropic&#39;s page says these credits cover the Claude API, Managed Agents, the Agent SDK and the playground. They do not cover Claude Code or extra usage, and they do not change your usage limits. You must claim them, and they expire each cycle. So the way they save your plan is to move API work onto the credits.</p>
+<h2 id="tip-6-free-resets">Tip 6: Free resets</h2>
+<p>Anthropic sometimes gives you a free limit reset. Go to Settings, then Usage, and look for the Limit resets row. A reset puts your usage back, at no cost to you.</p>
+<p>There are three types: a five hour reset, a weekly reset and a Fable reset. A Fable reset gives back only your Fable weekly usage and refills the five hour window. When Fable 5.2 came out, I had a free Fable reset in that row.</p>
+<h2 id="tip-7-use-other-free-tiers">Tip 7: Use other free tiers</h2>
+<p>Tips 7 to 10 changed the way I use AI the most.</p>
+<p>Use other AI tools that have free tiers. I use Claude Code for the hardest work, because in my opinion it is one of the smartest models you can use. But it is not the only agent I use. I also use Antigravity, Muse, Kimi and DeepSeek.</p>
+<ul>
+<li><strong>Muse</strong> is free with a usage limit, and in my use the free tier gives a lot of usage.</li>
+<li><strong>Antigravity</strong> has a $0 a month plan with basic weekly rate limits.</li>
+<li><strong>Kimi</strong> has a free plan. Kimi Code needs a paid plan.</li>
+<li><strong>DeepSeek</strong> chat is free. Its API is paid.</li>
+</ul>
+<p>When a task does not need a lot of effort and thinking, I usually give it to Antigravity or Muse. In my setup, all these agents share one central memory, so each one knows what is going on.</p>
+<h2 id="tip-8-the-handoff">Tip 8: The handoff</h2>
+<p>This is my favorite tip. When I started to use other agents, I tried to make Antigravity do the same tasks that Claude could do. It could not. It got confused at some point. It is not as capable as Claude.</p>
+<p>For example, Claude could post a video for me easily, and Antigravity could not. So I told Claude: &quot;I want you to give me a prompt that I&#39;ll give to a completely new session with no context. Explain step by step how to post a video, with all the context necessary to do that.&quot;</p>
+<p>Claude gave me the prompt with every step in it. I gave that prompt to Antigravity, and then Antigravity could post the video.</p>
+<p>You can do this with any task that Claude can do. Have Claude explain how to do it, then give that to another agent. You do not spend your Claude tokens on the task itself.</p>
+<h2 id="tip-9-muse-for-long-tasks">Tip 9: Muse for long tasks</h2>
+<p>Use Muse more often. Muse is very good at tasks that need autonomy, the ones that must run on their own with no supervision. It also gives you a lot of free usage. I wrote about how I use it every day in <a href="/blog/meta-muse-has-changed-my-life.html">Meta Muse has changed my life</a>.</p>
+<h2 id="tip-10-which-plan-to-get">Tip 10: Which plan to get</h2>
+<p>My pick is the Max plan, which is $100 a month. The other paid option is Ultra at $200 a month (it used to be called Max 20x).</p>
+<p>The study I talk about in the video is from SemiAnalysis. It priced each plan at API rates for agentic work. On Opus 5.5, the $100 Max plan is worth $5,725 a month and the $200 plan is worth $11,726 a month. That is about 57x and 59x what you pay, so the value per dollar is almost the same. Two $100 plans come out slightly ahead only on Fable 5.1, by about 2.5%. Officially, Max gives 5x Pro weekly usage and Ultra gives 10x, so two Max plans tie Ultra on weekly usage.</p>
+<p>So do not pay for the $200 plan only because you think it gives more value per dollar. Get the capacity you actually need. The SemiAnalysis numbers came out before Fable 5.2. I covered the full study in <a href="/blog/your-200-claude-plan-is-worth-11726-a-month.html">your $200 Claude plan is worth $11,726 a month</a>.</p>
+<p>Sources: <a href="https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x">SemiAnalysis study</a>, <a href="https://platform.claude.com/docs/en/build-with-claude/effort">Claude effort levels</a>, <a href="https://code.claude.com/docs/en/skills">Claude Code skills</a>, <a href="https://platform.claude.com/docs/en/about-claude/api-credits-for-subscribers">API credits for subscribers</a>, <a href="https://support.claude.com/en/articles/17007452-what-is-a-limit-reset">What is a limit reset</a>, <a href="https://claude.com/pricing">Claude plans</a>, <a href="https://www.anthropic.com/claude-sonnet-5-5">Sonnet 5.5</a>, <a href="https://antigravity.google/">Google Antigravity</a>, <a href="https://muse.meta.com/">Muse</a>, <a href="https://www.kimi.com/membership/pricing">Kimi</a>, <a href="https://www.deepseek.com/en">DeepSeek</a></p>
+<p>Watch the video above for every tip on screen. If you want the Claude Code skills and workflows I use to automate my content and my business, join the <a href="https://www.skool.com/ai-academy-with-robby-6849/about">AI Academy community on Skool</a>.</p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="claude-design-tutorial-create-landing-pages-and-brand-kits.html">Claude Design Tutorial: Create Landing Pages and Brand Kits</a></li>
+        <li><a href="claude-code-sets-up-a-cloud-agent-in-one-command.html">Claude Code Sets Up a Cloud Agent in One Command</a></li>
+        <li><a href="how-to-use-claude-dashboards-beginner-guide.html">How to Use Claude Dashboards (Complete Beginner Guide)</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

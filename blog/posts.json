@@ -1,5 +1,377 @@
 [
   {
+    "slug": "10-ways-to-make-claude-code-usage-last-longer",
+    "title": "10 Ways to Make Claude Code Usage Last Longer",
+    "date": "2026-11-11",
+    "updated": null,
+    "excerpt": "Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do.",
+    "thumbnail": "assets/images/blog-thumbnails/10-ways-to-make-claude-code-usage-last-longer.jpg",
+    "youtubeId": "gaVtt9fnRfg",
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Anthropic",
+      "AI Tools",
+      "Tutorial",
+      "AI Agents"
+    ],
+    "readTime": 7
+  },
+  {
+    "slug": "94-free-blender-skills-for-claude-code",
+    "title": "94 Free Blender Skills for Claude Code 3D Scenes",
+    "date": "2026-11-11",
+    "updated": null,
+    "excerpt": "A free MIT repo gives Claude Code 94 Blender skills for modeling, lighting, camera moves, rendering and game engine export. Here is how it works, how to set it up on a Mac, and the catches.",
+    "thumbnail": "assets/images/blog-thumbnails/94-free-blender-skills-for-claude-code.jpg",
+    "youtubeId": "kY6zdK_AkFI",
+    "tags": [
+      "Claude Code",
+      "Open Source",
+      "AI Tools",
+      "Free Tools",
+      "AI Agents"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-can-now-use-your-mac-apps",
+    "title": "Claude Code Can Now Use Your Mac Apps: No Screenshots",
+    "date": "2026-11-10",
+    "updated": null,
+    "excerpt": "Vercel Labs' agent-desktop lets Claude Code drive Finder, Notes and GarageBand by reading the accessibility tree instead of screenshots. Version 1.2 adds an MCP server.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-can-now-use-your-mac-apps.jpg",
+    "youtubeId": "qw5hT6kLe-g",
+    "tags": [
+      "Claude Code",
+      "AI Agents",
+      "Open Source",
+      "Automation",
+      "macOS"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-found-the-exact-hardware-part-from-one-photo",
+    "title": "Muse Found the Exact Hardware Part From One Photo",
+    "date": "2026-11-10",
+    "updated": null,
+    "excerpt": "A toilet seat at home did not fit the bowl. One photo to Meta Muse gave me the exact replacement part and a nearby Home Depot that had it in stock, so I fixed it in one trip.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-found-the-exact-hardware-part-from-one-photo.jpg",
+    "youtubeId": "scwKd9Updeg",
+    "tags": [
+      "AI",
+      "AI Tools",
+      "Meta",
+      "Productivity",
+      "Automation"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-prepped-my-dmv-visit-from-two-photos",
+    "title": "Muse Prepped My Entire DMV Visit From Two Photos",
+    "date": "2026-11-10",
+    "updated": null,
+    "excerpt": "I lost my car registration, so I sent Meta Muse photos of my documents. It found no open DMV appointments, then filled out the replacement form and built a walk-in checklist anyway.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-prepped-my-dmv-visit-from-two-photos.jpg",
+    "youtubeId": "GIuAPDPrl_U",
+    "tags": [
+      "AI",
+      "AI Agents",
+      "Meta",
+      "Automation",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-spotted-a-fake-bill-in-my-mailbox",
+    "title": "Muse Spotted a Fake Bill That Fooled My Mailbox",
+    "date": "2026-11-10",
+    "updated": null,
+    "excerpt": "A realistic debt collection letter arrived with an urgent number to call. Before dialing, I sent a photo to Meta Muse. It flagged the scam language and found the company on online scam registries.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-spotted-a-fake-bill-in-my-mailbox.jpg",
+    "youtubeId": "GujwRkjJBJM",
+    "tags": [
+      "AI",
+      "AI Tools",
+      "Meta",
+      "AI Safety",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "meta-muse-controlled-claude-to-post-my-video",
+    "title": "Meta Muse Controlled Claude to Post My Video",
+    "date": "2026-11-09",
+    "updated": null,
+    "excerpt": "I left the house while a video was still rendering. From my phone, I told Meta Muse to find the export and hand it to Claude Code, and Claude posted it.",
+    "thumbnail": "assets/images/blog-thumbnails/meta-muse-controlled-claude-to-post-my-video.jpg",
+    "youtubeId": "8fOLHVZyZBk",
+    "tags": [
+      "AI Agents",
+      "Meta",
+      "Claude Code",
+      "Claude",
+      "Automation"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-researched-lenders-and-messaged-my-sellers",
+    "title": "Muse Researched Lenders and Messaged My Sellers",
+    "date": "2026-11-09",
+    "updated": null,
+    "excerpt": "For a big purchase, I let Meta Muse compare loan terms, scan Marketplace listings and message sellers in English and Spanish. The key was one shared memory document that holds every quote.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-researched-lenders-and-messaged-my-sellers.jpg",
+    "youtubeId": "Xj8xAa9z3bo",
+    "tags": [
+      "AI",
+      "Meta",
+      "AI Agents",
+      "Automation",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-tracks-flight-prices-and-alerts-when-to-buy",
+    "title": "Muse Tracks Flight Prices and Alerts When to Buy",
+    "date": "2026-11-09",
+    "updated": null,
+    "excerpt": "For a group trip, I set Meta Muse to check flight prices every morning, keep a 7 day average and send my phone a buy now or hold off call. No more daily tab refreshing.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-tracks-flight-prices-and-alerts-when-to-buy.jpg",
+    "youtubeId": "aVvaJlB_vX8",
+    "tags": [
+      "AI",
+      "AI Agents",
+      "Meta",
+      "Automation",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-watches-government-appointments-every-morning",
+    "title": "Muse Watches Government Appointments Every Morning",
+    "date": "2026-11-09",
+    "updated": null,
+    "excerpt": "Government appointment calendars can show no openings for months. I set Meta Muse to check the booking portal every day at 9:30 AM and message my phone when a slot opens.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-watches-government-appointments-every-morning.jpg",
+    "youtubeId": "NhQ_lomGCQY",
+    "tags": [
+      "AI",
+      "Meta",
+      "AI Agents",
+      "Automation",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "muse-won-my-parking-ticket-appeal-from-one-photo",
+    "title": "Muse Won My Parking Ticket Appeal From One Photo",
+    "date": "2026-11-09",
+    "updated": null,
+    "excerpt": "A parking ticket came in the mail with a photo of my car. Meta Muse looked at that photo, saw the lights were on, and wrote the appeal around that one detail.",
+    "thumbnail": "assets/images/blog-thumbnails/muse-won-my-parking-ticket-appeal-from-one-photo.jpg",
+    "youtubeId": "tuNYIufK7yw",
+    "tags": [
+      "AI",
+      "Meta",
+      "AI Agents",
+      "AI Tools",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "chatgpt-images-2-6-3-new-things-2-catches",
+    "title": "ChatGPT Images 2.6: 3 New Things and 2 Catches",
+    "date": "2026-11-08",
+    "updated": null,
+    "excerpt": "ChatGPT Images 2.6 turns a prompt or a photo into a looping GIF, saves reference images you can reuse, and is faster in the API. GIFs are still rolling out, and OpenAI has not published a per plan limit.",
+    "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-6-3-new-things-2-catches.jpg",
+    "youtubeId": "Js33XSFTQlQ",
+    "tags": [
+      "ChatGPT",
+      "OpenAI",
+      "Generative AI",
+      "AI Tools",
+      "AI News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-code-skill-animates-math-like-manim",
+    "title": "This Claude Code Skill Animates Math Like 3Blue1Brown's Manim",
+    "date": "2026-11-08",
+    "updated": null,
+    "excerpt": "3brown1blue is a free, MIT licensed Claude Code skill that plans and writes Manim code for math explainer videos. It needs no API key on Claude Code, but you install Manim and LaTeX yourself.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-code-skill-animates-math-like-manim.jpg",
+    "youtubeId": "yWZbdg9PMSA",
+    "tags": [
+      "Claude Code",
+      "Open Source",
+      "AI Tools",
+      "Python",
+      "AI Video"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "meta-muse-has-changed-my-life",
+    "title": "Meta Muse Has Changed My Life: How I Use It Every Day",
+    "date": "2026-11-08",
+    "updated": null,
+    "excerpt": "I have used every major AI agent, and Meta Muse is the one that changed my daily life. Here is how I use it for errands, paperwork, big purchases, running my channel and learning, plus where it falls short.",
+    "thumbnail": "assets/images/blog-thumbnails/meta-muse-has-changed-my-life.jpg",
+    "youtubeId": "eE3xihEjsQo",
+    "tags": [
+      "Meta",
+      "AI Agents",
+      "AI Tools",
+      "Productivity",
+      "Automation"
+    ],
+    "readTime": 7
+  },
+  {
+    "slug": "this-free-claude-code-skill-makes-animated-videos",
+    "title": "This Free Claude Code Skill Makes Animated Videos",
+    "date": "2026-11-07",
+    "updated": null,
+    "excerpt": "Animate is a free, open source Claude Code skill that writes the story, draws every frame in code, makes the music and renders an MP4 from one prompt. I used it to make a 30 second demo video for my own app, OpenFlow.",
+    "thumbnail": "assets/images/blog-thumbnails/this-free-claude-code-skill-makes-animated-videos.jpg",
+    "youtubeId": "Abws832nFJA",
+    "tags": [
+      "Claude Code",
+      "AI Video",
+      "Open Source",
+      "AI Tools",
+      "Tutorial"
+    ],
+    "readTime": 5
+  },
+  {
+    "slug": "turn-any-object-into-an-exploded-drawing",
+    "title": "How to Turn Any Object Into an Exploded Drawing",
+    "date": "2026-11-07",
+    "updated": null,
+    "excerpt": "Teardown is a free, MIT licensed Claude skill by Jakub Krehel that turns a photo, a description or a CAD model into a labeled exploded technical drawing you can color and export.",
+    "thumbnail": "assets/images/blog-thumbnails/turn-any-object-into-an-exploded-drawing.jpg",
+    "youtubeId": "Pcs-M6w2r20",
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Open Source",
+      "AI Tools",
+      "Free Tools"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "3-cents-vs-41-for-the-same-website-task",
+    "title": "3 Cents vs $41 for the Exact Same Website Task",
+    "date": "2026-11-06",
+    "updated": null,
+    "excerpt": "In its own onboarding race, Pomerado finished a website job for 3 cents while Codex Computer Use spent $41.01. The trick is to explore a site once and turn the task into an MCP tool.",
+    "thumbnail": "assets/images/blog-thumbnails/3-cents-vs-41-for-the-same-website-task.jpg",
+    "youtubeId": "cjD32lp0yb4",
+    "tags": [
+      "AI Agents",
+      "Open Source",
+      "Claude Code",
+      "Automation",
+      "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "hallmark-v2-stops-claude-code-building-generic-ai-slop",
+    "title": "Stop Letting Claude Code Build Generic AI Slop",
+    "date": "2026-11-05",
+    "updated": null,
+    "excerpt": "Hallmark v2 is a free Claude Code skill that refuses AI slop. Same prompt in Opus 5.5: 26 issues alone, zero with Hallmark.",
+    "thumbnail": "assets/images/blog-thumbnails/hallmark-v2-stops-claude-code-building-generic-ai-slop.jpg",
+    "youtubeId": "scBiMD3Rq7M",
+    "tags": [
+      "Claude Code",
+      "Web Design",
+      "Open Source",
+      "AI Tools"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "stop-paying-api-fees-for-simple-local-ai-agents",
+    "title": "Stop Paying API Fees for Simple Local AI Agents",
+    "date": "2026-11-05",
+    "updated": null,
+    "excerpt": "Liquid AI's LFM3 1.7B fits in about 1 GB and runs on your Mac with one Ollama command. Here is what it does well and where its limits are.",
+    "thumbnail": "assets/images/blog-thumbnails/stop-paying-api-fees-for-simple-local-ai-agents.jpg",
+    "youtubeId": "7cMz96MKuvY",
+    "tags": [
+      "Local AI",
+      "AI Models",
+      "Open Source",
+      "AI Agents",
+      "macOS"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "free-3d-site-replaces-paper-ikea-manuals",
+    "title": "This Free 3D Site Replaces Paper IKEA Manuals",
+    "date": "2026-11-04",
+    "updated": null,
+    "excerpt": "Bygga is a free, open source site with 3D assembly guides for 1,223 IKEA products. Every step plays in 3D and is read out loud.",
+    "thumbnail": "assets/images/blog-thumbnails/free-3d-site-replaces-paper-ikea-manuals.jpg",
+    "youtubeId": "_uok0TRWe74",
+    "tags": [
+      "Open Source",
+      "Free Tools",
+      "AI Tools",
+      "Technology"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "how-claude-wrote-90-percent-of-anthropics-codebase",
+    "title": "How Claude Wrote 90% of Anthropic's Codebase",
+    "date": "2026-11-04",
+    "updated": null,
+    "excerpt": "Anthropic's S-1 filing says over 90% of the contributions to its codebase in September 2026 were written by Claude. Here is the exact wording and the numbers around it.",
+    "thumbnail": "assets/images/blog-thumbnails/how-claude-wrote-90-percent-of-anthropics-codebase.jpg",
+    "youtubeId": "YrkyAIFpPro",
+    "tags": [
+      "Anthropic",
+      "Claude",
+      "AI Coding",
+      "AI News",
+      "Software Engineering"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "claude-voice-mode-now-works-in-apple-carplay",
+    "title": "Claude Voice Mode Now Works in Apple CarPlay",
+    "date": "2026-11-03",
+    "updated": null,
+    "excerpt": "On iPhone, Claude voice mode now works with Apple CarPlay. The same update adds multiple account switching on iOS and Android and 24 more app languages.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-voice-mode-now-works-in-apple-carplay.jpg",
+    "youtubeId": "x4He4fEcsuc",
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "Voice AI",
+      "AI News"
+    ],
+    "readTime": 2
+  },
+  {
     "slug": "claude-design-tutorial-create-landing-pages-and-brand-kits",
     "title": "Claude Design Tutorial: Create Landing Pages and Brand Kits",
     "date": "2026-11-01",

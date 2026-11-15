@@ -87,6 +87,7 @@
 /* ── Hero Image ── */
 .post-hero-img {
   width: 100%;
+  height: auto;
   border-radius: var(--radius);
   margin-bottom: var(--space-8);
   border: 1px solid var(--border);

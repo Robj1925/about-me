@@ -3,16 +3,100 @@
   <!-- Main Home Page -->
   <url>
     <loc>https://automatewithrobby.fyi/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <!-- Blog Index -->
   <url>
     <loc>https://automatewithrobby.fyi/blog/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/1000-claude-agents-formalized-fermat-in-30-hours.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-fable-5-2-designed-3-working-gadgets.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-meetings-google-meet-links.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-projects-research-on-a-schedule.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/claude-sheets-setup-guide-and-prompt.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/emil-kowalski-ui-skills-for-claude-code.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/fable-5-2-plans-opus-5-5-builds-claude-code.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/gemini-4-carbon-price-and-who-can-use-it.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/github-link-is-a-claude-skill.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/ha-mcp-claude-home-assistant-setup-guide.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/humanizer-and-claude-skills-that-catch-ai-writing.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/self-hosted-claude-managed-agents.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/suno-bark-free-text-to-audio-setup-guide.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://automatewithrobby.fyi/blog/zonos3-mini-free-voice-cloning-in-browser.html</loc>
+    <lastmod>2026-11-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://automatewithrobby.fyi/blog/10-ways-to-make-claude-code-usage-last-longer.html</loc>

@@ -54,10 +54,11 @@ function pickRelated(post, allPosts, limit = 3) {
     .map(x => x.post);
 }
 
-function postTemplate({ title, date, updated, tags, thumbnail, youtubeId, excerpt, htmlContent, slug, readTime, related = [] }) {
+function postTemplate({ title, date, updated, tags, thumbnail, youtubeId, excerpt, htmlContent, slug, readTime, guide = false, related = [] }) {
   const tagBadges = (tags || []).map(t => `<span class="post-tag">${t}</span>`).join('');
   // The hero sits below the video on video posts (so lazy), and is the LCP element otherwise.
-  const heroImage = thumbnail
+  // Guide posts (the page a TikTok / Instagram DM sends): no hero image, the links come first.
+  const heroImage = thumbnail && !guide
     ? `<img src="../${thumbnail}" alt="${title} thumbnail" class="post-hero-img" width="1600" height="900" ${youtubeId ? 'loading="lazy" decoding="async"' : 'fetchpriority="high"'} />`
     : '';
   // Facade: ship a poster image, swap in the real iframe on click. Avoids ~500KB
@@ -197,9 +198,9 @@ ${JSON.stringify({ '@context': 'https://schema.org', '@graph': ldGraph }, null, 
 
     <!-- Header -->
     <header class="post-header">
-      <div class="post-tags">${tagBadges}</div>
+      ${guide ? '' : `<div class="post-tags">${tagBadges}</div>`}
       <h1 class="post-title">${title}</h1>
-      <p class="post-excerpt">${excerpt}</p>
+      ${guide ? '' : `<p class="post-excerpt">${excerpt}</p>`}
       <div class="post-meta">
         <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
         <span>·</span>
@@ -459,6 +460,7 @@ function build() {
       excerpt:   fm.excerpt   || '',
       thumbnail: fm.thumbnail || null,
       youtubeId: fm.youtubeId || null,
+      guide:     fm.guide === true,
       tags:      fm.tags      || [],
       readTime,
       htmlContent: html,

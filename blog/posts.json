@@ -1,5 +1,258 @@
 [
   {
+    "slug": "1000-claude-agents-formalized-fermat-in-30-hours",
+    "title": "1,000 Claude Agents Formalized Fermat in 30 Hours: The Paper and All the Sources",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "Anthropic's team of 1,000 Claude Fable 5.2 agents turned the proof of Fermat's Last Theorem into Lean code in 30 hours. Here are the paper, the sources, how the run worked and its limits.",
+    "thumbnail": "assets/images/blog-thumbnails/1000-claude-agents-formalized-fermat-in-30-hours.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "AI News",
+      "Fable 5.2"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-fable-5-2-designed-3-working-gadgets",
+    "title": "Claude Fable 5.2 Designed 3 Working Gadgets: How It Worked and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "From a one paragraph prompt, Claude Fable 5.2 designed a speakerphone, a voice assistant hub and a handheld virtual pet, circuit boards and all. Here is how it worked, the limits, and who can use Fable 5.2.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-fable-5-2-designed-3-working-gadgets.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "Claude Fable",
+      "AI Hardware",
+      "AI News"
+    ],
+    "readTime": 2
+  },
+  {
+    "slug": "claude-meetings-google-meet-links",
+    "title": "Claude Meetings for Google Meet: Links and Who Can Use It",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "Claude Meetings puts Claude in your Google Meet call as a visible participant. Here are the official links, who can use the beta, and how a Team or Enterprise user adds Claude to a call.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-meetings-google-meet-links.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "Google Meet",
+      "AI Tools",
+      "Productivity"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "claude-projects-research-on-a-schedule",
+    "title": "Claude Projects Scheduled Research: Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "How to set up a redesigned Claude Project in Claude Code that runs research hourly, daily or weekly and files each report in its Library. Steps from the official docs, plus who can use it.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-projects-research-on-a-schedule.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "Tutorial"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "claude-sheets-setup-guide-and-prompt",
+    "title": "Claude Sheets: Setup Guide, Prompt and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "How to start Claude Sheets, the beta that builds a spreadsheet from a prompt, plus the exact tracker prompt from my video, the plans that have it and its current limits.",
+    "thumbnail": "assets/images/blog-thumbnails/claude-sheets-setup-guide-and-prompt.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Claude Sheets",
+      "Anthropic",
+      "AI Tools",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "emil-kowalski-ui-skills-for-claude-code",
+    "title": "Emil Kowalski UI Skills for Claude Code: Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "How to install Emil Kowalski's free UI and animation skills in Claude Code, and how to run /animate, /break-ui and the new /learn-taste.",
+    "thumbnail": "assets/images/blog-thumbnails/emil-kowalski-ui-skills-for-claude-code.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude Code",
+      "Claude Skills",
+      "Web Design",
+      "Open Source",
+      "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "fable-5-2-plans-opus-5-5-builds-claude-code",
+    "title": "Fable 5.2 Plans, Opus 5.5 Builds: Claude Code Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "How to run Claude Fable 5.2 as the main model in Claude Code and give the work to Opus 5.5 subagents, with the official links, the exact commands and the limits.",
+    "thumbnail": "assets/images/blog-thumbnails/fable-5-2-plans-opus-5-5-builds-claude-code.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "Tutorial"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "gemini-4-carbon-price-and-who-can-use-it",
+    "title": "Gemini 4 Carbon: Links, Price and Who Can Use It",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "Google says Gemini 4 Carbon can run for days on long agentic work. Here are the official links, the intro price that ends November 30, how it compares to Claude Fable 5.2, and who can use it today.",
+    "thumbnail": "assets/images/blog-thumbnails/gemini-4-carbon-price-and-who-can-use-it.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Google Gemini",
+      "Gemini 4 Carbon",
+      "AI Models",
+      "AI Agents",
+      "News"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "github-link-is-a-claude-skill",
+    "title": "A GitHub Link Is a Claude Skill: Setup Guide for Grenade and Remake",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "Put a GitHub link in your prompt and Claude reads the repo and follows it. This is the setup guide for Ruben Hassid's two repos: grenade fixes an artifact, remake rebuilds your own website with /goal in Claude Code.",
+    "thumbnail": "assets/images/blog-thumbnails/github-link-is-a-claude-skill.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude Code",
+      "Claude",
+      "Claude Skills",
+      "GitHub",
+      "Tutorial"
+    ],
+    "readTime": 4
+  },
+  {
+    "slug": "ha-mcp-claude-home-assistant-setup-guide",
+    "title": "HA MCP for Claude and Home Assistant: Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "How to connect Claude to Home Assistant with HA MCP, the free open source server with about 86 tools that can write automations, plus the free demo house if you have no hub yet.",
+    "thumbnail": "assets/images/blog-thumbnails/ha-mcp-claude-home-assistant-setup-guide.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Home Assistant",
+      "MCP",
+      "Smart Home",
+      "Open Source",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "humanizer-and-claude-skills-that-catch-ai-writing",
+    "title": "Humanizer and Claude Skills That Catch AI Writing: Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "How to install Humanizer in Claude Code and get Delete AI Words and Voice DNA from the Claude Skill Library, with the official links and the honest limits.",
+    "thumbnail": "assets/images/blog-thumbnails/humanizer-and-claude-skills-that-catch-ai-writing.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Claude Code",
+      "Claude Skills",
+      "AI Writing",
+      "AI Tools"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "self-hosted-claude-managed-agents",
+    "title": "Self Hosted Claude Managed Agents: Links and Who Can Use It",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "Anthropic now lets you run the whole Claude Managed Agents service in your own cloud: the server, a PostgreSQL database and the workers. Here are the official links, who can get access, and the limits.",
+    "thumbnail": "assets/images/blog-thumbnails/self-hosted-claude-managed-agents.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "Claude",
+      "Anthropic",
+      "AI Agents",
+      "Claude API",
+      "Managed Agents"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "suno-bark-free-text-to-audio-setup-guide",
+    "title": "Bark by Suno: Free Text to Audio Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "Bark is Suno's free, MIT licensed text to audio model. It speaks 13 languages, laughs, sighs and sings when you tag the text. Here are the official links, the setup steps for Colab and your own machine, and the limits.",
+    "thumbnail": "assets/images/blog-thumbnails/suno-bark-free-text-to-audio-setup-guide.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "AI Voice",
+      "Text to Speech",
+      "Open Source",
+      "AI Tools",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
+    "slug": "zonos3-mini-free-voice-cloning-in-browser",
+    "title": "ZONOS3 Mini: Free Voice Cloning in Your Browser, Setup Guide and Links",
+    "date": "2026-11-14",
+    "updated": null,
+    "excerpt": "ZONOS3 Mini from Zyphra clones your own voice in one browser tab through WebGPU, with no install, no server and no account. Here are the official links, the setup steps and the limits.",
+    "thumbnail": "assets/images/blog-thumbnails/zonos3-mini-free-voice-cloning-in-browser.jpg",
+    "youtubeId": null,
+    "guide": true,
+    "tags": [
+      "AI Voice",
+      "Text to Speech",
+      "Open Source",
+      "AI Tools",
+      "Tutorial"
+    ],
+    "readTime": 3
+  },
+  {
     "slug": "10-ways-to-make-claude-code-usage-last-longer",
     "title": "10 Ways to Make Claude Code Usage Last Longer",
     "date": "2026-11-11",
@@ -7,6 +260,7 @@
     "excerpt": "Ten practical tips to stop wasting your Claude Code usage: medium effort, a separate Sonnet 5.5 session, skills, file paths, limit resets, free AI agents and the prompt handoff that lets another agent do what Claude already knows how to do.",
     "thumbnail": "assets/images/blog-thumbnails/10-ways-to-make-claude-code-usage-last-longer.jpg",
     "youtubeId": "gaVtt9fnRfg",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Claude",
@@ -25,6 +279,7 @@
     "excerpt": "A free MIT repo gives Claude Code 94 Blender skills for modeling, lighting, camera moves, rendering and game engine export. Here is how it works, how to set it up on a Mac, and the catches.",
     "thumbnail": "assets/images/blog-thumbnails/94-free-blender-skills-for-claude-code.jpg",
     "youtubeId": "kY6zdK_AkFI",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Open Source",
@@ -42,6 +297,7 @@
     "excerpt": "Vercel Labs' agent-desktop lets Claude Code drive Finder, Notes and GarageBand by reading the accessibility tree instead of screenshots. Version 1.2 adds an MCP server.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-can-now-use-your-mac-apps.jpg",
     "youtubeId": "qw5hT6kLe-g",
+    "guide": false,
     "tags": [
       "Claude Code",
       "AI Agents",
@@ -59,6 +315,7 @@
     "excerpt": "A toilet seat at home did not fit the bowl. One photo to Meta Muse gave me the exact replacement part and a nearby Home Depot that had it in stock, so I fixed it in one trip.",
     "thumbnail": "assets/images/blog-thumbnails/muse-found-the-exact-hardware-part-from-one-photo.jpg",
     "youtubeId": "scwKd9Updeg",
+    "guide": false,
     "tags": [
       "AI",
       "AI Tools",
@@ -76,6 +333,7 @@
     "excerpt": "I lost my car registration, so I sent Meta Muse photos of my documents. It found no open DMV appointments, then filled out the replacement form and built a walk-in checklist anyway.",
     "thumbnail": "assets/images/blog-thumbnails/muse-prepped-my-dmv-visit-from-two-photos.jpg",
     "youtubeId": "GIuAPDPrl_U",
+    "guide": false,
     "tags": [
       "AI",
       "AI Agents",
@@ -93,6 +351,7 @@
     "excerpt": "A realistic debt collection letter arrived with an urgent number to call. Before dialing, I sent a photo to Meta Muse. It flagged the scam language and found the company on online scam registries.",
     "thumbnail": "assets/images/blog-thumbnails/muse-spotted-a-fake-bill-in-my-mailbox.jpg",
     "youtubeId": "GujwRkjJBJM",
+    "guide": false,
     "tags": [
       "AI",
       "AI Tools",
@@ -110,6 +369,7 @@
     "excerpt": "I left the house while a video was still rendering. From my phone, I told Meta Muse to find the export and hand it to Claude Code, and Claude posted it.",
     "thumbnail": "assets/images/blog-thumbnails/meta-muse-controlled-claude-to-post-my-video.jpg",
     "youtubeId": "8fOLHVZyZBk",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Meta",
@@ -127,6 +387,7 @@
     "excerpt": "For a big purchase, I let Meta Muse compare loan terms, scan Marketplace listings and message sellers in English and Spanish. The key was one shared memory document that holds every quote.",
     "thumbnail": "assets/images/blog-thumbnails/muse-researched-lenders-and-messaged-my-sellers.jpg",
     "youtubeId": "Xj8xAa9z3bo",
+    "guide": false,
     "tags": [
       "AI",
       "Meta",
@@ -144,6 +405,7 @@
     "excerpt": "For a group trip, I set Meta Muse to check flight prices every morning, keep a 7 day average and send my phone a buy now or hold off call. No more daily tab refreshing.",
     "thumbnail": "assets/images/blog-thumbnails/muse-tracks-flight-prices-and-alerts-when-to-buy.jpg",
     "youtubeId": "aVvaJlB_vX8",
+    "guide": false,
     "tags": [
       "AI",
       "AI Agents",
@@ -161,6 +423,7 @@
     "excerpt": "Government appointment calendars can show no openings for months. I set Meta Muse to check the booking portal every day at 9:30 AM and message my phone when a slot opens.",
     "thumbnail": "assets/images/blog-thumbnails/muse-watches-government-appointments-every-morning.jpg",
     "youtubeId": "NhQ_lomGCQY",
+    "guide": false,
     "tags": [
       "AI",
       "Meta",
@@ -178,6 +441,7 @@
     "excerpt": "A parking ticket came in the mail with a photo of my car. Meta Muse looked at that photo, saw the lights were on, and wrote the appeal around that one detail.",
     "thumbnail": "assets/images/blog-thumbnails/muse-won-my-parking-ticket-appeal-from-one-photo.jpg",
     "youtubeId": "tuNYIufK7yw",
+    "guide": false,
     "tags": [
       "AI",
       "Meta",
@@ -195,6 +459,7 @@
     "excerpt": "ChatGPT Images 2.6 turns a prompt or a photo into a looping GIF, saves reference images you can reuse, and is faster in the API. GIFs are still rolling out, and OpenAI has not published a per plan limit.",
     "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-6-3-new-things-2-catches.jpg",
     "youtubeId": "Js33XSFTQlQ",
+    "guide": false,
     "tags": [
       "ChatGPT",
       "OpenAI",
@@ -212,6 +477,7 @@
     "excerpt": "3brown1blue is a free, MIT licensed Claude Code skill that plans and writes Manim code for math explainer videos. It needs no API key on Claude Code, but you install Manim and LaTeX yourself.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-skill-animates-math-like-manim.jpg",
     "youtubeId": "yWZbdg9PMSA",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Open Source",
@@ -229,6 +495,7 @@
     "excerpt": "I have used every major AI agent, and Meta Muse is the one that changed my daily life. Here is how I use it for errands, paperwork, big purchases, running my channel and learning, plus where it falls short.",
     "thumbnail": "assets/images/blog-thumbnails/meta-muse-has-changed-my-life.jpg",
     "youtubeId": "eE3xihEjsQo",
+    "guide": false,
     "tags": [
       "Meta",
       "AI Agents",
@@ -246,6 +513,7 @@
     "excerpt": "Animate is a free, open source Claude Code skill that writes the story, draws every frame in code, makes the music and renders an MP4 from one prompt. I used it to make a 30 second demo video for my own app, OpenFlow.",
     "thumbnail": "assets/images/blog-thumbnails/this-free-claude-code-skill-makes-animated-videos.jpg",
     "youtubeId": "Abws832nFJA",
+    "guide": false,
     "tags": [
       "Claude Code",
       "AI Video",
@@ -263,6 +531,7 @@
     "excerpt": "Teardown is a free, MIT licensed Claude skill by Jakub Krehel that turns a photo, a description or a CAD model into a labeled exploded technical drawing you can color and export.",
     "thumbnail": "assets/images/blog-thumbnails/turn-any-object-into-an-exploded-drawing.jpg",
     "youtubeId": "Pcs-M6w2r20",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Claude",
@@ -280,6 +549,7 @@
     "excerpt": "In its own onboarding race, Pomerado finished a website job for 3 cents while Codex Computer Use spent $41.01. The trick is to explore a site once and turn the task into an MCP tool.",
     "thumbnail": "assets/images/blog-thumbnails/3-cents-vs-41-for-the-same-website-task.jpg",
     "youtubeId": "cjD32lp0yb4",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Open Source",
@@ -297,6 +567,7 @@
     "excerpt": "Hallmark v2 is a free Claude Code skill that refuses AI slop. Same prompt in Opus 5.5: 26 issues alone, zero with Hallmark.",
     "thumbnail": "assets/images/blog-thumbnails/hallmark-v2-stops-claude-code-building-generic-ai-slop.jpg",
     "youtubeId": "scBiMD3Rq7M",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Web Design",
@@ -313,6 +584,7 @@
     "excerpt": "Liquid AI's LFM3 1.7B fits in about 1 GB and runs on your Mac with one Ollama command. Here is what it does well and where its limits are.",
     "thumbnail": "assets/images/blog-thumbnails/stop-paying-api-fees-for-simple-local-ai-agents.jpg",
     "youtubeId": "7cMz96MKuvY",
+    "guide": false,
     "tags": [
       "Local AI",
       "AI Models",
@@ -330,6 +602,7 @@
     "excerpt": "Bygga is a free, open source site with 3D assembly guides for 1,223 IKEA products. Every step plays in 3D and is read out loud.",
     "thumbnail": "assets/images/blog-thumbnails/free-3d-site-replaces-paper-ikea-manuals.jpg",
     "youtubeId": "_uok0TRWe74",
+    "guide": false,
     "tags": [
       "Open Source",
       "Free Tools",
@@ -346,6 +619,7 @@
     "excerpt": "Anthropic's S-1 filing says over 90% of the contributions to its codebase in September 2026 were written by Claude. Here is the exact wording and the numbers around it.",
     "thumbnail": "assets/images/blog-thumbnails/how-claude-wrote-90-percent-of-anthropics-codebase.jpg",
     "youtubeId": "YrkyAIFpPro",
+    "guide": false,
     "tags": [
       "Anthropic",
       "Claude",
@@ -363,6 +637,7 @@
     "excerpt": "On iPhone, Claude voice mode now works with Apple CarPlay. The same update adds multiple account switching on iOS and Android and 24 more app languages.",
     "thumbnail": "assets/images/blog-thumbnails/claude-voice-mode-now-works-in-apple-carplay.jpg",
     "youtubeId": "x4He4fEcsuc",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -379,6 +654,7 @@
     "excerpt": "I took one text file of rough notes for a made up coffee shop and turned it into a bank plan, a slide deck, a brand system and a landing page with a phone version, all inside Claude with Docs, Slides and Design.",
     "thumbnail": "assets/images/blog-thumbnails/claude-design-tutorial-create-landing-pages-and-brand-kits.jpg",
     "youtubeId": "IjPY2A4f66k",
+    "guide": false,
     "tags": [
       "Claude",
       "Claude Design",
@@ -397,6 +673,7 @@
     "excerpt": "An outside red team from METR and Redwood Research estimates that on the order of 10% of OpenAI's eligible internal Codex traffic went unmonitored from May to July 2026. The cause was compaction.",
     "thumbnail": "assets/images/blog-thumbnails/metr-found-a-gap-in-openais-codex-monitoring.jpg",
     "youtubeId": "oDKA1lK_kSg",
+    "guide": false,
     "tags": [
       "AI Safety",
       "OpenAI",
@@ -414,6 +691,7 @@
     "excerpt": "Microsoft says its MAI-DxO system was 1.7 times as accurate as doctors on emergency room cases, 80% vs 47%, in a paper published in Science. Here is how it was tested and what it does not prove.",
     "thumbnail": "assets/images/blog-thumbnails/microsoft-ai-vs-doctors-80-vs-47-on-er-cases.jpg",
     "youtubeId": "Tj_NlrCRGa8",
+    "guide": false,
     "tags": [
       "Microsoft",
       "Medical AI",
@@ -431,6 +709,7 @@
     "excerpt": "OpenAI paused frontier training for 11 days after an internal research model used a misconfigured DNS resolver to get limited access to the live internet. It asked an outside chatbot for the capital of France.",
     "thumbnail": "assets/images/blog-thumbnails/openais-model-reached-the-internet-through-dns.jpg",
     "youtubeId": "C1IS_lgL9HA",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Safety",
@@ -448,6 +727,7 @@
     "excerpt": "The MemoryTax paper found that Pi, running Claude Opus 5.5 and searching raw history with its own tools, scored 99% on a memory test for $6.95. Building Mem0's memory alone cost $25.88.",
     "thumbnail": "assets/images/blog-thumbnails/pi-scored-99-percent-for-6-95-full-context-cost-17-84.jpg",
     "youtubeId": "otQudr_iDKc",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Agent Memory",
@@ -465,6 +745,7 @@
     "excerpt": "Ruben Hassid shared three Claude habits in his How to AI newsletter: run a clean test, make Claude restate your goal, and ask for an HTML page. Here is each one, with the exact prompt lines and the limits.",
     "thumbnail": "assets/images/blog-thumbnails/3-claude-habits-from-ruben-hassid.jpg",
     "youtubeId": "ZFzFu4470VU",
+    "guide": false,
     "tags": [
       "Claude",
       "Prompt Engineering",
@@ -482,6 +763,7 @@
     "excerpt": "I gave Kimi K3.1 Pro and Claude Opus 5.5 the same 5 game prompts, one shot each. Kimi used 30% of its session on game 1 and 60% after game 2. Claude Code was at 3% and then 6%.",
     "thumbnail": "assets/images/blog-thumbnails/china-is-number-1-again-kimi-k3-1-pro-vs-opus-5-5.jpg",
     "youtubeId": "sFj1MjoK_hM",
+    "guide": false,
     "tags": [
       "Kimi",
       "Claude Opus",
@@ -500,6 +782,7 @@
     "excerpt": "Datalab's Indra OCR 1.1 reads 43.9 pages per second on a 32 core AMD EPYC CPU with no GPU, 15 times faster than Tesseract in Datalab's test. Here is what it reads, where it struggles, and the license catch.",
     "thumbnail": "assets/images/blog-thumbnails/indra-ocr-1-1-43-9-pages-per-second-on-a-32-core-cpu.jpg",
     "youtubeId": "sekGGNYXUYI",
+    "guide": false,
     "tags": [
       "OCR",
       "AI Tools",
@@ -517,6 +800,7 @@
     "excerpt": "Moonshot AI says Kimi K3.1 Pro scores 65.7% on Terminal-Bench 4.0, ahead of GPT-6 Astra at 58.2% and 0.7 points behind Claude Opus 5.5. The weights are due by November 4. Here is the catch behind the numbers.",
     "thumbnail": "assets/images/blog-thumbnails/kimi-k3-1-pro-beat-gpt-6-astra-on-terminal-bench-4-0.jpg",
     "youtubeId": "MMQF8Eaadsw",
+    "guide": false,
     "tags": [
       "Kimi",
       "Open Source",
@@ -534,6 +818,7 @@
     "excerpt": "1Password for Agents lets supported AI agents sign in to your accounts without ever seeing your password. You approve each login on your own device. Here is how it works, which agents it supports, and the limits.",
     "thumbnail": "assets/images/blog-thumbnails/1password-lets-ai-agents-log-in-without-your-password.jpg",
     "youtubeId": "hVT1b5CnFzM",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Security",
@@ -551,6 +836,7 @@
     "excerpt": "A designer called Elaya published landing-page-design, an MIT licensed markdown skill that gives Claude Code and Cursor a strategy intake, a 12 section page plan and hard visual rules. Here is what is in it and what changed this week.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-and-cursor-get-a-free-landing-page-rulebook.jpg",
     "youtubeId": "ezTiwtvwsGE",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Cursor",
@@ -568,6 +854,7 @@
     "excerpt": "Recursive released Flint, an Apache 2.0 coding model with 39.8 billion parameters and about 2.5 billion active per token. Here are its reported scores, the model that beats it, the hardware it needs, and the rec engine that runs it on a Mac.",
     "thumbnail": "assets/images/blog-thumbnails/recursive-flint-almost-40b-coding-model-only-2-5b-active.jpg",
     "youtubeId": "d_cUxSMVtTo",
+    "guide": false,
     "tags": [
       "Open Source",
       "AI Coding",
@@ -585,6 +872,7 @@
     "excerpt": "Claude Managed Agents runs a Claude agent on Anthropic's servers instead of your laptop, with memory across sessions and an optional self-hosted sandbox. One Claude Code command walks you through the setup. It is a beta and bills at API rates.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-sets-up-a-cloud-agent-in-one-command.jpg",
     "youtubeId": "0idZ-z5jWo8",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Claude",
@@ -602,6 +890,7 @@
     "excerpt": "gpu-unlock is a free Linux kernel module that, per its README, doubles the FP16 and BF16 instruction issue rate on RTX 30 series chips. On one user's RTX 3090 Ti test, BF16 went from 87.50 to 157.41 TFLOPS.",
     "thumbnail": "assets/images/blog-thumbnails/free-repo-lifts-an-nvidia-limit-on-rtx-30-cards.jpg",
     "youtubeId": "1G25dslABA4",
+    "guide": false,
     "tags": [
       "NVIDIA",
       "Local AI",
@@ -619,6 +908,7 @@
     "excerpt": "In the Emergence World study, eight AI towns of ten agents ran for 16 days. Grok's town was gone in four days with 807 crimes. Claude, GPT and Qwen had zero. Then the towns were hit with phishing, a fake memo and leaked memories.",
     "thumbnail": "assets/images/blog-thumbnails/groks-ai-town-collapsed-in-4-days-claudes-had-0-crimes.jpg",
     "youtubeId": "_QFONEARCEk",
+    "guide": false,
     "tags": [
       "AI Agents",
       "AI Safety",
@@ -636,6 +926,7 @@
     "excerpt": "Claude Max plans now come with monthly API credits: $100 on Max 5x, $200 on Max 20x, up to $500 pooled on Team. They cover the Claude API, Managed Agents, the Agent SDK and the Playground, but not Claude Code. You have to claim them.",
     "thumbnail": "assets/images/blog-thumbnails/claude-max-now-includes-200-of-api-credits-a-month.jpg",
     "youtubeId": "CTiEnxQPjYY",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -653,6 +944,7 @@
     "excerpt": "PHP2Shell is a pair of critical PHP bugs that can let a stranger run code on your server. Calif found the first with GPT-5.6 Sol, Wiz found both with Gemini 4 Argon and GPT-5.6 Sol. Here is how to check your version and what to update to.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-5-6-sol-helped-find-a-critical-php-flaw.jpg",
     "youtubeId": "kCb_x3mTzRA",
+    "guide": false,
     "tags": [
       "Security",
       "PHP",
@@ -670,6 +962,7 @@
     "excerpt": "OpenAI's new Misalignment Reports show two of its own agents weakening its misalignment monitoring. GPT-6.1 Sol switched off the human alerts. GPT-6 Astra removed a monitor, then made a false claim about it.",
     "thumbnail": "assets/images/blog-thumbnails/sol-muted-the-alerts-astra-removed-the-monitor.jpg",
     "youtubeId": "JxSFwtdPvTo",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Safety",
@@ -687,6 +980,7 @@
     "excerpt": "Working inside Claude Science, an internal Anthropic research model generated 318,484 protein designs against scorpion neurotoxins and picked 180 in 64 hours. Of 211 designs tested in two labs, 17 met the binding criteria, and all 211 are public on Hugging Face.",
     "thumbnail": "assets/images/blog-thumbnails/claude-designed-318484-proteins-in-64-hours.jpg",
     "youtubeId": "x-JIwXsHyUI",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -703,6 +997,7 @@
     "excerpt": "Claude Duet is a new Anthropic app built around Claude Opus 5.5 that sends you a morning brief, checks your apps every few hours and keeps working on its own virtual machine. It waits for your approval before it sends, pays, signs or deletes anything.",
     "thumbnail": "assets/images/blog-thumbnails/claude-duet-claude-now-messages-you-first.jpg",
     "youtubeId": "XyNu4oY_K0c",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -719,6 +1014,7 @@
     "excerpt": "MoneyPrinter turns one sentence into a finished YouTube Short with a script, voiceover, stock footage, subtitles and music. My Colab notebook runs it with a local Llama model and one free Pexels key, so you pay for no AI API at all.",
     "thumbnail": "assets/images/blog-thumbnails/create-unlimited-ai-videos-free-with-moneyprinter.jpg",
     "youtubeId": "EJd30cDkT5M",
+    "guide": false,
     "tags": [
       "AI Video",
       "Open Source",
@@ -736,6 +1032,7 @@
     "excerpt": "A new paper, TheoPhysEval, gave AI agents 50 unpublished research level physics problems written by world experts. GPT-6 Astra in Codex solved 49 of 50 for under $3 a problem, and the authors suspect the models memorized much of the literature.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-6-astra-scored-98-percent-on-expert-physics.jpg",
     "youtubeId": "Phd2umdZX2g",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Models",
@@ -752,6 +1049,7 @@
     "excerpt": "OpenAI's browser extension got a Work mode that controls your tabs instead of just reading them. It sends messages, fills forms, downloads files, and asks before it touches each new website.",
     "thumbnail": "assets/images/blog-thumbnails/chatgpt-can-now-work-across-your-chrome-tabs.jpg",
     "youtubeId": "IMW4ChcFTnM",
+    "guide": false,
     "tags": [
       "ChatGPT",
       "OpenAI",
@@ -768,6 +1066,7 @@
     "excerpt": "VoiceStudio is an open source AGPL-3.0 app that clones a voice from about three seconds of clean audio, dubs video, designs voices and covers 646 languages, all on your own machine.",
     "thumbnail": "assets/images/blog-thumbnails/clone-any-voice-locally-from-3-seconds-of-audio.jpg",
     "youtubeId": "1Quld6s3Yjo",
+    "guide": false,
     "tags": [
       "Voice AI",
       "Open Source",
@@ -785,6 +1084,7 @@
     "excerpt": "RSI-Anything lets a 4 billion parameter model predict outcomes with a world model before it acts. Over five versions its lab planning score went from 21.80% to 46.01%, against 22.76% for GPT-5.5.",
     "thumbnail": "assets/images/blog-thumbnails/this-4b-ai-model-beat-gpt-5-5-at-lab-planning.jpg",
     "youtubeId": "SmL15GZ6BfY",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -802,6 +1102,7 @@
     "excerpt": "Anthropic's Knowledge Work Plugins repo holds 22 plugins with 252 skills, 15 commands and 5 agents, all plain markdown and JSON. Two commands install one in Claude Code, and the skills fire on their own when they are relevant.",
     "thumbnail": "assets/images/blog-thumbnails/anthropic-knowledge-work-plugins-22-plugins-252-skills.jpg",
     "youtubeId": "rwv5WT3U64E",
+    "guide": false,
     "tags": [
       "Claude",
       "Claude Code",
@@ -819,6 +1120,7 @@
     "excerpt": "According to a DOJ complaint, an OpenAI engineer is charged with trying to intercept oral communications after an encrypted recording device was found hidden in toilet paper in an executive conference room. These are allegations, not a conviction.",
     "thumbnail": "assets/images/blog-thumbnails/hidden-recorder-found-in-openais-exec-room.jpg",
     "youtubeId": "MBTMFwKXNkE",
+    "guide": false,
     "tags": [
       "OpenAI",
       "News",
@@ -835,6 +1137,7 @@
     "excerpt": "During a live internet test on July 18, Claude Haiku 4.5 submitted an invented tip about an unsolved homicide to a Philadelphia police form. The tip went to spam, and Anthropic has now taken all internal evaluations off the live internet.",
     "thumbnail": "assets/images/blog-thumbnails/how-claude-sent-police-a-false-murder-tip.jpg",
     "youtubeId": "7hJA98QSLJg",
+    "guide": false,
     "tags": [
       "Anthropic",
       "Claude",
@@ -852,6 +1155,7 @@
     "excerpt": "Teasr turns a website address into a branded product video with original music in about 8 minutes, from $21.06 for 15 seconds, in both 16:9 and 9:16.",
     "thumbnail": "assets/images/blog-thumbnails/nobody-edited-this-video-it-was-made-from-a-website.jpg",
     "youtubeId": "UUdpBZzydF4",
+    "guide": false,
     "tags": [
       "AI Video",
       "AI Tools",
@@ -868,6 +1172,7 @@
     "excerpt": "Ask ChatGPT, Claude and Gemini to pick a number from 1 to 10 and you tend to get 7. A prompting method from a Stanford and Northeastern paper, Verbalized Sampling, gets you a real spread, and it measured 1.6 to 2.1 times more variety in creative writing.",
     "thumbnail": "assets/images/blog-thumbnails/stop-ai-from-giving-the-same-answer.jpg",
     "youtubeId": "hj6eirnuS60",
+    "guide": false,
     "tags": [
       "AI",
       "ChatGPT",
@@ -885,6 +1190,7 @@
     "excerpt": "PurffleShorts writes the script, grades it, voices it, finds stock footage and burns in captions with sound effects, from one sentence. It makes 11 formats, including text message and Reddit stories, and a full video takes about 4 to 5 minutes in my free Colab notebook.",
     "thumbnail": "assets/images/blog-thumbnails/free-ai-turns-one-sentence-into-viral-shorts.jpg",
     "youtubeId": "Qmykk5BiKOw",
+    "guide": false,
     "tags": [
       "AI Video",
       "Open Source",
@@ -902,6 +1208,7 @@
     "excerpt": "Meta's Muse Wonder combines Active Memory and Active Focus: it plans around your real habits and keeps working on a task until it is done. It scores 85.6% on Meta's internal MemoryBench and is in Muse Code from $5 a month.",
     "thumbnail": "assets/images/blog-thumbnails/metas-new-ai-remembers-your-habits-and-runs-errands.jpg",
     "youtubeId": "YPx84-G_US4",
+    "guide": false,
     "tags": [
       "AI",
       "AI Models",
@@ -918,6 +1225,7 @@
     "excerpt": "Mistral Large 4 (Le Chonk) points at the evidence before it answers. On the Dense 200 bounding box test it scored 42.0, ahead of GPT-6 Astra at 41.5, and it zooms through engineering drawings until the answer is exact.",
     "thumbnail": "assets/images/blog-thumbnails/mistral-large-4-reads-blueprints-without-hallucinating.jpg",
     "youtubeId": "4GNKKXWT4WY",
+    "guide": false,
     "tags": [
       "AI Models",
       "Benchmarks",
@@ -935,6 +1243,7 @@
     "excerpt": "Z.ai's GLM-Legal turns the small GLM-5.3-Flash into a legal agent that writes concrete redlines. It scores 19.2% on Harvey's Legal Agent Benchmark, 12.5 points over its base model, and Vals ranks it 7th and the cheapest in its top 10.",
     "thumbnail": "assets/images/blog-thumbnails/an-ai-just-marked-up-this-contract-like-a-senior-lawyer.jpg",
     "youtubeId": "DgRwjdxQooc",
+    "guide": false,
     "tags": [
       "AI",
       "AI Models",
@@ -952,6 +1261,7 @@
     "excerpt": "AI Shorts Generator turns one sentence into a finished 1080x1920 short, but out of the box it needs paid OpenAI and fal.ai keys. I patched it to run free in Google Colab with Gemini, Edge voices and SDXL Turbo images on the free T4 GPU.",
     "thumbnail": "assets/images/blog-thumbnails/make-unlimited-ai-shorts-free-step-by-step.jpg",
     "youtubeId": "-2L2BuMVdyk",
+    "guide": false,
     "tags": [
       "AI Video",
       "Open Source",
@@ -969,6 +1279,7 @@
     "excerpt": "NVIDIA PersonaPlex is one open model that listens and talks at the same time. In NVIDIA's tests it takes the turn in 0.17 seconds versus 1.301 for Gemini 2.0 Flash Live, the code is MIT, and you can run it locally in three steps.",
     "thumbnail": "assets/images/blog-thumbnails/nvidias-new-voice-ai-sounds-terrifyingly-real.jpg",
     "youtubeId": "ftVH4tl0d28",
+    "guide": false,
     "tags": [
       "AI",
       "Voice AI",
@@ -986,6 +1297,7 @@
     "excerpt": "Claude Dashboards builds a live dashboard from one prompt and shows the formula or SQL behind every number. I build one from a CSV, make it refresh from Google Drive, and connect BigQuery's free sandbox.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-use-claude-dashboards-beginner-guide.jpg",
     "youtubeId": "n57IpSe8jeY",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -1003,6 +1315,7 @@
     "excerpt": "Free Claude Code is an open source local proxy that runs the Claude Code CLI on other models, like NVIDIA's Nemotron on a free NVIDIA developer key. Setup is three steps, but the free tier is for prototyping and testing only.",
     "thumbnail": "assets/images/blog-thumbnails/run-claude-code-without-claude-free-setup-guide.jpg",
     "youtubeId": "YlsGukeRD-Q",
+    "guide": false,
     "tags": [
       "Claude Code",
       "AI Tools",
@@ -1020,6 +1333,7 @@
     "excerpt": "Sakana AI and UC Berkeley's MASS turns one model, Qwen3.6-27B, into its own team and then trains it on its best team runs. After two rounds it delegates work in 87 of 110 runs instead of 1, and beats the original model in 69.9% of matchups on unseen tasks.",
     "thumbnail": "assets/images/blog-thumbnails/the-secret-to-infinite-ai-improvement.jpg",
     "youtubeId": "fIFtQcy0n7g",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -1037,6 +1351,7 @@
     "excerpt": "REA (Reverse Engineer Anything) is a free, open source MCP server that lets Claude Code, Codex or Cursor drive real reverse engineering tools on your own machine. Setup is one command: npx rea-agents setup.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-can-now-reverse-engineer-any-app.jpg",
     "youtubeId": "LCVmu9gKljs",
+    "guide": false,
     "tags": [
       "Claude Code",
       "AI Tools",
@@ -1054,6 +1369,7 @@
     "excerpt": "The Google Colab link in the ShortGPT repo no longer runs, so I fixed it with 7 patches in one cell. Three free API keys and one sentence give you a finished AI video, with script, stock footage, voiceover and edit done for you.",
     "thumbnail": "assets/images/blog-thumbnails/make-unlimited-ai-videos-with-shortgpt-free.jpg",
     "youtubeId": "be7vO2j7Fmc",
+    "guide": false,
     "tags": [
       "AI Video",
       "Open Source",
@@ -1071,6 +1387,7 @@
     "excerpt": "An uncensored Qwen Image 2.1 Turbo encoder pulled over 258,000 downloads in under a week. Its own makers tested 45 sensitive image prompts and found that zero of them changed.",
     "thumbnail": "assets/images/blog-thumbnails/this-uncensored-ai-image-model-changes-nothing.jpg",
     "youtubeId": "jYqYdIVWP54",
+    "guide": false,
     "tags": [
       "AI",
       "AI Images",
@@ -1088,6 +1405,7 @@
     "excerpt": "Microsoft says its own Maia chips will be the primary inference system behind its products, at multi-gigawatt scale starting in 2027. The new Maia 300 packs 288 GB of HBM4 and 18 TB/s of bandwidth into 950 watts.",
     "thumbnail": "assets/images/blog-thumbnails/microsoft-is-betting-its-ai-on-its-own-chip.jpg",
     "youtubeId": "ZlbSGltgxLg",
+    "guide": false,
     "tags": [
       "AI",
       "AI Hardware",
@@ -1104,6 +1422,7 @@
     "excerpt": "OpenAI shut the Sora app down on April 26, 2026. According to The Information, a startup from Jeffrey Katzenberg and former Sora research lead Bill Peebles is now in talks to bring it back as a tool for film studios.",
     "thumbnail": "assets/images/blog-thumbnails/sora-is-coming-back-but-not-for-you.jpg",
     "youtubeId": "rtf5ALXhexk",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Video",
@@ -1120,6 +1439,7 @@
     "excerpt": "mimic records the traffic from apps on your own iPhone, then Claude writes a Python client from every endpoint it saw. The open source repo had 2,762 GitHub stars when I checked it.",
     "thumbnail": "assets/images/blog-thumbnails/turn-your-iphone-apps-into-python-libraries.jpg",
     "youtubeId": "D28pf006Ch4",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Python",
@@ -1137,6 +1457,7 @@
     "excerpt": "Andrej Karpathy says only about 5,000 people have access to frontier AI systems internally, while about 6 billion have barely touched an LLM. Here is his four tier funnel and the one factor you control.",
     "thumbnail": "assets/images/blog-thumbnails/only-5000-people-have-seen-real-ai-karpathy.jpg",
     "youtubeId": "9WTpzmNpnMg",
+    "guide": false,
     "tags": [
       "AI",
       "AI Agents",
@@ -1153,6 +1474,7 @@
     "excerpt": "Anatomy is a free, MIT-licensed Claude Code skill that explains an idea by building it as a working isometric machine. It reached 9,471 GitHub stars in its first six days.",
     "thumbnail": "assets/images/blog-thumbnails/this-claude-code-skill-turns-ideas-into-visuals.jpg",
     "youtubeId": "JhtOy31FO-Q",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Claude",
@@ -1170,6 +1492,7 @@
     "excerpt": "Google opened SynthID Detector to everyone. One upload checks images, video and audio for watermarks from Google, OpenAI, NVIDIA and Kakao, and Google has already watermarked over 180 billion images and videos.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-spot-fake-ai-content-instantly.jpg",
     "youtubeId": "2bPfZbnwQFM",
+    "guide": false,
     "tags": [
       "AI",
       "Google",
@@ -1187,6 +1510,7 @@
     "excerpt": "Ten coding agents ran the same model on the same 113 real GitHub issues. CodeAF solved 62, Codex solved 51, and Claude Code solved 16, and CodeAF paid the least per fix.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-lost-to-this-free-open-source-agent.jpg",
     "youtubeId": "qougS0C3IH8",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Open Source",
@@ -1204,6 +1528,7 @@
     "excerpt": "GPT-6 in ChatGPT answers with Intelligent UI: charts, forms, buttons and small working tools instead of walls of text. On questions that need web search, GPT-6 Instant also starts answering 44% sooner than GPT-5.6 Instant.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-6-now-builds-you-an-app-instead-of-an-answer.jpg",
     "youtubeId": "6L12V9KhSPY",
+    "guide": false,
     "tags": [
       "OpenAI",
       "ChatGPT",
@@ -1220,6 +1545,7 @@
     "excerpt": "Nano Banana 2.1 costs about 3.4 cents per 1K image, half of Nano Banana 2, and Google says it beats Nano Banana Pro. I ran 7 tests, including the weaknesses Google lists in its own model card, and most of them passed.",
     "thumbnail": "assets/images/blog-thumbnails/i-tried-nano-banana-2-1-and-heres-what-happened.jpg",
     "youtubeId": "l1jmSBnxE8o",
+    "guide": false,
     "tags": [
       "AI Images",
       "Google",
@@ -1238,6 +1564,7 @@
     "excerpt": "SemiAnalysis priced every AI subscription at API rates. The $200 Claude Max 20x plan is worth $11,726 a month on Opus 5.5, while the $200 ChatGPT Pro plan is worth $2,084.",
     "thumbnail": "assets/images/blog-thumbnails/your-200-claude-plan-is-worth-11726-a-month.jpg",
     "youtubeId": "x5n9l-D-9p0",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -1255,6 +1582,7 @@
     "excerpt": "Google DeepMind, Meta, Isomorphic Labs and the US government joined Biohub's Virtual Biology Initiative, bringing it to $1.8 billion in funding, data and compute. The goal is open data at a scale that lets AI simulate a human cell.",
     "thumbnail": "assets/images/blog-thumbnails/1-8-billion-to-build-a-virtual-human-cell-its-open.jpg",
     "youtubeId": "UB3r0-7WG6o",
+    "guide": false,
     "tags": [
       "AI",
       "News",
@@ -1272,6 +1600,7 @@
     "excerpt": "OpenAI's textGrain watermark is coming to ChatGPT and Codex in the EU. In OpenAI's own test it catches a 400 token answer about 92% of the time, but swap a quarter of the words and that falls to 17%.",
     "thumbnail": "assets/images/blog-thumbnails/chatgpt-is-getting-an-invisible-watermark.jpg",
     "youtubeId": "El9T7stgzm0",
+    "guide": false,
     "tags": [
       "OpenAI",
       "ChatGPT",
@@ -1288,6 +1617,7 @@
     "excerpt": "a16z's 7th Top 100 Gen AI Consumer Apps list ranks apps by real U.S. card spending for the first time. Replit is #48 on web traffic but #6 on spending, and 29 of the top 50 earners do not appear on the traffic lists at all.",
     "thumbnail": "assets/images/blog-thumbnails/the-ai-apps-people-actually-pay-for.jpg",
     "youtubeId": "sMlFZHraD5M",
+    "guide": false,
     "tags": [
       "AI",
       "News",
@@ -1305,6 +1635,7 @@
     "excerpt": "Claude Code's new You Should Know mod reads Claude's output and flags the one thing you were about to skim past. In Anthropic's demo it caught a retry bug that would have charged customers twice.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-now-has-a-second-agent-watching-your-back.jpg",
     "youtubeId": "iq_7zsYqslU",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Anthropic",
@@ -1322,6 +1653,7 @@
     "excerpt": "OpenAI published 722 math manuscripts from a model you cannot use yet, including a claim that the irrationality exponent of pi is exactly 2. Lean checks 162 of them. Mathematicians are not sold.",
     "thumbnail": "assets/images/blog-thumbnails/openai-just-dropped-722-math-papers-written-by-ai.jpg",
     "youtubeId": "AaLjWWyiJVA",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Research",
@@ -1339,6 +1671,7 @@
     "excerpt": "Gemini 4 Argon launched at $2 per million input tokens, half of Claude Opus 5.5, and scores 77.9% on DeepSWE v1.1 against 74.2% for Opus. It still loses Terminal-bench 4.0, and almost nobody can use it yet.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-4-argon-beats-opus-5-5-mostly.jpg",
     "youtubeId": "CGY-kGZuzXM",
+    "guide": false,
     "tags": [
       "Google Gemini",
       "Gemini 4 Argon",
@@ -1356,6 +1689,7 @@
     "excerpt": "Mistral Large 4 is a 1 trillion parameter open-weight model that solved 50 tasks on the Artificial Analysis Cyber Index, while Claude Opus 5.5 solved 29 because it kept refusing.",
     "thumbnail": "assets/images/blog-thumbnails/mistral-large-4-le-chonk-does-what-claude-refuses.jpg",
     "youtubeId": "GmdP3PhpXUM",
+    "guide": false,
     "tags": [
       "Mistral",
       "Open Weights",
@@ -1373,6 +1707,7 @@
     "excerpt": "HeyGen released HyperFrames Studio, a desktop video editor where Claude Code or Codex does the editing. The open-source engine under it has about 59,000 GitHub stars and 813,100 npm downloads in a week.",
     "thumbnail": "assets/images/blog-thumbnails/hyperframes-studio-video-editor-for-ai-agents.jpg",
     "youtubeId": "x-6RvomtYJI",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Video Editing",
@@ -1389,6 +1724,7 @@
     "excerpt": "Reflection's Beam is a 501B open weight model from a US lab, under Apache 2.0. It is not the strongest open model. It matches GLM 5.2 while thinking about a third as much, and that is why it matters. Here are the full benchmarks, the efficiency chart, the demos and the catches.",
     "thumbnail": "assets/images/blog-thumbnails/reflection-beam-is-the-new-face-of-open-source-ai.jpg",
     "youtubeId": "4d6c0c5J6tc",
+    "guide": false,
     "tags": [
       "Reflection AI",
       "Beam",
@@ -1406,6 +1742,7 @@
     "excerpt": "Claude Opus 5.5 is smarter than Fable 5.1 on most benchmarks and costs $4 in and $20 out per million tokens. The full benchmark table including the two losses, the independent check, what people built in the first 24 hours, and my verdict.",
     "thumbnail": "assets/images/blog-thumbnails/why-everyone-is-talking-about-claude-opus-5-5.jpg",
     "youtubeId": "qoiy5Jf6nuU",
+    "guide": false,
     "tags": [
       "Claude Opus 5.5",
       "Claude",
@@ -1424,6 +1761,7 @@
     "excerpt": "Google renamed NotebookLM to Gemini Notebook. This is the full course on the 2026 app: every ingestion path, all nine Studio generators, the real storage and usage limits, citation checking, and how I price client knowledge portals.",
     "thumbnail": "assets/images/blog-thumbnails/notebooklm-is-now-gemini-notebook-the-complete-guide.jpg",
     "youtubeId": "7Ao0UHotRpk",
+    "guide": false,
     "tags": [
       "Gemini Notebook",
       "NotebookLM",
@@ -1441,6 +1779,7 @@
     "excerpt": "A three-year survey from American University's Kogod School of Business found the share of students asked about their AI skills by potential employers climbed from 11.6% in 2024 to 42.6% in 2026.",
     "thumbnail": "assets/images/blog-thumbnails/employers-ask-students-about-ai-skills-kogod-study.jpg",
     "youtubeId": "X11gzQGDdcI",
+    "guide": false,
     "tags": [
       "AI Careers",
       "AI in Education",
@@ -1457,6 +1796,7 @@
     "excerpt": "Meta released Muse Code, a terminal coding agent co-trained with its new Muse Spark 1.2 model. It scores 82.9% on Terminal-Bench 2.1 and ran a GPU kernel job for up to 24 hours straight.",
     "thumbnail": "assets/images/blog-thumbnails/meta-just-dropped-its-own-claude-code.jpg",
     "youtubeId": "-H1ocjpjQb0",
+    "guide": false,
     "tags": [
       "Meta",
       "AI Coding Agents",
@@ -1474,6 +1814,7 @@
     "excerpt": "One Sundar Pichai memo moved Demis Hassabis to Chair of Google DeepMind, put Koray Kavukcuoglu in charge of Gemini, and confirmed Jeff Dean is leaving after 27 years, as the Gemini app passed 950M monthly users.",
     "thumbnail": "assets/images/blog-thumbnails/google-ai-leadership-shakeup-jeff-dean-leaves.jpg",
     "youtubeId": "8AT2eiReo4Y",
+    "guide": false,
     "tags": [
       "Google",
       "Google DeepMind",
@@ -1490,6 +1831,7 @@
     "excerpt": "Black Forest Labs' FLUX 3 Video generates clips up to 20 seconds long with dialogue and sound effects built in, and human raters ranked it first for text to video with an Elo score of 1135.",
     "thumbnail": "assets/images/blog-thumbnails/flux-3-video-20-second-clips-with-sound.jpg",
     "youtubeId": "f6UBQaUTLdE",
+    "guide": false,
     "tags": [
       "Black Forest Labs",
       "FLUX 3",
@@ -1506,6 +1848,7 @@
     "excerpt": "Google's Gemini Omni 1.1 Flash extends a scene up to 40 seconds, renders 360p drafts at a third of the 720p cost, and upscales finals to 4K. Here is what changed and what it costs.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-omni-1-1-flash-40-second-scenes-4k.jpg",
     "youtubeId": "CwZ6x4IKOj0",
+    "guide": false,
     "tags": [
       "Google",
       "Gemini Omni",
@@ -1522,6 +1865,7 @@
     "excerpt": "Anthropic retrained the safety classifier behind Claude Fable 5 and cut biology fallbacks by about 85%. Lab results, symptoms, and textbook biology now get the full model instead of a quiet downgrade to Opus 5.",
     "thumbnail": "assets/images/blog-thumbnails/claude-fable-5-biology-fallbacks-cut-85-percent.jpg",
     "youtubeId": "kS053RKIUs4",
+    "guide": false,
     "tags": [
       "Anthropic",
       "Claude Fable 5",
@@ -1538,6 +1882,7 @@
     "excerpt": "Anthropic's Model Hardware Standard lets AI agents run microscopes, robot arms and quantum computer lasers. At QuEra, Claude turned a laser recovery script that worked 58% of the time into one that passed 99.3% of 700 blind trials.",
     "thumbnail": "assets/images/blog-thumbnails/claude-can-now-control-robots-model-hardware-standard.jpg",
     "youtubeId": "qPDQkHSVzH8",
+    "guide": false,
     "tags": [
       "Anthropic",
       "Claude",
@@ -1555,6 +1900,7 @@
     "excerpt": "Surgeons in London removed an 11 millimetre pituitary tumour with an AI reading the live surgical video, a world first from UCL and UCLH. Within a week the patient was walking without glasses or sticks.",
     "thumbnail": "assets/images/blog-thumbnails/surgeons-used-ai-in-real-time-to-remove-a-brain-tumour.jpg",
     "youtubeId": "OtH2lPZdegQ",
+    "guide": false,
     "tags": [
       "AI in Healthcare",
       "Computer Vision",
@@ -1571,6 +1917,7 @@
     "excerpt": "The UK AI Security Institute ran one cyber challenge 122 times and logged 19 unsanctioned actions on the live internet. 17 came from Anthropic's Mythos 5, including an attempted supply chain attack on a real open-source project.",
     "thumbnail": "assets/images/blog-thumbnails/mythos-5-went-rogue-uk-government-cyber-test.jpg",
     "youtubeId": "KZ8A76GHreE",
+    "guide": false,
     "tags": [
       "AI Safety",
       "Cybersecurity",
@@ -1588,6 +1935,7 @@
     "excerpt": "Agent Plugins 1.0 gives AI agents one shared package format for skills and MCP servers. A valid plugin needs only two files, and the same folder loads in ChatGPT, Codex, Cursor, GitHub Copilot, Kiro and VS Code.",
     "thumbnail": "assets/images/blog-thumbnails/big-tech-agreed-on-one-ai-plugin-standard.jpg",
     "youtubeId": "jcBWgI-_JEg",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Agent Skills",
@@ -1605,6 +1953,7 @@
     "excerpt": "The Browser Use team open sourced video-use, a skill that turns any coding agent into a video editor. It reads your footage as text, so a full edit costs kilobytes instead of millions of tokens.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-edits-videos-without-watching-them.jpg",
     "youtubeId": "sfQUjUXddSc",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Video Editing",
@@ -1621,6 +1970,7 @@
     "excerpt": "A full 32 minute course on the Claude.ai web app. Chat vs Cowork, the five surfaces, Artifacts, Projects, Skills, Connectors and MCP, scheduled monitors, the hidden capability layer, and how to price these builds for clients. No code required.",
     "thumbnail": "assets/images/blog-thumbnails/claude-ai-full-course-for-beginners.jpg",
     "youtubeId": "P3f--pEU5GQ",
+    "guide": false,
     "tags": [
       "Claude AI",
       "Anthropic",
@@ -1638,6 +1988,7 @@
     "excerpt": "A full 96 minute course on Gemini Spark, Google's agentic workspace. The four surfaces, custom skills, recurring schedules, the trigger question that powers 24/7 monitors, and how to price these builds for clients. No code required.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-spark-full-course-always-on-ai-agents.jpg",
     "youtubeId": "fiymgj0wbS4",
+    "guide": false,
     "tags": [
       "Gemini Spark",
       "AI Agents",
@@ -1655,6 +2006,7 @@
     "excerpt": "Vercel Labs' remote-agent-browser runs a real Chromium for your AI agent inside an isolated Vercel Sandbox. Its published benchmark opens and snapshots 100 pages in 8.01 seconds, sandbox boot included.",
     "thumbnail": "assets/images/blog-thumbnails/vercel-remote-agent-browser-cloud-browser-for-ai-agents.jpg",
     "youtubeId": "rgZLmdDsmD0",
+    "guide": false,
     "tags": [
       "Vercel",
       "AI Agents",
@@ -1671,6 +2023,7 @@
     "excerpt": "PwC surveyed 1,004 US financial services leaders. 91% are raising pay for employees with AI skills, and 86% say AI skills training is more valuable than an MBA for many new hires.",
     "thumbnail": "assets/images/blog-thumbnails/pwc-91-percent-of-finance-firms-pay-extra-for-ai-skills.jpg",
     "youtubeId": "U-OfN2itd2I",
+    "guide": false,
     "tags": [
       "AI Careers",
       "AI Skills",
@@ -1687,6 +2040,7 @@
     "excerpt": "Alibaba's Qwen 3.8 Max, a 2.4 trillion parameter model, beat 458 of 526 human teams in a 24 hour Tianchi contest and scored 93.0 on PaperBench. It is the first Max class Qwen model with open weights.",
     "thumbnail": "assets/images/blog-thumbnails/qwen-3-8-max-beat-87-percent-of-human-teams.jpg",
     "youtubeId": "Ro1j1w6JdA8",
+    "guide": false,
     "tags": [
       "Qwen",
       "Alibaba",
@@ -1704,6 +2058,7 @@
     "excerpt": "MiniMax released the weights of H3, a 33 billion parameter model that generates video and 32 kHz stereo audio together in one pass. The open checkpoints stop at 768p, and the license leaves out the US, EU, UK and South Korea.",
     "thumbnail": "assets/images/blog-thumbnails/minimax-h3-open-weights-video-stereo-audio.jpg",
     "youtubeId": "8yHKXbcfbgI",
+    "guide": false,
     "tags": [
       "MiniMax",
       "AI Video",
@@ -1721,6 +2076,7 @@
     "excerpt": "An internal version of OpenAI's next model, Astra, resolved or advanced 10 long-standing open problems, with every proof checked in Lean. The tokens to find all 10 would cost roughly $2,000.",
     "thumbnail": "assets/images/blog-thumbnails/openai-astra-solved-10-open-math-problems.jpg",
     "youtubeId": "_ANF6GifL4w",
+    "guide": false,
     "tags": [
       "OpenAI",
       "Astra",
@@ -1738,6 +2094,7 @@
     "excerpt": "During its own cyber tests, Claude reached the real internet and broke into three real organizations. Mythos 5 even published malware to PyPI, where it ran on 15 real systems.",
     "thumbnail": "assets/images/blog-thumbnails/anthropic-ai-published-real-malware-by-accident.jpg",
     "youtubeId": "Y2zefqnSaJo",
+    "guide": false,
     "tags": [
       "Anthropic",
       "Claude",
@@ -1754,6 +2111,7 @@
     "excerpt": "Google DeepMind's Gemini Robotics 2 drives a whole humanoid with one model and unscrews a light bulb 92% of the time. It also learns a new two-arm robot in a few hours, typically from fewer than 200 examples.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-robotics-2-controls-robots-feet-to-fingertips.jpg",
     "youtubeId": "-TBwgNFVcbQ",
+    "guide": false,
     "tags": [
       "Google DeepMind",
       "Robotics",
@@ -1770,6 +2128,7 @@
     "excerpt": "Meituan's open-source LongCat-Video scores 3.38 against Veo 3's 3.48 on its text-to-video eval, with 13.6 billion parameters and MIT licensed weights.",
     "thumbnail": "assets/images/blog-thumbnails/longcat-video-free-ai-video-model-nearly-matches-veo-3.jpg",
     "youtubeId": "gKAf0L4_tDs",
+    "guide": false,
     "tags": [
       "AI Video",
       "Open Source",
@@ -1786,6 +2145,7 @@
     "excerpt": "I gave Gemini Omni my raw talking head footage and one templatized prompt, and it handed back an edited video: kinetic typography, brand slates, color floods, transitions. Here is the exact workflow, the prompt, and the pitfalls that will burn you.",
     "thumbnail": "assets/images/blog-thumbnails/google-flow-tutorial-edit-any-video-with-gemini-omni.jpg",
     "youtubeId": "Wast8OHGREA",
+    "guide": false,
     "tags": [
       "Google Flow",
       "Gemini Omni",
@@ -1802,6 +2162,7 @@
     "excerpt": "OpenAI cut GPT 5.6 Luna's price by 80% on July 30, and the savings came from efficiency work the model did on itself.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-5-6-luna-just-got-80-percent-cheaper.jpg",
     "youtubeId": "1ykD7A0fcmM",
+    "guide": false,
     "tags": [
       "OpenAI",
       "GPT 5.6",
@@ -1819,6 +2180,7 @@
     "excerpt": "Fish Audio released S2.1 Pro, their flagship text to speech model, as a free API with no hard usage cap. 83 languages, roughly 90ms to first audio, and voice cloning included on the free tier.",
     "thumbnail": "assets/images/blog-thumbnails/fish-audio-s2-1-pro-free-tts-api.jpg",
     "youtubeId": "Pd1NIEHbSEA",
+    "guide": false,
     "tags": [
       "Fish Audio",
       "Text to Speech",
@@ -1836,6 +2198,7 @@
     "excerpt": "xAI's new speech to speech model makes up to 2x fewer errors than Deepgram Nova 3 and ElevenLabs Scribe v2, the models built purely for transcription. In noisy audio the gap grows to roughly 10x.",
     "thumbnail": "assets/images/blog-thumbnails/grok-voice-2-0-hears-better-than-transcription-models.jpg",
     "youtubeId": "lpkN0GVg7qU",
+    "guide": false,
     "tags": [
       "xAI",
       "Grok",
@@ -1853,6 +2216,7 @@
     "excerpt": "Google's new music model is live in Flow Music, and it targets the exact failures that made AI songs obvious: flat vocals, looping melodies, and lyrics that ignore the structure you asked for.",
     "thumbnail": "assets/images/blog-thumbnails/lyria-3-5-google-flow-music-ai-vocals.jpg",
     "youtubeId": "AOXuyVBxRpI",
+    "guide": false,
     "tags": [
       "Google",
       "Lyria",
@@ -1870,6 +2234,7 @@
     "excerpt": "Kimi K3's weights are genuinely open, no license gate, no waitlist. The download is 594GB and the floor to load it is eight H100s. Here is what the hardware actually costs, why the community quantization is a trap right now, and the three real ways to use K3.",
     "thumbnail": "assets/images/blog-thumbnails/kimi-k3-is-open-source-you-still-cant-run-it.jpg",
     "youtubeId": "Y91e-FwhwPs",
+    "guide": false,
     "tags": [
       "Kimi K3",
       "Open Source",
@@ -1887,6 +2252,7 @@
     "excerpt": "The Cline team threw a real bug from their own repo at Kimi K3 and Claude Fable 5. Both fixed it. One was 3.4x faster, the other 2.3x cheaper, and the reason why comes down to how Kimi was trained.",
     "thumbnail": "assets/images/blog-thumbnails/kimi-k3-vs-claude-fable-5-same-bug-wild-results.jpg",
     "youtubeId": "GU_6aMh6HOw",
+    "guide": false,
     "tags": [
       "Kimi K3",
       "Claude",
@@ -1904,6 +2270,7 @@
     "excerpt": "Claude Code builds the same generic landing page for everyone. Hallmark is a free open source skill that changes what it reaches for, and it refuses to design anything until it knows who the page is actually for.",
     "thumbnail": "assets/images/blog-thumbnails/hallmark-free-skill-stops-claude-code-building-ai-slop.jpg",
     "youtubeId": "nB2fdOLcP-I",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Web Development",
@@ -1920,6 +2287,7 @@
     "excerpt": "Claude Opus 5 is here: near Fable 5's frontier intelligence at half the price, a new agentic coding record, and roughly triple the field on brand new reasoning puzzles.",
     "thumbnail": "assets/images/blog-thumbnails/claude-opus-5-frontier-intelligence-at-half-the-price.jpg",
     "youtubeId": "dV0_wis-g_g",
+    "guide": false,
     "tags": [
       "Anthropic",
       "Claude",
@@ -1937,6 +2305,7 @@
     "excerpt": "Meta's new Muse Image model reviews its own outputs and redoes the weak parts, a behavior Meta says it never programmed. It is already the number two image model in the world.",
     "thumbnail": "assets/images/blog-thumbnails/meta-muse-image-the-ai-that-fixes-its-own-images.jpg",
     "youtubeId": "8MZcXXVKeR4",
+    "guide": false,
     "tags": [
       "Meta",
       "Image Generation",
@@ -1952,6 +2321,7 @@
     "excerpt": "Gemini 3.6 Flash finishes a long coding task with 97,000 output tokens instead of 276,000, and each token costs less. Here is what every benchmark actually measures, where it wins, and where it is last.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-3-6-flash-explained-cheaper-faster-better.jpg",
     "youtubeId": "8n93rrfugFY",
+    "guide": false,
     "tags": [
       "Gemini",
       "Google",
@@ -1968,6 +2338,7 @@
     "excerpt": "Claude Code defaults to AI slop: Inter font, purple gradients, card grids. These four methods force it to produce websites that look designed instead.",
     "thumbnail": "assets/images/blog-thumbnails/4-ways-to-force-claude-code-to-build-beautiful-websites.jpg",
     "youtubeId": "ABF2tF11Bgc",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Web Development",
@@ -1984,6 +2355,7 @@
     "excerpt": "Google's new Flash models cut agent costs two ways at once, and buried in the announcement: the Gemini 4 pre-training run has already started.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-3-6-flash-beats-sonnet-5-at-computer-use.jpg",
     "youtubeId": "PEnMO_arIYk",
+    "guide": false,
     "tags": [
       "Gemini",
       "Google",
@@ -2000,6 +2372,7 @@
     "excerpt": "Moonshot AI's Kimi K3 is the biggest open model ever built at 2.8 trillion parameters. It ranks number one for frontend code and deep web research, and you can use it free right now.",
     "thumbnail": "assets/images/blog-thumbnails/kimi-k3-open-source-model-beats-claude-frontend-code.jpg",
     "youtubeId": "ZkbLjdHQF34",
+    "guide": false,
     "tags": [
       "Open Source",
       "AI Models",
@@ -2017,6 +2390,7 @@
     "excerpt": "xAI's Grok 4.5 tops the one benchmark that rewards correct answers and punishes confident wrong ones. It ranks number one, and it undercuts the frontier models on price.",
     "thumbnail": "assets/images/blog-thumbnails/grok-4-5-least-hallucinating-ai-model.jpg",
     "youtubeId": "1t-tPUD5uOE",
+    "guide": false,
     "tags": [
       "AI Models",
       "xAI",
@@ -2033,6 +2407,7 @@
     "excerpt": "OpenAI made GPT Live the default ChatGPT voice for everyone, free users included. It reacts while you talk, quietly calls in a smarter model for hard questions, and people prefer it 76 percent of the time.",
     "thumbnail": "assets/images/blog-thumbnails/chatgpt-can-now-talk-gpt-live-full-duplex-voice.jpg",
     "youtubeId": "M5vZ9PjKzS8",
+    "guide": false,
     "tags": [
       "OpenAI",
       "ChatGPT",
@@ -2049,6 +2424,7 @@
     "excerpt": "The Center for AI Safety graded AI agents on real paid freelance work against human professionals. Eight months ago the best model finished 4 percent of a project start to finish. Now it finishes 16 percent.",
     "thumbnail": "assets/images/blog-thumbnails/dont-lose-your-job-to-ai-remote-labor-index.jpg",
     "youtubeId": "kgFszj_uoVg",
+    "guide": false,
     "tags": [
       "AI Safety",
       "Tech Jobs",
@@ -2064,6 +2440,7 @@
     "excerpt": "Ora Directory is the agentic index of the web. It scores tools on whether an AI agent can discover, read, and act on them, so you can plug the best ones straight into your projects.",
     "thumbnail": "assets/images/blog-thumbnails/ora-directory-agentic-index-of-the-web.jpg",
     "youtubeId": "OS0NCmVKELo",
+    "guide": false,
     "tags": [
       "AI Agents",
       "AI Tools",
@@ -2080,6 +2457,7 @@
     "excerpt": "OpenFlow is a free, open source voice dictation app for macOS. Hold a key, speak, and your words appear at your cursor. On device, no cloud, no subscription.",
     "thumbnail": "assets/images/blog-thumbnails/openflow-free-open-source-wispr-flow-alternative-mac.png",
     "youtubeId": null,
+    "guide": false,
     "tags": [
       "OpenFlow",
       "Voice AI",
@@ -2097,6 +2475,7 @@
     "excerpt": "The tools I actually reach for in 2026 look nothing like the 2025 lineup. Six replacements that stuck, including my own open source dictation app.",
     "thumbnail": "assets/images/blog-thumbnails/the-2026-ai-stack-6-tools-that-replaced-the-old-ones.png",
     "youtubeId": null,
+    "guide": false,
     "tags": [
       "AI Tools",
       "Productivity",
@@ -2112,6 +2491,7 @@
     "excerpt": "Ask an AI agent for two pages and you get two different looking websites. Google just open sourced a single markdown file that fixes it, and it can catch its own accessibility bugs.",
     "thumbnail": "assets/images/blog-thumbnails/googles-design-md-fixes-ais-brand-consistency-problem.jpg",
     "youtubeId": "BpFhJFatpx4",
+    "guide": false,
     "tags": [
       "AI Tools",
       "Design Systems",
@@ -2128,6 +2508,7 @@
     "excerpt": "I taught Claude to edit my videos for me. Transcription, take selection, and polish, all automated, and you can run the exact same skill on your own recordings for free.",
     "thumbnail": "assets/images/blog-thumbnails/how-i-use-claude-code-to-edit-my-youtube-videos.jpg",
     "youtubeId": "5XO0_yf0vcY",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Video Editing",
@@ -2144,6 +2525,7 @@
     "excerpt": "No implant, no surgery. Meta's Brain2Qwerty reads a sentence you are typing straight from your brain signals, and version 2 just made a massive accuracy jump.",
     "thumbnail": "assets/images/blog-thumbnails/metas-ai-reads-what-you-type-from-your-brain.jpg",
     "youtubeId": "bkLoAq4TmV0",
+    "guide": false,
     "tags": [
       "AI Research",
       "Meta",
@@ -2159,6 +2541,7 @@
     "excerpt": "OpenAI just previewed their most powerful model ever, and you can't use it. Not because it's broken. The government asked them to hold it back.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-5-6-openais-most-powerful-model-is-locked.jpg",
     "youtubeId": "N0JDE2LrDOw",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Models",
@@ -2175,6 +2558,7 @@
     "excerpt": "A new open-weight coding model handled a real bug fix, found the root cause, and deployed a dashboard for $3.36. Here is why it is becoming a default workhorse.",
     "thumbnail": "assets/images/blog-thumbnails/glm-5-2-fixed-a-bug-for-3-36-in-45-minutes.jpg",
     "youtubeId": "CXrNMyItvnU",
+    "guide": false,
     "tags": [
       "AI Models",
       "Coding",
@@ -2191,6 +2575,7 @@
     "excerpt": "OpenAI's new voice model processes speech directly instead of converting it to text first. That means less lag, smoother conversations, and it finally stops mangling order numbers.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-realtime-2-1-the-speech-to-speech-voice-model.jpg",
     "youtubeId": "--LpmFDKwOY",
+    "guide": false,
     "tags": [
       "OpenAI",
       "Voice AI",
@@ -2207,6 +2592,7 @@
     "excerpt": "Anthropic found a hidden workspace inside Claude that flags deception before the model writes a single word. Nobody coded it in. It showed up on its own during training.",
     "thumbnail": "assets/images/blog-thumbnails/the-j-space-how-claude-flags-its-own-lies.jpg",
     "youtubeId": "N__Bt2CjJWg",
+    "guide": false,
     "tags": [
       "Claude",
       "AI Safety",
@@ -2223,6 +2609,7 @@
     "excerpt": "Anthropic just shipped a desktop app that doesn't just talk about science. It writes and runs the code to analyze proteins, molecules, and genomics, and it checks its own work.",
     "thumbnail": "assets/images/blog-thumbnails/claude-science-anthropics-ai-app-for-real-lab-work.jpg",
     "youtubeId": "s9bcenCD1AM",
+    "guide": false,
     "tags": [
       "Claude",
       "AI Tools",
@@ -2238,6 +2625,7 @@
     "excerpt": "Claude Fable 5 is back online. It got hit with export controls over a jailbreak that writes exploit code, but new tests show every major model has the exact same weakness.",
     "thumbnail": "assets/images/blog-thumbnails/fable-5-got-banned-for-something-gpt-5-5-can-also-do.jpg",
     "youtubeId": "SiPFD49Xsa8",
+    "guide": false,
     "tags": [
       "Claude",
       "AI News",
@@ -2253,6 +2641,7 @@
     "excerpt": "A Claude skill is just a folder with a markdown file. Teach the AI a workflow once, then reuse it every time. Here is how to build your first one.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-build-a-claude-skill-in-60-seconds.jpg",
     "youtubeId": "EGhSccJ5JcQ",
+    "guide": false,
     "tags": [
       "Claude",
       "Claude Code",
@@ -2268,6 +2657,7 @@
     "excerpt": "Most people only use CLAUDE.md. There are actually 7 ways to control Claude Code, each with different tradeoffs in context cost, persistence, and authority. Here is when to use each one.",
     "thumbnail": "assets/images/blog-thumbnails/master-claude-code-7-ways-to-steer-its-behavior.jpg",
     "youtubeId": "cV52QdcfA0s",
+    "guide": false,
     "tags": [
       "Claude Code",
       "AI Tools",
@@ -2283,6 +2673,7 @@
     "excerpt": "OpenAI just announced Jalapeño, a custom chip built from scratch for AI inference. The wild part: OpenAI used its own models to design it in nine months.",
     "thumbnail": "assets/images/blog-thumbnails/openais-new-chip-jalapeno-isnt-a-gpu.jpg",
     "youtubeId": "Rzlgw_BZBKc",
+    "guide": false,
     "tags": [
       "OpenAI",
       "AI Hardware",
@@ -2298,6 +2689,7 @@
     "excerpt": "Google Flow now pulls real Google Maps Street View data into AI video generation. Type a landmark, get a scene that actually matches the real location.",
     "thumbnail": "assets/images/blog-thumbnails/ai-video-now-uses-real-google-maps-imagery.jpg",
     "youtubeId": "Vox578tuyRQ",
+    "guide": false,
     "tags": [
       "AI Video",
       "Google Flow",
@@ -2313,6 +2705,7 @@
     "excerpt": "Script, footage, voiceover, subtitles, background music. All free. Here's exactly how to go from zero to a publishable short-form video in 20 minutes.",
     "thumbnail": "assets/images/blog-thumbnails/generate-free-short-form-videos-with-moneyprinterturbo.jpeg",
     "youtubeId": "mmYCbuZlHpQ",
+    "guide": false,
     "tags": [
       "AI Video",
       "Free Tools",
@@ -2329,6 +2722,7 @@
     "excerpt": "Fugu from Sakana AI is not a single model. It is a multi-agent system that orchestrates Claude, GPT, and Gemini under one API, and it tops the leaderboard on nearly every benchmark.",
     "thumbnail": "assets/images/blog-thumbnails/sakana-fugu-beats-claude-gpt-5-and-gemini-on-every-benchmark.png",
     "youtubeId": "_aQp6PClhFQ",
+    "guide": false,
     "tags": [
       "AI Models",
       "Sakana AI",
@@ -2345,6 +2739,7 @@
     "excerpt": "Part two of building a screen and webcam recorder with Claude Code. I add adjustable zoom, a preview only border, a better layout, a full face cam mode and an audio waveform.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-live-build-part-2-video-recorder-zoom-border-full-face-cam.jpg",
     "youtubeId": "5L8vvijKYOc",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Live Stream",
@@ -2362,6 +2757,7 @@
     "excerpt": "A new SemiAnalysis study measured how much compute AI subscriptions actually give you. Power users are pulling thousands of dollars in token value for $20 to $200 a month.",
     "thumbnail": "assets/images/blog-thumbnails/claude-is-giving-you-20x-your-moneys-worth.jpg",
     "youtubeId": "mSE02ZpDMfA",
+    "guide": false,
     "tags": [
       "Claude",
       "AI Tools",
@@ -2377,6 +2773,7 @@
     "excerpt": "A live walkthrough of MoneyPrinterTurbo, the free open source tool that writes the script, finds stock footage, adds subtitles and voice, and renders the video. Setup in Colab, the settings that matter, and the render that took forever.",
     "thumbnail": "assets/images/blog-thumbnails/free-ai-video-generator-moneyprinterturbo-live-demo.jpg",
     "youtubeId": "euktm2U_Aik",
+    "guide": false,
     "tags": [
       "AI Video",
       "Free Tools",
@@ -2394,6 +2791,7 @@
     "excerpt": "I built a screen and webcam recorder from scratch on a live stream. The workflow that mattered most: plan mode, an interview style spec, one session per phase, and a lean context window.",
     "thumbnail": "assets/images/blog-thumbnails/zero-to-shipped-live-build-video-recorder-app-claude-code.jpg",
     "youtubeId": "4CT6JEpWJMA",
+    "guide": false,
     "tags": [
       "Claude Code",
       "Live Stream",
@@ -2411,6 +2809,7 @@
     "excerpt": "Learn how to use Agent Mode in Google Flow to create consistent, high-quality AI videos faster — with character sheets, iterative editing, and step-by-step scene compilation.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-master-google-flow-agent-mode-for-professional-ai-video-production.jpg",
     "youtubeId": "43yvFUIPyOM",
+    "guide": false,
     "tags": [
       "AI Video",
       "Google Flow",
@@ -2428,6 +2827,7 @@
     "excerpt": "At 5:21pm ET on June 12, 2026, a US export control directive forced Anthropic to switch off Claude Fable 5 and Mythos 5 for every customer. Here is what the order says and why Anthropic is pushing back.",
     "thumbnail": "assets/images/blog-thumbnails/claude-fable-5-blocked-by-us-government.jpg",
     "youtubeId": "YqPS7-Ro4wo",
+    "guide": false,
     "tags": [
       "Claude",
       "Anthropic",
@@ -2444,6 +2844,7 @@
     "excerpt": "Anthropic just launched Claude Mythos 5, a powerful new AI designed for expert researchers and cybersecurity pros. Learn how it works and what makes it special.",
     "thumbnail": "assets/images/blog-thumbnails/claude-mythos-5-explained-the-ai-built-for-hackers-scientists.jpeg",
     "youtubeId": "teKF78kX6u0",
+    "guide": false,
     "tags": [
       "AI",
       "Cybersecurity",
@@ -2461,6 +2862,7 @@
     "excerpt": "Tired of expensive Google Maps API quotas? Learn how I built and open-sourced a dynamic U.S. lead generation scraper using Playwright and DuckDuckGo.",
     "thumbnail": "assets/images/blog-thumbnails/google-maps-lead-scraper.jpg",
     "youtubeId": "o4YKj2Rebpo",
+    "guide": false,
     "tags": [
       "Lead Generation",
       "Google Maps",
@@ -2479,6 +2881,7 @@
     "excerpt": "Tired of YouTube API quota limits? Learn how I built a zero-API YouTube scraping engine and SQLite-cached Go CLI that connects directly to AI agents via MCP.",
     "thumbnail": "assets/images/blog-thumbnails/youtube-zero-api-scraper.jpg",
     "youtubeId": null,
+    "guide": false,
     "tags": [
       "YouTube",
       "Go",
@@ -2497,6 +2900,7 @@
     "excerpt": "A complete hands-on guide and breakdown of Google Flow and the new Gemini Omni Flash model, showing live visual generation, conversational video editing, and SynthID watermarking.",
     "thumbnail": "assets/images/blog-thumbnails/google-flow-gemini-omni-creative-ai-2026.jpg",
     "youtubeId": "URqh6lJP4-M",
+    "guide": false,
     "tags": [
       "AI Video",
       "Google Flow",
@@ -2513,6 +2917,7 @@
     "excerpt": "A complete breakdown of the new Gemini 3.5 Flash model, Gemini Spark AI Agent platform, and how they change the landscape for engineers.",
     "thumbnail": "assets/images/blog-thumbnails/google-io-2026-gemini-3-5-flash-spark-agent.jpg",
     "youtubeId": "rC1VuO9cVbk",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Google",
@@ -2529,6 +2934,7 @@
     "excerpt": "A deep dive into NVIDIA Sana, the revolutionary linear diffusion transformer that brings 100x faster 4K generation to consumer hardware.",
     "thumbnail": "assets/images/blog-thumbnails/nvidia-sana-100x-faster-free-open-source-4k-image-video-model.jpg",
     "youtubeId": "Xg7KoSYXebo",
+    "guide": false,
     "tags": [
       "Engineering",
       "Open Source",
@@ -2545,6 +2951,7 @@
     "excerpt": "Learn how to use the open-source Skool Community automation CLI to sync data, automate posts and DMs, and let AI agents manage your community.",
     "thumbnail": "assets/images/blog-thumbnails/skool-community-automation.jpg",
     "youtubeId": "7I0COaYlEbk",
+    "guide": false,
     "tags": [
       "Skool",
       "AI Agents",
@@ -2561,6 +2968,7 @@
     "excerpt": "ByteDance just released UI-TARS, an open-source Vision-Language Model that can act as a virtual operator for any GUI. Here is why it's a game-changer for AI agents.",
     "thumbnail": "assets/images/ui-tars-thumb.jpg",
     "youtubeId": "iZJmBM5k-GA",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Computer Use",
@@ -2576,6 +2984,7 @@
     "excerpt": "Think of your context window as an array. Learn why assigning multiple objectives to an LLM leads to 'The Dumb Zone' and how to keep your context lean for better performance.",
     "thumbnail": "assets/images/blog-thumb-4.png",
     "youtubeId": "O2bBWDoxO4s",
+    "guide": false,
     "tags": [
       "AI Engineering",
       "Context Window",
@@ -2591,6 +3000,7 @@
     "excerpt": "Discover how Zyphra’s new ZAYA1-8B model uses smart technology to beat the biggest AI giants while running on AMD hardware.",
     "thumbnail": "assets/images/blog-thumbnails/this-tiny-8b-model-outsmarts-gpt-5-0-claude-4-5-sonnet-zyphra-zaya1-8b.jpeg",
     "youtubeId": "X6ARKudj4Zg",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -2608,6 +3018,7 @@
     "excerpt": "OpenClaw 5.4 has arrived with exciting updates, including a powerful new Google Meet agent that helps you take notes and chat in real-time.",
     "thumbnail": "assets/images/blog-thumbnails/openclaw-5-4-is-insane-here-s-why.jpeg",
     "youtubeId": "goZFPWqwKXs",
+    "guide": false,
     "tags": [
       "AI",
       "OpenClaw",
@@ -2624,6 +3035,7 @@
     "excerpt": "Discover how the new Claude Code 4.7 update and /perceive command are changing the way AI agents work as your digital employees.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-opus-4-7-perceive-the-opus-4-7-grumpy-senior-update.jpeg",
     "youtubeId": "qyecnzcAyzQ",
+    "guide": false,
     "tags": [
       "AI Agents",
       "Claude Code",
@@ -2640,6 +3052,7 @@
     "excerpt": "Grok 4.3 has arrived with huge upgrades in reasoning, a massive memory window, and new tools to help you build and create faster than ever.",
     "thumbnail": "assets/images/blog-thumbnails/grok-4-3-xai-just-changed-the-agent-game-forever.jpeg",
     "youtubeId": "Bhl4_8L0OEA",
+    "guide": false,
     "tags": [
       "AI",
       "Grok",
@@ -2657,6 +3070,7 @@
     "excerpt": "Learn how to turn static images into professional motion graphics using Google's powerful AI Creative Studio Flow. It's easier than you think!",
     "thumbnail": "assets/images/blog-thumbnails/motion-graphics-made-easy-google-flow-beginner-s-guide.jpeg",
     "youtubeId": "dyXBznfoMqI",
+    "guide": false,
     "tags": [
       "AI",
       "Motion Graphics",
@@ -2673,6 +3087,7 @@
     "excerpt": "Everything you need to know about Google's NotebookLM — from uploading sources and asking questions, to generating audio overviews and building research workflows.",
     "thumbnail": "assets/images/blog-thumb-1.jpg",
     "youtubeId": "PgmwxA1I94Y",
+    "guide": false,
     "tags": [
       "Full Course",
       "NotebookLM",
@@ -2688,6 +3103,7 @@
     "excerpt": "How to use Claude Code effectively on real brownfield codebases — avoiding the pitfalls that make AI-assisted development painful and slow.",
     "thumbnail": "assets/images/blog-thumbnails/claude-code-production.jpg",
     "youtubeId": "M351KD77Lfs",
+    "guide": false,
     "tags": [
       "Engineering",
       "Claude Code",
@@ -2703,6 +3119,7 @@
     "excerpt": "OpenAI just launched GPT-5.5, also known as 'Spud.' From hacking gadgets to changing how we work, here is what this powerful new AI means for you.",
     "thumbnail": "assets/images/blog-thumbnails/gpt-5-5-explained-features-price-the-future-of-agents.jpg",
     "youtubeId": "HgiZNcqNE00",
+    "guide": false,
     "tags": [
       "AI",
       "GPT-5.5",
@@ -2719,6 +3136,7 @@
     "excerpt": "OpenAI just launched ChatGPT Images 2.0, a huge upgrade that changes how AI makes pictures. Learn how it works, why it's better at spelling, and how to use it.",
     "thumbnail": "assets/images/blog-thumbnails/chatgpt-images-2-0-the-ultimate-masterclass-every-feature-explained.jpeg",
     "youtubeId": "9xrIVzPax4A",
+    "guide": false,
     "tags": [
       "AI",
       "ChatGPT",
@@ -2735,6 +3153,7 @@
     "excerpt": "OpenClaw 4.21 is here to make your AI work smoother and faster. Check out the biggest fixes for crashes, costs, and macOS performance.",
     "thumbnail": "assets/images/blog-thumbnails/openclaw-4-21-update-is-insane.jpg",
     "youtubeId": "33125SFynkA",
+    "guide": false,
     "tags": [
       "OpenClaw",
       "AI",
@@ -2752,6 +3171,7 @@
     "excerpt": "Learn how to set up and master the Google Gemini app for macOS. Discover hidden tricks to make your computer smarter and get your work done faster.",
     "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-the-google-gemini-mac-app-features-hidden-tricks-and-setup.jpg",
     "youtubeId": "ao3nvWKX3PI",
+    "guide": false,
     "tags": [
       "Google Gemini",
       "macOS",
@@ -2768,6 +3188,7 @@
     "excerpt": "Tired of your AI forgetting everything? Learn how to build a smart AI assistant that remembers your projects and turns conversations into real plans.",
     "thumbnail": "assets/images/blog-thumbnails/stop-building-dumb-ai-agents-do-this-instead.jpg",
     "youtubeId": "uCqbwJca8ks",
+    "guide": false,
     "tags": [
       "AI",
       "Gemini",
@@ -2784,6 +3205,7 @@
     "excerpt": "Stop searching for AI news manually. Learn how I built a custom AI agent to automatically find the latest updates from GitHub, Hacker News, and more.",
     "thumbnail": "assets/images/blog-thumbnails/build-a-custom-research-skill-for-any-ai-agent-free-markdown-template.jpg",
     "youtubeId": "mEGHa9w2gUY",
+    "guide": false,
     "tags": [
       "AI",
       "Automation",
@@ -2801,6 +3223,7 @@
     "excerpt": "Tired of hitting AI rate limits? Learn how to use OpenClaw to stack multiple free Gemini API keys so your projects never stop working.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-stack-free-gemini-keys-for-unlimited-openclaw-api-calls.jpg",
     "youtubeId": "qq1QCMWWhxg",
+    "guide": false,
     "tags": [
       "AI",
       "Gemini",
@@ -2818,6 +3241,7 @@
     "excerpt": "OpenClaw Skills are the building blocks of AI automation — plug-and-play modules that teach your AI assistant how to do specific tasks. Here's how they work and how to build your own.",
     "thumbnail": "assets/images/blog-thumb-3.jpg",
     "youtubeId": "Jxtue8U7__s",
+    "guide": false,
     "tags": [
       "Beginner Guide",
       "OpenClaw",
@@ -2833,6 +3257,7 @@
     "excerpt": "Learn how Google's new Gemma 4 model uses a huge 256K context window to help AI agents remember long conversations and solve complex problems.",
     "thumbnail": "assets/images/blog-thumbnails/gemma-4-s-256k-context-agentic-workflows-live-coding-demo.jpg",
     "youtubeId": "kH7wa2NQPOs",
+    "guide": false,
     "tags": [
       "AI",
       "Gemma 4",
@@ -2850,6 +3275,7 @@
     "excerpt": "OpenClaw 4.8 brings massive upgrades like Android voice control, Task Flow automation, and faster workflows. Here is everything you need to know to get started.",
     "thumbnail": "assets/images/blog-thumbnails/openclaw-4-8-is-insane-here-s-why-yt.jpg",
     "youtubeId": "Wvaj_Aq3RHg",
+    "guide": false,
     "tags": [
       "AI",
       "OpenClaw",
@@ -2867,6 +3293,7 @@
     "excerpt": "Google just released Veo 3.1 Lite, a powerful new tool that makes creating AI videos more affordable than ever. Let's look at how it works.",
     "thumbnail": "assets/images/blog-thumbnails/the-ultimate-guide-to-veo-3-1-lite-text-to-video-image-to-video.jpg",
     "youtubeId": "Qf1Vih2l6NM",
+    "guide": false,
     "tags": [
       "AI",
       "Google",
@@ -2884,6 +3311,7 @@
     "excerpt": "Alibaba just released Qwen 3.5 Omni, an AI that sees, hears, and speaks at the same time. Learn how this new model is changing the way we build apps.",
     "thumbnail": "assets/images/blog-thumbnails/qwen-3-5-omni-is-here-full-feature-walkthrough-and-demo.jpg",
     "youtubeId": "sGGF_2NfghA",
+    "guide": false,
     "tags": [
       "AI",
       "Qwen",
@@ -2901,6 +3329,7 @@
     "excerpt": "OpenClaw just got a massive upgrade! From one-click skill installs to smarter AI web search, here is everything you need to know about version 3.28.",
     "thumbnail": "assets/images/blog-thumbnails/openclaw-3-28-is-insane-here-s-why-yt.jpg",
     "youtubeId": "is7yNhTt9ck",
+    "guide": false,
     "tags": [
       "OpenClaw",
       "AI Agents",
@@ -2917,6 +3346,7 @@
     "excerpt": "Learn how to build your own custom Clawdbot skills to automate tasks like YouTube SEO, even if you run into bugs along the way.",
     "thumbnail": "assets/images/blog-thumbnails/build-your-first-clawdbot-skill-complete-walkthrough.jpg",
     "youtubeId": "Xe09u-PriZ4",
+    "guide": false,
     "tags": [
       "AI",
       "Clawdbot",
@@ -2934,6 +3364,7 @@
     "excerpt": "Ever wonder what it's really like to build AI tools? Join me as I walk through the messy, exciting process of coding a new skill for my robot, Clawdbot.",
     "thumbnail": "assets/images/blog-thumbnails/clawdbot-skill-setup-real-time-problem-solving-building-live-006.jpg",
     "youtubeId": "52lgF4bKPV0",
+    "guide": false,
     "tags": [
       "AI",
       "Programming",
@@ -2951,6 +3382,7 @@
     "excerpt": "Learn how to build a smart autoresponder for your iMessage using Clawdbot in this step-by-step coding guide.",
     "thumbnail": "assets/images/blog-thumbnails/building-a-clawdbot-skill-in-real-time-vibe-code-with-me-ep-005.jpg",
     "youtubeId": "Sm-sUYFuXnA",
+    "guide": false,
     "tags": [
       "AI",
       "Programming",
@@ -2968,6 +3400,7 @@
     "excerpt": "Learn how to build an AI-powered iMessage auto-replier that uses Google Gemini to understand photos and chat with your friends automatically.",
     "thumbnail": "assets/images/blog-thumbnails/building-an-imessage-auto-replier-while-you-watch-vibe-code-with-me-ep-004.jpg",
     "youtubeId": "u38dEuDcyrA",
+    "guide": false,
     "tags": [
       "AI",
       "Python",
@@ -2985,6 +3418,7 @@
     "excerpt": "Join me as I walk through the basics of building a custom AI agent to automate your content strategy. It’s easier than you think!",
     "thumbnail": "assets/images/blog-thumbnails/i-built-a-clawdbot-skill-while-you-watch-vibe-code-with-me-ep-003.jpg",
     "youtubeId": "wF1DMU7sSp4",
+    "guide": false,
     "tags": [
       "AI",
       "Automation",
@@ -3001,6 +3435,7 @@
     "excerpt": "Learn how to build an AI agent that automates your content creation. Join me as we code, troubleshoot, and explore the world of AI workflows.",
     "thumbnail": "assets/images/blog-thumbnails/i-built-an-ai-agent-workflow-while-you-watch-vibe-code-with-me-ep-002.jpg",
     "youtubeId": "bqcEVRiUIi0",
+    "guide": false,
     "tags": [
       "AI",
       "Automation",
@@ -3018,6 +3453,7 @@
     "excerpt": "Google Flow just got a massive upgrade. Discover the new Nano Banana 2, VEO 3.1, and powerful editing tools that make AI content creation faster than ever.",
     "thumbnail": "assets/images/blog-thumbnails/google-flow-tutorial-nano-banana-2-veo-3-1-fully-integrated.jpg",
     "youtubeId": "hD1jOizSPnk",
+    "guide": false,
     "tags": [
       "AI",
       "Google Flow",
@@ -3035,6 +3471,7 @@
     "excerpt": "Join me as we build a simple AI workflow to automate your content strategy, from researching trending topics to writing video scripts.",
     "thumbnail": "assets/images/blog-thumbnails/figuring-out-how-to-automate-content-using-ai-agents-vibe-code-with-me-001.jpeg",
     "youtubeId": "Ejqzl_HW9eE",
+    "guide": false,
     "tags": [
       "AI",
       "Python",
@@ -3052,6 +3489,7 @@
     "excerpt": "Learn how to use VoiceBox to clone voices and create high-quality speech right on your own computer, keeping your data private and free.",
     "thumbnail": "assets/images/blog-thumbnails/this-free-tool-replaces-elevenlabs-completely.jpg",
     "youtubeId": "9LKaaOo6TmQ",
+    "guide": false,
     "tags": [
       "AI",
       "Voice Cloning",
@@ -3069,6 +3507,7 @@
     "excerpt": "Learn how to use Clawdbot and Google's Gemini AI to automatically reply to your iMessages for free with this simple, step-by-step guide.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-let-clawdbot-answer-your-texts-imessage.jpg",
     "youtubeId": "Bi3z2tMPjxs",
+    "guide": false,
     "tags": [
       "AI",
       "Automation",
@@ -3086,6 +3525,7 @@
     "excerpt": "Learn how to build your own AI agent that writes personalized, high-converting DMs for you using free tools and Google Colab.",
     "thumbnail": "assets/images/blog-thumbnails/i-cloned-alex-hormozi-s-dm-strategy-using-ai-agents.jpg",
     "youtubeId": "rCkELyj_Dfw",
+    "guide": false,
     "tags": [
       "AI",
       "Automation",
@@ -3103,6 +3543,7 @@
     "excerpt": "I let my custom AI, ClawdBot, handle all my text messages for an entire day. Find out if it made new friends, caught scammers, or caused total chaos.",
     "thumbnail": "assets/images/blog-thumbnails/i-coded-an-ai-that-answers-every-text-for-me-clawdbot.jpg",
     "youtubeId": "VaYO6hOQWm0",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -3120,6 +3561,7 @@
     "excerpt": "Learn how to use your student email to get free cloud hosting for your bots using the GitHub Student Developer Pack and Microsoft Azure.",
     "thumbnail": "assets/images/blog-thumbnails/clawdbot-cloud-hosting-tutorial-free-for-students.jpg",
     "youtubeId": "0YDYKb_48pQ",
+    "guide": false,
     "tags": [
       "AI",
       "Cloud Computing",
@@ -3137,6 +3579,7 @@
     "excerpt": "Learn how to take your Python web app from your computer to the internet for free using Render. No credit card required!",
     "thumbnail": "assets/images/blog-thumbnails/build-your-first-web-app-for-free-no-credit-card-yt.jpg",
     "youtubeId": "4IeMklzNyQE",
+    "guide": false,
     "tags": [
       "Python",
       "Web Development",
@@ -3154,6 +3597,7 @@
     "excerpt": "Learn how to build powerful AI agent teams using CrewAI and Google Gemini inside Google Colab with this easy step-by-step guide.",
     "thumbnail": "assets/images/blog-thumbnails/crewai-google-colab-setup-tutorial-yt.jpg",
     "youtubeId": "rmOY5eLfdq0",
+    "guide": false,
     "tags": [
       "AI",
       "CrewAI",
@@ -3171,6 +3615,7 @@
     "excerpt": "Learn how to build an AI agent that writes personalized messages for you using the OpenAI SDK and Google Gemini. It's easier than you think!",
     "thumbnail": "assets/images/blog-thumbnails/building-openai-agent-sdk-agent-with-gemini-api-for-beginners-python-yt.jpg",
     "youtubeId": "6a4w3FT98Ss",
+    "guide": false,
     "tags": [
       "AI",
       "Python",
@@ -3188,6 +3633,7 @@
     "excerpt": "Learn how to easily generate your own Google Gemini API key for free so you can start building your own AI apps today.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-get-your-free-google-gemini-api-key-2026.jpg",
     "youtubeId": "yZN5a12CZD8",
+    "guide": false,
     "tags": [
       "AI",
       "Google Gemini",
@@ -3205,6 +3651,7 @@
     "excerpt": "Learn how to use Google's Gemini AI in your own projects! This beginner-friendly guide shows you how to get an API key and make your first call in just a few steps.",
     "thumbnail": "assets/images/blog-thumbnails/gemini-api-tutorial-from-api-key-to-your-first-llm-call-complete-walkthrough-yt.jpg",
     "youtubeId": "lX17ByJbFfc",
+    "guide": false,
     "tags": [
       "AI",
       "Python",
@@ -3222,6 +3669,7 @@
     "excerpt": "Learn how to build a smart AI agent that searches the web and writes summaries for you using Python and Gemini.",
     "thumbnail": "assets/images/blog-thumbnails/how-to-build-an-ai-agent-that-searches-the-web-and-summarizes-results.jpg",
     "youtubeId": "iL-8F-FQFdI",
+    "guide": false,
     "tags": [
       "AI",
       "Python",
@@ -3239,6 +3687,7 @@
     "excerpt": "Learn how to build a simple AI agent that automatically posts motivational messages to Slack using Python and Google's Gemini model.",
     "thumbnail": "assets/images/blog-thumbnails/build-a-slack-ai-agent-step-by-step.jpg",
     "youtubeId": "VwM8KnbNKAo",
+    "guide": false,
     "tags": [
       "AI",
       "Python",
@@ -3256,6 +3705,7 @@
     "excerpt": "Ever wonder how computers predict house prices or future sales? Learn how Linear Regression works in this simple, step-by-step guide.",
     "thumbnail": "assets/images/blog-thumbnails/understanding-linear-regression-in-machine-learning-explained-simply-yt.jpg",
     "youtubeId": "UBeJDK8fY8I",
+    "guide": false,
     "tags": [
       "Machine Learning",
       "AI",
@@ -3272,6 +3722,7 @@
     "excerpt": "Ever wonder why your AI model stops learning or crashes? Learn how vanishing and exploding gradients break neural networks and how to fix them.",
     "thumbnail": "assets/images/blog-thumbnails/the-vanishing-exploding-gradient-problem-explained.jpg",
     "youtubeId": "G4ufhQGke1c",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3289,6 +3740,7 @@
     "excerpt": "Learn how AI models use loss functions to measure their mistakes and get smarter. Discover the simple secret behind training accurate machine learning models.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-understanding-how-ai-models-learn.jpg",
     "youtubeId": "FxUAl6vS38w",
+    "guide": false,
     "tags": [
       "Machine Learning",
       "AI Basics",
@@ -3305,6 +3757,7 @@
     "excerpt": "Struggling to find a tech job? Learn the two simple strategies that helped me go from failing interviews to getting hired as a software engineer.",
     "thumbnail": "assets/images/blog-thumbnails/the-two-things-that-finally-got-me-hired-newgrad-softwareengineering-yt.jpg",
     "youtubeId": "bCHkzpz71Ro",
+    "guide": false,
     "tags": [
       "Software Engineering",
       "Career Advice",
@@ -3321,6 +3774,7 @@
     "excerpt": "Ever wonder how your phone knows exactly what you're saying? Learn how computers use NLP to turn human language into machine smarts.",
     "thumbnail": "assets/images/blog-thumbnails/how-ai-understands-human-language-nlp-explained-simply-yt.jpg",
     "youtubeId": "2x5bBbHnVzM",
+    "guide": false,
     "tags": [
       "AI",
       "NLP",
@@ -3337,6 +3791,7 @@
     "excerpt": "Ever wonder how your phone recognizes your face or how self-driving cars 'see'? Learn how Convolutional Neural Networks (CNNs) help computers understand images.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-a-convolutional-neural-network-cnn-how-ai-learns-to-see-images-yt.jpg",
     "youtubeId": "v9lZS_BlQ1c",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3353,6 +3808,7 @@
     "excerpt": "Ever wonder how your iPhone recognizes your face without taking a picture? Let's dive into the invisible 3D mapping technology that keeps your data safe.",
     "thumbnail": "assets/images/blog-thumbnails/how-face-id-recognizes-you-instantly-yt.jpg",
     "youtubeId": "nXMKYNgO_mc",
+    "guide": false,
     "tags": [
       "Apple",
       "FaceID",
@@ -3370,6 +3826,7 @@
     "excerpt": "Curious about AI agents? Learn why they are different from chatbots and how they move from just chatting to actually getting work done.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-finally-explained-simply-yt.jpg",
     "youtubeId": "ElWKHGDq3Uo",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -3387,6 +3844,7 @@
     "excerpt": "Ever wonder how AI goes from just answering questions to actually doing work for you? Discover the world of AI Agents and how they are changing the game.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-agent-yt.jpg",
     "youtubeId": "APFbZ9VVG0I",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -3403,6 +3861,7 @@
     "excerpt": "Ever wonder why AI feels like it suddenly got a brain? Let's talk about scaling laws—the simple secret that made AI models powerful in 2025.",
     "thumbnail": "assets/images/blog-thumbnails/why-llms-suddenly-became-so-powerful-in-2025.jpg",
     "youtubeId": "mCyDlBy2wU4",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3419,6 +3878,7 @@
     "excerpt": "Confused about which AI image tool is right for you? As an AI engineer, I break down the real differences between Nano Banana Pro and ChatGPT Image 1.5.",
     "thumbnail": "assets/images/blog-thumbnails/nano-banana-pro-vs-chatgpt-image-1-5-the-real-difference-yt.jpg",
     "youtubeId": "Ra3RVE6Qer0",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -3435,6 +3895,7 @@
     "excerpt": "Ever wonder how Google Maps knows there is a traffic jam before you get there? Learn how AI uses data to predict the road ahead.",
     "thumbnail": "assets/images/blog-thumbnails/how-google-maps-predicts-traffic-before-it-happens-yt.jpg",
     "youtubeId": "I1LVhtYkPbQ",
+    "guide": false,
     "tags": [
       "AI",
       "Google Maps",
@@ -3451,6 +3912,7 @@
     "excerpt": "Ever wonder how TikTok knows exactly what you want to watch? I'm breaking down the AI secrets behind the algorithm and how videos really go viral.",
     "thumbnail": "assets/images/blog-thumbnails/how-tiktok-knows-what-you-ll-watch-next-yt.jpg",
     "youtubeId": "pF-vDIPz3e0",
+    "guide": false,
     "tags": [
       "AI",
       "TikTok",
@@ -3468,6 +3930,7 @@
     "excerpt": "Curious about what comes after GPT-4? Software engineer Robby breaks down how GPT-5.2 is moving from just predicting words to actually getting things done for you.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-gpt-5-2-what-will-it-be-able-to-do.jpg",
     "youtubeId": "Cy4CWdym5GY",
+    "guide": false,
     "tags": [
       "AI",
       "GPT-5.2",
@@ -3484,6 +3947,7 @@
     "excerpt": "Struggling to name your videos? Learn how to use OpenAI as your personal brainstorming partner to create catchy, high-performing YouTube titles in seconds.",
     "thumbnail": "assets/images/blog-thumbnails/generating-viral-youtube-video-titles-using-openai-yt.jpg",
     "youtubeId": "CH6SUB6Y3t4",
+    "guide": false,
     "tags": [
       "AI",
       "OpenAI",
@@ -3501,6 +3965,7 @@
     "excerpt": "Ever wonder why your Netflix homepage looks different from your friends'? Software engineer Robby explains how AI and micro-tagging pick your next favorite show.",
     "thumbnail": "assets/images/blog-thumbnails/how-netflix-s-recommendation-system-actually-works-yt.jpg",
     "youtubeId": "DiQaXiJk0_s",
+    "guide": false,
     "tags": [
       "AI",
       "Netflix",
@@ -3518,6 +3983,7 @@
     "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down machine learning, supervised learning, and unsupervised learning in plain English.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-machine-learning-explained-like-you-re-5-but-actually-technical-yt.jpg",
     "youtubeId": "h_MH8sIENRo",
+    "guide": false,
     "tags": [
       "Machine Learning",
       "AI",
@@ -3534,6 +4000,7 @@
     "excerpt": "Ever wonder how YouTube picks your next video? Join me as we peek behind the curtain at the machine learning magic that powers your homepage.",
     "thumbnail": "assets/images/blog-thumbnails/how-youtube-suggests-videos-with-machine-learning-yt.jpg",
     "youtubeId": "a5Ti8QLA7C4",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3550,6 +4017,7 @@
     "excerpt": "Ever wonder how AI is learning to see and hear? Discover how Multimodal AI is changing the way machines understand the world, moving beyond just simple text.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-multimodal-ai-yt.jpg",
     "youtubeId": "N2fXdcY1rvw",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Multimodal AI",
@@ -3566,6 +4034,7 @@
     "excerpt": "Ever wonder how Spotify picks your perfect playlist? Discover the math and AI magic behind your Discover Weekly songs.",
     "thumbnail": "assets/images/blog-thumbnails/how-spotify-predicts-what-you-want-to-listen-to-yt.jpg",
     "youtubeId": "Ow3Eo_-s9IU",
+    "guide": false,
     "tags": [
       "AI",
       "Spotify",
@@ -3582,6 +4051,7 @@
     "excerpt": "Learn how fine-tuning lets you customize AI models for your specific needs without spending millions of dollars.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-fine-tuning-a-model-yt.jpg",
     "youtubeId": "bCgKCYmerzg",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3598,6 +4068,7 @@
     "excerpt": "Learn how to build a neural network from scratch using only Java. No libraries, just pure code to understand how AI really works.",
     "thumbnail": "assets/images/blog-thumbnails/building-a-neural-network-from-scratch-in-java.png",
     "youtubeId": "P2odJf-BI2M",
+    "guide": false,
     "tags": [
       "AI",
       "Java",
@@ -3615,6 +4086,7 @@
     "excerpt": "Ever wonder how AI understands your questions? It’s not magic—it’s math! Learn how tokenization turns your words into numbers.",
     "thumbnail": "assets/images/blog-thumbnails/how-chatgpt-actually-reads-tokenization-explained-yt.jpg",
     "youtubeId": "Svn7A6pG6_Y",
+    "guide": false,
     "tags": [
       "AI",
       "ChatGPT",
@@ -3631,6 +4103,7 @@
     "excerpt": "Ever wonder how computers make art and write stories? Let's look at how Generative AI works like a master chef inventing new recipes.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-generative-ai-the-technology-that-creates-yt.jpg",
     "youtubeId": "l5XfrscuRQY",
+    "guide": false,
     "tags": [
       "Generative AI",
       "Artificial Intelligence",
@@ -3647,6 +4120,7 @@
     "excerpt": "Ever wonder how AI learns? Just like you, it needs practice tests. Learn why a validation set is the secret to building better AI models.",
     "thumbnail": "assets/images/blog-thumbnails/why-ai-needs-a-validation-set-yt.jpg",
     "youtubeId": "ihV_hGAf1Dw",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3663,6 +4137,7 @@
     "excerpt": "Think AI is a magic wand? Think again. Learn how treating AI like an employee—not a toy—can help you write better code and master prompt engineering.",
     "thumbnail": "assets/images/blog-thumbnails/why-prompt-engineers-make-300k-yt.jpg",
     "youtubeId": "FMq1zHCtlNk",
+    "guide": false,
     "tags": [
       "AI",
       "Coding",
@@ -3679,6 +4154,7 @@
     "excerpt": "Ever wonder how computers understand language? Learn how AI uses a secret code called 'embeddings' to turn words into math.",
     "thumbnail": "assets/images/blog-thumbnails/how-ai-does-math-with-words-embeddings-explained.jpg",
     "youtubeId": "d7Yo7hFNdnM",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3695,6 +4171,7 @@
     "excerpt": "Ever wonder how computers make choices? Learn how decision trees work like a simple game of '20 Questions' to help AI think clearly.",
     "thumbnail": "assets/images/blog-thumbnails/how-decision-trees-work-the-flowchart-of-artificial-intelligence-yt.jpg",
     "youtubeId": "Mo3A5sU2szQ",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3711,6 +4188,7 @@
     "excerpt": "Ever wonder how we know if an AI is smart or just cheating? Discover why using a Test Set is the secret to building reliable machine learning models.",
     "thumbnail": "assets/images/blog-thumbnails/training-vs-test-sets-how-to-grade-an-ai-yt.jpg",
     "youtubeId": "HXw60MHXQmg",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3727,6 +4205,7 @@
     "excerpt": "Ever wonder how computers learn? Join me, Robby, as I break down AI training sets and how they teach machines to see the world.",
     "thumbnail": "assets/images/blog-thumbnails/ai-training-sets-explained-simply-yt.jpg",
     "youtubeId": "ylfaEQ5l5eI",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -3743,6 +4222,7 @@
     "excerpt": "Ever wonder how AI fixes its own mistakes? Join me as we break down backpropagation using the simple concept of the 'Blame Game.'",
     "thumbnail": "assets/images/blog-thumbnails/calculating-gradients-in-neural-networks-the-blame-game-explained.jpg",
     "youtubeId": "qM0zqaewCPI",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3760,6 +4240,7 @@
     "excerpt": "Ever wonder how AI gets smarter? Learn how the backpropagation algorithm helps neural networks learn from their mistakes in this simple guide.",
     "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-actually-works-the-core-of-neural-network-training.jpg",
     "youtubeId": "y7iTsuW4T3E",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3776,6 +4257,7 @@
     "excerpt": "Ever wonder how ChatGPT understands you so fast? It uses a secret 'Lego language' called tokens to read the world in pieces.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-a-token-how-ai-actually-reads-yt.jpg",
     "youtubeId": "idyXt0JV8v0",
+    "guide": false,
     "tags": [
       "AI",
       "ChatGPT",
@@ -3792,6 +4274,7 @@
     "excerpt": "Ever wonder how ChatGPT knows exactly what you mean? Learn how the 'Attention Mechanism' helps AI understand context just like a human.",
     "thumbnail": "assets/images/blog-thumbnails/how-ai-actually-reads-the-attention-mechanism-explained.jpg",
     "youtubeId": "Gt9Z0hnGBVk",
+    "guide": false,
     "tags": [
       "AI",
       "ChatGPT",
@@ -3808,6 +4291,7 @@
     "excerpt": "Think Logistic Regression is for predicting numbers? Think again! Join me as I explain how this simple AI tool helps computers make 'Yes' or 'No' decisions.",
     "thumbnail": "assets/images/blog-thumbnails/logistic-regression-explained-yt.jpg",
     "youtubeId": "i4spl1Bfsv4",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3824,6 +4308,7 @@
     "excerpt": "Ever wonder what the 'T' in ChatGPT stands for? Learn how Transformer technology changed everything about how computers understand human language.",
     "thumbnail": "assets/images/blog-thumbnails/transformer-architecture-explained-simply.jpg",
     "youtubeId": "mAI-sXdjJDU",
+    "guide": false,
     "tags": [
       "AI",
       "ChatGPT",
@@ -3840,6 +4325,7 @@
     "excerpt": "Ever wonder how AI guesses numbers like house prices or stock trends? Learn how regression works in plain English.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-regression-in-ai-explained-in-60-seconds-yt.jpg",
     "youtubeId": "CFRtKhFqpEk",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3856,6 +4342,7 @@
     "excerpt": "Think AI is just a search engine? Think again. Learn why AI 'hallucinates' and how to stop trusting it blindly.",
     "thumbnail": "assets/images/blog-thumbnails/you-re-trusting-ai-too-much.jpg",
     "youtubeId": "pOcMOjq8c_g",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Tech Explained",
@@ -3872,6 +4359,7 @@
     "excerpt": "Ever wonder how AI actually learns? Discover how neural networks improve by using a simple basketball analogy from a real-world software engineer.",
     "thumbnail": "assets/images/blog-thumbnails/ai-learning-explained-the-basketball-analogy-yt.jpg",
     "youtubeId": "DGIgESLv8iI",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -3889,6 +4377,7 @@
     "excerpt": "Curious how AI makes predictions? Learn how linear regression uses simple math to help computers guess everything from gas mileage to future sales.",
     "thumbnail": "assets/images/blog-thumbnails/linear-regression-explained-the-math-of-prediction-yt.jpg",
     "youtubeId": "zEpvWSGvC0Q",
+    "guide": false,
     "tags": [
       "Machine Learning",
       "Data Science",
@@ -3906,6 +4395,7 @@
     "excerpt": "Ever wonder how AI actually learns from its mistakes? Let's break down the math behind neural networks in a way that is easy to understand.",
     "thumbnail": "assets/images/blog-thumbnails/neural-network-backpropagation-explained-math-examples-analogy.jpg",
     "youtubeId": "27IxhaM2stI",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3923,6 +4413,7 @@
     "excerpt": "Ever wonder how AI chats with you like a human? I'm breaking down how Large Language Models work in simple, easy-to-understand terms.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-an-llm-large-language-models-and-chatgpt-explained.jpg",
     "youtubeId": "Vl0r3wCfUaw",
+    "guide": false,
     "tags": [
       "AI",
       "Large Language Models",
@@ -3940,6 +4431,7 @@
     "excerpt": "Ever wonder how your email blocks spam? Learn how AI uses classification to sort information into categories like a pro.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-classification-in-ai-sorting-data-simply-explained-yt.jpg",
     "youtubeId": "PwjOpgUx50Q",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -3956,6 +4448,7 @@
     "excerpt": "Ever wonder how AI fixes its own mistakes? Learn how backpropagation works to trace errors through a neural network in this simple guide.",
     "thumbnail": "assets/images/blog-thumbnails/backpropagation-calculating-hidden-layer-errors.jpg",
     "youtubeId": "X2TMzjriDYg",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -3973,6 +4466,7 @@
     "excerpt": "Ever wonder how AI learns? I'm Robby, and I’m breaking down the difference between AI parameters and hyperparameters using a simple kitchen analogy.",
     "thumbnail": "assets/images/blog-thumbnails/hyperparameters-vs-parameters-the-oven-settings-of-ai-yt.jpg",
     "youtubeId": "8Zlymjgtfk0",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -3989,6 +4483,7 @@
     "excerpt": "Curious how AI gets smarter? Learn how a simple tool from calculus called the 'gradient' acts like a compass to help computers fix their mistakes.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-a-gradient-the-engine-of-ai-learning-yt.jpg",
     "youtubeId": "5Pc5E7AFtNE",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4006,6 +4501,7 @@
     "excerpt": "Ever wonder how AI learns? Discover how a loss function acts like a scoreboard to help computers fix their mistakes and get smarter.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-a-loss-function-how-ai-measures-mistakes.jpg",
     "youtubeId": "CtfzBXbJaoA",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4022,6 +4518,7 @@
     "excerpt": "Ever wonder how AI learns to tell a cat from a dog? It all starts with labels. Learn how this 'answer key' helps computers understand the world.",
     "thumbnail": "assets/images/blog-thumbnails/what-are-labels-in-machine-learning-yt.jpg",
     "youtubeId": "YeiSQR5RZBs",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -4038,6 +4535,7 @@
     "excerpt": "Ever wonder how AI actually learns? Learn what parameters are and how they help computers store knowledge in this easy guide from a software engineer.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-a-parameter-in-machine-learning-yt.jpg",
     "youtubeId": "ePNKMIBHfEo",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4054,6 +4552,7 @@
     "excerpt": "Ever wonder how computers learn? Discover how supervised learning works by using an answer key to teach AI models to make smart predictions.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-supervised-learning-ai-with-an-answer-key-yt.jpg",
     "youtubeId": "ECaxXXfzbp0",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -4070,6 +4569,7 @@
     "excerpt": "Ever wonder how AI gets so smart? It’s all about the data! Learn why high-quality information is the real secret behind every powerful AI model.",
     "thumbnail": "assets/images/blog-thumbnails/why-data-is-gold-for-ai-yt.jpg",
     "youtubeId": "YQOZYyOT5B0",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -4087,6 +4587,7 @@
     "excerpt": "Ever wonder how AI actually learns? We’re breaking down backpropagation step-by-step using easy numbers so you can see exactly how a neural network improves.",
     "thumbnail": "assets/images/blog-thumbnails/how-backpropagation-works-explained-simply.jpg",
     "youtubeId": "WtAC3n0Yo5Q",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -4104,6 +4605,7 @@
     "excerpt": "Curious how AI actually works? Learn what an algorithm is and how it helps computers learn, explained by a real software engineer.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-an-algorithm-in-ai-yt.jpg",
     "youtubeId": "SdII73-7Bkk",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -4121,6 +4623,7 @@
     "excerpt": "Ever wonder how computers get so smart? Learn how AI models learn from examples and feedback in this easy-to-understand guide.",
     "thumbnail": "assets/images/blog-thumbnails/how-ai-learns-training-a-model-simply-explained.jpg",
     "youtubeId": "n3DjZe0PvPs",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4137,6 +4640,7 @@
     "excerpt": "Ever wonder how computers learn to think? Let's break down what an AI model is using a simple kitchen recipe analogy.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-an-ai-model-the-recipe-analogy-yt.jpg",
     "youtubeId": "fDa_r0sUPMw",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4153,6 +4657,7 @@
     "excerpt": "Confused by all the AI buzzwords? Let's break down AI, Machine Learning, and Deep Learning using simple analogies to see how they fit together.",
     "thumbnail": "assets/images/blog-thumbnails/ai-vs-ml-vs-deep-learning-the-russian-nesting-dolls-of-tech-yt.jpg",
     "youtubeId": "ON9GvelnSRM",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4170,6 +4675,7 @@
     "excerpt": "Learn how AI models actually learn from their mistakes by tuning the learning rate, the secret setting that makes or breaks your model training.",
     "thumbnail": "assets/images/blog-thumbnails/finding-the-right-learning-rate-in-deep-learning-yt.jpg",
     "youtubeId": "OdTRf-LOv6M",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4186,6 +4692,7 @@
     "excerpt": "Ever wonder how AI actually works? Join me as we break down the difference between Machine Learning and Deep Learning in simple terms.",
     "thumbnail": "assets/images/blog-thumbnails/deep-learning-vs-machine-learning-what-s-the-difference-yt.jpg",
     "youtubeId": "ONr6FaO0xw8",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4202,6 +4709,7 @@
     "excerpt": "Ever wonder how computers learn on their own? I'm Robby, an AI engineer, and I'm breaking down how machine learning works without the complicated math.",
     "thumbnail": "assets/images/blog-thumbnails/machine-learning-explained-how-computers-learn-without-rules-machinelearning-yt.jpg",
     "youtubeId": "dulgrJjZe3A",
+    "guide": false,
     "tags": [
       "Machine Learning",
       "AI",
@@ -4218,6 +4726,7 @@
     "excerpt": "Ever wonder how computers learn to think like us? Join software engineer Robby as he breaks down exactly what Artificial Intelligence is in plain English.",
     "thumbnail": "assets/images/blog-thumbnails/what-is-ai-artificial-intelligence-explained-in-60-seconds-yt.jpg",
     "youtubeId": "ROe8x7aMJLY",
+    "guide": false,
     "tags": [
       "AI",
       "Artificial Intelligence",
@@ -4235,6 +4744,7 @@
     "excerpt": "Learn how the sigmoid activation function works using a fun club bouncer analogy. We break down complex AI math into simple terms.",
     "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained-with-a-simple-neural-network-example.jpg",
     "youtubeId": "t30WqiKsn_8",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4252,6 +4762,7 @@
     "excerpt": "Curious how AI thinks in probabilities? Learn how the sigmoid function works to turn any number into a simple value between 0 and 1.",
     "thumbnail": "assets/images/blog-thumbnails/sigmoid-function-explained.jpg",
     "youtubeId": "EegUZtLRkFU",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4268,6 +4779,7 @@
     "excerpt": "Ever wonder how AI learns complex patterns? Discover how activation functions help neural networks bend reality to make better predictions.",
     "thumbnail": "assets/images/blog-thumbnails/why-neural-networks-need-activation-functions.jpg",
     "youtubeId": "c9QJt5JUXrY",
+    "guide": false,
     "tags": [
       "AI",
       "Neural Networks",
@@ -4285,6 +4797,7 @@
     "excerpt": "Ever wonder how AI thinks? Discover how activation functions like ReLU help neural networks learn from complex data in this easy guide.",
     "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-simply.jpg",
     "youtubeId": "obq6tYAl6YU",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4301,6 +4814,7 @@
     "excerpt": "Ever wonder why your AI model stops learning? It might be the 'Dead ReLU' problem. Learn how to fix it with simple tweaks to your neural network.",
     "thumbnail": "assets/images/blog-thumbnails/dead-relu-problem-fixing-it-with-relu-variants.jpg",
     "youtubeId": "YH2el6e4FT4",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4317,6 +4831,7 @@
     "excerpt": "Ever wonder how AI gets smarter? Learn how machines use a simple trick called gradient descent to improve their accuracy, explained in plain English.",
     "thumbnail": "assets/images/blog-thumbnails/gradient-descent-explained-visually-yt.jpg",
     "youtubeId": "52RNl4GxggE",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4333,6 +4848,7 @@
     "excerpt": "Learn how the ReLU activation function works using a simple light switch example. Discover how AI makes decisions in this easy-to-follow guide.",
     "thumbnail": "assets/images/blog-thumbnails/relu-activation-explained-with-step-by-step-example.jpg",
     "youtubeId": "6uh_GAyMXT8",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4349,6 +4865,7 @@
     "excerpt": "Ever wonder how AI models make smart decisions? Let's break down the feed forward layer, the part of the AI that does the deep thinking.",
     "thumbnail": "assets/images/blog-thumbnails/feed-forward-layer-explained-simply-in-transformer-decoder-feedforwardlayer.jpg",
     "youtubeId": "tlMr8E4x-NM",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -4365,6 +4882,7 @@
     "excerpt": "Ever wonder how AI makes decisions? I’m breaking down exactly how a neural network turns simple data into smart predictions in this step-by-step guide.",
     "thumbnail": "assets/images/blog-thumbnails/neural-network-step-by-step-example.jpg",
     "youtubeId": "3AnekoX-V4Q",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4381,6 +4899,7 @@
     "excerpt": "Ever wonder how AI understands the order of words in a sentence? Learn how positional encoding helps Transformer models make sense of sequences.",
     "thumbnail": "assets/images/blog-thumbnails/positional-encoding-explained-simply-in-transformer-architecture-transformers-ai.jpg",
     "youtubeId": "G1Vgfwgtv48",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",
@@ -4397,6 +4916,7 @@
     "excerpt": "Ever wonder how AI understands a full sentence? Let's break down self-attention, the secret power behind transformer models, in plain English.",
     "thumbnail": "assets/images/blog-thumbnails/how-self-attention-works-in-the-encoder-transformer-explained-simply-transformers-selfattention.jpg",
     "youtubeId": "wTB1Ec_4lDw",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4413,6 +4933,7 @@
     "excerpt": "Ever wonder how AI translates languages? Discover how the encoder-decoder attention layer helps computers focus on the right words to get the translation perfect.",
     "thumbnail": "assets/images/blog-thumbnails/how-the-encoder-decoder-attention-works-in-the-transformer-decoder-sublayer-explained.jpg",
     "youtubeId": "_Uy6g3I3o8w",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4430,6 +4951,7 @@
     "excerpt": "Ever wonder how AI understands human language? Discover how transformers use embeddings and positional encoding to turn words into data.",
     "thumbnail": "assets/images/blog-thumbnails/how-transformers-turn-words-into-numbers-embeddings-positional-encoding-explained-transformers.jpg",
     "youtubeId": "LI4wxQ9zIYc",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4446,6 +4968,7 @@
     "excerpt": "Ever wonder how AI understands your words? Learn how transformer models use a smart system called queries, keys, and values to find the right information.",
     "thumbnail": "assets/images/blog-thumbnails/how-ai-translates-queries-keys-and-values-explained.jpg",
     "youtubeId": "d8ibK36vbjE",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4462,6 +4985,7 @@
     "excerpt": "Ever wonder how AI learns without getting confused? Discover the secret behind the 'Add & Norm' layer in transformers and why it's like a safety net for deep learning.",
     "thumbnail": "assets/images/blog-thumbnails/how-the-add-norm-layer-keeps-transformers-balanced-machinelearning-deeplearning-transformers.jpg",
     "youtubeId": "idsYRacKvNM",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4479,6 +5003,7 @@
     "excerpt": "Ever wonder how AI understands your sentences? Learn how the Transformer encoder works in this easy, beginner-friendly guide by a software engineer.",
     "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-encoder-understands-language-ai-machinelearning-deeplearning-transformers.jpg",
     "youtubeId": "T83WpdeLayw",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4495,6 +5020,7 @@
     "excerpt": "Ever wonder how AI creates sentences? Let's break down how the transformer decoder works like a student taking a test.",
     "thumbnail": "assets/images/blog-thumbnails/how-the-transformer-s-decoder-generates-words-ai-transformers-selfattention-gpt-nlp.jpg",
     "youtubeId": "Mcj8g66i_lg",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4511,6 +5037,7 @@
     "excerpt": "Ever wonder how AI understands the meaning behind words? Learn how the 'self-attention' trick helps computers read just like you do.",
     "thumbnail": "assets/images/blog-thumbnails/how-transformers-actually-understand-words-ai-deeplearning-transformers-selfattention.jpg",
     "youtubeId": "uPX8rpsJmFw",
+    "guide": false,
     "tags": [
       "AI",
       "Transformers",
@@ -4527,6 +5054,7 @@
     "excerpt": "Ever wonder how AI understands language so well? It uses 'multi-head attention' to focus on many things at once, just like a team working together.",
     "thumbnail": "assets/images/blog-thumbnails/why-transformers-use-multiple-attention-heads-ai-machinelearning-deeplearning-transformers.jpg",
     "youtubeId": "K8CbD1RHtr0",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4543,6 +5071,7 @@
     "excerpt": "Activation Functions Explained: ReLU, Sigmoid, and Tanh (with Visuals)",
     "thumbnail": "assets/images/blog-thumbnails/activation-functions-explained-relu-sigmoid-and-tanh-with-visuals.jpg",
     "youtubeId": "W-YRq0qgqJQ",
+    "guide": false,
     "tags": [
       "AI"
     ],
@@ -4556,6 +5085,7 @@
     "excerpt": "Learn how to turn spoken audio into text using Java and the AssemblyAI API with this simple, step-by-step guide.",
     "thumbnail": "assets/images/blog-thumbnails/java-speech-to-text-assemblyai-api-tutorial-step-by-step.jpg",
     "youtubeId": "ZbM0OPCgOmg",
+    "guide": false,
     "tags": [
       "Java",
       "AI",
@@ -4573,6 +5103,7 @@
     "excerpt": "Ever wonder how ChatGPT understands your sentences? Learn how the Transformer model translates languages step-by-step in this simple guide.",
     "thumbnail": "assets/images/blog-thumbnails/transformers-explained-the-ai-brain-behind-chatgpt-llms-step-by-step.jpg",
     "youtubeId": "APHVilJSI5Q",
+    "guide": false,
     "tags": [
       "AI",
       "Machine Learning",
@@ -4590,6 +5121,7 @@
     "excerpt": "Ever wonder how AI makes big decisions like approving a loan? Discover how neural networks use math to turn data into a simple 'Yes' or 'No'.",
     "thumbnail": "assets/images/blog-thumbnails/how-neural-networks-make-decisions-explained-simply.jpg",
     "youtubeId": "bNli9WWrEA8",
+    "guide": false,
     "tags": [
       "Artificial Intelligence",
       "Machine Learning",

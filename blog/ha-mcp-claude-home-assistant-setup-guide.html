@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HA MCP for Claude and Home Assistant: Setup Guide and Links</title>
+  <meta name="description" content="How to connect Claude to Home Assistant with HA MCP, the free open source server with about 86 tools that can write automations, plus the free demo house if you have no hub yet." />
+  <meta property="og:title" content="HA MCP for Claude and Home Assistant: Setup Guide and Links" />
+  <meta property="og:description" content="How to connect Claude to Home Assistant with HA MCP, the free open source server with about 86 tools that can write automations, plus the free demo house if you have no hub yet." />
+  <meta property="og:image" content="https://automatewithrobby.fyi/assets/images/blog-thumbnails/ha-mcp-claude-home-assistant-setup-guide.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://automatewithrobby.fyi/blog/ha-mcp-claude-home-assistant-setup-guide.html" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "HA MCP for Claude and Home Assistant: Setup Guide and Links",
+      "description": "How to connect Claude to Home Assistant with HA MCP, the free open source server with about 86 tools that can write automations, plus the free demo house if you have no hub yet.",
+      "image": "https://automatewithrobby.fyi/assets/images/blog-thumbnails/ha-mcp-claude-home-assistant-setup-guide.jpg",
+      "datePublished": "2026-11-14",
+      "author": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "publisher": {
+        "@id": "https://automatewithrobby.fyi/#robby",
+        "@type": "Person",
+        "name": "Robby J",
+        "url": "https://automatewithrobby.fyi/"
+      },
+      "mainEntityOfPage": "https://automatewithrobby.fyi/blog/ha-mcp-claude-home-assistant-setup-guide.html",
+      "keywords": "Claude, Home Assistant, MCP, Smart Home, Open Source, Tutorial",
+      "timeRequired": "PT3M"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://automatewithrobby.fyi/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://automatewithrobby.fyi/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "HA MCP for Claude and Home Assistant: Setup Guide and Links",
+          "item": "https://automatewithrobby.fyi/blog/ha-mcp-claude-home-assistant-setup-guide.html"
+        }
+      ]
+    }
+  ]
+}
+</script>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/post.css" />
+  <link rel="icon" type="image/png" href="../assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <!-- Umami Analytics -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="a845ac87-58ac-49d6-aa82-b25ad58ab1b9" data-domains="automatewithrobby.fyi,www.automatewithrobby.fyi"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
+</head>
+<body>
+
+<!-- ===== SKOOL BANNER ===== -->
+<div class="skool-banner" style="background: var(--accent); color: var(--accent-ink); text-align: center; padding: 12px; font-weight: 600; font-family: var(--font-display);">
+  Want to learn how to save time and money with AI? -> <a href="https://www.skool.com/ai-academy-with-robby-6849/about" style="color: var(--accent-ink); text-decoration: underline; margin-left: 5px;">https://www.skool.com/ai-academy-with-robby-6849/about</a>
+</div>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="read-progress" id="read-progress" role="progressbar" aria-label="Reading progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+<!-- ===== NAV ===== -->
+<nav aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="../index.html" class="nav-logo" aria-label="Robby J home">Robby J<span class="cursor" aria-hidden="true"></span></a>
+    <div class="nav-cta">
+      <a href="../blog/index.html" class="btn btn-ghost" style="font-size:0.9rem">← All Posts</a>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Watch on YouTube</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== POST ===== -->
+<main class="post-main">
+  <article class="post-article">
+
+    <!-- YouTube Embed -->
+    
+
+    <!-- Hero Image -->
+    
+
+    <!-- Header -->
+    <header class="post-header">
+      
+      <h1 class="post-title">HA MCP for Claude and Home Assistant: Setup Guide and Links</h1>
+      
+      <div class="post-meta">
+        <span>✍️ By <a href="../index.html#about" style="color:inherit">Robby J</a></span>
+        <span>·</span>
+        <span>📅 <time datetime="2026-11-14">November 14, 2026</time></span>
+        <span>·</span>
+        
+        <span>⏱ 3 min read</span>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="post-content">
+      <p>Get the Claude Code skills and workflows I use to automate my content and my business in the <a href="https://www.skool.com/ai-academy-with-robby-6849/about">AI Academy community on Skool</a>.</p>
+<h2 id="links">Links</h2>
+<ul>
+<li>GitHub repo: <a href="https://github.com/homeassistant-ai/ha-mcp">github.com/homeassistant-ai/ha-mcp</a> (MIT license, about 7,800 stars on November 14, 2026)</li>
+<li>Docs site: <a href="https://homeassistant-ai.github.io/ha-mcp/">homeassistant-ai.github.io/ha-mcp</a></li>
+<li>Setup wizard for 15+ clients: <a href="https://homeassistant-ai.github.io/ha-mcp/setup/">homeassistant-ai.github.io/ha-mcp/setup</a></li>
+<li>FAQ and troubleshooting: <a href="https://homeassistant-ai.github.io/ha-mcp/faq/">homeassistant-ai.github.io/ha-mcp/faq</a></li>
+<li>Official demo with Claude Desktop: <a href="https://raw.githubusercontent.com/homeassistant-ai/ha-mcp/master/docs/img/demo.webp">demo.webp in the repo</a></li>
+</ul>
+<h2 id="setup-guide">Setup guide</h2>
+<p>You need Home Assistant running. The steps below are the recommended install from the README (the HA-MCP integration, version 9.0.0 and later). It needs Home Assistant 2026.8.0 or newer.</p>
+<ol>
+<li>Install the <strong>HA-MCP integration</strong>. On Home Assistant 2026.8 to 2026.10, open HACS, search for <strong>HA-MCP</strong>, then click <strong>Download</strong>. On Home Assistant 2026.11 or newer, open <strong>Settings</strong>, then <strong>Marketplace</strong>, accept the first run warning, search for <strong>HA-MCP</strong>, then click <strong>Install</strong>.</li>
+<li>Restart Home Assistant.</li>
+<li>Choose the administrator account that the server acts as. Either create a long lived access token on your own account (your profile, then <strong>Security</strong>, then <strong>Long-lived access tokens</strong>, then <strong>Create token</strong>), or, safer, make an account just for HA-MCP under <strong>Settings</strong>, <strong>People</strong>, <strong>Add person</strong>, with <strong>Allow login</strong>, <strong>Local access only</strong> and <strong>Administrator</strong> on.</li>
+<li>Go to <strong>Settings</strong>, <strong>Devices &amp; Services</strong>, <strong>Add Integration</strong>, search for <strong>HA-MCP</strong> and choose <strong>HA-MCP Server</strong>. Paste your token, or enter the user name and password of the HA-MCP account. Pick how clients connect: <strong>Remote access through Home Assistant</strong> (start with <strong>Secret URL</strong>, the simplest) or <strong>Network access: Local network</strong>. Both start disabled, so turn on at least one. Click <strong>Submit</strong>.</li>
+<li>Copy the connect URL from the entry&#39;s <strong>Configure</strong> screen (<strong>Settings</strong>, <strong>Devices &amp; Services</strong>, HA-MCP, <strong>HA-MCP Server</strong>, <strong>Configure</strong>).</li>
+<li>Paste that URL into your AI client.</li>
+</ol>
+<p>Use only one install method per client. Two entries for the same server in one client can make the connection hang.</p>
+<h3 id="no-hub-yet-try-the-demo-house">No hub yet? Try the demo house</h3>
+<p>The repo has one command scripts that connect Claude Desktop to a hosted demo Home Assistant. No paid subscription is needed. On macOS:</p>
+<ol>
+<li>Sign in at <a href="https://claude.ai">claude.ai</a> (a free account works).</li>
+<li>Open Terminal and run:</li>
+</ol>
+<pre><code class="language-sh">curl -LsSf https://raw.githubusercontent.com/homeassistant-ai/ha-mcp/master/scripts/install-macos.sh | sh
+</code></pre>
+<ol start="3">
+<li><a href="https://claude.ai/download">Download Claude Desktop</a>, or quit and open it again.</li>
+<li>Ask Claude: &quot;Can you see my Home Assistant?&quot;</li>
+</ol>
+<p>On Windows, run this in PowerShell instead:</p>
+<pre><code class="language-powershell">irm https://raw.githubusercontent.com/homeassistant-ai/ha-mcp/master/scripts/install-windows.ps1 | iex
+</code></pre>
+<p>These scripts pipe a remote script into your shell. Read the script on GitHub before you run it.</p>
+<h2 id="watch-out">Watch out</h2>
+<ul>
+<li>The built in Home Assistant MCP Server controls only the entities you expose to Assist, and it cannot create automations, scripts or scenes. HA MCP can.</li>
+<li>ChatGPT needs a public URL or the community OpenAI Tunnel. Claude is the easier path.</li>
+<li>The 665 entities in the demo are the demo author&#39;s house, not a limit. Entities are not devices.</li>
+<li>The demo text is partly in French, because it is the author&#39;s own home.</li>
+<li>The stdio demo path has known connection issues. For a real setup, use the integration above.</li>
+<li>Turn on the safety tools: Read Only Mode, per tool on and off switches, approval policies and automatic edit backups.</li>
+</ul>
+<p>Sources: <a href="https://github.com/homeassistant-ai/ha-mcp">HA MCP README</a>, <a href="https://homeassistant-ai.github.io/ha-mcp/">HA MCP docs</a>, <a href="https://homeassistant-ai.github.io/ha-mcp/setup/">Setup wizard</a>.</p>
+
+    </div>
+
+    <aside class="post-related" aria-labelledby="related-heading">
+      <h2 id="related-heading">Keep reading</h2>
+      <ul>
+        <li><a href="claude-projects-research-on-a-schedule.html">Claude Projects Scheduled Research: Setup Guide and Links</a></li>
+        <li><a href="claude-sheets-setup-guide-and-prompt.html">Claude Sheets: Setup Guide, Prompt and Links</a></li>
+        <li><a href="fable-5-2-plans-opus-5-5-builds-claude-code.html">Fable 5.2 Plans, Opus 5.5 Builds: Claude Code Setup Guide and Links</a></li>
+      </ul>
+    </aside>
+
+    <!-- CTA -->
+    <div class="post-cta-box">
+      <h3>Enjoyed this?</h3>
+      <p>Subscribe to <strong>Code With Robby</strong> on YouTube for weekly AI engineering content, or try one of my free browser tools.</p>
+      <a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener" class="btn btn-primary">Subscribe on YouTube →</a>
+      <a href="../tools/index.html" class="btn btn-ghost" style="margin-left:8px">Free tools →</a>
+    </div>
+
+  </article>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <nav class="footer-nav" aria-label="Footer">
+      <div>
+        <h3>Free tools</h3>
+        <ul>
+          <li><a href="../tools/mic-test.html">Mic test</a></li>
+          <li><a href="../tools/webcam-test.html">Webcam test</a></li>
+          <li><a href="../tools/typing-vs-speaking-test.html">Typing vs speaking</a></li>
+          <li><a href="../tools/video-file-size-calculator.html">Video file size</a></li>
+          <li><a href="../tools/index.html">All tools</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Compare</h3>
+        <ul>
+          <li><a href="../compare/squarespace-vs-custom-website.html">Squarespace vs custom</a></li>
+          <li><a href="../compare/wix-vs-custom-website.html">Wix vs custom</a></li>
+          <li><a href="../compare/wordpress-vs-custom-website.html">WordPress vs custom</a></li>
+          <li><a href="../compare/webflow-vs-custom-website.html">Webflow vs custom</a></li>
+          <li><a href="../compare/framer-vs-custom-website.html">Framer vs custom</a></li>
+          <li><a href="../compare/godaddy-website-builder-vs-custom.html">GoDaddy vs custom</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>More</h3>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About Robby</a></li>
+          <li><a href="../services/index.html">Services</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="https://www.youtube.com/@Code-With-Robby" target="_blank" rel="noopener">YouTube</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer-bottom">
+      <span>© 2026 Robby J · Automate with Robby · Built with ❤️ + AI</span>
+      <a href="../index.html" class="btn btn-ghost" style="font-size:0.85rem">← Back to Home</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // YouTube facade: load the real player only when the poster is clicked
+  document.querySelectorAll('.yt-facade').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.ytId;
+      const frame = document.createElement('iframe');
+      frame.width = '100%';
+      frame.height = '100%';
+      frame.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1';
+      frame.title = 'YouTube video player';
+      frame.frameBorder = '0';
+      frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      frame.allowFullscreen = true;
+      btn.replaceWith(frame);
+    });
+  });
+
+  // Reading progress bar
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+    const pct = Math.min(100, Math.round(scrolled * 100));
+    bar.style.transform = 'scaleX(' + (pct / 100) + ')';
+    bar.setAttribute('aria-valuenow', pct);
+  }, { passive: true });
+
+  // Nav scroll shadow
+  const navEl = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    navEl.classList.toggle('scrolled', window.scrollY > 20);
+  }, { passive: true });
+</script>
+</body>
+</html>

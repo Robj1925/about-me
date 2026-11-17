@@ -12,7 +12,7 @@ Secondary audience: anyone Googling "Squarespace alternatives," "website cost es
 
 ## Product Purpose
 
-A personal brand site for Robby J — AI engineer, content creator (YouTube: @Code-With-Robby), and service provider. The site does three jobs simultaneously:
+A personal brand site for Robby J — AI engineer, content creator (YouTube: @ItsRobbyAI), and service provider. The site does three jobs simultaneously:
 
 1. **Convert** — turn visitors into website build or AI consultation inquiries
 2. **Establish credibility** — the craft of the site is a live portfolio for the Website Build service

@@ -1,8 +1,8 @@
 # Automate with Robby (Robby J)
 
-> Personal site of Robby J, a software engineer (M.S. Computer Science) and creator of the YouTube channel Code With Robby. He builds AI automation systems, publishes plain-English AI/ML explainers and AI model news, ships two free products (Recording Studio, a browser screen + camera recorder, and OpenFlow, on-device voice dictation for macOS), hosts 24+ free browser tools, and offers AI consulting, AI audits, and custom website builds.
+> Personal site of Robby J, a software engineer (M.S. Computer Science) and creator of the YouTube channel Robby | Make Videos with AI. He builds AI automation systems, publishes plain-English AI/ML explainers and AI model news, ships two free products (Recording Studio, a browser screen + camera recorder, and OpenFlow, on-device voice dictation for macOS), hosts 24+ free browser tools, and offers AI consulting, AI audits, and custom website builds.
 
-Key facts: Robby J runs the Code With Robby YouTube channel (https://www.youtube.com/@Code-With-Robby), the AI Academy community on Skool (https://www.skool.com/ai-academy-with-robby-6849/about), and publishes open source tools at https://github.com/robj1925. All browser tools on this site are free, run entirely client-side, and upload nothing.
+Key facts: Robby J runs the Robby | Make Videos with AI YouTube channel (https://www.youtube.com/@ItsRobbyAI), the AI Academy community on Skool (https://www.skool.com/ai-academy-with-robby-6849/about), and publishes open source tools at https://github.com/robj1925. All browser tools on this site are free, run entirely client-side, and upload nothing.
 
 ## Products
 

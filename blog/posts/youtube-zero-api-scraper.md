@@ -197,4 +197,4 @@ Ready to dive deeper into custom AI engineering and autonomous workflows? Join t
 
 ---
 **About the Author:**
-Robby J is a software engineer, AI systems architect, and creator of the [Code With Robby](https://www.youtube.com/@Code-With-Robby) YouTube channel. Holding an M.S. in Computer Science, he builds and writes about next-generation AI agents, autonomous developer workflows, and custom MCP integrations. Follow him on [GitHub](https://github.com/Robj1925) or watch his tutorials live on [YouTube](https://www.youtube.com/@Code-With-Robby).
+Robby J is a software engineer, AI systems architect, and creator of the [Robby | Make Videos with AI](https://www.youtube.com/@ItsRobbyAI) YouTube channel. Holding an M.S. in Computer Science, he builds and writes about next-generation AI agents, autonomous developer workflows, and custom MCP integrations. Follow him on [GitHub](https://github.com/Robj1925) or watch his tutorials live on [YouTube](https://www.youtube.com/@ItsRobbyAI).

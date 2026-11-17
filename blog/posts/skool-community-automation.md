@@ -109,4 +109,4 @@ Ready to level up your AI engineering skills? Check out the [AI Academy](https:/
 
 ---
 **About the Author:**
-Robby J is a software engineer, AI systems builder, and content creator with an M.S. in Computer Science. He specializes in designing autonomous AI workflows and custom Model Context Protocol (MCP) servers. Follow his work on [YouTube](https://www.youtube.com/@Code-With-Robby) or [GitHub](https://github.com/robj1925).
+Robby J is a software engineer, AI systems builder, and content creator with an M.S. in Computer Science. He specializes in designing autonomous AI workflows and custom Model Context Protocol (MCP) servers. Follow his work on [YouTube](https://www.youtube.com/@ItsRobbyAI) or [GitHub](https://github.com/robj1925).

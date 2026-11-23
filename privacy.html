@@ -14,6 +14,14 @@
     .legal p, .legal li { color: var(--ink-muted); line-height: 1.6; }
     .legal ul { padding-left: 1.2em; }
   </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T1RQQC7CB5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname.endsWith('automatewithrobby.fyi')) gtag('config', 'G-T1RQQC7CB5');
+  </script>
 </head>
 <body>
 <nav aria-label="Main navigation">
@@ -23,7 +31,7 @@
 </nav>
 <main class="legal">
   <h1>Privacy Policy</h1>
-  <p>Last updated: November 16, 2026</p>
+  <p>Last updated: November 23, 2026</p>
 
   <h2>Who this covers</h2>
   <p>This policy covers the personal automation tools Robert Jimenez (@ItsRobbyAI) runs against his own Google account, including the "Youtube Automation" Google Cloud project. These tools are for personal use only and are not offered to the public.</p>
@@ -40,6 +48,17 @@
 
   <h2>Google API Services User Data Policy</h2>
   <p>Use of information received from Google APIs adheres to the Google API Services User Data Policy, including the Limited Use requirements.</p>
+
+  <h2 id="instagram">Instagram comment replies (Robby Comment Replies)</h2>
+  <p>The Meta app "Robby Comment Replies" answers comments on the @itsrobbyai Instagram account. When someone comments a keyword named in a video, such as STYLE, it sends that person one direct message with the link and replies to the comment.</p>
+  <ul>
+    <li>Data received: the comment ID, comment text, the commenter's Instagram-scoped ID and username, and the post ID, as sent by Instagram's webhook.</li>
+    <li>Use: only to send the one reply and message that the commenter asked for, and to avoid answering the same comment twice.</li>
+    <li>Storage: comment IDs are kept for 14 days and a short activity log of the last 100 events is kept for troubleshooting. Nothing is sold, shared, or used for advertising.</li>
+  </ul>
+
+  <h2 id="data-deletion">Data deletion</h2>
+  <p>To delete any data about you, send a message through the contact section on the <a href="/">home page</a>, or a direct message to @itsrobbyai on Instagram, with your Instagram username and the words "Data deletion". It is deleted within 30 days, and you get a confirmation. Stored comment IDs also expire on their own after 14 days.</p>
 
   <h2>Contact</h2>
   <p>Questions: use the contact section on the <a href="/">home page</a>.</p>

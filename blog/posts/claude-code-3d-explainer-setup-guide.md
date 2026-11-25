@@ -53,9 +53,11 @@ ln -s "$PWD/skills/3d-explainer-script" ~/.claude/skills/3d-explainer-script
 
 On Apple Silicon, `pip install mlx-whisper` makes transcription faster. It is used automatically when it is installed.
 
+You can also paste the repo link into Claude Code and ask it to install everything from the README. The skills are plain folders and the pipeline is one Python script, so Codex, Antigravity or another coding agent can run it too (see `AGENTS.md`).
+
 3. Write the script. In Claude Code, ask: "Write a 3D explainer script about how a password manager works." You get `script.md`: one spoken sentence per line, and a `[SCENE: ...]` cue under each one with the colour, the world, the hero prop, what happens on which word and the title.
 
-4. Record yourself reading only the sentences, in one clean take, and save it in the same folder as `voice.wav` (or .m4a, .mp3, .mov). Pauses are fine. False starts are not removed, so record again if you stumble.
+4. Record yourself reading only the sentences and save it in the same folder as `voice.wav` (or .m4a, .mp3, .mov). Pauses are fine, and so are messed up takes: the skill keeps the last clean take of every sentence and cuts false starts and repeated lines by itself.
 
 5. Ask Claude Code: "Make the 3D explainer for ./my-video." It runs these steps for you:
 

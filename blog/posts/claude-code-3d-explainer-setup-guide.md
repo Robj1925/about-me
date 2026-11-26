@@ -3,6 +3,7 @@ title: "Free 3D Explainer Videos With Claude Code: Setup Guide"
 date: "2026-11-25"
 excerpt: "How to install the free 3D explainer repo, write a script where every sentence becomes a 3D scene, record your voice and let Claude Code build, check and render the video."
 thumbnail: "assets/images/blog-thumbnails/claude-code-3d-explainer-setup-guide.jpg"
+youtubeId: "NbjLc27qoDk"
 tags:
   - Claude Code
   - Claude Skills
@@ -16,6 +17,7 @@ Get the Claude Code skills and workflows I use to automate my content and my bus
 
 ## Links
 
+- Video walkthrough: [youtu.be/NbjLc27qoDk](https://youtu.be/NbjLc27qoDk)
 - Repo: [github.com/Robj1925/claude-code-3d-explainer](https://github.com/Robj1925/claude-code-3d-explainer)
 - The edit skill: [skills/3d-explainer/SKILL.md](https://github.com/Robj1925/claude-code-3d-explainer/blob/main/skills/3d-explainer/SKILL.md)
 - The script skill: [skills/3d-explainer-script/SKILL.md](https://github.com/Robj1925/claude-code-3d-explainer/blob/main/skills/3d-explainer-script/SKILL.md)

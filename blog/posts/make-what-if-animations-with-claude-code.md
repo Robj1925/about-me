@@ -3,6 +3,7 @@ title: "Make What If Animations With Claude Code: Free Skill Setup Guide"
 date: "2026-11-26"
 excerpt: "How to install the free What If Animation skill for Claude Code, turn one line into a finished animated episode, check the storyboard, keep the cost down and make episodes about your own niche."
 thumbnail: "assets/images/blog-thumbnails/make-what-if-animations-with-claude-code.jpg"
+youtubeId: "uE_3Ir7zd_8"
 tags:
   - Claude Code
   - Claude Skills
@@ -16,6 +17,7 @@ Get the Claude Code skills and workflows I use to automate my content and my bus
 
 ## Links
 
+- Video walkthrough: [youtu.be/uE_3Ir7zd_8](https://youtu.be/uE_3Ir7zd_8)
 - What If Animation on GitHub: [github.com/kelano86/what-if-animation](https://github.com/kelano86/what-if-animation)
 - The skill file Claude follows: [SKILL.md](https://github.com/kelano86/what-if-animation/blob/main/SKILL.md)
 - Made by: [FreshStack](https://freshstack.ai)
